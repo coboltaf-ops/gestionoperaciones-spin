@@ -1,0 +1,39 @@
+[
+  {
+    "id": "5b6aab65-b98b-41bb-8eee-d1c03cc115ed",
+    "nro_transferencia": 1,
+    "consecutivo": "TRF-00001",
+    "fecha_emision": "2026-03-27",
+    "bodega_salida_id": "393a888f-9829-43fc-a728-89e5aa60c20d",
+    "bodega_salida_nombre": "Bodega Prinpipal Laureles",
+    "bodega_entrada_id": "1a6bd6b5-f8fd-481b-8581-4b22e38a3619",
+    "bodega_entrada_nombre": "Bodega  Viva Laureles",
+    "persona_emite": "Karina",
+    "fecha_aprobacion": "",
+    "observaciones": "",
+    "renglones": [
+      {
+        "id": "c4d90d2d-b3f9-4953-8e1d-d707fcc66a56",
+        "codigo_producto": "PROD-00008",
+        "descripcion": "Varilla Acero 1/2",
+        "unidad_medida": "Unidad",
+        "cantidad": 3
+      },
+      {
+        "id": "0782252b-2a0e-4310-8adc-87bfb79dd0ab",
+        "codigo_producto": "PROD-00002",
+        "descripcion": "Botas Seguridad",
+        "unidad_medida": "Par",
+        "cantidad": 2
+      },
+      {
+        "id": "5d39e6aa-f895-4b93-9c97-07ff81da2b6e",
+        "codigo_producto": "PROD-00003",
+        "descripcion": "Guantes Trabajo",
+        "unidad_medida": "Par",
+        "cantidad": 4
+      }
+    ],
+    "estado": "Pendiente"
+  }
+]

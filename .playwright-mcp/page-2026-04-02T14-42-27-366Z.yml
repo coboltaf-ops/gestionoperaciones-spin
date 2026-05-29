@@ -1,0 +1,186 @@
+- generic [ref=e1]:
+  - alert [ref=e15]
+  - generic [ref=e16]:
+    - generic [ref=e18]:
+      - paragraph [ref=e19]: Hola, Admin 👋
+      - heading "¿Qué deseas hacer?" [level=2] [ref=e20]
+      - generic [ref=e21]:
+        - textbox "Escribe o usa el micrófono..." [active] [ref=e22]
+        - button "🎤" [ref=e23] [cursor=pointer]
+      - paragraph [ref=e24]: "Ejemplos: \"clientes\", \"cotizaciones\", \"pqrs\" · Enter vacío → menú normal"
+    - complementary [ref=e25]:
+      - generic [ref=e26]:
+        - button "✕" [ref=e27] [cursor=pointer]
+        - generic [ref=e28]:
+          - paragraph [ref=e29]: CRM Comercial
+          - paragraph [ref=e30]: Sistema de Gestión
+      - navigation [ref=e31]:
+        - button "📊 Dashboard" [ref=e32] [cursor=pointer]:
+          - generic [ref=e33]: 📊
+          - generic [ref=e34]: Dashboard
+        - button "🏢 Empresas" [ref=e35] [cursor=pointer]:
+          - generic [ref=e36]: 🏢
+          - generic [ref=e37]: Empresas
+        - button "👤 Contactos" [ref=e38] [cursor=pointer]:
+          - generic [ref=e39]: 👤
+          - generic [ref=e40]: Contactos
+        - button "🎯 Oportunidades" [ref=e41] [cursor=pointer]:
+          - generic [ref=e42]: 🎯
+          - generic [ref=e43]: Oportunidades
+        - button "📦 Productos" [ref=e44] [cursor=pointer]:
+          - generic [ref=e45]: 📦
+          - generic [ref=e46]: Productos
+        - button "📋 Cotizaciones" [ref=e47] [cursor=pointer]:
+          - generic [ref=e48]: 📋
+          - generic [ref=e49]: Cotizaciones
+        - button "🧲 Prospectos" [ref=e50] [cursor=pointer]:
+          - generic [ref=e51]: 🧲
+          - generic [ref=e52]: Prospectos
+        - button "📩 PQRS" [ref=e53] [cursor=pointer]:
+          - generic [ref=e54]: 📩
+          - generic [ref=e55]: PQRS
+        - button "📧 Correos Enviados" [ref=e56] [cursor=pointer]:
+          - generic [ref=e57]: 📧
+          - generic [ref=e58]: Correos Enviados
+        - button "✅ Tareas" [ref=e59] [cursor=pointer]:
+          - generic [ref=e60]: ✅
+          - generic [ref=e61]: Tareas
+        - button "⚙️ Referencias" [ref=e62] [cursor=pointer]:
+          - generic [ref=e63]: ⚙️
+          - generic [ref=e64]: Referencias
+        - button "⚙️ Configuración ▼" [ref=e66] [cursor=pointer]:
+          - generic [ref=e67]: ⚙️
+          - generic [ref=e68]: Configuración
+          - generic [ref=e69]: ▼
+      - generic [ref=e71]:
+        - paragraph [ref=e72]: Admin CRM
+        - paragraph [ref=e73]: Admin
+    - main [ref=e74]:
+      - generic [ref=e75]:
+        - generic [ref=e76]:
+          - generic [ref=e77]: AC
+          - generic [ref=e78]:
+            - paragraph [ref=e79]: Admin CRM
+            - paragraph [ref=e80]: Admin
+        - button "Salir del Sistema" [ref=e82] [cursor=pointer]
+      - generic [ref=e83]:
+        - heading "Dashboard" [level=1] [ref=e84]
+        - generic [ref=e85]:
+          - generic [ref=e86]:
+            - generic [ref=e87]:
+              - generic [ref=e88]: 🏢
+              - generic [ref=e89]: "8"
+            - paragraph [ref=e90]: Empresas
+          - generic [ref=e91]:
+            - generic [ref=e92]:
+              - generic [ref=e93]: 👤
+              - generic [ref=e94]: "10"
+            - paragraph [ref=e95]: Contactos
+          - generic [ref=e96]:
+            - generic [ref=e97]:
+              - generic [ref=e98]: 🎯
+              - generic [ref=e99]: "6"
+            - paragraph [ref=e100]: Oportunidades
+          - generic [ref=e101]:
+            - generic [ref=e102]:
+              - generic [ref=e103]: 📋
+              - generic [ref=e104]: "0"
+            - paragraph [ref=e105]: Cotizaciones
+          - generic [ref=e106]:
+            - generic [ref=e107]:
+              - generic [ref=e108]: 📩
+              - generic [ref=e109]: "0"
+            - paragraph [ref=e110]: PQRS Abiertas
+          - generic [ref=e111]:
+            - generic [ref=e112]:
+              - generic [ref=e113]: 📦
+              - generic [ref=e114]: "10"
+            - paragraph [ref=e115]: Productos
+        - generic [ref=e116]:
+          - generic [ref=e117]:
+            - heading "Pipeline de Ventas" [level=2] [ref=e118]
+            - generic [ref=e119]:
+              - generic [ref=e120]:
+                - paragraph [ref=e121]: Oportunidades
+                - paragraph [ref=e122]: "6"
+              - generic [ref=e123]:
+                - paragraph [ref=e124]: Valor Total
+                - paragraph [ref=e125]: $478,537,000.00
+            - generic [ref=e126]:
+              - generic [ref=e127]:
+                - generic [ref=e128]: Prospección
+                - generic [ref=e131]: "1"
+              - generic [ref=e132]:
+                - generic [ref=e133]: Calificación
+                - generic [ref=e136]: "1"
+              - generic [ref=e137]:
+                - generic [ref=e138]: Propuesta
+                - generic [ref=e141]: "2"
+              - generic [ref=e142]:
+                - generic [ref=e143]: Negociación
+                - generic [ref=e146]: "1"
+              - generic [ref=e147]:
+                - generic [ref=e148]: Cierre
+                - generic [ref=e151]: "1"
+          - generic [ref=e152]:
+            - heading "Cotizaciones" [level=2] [ref=e153]
+            - generic [ref=e154]:
+              - generic [ref=e155]:
+                - paragraph [ref=e156]: Pendientes
+                - paragraph [ref=e157]: "0"
+              - generic [ref=e158]:
+                - paragraph [ref=e159]: Total
+                - paragraph [ref=e160]: "0"
+            - generic [ref=e161]:
+              - generic [ref=e162]:
+                - generic [ref=e163]: Borrador
+                - generic [ref=e164]: "0"
+              - generic [ref=e165]:
+                - generic [ref=e166]: Enviada
+                - generic [ref=e167]: "0"
+              - generic [ref=e168]:
+                - generic [ref=e169]: Aprobada
+                - generic [ref=e170]: "0"
+              - generic [ref=e171]:
+                - generic [ref=e172]: Rechazada
+                - generic [ref=e173]: "0"
+              - generic [ref=e174]:
+                - generic [ref=e175]: Vencida
+                - generic [ref=e176]: "0"
+          - generic [ref=e177]:
+            - heading "PQRS por Tipo" [level=2] [ref=e178]
+            - generic [ref=e179]:
+              - generic [ref=e180]:
+                - text: 📝
+                - paragraph [ref=e181]: "0"
+                - paragraph [ref=e182]: Petición
+              - generic [ref=e183]:
+                - text: 😤
+                - paragraph [ref=e184]: "0"
+                - paragraph [ref=e185]: Queja
+              - generic [ref=e186]:
+                - text: ⚠️
+                - paragraph [ref=e187]: "0"
+                - paragraph [ref=e188]: Reclamo
+              - generic [ref=e189]:
+                - text: 💡
+                - paragraph [ref=e190]: "0"
+                - paragraph [ref=e191]: Sugerencia
+          - generic [ref=e192]:
+            - heading "Resumen General" [level=2] [ref=e193]
+            - generic [ref=e194]:
+              - generic [ref=e195]:
+                - generic [ref=e196]: Empresas Activas
+                - generic [ref=e197]: "8"
+              - generic [ref=e198]:
+                - generic [ref=e199]: Contactos Principales
+                - generic [ref=e200]: "8"
+              - generic [ref=e201]:
+                - generic [ref=e202]: Productos Activos
+                - generic [ref=e203]: "10"
+              - generic [ref=e204]:
+                - generic [ref=e205]: Oportunidades Ganadas
+                - generic [ref=e206]: "0"
+              - generic [ref=e207]:
+                - generic [ref=e208]: PQRS Urgentes
+                - generic [ref=e209]: "0"

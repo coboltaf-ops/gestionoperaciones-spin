@@ -1,0 +1,42 @@
+[
+  {
+    "id": "050d95a3-3ce9-4067-99c4-b579494a5cfc",
+    "nombre": "Juan Andres",
+    "apellido": "Arango",
+    "correo": "",
+    "nro_movil": "",
+    "situacion": "Activo"
+  },
+  {
+    "id": "1eb57500-b884-4c72-a23c-3755a676af7c",
+    "nombre": "Karina",
+    "apellido": "Cardona",
+    "correo": "",
+    "nro_movil": "",
+    "situacion": "Activo"
+  },
+  {
+    "id": "9e95f952-d9a6-4086-b713-4f38882ec45f",
+    "nombre": "Sandra Juliana ",
+    "apellido": "Alvarez",
+    "correo": "",
+    "nro_movil": "",
+    "situacion": "Activo"
+  },
+  {
+    "id": "af3b5735-1dc7-407b-86c8-0d5bea1f4f9f",
+    "nombre": "Jose E",
+    "apellido": "Palomares",
+    "correo": "coboltaf@gmail.com",
+    "nro_movil": "3122215819",
+    "situacion": "Activo"
+  },
+  {
+    "id": "a8266882-ad0d-45fe-a6f0-696368e58570",
+    "nombre": "Sara Sofia",
+    "apellido": "Uribe",
+    "correo": "",
+    "nro_movil": "",
+    "situacion": "Activo"
+  }
+]

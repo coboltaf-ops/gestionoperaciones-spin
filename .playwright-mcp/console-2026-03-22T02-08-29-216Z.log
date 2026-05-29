@@ -1,0 +1,4 @@
+[     403ms] [WARNING] Image with src "/logo-borinquen.jpg" was detected as the Largest Contentful Paint (LCP). Please add the `loading="eager"` property if this image is above the fold.
+Read more: https://nextjs.org/docs/app/api-reference/components/image#loading @ http://localhost:3000/_next/static/chunks/node_modules_next_dist_f3530cac._.js:2297
+[  349386ms] [ERROR] WebSocket connection to 'ws://localhost:3000/_next/webpack-hmr?id=_TiFvqWbSdQn_S76wCAKO' failed: Error in connection establishment: net::ERR_CONNECTION_REFUSED @ http://localhost:3000/_next/static/chunks/node_modules_next_dist_client_17643121._.js:10878
+[  350390ms] [ERROR] WebSocket connection to 'ws://localhost:3000/_next/webpack-hmr?id=_TiFvqWbSdQn_S76wCAKO' failed: Error in connection establishment: net::ERR_CONNECTION_REFUSED @ http://localhost:3000/_next/static/chunks/node_modules_next_dist_client_17643121._.js:10878

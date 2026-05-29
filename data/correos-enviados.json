@@ -1,0 +1,15 @@
+[
+  {
+    "id": "49d43442-6b98-48a2-8282-6ce4959d57ef",
+    "fecha": "2026-03-26",
+    "hora": "02:14 p.m.",
+    "destinatario": "coboltaf@gmail.com",
+    "proveedor": "Jose E Palomares",
+    "asunto": "Nueva Tarea Asignada: TAR-00001",
+    "mensaje": "Tarea TAR-00001 asignada a Jose E Palomares. Hacer demo del Sistema Inventario Borinquen y sus funciones",
+    "consecutivo": "TAR-00001",
+    "total": "",
+    "tipo_moneda": "",
+    "estado": "Enviado"
+  }
+]

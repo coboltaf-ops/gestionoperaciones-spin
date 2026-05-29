@@ -1,0 +1,18 @@
+- generic [active] [ref=e1]:
+  - generic [ref=e3]:
+    - generic [ref=e4]:
+      - generic [ref=e5]: GC
+      - heading "Gestión Contable" [level=1] [ref=e6]
+      - paragraph [ref=e7]: SisTech — Sistemas Inteligentes de Tecnología
+    - generic [ref=e8]:
+      - generic [ref=e9]: Usuario
+      - textbox "admin" [ref=e10]
+    - generic [ref=e11]:
+      - generic [ref=e12]: Clave
+      - textbox "••••••" [ref=e13]
+    - button "Iniciar Sesión" [ref=e14] [cursor=pointer]
+    - generic [ref=e15]:
+      - generic [ref=e16]: "Credenciales Demo:"
+      - generic [ref=e17]: admin / admin123
+      - generic [ref=e18]: contador / contador123
+  - alert [ref=e19]

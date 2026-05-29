@@ -1,0 +1,10 @@
+[     451ms] [INFO] %cDownload the React DevTools for a better development experience: https://react.dev/link/react-devtools font-weight:bold @ http://localhost:3003/_next/static/chunks/node_modules_next_dist_f3530cac._.js:2297
+[     484ms] [LOG] [HMR] connected @ http://localhost:3003/_next/static/chunks/node_modules_next_dist_f3530cac._.js:2297
+[     536ms] [WARNING] Image with src "/logo-borinquen.jpg" was detected as the Largest Contentful Paint (LCP). Please add the `loading="eager"` property if this image is above the fold.
+Read more: https://nextjs.org/docs/app/api-reference/components/image#loading @ http://localhost:3003/_next/static/chunks/node_modules_next_dist_f3530cac._.js:2297
+[     612ms] [LOG] [Fast Refresh] rebuilding @ http://localhost:3003/_next/static/chunks/node_modules_next_dist_f3530cac._.js:2297
+[     627ms] [LOG] [Fast Refresh] done in 116ms @ http://localhost:3003/_next/static/chunks/node_modules_next_dist_f3530cac._.js:2297
+[    9189ms] [LOG] [Fast Refresh] rebuilding @ http://localhost:3003/_next/static/chunks/node_modules_next_dist_f3530cac._.js:2297
+[    9234ms] [LOG] [Fast Refresh] done in 147ms @ http://localhost:3003/_next/static/chunks/node_modules_next_dist_f3530cac._.js:2297
+[   61793ms] [LOG] [Fast Refresh] rebuilding @ http://localhost:3003/_next/static/chunks/node_modules_next_dist_f3530cac._.js:2297
+[   61794ms] [LOG] [Fast Refresh] done in 101ms @ http://localhost:3003/_next/static/chunks/node_modules_next_dist_f3530cac._.js:2297

@@ -1,0 +1,19 @@
+[    1448ms] [ERROR] Failed to load resource: the server responded with a status of 404 (Not Found) @ http://localhost:3001/favicon.ico:0
+[ 1198739ms] [ERROR] ./src/app/(main)/layout.tsx:90:1
+Parsing ecmascript source code failed
+  88 |     </div>
+  89 |   )
+> 90 | }
+     | ^
+  91 |
+
+Unexpected token. Did you mean `{'}'}` or `&rbrace;`?
+
+Import traces:
+  Client Component Browser:
+    ./src/app/(main)/layout.tsx [Client Component Browser]
+    ./src/app/(main)/layout.tsx [Server Component]
+
+  Client Component SSR:
+    ./src/app/(main)/layout.tsx [Client Component SSR]
+    ./src/app/(main)/layout.tsx [Server Component] @ http://localhost:3001/_next/static/chunks/node_modules_next_dist_f3530cac._.js:3127

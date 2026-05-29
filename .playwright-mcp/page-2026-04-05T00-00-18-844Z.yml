@@ -1,0 +1,352 @@
+- generic [active] [ref=e1]:
+  - generic [ref=e3]: Conectando al servidor...
+  - generic [ref=e4]:
+    - complementary [ref=e5]:
+      - generic [ref=e6]:
+        - img "Constructora Borinquen" [ref=e7]
+        - paragraph [ref=e8]: Gestion de Inventario
+      - navigation [ref=e9]:
+        - link "📊 Dashboard" [ref=e10] [cursor=pointer]:
+          - /url: /dashboard
+          - generic [ref=e11]: 📊
+          - generic [ref=e12]: Dashboard
+        - link "📥 Carga Inicial Inventario" [ref=e13] [cursor=pointer]:
+          - /url: /carga-inicial-inventario
+          - generic [ref=e14]: 📥
+          - generic [ref=e15]: Carga Inicial Inventario
+        - link "📦 Productos" [ref=e16] [cursor=pointer]:
+          - /url: /productos
+          - generic [ref=e17]: 📦
+          - generic [ref=e18]: Productos
+        - link "🏢 Proveedores" [ref=e19] [cursor=pointer]:
+          - /url: /proveedores
+          - generic [ref=e20]: 🏢
+          - generic [ref=e21]: Proveedores
+        - link "🛒 Órdenes de Compra" [ref=e22] [cursor=pointer]:
+          - /url: /ordenes-compra
+          - generic [ref=e23]: 🛒
+          - generic [ref=e24]: Órdenes de Compra
+        - link "📋 Recepción de Facturas" [ref=e25] [cursor=pointer]:
+          - /url: /recepcion-facturas
+          - generic [ref=e26]: 📋
+          - generic [ref=e27]: Recepción de Facturas
+        - link "🏭 Bodegas" [ref=e28] [cursor=pointer]:
+          - /url: /bodegas
+          - generic [ref=e29]: 🏭
+          - generic [ref=e30]: Bodegas
+        - link "🔄 Transferencias" [ref=e31] [cursor=pointer]:
+          - /url: /transferencias
+          - generic [ref=e32]: 🔄
+          - generic [ref=e33]: Transferencias
+        - link "📤 Salidas de Almacén" [ref=e34] [cursor=pointer]:
+          - /url: /salidas-almacen
+          - generic [ref=e35]: 📤
+          - generic [ref=e36]: Salidas de Almacén
+        - link "⚖️ Ajustes de Inventario" [ref=e37] [cursor=pointer]:
+          - /url: /ajustes-inventario
+          - generic [ref=e38]: ⚖️
+          - generic [ref=e39]: Ajustes de Inventario
+        - link "💰 Centros de Costo" [ref=e40] [cursor=pointer]:
+          - /url: /centros-costo
+          - generic [ref=e41]: 💰
+          - generic [ref=e42]: Centros de Costo
+        - link "📧 Correos Enviados" [ref=e43] [cursor=pointer]:
+          - /url: /correos-enviados
+          - generic [ref=e44]: 📧
+          - generic [ref=e45]: Correos Enviados
+        - link "📝 Tareas" [ref=e46] [cursor=pointer]:
+          - /url: /tareas
+          - generic [ref=e47]: 📝
+          - generic [ref=e48]: Tareas
+        - link "👥 Personal Empresa" [ref=e49] [cursor=pointer]:
+          - /url: /personal-empresa
+          - generic [ref=e50]: 👥
+          - generic [ref=e51]: Personal Empresa
+        - link "📄 Orden de Pedido" [ref=e52] [cursor=pointer]:
+          - /url: /pedidos
+          - generic [ref=e53]: 📄
+          - generic [ref=e54]: Orden de Pedido
+        - link "⚙️ Tablas de Referencias" [ref=e55] [cursor=pointer]:
+          - /url: /referencias
+          - generic [ref=e56]: ⚙️
+          - generic [ref=e57]: Tablas de Referencias
+        - link "🤖 Agente" [ref=e58] [cursor=pointer]:
+          - /url: /asistente
+          - generic [ref=e59]: 🤖
+          - generic [ref=e60]: Agente
+        - generic [ref=e61]:
+          - button "🏭 Producción ▼" [ref=e62] [cursor=pointer]:
+            - generic [ref=e63]: 🏭
+            - generic [ref=e64]: Producción
+            - generic [ref=e65]: ▼
+          - generic [ref=e66]:
+            - link "🧪 Fórmulas" [ref=e67] [cursor=pointer]:
+              - /url: /formulas
+              - generic [ref=e68]: 🧪
+              - generic [ref=e69]: Fórmulas
+            - link "📋 Órdenes Producción" [ref=e70] [cursor=pointer]:
+              - /url: /ordenes-produccion
+              - generic [ref=e71]: 📋
+              - generic [ref=e72]: Órdenes Producción
+            - link "▶️ Ejecución" [ref=e73] [cursor=pointer]:
+              - /url: /ejecucion-produccion
+              - generic [ref=e74]: ▶️
+              - generic [ref=e75]: Ejecución
+            - link "⚖️ Ajustes Mat. Prima" [ref=e76] [cursor=pointer]:
+              - /url: /ajustes-materia-prima
+              - generic [ref=e77]: ⚖️
+              - generic [ref=e78]: Ajustes Mat. Prima
+        - generic [ref=e79]:
+          - button "⚙️ Configuración ▼" [ref=e80] [cursor=pointer]:
+            - generic [ref=e81]: ⚙️
+            - generic [ref=e82]: Configuración
+            - generic [ref=e83]: ▼
+          - generic [ref=e84]:
+            - link "🏛️ Datos Empresa" [ref=e85] [cursor=pointer]:
+              - /url: /datos-empresa
+              - generic [ref=e86]: 🏛️
+              - generic [ref=e87]: Datos Empresa
+            - link "👤 Gestión de Usuarios" [ref=e88] [cursor=pointer]:
+              - /url: /usuarios
+              - generic [ref=e89]: 👤
+              - generic [ref=e90]: Gestión de Usuarios
+            - link "🗂️ Módulos Sistema" [ref=e91] [cursor=pointer]:
+              - /url: /modulos-sistema
+              - generic [ref=e92]: 🗂️
+              - generic [ref=e93]: Módulos Sistema
+    - main [ref=e94]:
+      - generic [ref=e96]:
+        - generic [ref=e97]:
+          - paragraph [ref=e98]: Juan Andres Arango Velasquez
+          - paragraph [ref=e99]: Admin
+        - generic [ref=e100]: JA
+        - button "Salir" [ref=e101] [cursor=pointer]
+      - generic [ref=e103]:
+        - generic [ref=e104]:
+          - generic [ref=e105]:
+            - heading "Productos" [level=1] [ref=e106]
+            - paragraph [ref=e107]: Catálogo y control de inventario
+          - generic [ref=e108]:
+            - button "Resetear Existencias" [ref=e109] [cursor=pointer]
+            - button "Resetear Ult. Costo" [ref=e110] [cursor=pointer]
+            - button "🔲 Etiquetas" [ref=e111] [cursor=pointer]
+            - button "+ Nuevo Producto" [ref=e112] [cursor=pointer]
+        - generic [ref=e113]:
+          - button "📋 Registros" [ref=e114] [cursor=pointer]
+          - button "📊 Reportes" [ref=e115] [cursor=pointer]
+          - button "📑 Reportes Específicos" [ref=e116] [cursor=pointer]
+        - generic [ref=e117]:
+          - generic [ref=e118]:
+            - paragraph [ref=e119]: Total Productos
+            - paragraph [ref=e120]: "12"
+          - generic [ref=e121]:
+            - paragraph [ref=e122]: Activos
+            - paragraph [ref=e123]: "12"
+          - generic [ref=e124]:
+            - paragraph [ref=e125]: Stock Bajo
+            - paragraph [ref=e126]: "2"
+          - generic [ref=e127]:
+            - paragraph [ref=e128]: Existencia Total
+            - paragraph [ref=e129]: "720"
+        - generic [ref=e130]:
+          - generic [ref=e132]:
+            - textbox "Buscar por código o descripción..." [ref=e133]
+            - button "Buscar por voz" [ref=e134] [cursor=pointer]:
+              - img [ref=e135]
+          - table [ref=e138]:
+            - rowgroup [ref=e150]:
+              - row "Código Descripción Categoría Grupo Sub-Grupo Unidad Exist. Valor Situación Acciones" [ref=e151]:
+                - columnheader "Código" [ref=e152]
+                - columnheader "Descripción" [ref=e153]
+                - columnheader "Categoría" [ref=e154]
+                - columnheader "Grupo" [ref=e155]
+                - columnheader "Sub-Grupo" [ref=e156]
+                - columnheader "Unidad" [ref=e157]
+                - columnheader "Exist." [ref=e158]
+                - columnheader "Valor" [ref=e159]
+                - columnheader "Situación" [ref=e160]
+                - columnheader "Acciones" [ref=e161]
+            - rowgroup [ref=e162]:
+              - row "PROD-00001 Gafas de Seguridad Seguridad EPP Protección Unidad 60 Pesos 1,290,000.00 Activo Ver Editar Eliminar" [ref=e163]:
+                - cell "PROD-00001" [ref=e164]
+                - cell "Gafas de Seguridad" [ref=e165]
+                - cell "Seguridad" [ref=e166]
+                - cell "EPP" [ref=e167]
+                - cell "Protección" [ref=e168]
+                - cell "Unidad" [ref=e169]
+                - cell "60" [ref=e170]
+                - cell "Pesos 1,290,000.00" [ref=e171]
+                - cell "Activo" [ref=e172]
+                - cell "Ver Editar Eliminar" [ref=e173]:
+                  - generic [ref=e174]:
+                    - button "Ver" [ref=e175] [cursor=pointer]
+                    - button "Editar" [ref=e176] [cursor=pointer]
+                    - button "Eliminar" [ref=e177] [cursor=pointer]
+              - row "PROD-00002 Botas Seguridad Seguridad EPP Calzado Par 60 Pesos 5,340,000.00 Activo Ver Editar Eliminar" [ref=e178]:
+                - cell "PROD-00002" [ref=e179]
+                - cell "Botas Seguridad" [ref=e180]
+                - cell "Seguridad" [ref=e181]
+                - cell "EPP" [ref=e182]
+                - cell "Calzado" [ref=e183]
+                - cell "Par" [ref=e184]
+                - cell "60" [ref=e185]
+                - cell "Pesos 5,340,000.00" [ref=e186]
+                - cell "Activo" [ref=e187]
+                - cell "Ver Editar Eliminar" [ref=e188]:
+                  - generic [ref=e189]:
+                    - button "Ver" [ref=e190] [cursor=pointer]
+                    - button "Editar" [ref=e191] [cursor=pointer]
+                    - button "Eliminar" [ref=e192] [cursor=pointer]
+              - row "PROD-00003 Guantes Trabajo Seguridad EPP Guantes Par 60 Pesos 1,380,000.00 Activo Ver Editar Eliminar" [ref=e193]:
+                - cell "PROD-00003" [ref=e194]
+                - cell "Guantes Trabajo" [ref=e195]
+                - cell "Seguridad" [ref=e196]
+                - cell "EPP" [ref=e197]
+                - cell "Guantes" [ref=e198]
+                - cell "Par" [ref=e199]
+                - cell "60" [ref=e200]
+                - cell "Pesos 1,380,000.00" [ref=e201]
+                - cell "Activo" [ref=e202]
+                - cell "Ver Editar Eliminar" [ref=e203]:
+                  - generic [ref=e204]:
+                    - button "Ver" [ref=e205] [cursor=pointer]
+                    - button "Editar" [ref=e206] [cursor=pointer]
+                    - button "Eliminar" [ref=e207] [cursor=pointer]
+              - row "PROD-00004 Casco Seguridad Seguridad EPP Cascos Unidad 60 Pesos 1,668,000.00 Activo Ver Editar Eliminar" [ref=e208]:
+                - cell "PROD-00004" [ref=e209]
+                - cell "Casco Seguridad" [ref=e210]
+                - cell "Seguridad" [ref=e211]
+                - cell "EPP" [ref=e212]
+                - cell "Cascos" [ref=e213]
+                - cell "Unidad" [ref=e214]
+                - cell "60" [ref=e215]
+                - cell "Pesos 1,668,000.00" [ref=e216]
+                - cell "Activo" [ref=e217]
+                - cell "Ver Editar Eliminar" [ref=e218]:
+                  - generic [ref=e219]:
+                    - button "Ver" [ref=e220] [cursor=pointer]
+                    - button "Editar" [ref=e221] [cursor=pointer]
+                    - button "Eliminar" [ref=e222] [cursor=pointer]
+              - row "PROD-00005 Lavamanos Ceramica Baños Sanitarios Lavamanos Unidad 60 Pesos 5,880,000.00 Activo Ver Editar Eliminar" [ref=e223]:
+                - cell "PROD-00005" [ref=e224]
+                - cell "Lavamanos Ceramica" [ref=e225]
+                - cell "Baños" [ref=e226]
+                - cell "Sanitarios" [ref=e227]
+                - cell "Lavamanos" [ref=e228]
+                - cell "Unidad" [ref=e229]
+                - cell "60" [ref=e230]
+                - cell "Pesos 5,880,000.00" [ref=e231]
+                - cell "Activo" [ref=e232]
+                - cell "Ver Editar Eliminar" [ref=e233]:
+                  - generic [ref=e234]:
+                    - button "Ver" [ref=e235] [cursor=pointer]
+                    - button "Editar" [ref=e236] [cursor=pointer]
+                    - button "Eliminar" [ref=e237] [cursor=pointer]
+              - row "PROD-00006 Tanque Sanitario Baños Sanitarios Inodoro Unidad 60 Pesos 5,160,000.00 Activo Ver Editar Eliminar" [ref=e238]:
+                - cell "PROD-00006" [ref=e239]
+                - cell "Tanque Sanitario" [ref=e240]
+                - cell "Baños" [ref=e241]
+                - cell "Sanitarios" [ref=e242]
+                - cell "Inodoro" [ref=e243]
+                - cell "Unidad" [ref=e244]
+                - cell "60" [ref=e245]
+                - cell "Pesos 5,160,000.00" [ref=e246]
+                - cell "Activo" [ref=e247]
+                - cell "Ver Editar Eliminar" [ref=e248]:
+                  - generic [ref=e249]:
+                    - button "Ver" [ref=e250] [cursor=pointer]
+                    - button "Editar" [ref=e251] [cursor=pointer]
+                    - button "Eliminar" [ref=e252] [cursor=pointer]
+              - row "PROD-00007 Cemento Portland 50 Kgs Materiales Estructura Cemento Saco 60 Pesos 1,122,000.00 Activo Ver Editar Eliminar" [ref=e253]:
+                - cell "PROD-00007" [ref=e254]
+                - cell "Cemento Portland 50 Kgs" [ref=e255]
+                - cell "Materiales" [ref=e256]
+                - cell "Estructura" [ref=e257]
+                - cell "Cemento" [ref=e258]
+                - cell "Saco" [ref=e259]
+                - cell "60" [ref=e260]
+                - cell "Pesos 1,122,000.00" [ref=e261]
+                - cell "Activo" [ref=e262]
+                - cell "Ver Editar Eliminar" [ref=e263]:
+                  - generic [ref=e264]:
+                    - button "Ver" [ref=e265] [cursor=pointer]
+                    - button "Editar" [ref=e266] [cursor=pointer]
+                    - button "Eliminar" [ref=e267] [cursor=pointer]
+              - row "PROD-00008 Varilla Acero 1/2 Materiales Acero Estructural Unidad 60 Pesos 1,020,000.00 Activo Ver Editar Eliminar" [ref=e268]:
+                - cell "PROD-00008" [ref=e269]
+                - cell "Varilla Acero 1/2" [ref=e270]
+                - cell "Materiales" [ref=e271]
+                - cell "Acero" [ref=e272]
+                - cell "Estructural" [ref=e273]
+                - cell "Unidad" [ref=e274]
+                - cell "60" [ref=e275]
+                - cell "Pesos 1,020,000.00" [ref=e276]
+                - cell "Activo" [ref=e277]
+                - cell "Ver Editar Eliminar" [ref=e278]:
+                  - generic [ref=e279]:
+                    - button "Ver" [ref=e280] [cursor=pointer]
+                    - button "Editar" [ref=e281] [cursor=pointer]
+                    - button "Eliminar" [ref=e282] [cursor=pointer]
+              - row "PROD-00009 Resma de papel 50 hojas blancas Oficina Papeleria y Utiles Papeleria Unidad 60 Pesos 630,000.00 Activo Ver Editar Eliminar" [ref=e283]:
+                - cell "PROD-00009" [ref=e284]
+                - cell "Resma de papel 50 hojas blancas" [ref=e285]
+                - cell "Oficina" [ref=e286]
+                - cell "Papeleria y Utiles" [ref=e287]
+                - cell "Papeleria" [ref=e288]
+                - cell "Unidad" [ref=e289]
+                - cell "60" [ref=e290]
+                - cell "Pesos 630,000.00" [ref=e291]
+                - cell "Activo" [ref=e292]
+                - cell "Ver Editar Eliminar" [ref=e293]:
+                  - generic [ref=e294]:
+                    - button "Ver" [ref=e295] [cursor=pointer]
+                    - button "Editar" [ref=e296] [cursor=pointer]
+                    - button "Eliminar" [ref=e297] [cursor=pointer]
+              - row "PROD-00010 Boligrafo Azul Oficina Papeleria y Utiles Lapices y Bolígrafos Unidad 60 Pesos 117,000.00 Activo Ver Editar Eliminar" [ref=e298]:
+                - cell "PROD-00010" [ref=e299]
+                - cell "Boligrafo Azul" [ref=e300]
+                - cell "Oficina" [ref=e301]
+                - cell "Papeleria y Utiles" [ref=e302]
+                - cell "Lapices y Bolígrafos" [ref=e303]
+                - cell "Unidad" [ref=e304]
+                - cell "60" [ref=e305]
+                - cell "Pesos 117,000.00" [ref=e306]
+                - cell "Activo" [ref=e307]
+                - cell "Ver Editar Eliminar" [ref=e308]:
+                  - generic [ref=e309]:
+                    - button "Ver" [ref=e310] [cursor=pointer]
+                    - button "Editar" [ref=e311] [cursor=pointer]
+                    - button "Eliminar" [ref=e312] [cursor=pointer]
+              - row "PROD-00011 Bloque Conceto 15 Cms Materiales Mampostería Bloques Unidad 60 Pesos 516,000.00 Activo Ver Editar Eliminar" [ref=e313]:
+                - cell "PROD-00011" [ref=e314]
+                - cell "Bloque Conceto 15 Cms" [ref=e315]
+                - cell "Materiales" [ref=e316]
+                - cell "Mampostería" [ref=e317]
+                - cell "Bloques" [ref=e318]
+                - cell "Unidad" [ref=e319]
+                - cell "60" [ref=e320]
+                - cell "Pesos 516,000.00" [ref=e321]
+                - cell "Activo" [ref=e322]
+                - cell "Ver Editar Eliminar" [ref=e323]:
+                  - generic [ref=e324]:
+                    - button "Ver" [ref=e325] [cursor=pointer]
+                    - button "Editar" [ref=e326] [cursor=pointer]
+                    - button "Eliminar" [ref=e327] [cursor=pointer]
+              - row "PROD-00012 Ladrillo Rojo N4 Rayado 9 x 19 x 38 cls Materiales Mampostería Ladrillos Unidad 60 Pesos 102,000.00 Activo Ver Editar Eliminar" [ref=e328]:
+                - cell "PROD-00012" [ref=e329]
+                - cell "Ladrillo Rojo N4 Rayado 9 x 19 x 38 cls" [ref=e330]
+                - cell "Materiales" [ref=e331]
+                - cell "Mampostería" [ref=e332]
+                - cell "Ladrillos" [ref=e333]
+                - cell "Unidad" [ref=e334]
+                - cell "60" [ref=e335]
+                - cell "Pesos 102,000.00" [ref=e336]
+                - cell "Activo" [ref=e337]
+                - cell "Ver Editar Eliminar" [ref=e338]:
+                  - generic [ref=e339]:
+                    - button "Ver" [ref=e340] [cursor=pointer]
+                    - button "Editar" [ref=e341] [cursor=pointer]
+                    - button "Eliminar" [ref=e342] [cursor=pointer]
+  - button "Open Next.js Dev Tools" [ref=e348] [cursor=pointer]:
+    - img [ref=e349]
+  - alert [ref=e352]

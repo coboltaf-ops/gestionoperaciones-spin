@@ -1,0 +1,1044 @@
+{
+  "categoria": [
+    {
+      "id": "2",
+      "descripcion": "Acabados",
+      "situacion": true
+    },
+    {
+      "descripcion": "Baños",
+      "situacion": true,
+      "id": "6a6e8822-802b-480c-9a00-8d04b1c8b308"
+    },
+    {
+      "id": "5",
+      "descripcion": "Carpintería",
+      "situacion": true
+    },
+    {
+      "descripcion": "Electricidad",
+      "situacion": true,
+      "id": "e9c4e500-1372-4b4a-8815-7cac025016ff"
+    },
+    {
+      "descripcion": "Equipos",
+      "situacion": true,
+      "id": "71129819-7dcb-4ef0-9a01-4e10f2b3ed5b"
+    },
+    {
+      "descripcion": "Exterior",
+      "situacion": true,
+      "id": "8b130481-cc48-405a-a92a-9955e81bb632"
+    },
+    {
+      "descripcion": "Ferreteria",
+      "situacion": true,
+      "id": "35a61e16-afd6-4814-93e3-f26bdb4463f4"
+    },
+    {
+      "descripcion": "Herramientas",
+      "situacion": true,
+      "id": "8238cc3e-26c3-4d13-9f07-48fd23056d4b"
+    },
+    {
+      "id": "7",
+      "descripcion": "Impermeabilización",
+      "situacion": true
+    },
+    {
+      "descripcion": "Materiales",
+      "situacion": true,
+      "id": "a4d0d39f-80c7-4a90-be53-237ae70f4faf"
+    },
+    {
+      "descripcion": "Oficina",
+      "situacion": true,
+      "id": "532c2665-e6bb-4ad3-bead-272fb083df88"
+    },
+    {
+      "descripcion": "Plomería",
+      "situacion": true,
+      "id": "32fbd247-a91c-4284-8f89-c45525ca2e36"
+    },
+    {
+      "id": "8",
+      "descripcion": "Seguridad",
+      "situacion": true
+    },
+    {
+      "descripcion": "Techos",
+      "situacion": true,
+      "id": "f6b42a52-5522-4819-9f16-8f1f6df7d62e"
+    },
+    {
+      "descripcion": "Yeso",
+      "situacion": true,
+      "id": "fd859350-5270-4ca1-907a-1d1e716d7963"
+    }
+  ],
+  "grupo": [
+    {
+      "descripcion": "Abrasivos",
+      "situacion": true,
+      "id": "0d7c7681-bc0f-4b1a-a5a5-863860411b44"
+    },
+    {
+      "descripcion": "Accesorios",
+      "situacion": true,
+      "id": "5043b7b5-c665-4c17-8c23-8aa8e5f6c384"
+    },
+    {
+      "id": "2",
+      "descripcion": "Acero",
+      "situacion": true
+    },
+    {
+      "descripcion": "Adhesivos",
+      "situacion": true,
+      "id": "82ae3d7e-c27d-43ba-9695-e237a531a999"
+    },
+    {
+      "descripcion": "Agregados",
+      "situacion": true,
+      "id": "aecb6a02-e3f4-4a0e-a0f1-efddf16bf7dc"
+    },
+    {
+      "descripcion": "Altura",
+      "situacion": true,
+      "id": "a5065eed-7d11-44cb-83b3-9f65626943ad"
+    },
+    {
+      "descripcion": "Cables ",
+      "situacion": true,
+      "id": "00de9a23-1561-4491-857f-9b3bcd5485f0"
+    },
+    {
+      "id": "5",
+      "descripcion": "Cerámica y Porcelanato",
+      "situacion": true
+    },
+    {
+      "descripcion": "Conectores",
+      "situacion": true,
+      "id": "d2ba916f-6e62-4e1b-846d-0f8307b347d9"
+    },
+    {
+      "descripcion": "Construccion",
+      "situacion": true,
+      "id": "b559b686-08e6-4657-ab2f-1e6270e8be21"
+    },
+    {
+      "descripcion": "Desague",
+      "situacion": true,
+      "id": "3a68cc6b-85de-409d-a982-4a1753a77886"
+    },
+    {
+      "descripcion": "EPP",
+      "situacion": true,
+      "id": "de9dd535-6eec-4482-8550-72adada2369f"
+    },
+    {
+      "descripcion": "Estructura",
+      "situacion": true,
+      "id": "9607a2bd-e5bb-4025-bbe6-4ee5f07e8cd6"
+    },
+    {
+      "id": "9",
+      "descripcion": "Grifería",
+      "situacion": true
+    },
+    {
+      "descripcion": "Herrajes",
+      "situacion": true,
+      "id": "63801da5-b48d-4008-87b9-7d29273339ed"
+    },
+    {
+      "id": "7",
+      "descripcion": "Iluminación",
+      "situacion": true
+    },
+    {
+      "id": "10",
+      "descripcion": "Madera",
+      "situacion": true
+    },
+    {
+      "descripcion": "Mampostería",
+      "situacion": true,
+      "id": "6a3684ae-bfa5-4ea6-a398-7ae23a097f30"
+    },
+    {
+      "descripcion": "Manual",
+      "situacion": true,
+      "id": "0dd88ca9-ce95-4edf-9e77-c994dd5b5c78"
+    },
+    {
+      "descripcion": "Maquinaria",
+      "situacion": true,
+      "id": "b7162a98-c6bf-4640-bb87-1b62b6277596"
+    },
+    {
+      "descripcion": "Medicion",
+      "situacion": true,
+      "id": "edd49bdb-f8ba-436c-9be7-b3d0ca5ee0f0"
+    },
+    {
+      "descripcion": "Paneles",
+      "situacion": true,
+      "id": "f6e8958d-823a-43cd-8e38-6a14bbe64c56"
+    },
+    {
+      "descripcion": "Papeleria y Utiles",
+      "situacion": true,
+      "id": "bb21f603-c1b5-4c27-b314-a015b03df055"
+    },
+    {
+      "id": "4",
+      "descripcion": "Pintura",
+      "situacion": true
+    },
+    {
+      "descripcion": "Protección",
+      "situacion": true,
+      "id": "5c599fb6-be78-4b04-b2c9-6181417c5d5e"
+    },
+    {
+      "descripcion": "Puertas",
+      "situacion": true,
+      "id": "837ebed4-3f0e-4417-8283-2ee25da60128"
+    },
+    {
+      "descripcion": "Revoque",
+      "situacion": true,
+      "id": "10f32fb4-e742-4d72-8949-bab759dc0003"
+    },
+    {
+      "descripcion": "Sanitarios",
+      "situacion": true,
+      "id": "7ce87049-362b-409d-a7ce-26b29f30b29c"
+    },
+    {
+      "descripcion": "Sujeción",
+      "situacion": true,
+      "id": "81bee907-af55-442a-a3f3-a121a4c58f1a"
+    },
+    {
+      "descripcion": "Tableros",
+      "situacion": true,
+      "id": "ee007b42-4356-4630-aa38-8c96c0101ca9"
+    },
+    {
+      "descripcion": "Trasporte",
+      "situacion": true,
+      "id": "b4704226-dc1f-415b-8c38-1c9c6ef592a2"
+    },
+    {
+      "id": "8",
+      "descripcion": "Tuberías",
+      "situacion": true
+    },
+    {
+      "descripcion": "Valvulas",
+      "situacion": true,
+      "id": "5926de4f-5e10-4b3a-b122-9135edcc85c0"
+    },
+    {
+      "descripcion": "Ventanas",
+      "situacion": true,
+      "id": "0c6e0519-9b8a-4959-86e4-d4161c97627a"
+    }
+  ],
+  "subgrupo": [
+    {
+      "descripcion": "Adhesivos",
+      "situacion": true,
+      "id": "68b109b6-f994-4085-adb1-89fbc293e682"
+    },
+    {
+      "descripcion": "Aislamiento",
+      "situacion": true,
+      "id": "8723f5e5-eb5e-471e-b51a-f685197d1c7a"
+    },
+    {
+      "descripcion": "Aluminio",
+      "situacion": true,
+      "id": "c29b62ce-14a3-475a-a3ac-3b1b0aa56fef"
+    },
+    {
+      "descripcion": "Amarre",
+      "situacion": true,
+      "id": "28377c0d-ad89-46a0-96dc-5c10764a53d9"
+    },
+    {
+      "descripcion": "Anclajes",
+      "situacion": true,
+      "id": "7e589af2-2d1a-4c8c-894c-06d15a09f67f"
+    },
+    {
+      "descripcion": "Andamios",
+      "situacion": true,
+      "id": "33cff968-4c1b-45b7-bdb2-f21ac63e0143"
+    },
+    {
+      "id": "2",
+      "descripcion": "Arena",
+      "situacion": true
+    },
+    {
+      "descripcion": "Artículos de Limpieza",
+      "situacion": true,
+      "id": "4ca5f471-88e6-405e-b997-4a8d3a1b61f6"
+    },
+    {
+      "id": "20",
+      "descripcion": "Asfáltica",
+      "situacion": true
+    },
+    {
+      "descripcion": "Baño",
+      "situacion": true,
+      "id": "d166b0aa-dde1-4aa3-8d5a-8b8a66caef86"
+    },
+    {
+      "descripcion": "Bisagras",
+      "situacion": true,
+      "id": "8c983eed-7801-4e63-9781-05bf957f9343"
+    },
+    {
+      "id": "6",
+      "descripcion": "Bloques",
+      "situacion": true
+    },
+    {
+      "descripcion": "Boquillas",
+      "situacion": true,
+      "id": "ade06f00-cf34-4021-8909-f81d048a18a3"
+    },
+    {
+      "id": "13",
+      "descripcion": "Breakers",
+      "situacion": true
+    },
+    {
+      "id": "12",
+      "descripcion": "Cables",
+      "situacion": true
+    },
+    {
+      "descripcion": "Cal",
+      "situacion": true,
+      "id": "c3163281-46dc-4c0e-9672-d00152a184ea"
+    },
+    {
+      "descripcion": "Calzado",
+      "situacion": true,
+      "id": "f1d4576c-a101-448b-8bfc-756a0d5ff3f4"
+    },
+    {
+      "descripcion": "Cascos",
+      "situacion": true,
+      "id": "fbb12958-a4a3-43b7-9a76-b1f5432a9821"
+    },
+    {
+      "id": "1",
+      "descripcion": "Cemento",
+      "situacion": true
+    },
+    {
+      "descripcion": "Cerraduras",
+      "situacion": true,
+      "id": "0e15e1fe-f69b-415b-ae23-30ed5f264e87"
+    },
+    {
+      "descripcion": "Clavos",
+      "situacion": true,
+      "id": "0ab48ec7-7d85-4cfb-972e-01179ed3e53f"
+    },
+    {
+      "id": "16",
+      "descripcion": "Cobre",
+      "situacion": true
+    },
+    {
+      "descripcion": "Codos",
+      "situacion": true,
+      "id": "fc61548b-7bea-4b65-a076-5e5a27dbaa56"
+    },
+    {
+      "descripcion": "Compactación",
+      "situacion": true,
+      "id": "7f8e5f11-76e9-4a65-8e34-7e45f42949d9"
+    },
+    {
+      "descripcion": "Control",
+      "situacion": true,
+      "id": "fa332fb0-0d6b-4c04-b9c6-0edad41a2099"
+    },
+    {
+      "descripcion": "Escalera",
+      "situacion": true,
+      "id": "3b6e484c-8518-4777-baa4-d061aee1780c"
+    },
+    {
+      "descripcion": "Estructural",
+      "situacion": true,
+      "id": "2375d952-4685-4963-91cd-b25f526f6d57"
+    },
+    {
+      "descripcion": "Estuco",
+      "situacion": true,
+      "id": "95b0326c-5e26-4462-81b4-663e52b2ec88"
+    },
+    {
+      "descripcion": "Excavación",
+      "situacion": true,
+      "id": "a4218275-c8a4-4d8a-ba89-ae4a4ce7eadb"
+    },
+    {
+      "id": "9",
+      "descripcion": "Exterior",
+      "situacion": true
+    },
+    {
+      "id": "3",
+      "descripcion": "Grava",
+      "situacion": true
+    },
+    {
+      "descripcion": "Guantes",
+      "situacion": true,
+      "id": "d0fd1776-c47d-4bc5-9b9e-40c462356b0f"
+    },
+    {
+      "descripcion": "Impacto",
+      "situacion": true,
+      "id": "0856472a-a00d-4990-90ed-1175054a79f7"
+    },
+    {
+      "descripcion": "Inodoro",
+      "situacion": true,
+      "id": "380f9812-416e-4cf5-9a15-2ee06a6617b2"
+    },
+    {
+      "id": "8",
+      "descripcion": "Interior",
+      "situacion": true
+    },
+    {
+      "descripcion": "Interruptores",
+      "situacion": true,
+      "id": "ae4c0de9-0629-4c48-9510-95bca29f89fd"
+    },
+    {
+      "id": "7",
+      "descripcion": "Ladrillos",
+      "situacion": true
+    },
+    {
+      "id": "14",
+      "descripcion": "Lámparas",
+      "situacion": true
+    },
+    {
+      "descripcion": "Lapices y Bolígrafos",
+      "situacion": true,
+      "id": "005b4c24-7976-4a7e-87d1-10f85d52d3e3"
+    },
+    {
+      "descripcion": "Lavamanos",
+      "situacion": true,
+      "id": "e2cc60b1-5160-46ee-8d96-a923d58436e0"
+    },
+    {
+      "id": "17",
+      "descripcion": "Llaves",
+      "situacion": true
+    },
+    {
+      "id": "5",
+      "descripcion": "Mallas",
+      "situacion": true
+    },
+    {
+      "descripcion": "Marcos",
+      "situacion": true,
+      "id": "555507c7-f1de-40be-af31-b31f3a71eb10"
+    },
+    {
+      "descripcion": "Material",
+      "situacion": true,
+      "id": "8e8f8fa5-8adf-4ffd-aaee-47876c90eb2e"
+    },
+    {
+      "descripcion": "Medida",
+      "situacion": true,
+      "id": "41c6c070-084d-4108-bbcf-b54d5c7013d0"
+    },
+    {
+      "descripcion": "Mezclado",
+      "situacion": true,
+      "id": "4702db0e-cba9-4400-8a52-dc06fbe5995d"
+    },
+    {
+      "id": "21",
+      "descripcion": "Monitores",
+      "situacion": true
+    },
+    {
+      "descripcion": "Nivel",
+      "situacion": true,
+      "id": "7c92547d-9105-4a4e-8702-377ed96bd45b"
+    },
+    {
+      "descripcion": "Panel",
+      "situacion": true,
+      "id": "5db71252-c9f7-48bc-97a7-e011a124d0c7"
+    },
+    {
+      "descripcion": "Papeleria",
+      "situacion": true,
+      "id": "3bcac3b9-6136-446c-867e-bf441bce7e7b"
+    },
+    {
+      "id": "11",
+      "descripcion": "Paredes",
+      "situacion": true
+    },
+    {
+      "id": "22",
+      "descripcion": "Periféricos",
+      "situacion": true
+    },
+    {
+      "descripcion": "Pico",
+      "situacion": true,
+      "id": "52db2ed8-cebb-4efc-b587-2d1a5d1792cc"
+    },
+    {
+      "descripcion": "Piedra",
+      "situacion": true,
+      "id": "c1dd303b-f62c-4772-a272-85cde961f051"
+    },
+    {
+      "id": "10",
+      "descripcion": "Pisos",
+      "situacion": true
+    },
+    {
+      "descripcion": "Plano",
+      "situacion": true,
+      "id": "4c7f410b-7b60-4d50-9a13-4b964ea7b308"
+    },
+    {
+      "descripcion": "Premiun",
+      "situacion": true,
+      "id": "5f93b3c9-ff64-4047-993d-dbf4c22e2371"
+    },
+    {
+      "descripcion": "Protección",
+      "situacion": true,
+      "id": "17107a59-3aa0-46c8-951f-a4029598dc2f"
+    },
+    {
+      "id": "15",
+      "descripcion": "PVC",
+      "situacion": true
+    },
+    {
+      "descripcion": "Refuerzo",
+      "situacion": true,
+      "id": "57772e7c-6694-4d7e-8bf7-c386261f5b49"
+    },
+    {
+      "descripcion": "Rodillos",
+      "situacion": true,
+      "id": "ba3ae0cb-6f08-4657-97ec-7fb60234ad56"
+    },
+    {
+      "descripcion": "Seguridad",
+      "situacion": true,
+      "id": "966a12fb-a9be-4cd8-b925-9d6b9dd4ca34"
+    },
+    {
+      "descripcion": "Selladores",
+      "situacion": true,
+      "id": "a7b6176d-25be-4589-ab39-f030e2d22633"
+    },
+    {
+      "descripcion": "Sifones",
+      "situacion": true,
+      "id": "66d80443-bd73-4e60-8b15-553e373b4f0e"
+    },
+    {
+      "descripcion": "Tomacorriente",
+      "situacion": true,
+      "id": "4c119f2f-c308-4abd-ba6b-09a842588dba"
+    },
+    {
+      "descripcion": "Tornillos",
+      "situacion": true,
+      "id": "46939fab-98c2-4dda-926f-5c029134d6b5"
+    },
+    {
+      "descripcion": "Uniones",
+      "situacion": true,
+      "id": "24a6dc3e-d853-49d4-a96e-c7b131bf4b1e"
+    },
+    {
+      "descripcion": "Visibilidad",
+      "situacion": true,
+      "id": "9780db8b-b252-4e69-894c-4b9f44a4e52a"
+    },
+    {
+      "descripcion": "Yeso",
+      "situacion": true,
+      "id": "f0618f32-4428-4e7a-bcfa-ba1087f15cee"
+    }
+  ],
+  "unidad_medida": [
+    {
+      "id": "9",
+      "descripcion": "Cubeta",
+      "situacion": true
+    },
+    {
+      "id": "7",
+      "descripcion": "Galón",
+      "situacion": true
+    },
+    {
+      "id": "6",
+      "descripcion": "Kilogramo",
+      "situacion": true
+    },
+    {
+      "id": "3",
+      "descripcion": "Metro Cuadrado",
+      "situacion": true
+    },
+    {
+      "id": "4",
+      "descripcion": "Metro Cúbico",
+      "situacion": true
+    },
+    {
+      "id": "5",
+      "descripcion": "Metro Lineal",
+      "situacion": true
+    },
+    {
+      "descripcion": "Par",
+      "situacion": true,
+      "id": "05562554-11bc-4463-874f-ef40a4b9a74d"
+    },
+    {
+      "id": "8",
+      "descripcion": "Rollo",
+      "situacion": true
+    },
+    {
+      "id": "2",
+      "descripcion": "Saco",
+      "situacion": true
+    },
+    {
+      "id": "1",
+      "descripcion": "Unidad",
+      "situacion": true
+    }
+  ],
+  "tipo_inventario": [
+    {
+      "id": "2",
+      "descripcion": "Materia Prima",
+      "situacion": true
+    },
+    {
+      "descripcion": "Materiales  y Suministros",
+      "situacion": true,
+      "id": "cc7401eb-395e-484a-89cf-72557fb3c30a"
+    },
+    {
+      "descripcion": "Producto Terminado",
+      "situacion": true,
+      "id": "f9cea254-4e40-4c63-8aeb-13a0731742b2"
+    },
+    {
+      "descripcion": "Servicios",
+      "situacion": true,
+      "id": "d10ef04d-d005-4a99-b7bf-0b91541d5b1e"
+    }
+  ],
+  "tipo_moneda": [
+    {
+      "descripcion": "Pesos Col",
+      "situacion": true,
+      "id": "f7d3cc12-ca6e-4630-9511-419cf27f310c"
+    },
+    {
+      "id": "1",
+      "descripcion": "US $",
+      "situacion": true
+    }
+  ],
+  "actividad_proveedor": [
+    {
+      "descripcion": "Artículos de Seguridad EPP",
+      "situacion": true,
+      "id": "549438cc-257e-4491-a2d6-372b326b0843"
+    },
+    {
+      "descripcion": "Artículos Electricos",
+      "situacion": true,
+      "id": "fad23219-4a8f-4398-b664-558389c94ac6"
+    },
+    {
+      "descripcion": "Fabricación Cemento",
+      "situacion": true,
+      "id": "0a7a0956-f16e-46f2-a20e-5a1417f47f5f"
+    },
+    {
+      "descripcion": "Ferreteria en General",
+      "situacion": true,
+      "id": "2d326e38-c604-4cfc-902b-d66e7a2e7a9e"
+    },
+    {
+      "descripcion": "Papeleria Utiles de Oficina",
+      "situacion": true,
+      "id": "8132cdbb-3bd9-4f88-b094-d5fb67fd266a"
+    },
+    {
+      "descripcion": "Productos para Baños",
+      "situacion": true,
+      "id": "4121bc45-270a-4aa6-98eb-0c9c5122b3b6"
+    }
+  ],
+  "condiciones_pago": [
+    {
+      "descripcion": "15 dias",
+      "situacion": true,
+      "id": "2b5df187-9d8a-4128-aeea-27470312cd83"
+    },
+    {
+      "id": "2",
+      "descripcion": "30 días",
+      "situacion": true
+    },
+    {
+      "descripcion": "45 dias",
+      "situacion": true,
+      "id": "4bcbfb90-4a9e-484d-8a3c-a0ffe4eb3519"
+    },
+    {
+      "id": "1",
+      "descripcion": "Contado",
+      "situacion": true
+    }
+  ],
+  "situacion_producto": [
+    {
+      "id": "1",
+      "descripcion": "Activo",
+      "situacion": true
+    },
+    {
+      "id": "3",
+      "descripcion": "Descontinuado",
+      "situacion": true
+    },
+    {
+      "id": "2",
+      "descripcion": "Inactivo",
+      "situacion": true
+    }
+  ],
+  "situacion_orden_compra": [
+    {
+      "id": "3",
+      "descripcion": "Anulada",
+      "situacion": true
+    },
+    {
+      "id": "2",
+      "descripcion": "Aprobada",
+      "situacion": true
+    },
+    {
+      "id": "1",
+      "descripcion": "Pendiente",
+      "situacion": true
+    },
+    {
+      "id": "4",
+      "descripcion": "Recibida",
+      "situacion": true
+    }
+  ],
+  "situacion_bodega": [
+    {
+      "id": "1",
+      "descripcion": "Activa",
+      "situacion": true
+    },
+    {
+      "id": "3",
+      "descripcion": "En Mantenimiento",
+      "situacion": true
+    },
+    {
+      "id": "2",
+      "descripcion": "Inactiva",
+      "situacion": true
+    }
+  ],
+  "situacion_proveedor": [
+    {
+      "id": "1",
+      "descripcion": "Activo",
+      "situacion": true
+    },
+    {
+      "id": "3",
+      "descripcion": "Bloqueado",
+      "situacion": true
+    },
+    {
+      "id": "2",
+      "descripcion": "Inactivo",
+      "situacion": true
+    }
+  ],
+  "tipo_identificacion": [
+    {
+      "id": "2",
+      "descripcion": "Cédula",
+      "situacion": true
+    },
+    {
+      "descripcion": "Nit",
+      "situacion": true,
+      "id": "d6c8f11a-efb2-458d-a18b-04148a132bf6"
+    },
+    {
+      "id": "3",
+      "descripcion": "Pasaporte",
+      "situacion": true
+    },
+    {
+      "id": "1",
+      "descripcion": "RIF",
+      "situacion": true
+    },
+    {
+      "descripcion": "RUC",
+      "situacion": true,
+      "id": "6a75c70c-02b4-4551-a9fe-639afac85606"
+    },
+    {
+      "descripcion": "Rut",
+      "situacion": true,
+      "id": "cb1728ba-f079-46c3-9c11-f5c829b653bc"
+    }
+  ],
+  "tipo_ajuste": [
+    {
+      "descripcion": "Ajuste Material Roto",
+      "situacion": true,
+      "tipo": "-",
+      "id": "6ed7e788-1543-4f75-b69f-20a859dedc1a"
+    },
+    {
+      "id": "3",
+      "descripcion": "Ajuste por Daño",
+      "situacion": true,
+      "tipo": "-"
+    },
+    {
+      "id": "4",
+      "descripcion": "Ajuste por Reconteo",
+      "situacion": true,
+      "tipo": "+"
+    },
+    {
+      "id": "1",
+      "descripcion": "Entrada por Sobrante",
+      "situacion": true,
+      "tipo": "+"
+    },
+    {
+      "id": "2",
+      "descripcion": "Salida por Faltante",
+      "situacion": true,
+      "tipo": "-"
+    }
+  ],
+  "impuesto": [
+    {
+      "id": "4",
+      "descripcion": "16%",
+      "situacion": true
+    },
+    {
+      "descripcion": "18%",
+      "situacion": true,
+      "id": "02dd1b54-cc94-46f8-b2f1-864ea3c55418"
+    }
+  ],
+  "referencia_proveedor": [
+    {
+      "descripcion": "Buena",
+      "situacion": true,
+      "id": "b63d3ede-866a-4801-a835-2a3deb867682",
+      "detalle": "Precios Competitivos y Pasa Presupuestos al Dia"
+    },
+    {
+      "descripcion": "Excelente",
+      "situacion": true,
+      "id": "b61a5cb3-9a11-46b9-89c6-e81797ecbd27",
+      "detalle": "Entrega Materiales de Calidad Cumple con Fechas de Entrega Precios un Poco altos pero Calidad Nro 1"
+    },
+    {
+      "descripcion": "Mala",
+      "situacion": true,
+      "id": "3cf89202-1fee-48cd-9a8a-9e66effd114d",
+      "detalle": "Muchas veces se demora en conseguir los Productos para Cotizar y llegan tarde las Ofertas"
+    },
+    {
+      "descripcion": "Muy Mala",
+      "situacion": true,
+      "id": "2348d32c-be5f-42c1-9578-668a4b864936",
+      "detalle": "Calidad de Productos mala Precios Baratos e incumple en las instalaciones"
+    },
+    {
+      "descripcion": "Regular",
+      "situacion": true,
+      "id": "e5f409ce-4bb3-45c2-a5f0-0bf525c1cc12",
+      "detalle": "No es especializado en el area que atiende"
+    }
+  ],
+  "ciudad": [
+    {
+      "descripcion": "Barranquilla",
+      "situacion": true,
+      "id": "7c1328c7-b8d5-4dda-a758-e57ac2946975"
+    },
+    {
+      "descripcion": "Bogota",
+      "situacion": true,
+      "id": "18fc0ed1-f2e6-4cc3-816e-e36eabe4e5b4"
+    },
+    {
+      "descripcion": "Cali",
+      "situacion": true,
+      "id": "b7919cd9-9791-40f0-9188-f2fb5b655c3a"
+    },
+    {
+      "id": "1",
+      "descripcion": "Caracas",
+      "situacion": true
+    },
+    {
+      "descripcion": "Copacabana",
+      "situacion": true,
+      "id": "b07909b9-9b48-4222-b2ca-3048d607473a"
+    },
+    {
+      "descripcion": "Medellin",
+      "situacion": true,
+      "id": "060c595f-6f5e-4a31-9716-e5e5567347b1"
+    },
+    {
+      "descripcion": "Pereira",
+      "situacion": true,
+      "id": "ee71f9d3-6bdc-428b-ab70-63c8c46458e8"
+    },
+    {
+      "id": "7",
+      "descripcion": "Puerto Ordaz",
+      "situacion": true
+    },
+    {
+      "descripcion": "Rionegro",
+      "situacion": true,
+      "id": "6d1383a0-cc21-4a41-8c79-5f9969cb530f"
+    }
+  ],
+  "pais": [
+    {
+      "id": "2",
+      "descripcion": "Colombia",
+      "situacion": true
+    },
+    {
+      "id": "3",
+      "descripcion": "Estados Unidos",
+      "situacion": true
+    },
+    {
+      "id": "4",
+      "descripcion": "Panamá",
+      "situacion": true
+    },
+    {
+      "id": "1",
+      "descripcion": "Venezuela",
+      "situacion": true
+    }
+  ],
+  "roles": [
+    {
+      "id": "1",
+      "descripcion": "Admin",
+      "situacion": true
+    },
+    {
+      "id": "3",
+      "descripcion": "Almacen",
+      "situacion": true
+    },
+    {
+      "id": "4",
+      "descripcion": "Compras",
+      "situacion": true
+    },
+    {
+      "descripcion": "Contabilidad y Admisitracion",
+      "situacion": true,
+      "id": "e7cbfb26-a4e1-4fba-81c2-b4dc48314a98"
+    }
+  ],
+  "estado_recepcion_factura": [
+    {
+      "id": "5",
+      "descripcion": "Aprobada",
+      "situacion": true
+    },
+    {
+      "id": "1",
+      "descripcion": "Pendiente",
+      "situacion": true
+    },
+    {
+      "id": "2",
+      "descripcion": "Recibida",
+      "situacion": true
+    }
+  ],
+  "situacion_tarea": [
+    {
+      "id": "4",
+      "descripcion": "Cancelada",
+      "situacion": true
+    },
+    {
+      "id": "3",
+      "descripcion": "Completada",
+      "situacion": true
+    },
+    {
+      "id": "2",
+      "descripcion": "En Proceso",
+      "situacion": true
+    }
+  ]
+}

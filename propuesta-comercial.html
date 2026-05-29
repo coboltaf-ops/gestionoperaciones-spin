@@ -1,0 +1,545 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+<meta charset="UTF-8">
+<title>Propuesta Comercial - Constructora Borinquen</title>
+<style>
+  @page { size: A4; margin: 0; }
+  * { margin: 0; padding: 0; box-sizing: border-box; }
+  body { font-family: 'Segoe UI', Arial, sans-serif; color: #111; background: #fff; font-size: 12.5px; line-height: 1.55; }
+
+  .page { width: 210mm; min-height: 297mm; padding: 22mm 20mm; page-break-after: always; position: relative; background: #fff; }
+  .page:last-child { page-break-after: auto; }
+
+  /* Portada */
+  .cover { background: linear-gradient(135deg, #0b1d4a 0%, #1e3a8a 55%, #3b5fd4 100%); color: #fff; padding: 0; }
+  .cover-inner { width: 210mm; min-height: 297mm; padding: 30mm 22mm; display: flex; flex-direction: column; justify-content: space-between; }
+  .cover-top { }
+  .cover-top .brand-line { font-size: 11px; letter-spacing: .35em; text-transform: uppercase; color: #bfdbfe; font-weight: 600; }
+  .cover-top .rule { width: 60px; height: 3px; background: #60a5fa; margin: 12px 0 28px; }
+  .cover-top h1 { font-size: 40px; font-weight: 800; line-height: 1.08; margin-bottom: 18px; }
+  .cover-top h2 { font-size: 22px; font-weight: 400; color: #dbeafe; margin-bottom: 24px; }
+  .cover-top .system { font-size: 18px; font-weight: 600; color: #fff; }
+
+  .cover-confidential { margin-top: 34mm; padding: 14px 18px; background: rgba(255,255,255,0.08); border-left: 4px solid #fbbf24; color: #fde68a; font-size: 12px; font-style: italic; backdrop-filter: blur(4px); }
+
+  .cover-meta { display: grid; grid-template-columns: 1fr 1fr; gap: 18px 32px; padding-top: 24px; border-top: 1px solid rgba(255,255,255,0.2); }
+  .cover-meta .field { }
+  .cover-meta label { font-size: 10px; letter-spacing: .15em; text-transform: uppercase; color: #93c5fd; font-weight: 700; display: block; margin-bottom: 5px; }
+  .cover-meta value { font-size: 14px; font-weight: 600; color: #fff; display: block; }
+  .cover-meta .code { font-family: 'Courier New', monospace; font-size: 16px; color: #fbbf24; font-weight: 800; }
+
+  .cover-footer { margin-top: 14mm; font-size: 10px; color: #bfdbfe; text-align: center; letter-spacing: .1em; text-transform: uppercase; }
+
+  /* Páginas internas */
+  h2.section { font-size: 22px; color: #0b1d4a; font-weight: 800; margin-bottom: 6px; letter-spacing: -.01em; }
+  h2.section::after { content: ''; display: block; width: 48px; height: 3px; background: #1e3a8a; margin-top: 8px; }
+  h3.subsection { font-size: 15px; color: #1e3a8a; font-weight: 700; margin: 20px 0 8px; }
+  p.intro { color: #4b5563; font-size: 12px; margin: 10px 0 18px; }
+  p { margin-bottom: 8px; color: #1f2937; text-align: justify; }
+
+  .header-bar { display: flex; justify-content: space-between; align-items: center; padding-bottom: 10px; border-bottom: 2px solid #1e3a8a; margin-bottom: 20px; }
+  .header-bar .title { font-size: 11px; letter-spacing: .2em; color: #1e3a8a; font-weight: 700; text-transform: uppercase; }
+  .header-bar .meta { font-size: 10px; color: #6b7280; }
+
+  .module-grid { display: grid; grid-template-columns: 1fr 1fr; gap: 10px 14px; margin-top: 10px; }
+  .module-card { padding: 10px 12px; border: 1px solid #dbeafe; border-left: 3px solid #1e3a8a; border-radius: 4px; background: #f8fafc; page-break-inside: avoid; }
+  .module-card .m-title { font-size: 12px; font-weight: 700; color: #0b1d4a; margin-bottom: 3px; }
+  .module-card .m-desc { font-size: 10.5px; color: #4b5563; line-height: 1.45; }
+
+  /* Pricing */
+  .price-table { width: 100%; border-collapse: collapse; margin-top: 16px; }
+  .price-table th { background: #0b1d4a; color: #fff; padding: 10px 14px; font-size: 11px; text-transform: uppercase; letter-spacing: .08em; text-align: left; }
+  .price-table th.num { text-align: right; }
+  .price-table td { padding: 12px 14px; border-bottom: 1px solid #e5e7eb; font-size: 12px; }
+  .price-table td.num { text-align: right; font-family: 'Courier New', monospace; font-weight: 700; color: #0b1d4a; }
+  .price-table tr.total td { background: #0b1d4a; color: #fff; font-size: 14px; font-weight: 800; border: none; }
+  .price-table tr.total td.num { color: #fbbf24; font-size: 15px; }
+  .price-table .concept { font-weight: 600; color: #0b1d4a; }
+  .price-table .detail { font-size: 10.5px; color: #6b7280; margin-top: 2px; }
+
+  .badge-once { display: inline-block; padding: 2px 8px; border-radius: 10px; background: #dcfce7; color: #166534; font-size: 9px; font-weight: 700; text-transform: uppercase; letter-spacing: .08em; }
+  .badge-monthly { display: inline-block; padding: 2px 8px; border-radius: 10px; background: #dbeafe; color: #1e3a8a; font-size: 9px; font-weight: 700; text-transform: uppercase; letter-spacing: .08em; }
+
+  .info-box { margin-top: 16px; padding: 12px 16px; background: #fef9c3; border-left: 4px solid #eab308; font-size: 11.5px; color: #713f12; border-radius: 4px; }
+  .info-box strong { color: #422006; }
+
+  /* Scope lists */
+  .scope-list { list-style: none; padding: 0; margin: 8px 0; }
+  .scope-list li { padding: 4px 0 4px 20px; position: relative; font-size: 11px; color: #1f2937; line-height: 1.5; }
+  .scope-list li::before { content: '▪'; position: absolute; left: 4px; color: #1e3a8a; font-weight: 900; }
+
+  .scope-block { page-break-inside: avoid; margin-bottom: 14px; padding: 10px 14px; background: #f8fafc; border-left: 3px solid #3b5fd4; border-radius: 3px; }
+  .scope-block .s-title { font-size: 12.5px; font-weight: 700; color: #0b1d4a; margin-bottom: 4px; }
+
+  .footer-page { position: absolute; bottom: 10mm; left: 20mm; right: 20mm; display: flex; justify-content: space-between; font-size: 9px; color: #9ca3af; border-top: 1px solid #e5e7eb; padding-top: 6px; }
+
+  .sig-row { margin-top: 30mm; display: grid; grid-template-columns: 1fr 1fr; gap: 30mm; }
+  .sig-box { text-align: center; }
+  .sig-line { border-top: 1px solid #0b1d4a; padding-top: 6px; font-size: 11px; color: #0b1d4a; font-weight: 600; }
+  .sig-role { font-size: 10px; color: #6b7280; margin-top: 2px; }
+
+  .highlight { background: linear-gradient(90deg, #fef9c3 60%, transparent); padding: 2px 4px; font-weight: 600; }
+</style>
+</head>
+<body>
+
+<!-- PORTADA -->
+<div class="page cover">
+  <div class="cover-inner">
+    <div class="cover-top">
+      <div class="brand-line">Propuesta Profesional · Confidencial</div>
+      <div class="rule"></div>
+      <h1>Propuesta Comercial<br/>para Constructora Borinquen</h1>
+      <h2>Sistema Integral de Gestión de Inventario</h2>
+      <div class="system">Solución de Trazabilidad, Control y Productividad de Almacén</div>
+
+      <div class="cover-confidential">
+        <strong>CONFIDENCIAL</strong> — Este documento ha sido elaborado con carácter reservado y es exclusivamente para uso directivo de Constructora Borinquen. Su reproducción, distribución o divulgación total o parcial a terceros sin autorización expresa queda prohibida.
+      </div>
+    </div>
+
+    <div>
+      <div class="cover-meta">
+        <div class="field">
+          <label>Fecha de Emisión</label>
+          <value>23 de Abril de 2026</value>
+        </div>
+        <div class="field">
+          <label>Código de Propuesta</label>
+          <value class="code">20260423-002</value>
+        </div>
+        <div class="field">
+          <label>Elaborada por</label>
+          <value>Ing. José E. Palomares Tafur</value>
+        </div>
+        <div class="field">
+          <label>Dirigida a</label>
+          <value>Constructora Borinquen · Dirección General</value>
+        </div>
+      </div>
+      <div class="cover-footer">— Documento de uso directivo ·  Borinquen 2026 —</div>
+    </div>
+  </div>
+</div>
+
+<!-- PAGINA 2: INTRODUCCIÓN -->
+<div class="page">
+  <div class="header-bar">
+    <div class="title">Propuesta Comercial · Sistema Gestión de Inventario</div>
+    <div class="meta">20260423-002 · 23 Abr 2026</div>
+  </div>
+
+  <h2 class="section">1. Presentación</h2>
+  <p class="intro">Resumen ejecutivo de la solución ofrecida y el alcance del servicio.</p>
+  <p>Constructora Borinquen requiere una herramienta capaz de gestionar con rigor el movimiento de materiales a lo largo de cada obra, manteniendo la trazabilidad de las compras, las recepciones, los consumos y los inventarios por bodega. El <strong>Sistema de Gestión de Inventario</strong> propuesto es una plataforma web moderna, multiusuario y desplegada en la nube, construida con tecnología empresarial vigente.</p>
+  <p>La solución opera desde cualquier navegador, no exige instalación en los equipos del usuario, y se actualiza de forma centralizada con respaldo automatizado diario. Integra los módulos de <strong>Productos, Bodegas, Órdenes de Compra, Recepción de Facturas, Salidas de Almacén, Transferencias, Ajustes de Inventario, Toma Física, Pedidos, Kardex, Centros de Costo, Usuarios, Reportes</strong> y un <strong>Asistente Inteligente</strong>, todos articulados bajo un modelo de permisos granular por rol y módulo.</p>
+
+  <h3 class="subsection">Diferenciador clave — Arquitectura Multi-Tipo de Inventario</h3>
+  <p>Una sola instancia del sistema administra <strong>varios tipos de inventario en paralelo</strong> sin duplicar módulos ni infraestructura. La empresa puede operar simultáneamente con <span class="highlight">Materia Prima, Materiales y Suministros, Producto Terminado, Producto Semi Elaborado y Servicios</span>, y el sistema aplica reglas estrictas de separación entre ellos:</p>
+  <ul class="scope-list">
+    <li>Cada <strong>Bodega</strong> declara qué tipo de inventario maneja, evitando mezclas físicas y contables.</li>
+    <li>Al inicio de la sesión, el usuario selecciona el <strong>Tipo de Inventario activo</strong>; todos los módulos, KPIs y reportes se filtran automáticamente.</li>
+    <li>Las <strong>Transferencias entre bodegas</strong> se validan: solo se permiten entre bodegas del mismo tipo.</li>
+    <li>Los <strong>códigos de producto</strong> se generan con prefijos automáticos por tipo (PROD, MAP, PTER, PSEL, SERV) para identificación inmediata.</li>
+    <li>El <strong>Dashboard Gerencial</strong> es adaptativo: refleja únicamente los indicadores del tipo activo seleccionado.</li>
+  </ul>
+
+  <h3 class="subsection">Beneficios directos para Constructora Borinquen</h3>
+  <ul class="scope-list">
+    <li><strong>Control total de existencias</strong> en tiempo real, por bodega, por producto y por tipo de inventario.</li>
+    <li><strong>Trazabilidad completa</strong> de cada movimiento (entradas, salidas, ajustes, transferencias) con auditoría de usuario y fecha.</li>
+    <li><strong>Costeo por obra</strong> con imputación a centros de costo definidos por proyecto.</li>
+    <li><strong>Órdenes de Compra automatizadas</strong>, emitidas en PDF corporativo y enviadas al proveedor por correo electrónico.</li>
+    <li><strong>Recepción de Facturas</strong> ligada a la OC, con actualización automática de existencias y costo promedio.</li>
+    <li><strong>Reducción de mermas y faltantes</strong> mediante kardex valorizado, auditoría y conteo físico programado.</li>
+    <li><strong>Separación contable y operativa</strong> entre tipos de inventario, sin riesgo de mezclar materiales de obra con suministros administrativos.</li>
+    <li><strong>Reportes gerenciales</strong> exportables a Excel y PDF, con vistas filtradas por tipo de inventario y por periodo.</li>
+    <li><strong>Seguridad por rol</strong> con matriz de permisos: Leer, Registrar, Editar y Eliminar por módulo.</li>
+  </ul>
+
+  <h3 class="subsection">Arquitectura tecnológica</h3>
+  <p>Plataforma construida sobre <strong>Next.js 16 + React 19 + TypeScript</strong>, persistencia en <strong>PostgreSQL gestionado</strong>, despliegue serverless en <strong>Vercel Pro</strong>, almacenamiento de blobs para datos operativos, y respaldo diario automático. Todo el tráfico es <strong>HTTPS cifrado</strong>, con autenticación segura y validación de permisos por rol en frontend y backend.</p>
+
+  <div class="footer-page"><span>Propuesta Comercial · Constructora Borinquen</span><span>Página 2</span></div>
+</div>
+
+<!-- PAGINA 3: MÓDULOS -->
+<div class="page">
+  <div class="header-bar">
+    <div class="title">Propuesta Comercial · Sistema Gestión de Inventario</div>
+    <div class="meta">20260423-002 · 23 Abr 2026</div>
+  </div>
+
+  <h2 class="section">2. Módulos del Sistema</h2>
+  <p class="intro">Descripción funcional de cada módulo incluido en la Licencia Estructural.</p>
+
+  <div class="module-grid">
+    <div class="module-card">
+      <div class="m-title">Dashboard Gerencial</div>
+      <div class="m-desc">Panel adaptativo según el Tipo de Inventario activo. KPIs de existencias, valor inventario, órdenes pendientes, productos bajo mínimo, gráficos por estado y por bodega.</div>
+    </div>
+    <div class="module-card">
+      <div class="m-title">Productos</div>
+      <div class="m-desc">Catálogo maestro multi-tipo con generación automática de código por prefijo (PROD, MAP, PTER, PSEL, SERV). Categoría, costo promedio, precio de venta, existencias, mínimos y máximos.</div>
+    </div>
+    <div class="module-card">
+      <div class="m-title">Bodegas</div>
+      <div class="m-desc">Gestión de múltiples bodegas con tipo de inventario asignado. Validación cruzada en transferencias para impedir mezcla entre tipos.</div>
+    </div>
+    <div class="module-card">
+      <div class="m-title">Proveedores</div>
+      <div class="m-desc">Ficha completa del proveedor: identificación, contacto, actividad, referencias bancarias/comerciales, estado.</div>
+    </div>
+    <div class="module-card">
+      <div class="m-title">Centros de Costo</div>
+      <div class="m-desc">Codificación por obra o proyecto para imputación precisa del consumo de materiales.</div>
+    </div>
+    <div class="module-card">
+      <div class="m-title">Carga Inicial de Inventario</div>
+      <div class="m-desc">Carga masiva del stock inicial por bodega al inicio del sistema o apertura de periodo.</div>
+    </div>
+    <div class="module-card">
+      <div class="m-title">Órdenes de Compra</div>
+      <div class="m-desc">Emisión, aprobación, impresión PDF y envío por correo al proveedor. Tipo de inventario heredado de la sesión, productos filtrados por prefijo, bodega de llegada validada por tipo. Cálculo automático de impuestos.</div>
+    </div>
+    <div class="module-card">
+      <div class="m-title">Recepción de Facturas</div>
+      <div class="m-desc">Registro de la factura asociada a la orden de compra; actualización automática de existencias y costos.</div>
+    </div>
+    <div class="module-card">
+      <div class="m-title">Salidas de Almacén</div>
+      <div class="m-desc">Despacho de materiales imputado a centro de costo, persona que emite y bodega de salida.</div>
+    </div>
+    <div class="module-card">
+      <div class="m-title">Ajustes de Inventario</div>
+      <div class="m-desc">Ajustes positivos o negativos por daño, reconteo, sobrantes o faltantes, con tipo y autorización.</div>
+    </div>
+    <div class="module-card">
+      <div class="m-title">Toma de Inventario Físico</div>
+      <div class="m-desc">Conteo físico por bodega con comparación automática contra el sistema y generación de ajustes.</div>
+    </div>
+    <div class="module-card">
+      <div class="m-title">Transferencias entre Bodegas</div>
+      <div class="m-desc">Movimiento de productos entre bodegas del mismo tipo de inventario, con trazabilidad completa origen-destino y validación automática de compatibilidad.</div>
+    </div>
+    <div class="module-card">
+      <div class="m-title">Pedidos</div>
+      <div class="m-desc">Gestión de pedidos internos (solicitudes de obra) antes de generar la salida o la compra.</div>
+    </div>
+    <div class="module-card">
+      <div class="m-title">Kardex</div>
+      <div class="m-desc">Movimiento histórico detallado de cada producto: entradas, salidas, ajustes, saldos y costos promedio.</div>
+    </div>
+    <div class="module-card">
+      <div class="m-title">Personal de Empresa</div>
+      <div class="m-desc">Directorio del personal autorizado para firmar, aprobar y emitir documentos.</div>
+    </div>
+    <div class="module-card">
+      <div class="m-title">Datos de la Empresa</div>
+      <div class="m-desc">Información corporativa, identificación fiscal, dirección y logotipo para todos los documentos.</div>
+    </div>
+    <div class="module-card">
+      <div class="m-title">Gestión de Usuarios y Roles</div>
+      <div class="m-desc">Altas, bajas y edición de usuarios. Matriz de permisos por módulo: Leer, Registrar, Editar, Eliminar.</div>
+    </div>
+    <div class="module-card">
+      <div class="m-title">Tablas de Referencia</div>
+      <div class="m-desc">Catálogos mantenibles por el cliente: Unidades, Monedas, Impuestos, Países, Ciudades, Roles, Situaciones, etc.</div>
+    </div>
+    <div class="module-card">
+      <div class="m-title">Correos Enviados</div>
+      <div class="m-desc">Bitácora de correos emitidos desde el sistema (órdenes, cotizaciones, notificaciones).</div>
+    </div>
+    <div class="module-card">
+      <div class="m-title">Asistente Inteligente</div>
+      <div class="m-desc">Asistente conversacional para consultar el sistema en lenguaje natural (opcional).</div>
+    </div>
+    <div class="module-card">
+      <div class="m-title">Tareas y Recordatorios</div>
+      <div class="m-desc">Seguimiento de pendientes y tareas asignadas por usuario.</div>
+    </div>
+    <div class="module-card">
+      <div class="m-title">Administración de Módulos</div>
+      <div class="m-desc">Activación, desactivación y visibilidad de módulos por perfil de empresa.</div>
+    </div>
+  </div>
+
+  <div class="footer-page"><span>Propuesta Comercial · Constructora Borinquen</span><span>Página 3</span></div>
+</div>
+
+<!-- PAGINA 4: INVERSIÓN -->
+<div class="page">
+  <div class="header-bar">
+    <div class="title">Propuesta Comercial · Sistema Gestión de Inventario</div>
+    <div class="meta">20260423-002 · 23 Abr 2026</div>
+  </div>
+
+  <h2 class="section">3. Inversión</h2>
+  <p class="intro">Desglose económico del servicio propuesto. Valores expresados en pesos colombianos (COP).</p>
+
+  <table class="price-table">
+    <thead>
+      <tr>
+        <th style="width:55%">Concepto</th>
+        <th style="width:20%">Modalidad</th>
+        <th class="num" style="width:25%">Valor (COP)</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td>
+          <div class="concept">Sistema de Gestión de Inventario — Licencia Estructural</div>
+          <div class="detail">Derecho de uso de la plataforma completa con <strong>arquitectura multi-tipo de inventario</strong>: Materia Prima, Materiales y Suministros, Producto Terminado, Producto Semi Elaborado y Servicios, todos administrados desde una sola instancia con todos los módulos descritos.</div>
+        </td>
+        <td><span class="badge-once">Pago Único</span></td>
+        <td class="num">$ 2.950.000</td>
+      </tr>
+      <tr>
+        <td>
+          <div class="concept">Configuración, Implementación y Capacitación</div>
+          <div class="detail">Parametrización completa del sistema, definición de los <strong>tipos de inventario operativos</strong>, asignación de bodegas por tipo, carga maestra de productos, proveedores, centros de costo y tablas referenciales, integración con datos de empresa, configuración de roles y permisos, y soporte de arranque. <strong>Incluye 12 horas de capacitación</strong> al equipo usuario.</div>
+        </td>
+        <td><span class="badge-once">Pago Único</span></td>
+        <td class="num">$ 1.800.000</td>
+      </tr>
+      <tr>
+        <td>
+          <div class="concept">Uso Mensual · Hosting, Dominio, Soporte y Backup</div>
+          <div class="detail">Infraestructura cloud profesional Vercel Pro con disponibilidad 99,99%, dominio dedicado y certificado SSL, soporte técnico en horario laboral, monitoreo continuo de servicios, respaldo automático diario con retención de 30 días y mantenimiento evolutivo de la plataforma.</div>
+        </td>
+        <td><span class="badge-monthly">Mensual</span></td>
+        <td class="num">$ 690.000</td>
+      </tr>
+      <tr class="total">
+        <td colspan="2">Inversión Inicial (pago único al iniciar)</td>
+        <td class="num">$ 4.750.000</td>
+      </tr>
+      <tr class="total" style="background:#1e3a8a">
+        <td colspan="2">Cuota Mensual Recurrente</td>
+        <td class="num">$ 690.000</td>
+      </tr>
+    </tbody>
+  </table>
+
+  <h3 class="subsection" style="margin-top:22px">Condiciones de Pago</h3>
+  <table class="price-table" style="margin-top:6px">
+    <thead>
+      <tr>
+        <th style="width:45%">Concepto</th>
+        <th class="num" style="width:27.5%">Primer Pago</th>
+        <th class="num" style="width:27.5%">Segundo Pago</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td>
+          <div class="concept">Sistema Gestión de Inventario</div>
+          <div class="detail">Licencia Estructural</div>
+        </td>
+        <td class="num">50% al inicio</td>
+        <td class="num">50% a la entrega</td>
+      </tr>
+      <tr>
+        <td>
+          <div class="concept">Configuración, Implementación y Capacitación</div>
+          <div class="detail">Parametrización, carga maestra y 12 horas de entrenamiento</div>
+        </td>
+        <td class="num">50% al inicio</td>
+        <td class="num">50% funcionando</td>
+      </tr>
+      <tr>
+        <td>
+          <div class="concept">Mensualidad · Hosting, Dominio, Soporte y Backup</div>
+          <div class="detail">Servicio en línea permanente</div>
+        </td>
+        <td class="num" colspan="2">Pago dentro de los primeros 5 días de cada mes</td>
+      </tr>
+    </tbody>
+  </table>
+
+  <div class="info-box">
+    <strong>Notas:</strong> Todos los valores están expresados en pesos colombianos (COP) y pueden ajustarse anualmente según IPC. La propuesta tiene una vigencia de 30 días calendario a partir de su fecha de emisión.
+  </div>
+
+  <h3 class="subsection">Qué incluye la cuota mensual</h3>
+  <ul class="scope-list">
+    <li>Hospedaje en infraestructura profesional con alta disponibilidad (99.9%).</li>
+    <li>Dominio y certificado SSL dedicados para la empresa.</li>
+    <li>Backup automático diario con retención de 30 días.</li>
+    <li>Soporte técnico remoto en horario laboral por correo y chat.</li>
+    <li>Actualizaciones menores y correctivas de la plataforma.</li>
+    <li>Monitoreo de disponibilidad y rendimiento del servicio.</li>
+  </ul>
+
+  <h3 class="subsection">Lo que no está incluido</h3>
+  <ul class="scope-list">
+    <li>Desarrollo de módulos nuevos fuera del alcance (se cotizan aparte).</li>
+    <li>Integraciones con sistemas contables externos (cotización específica).</li>
+    <li>Soporte presencial en sitio (disponible bajo solicitud).</li>
+  </ul>
+
+  <div class="footer-page"><span>Propuesta Comercial · Constructora Borinquen</span><span>Página 4</span></div>
+</div>
+
+<!-- PAGINA 5: ALCANCES POR MÓDULO - PARTE 1 -->
+<div class="page">
+  <div class="header-bar">
+    <div class="title">Propuesta Comercial · Sistema Gestión de Inventario</div>
+    <div class="meta">20260423-002 · 23 Abr 2026</div>
+  </div>
+
+  <h2 class="section">4. Reportes y Alcances por Módulo</h2>
+  <p class="intro">Cada módulo incluye sus reportes operativos exportables a PDF y Excel, con filtros avanzados.</p>
+
+  <div class="scope-block">
+    <div class="s-title">Productos</div>
+    <ul class="scope-list">
+      <li>Listado maestro filtrable por categoría, grupo, subgrupo y situación.</li>
+      <li>Reporte de existencias valorizadas por bodega.</li>
+      <li>Exportación a Excel y PDF; búsqueda por código y descripción.</li>
+      <li>Historial de costos y movimientos por producto.</li>
+    </ul>
+  </div>
+
+  <div class="scope-block">
+    <div class="s-title">Bodegas y Transferencias</div>
+    <ul class="scope-list">
+      <li>Listado de bodegas con situación operativa.</li>
+      <li>Reporte de transferencias entre bodegas por periodo.</li>
+      <li>Stock consolidado y desglosado por bodega.</li>
+    </ul>
+  </div>
+
+  <div class="scope-block">
+    <div class="s-title">Proveedores</div>
+    <ul class="scope-list">
+      <li>Listado de proveedores con contacto y situación.</li>
+      <li>Histórico de compras por proveedor.</li>
+      <li>Saldo por proveedor y antigüedad de órdenes abiertas.</li>
+    </ul>
+  </div>
+
+  <div class="scope-block">
+    <div class="s-title">Órdenes de Compra</div>
+    <ul class="scope-list">
+      <li>Reporte por estado: Pendiente, Aprobada, Recibida, Anulada.</li>
+      <li>Filtros por proveedor, fecha, comprador, centro de costo.</li>
+      <li>PDF corporativo con logo, datos de empresa y proveedor.</li>
+      <li>Envío directo al proveedor por correo electrónico con PDF adjunto.</li>
+      <li>Consolidado mensual de compras y comparativo por período.</li>
+    </ul>
+  </div>
+
+  <div class="scope-block">
+    <div class="s-title">Recepción de Facturas</div>
+    <ul class="scope-list">
+      <li>Registro de factura asociada a la orden de compra.</li>
+      <li>Actualización automática de existencias y costos promedio.</li>
+      <li>Reporte de recepciones por periodo y proveedor.</li>
+      <li>Control de facturas pendientes de pago.</li>
+    </ul>
+  </div>
+
+  <div class="scope-block">
+    <div class="s-title">Salidas de Almacén</div>
+    <ul class="scope-list">
+      <li>Reporte de salidas por bodega, centro de costo y período.</li>
+      <li>Validación automática contra existencia disponible.</li>
+      <li>PDF corporativo con firmas de despacho, aprobación y recepción.</li>
+      <li>Consolidado de consumo por obra (centro de costo).</li>
+    </ul>
+  </div>
+
+  <div class="scope-block">
+    <div class="s-title">Ajustes de Inventario</div>
+    <ul class="scope-list">
+      <li>Reporte por tipo de ajuste (entrada/salida) y motivo.</li>
+      <li>Registro de autorización y trazabilidad completa.</li>
+      <li>Auditoría de cambios por usuario y fecha.</li>
+    </ul>
+  </div>
+
+  <div class="footer-page"><span>Propuesta Comercial · Constructora Borinquen</span><span>Página 5</span></div>
+</div>
+
+<!-- PAGINA 6: ALCANCES POR MÓDULO - PARTE 2 + FIRMA -->
+<div class="page">
+  <div class="header-bar">
+    <div class="title">Propuesta Comercial · Sistema Gestión de Inventario</div>
+    <div class="meta">20260423-002 · 23 Abr 2026</div>
+  </div>
+
+  <div class="scope-block">
+    <div class="s-title">Toma de Inventario Físico</div>
+    <ul class="scope-list">
+      <li>Planilla de conteo por bodega.</li>
+      <li>Comparativo automático entre físico vs. sistema.</li>
+      <li>Generación automática de ajustes por diferencias.</li>
+      <li>Reporte de precisión de inventario por periodo.</li>
+    </ul>
+  </div>
+
+  <div class="scope-block">
+    <div class="s-title">Kardex</div>
+    <ul class="scope-list">
+      <li>Movimiento detallado por producto: entradas, salidas, ajustes, transferencias.</li>
+      <li>Saldos y costo promedio ponderado por movimiento.</li>
+      <li>Filtros por fecha, bodega y producto.</li>
+      <li>Exportación completa a Excel y PDF.</li>
+    </ul>
+  </div>
+
+  <div class="scope-block">
+    <div class="s-title">Usuarios y Seguridad</div>
+    <ul class="scope-list">
+      <li>Altas, bajas, cambios de contraseña y bloqueo de usuarios.</li>
+      <li>Matriz de permisos por rol y módulo (Leer / Registrar / Editar / Eliminar).</li>
+      <li>Reporte de accesos y actividad del usuario.</li>
+      <li>Protección de rutas y validación a nivel de base de datos (RLS).</li>
+    </ul>
+  </div>
+
+  <div class="scope-block">
+    <div class="s-title">Reportes Gerenciales Transversales</div>
+    <ul class="scope-list">
+      <li>Consumo por centro de costo (obra) con totales mensuales y acumulados.</li>
+      <li>Rotación de inventario por producto y por bodega.</li>
+      <li>Compras por proveedor y por periodo.</li>
+      <li>Alertas de stock mínimo y productos sin movimiento.</li>
+      <li>Exportación universal a Excel y PDF con filtros avanzados.</li>
+    </ul>
+  </div>
+
+  <div class="footer-page"><span>Propuesta Comercial · Constructora Borinquen</span><span>Página 6</span></div>
+</div>
+
+<!-- PAGINA 7: CIERRE Y ACEPTACIÓN -->
+<div class="page">
+  <div class="header-bar">
+    <div class="title">Propuesta Comercial · Sistema Gestión de Inventario</div>
+    <div class="meta">20260423-002 · 23 Abr 2026</div>
+  </div>
+
+  <h2 class="section">5. Cierre y Aceptación</h2>
+  <p class="intro">Confirmación formal de la propuesta.</p>
+  <p>Agradecemos la oportunidad de presentar esta propuesta a <strong>Constructora Borinquen</strong>. Estamos convencidos de que esta solución permitirá elevar significativamente el control operativo de materiales, reducir mermas y aportar visibilidad gerencial inmediata sobre el consumo por obra. Quedamos atentos a cualquier aclaración y a coordinar la reunión de arranque a la mayor brevedad.</p>
+
+  <p style="margin-top:14px">La firma del representante legal de Constructora Borinquen en el espacio correspondiente constituye la aceptación formal de la presente propuesta, sus alcances, condiciones económicas y condiciones de pago, y autoriza el inicio del proceso de implementación según el cronograma que se defina en la reunión de arranque.</p>
+
+  <div class="sig-row" style="margin-top:45mm">
+    <div class="sig-box">
+      <div class="sig-line">Ing. José E. Palomares Tafur</div>
+      <div class="sig-role">Elaboró — Propuesta Comercial</div>
+    </div>
+    <div class="sig-box">
+      <div class="sig-line">Constructora Borinquen</div>
+      <div class="sig-role">Aceptación — Representante Legal / Dirección</div>
+    </div>
+  </div>
+
+  <div class="footer-page"><span>Propuesta Comercial · Constructora Borinquen</span><span>Página 7 · Fin del documento</span></div>
+</div>
+
+</body>
+</html>

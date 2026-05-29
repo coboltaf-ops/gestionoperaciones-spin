@@ -1,0 +1,180 @@
+- generic [active] [ref=e1]:
+  - alert [ref=e19]
+  - generic [ref=e20]:
+    - complementary [ref=e21]:
+      - generic [ref=e22]:
+        - generic [ref=e23]: GC
+        - generic [ref=e24]:
+          - generic [ref=e25]: Gestión Contable
+          - generic [ref=e26]: SisTech
+      - navigation [ref=e27]:
+        - link "📊 Dashboard" [ref=e28] [cursor=pointer]:
+          - /url: /dashboard
+          - generic [ref=e29]: 📊
+          - generic [ref=e30]: Dashboard
+        - link "📒 Catálogo de Cuentas" [ref=e31] [cursor=pointer]:
+          - /url: /catalogo-cuentas
+          - generic [ref=e32]: 📒
+          - generic [ref=e33]: Catálogo de Cuentas
+        - link "📝 Comprobantes" [ref=e34] [cursor=pointer]:
+          - /url: /comprobantes
+          - generic [ref=e35]: 📝
+          - generic [ref=e36]: Comprobantes
+        - link "⚖️ Balance de Comprobación" [ref=e37] [cursor=pointer]:
+          - /url: /balance-comprobacion
+          - generic [ref=e38]: ⚖️
+          - generic [ref=e39]: Balance de Comprobación
+        - link "📈 Estado de Resultados" [ref=e40] [cursor=pointer]:
+          - /url: /estado-resultados
+          - generic [ref=e41]: 📈
+          - generic [ref=e42]: Estado de Resultados
+        - link "📖 Libro Mayor" [ref=e43] [cursor=pointer]:
+          - /url: /libro-mayor
+          - generic [ref=e44]: 📖
+          - generic [ref=e45]: Libro Mayor
+        - link "📅 Libro Diario" [ref=e46] [cursor=pointer]:
+          - /url: /libro-diario
+          - generic [ref=e47]: 📅
+          - generic [ref=e48]: Libro Diario
+      - generic [ref=e49]:
+        - button "← Colapsar" [ref=e50] [cursor=pointer]
+        - generic [ref=e51]:
+          - generic [ref=e52]:
+            - generic [ref=e53]: Administrador
+            - generic [ref=e54]: Admin
+          - button "Salir" [ref=e55] [cursor=pointer]
+    - main [ref=e56]:
+      - generic [ref=e57]:
+        - heading "Dashboard Contable" [level=1] [ref=e58]
+        - generic [ref=e59]:
+          - generic [ref=e60]:
+            - generic [ref=e62]: 💰
+            - paragraph [ref=e64]: $ 0
+            - paragraph [ref=e65]: Total Activos
+          - generic [ref=e66]:
+            - generic [ref=e68]: 📋
+            - paragraph [ref=e70]: $ 0
+            - paragraph [ref=e71]: Total Pasivos
+          - generic [ref=e72]:
+            - generic [ref=e74]: 🏛️
+            - paragraph [ref=e76]: $ 0
+            - paragraph [ref=e77]: Patrimonio
+          - generic [ref=e78]:
+            - generic [ref=e80]: 📈
+            - paragraph [ref=e82]: $ 0
+            - paragraph [ref=e83]: Utilidad / Pérdida
+        - generic [ref=e84]:
+          - generic [ref=e85]:
+            - text: 📒
+            - paragraph [ref=e86]: "41"
+            - paragraph [ref=e87]: Cuentas Total
+          - generic [ref=e88]:
+            - text: 📄
+            - paragraph [ref=e89]: "25"
+            - paragraph [ref=e90]: Cuentas Detalle
+          - generic [ref=e91]:
+            - text: 📝
+            - paragraph [ref=e92]: "0"
+            - paragraph [ref=e93]: Comprobantes
+          - generic [ref=e94]:
+            - text: ✅
+            - paragraph [ref=e95]: "0"
+            - paragraph [ref=e96]: Contabilizados
+          - generic [ref=e97]:
+            - text: 📋
+            - paragraph [ref=e98]: "0"
+            - paragraph [ref=e99]: Borradores
+          - generic [ref=e100]:
+            - text: ⬆️
+            - paragraph [ref=e101]: $ 0
+            - paragraph [ref=e102]: Total Débitos
+          - generic [ref=e103]:
+            - text: ⬇️
+            - paragraph [ref=e104]: $ 0
+            - paragraph [ref=e105]: Total Créditos
+          - generic [ref=e106]:
+            - text: 💵
+            - paragraph [ref=e107]: $ 0
+            - paragraph [ref=e108]: Ingresos
+        - generic [ref=e109]:
+          - link "Comprobantes por Tipo Ir al módulo → Cantidad y monto total por tipo de comprobante 📝 Sin comprobantes contabilizados aún" [ref=e110] [cursor=pointer]:
+            - /url: /comprobantes
+            - generic [ref=e111]:
+              - heading "Comprobantes por Tipo" [level=2] [ref=e112]
+              - generic [ref=e113]: Ir al módulo →
+            - paragraph [ref=e114]: Cantidad y monto total por tipo de comprobante
+            - generic [ref=e115]:
+              - generic [ref=e116]: 📝
+              - paragraph [ref=e117]: Sin comprobantes contabilizados aún
+          - link "Cuentas por Tipo Ir al módulo → Distribución del catálogo de cuentas por tipo Activo 11 27% Pasivo 8 20% Patrimonio 5 12% Ingreso 6 15% Costo 3 7% Gasto 8 20%" [ref=e118] [cursor=pointer]:
+            - /url: /catalogo-cuentas
+            - generic [ref=e119]:
+              - heading "Cuentas por Tipo" [level=2] [ref=e120]
+              - generic [ref=e121]: Ir al módulo →
+            - paragraph [ref=e122]: Distribución del catálogo de cuentas por tipo
+            - generic [ref=e123]:
+              - img [ref=e124]:
+                - generic [ref=e131]: 27%
+                - generic [ref=e132]: 20%
+                - generic [ref=e133]: 12%
+                - generic [ref=e134]: 15%
+                - generic [ref=e135]: 7%
+                - generic [ref=e136]: 20%
+              - generic [ref=e137]:
+                - generic [ref=e138]:
+                  - generic [ref=e140]: Activo
+                  - generic [ref=e141]: "11"
+                  - generic [ref=e142]: 27%
+                - generic [ref=e143]:
+                  - generic [ref=e145]: Pasivo
+                  - generic [ref=e146]: "8"
+                  - generic [ref=e147]: 20%
+                - generic [ref=e148]:
+                  - generic [ref=e150]: Patrimonio
+                  - generic [ref=e151]: "5"
+                  - generic [ref=e152]: 12%
+                - generic [ref=e153]:
+                  - generic [ref=e155]: Ingreso
+                  - generic [ref=e156]: "6"
+                  - generic [ref=e157]: 15%
+                - generic [ref=e158]:
+                  - generic [ref=e160]: Costo
+                  - generic [ref=e161]: "3"
+                  - generic [ref=e162]: 7%
+                - generic [ref=e163]:
+                  - generic [ref=e165]: Gasto
+                  - generic [ref=e166]: "8"
+                  - generic [ref=e167]: 20%
+        - generic [ref=e168]:
+          - heading "Resumen de Saldos por Tipo de Cuenta" [level=2] [ref=e169]
+          - generic [ref=e170]:
+            - generic [ref=e171]:
+              - generic [ref=e172]: 💰
+              - generic [ref=e173]: $ 0
+              - generic [ref=e174]: Activo
+            - generic [ref=e175]:
+              - generic [ref=e176]: 📋
+              - generic [ref=e177]: $ 0
+              - generic [ref=e178]: Pasivo
+            - generic [ref=e179]:
+              - generic [ref=e180]: 🏛️
+              - generic [ref=e181]: $ 0
+              - generic [ref=e182]: Patrimonio
+            - generic [ref=e183]:
+              - generic [ref=e184]: 📈
+              - generic [ref=e185]: $ 0
+              - generic [ref=e186]: Ingreso
+            - generic [ref=e187]:
+              - generic [ref=e188]: 📊
+              - generic [ref=e189]: $ 0
+              - generic [ref=e190]: Costo
+            - generic [ref=e191]:
+              - generic [ref=e192]: 💸
+              - generic [ref=e193]: $ 0
+              - generic [ref=e194]: Gasto
+        - generic [ref=e195]:
+          - generic [ref=e196]:
+            - heading "Últimos Comprobantes" [level=2] [ref=e197]
+            - link "Ver todos →" [ref=e198] [cursor=pointer]:
+              - /url: /comprobantes
+          - paragraph [ref=e199]: No hay comprobantes registrados

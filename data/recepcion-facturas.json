@@ -1,0 +1,114 @@
+[
+  {
+    "id": "084372c2-5921-48df-92d0-390697c856e9",
+    "nro_recepcion": 1,
+    "consecutivo": "RF-00001",
+    "nro_factura": "FAC-OC-00001",
+    "fecha_emision": "2026-04-08",
+    "fecha_recibida": "2026-04-08",
+    "orden_compra_id": "",
+    "orden_compra_consecutivo": "OC-00001",
+    "proveedor": "Solintos S.A.S.",
+    "bodega_llegada": "Bodega Prinpipal Laureles",
+    "comprador": "",
+    "persona_recibe": "Karina Cardona",
+    "fecha_aprobacion": "2026-04-08",
+    "renglones": [
+      {
+        "detalle_id": "",
+        "codigo_producto": "PROD-00001",
+        "descripcion": "Gafas de Seguridad",
+        "unidad_medida": "Unidad",
+        "cantidad_pedida": 12,
+        "costo_unitario": 29100,
+        "ya_recibido": 0,
+        "cantidad_a_recibir": 12,
+        "completo": true
+      },
+      {
+        "detalle_id": "",
+        "codigo_producto": "PROD-00002",
+        "descripcion": "Botas Seguridad",
+        "unidad_medida": "Par",
+        "cantidad_pedida": 112,
+        "costo_unitario": 95000,
+        "ya_recibido": 0,
+        "cantidad_a_recibir": 112,
+        "completo": true
+      }
+    ],
+    "observaciones": "Procesamiento simulado",
+    "estado": "Aprobada y Recibida"
+  },
+  {
+    "id": "88f2ce5a-752e-4af7-a092-fcf14e945122",
+    "nro_recepcion": 2,
+    "consecutivo": "RF-00002",
+    "nro_factura": "FAC-OC-00002",
+    "fecha_emision": "2026-04-08",
+    "fecha_recibida": "2026-04-08",
+    "orden_compra_id": "",
+    "orden_compra_consecutivo": "OC-00002",
+    "proveedor": "Cementos Argos",
+    "bodega_llegada": "Bodega Prinpipal Laureles",
+    "comprador": "",
+    "persona_recibe": "Karina Cardona",
+    "fecha_aprobacion": "2026-04-08",
+    "renglones": [
+      {
+        "detalle_id": "",
+        "codigo_producto": "PROD-00007",
+        "descripcion": "Cemento Portland 50 Kgs",
+        "unidad_medida": "Unidad",
+        "cantidad_pedida": 20,
+        "costo_unitario": 19800,
+        "ya_recibido": 0,
+        "cantidad_a_recibir": 20,
+        "completo": true
+      }
+    ],
+    "observaciones": "Procesamiento simulado",
+    "estado": "Aprobada y Recibida"
+  },
+  {
+    "id": "04c71fb9-6bf6-4246-9951-0ffd5d20a14c",
+    "nro_recepcion": 3,
+    "consecutivo": "RF-00003",
+    "nro_factura": "FAC-OC-00003",
+    "fecha_emision": "2026-04-08",
+    "fecha_recibida": "2026-04-08",
+    "orden_compra_id": "",
+    "orden_compra_consecutivo": "OC-00003",
+    "proveedor": "Papeleria la 80 Floresta",
+    "bodega_llegada": "Bodega Prinpipal Laureles",
+    "comprador": "",
+    "persona_recibe": "Karina Cardona",
+    "fecha_aprobacion": "2026-04-08",
+    "renglones": [
+      {
+        "detalle_id": "",
+        "codigo_producto": "PROD-00010",
+        "descripcion": "Boligrafo Azul",
+        "unidad_medida": "Unidad",
+        "cantidad_pedida": 10,
+        "costo_unitario": 1950,
+        "ya_recibido": 0,
+        "cantidad_a_recibir": 10,
+        "completo": true
+      },
+      {
+        "detalle_id": "",
+        "codigo_producto": "PROD-00009",
+        "descripcion": "Resma de papel 50 hojas blancas",
+        "unidad_medida": "Unidad",
+        "cantidad_pedida": 5,
+        "costo_unitario": 11200,
+        "ya_recibido": 0,
+        "cantidad_a_recibir": 5,
+        "completo": true
+      }
+    ],
+    "observaciones": "Procesamiento simulado",
+    "estado": "Aprobada y Recibida"
+  }
+]

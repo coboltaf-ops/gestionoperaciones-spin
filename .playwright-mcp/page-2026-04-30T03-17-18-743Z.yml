@@ -1,0 +1,154 @@
+- generic [ref=e1]:
+  - generic [ref=e3]:
+    - complementary [ref=e4]:
+      - generic [ref=e5]:
+        - img "Logo Empresa" [ref=e7]
+        - paragraph [ref=e8]: CONSTRUCTORA BORINQUEN S.A.S.
+      - navigation [ref=e9]:
+        - link "📊 Dashboard" [ref=e10] [cursor=pointer]:
+          - /url: /dashboard
+          - generic [ref=e11]: 📊
+          - generic [ref=e12]: Dashboard
+        - link "📦 Productos" [ref=e13] [cursor=pointer]:
+          - /url: /productos
+          - generic [ref=e14]: 📦
+          - generic [ref=e15]: Productos
+        - link "📒 Kardex de Productos" [ref=e16] [cursor=pointer]:
+          - /url: /kardex
+          - generic [ref=e17]: 📒
+          - generic [ref=e18]: Kardex de Productos
+        - link "🏢 Proveedores" [ref=e19] [cursor=pointer]:
+          - /url: /proveedores
+          - generic [ref=e20]: 🏢
+          - generic [ref=e21]: Proveedores
+        - link "🛒 Órdenes de Compra" [ref=e22] [cursor=pointer]:
+          - /url: /ordenes-compra
+          - generic [ref=e23]: 🛒
+          - generic [ref=e24]: Órdenes de Compra
+        - link "📄 Orden de Pedido" [ref=e25] [cursor=pointer]:
+          - /url: /pedidos
+          - generic [ref=e26]: 📄
+          - generic [ref=e27]: Orden de Pedido
+        - link "📋 Recepción de Facturas" [ref=e28] [cursor=pointer]:
+          - /url: /recepcion-facturas
+          - generic [ref=e29]: 📋
+          - generic [ref=e30]: Recepción de Facturas
+        - link "💳 Pagos Proveedores" [ref=e31] [cursor=pointer]:
+          - /url: /pagos-proveedores
+          - generic [ref=e32]: 💳
+          - generic [ref=e33]: Pagos Proveedores
+        - link "🏦 Control Bancario" [ref=e34] [cursor=pointer]:
+          - /url: /control-bancario
+          - generic [ref=e35]: 🏦
+          - generic [ref=e36]: Control Bancario
+        - link "🏭 Bodegas" [ref=e37] [cursor=pointer]:
+          - /url: /bodegas
+          - generic [ref=e38]: 🏭
+          - generic [ref=e39]: Bodegas
+        - link "🔄 Transferencias" [ref=e40] [cursor=pointer]:
+          - /url: /transferencias
+          - generic [ref=e41]: 🔄
+          - generic [ref=e42]: Transferencias
+        - link "📤 Salidas de Almacén" [ref=e43] [cursor=pointer]:
+          - /url: /salidas-almacen
+          - generic [ref=e44]: 📤
+          - generic [ref=e45]: Salidas de Almacén
+        - link "⚖️ Ajustes de Inventario" [ref=e46] [cursor=pointer]:
+          - /url: /ajustes-inventario
+          - generic [ref=e47]: ⚖️
+          - generic [ref=e48]: Ajustes de Inventario
+        - link "📋 Toma Inventario Físico" [ref=e49] [cursor=pointer]:
+          - /url: /toma-inventario-fisico
+          - generic [ref=e50]: 📋
+          - generic [ref=e51]: Toma Inventario Físico
+        - link "💰 Centros de Costo" [ref=e52] [cursor=pointer]:
+          - /url: /centros-costo
+          - generic [ref=e53]: 💰
+          - generic [ref=e54]: Centros de Costo
+        - link "📧 Correos Enviados" [ref=e55] [cursor=pointer]:
+          - /url: /correos-enviados
+          - generic [ref=e56]: 📧
+          - generic [ref=e57]: Correos Enviados
+        - link "📝 Tareas" [ref=e58] [cursor=pointer]:
+          - /url: /tareas
+          - generic [ref=e59]: 📝
+          - generic [ref=e60]: Tareas
+        - link "👥 Personal Empresa" [ref=e61] [cursor=pointer]:
+          - /url: /personal-empresa
+          - generic [ref=e62]: 👥
+          - generic [ref=e63]: Personal Empresa
+        - link "⚙️ Tablas de Referencias" [ref=e64] [cursor=pointer]:
+          - /url: /referencias
+          - generic [ref=e65]: ⚙️
+          - generic [ref=e66]: Tablas de Referencias
+        - link "🤖 Agente" [ref=e67] [cursor=pointer]:
+          - /url: /asistente
+          - generic [ref=e68]: 🤖
+          - generic [ref=e69]: Agente
+        - generic [ref=e70]:
+          - button "⚙️ Configuración ▼" [ref=e71] [cursor=pointer]:
+            - generic [ref=e72]: ⚙️
+            - generic [ref=e73]: Configuración
+            - generic [ref=e74]: ▼
+          - generic [ref=e75]:
+            - link "🏛️ Datos Empresa" [ref=e76] [cursor=pointer]:
+              - /url: /datos-empresa
+              - generic [ref=e77]: 🏛️
+              - generic [ref=e78]: Datos Empresa
+            - link "👤 Gestión de Usuarios" [ref=e79] [cursor=pointer]:
+              - /url: /usuarios
+              - generic [ref=e80]: 👤
+              - generic [ref=e81]: Gestión de Usuarios
+            - link "🗂️ Módulos Sistema" [ref=e82] [cursor=pointer]:
+              - /url: /modulos-sistema
+              - generic [ref=e83]: 🗂️
+              - generic [ref=e84]: Módulos Sistema
+    - main [ref=e85]:
+      - generic [ref=e86]:
+        - generic "CONSTRUCTORA BORINQUEN S.A.S." [ref=e88]
+        - generic [ref=e89]:
+          - generic "Idioma" [ref=e90]:
+            - button "ES" [pressed] [ref=e91] [cursor=pointer]
+            - button "EN" [ref=e92] [cursor=pointer]
+          - generic [ref=e93]:
+            - paragraph [ref=e94]: Juan Andres Arango Velasquez
+            - paragraph [ref=e95]: Admin
+          - generic [ref=e96]: JA
+          - button "Salir" [ref=e97] [cursor=pointer]
+      - generic [ref=e99]:
+        - generic [ref=e101]:
+          - heading "Control Bancario" [level=1] [ref=e102]
+          - paragraph [ref=e103]: Bancos, Depósitos y Movimientos Bancarios
+        - generic [ref=e104]:
+          - button "🏦 Bancos 0" [ref=e105] [cursor=pointer]:
+            - generic [ref=e106]: 🏦 Bancos
+            - generic [ref=e107]: "0"
+          - button "💰 Depósitos 0" [active] [ref=e108] [cursor=pointer]:
+            - generic [ref=e109]: 💰 Depósitos
+            - generic [ref=e110]: "0"
+          - button "🔄 Movimientos 0" [ref=e111] [cursor=pointer]:
+            - generic [ref=e112]: 🔄 Movimientos
+            - generic [ref=e113]: "0"
+        - generic [ref=e133]:
+          - paragraph [ref=e134]: 0 depósito(s) registrado(s)
+          - button "+ Nuevo Depósito" [ref=e135] [cursor=pointer]
+        - table [ref=e137]:
+          - rowgroup [ref=e138]:
+            - row "Consecutivo Fecha Banco Origen Monto Referencia Depositado Por Concepto Estado Acciones" [ref=e139]:
+              - columnheader "Consecutivo" [ref=e140]
+              - columnheader "Fecha" [ref=e141]
+              - columnheader "Banco" [ref=e142]
+              - columnheader "Origen" [ref=e143]
+              - columnheader "Monto" [ref=e144]
+              - columnheader "Referencia" [ref=e145]
+              - columnheader "Depositado Por" [ref=e146]
+              - columnheader "Concepto" [ref=e147]
+              - columnheader "Estado" [ref=e148]
+              - columnheader "Acciones" [ref=e149]
+          - rowgroup [ref=e150]:
+            - row "No hay depósitos registrados. Crea el primero con + Nuevo Depósito." [ref=e151]:
+              - cell "No hay depósitos registrados. Crea el primero con + Nuevo Depósito." [ref=e152]:
+                - text: No hay depósitos registrados. Crea el primero con
+                - strong [ref=e153]: + Nuevo Depósito
+                - text: .
+  - alert [ref=e132]

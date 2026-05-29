@@ -1,0 +1,144 @@
+- generic [ref=e1]:
+  - generic [ref=e4]:
+    - complementary [ref=e5]:
+      - generic [ref=e6]:
+        - img "Constructora Borinquen" [ref=e7]
+        - paragraph [ref=e8]: Gestion de Inventario
+      - navigation [ref=e9]:
+        - link "📊 Dashboard" [ref=e10] [cursor=pointer]:
+          - /url: /dashboard
+          - generic [ref=e11]: 📊
+          - generic [ref=e12]: Dashboard
+        - link "📥 Carga Inicial Inventario" [ref=e13] [cursor=pointer]:
+          - /url: /carga-inicial-inventario
+          - generic [ref=e14]: 📥
+          - generic [ref=e15]: Carga Inicial Inventario
+        - link "📦 Productos" [ref=e16] [cursor=pointer]:
+          - /url: /productos
+          - generic [ref=e17]: 📦
+          - generic [ref=e18]: Productos
+        - link "🏢 Proveedores" [ref=e19] [cursor=pointer]:
+          - /url: /proveedores
+          - generic [ref=e20]: 🏢
+          - generic [ref=e21]: Proveedores
+        - link "🛒 Órdenes de Compra" [ref=e22] [cursor=pointer]:
+          - /url: /ordenes-compra
+          - generic [ref=e23]: 🛒
+          - generic [ref=e24]: Órdenes de Compra
+        - link "📋 Recepción de Facturas" [ref=e25] [cursor=pointer]:
+          - /url: /recepcion-facturas
+          - generic [ref=e26]: 📋
+          - generic [ref=e27]: Recepción de Facturas
+        - link "🏭 Bodegas" [ref=e28] [cursor=pointer]:
+          - /url: /bodegas
+          - generic [ref=e29]: 🏭
+          - generic [ref=e30]: Bodegas
+        - link "🔄 Transferencias" [ref=e31] [cursor=pointer]:
+          - /url: /transferencias
+          - generic [ref=e32]: 🔄
+          - generic [ref=e33]: Transferencias
+        - link "📤 Salidas de Almacén" [ref=e34] [cursor=pointer]:
+          - /url: /salidas-almacen
+          - generic [ref=e35]: 📤
+          - generic [ref=e36]: Salidas de Almacén
+        - link "⚖️ Ajustes de Inventario" [ref=e37] [cursor=pointer]:
+          - /url: /ajustes-inventario
+          - generic [ref=e38]: ⚖️
+          - generic [ref=e39]: Ajustes de Inventario
+        - link "💰 Centros de Costo" [ref=e40] [cursor=pointer]:
+          - /url: /centros-costo
+          - generic [ref=e41]: 💰
+          - generic [ref=e42]: Centros de Costo
+        - link "📧 Correos Enviados" [ref=e43] [cursor=pointer]:
+          - /url: /correos-enviados
+          - generic [ref=e44]: 📧
+          - generic [ref=e45]: Correos Enviados
+        - link "📝 Tareas" [ref=e46] [cursor=pointer]:
+          - /url: /tareas
+          - generic [ref=e47]: 📝
+          - generic [ref=e48]: Tareas
+        - link "👥 Personal Empresa" [ref=e49] [cursor=pointer]:
+          - /url: /personal-empresa
+          - generic [ref=e50]: 👥
+          - generic [ref=e51]: Personal Empresa
+        - link "📄 Orden de Pedido" [ref=e52] [cursor=pointer]:
+          - /url: /pedidos
+          - generic [ref=e53]: 📄
+          - generic [ref=e54]: Orden de Pedido
+        - link "⚙️ Tablas de Referencias" [ref=e55] [cursor=pointer]:
+          - /url: /referencias
+          - generic [ref=e56]: ⚙️
+          - generic [ref=e57]: Tablas de Referencias
+        - link "🏛️ Datos Empresa" [ref=e58] [cursor=pointer]:
+          - /url: /datos-empresa
+          - generic [ref=e59]: 🏛️
+          - generic [ref=e60]: Datos Empresa
+        - link "👤 Gestión de Usuarios" [ref=e61] [cursor=pointer]:
+          - /url: /usuarios
+          - generic [ref=e62]: 👤
+          - generic [ref=e63]: Gestión de Usuarios
+        - link "🗂️ Módulos Sistema" [ref=e64] [cursor=pointer]:
+          - /url: /modulos-sistema
+          - generic [ref=e65]: 🗂️
+          - generic [ref=e66]: Módulos Sistema
+    - main [ref=e67]:
+      - generic [ref=e69]:
+        - generic [ref=e70]:
+          - paragraph [ref=e71]: Juan Andres Arango Velasquez
+          - paragraph [ref=e72]: Admin
+        - generic [ref=e73]: JA
+        - button "Salir" [ref=e74] [cursor=pointer]
+      - generic [ref=e76]:
+        - generic [ref=e77]:
+          - generic [ref=e78]:
+            - heading "Tareas" [level=1] [ref=e79]
+            - paragraph [ref=e80]: Gestión y seguimiento de tareas asignadas
+          - generic [ref=e81]:
+            - generic [ref=e82]: 1 en proceso
+            - generic [ref=e83]: 1 total
+        - generic [ref=e84]:
+          - button "Registros" [ref=e85] [cursor=pointer]
+          - button "Kanban" [active] [ref=e86] [cursor=pointer]
+          - button "Reportes" [ref=e87] [cursor=pointer]
+        - generic [ref=e139]:
+          - generic [ref=e140]:
+            - generic [ref=e141]:
+              - generic [ref=e144]: Pendiente
+              - generic [ref=e145]: "0"
+            - generic [ref=e147]: Sin tareas
+          - generic [ref=e148]:
+            - generic [ref=e149]:
+              - generic [ref=e152]: En Proceso
+              - generic [ref=e153]: "1"
+            - generic [ref=e155]:
+              - generic [ref=e156]:
+                - generic [ref=e157]: TAR-00001
+                - generic [ref=e158]:
+                  - button "👁" [ref=e159] [cursor=pointer]
+                  - button "✏️" [ref=e160] [cursor=pointer]
+              - paragraph [ref=e161]: Hacer demo del Sistema Inventario Borinquen y sus funciones
+              - generic [ref=e162]:
+                - generic [ref=e163]:
+                  - generic [ref=e164]: Ejecuta
+                  - generic [ref=e165]: Jose E Palomares
+                - generic [ref=e166]:
+                  - generic [ref=e167]: Fecha Req.
+                  - generic [ref=e168]: 27/03/2026
+          - generic [ref=e169]:
+            - generic [ref=e170]:
+              - generic [ref=e173]: Completada
+              - generic [ref=e174]: "0"
+            - generic [ref=e176]: Sin tareas
+          - generic [ref=e177]:
+            - generic [ref=e178]:
+              - generic [ref=e181]: Vencida
+              - generic [ref=e182]: "0"
+            - generic [ref=e184]: Sin tareas
+          - generic [ref=e185]:
+            - generic [ref=e186]:
+              - generic [ref=e189]: Cancelada
+              - generic [ref=e190]: "0"
+            - generic [ref=e192]: Sin tareas
+  - button "Open Next.js Dev Tools" [ref=e119] [cursor=pointer]:
+    - img [ref=e120]
+  - alert [ref=e123]

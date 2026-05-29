@@ -1,0 +1,10 @@
+{
+  "permissions": {
+    "allow": [
+      "Skill(primer)",
+      "Skill(primer:*)",
+      "Bash(lsof -iTCP -sTCP:LISTEN -P)",
+      "Bash(node docs/generate-norton-servicios.mjs)"
+    ]
+  }
+}

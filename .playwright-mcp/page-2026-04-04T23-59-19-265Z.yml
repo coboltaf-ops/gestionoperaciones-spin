@@ -1,0 +1,213 @@
+- generic [active] [ref=e1]:
+  - generic [ref=e3]:
+    - complementary [ref=e4]:
+      - generic [ref=e5]:
+        - img "Constructora Borinquen" [ref=e6]
+        - paragraph [ref=e7]: Gestion de Inventario
+      - navigation [ref=e8]:
+        - link "📊 Dashboard" [ref=e9] [cursor=pointer]:
+          - /url: /dashboard
+          - generic [ref=e10]: 📊
+          - generic [ref=e11]: Dashboard
+        - link "📥 Carga Inicial Inventario" [ref=e12] [cursor=pointer]:
+          - /url: /carga-inicial-inventario
+          - generic [ref=e13]: 📥
+          - generic [ref=e14]: Carga Inicial Inventario
+        - link "📦 Productos" [ref=e15] [cursor=pointer]:
+          - /url: /productos
+          - generic [ref=e16]: 📦
+          - generic [ref=e17]: Productos
+        - link "🏢 Proveedores" [ref=e18] [cursor=pointer]:
+          - /url: /proveedores
+          - generic [ref=e19]: 🏢
+          - generic [ref=e20]: Proveedores
+        - link "🛒 Órdenes de Compra" [ref=e21] [cursor=pointer]:
+          - /url: /ordenes-compra
+          - generic [ref=e22]: 🛒
+          - generic [ref=e23]: Órdenes de Compra
+        - link "📋 Recepción de Facturas" [ref=e24] [cursor=pointer]:
+          - /url: /recepcion-facturas
+          - generic [ref=e25]: 📋
+          - generic [ref=e26]: Recepción de Facturas
+        - link "🏭 Bodegas" [ref=e27] [cursor=pointer]:
+          - /url: /bodegas
+          - generic [ref=e28]: 🏭
+          - generic [ref=e29]: Bodegas
+        - link "🔄 Transferencias" [ref=e30] [cursor=pointer]:
+          - /url: /transferencias
+          - generic [ref=e31]: 🔄
+          - generic [ref=e32]: Transferencias
+        - link "📤 Salidas de Almacén" [ref=e33] [cursor=pointer]:
+          - /url: /salidas-almacen
+          - generic [ref=e34]: 📤
+          - generic [ref=e35]: Salidas de Almacén
+        - link "⚖️ Ajustes de Inventario" [ref=e36] [cursor=pointer]:
+          - /url: /ajustes-inventario
+          - generic [ref=e37]: ⚖️
+          - generic [ref=e38]: Ajustes de Inventario
+        - link "💰 Centros de Costo" [ref=e39] [cursor=pointer]:
+          - /url: /centros-costo
+          - generic [ref=e40]: 💰
+          - generic [ref=e41]: Centros de Costo
+        - link "📧 Correos Enviados" [ref=e42] [cursor=pointer]:
+          - /url: /correos-enviados
+          - generic [ref=e43]: 📧
+          - generic [ref=e44]: Correos Enviados
+        - link "📝 Tareas" [ref=e45] [cursor=pointer]:
+          - /url: /tareas
+          - generic [ref=e46]: 📝
+          - generic [ref=e47]: Tareas
+        - link "👥 Personal Empresa" [ref=e48] [cursor=pointer]:
+          - /url: /personal-empresa
+          - generic [ref=e49]: 👥
+          - generic [ref=e50]: Personal Empresa
+        - link "📄 Orden de Pedido" [ref=e51] [cursor=pointer]:
+          - /url: /pedidos
+          - generic [ref=e52]: 📄
+          - generic [ref=e53]: Orden de Pedido
+        - link "⚙️ Tablas de Referencias" [ref=e54] [cursor=pointer]:
+          - /url: /referencias
+          - generic [ref=e55]: ⚙️
+          - generic [ref=e56]: Tablas de Referencias
+        - link "🤖 Agente" [ref=e57] [cursor=pointer]:
+          - /url: /asistente
+          - generic [ref=e58]: 🤖
+          - generic [ref=e59]: Agente
+        - generic [ref=e60]:
+          - button "🏭 Producción ▼" [ref=e61] [cursor=pointer]:
+            - generic [ref=e62]: 🏭
+            - generic [ref=e63]: Producción
+            - generic [ref=e64]: ▼
+          - generic [ref=e65]:
+            - link "🧪 Fórmulas" [ref=e66] [cursor=pointer]:
+              - /url: /formulas
+              - generic [ref=e67]: 🧪
+              - generic [ref=e68]: Fórmulas
+            - link "📋 Órdenes Producción" [ref=e69] [cursor=pointer]:
+              - /url: /ordenes-produccion
+              - generic [ref=e70]: 📋
+              - generic [ref=e71]: Órdenes Producción
+            - link "▶️ Ejecución" [ref=e72] [cursor=pointer]:
+              - /url: /ejecucion-produccion
+              - generic [ref=e73]: ▶️
+              - generic [ref=e74]: Ejecución
+            - link "⚖️ Ajustes Mat. Prima" [ref=e75] [cursor=pointer]:
+              - /url: /ajustes-materia-prima
+              - generic [ref=e76]: ⚖️
+              - generic [ref=e77]: Ajustes Mat. Prima
+        - generic [ref=e78]:
+          - button "⚙️ Configuración ▼" [ref=e79] [cursor=pointer]:
+            - generic [ref=e80]: ⚙️
+            - generic [ref=e81]: Configuración
+            - generic [ref=e82]: ▼
+          - generic [ref=e83]:
+            - link "🏛️ Datos Empresa" [ref=e84] [cursor=pointer]:
+              - /url: /datos-empresa
+              - generic [ref=e85]: 🏛️
+              - generic [ref=e86]: Datos Empresa
+            - link "👤 Gestión de Usuarios" [ref=e87] [cursor=pointer]:
+              - /url: /usuarios
+              - generic [ref=e88]: 👤
+              - generic [ref=e89]: Gestión de Usuarios
+            - link "🗂️ Módulos Sistema" [ref=e90] [cursor=pointer]:
+              - /url: /modulos-sistema
+              - generic [ref=e91]: 🗂️
+              - generic [ref=e92]: Módulos Sistema
+    - main [ref=e93]:
+      - generic [ref=e95]:
+        - generic [ref=e96]:
+          - paragraph [ref=e97]: Juan Andres Arango Velasquez
+          - paragraph [ref=e98]: Admin
+        - generic [ref=e99]: JA
+        - button "Salir" [ref=e100] [cursor=pointer]
+      - generic [ref=e102]:
+        - heading "Dashboard" [level=1] [ref=e103]
+        - generic [ref=e104]:
+          - generic [ref=e105]:
+            - generic [ref=e107]: 📊
+            - paragraph [ref=e109]: "720.00"
+            - paragraph [ref=e110]: Unidades en Inventario
+          - generic [ref=e111]:
+            - generic [ref=e113]: 💰
+            - paragraph [ref=e115]: Pesos 24,225,000.00
+            - paragraph [ref=e116]: Valor del Inventario
+          - generic [ref=e117]:
+            - generic [ref=e119]: 🧾
+            - paragraph [ref=e121]: Pesos 14,847,596.00
+            - paragraph [ref=e122]: Total en Órdenes
+          - generic [ref=e123]:
+            - generic [ref=e125]: ⚠️
+            - paragraph [ref=e127]: "2"
+            - paragraph [ref=e128]: Productos Bajo Mínimo
+        - generic [ref=e129]:
+          - generic [ref=e130]:
+            - text: 📦
+            - paragraph [ref=e131]: "12"
+            - paragraph [ref=e132]: Productos Activos
+          - generic [ref=e133]:
+            - text: 🏢
+            - paragraph [ref=e134]: "5"
+            - paragraph [ref=e135]: Proveedores Activos
+          - generic [ref=e136]:
+            - text: 🛒
+            - paragraph [ref=e137]: "4"
+            - paragraph [ref=e138]: Órdenes de Compra
+          - generic [ref=e139]:
+            - text: 📋
+            - paragraph [ref=e140]: "0"
+            - paragraph [ref=e141]: Recepciones
+          - generic [ref=e142]:
+            - text: 🏭
+            - paragraph [ref=e143]: "2"
+            - paragraph [ref=e144]: Bodegas Activas
+          - generic [ref=e145]:
+            - text: 🔄
+            - paragraph [ref=e146]: "1"
+            - paragraph [ref=e147]: Transferencias
+          - generic [ref=e148]:
+            - text: ⚖️
+            - paragraph [ref=e149]: "0"
+            - paragraph [ref=e150]: Ajustes Inventario
+          - generic [ref=e151]:
+            - text: ⏳
+            - paragraph [ref=e152]: "1"
+            - paragraph [ref=e153]: Órdenes Pendientes
+        - generic [ref=e155]:
+          - heading "Productos Bajo Mínimo ⚠️" [level=2] [ref=e156]
+          - generic [ref=e157]:
+            - generic [ref=e158]:
+              - generic [ref=e159]: PROD-00011Bloque Conceto 15 Cms
+              - generic [ref=e160]:
+                - generic [ref=e161]: "60"
+                - generic [ref=e162]: /
+                - generic [ref=e163]: 100 mín.
+            - generic [ref=e164]:
+              - generic [ref=e165]: PROD-00012Ladrillo Rojo N4 Rayado 9 x 19 x 38 cls
+              - generic [ref=e166]:
+                - generic [ref=e167]: "60"
+                - generic [ref=e168]: /
+                - generic [ref=e169]: 150 mín.
+        - link "🤖 Agente Consulta información del sistema con respuesta de voz →" [ref=e170] [cursor=pointer]:
+          - /url: /asistente
+          - generic [ref=e171]:
+            - generic [ref=e172]: 🤖
+            - generic [ref=e173]:
+              - heading "Agente" [level=2] [ref=e174]
+              - paragraph [ref=e175]: Consulta información del sistema con respuesta de voz
+            - generic [ref=e176]: →
+        - generic [ref=e177]:
+          - heading "Resumen de Órdenes por Estado" [level=2] [ref=e178]
+          - generic [ref=e179]:
+            - generic [ref=e180]:
+              - generic [ref=e181]:
+                - generic [ref=e182]: "3"
+                - generic [ref=e183]: Aprobada
+              - paragraph [ref=e184]: Pesos 13,514,196.00
+            - generic [ref=e185]:
+              - generic [ref=e186]:
+                - generic [ref=e187]: "1"
+                - generic [ref=e188]: Pendiente
+              - paragraph [ref=e189]: Pesos 1,333,400.00
+  - button "Open Next.js Dev Tools" [ref=e195] [cursor=pointer]:
+    - img [ref=e196]
+  - alert [ref=e199]

@@ -1,0 +1,35 @@
+[
+  {
+    "id": "197c542f-4502-470b-b145-214600522338",
+    "nro_pedido": 1,
+    "consecutivo": "PED-00001",
+    "fecha_emision": "2026-03-27",
+    "fecha_vencimiento": "2026-03-30",
+    "proveedor": "Home Center Viva Envigado",
+    "fecha_llegada": "2026-03-31",
+    "comprador": "Karina",
+    "condicion_pago": "30 días",
+    "tipo_moneda": "",
+    "fecha_aprobacion": "",
+    "observaciones": "Las Resas deben ser de color rosado",
+    "detalles": [
+      {
+        "id": "9365c9a9-28d4-4708-8570-4cba36360973",
+        "codigo_producto": "PROD-00001",
+        "descripcion": "Gafas de Seguridad",
+        "cantidad": 8,
+        "unidad_medida": "Unidad"
+      },
+      {
+        "id": "6bf99218-2c1e-43e6-b540-5e2fd2d35d35",
+        "codigo_producto": "PROD-00009",
+        "descripcion": "Resma de papel 50 hojas blancas",
+        "cantidad": 10,
+        "unidad_medida": "Unidad"
+      }
+    ],
+    "bodega_llegada": "Bodega Prinpipal Laureles",
+    "centro_costo": "",
+    "situacion": "Pendiente"
+  }
+]

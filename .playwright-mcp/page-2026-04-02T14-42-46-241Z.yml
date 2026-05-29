@@ -1,0 +1,15 @@
+- generic [active] [ref=e1]:
+  - generic [ref=e4]:
+    - generic [ref=e6]:
+      - img [ref=e8]
+      - heading "Portal Inmobiliario" [level=1] [ref=e11]
+      - paragraph [ref=e12]: Inicia sesion en tu cuenta
+    - generic [ref=e13]:
+      - generic [ref=e14]:
+        - generic [ref=e15]: Usuario
+        - textbox "admin" [ref=e16]
+      - generic [ref=e17]:
+        - generic [ref=e18]: Clave
+        - textbox "••••••••" [ref=e19]
+      - button "Ingresar al Sistema" [ref=e20]
+  - alert [ref=e21]

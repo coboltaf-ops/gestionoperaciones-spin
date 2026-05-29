@@ -1,0 +1,154 @@
+- generic [ref=e3]:
+  - complementary [ref=e4]:
+    - generic [ref=e5]:
+      - img "Logo Empresa" [ref=e7]
+      - paragraph [ref=e8]: Gestión de Inventario
+    - navigation [ref=e9]:
+      - link "📊 Dashboard" [ref=e10] [cursor=pointer]:
+        - /url: /dashboard
+        - generic [ref=e11]: 📊
+        - generic [ref=e12]: Dashboard
+      - link "📦 Productos" [ref=e13] [cursor=pointer]:
+        - /url: /productos
+        - generic [ref=e14]: 📦
+        - generic [ref=e15]: Productos
+      - link "📒 Kardex de Productos" [ref=e16] [cursor=pointer]:
+        - /url: /kardex
+        - generic [ref=e17]: 📒
+        - generic [ref=e18]: Kardex de Productos
+      - link "🏢 Proveedores" [ref=e19] [cursor=pointer]:
+        - /url: /proveedores
+        - generic [ref=e20]: 🏢
+        - generic [ref=e21]: Proveedores
+      - link "🛒 Órdenes de Compra" [ref=e22] [cursor=pointer]:
+        - /url: /ordenes-compra
+        - generic [ref=e23]: 🛒
+        - generic [ref=e24]: Órdenes de Compra
+      - link "📄 Orden de Pedido" [ref=e25] [cursor=pointer]:
+        - /url: /pedidos
+        - generic [ref=e26]: 📄
+        - generic [ref=e27]: Orden de Pedido
+      - link "📋 Recepción de Facturas" [ref=e28] [cursor=pointer]:
+        - /url: /recepcion-facturas
+        - generic [ref=e29]: 📋
+        - generic [ref=e30]: Recepción de Facturas
+      - link "📑 Recepción de Remisiones" [ref=e31] [cursor=pointer]:
+        - /url: /recepcion-remisiones
+        - generic [ref=e32]: 📑
+        - generic [ref=e33]: Recepción de Remisiones
+      - link "💳 Pagos Proveedores" [ref=e34] [cursor=pointer]:
+        - /url: /pagos-proveedores
+        - generic [ref=e35]: 💳
+        - generic [ref=e36]: Pagos Proveedores
+      - link "🏦 Control Bancario" [ref=e37] [cursor=pointer]:
+        - /url: /control-bancario
+        - generic [ref=e38]: 🏦
+        - generic [ref=e39]: Control Bancario
+      - link "🏭 Bodegas" [ref=e40] [cursor=pointer]:
+        - /url: /bodegas
+        - generic [ref=e41]: 🏭
+        - generic [ref=e42]: Bodegas
+      - link "🔄 Transferencias" [ref=e43] [cursor=pointer]:
+        - /url: /transferencias
+        - generic [ref=e44]: 🔄
+        - generic [ref=e45]: Transferencias
+      - link "📤 Salidas de Almacén" [ref=e46] [cursor=pointer]:
+        - /url: /salidas-almacen
+        - generic [ref=e47]: 📤
+        - generic [ref=e48]: Salidas de Almacén
+      - link "⚖️ Ajustes de Inventario" [ref=e49] [cursor=pointer]:
+        - /url: /ajustes-inventario
+        - generic [ref=e50]: ⚖️
+        - generic [ref=e51]: Ajustes de Inventario
+      - link "📋 Toma Inventario Físico" [ref=e52] [cursor=pointer]:
+        - /url: /toma-inventario-fisico
+        - generic [ref=e53]: 📋
+        - generic [ref=e54]: Toma Inventario Físico
+      - link "💰 Centros de Costo" [ref=e55] [cursor=pointer]:
+        - /url: /centros-costo
+        - generic [ref=e56]: 💰
+        - generic [ref=e57]: Centros de Costo
+      - link "📧 Correos Enviados" [ref=e58] [cursor=pointer]:
+        - /url: /correos-enviados
+        - generic [ref=e59]: 📧
+        - generic [ref=e60]: Correos Enviados
+      - link "📝 Tareas" [ref=e61] [cursor=pointer]:
+        - /url: /tareas
+        - generic [ref=e62]: 📝
+        - generic [ref=e63]: Tareas
+      - link "👥 Personal Empresa" [ref=e64] [cursor=pointer]:
+        - /url: /personal-empresa
+        - generic [ref=e65]: 👥
+        - generic [ref=e66]: Personal Empresa
+      - link "⚙️ Tablas de Referencias" [ref=e67] [cursor=pointer]:
+        - /url: /referencias
+        - generic [ref=e68]: ⚙️
+        - generic [ref=e69]: Tablas de Referencias
+      - link "🤖 Agente" [ref=e70] [cursor=pointer]:
+        - /url: /asistente
+        - generic [ref=e71]: 🤖
+        - generic [ref=e72]: Agente
+      - generic [ref=e73]:
+        - button "⚙️ Configuración ▼" [ref=e74] [cursor=pointer]:
+          - generic [ref=e75]: ⚙️
+          - generic [ref=e76]: Configuración
+          - generic [ref=e77]: ▼
+        - generic [ref=e78]:
+          - link "🏛️ Datos Empresa" [ref=e79] [cursor=pointer]:
+            - /url: /datos-empresa
+            - generic [ref=e80]: 🏛️
+            - generic [ref=e81]: Datos Empresa
+          - link "👤 Gestión de Usuarios" [ref=e82] [cursor=pointer]:
+            - /url: /usuarios
+            - generic [ref=e83]: 👤
+            - generic [ref=e84]: Gestión de Usuarios
+          - link "🗂️ Módulos Sistema" [ref=e85] [cursor=pointer]:
+            - /url: /modulos-sistema
+            - generic [ref=e86]: 🗂️
+            - generic [ref=e87]: Módulos Sistema
+  - main [ref=e88]:
+    - generic [ref=e90]:
+      - generic "Idioma" [ref=e91]:
+        - button "ES" [pressed] [ref=e92] [cursor=pointer]
+        - button "EN" [ref=e93] [cursor=pointer]
+      - generic [ref=e94]:
+        - paragraph [ref=e95]: Juan Andres Arango Velasquez
+        - paragraph [ref=e96]: Admin
+      - generic [ref=e97]: JA
+      - button "Salir" [ref=e98] [cursor=pointer]
+    - generic [ref=e100]:
+      - generic [ref=e102]:
+        - heading "Pagos Proveedores y Servicios" [level=1] [ref=e103]
+        - paragraph [ref=e104]: Registro de Facturas, Pagos, Notas Débito y Notas Crédito
+      - generic [ref=e105]:
+        - button "📄 Registro Facturas" [ref=e106] [cursor=pointer]
+        - button "💰 Registro Pagos" [ref=e107] [cursor=pointer]
+        - button "💵 Anticipos" [ref=e108] [cursor=pointer]
+        - button "➕ Notas Débito" [ref=e109] [cursor=pointer]
+        - button "➖ Notas Crédito" [ref=e110] [cursor=pointer]
+      - generic [ref=e111]:
+        - textbox "Buscar por N° Factura, proveedor o consecutivo…" [ref=e112]
+        - generic [ref=e113]:
+          - button "📥 Traer Facturas Recibidas" [ref=e114] [cursor=pointer]
+          - button "+ Nueva Factura" [ref=e115] [cursor=pointer]
+          - button "🗑 ELIMINAR TODAS (PRUEBAS)" [ref=e116] [cursor=pointer]
+      - table [ref=e118]:
+        - rowgroup [ref=e119]:
+          - row "Consecutivo F. Registro N° Factura F. Emisión F. Vencimiento Proveedor Moneda Total Neto Saldo Estado Acciones" [ref=e120]:
+            - columnheader "Consecutivo" [ref=e121]
+            - columnheader "F. Registro" [ref=e122]
+            - columnheader "N° Factura" [ref=e123]
+            - columnheader "F. Emisión" [ref=e124]
+            - columnheader "F. Vencimiento" [ref=e125]
+            - columnheader "Proveedor" [ref=e126]
+            - columnheader "Moneda" [ref=e127]
+            - columnheader "Total Neto" [ref=e128]
+            - columnheader "Saldo" [ref=e129]
+            - columnheader "Estado" [ref=e130]
+            - columnheader "Acciones" [ref=e131]
+        - rowgroup [ref=e132]:
+          - row "No hay facturas registradas. Crea una con + Nueva Factura o tráelas desde Recepción." [ref=e133]:
+            - cell "No hay facturas registradas. Crea una con + Nueva Factura o tráelas desde Recepción." [ref=e134]:
+              - text: No hay facturas registradas. Crea una con
+              - strong [ref=e135]: + Nueva Factura
+              - text: o tráelas desde Recepción.

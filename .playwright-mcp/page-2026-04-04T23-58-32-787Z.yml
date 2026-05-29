@@ -1,0 +1,19 @@
+- generic [active] [ref=e1]:
+  - generic [ref=e5]:
+    - generic [ref=e7]:
+      - img "CONSTRUCTORA BORINQUEN S.A.S." [ref=e8]
+      - heading "Gestion de Inventario" [level=1] [ref=e9]
+      - paragraph [ref=e10]: Inicia sesion en tu cuenta
+    - generic [ref=e11]:
+      - generic [ref=e12]:
+        - generic [ref=e13]: Usuario
+        - textbox "Usuario" [ref=e14]:
+          - /placeholder: jarango
+      - generic [ref=e15]:
+        - generic [ref=e16]: Clave
+        - textbox "Clave" [ref=e17]:
+          - /placeholder: ••••••••
+      - button "Ingresar al Sistema" [ref=e18] [cursor=pointer]
+  - button "Open Next.js Dev Tools" [ref=e24] [cursor=pointer]:
+    - img [ref=e25]
+  - alert [ref=e28]

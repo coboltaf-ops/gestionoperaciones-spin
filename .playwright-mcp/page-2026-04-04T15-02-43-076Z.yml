@@ -1,0 +1,132 @@
+- generic [active] [ref=e1]:
+  - generic [ref=e3]: Conectando al servidor...
+  - generic [ref=e4]:
+    - complementary [ref=e5]:
+      - generic [ref=e6]:
+        - img "Constructora Borinquen" [ref=e7]
+        - paragraph [ref=e8]: Gestion de Inventario
+      - navigation [ref=e9]:
+        - link "📊 Dashboard" [ref=e10] [cursor=pointer]:
+          - /url: /dashboard
+          - generic [ref=e11]: 📊
+          - generic [ref=e12]: Dashboard
+        - link "📥 Carga Inicial Inventario" [ref=e13] [cursor=pointer]:
+          - /url: /carga-inicial-inventario
+          - generic [ref=e14]: 📥
+          - generic [ref=e15]: Carga Inicial Inventario
+        - link "📦 Productos" [ref=e16] [cursor=pointer]:
+          - /url: /productos
+          - generic [ref=e17]: 📦
+          - generic [ref=e18]: Productos
+        - link "🏢 Proveedores" [ref=e19] [cursor=pointer]:
+          - /url: /proveedores
+          - generic [ref=e20]: 🏢
+          - generic [ref=e21]: Proveedores
+        - link "🛒 Órdenes de Compra" [ref=e22] [cursor=pointer]:
+          - /url: /ordenes-compra
+          - generic [ref=e23]: 🛒
+          - generic [ref=e24]: Órdenes de Compra
+        - link "📋 Recepción de Facturas" [ref=e25] [cursor=pointer]:
+          - /url: /recepcion-facturas
+          - generic [ref=e26]: 📋
+          - generic [ref=e27]: Recepción de Facturas
+        - link "🏭 Bodegas" [ref=e28] [cursor=pointer]:
+          - /url: /bodegas
+          - generic [ref=e29]: 🏭
+          - generic [ref=e30]: Bodegas
+        - link "🔄 Transferencias" [ref=e31] [cursor=pointer]:
+          - /url: /transferencias
+          - generic [ref=e32]: 🔄
+          - generic [ref=e33]: Transferencias
+        - link "📤 Salidas de Almacén" [ref=e34] [cursor=pointer]:
+          - /url: /salidas-almacen
+          - generic [ref=e35]: 📤
+          - generic [ref=e36]: Salidas de Almacén
+        - link "⚖️ Ajustes de Inventario" [ref=e37] [cursor=pointer]:
+          - /url: /ajustes-inventario
+          - generic [ref=e38]: ⚖️
+          - generic [ref=e39]: Ajustes de Inventario
+        - link "💰 Centros de Costo" [ref=e40] [cursor=pointer]:
+          - /url: /centros-costo
+          - generic [ref=e41]: 💰
+          - generic [ref=e42]: Centros de Costo
+        - link "📧 Correos Enviados" [ref=e43] [cursor=pointer]:
+          - /url: /correos-enviados
+          - generic [ref=e44]: 📧
+          - generic [ref=e45]: Correos Enviados
+        - link "📝 Tareas" [ref=e46] [cursor=pointer]:
+          - /url: /tareas
+          - generic [ref=e47]: 📝
+          - generic [ref=e48]: Tareas
+        - link "👥 Personal Empresa" [ref=e49] [cursor=pointer]:
+          - /url: /personal-empresa
+          - generic [ref=e50]: 👥
+          - generic [ref=e51]: Personal Empresa
+        - link "📄 Orden de Pedido" [ref=e52] [cursor=pointer]:
+          - /url: /pedidos
+          - generic [ref=e53]: 📄
+          - generic [ref=e54]: Orden de Pedido
+        - link "⚙️ Tablas de Referencias" [ref=e55] [cursor=pointer]:
+          - /url: /referencias
+          - generic [ref=e56]: ⚙️
+          - generic [ref=e57]: Tablas de Referencias
+        - link "🤖 Asistente de Voz" [ref=e58] [cursor=pointer]:
+          - /url: /asistente
+          - generic [ref=e59]: 🤖
+          - generic [ref=e60]: Asistente de Voz
+        - link "🏛️ Datos Empresa" [ref=e61] [cursor=pointer]:
+          - /url: /datos-empresa
+          - generic [ref=e62]: 🏛️
+          - generic [ref=e63]: Datos Empresa
+        - link "👤 Gestión de Usuarios" [ref=e64] [cursor=pointer]:
+          - /url: /usuarios
+          - generic [ref=e65]: 👤
+          - generic [ref=e66]: Gestión de Usuarios
+        - link "🗂️ Módulos Sistema" [ref=e67] [cursor=pointer]:
+          - /url: /modulos-sistema
+          - generic [ref=e68]: 🗂️
+          - generic [ref=e69]: Módulos Sistema
+    - main [ref=e70]:
+      - generic [ref=e72]:
+        - generic [ref=e73]:
+          - paragraph [ref=e74]: Juan Andres Arango Velasquez
+          - paragraph [ref=e75]: Admin
+        - generic [ref=e76]: JA
+        - button "Salir" [ref=e77] [cursor=pointer]
+      - generic [ref=e79]:
+        - generic [ref=e81]:
+          - heading "🤖 Asistente de Voz" [level=1] [ref=e82]:
+            - generic [ref=e83]: 🤖
+            - text: Asistente de Voz
+          - paragraph [ref=e84]: Consulta información del sistema con respuesta de voz
+        - generic [ref=e85]:
+          - paragraph [ref=e86]: Consultas Rápidas
+          - generic [ref=e87]:
+            - button "📦 Valor del Inventario Actual Toca para consultar" [ref=e88] [cursor=pointer]:
+              - generic [ref=e89]:
+                - generic [ref=e90]: 📦
+                - generic [ref=e91]:
+                  - paragraph [ref=e92]: Valor del Inventario Actual
+                  - paragraph [ref=e93]: Toca para consultar
+            - button "🛒 Valor Órdenes de Compra Pendientes y Cantidad Toca para consultar" [ref=e95] [cursor=pointer]:
+              - generic [ref=e96]:
+                - generic [ref=e97]: 🛒
+                - generic [ref=e98]:
+                  - paragraph [ref=e99]: Valor Órdenes de Compra Pendientes y Cantidad
+                  - paragraph [ref=e100]: Toca para consultar
+            - button "📝 Tareas Asignadas por Situación Toca para consultar" [ref=e102] [cursor=pointer]:
+              - generic [ref=e103]:
+                - generic [ref=e104]: 📝
+                - generic [ref=e105]:
+                  - paragraph [ref=e106]: Tareas Asignadas por Situación
+                  - paragraph [ref=e107]: Toca para consultar
+        - generic [ref=e109]:
+          - generic [ref=e111]:
+            - generic [ref=e113]: 🤖
+            - paragraph [ref=e114]: Haz una pregunta o usa los botones de consulta rápida
+            - paragraph [ref=e115]: Las respuestas se leen en voz alta automáticamente
+          - generic [ref=e117]:
+            - textbox "Escribe tu pregunta..." [ref=e118]
+            - button "Enviar" [ref=e119] [cursor=pointer]
+  - button "Open Next.js Dev Tools" [ref=e125] [cursor=pointer]:
+    - img [ref=e126]

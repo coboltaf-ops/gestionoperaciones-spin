@@ -1,0 +1,462 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+<meta charset="UTF-8">
+<title>SISTECH - Accesos y Flujo de Alta de Clientes</title>
+<style>
+  @page { margin: 1.5cm; size: A4; }
+  * { margin: 0; padding: 0; box-sizing: border-box; }
+  body { font-family: 'Segoe UI', Arial, sans-serif; color: #1a1a2e; font-size: 11pt; line-height: 1.5; }
+
+  .cover { page-break-after: always; display: flex; flex-direction: column; justify-content: center; align-items: center; min-height: 90vh; text-align: center; background: linear-gradient(135deg, #0a1628 0%, #1e3a8a 100%); color: white; padding: 60px 40px; border-radius: 8px; }
+  .cover h1 { font-size: 32pt; margin-bottom: 10px; letter-spacing: 2px; }
+  .cover .subtitle { font-size: 14pt; color: #93c5fd; margin-bottom: 40px; }
+  .cover .badge { background: rgba(255,255,255,0.15); border: 1px solid rgba(255,255,255,0.3); border-radius: 8px; padding: 15px 30px; margin-top: 20px; }
+  .cover .badge p { font-size: 10pt; color: #bfdbfe; }
+  .cover .date { margin-top: 40px; font-size: 10pt; color: #93c5fd; }
+
+  .section-title { background: #1e3a8a; color: white; padding: 10px 20px; border-radius: 6px; font-size: 16pt; margin: 30px 0 20px 0; page-break-after: avoid; }
+  .section-title-secondary { background: #0f172a; color: white; padding: 8px 16px; border-radius: 6px; font-size: 13pt; margin: 25px 0 15px 0; page-break-after: avoid; }
+
+  table { width: 100%; border-collapse: collapse; margin: 10px 0 20px 0; font-size: 10pt; }
+  th { background: #1e3a8a; color: white; padding: 8px 12px; text-align: left; font-weight: 600; }
+  td { padding: 8px 12px; border-bottom: 1px solid #e2e8f0; }
+  tr:nth-child(even) { background: #f1f5f9; }
+  tr:hover { background: #e2e8f0; }
+
+  .url-box { background: #0f172a; color: #60a5fa; padding: 8px 14px; border-radius: 6px; font-family: 'Courier New', monospace; font-size: 10pt; display: inline-block; margin: 5px 0; }
+
+  .app-card { border: 2px solid #1e3a8a; border-radius: 10px; padding: 20px; margin: 15px 0; page-break-inside: avoid; }
+  .app-card h3 { color: #1e3a8a; font-size: 14pt; margin-bottom: 5px; }
+  .app-card .desc { color: #64748b; font-size: 10pt; margin-bottom: 12px; }
+
+  .public-badge { background: #059669; color: white; padding: 3px 10px; border-radius: 12px; font-size: 8pt; font-weight: 600; display: inline-block; }
+  .admin-badge { background: #dc2626; color: white; padding: 3px 10px; border-radius: 12px; font-size: 8pt; font-weight: 600; display: inline-block; }
+
+  .flow-container { page-break-before: always; }
+  .flow-step { border-left: 4px solid #1e3a8a; padding: 15px 20px; margin: 10px 0 10px 20px; background: #f8fafc; border-radius: 0 8px 8px 0; page-break-inside: avoid; }
+  .flow-step h4 { color: #1e3a8a; font-size: 12pt; margin-bottom: 5px; }
+  .flow-step .step-num { background: #1e3a8a; color: white; width: 28px; height: 28px; border-radius: 50%; display: inline-flex; align-items: center; justify-content: center; font-weight: bold; font-size: 10pt; margin-right: 8px; }
+  .flow-step ul { margin: 8px 0 0 20px; font-size: 10pt; }
+  .flow-step li { margin: 3px 0; }
+
+  .form-preview { border: 2px solid #cbd5e1; border-radius: 10px; padding: 20px; margin: 15px 0; background: #f8fafc; page-break-inside: avoid; }
+  .form-preview h4 { color: #1e3a8a; margin-bottom: 10px; font-size: 11pt; }
+  .form-field { margin: 8px 0; }
+  .form-field label { display: block; font-size: 9pt; color: #64748b; margin-bottom: 2px; font-weight: 600; }
+  .form-field .input { border: 1px solid #cbd5e1; border-radius: 6px; padding: 6px 10px; font-size: 10pt; background: white; color: #334155; }
+
+  .login-preview { background: #0a1628; border-radius: 12px; padding: 25px; color: white; text-align: center; margin: 15px 0; max-width: 350px; page-break-inside: avoid; }
+  .login-preview h4 { font-size: 13pt; margin-bottom: 3px; }
+  .login-preview .city { color: #93c5fd; font-size: 9pt; margin-bottom: 15px; }
+  .login-preview .field { background: #1e293b; border: 1px solid #334155; border-radius: 6px; padding: 6px 10px; margin: 6px 0; text-align: left; color: #94a3b8; font-size: 9pt; }
+  .login-preview .btn { background: #1e3a8a; border-radius: 6px; padding: 8px; margin-top: 10px; font-weight: 600; font-size: 10pt; }
+
+  .confidential { background: #fef2f2; border: 2px solid #dc2626; border-radius: 8px; padding: 15px; margin: 20px 0; text-align: center; }
+  .confidential p { color: #dc2626; font-weight: 600; font-size: 11pt; }
+  .confidential small { color: #991b1b; font-size: 9pt; }
+
+  .result-box { background: #f0fdf4; border: 2px solid #059669; border-radius: 10px; padding: 20px; margin: 15px 0; page-break-inside: avoid; }
+  .result-box h4 { color: #059669; margin-bottom: 10px; }
+
+  .footer { text-align: center; color: #94a3b8; font-size: 8pt; margin-top: 40px; padding-top: 15px; border-top: 1px solid #e2e8f0; }
+
+  .nomenclature { background: #eff6ff; border: 1px solid #bfdbfe; border-radius: 8px; padding: 15px; margin: 15px 0; page-break-inside: avoid; }
+  .nomenclature h4 { color: #1e3a8a; margin-bottom: 8px; }
+  .nomenclature code { background: #1e3a8a; color: white; padding: 2px 8px; border-radius: 4px; font-size: 10pt; }
+</style>
+</head>
+<body>
+
+<!-- PORTADA -->
+<div class="cover">
+  <h1>SISTECH</h1>
+  <div class="subtitle">Sistemas Inteligentes de Tecnologia</div>
+  <div style="width: 80px; height: 3px; background: #3b82f6; margin: 20px auto;"></div>
+  <div style="font-size: 16pt; margin: 20px 0;">Documento de Accesos<br>y Flujo de Alta de Clientes</div>
+  <div class="badge">
+    <p>DOCUMENTO CONFIDENCIAL</p>
+    <p>Solo para uso interno del administrador</p>
+  </div>
+  <div class="date">Generado: 13 de Abril de 2026 (Actualizado con Sistema Contable)</div>
+</div>
+
+<!-- PARTE 1: ACCESOS -->
+<div class="confidential">
+  <p>DOCUMENTO CONFIDENCIAL - ACCESOS A SISTEMAS</p>
+  <small>Guarde este documento en un lugar seguro. Contiene credenciales de acceso a todos los sistemas.</small>
+</div>
+
+<div class="section-title">PARTE 1: ACCESOS A SISTEMAS EN VERCEL</div>
+
+<!-- APP 1: GESTION INVENTARIO -->
+<div class="app-card">
+  <h3>1. GESTION DE INVENTARIO</h3>
+  <p class="desc">Sistema de gestion de inventario con control de productos, proveedores, ordenes de compra, bodegas, transferencias, centros de costo, fórmulas de produccion, ordenes de produccion, ejecucion, ajustes de materia prima y mas.</p>
+  <a href="https://gestioninventario-two.vercel.app" style="text-decoration:none"><div class="url-box">https://gestioninventario-two.vercel.app</div></a>
+  <table>
+    <tr><th>Usuario</th><th>Clave</th><th>Rol</th></tr>
+    <tr><td><strong>jarango</strong></td><td><strong>admin123</strong></td><td><span class="admin-badge">ADMIN</span> Acceso total</td></tr>
+    <tr><td><strong>contable00</strong></td><td><strong>Contable00*</strong></td><td>Contabilidad y Administracion</td></tr>
+  </table>
+  <p style="margin-top: 12px; font-weight: 600; color: #059669;">Pagina Publica (sin login):</p>
+  <table>
+    <tr><th>Pagina</th><th>URL</th></tr>
+    <tr><td><span class="public-badge">PUBLICO</span> Tour de Sistemas SISTECH</td><td><a href="https://gestioninventario-two.vercel.app/tour" style="text-decoration:none"><div class="url-box">https://gestioninventario-two.vercel.app/tour</div></a></td></tr>
+  </table>
+</div>
+
+<!-- APP 2: CRM GTM -->
+<div class="app-card">
+  <h3>2. CRM GTM (Go To Market)</h3>
+  <p class="desc">CRM empresarial con base de datos en Supabase PostgreSQL. Gestion de clientes, contactos, empresas, oportunidades, proyectos, tareas, tickets de soporte, importacion desde Excel y agente IA conversacional. Autenticacion con Supabase Auth (email/password + recuperacion de clave + registro de nuevos usuarios).</p>
+  <p style="margin-top: 10px; font-weight: 600;">Acceso al Sistema (login):</p>
+  <a href="https://crmgtm.vercel.app/login" style="text-decoration:none"><div class="url-box">https://crmgtm.vercel.app/login</div></a>
+  <table>
+    <tr><th>Usuario</th><th>Clave</th><th>Rol</th></tr>
+    <tr><td><strong>administrador</strong></td><td><strong>Admin01*</strong></td><td><span class="admin-badge">ADMIN</span></td></tr>
+    <tr><td><strong>jpalomares</strong></td><td><strong>Admin02*</strong></td><td><span class="admin-badge">ADMIN</span></td></tr>
+    <tr><td><strong>comercial01</strong></td><td><strong>Comercial01*</strong></td><td>Comercial</td></tr>
+  </table>
+  <p style="margin-top: 12px; font-weight: 600; color: #059669;">Paginas Publicas (sin login):</p>
+  <table>
+    <tr><th>Pagina</th><th>URL</th></tr>
+    <tr><td><span class="public-badge">PUBLICO</span> Landing Comercial (Hero + Features + CTA)</td><td><a href="https://nortonlanding.vercel.app" style="text-decoration:none"><div class="url-box">https://nortonlanding.vercel.app</div></a></td></tr>
+    <tr><td><span class="public-badge">PUBLICO</span> Registro de nuevos usuarios (Sign Up)</td><td><a href="https://crmgtm.vercel.app/signup" style="text-decoration:none"><div class="url-box">https://crmgtm.vercel.app/signup</div></a></td></tr>
+    <tr><td><span class="public-badge">PUBLICO</span> Recuperacion de clave (Forgot Password)</td><td><a href="https://crmgtm.vercel.app/forgot-password" style="text-decoration:none"><div class="url-box">https://crmgtm.vercel.app/forgot-password</div></a></td></tr>
+  </table>
+</div>
+
+<!-- APP 3: CRM COMERCIAL -->
+<div class="app-card">
+  <h3>3. CRM COMERCIAL</h3>
+  <p class="desc">CRM comercial con gestion de clientes, contactos, prospectos, oportunidades, cotizaciones, productos, PQRS, correos, email marketing, automatizaciones y modulos configurables.</p>
+  <a href="https://crmcomercial.vercel.app" style="text-decoration:none"><div class="url-box">https://crmcomercial.vercel.app</div></a>
+  <table>
+    <tr><th>Usuario</th><th>Clave</th><th>Rol</th></tr>
+    <tr><td><strong>admin</strong></td><td><strong>admin123</strong></td><td><span class="admin-badge">ADMIN</span> Acceso total</td></tr>
+  </table>
+  <p style="margin-top: 12px; font-weight: 600; color: #059669;">Formularios Publicos (sin login):</p>
+  <table>
+    <tr><th>Formulario</th><th>URL</th></tr>
+    <tr><td><span class="public-badge">PUBLICO</span> Registro de Prospectos (captacion web de leads)</td><td><a href="https://crmcomercial.vercel.app/prospectos-publico" style="text-decoration:none"><div class="url-box">https://crmcomercial.vercel.app/prospectos-publico</div></a></td></tr>
+    <tr><td><span class="public-badge">PUBLICO</span> PQRS (con codigo de acceso del cliente)</td><td><a href="https://crmcomercial.vercel.app/pqrs-publico" style="text-decoration:none"><div class="url-box">https://crmcomercial.vercel.app/pqrs-publico</div></a></td></tr>
+  </table>
+</div>
+
+<!-- APP 4: CRM NOVASEGURIDAD -->
+<div class="app-card">
+  <h3>4. CRM NOVASEGURIDAD</h3>
+  <p class="desc">CRM especializado para empresas de vigilancia y seguridad. Maneja Lineas de Servicio independientes (Vigilancia, Escoltas, CCTV, GPS, Medios Tecnologicos, Caninos) con consecutivo de cotizacion separado por linea, calculo AIU e IVA, productos y servicios mezclados, prospectos y PQRS publicos.</p>
+  <a href="https://crmnovaseguridad.vercel.app" style="text-decoration:none"><div class="url-box">https://crmnovaseguridad.vercel.app</div></a>
+  <table>
+    <tr><th>Usuario</th><th>Clave</th><th>Rol</th></tr>
+    <tr><td><strong>admin</strong></td><td><strong>admin123</strong></td><td><span class="admin-badge">ADMIN</span> Acceso total</td></tr>
+  </table>
+  <p style="margin-top: 12px; font-weight: 600; color: #059669;">Formularios Publicos (sin login):</p>
+  <table>
+    <tr><th>Formulario</th><th>URL</th></tr>
+    <tr><td><span class="public-badge">PUBLICO</span> Registro de Prospectos (captacion web de leads)</td><td><a href="https://crmnovaseguridad.vercel.app/prospectos-publico" style="text-decoration:none"><div class="url-box">https://crmnovaseguridad.vercel.app/prospectos-publico</div></a></td></tr>
+    <tr><td><span class="public-badge">PUBLICO</span> PQRS (con codigo de acceso del cliente)</td><td><a href="https://crmnovaseguridad.vercel.app/pqrs-publico" style="text-decoration:none"><div class="url-box">https://crmnovaseguridad.vercel.app/pqrs-publico</div></a></td></tr>
+  </table>
+</div>
+
+<!-- APP 5: CALZADO Y ROPA -->
+<div class="app-card">
+  <h3>5. CALZADO Y ROPA</h3>
+  <p class="desc">Sistema de gestion retail especializado en calzado y ropa. Productos con variantes de talla y color, SKU unico por combinacion, codigos de barras CODE128 y QR, etiquetas imprimibles, punto de venta (POS), gestion multi-bodega, pedidos, PQRS y mas.</p>
+  <a href="https://calzadoropa.vercel.app" style="text-decoration:none"><div class="url-box">https://calzadoropa.vercel.app</div></a>
+  <table>
+    <tr><th>Usuario</th><th>Clave</th><th>Rol</th></tr>
+    <tr><td><strong>gloria</strong></td><td><strong>gloria0305*</strong></td><td><span class="admin-badge">ADMIN</span> Acceso total</td></tr>
+  </table>
+</div>
+
+<!-- APP 6: PORTAL INMOBILIARIO -->
+<div class="app-card">
+  <h3>6. PORTAL INMOBILIARIO</h3>
+  <p class="desc">Portal de gestion de propiedades con catalogo publico, comerciales por zonas, clientes con presupuesto, cotizaciones por email, contratos de venta y alquiler, solicitudes de interesados y busqueda por voz.</p>
+  <a href="https://portalinmobiliario.vercel.app" style="text-decoration:none"><div class="url-box">https://portalinmobiliario.vercel.app</div></a>
+  <table>
+    <tr><th>Usuario</th><th>Clave</th><th>Rol</th></tr>
+    <tr><td><strong>admin</strong></td><td><strong>admin</strong></td><td><span class="admin-badge">ADMIN</span></td></tr>
+  </table>
+  <p style="margin-top: 12px; font-weight: 600; color: #059669;">Paginas Publicas (sin login):</p>
+  <table>
+    <tr><th>Pagina</th><th>URL</th></tr>
+    <tr><td><span class="public-badge">PUBLICO</span> Pagina de Inicio (landing con propiedades destacadas)</td><td><a href="https://portalinmobiliario.vercel.app/inicio" style="text-decoration:none"><div class="url-box">https://portalinmobiliario.vercel.app/inicio</div></a></td></tr>
+    <tr><td><span class="public-badge">PUBLICO</span> Catalogo de Propiedades (filtros por tipo, ciudad, zona, modalidad)</td><td><a href="https://portalinmobiliario.vercel.app/catalogo" style="text-decoration:none"><div class="url-box">https://portalinmobiliario.vercel.app/catalogo</div></a></td></tr>
+    <tr><td><span class="public-badge">PUBLICO</span> Ficha de Propiedad (galeria + formulario de contacto)</td><td><a href="https://portalinmobiliario.vercel.app/propiedad/[id]" style="text-decoration:none"><div class="url-box">https://portalinmobiliario.vercel.app/propiedad/[id]</div></a></td></tr>
+  </table>
+</div>
+
+<!-- APP 7: HOMEUX -->
+<div class="app-card">
+  <h3>7. HOMEUX - Servicios del Hogar</h3>
+  <p class="desc">Sistema de gestion de servicios para el hogar (plomeria, electricidad, pintura, limpieza, etc.) con solicitudes, clientes, productos/materiales, cotizaciones y personal tecnico con habilidades.</p>
+  <a href="https://homeux-pearl.vercel.app" style="text-decoration:none"><div class="url-box">https://homeux-pearl.vercel.app</div></a>
+  <table>
+    <tr><th>Usuario</th><th>Clave</th><th>Rol</th></tr>
+    <tr><td><strong>admin</strong></td><td><strong>admin</strong></td><td><span class="admin-badge">ADMIN</span></td></tr>
+    <tr><td><strong>jpalomares</strong></td><td><strong>1234</strong></td><td><span class="admin-badge">ADMIN</span></td></tr>
+    <tr><td><strong>mgarcia</strong></td><td><strong>1234</strong></td><td>Operador</td></tr>
+  </table>
+</div>
+
+<!-- APP 8: PORTAL DEMOS -->
+<div class="app-card">
+  <h3>8. PORTAL DEMOS SISTECH</h3>
+  <p class="desc">Portal de demostraciones interactivas con tours guiados de los sistemas SISTECH para mostrar a prospectos sin necesidad de credenciales.</p>
+  <a href="https://portal-demos-rouge.vercel.app" style="text-decoration:none"><div class="url-box">https://portal-demos-rouge.vercel.app</div></a>
+  <p style="margin-top: 12px; color: #64748b; font-size: 9pt;">Sin login. Acceso publico para demostraciones.</p>
+</div>
+
+<!-- APP 9: CONSULTOR PALOMARES (LANDING) -->
+<div class="app-card">
+  <h3>9. CONSULTOR PALOMARES (Landing)</h3>
+  <p class="desc">Landing personal de Jose Enrique Palomares Tafur. Sitio publico con presentacion del consultor, servicios, catalogo de sistemas propios, capacitaciones y formulario de contacto.</p>
+  <a href="https://consultorpalomares.vercel.app" style="text-decoration:none"><div class="url-box">https://consultorpalomares.vercel.app</div></a>
+  <p style="margin-top: 12px; color: #64748b; font-size: 9pt;"><span class="public-badge">PUBLICO</span> Landing sin login. Acceso publico.</p>
+</div>
+
+<!-- APP 10: ALFREDO STERLING / APRENDER LIDERAZGO (LANDING) -->
+<div class="app-card">
+  <h3>10. ALFREDO STERLING - APRENDER LIDERAZGO (Landing)</h3>
+  <p class="desc">Landing publica de Alfredo Sterling. Sitio para promocionar contenidos, cursos y experiencia en liderazgo, comunicacion y formacion ejecutiva.</p>
+  <a href="https://aprenderliderazgo.vercel.app" style="text-decoration:none"><div class="url-box">https://aprenderliderazgo.vercel.app</div></a>
+  <p style="margin-top: 12px; color: #64748b; font-size: 9pt;"><span class="public-badge">PUBLICO</span> Landing sin login. Acceso publico.</p>
+</div>
+
+<!-- APP 11: POSTRES EXQUISITOS -->
+<div class="app-card">
+  <h3>11. POSTRES EXQUISITOS</h3>
+  <p class="desc">Sitio e-commerce de postres artesanales. Catalogo de productos por categoria (tortas, cheesecakes, brownies, flanes, galletas, especiales), carrito de compras y pedidos exclusivamente por WhatsApp. Sin base de datos, sitio 100% publico.</p>
+  <a href="https://postresexquisitos.vercel.app" style="text-decoration:none"><div class="url-box">https://postresexquisitos.vercel.app</div></a>
+  <p style="margin-top: 12px; color: #64748b; font-size: 9pt;"><span class="public-badge">PUBLICO</span> Sitio publico sin login. Pedidos por WhatsApp (+57 300 123 4567).</p>
+</div>
+
+<!-- APP 12: GESTION CONTABLE -->
+<div class="app-card">
+  <h3>12. GESTION CONTABLE</h3>
+  <p class="desc">Sistema de contabilidad y gestion financiera completo. Incluye: Catalogo de cuentas jerarquico (Activo, Pasivo, Patrimonio, Ingreso, Costo, Gasto), comprobantes (Ingreso, Egreso, Diario, Nomina, Ajuste), libro diario, libro mayor, balance de comprobacion, balance general, estado de resultados. Modulos operativos en desarrollo: Terceros (clientes/proveedores), Cuentas por Cobrar con antiguedad de saldos, Cuentas por Pagar con programacion de pagos, Control Bancario con conciliacion, Activos Fijos con depreciacion mensual automatica. Dashboard con KPIs financieros en pesos colombianos (COP).</p>
+  <a href="https://gestioncontable-pearl.vercel.app" style="text-decoration:none"><div class="url-box">https://gestioncontable-pearl.vercel.app</div></a>
+  <table>
+    <tr><th>Usuario</th><th>Clave</th><th>Rol</th></tr>
+    <tr><td><strong>admin</strong></td><td><strong>admin123</strong></td><td><span class="admin-badge">ADMIN</span> Acceso total</td></tr>
+    <tr><td><strong>contador</strong></td><td><strong>contador123</strong></td><td>Contador General</td></tr>
+  </table>
+</div>
+
+<!-- TABLA RESUMEN RAPIDO -->
+<div class="section-title-secondary">RESUMEN RAPIDO DE LINKS</div>
+<table>
+  <tr><th>App</th><th>URL de Produccion</th><th>Estado</th></tr>
+  <tr><td>Gestion Inventario</td><td><a href="https://gestioninventario-two.vercel.app" style="text-decoration:none"><div class="url-box">https://gestioninventario-two.vercel.app</div></a></td><td>Activo</td></tr>
+  <tr><td>CRM GTM (sistema)</td><td><a href="https://crmgtm.vercel.app/login" style="text-decoration:none"><div class="url-box">https://crmgtm.vercel.app/login</div></a></td><td>Activo</td></tr>
+  <tr><td>CRM Comercial</td><td><a href="https://crmcomercial.vercel.app" style="text-decoration:none"><div class="url-box">https://crmcomercial.vercel.app</div></a></td><td>Activo</td></tr>
+  <tr><td>CRM NovaSeguridad</td><td><a href="https://crmnovaseguridad.vercel.app" style="text-decoration:none"><div class="url-box">https://crmnovaseguridad.vercel.app</div></a></td><td>Activo</td></tr>
+  <tr><td>Calzado y Ropa</td><td><a href="https://calzadoropa.vercel.app" style="text-decoration:none"><div class="url-box">https://calzadoropa.vercel.app</div></a></td><td>Activo</td></tr>
+  <tr><td>Portal Inmobiliario</td><td><a href="https://portalinmobiliario.vercel.app" style="text-decoration:none"><div class="url-box">https://portalinmobiliario.vercel.app</div></a></td><td>Activo</td></tr>
+  <tr><td>HomeUX</td><td><a href="https://homeux-pearl.vercel.app" style="text-decoration:none"><div class="url-box">https://homeux-pearl.vercel.app</div></a></td><td>Activo</td></tr>
+  <tr><td>Portal Demos SISTECH</td><td><a href="https://portal-demos-rouge.vercel.app" style="text-decoration:none"><div class="url-box">https://portal-demos-rouge.vercel.app</div></a></td><td>Activo</td></tr>
+  <tr><td>Consultor Palomares (Landing)</td><td><a href="https://consultorpalomares.vercel.app" style="text-decoration:none"><div class="url-box">https://consultorpalomares.vercel.app</div></a></td><td>Activo</td></tr>
+  <tr><td>Alfredo Sterling - Aprender Liderazgo (Landing)</td><td><a href="https://aprenderliderazgo.vercel.app" style="text-decoration:none"><div class="url-box">https://aprenderliderazgo.vercel.app</div></a></td><td>Activo</td></tr>
+  <tr><td>Postres Exquisitos</td><td><a href="https://postresexquisitos.vercel.app" style="text-decoration:none"><div class="url-box">https://postresexquisitos.vercel.app</div></a></td><td>Activo</td></tr>
+  <tr><td>Gestion Contable</td><td><a href="https://gestioncontable-pearl.vercel.app" style="text-decoration:none"><div class="url-box">https://gestioncontable-pearl.vercel.app</div></a></td><td>Activo</td></tr>
+</table>
+
+<!-- TABLA COMPLETA DE FORMULARIOS PUBLICOS -->
+<div class="section-title-secondary">FORMULARIOS Y PAGINAS PUBLICAS - SIN LOGIN</div>
+<p style="color: #64748b; margin-bottom: 10px; font-size: 10pt;">Estas URLs son accesibles sin autenticacion y se pueden compartir con clientes, prospectos o publicos.</p>
+<table>
+  <tr><th>Sistema</th><th>Tipo</th><th>URL Publica</th></tr>
+  <tr><td>Gestion Inventario</td><td>Tour SISTECH</td><td><a href="https://gestioninventario-two.vercel.app/tour" style="text-decoration:none"><div class="url-box">https://gestioninventario-two.vercel.app/tour</div></a></td></tr>
+  <tr><td>CRM GTM</td><td>Landing Comercial</td><td><a href="https://nortonlanding.vercel.app" style="text-decoration:none"><div class="url-box">https://nortonlanding.vercel.app</div></a></td></tr>
+  <tr><td>CRM GTM</td><td>Registro de Usuarios</td><td><a href="https://crmgtm.vercel.app/signup" style="text-decoration:none"><div class="url-box">https://crmgtm.vercel.app/signup</div></a></td></tr>
+  <tr><td>CRM GTM</td><td>Recuperacion de Clave</td><td><a href="https://crmgtm.vercel.app/forgot-password" style="text-decoration:none"><div class="url-box">https://crmgtm.vercel.app/forgot-password</div></a></td></tr>
+  <tr><td>CRM Comercial</td><td>Captacion de Prospectos</td><td><a href="https://crmcomercial.vercel.app/prospectos-publico" style="text-decoration:none"><div class="url-box">https://crmcomercial.vercel.app/prospectos-publico</div></a></td></tr>
+  <tr><td>CRM Comercial</td><td>PQRS Cliente</td><td><a href="https://crmcomercial.vercel.app/pqrs-publico" style="text-decoration:none"><div class="url-box">https://crmcomercial.vercel.app/pqrs-publico</div></a></td></tr>
+  <tr><td>CRM NovaSeguridad</td><td>Captacion de Prospectos</td><td><a href="https://crmnovaseguridad.vercel.app/prospectos-publico" style="text-decoration:none"><div class="url-box">https://crmnovaseguridad.vercel.app/prospectos-publico</div></a></td></tr>
+  <tr><td>CRM NovaSeguridad</td><td>PQRS Cliente</td><td><a href="https://crmnovaseguridad.vercel.app/pqrs-publico" style="text-decoration:none"><div class="url-box">https://crmnovaseguridad.vercel.app/pqrs-publico</div></a></td></tr>
+  <tr><td>Portal Inmobiliario</td><td>Landing / Inicio</td><td><a href="https://portalinmobiliario.vercel.app/inicio" style="text-decoration:none"><div class="url-box">https://portalinmobiliario.vercel.app/inicio</div></a></td></tr>
+  <tr><td>Portal Inmobiliario</td><td>Catalogo de Propiedades</td><td><a href="https://portalinmobiliario.vercel.app/catalogo" style="text-decoration:none"><div class="url-box">https://portalinmobiliario.vercel.app/catalogo</div></a></td></tr>
+  <tr><td>Portal Inmobiliario</td><td>Ficha de Propiedad</td><td><a href="https://portalinmobiliario.vercel.app/propiedad/[id]" style="text-decoration:none"><div class="url-box">https://portalinmobiliario.vercel.app/propiedad/[id]</div></a></td></tr>
+  <tr><td>Portal Demos</td><td>Demos Interactivos</td><td><a href="https://portal-demos-rouge.vercel.app" style="text-decoration:none"><div class="url-box">https://portal-demos-rouge.vercel.app</div></a></td></tr>
+  <tr><td>Consultor Palomares</td><td>Landing Personal</td><td><a href="https://consultorpalomares.vercel.app" style="text-decoration:none"><div class="url-box">https://consultorpalomares.vercel.app</div></a></td></tr>
+  <tr><td>Alfredo Sterling</td><td>Landing Aprender Liderazgo</td><td><a href="https://aprenderliderazgo.vercel.app" style="text-decoration:none"><div class="url-box">https://aprenderliderazgo.vercel.app</div></a></td></tr>
+  <tr><td>Postres Exquisitos</td><td>E-commerce Postres (WhatsApp)</td><td><a href="https://postresexquisitos.vercel.app" style="text-decoration:none"><div class="url-box">https://postresexquisitos.vercel.app</div></a></td></tr>
+</table>
+
+<!-- PARTE 2: FLUJO DE ALTA DE CLIENTES -->
+<div class="flow-container">
+<div class="section-title">PARTE 2: FLUJO DE ALTA DE NUEVO CLIENTE</div>
+
+<p style="color: #64748b; margin-bottom: 15px;">Este flujo describe el proceso paso a paso para instalar un sistema nuevo para un cliente usando la plataforma SISTECH.</p>
+
+<div class="nomenclature">
+  <h4>Nomenclatura de Subdominios</h4>
+  <p>Formato: <code>sistema</code> + <code>cliente</code> + <code>pais</code> + <code>.sistech.com</code></p>
+  <p style="margin-top: 8px; font-size: 10pt;">Ejemplos: <code>crmgtmcol</code>.sistech.com | <code>crmgtmecu</code>.sistech.com | <code>invborinquen</code>.sistech.com</p>
+</div>
+
+<!-- PASO 1 -->
+<div class="flow-step">
+  <h4><span class="step-num">1</span> DOMINIO Y SUBDOMINIO</h4>
+  <p>Definir la URL del cliente.</p>
+  <ul>
+    <li>Dominio principal (ej: sistech.com)</li>
+    <li>Subdominio para el cliente (ej: crmgtmcol)</li>
+    <li>Vista previa: crmgtmcol.sistech.com</li>
+  </ul>
+  <div class="form-preview">
+    <h4>Campos a completar:</h4>
+    <div class="form-field"><label>Dominio principal</label><div class="input">sistech.com</div></div>
+    <div class="form-field"><label>Subdominio del cliente</label><div class="input">crmgtmcol</div></div>
+    <div class="form-field"><label>URL resultante</label><div class="input">crmgtmcol.sistech.com</div></div>
+  </div>
+</div>
+
+<!-- PASO 2 -->
+<div class="flow-step">
+  <h4><span class="step-num">2</span> DATOS DE LA EMPRESA</h4>
+  <p>Informacion del cliente para personalizar el sistema.</p>
+  <div class="form-preview">
+    <h4>Campos a completar:</h4>
+    <div class="form-field"><label>Nombre de la empresa</label><div class="input">GTM Grupo Empresarial S.A.S.</div></div>
+    <div class="form-field"><label>NIT / RUC / Identificacion</label><div class="input">900.123.456-7</div></div>
+    <div class="form-field"><label>Pais</label><div class="input">Colombia</div></div>
+    <div class="form-field"><label>Ciudad</label><div class="input">Bogota</div></div>
+    <div class="form-field"><label>Direccion</label><div class="input">Cra 15 #93-47 Oficina 302</div></div>
+    <div class="form-field"><label>Telefono</label><div class="input">+57 601 456 7890</div></div>
+    <div class="form-field"><label>Correo de contacto</label><div class="input">gerencia@gtmgrupo.com</div></div>
+    <div class="form-field"><label>Logo de la empresa</label><div class="input">Subir archivo PNG/JPG</div></div>
+  </div>
+</div>
+
+<!-- PASO 3 -->
+<div class="flow-step">
+  <h4><span class="step-num">3</span> SISTEMA A INSTALAR</h4>
+  <p>Seleccionar el tipo de sistema y modelo de despliegue.</p>
+  <div class="form-preview">
+    <h4>Campos a completar:</h4>
+    <div class="form-field"><label>Tipo de sistema</label><div class="input">CRM GTM / CRM Comercial / Gestion Inventario / Portal Inmobiliario / HomeUX / Gestion Contable / Postres Exquisitos / Personalizado</div></div>
+    <div class="form-field"><label>Modelo de despliegue</label><div class="input">Nuestro Vercel (SaaS) / Hosting del cliente</div></div>
+    <div class="form-field"><label>Modulos a activar</label><div class="input">Dashboard, Clientes, Contactos, Oportunidades, Cotizaciones, Correos, Tickets, Proyectos, Empresa...</div></div>
+  </div>
+</div>
+
+<!-- PASO 4 -->
+<div class="flow-step">
+  <h4><span class="step-num">4</span> USUARIOS INICIALES</h4>
+  <p>Crear los usuarios que tendra acceso al sistema.</p>
+  <div class="form-preview">
+    <h4>Por cada usuario:</h4>
+    <div class="form-field"><label>Nombre completo</label><div class="input">Carlos Mendoza Rios</div></div>
+    <div class="form-field"><label>Usuario de acceso</label><div class="input">cmendoza</div></div>
+    <div class="form-field"><label>Correo electronico</label><div class="input">cmendoza@gtmgrupo.com</div></div>
+    <div class="form-field"><label>Clave inicial</label><div class="input">Admin01*</div></div>
+    <div class="form-field"><label>Rol</label><div class="input">Administrador / Comercial / Operaciones / Contabilidad</div></div>
+  </div>
+</div>
+
+<!-- PASO 5 -->
+<div class="flow-step">
+  <h4><span class="step-num">5</span> CONFIRMACION Y CREACION</h4>
+  <p>Revisar toda la informacion y confirmar la creacion del sistema.</p>
+  <ul>
+    <li>Se revisa el resumen completo con el administrador</li>
+    <li>Se muestra vista previa de la pantalla de login personalizada</li>
+    <li>Se confirma y se procede a la creacion automatica</li>
+  </ul>
+  <div class="login-preview">
+    <div style="font-size: 9pt; color: #64748b; margin-bottom: 8px;">Vista previa del login:</div>
+    <h4>GTM GRUPO EMPRESARIAL S.A.S.</h4>
+    <div class="city">CRM Comercial - Bogota, Colombia</div>
+    <div class="field">Usuario: cmendoza</div>
+    <div class="field">Clave: ********</div>
+    <div class="btn">Ingresar al CRM</div>
+  </div>
+</div>
+
+<!-- PASO 6 -->
+<div class="flow-step">
+  <h4><span class="step-num">6</span> EJECUCION AUTOMATICA</h4>
+  <p>El sistema ejecuta automaticamente:</p>
+  <ul>
+    <li>Crear el proyecto en Vercel</li>
+    <li>Configurar el subdominio (ej: crmgtmcol.sistech.com)</li>
+    <li>Crear la base de datos en Supabase</li>
+    <li>Instalar el sistema con los modulos seleccionados</li>
+    <li>Crear los usuarios con sus roles y permisos</li>
+    <li>Personalizar logo, nombre de empresa, ciudad y pais</li>
+    <li>Preparar configuracion base de correo (ver Paso 7 para personalizacion)</li>
+  </ul>
+</div>
+
+<!-- PASO 7: CONFIGURACION SERVIDOR DE CORREOS -->
+<div class="flow-step">
+  <h4><span class="step-num">7</span> CONFIGURACION DE CORREO (IDENTIDAD DEL CLIENTE)</h4>
+  <p>Configurar el servidor de correo para que los emails salgan con la identidad de la empresa del cliente. <strong>SIN ESTE PASO, los correos salen con remitente generico y los destinatarios no saben quien les envio.</strong></p>
+  <div class="form-preview">
+    <h4>Datos de Correo del Cliente:</h4>
+    <div class="form-field"><label>Nombre remitente (From Name)</label><div class="input">GTM Grupo Empresarial S.A.S.</div></div>
+    <div class="form-field"><label>Correo remitente (From Email)</label><div class="input">sistema@gtmgrupo.com</div></div>
+    <div class="form-field"><label>Servidor SMTP</label><div class="input">smtp.gmail.com / smtp del cliente</div></div>
+    <div class="form-field"><label>Puerto SMTP</label><div class="input">465 (SSL) o 587 (TLS)</div></div>
+    <div class="form-field"><label>Usuario SMTP</label><div class="input">sistema@gtmgrupo.com</div></div>
+    <div class="form-field"><label>Contraseña SMTP / App Password</label><div class="input">********</div></div>
+  </div>
+  <ul>
+    <li><strong>Opcion A - Gmail:</strong> El cliente crea una cuenta Gmail (ej: notificaciones.gtm@gmail.com), genera una App Password, y la proporciona</li>
+    <li><strong>Opcion B - Correo corporativo:</strong> El cliente proporciona datos SMTP de su dominio (ej: sistema@gtmgrupo.com)</li>
+    <li>El nombre de empresa aparecera en: remitente del email, header del PDF adjunto, header del email HTML, y footer del correo</li>
+    <li>Estos datos se configuran en: <strong>Variables de entorno de Vercel</strong> (SMTP_HOST, SMTP_PORT, SMTP_USER, SMTP_PASS) y en el modulo <strong>Datos Empresa</strong> del sistema</li>
+    <li><strong>VERIFICAR:</strong> Enviar correo de prueba y confirmar que el destinatario ve el nombre de la empresa del cliente como remitente</li>
+  </ul>
+  <div class="nomenclature">
+    <h4>Ejemplo de como se ve el correo recibido</h4>
+    <p>De: <strong>GTM Grupo Empresarial S.A.S.</strong> &lt;sistema@gtmgrupo.com&gt;</p>
+    <p>Asunto: Orden de Compra OC-00015 - GTM Grupo Empresarial S.A.S.</p>
+    <p style="margin-top: 5px; font-size: 9pt; color: #64748b;">El proveedor/empleado ve claramente que el correo viene de su cliente, no de un sistema generico.</p>
+  </div>
+</div>
+
+<!-- PASO 8 -->
+<div class="flow-step">
+  <h4><span class="step-num">8</span> ENTREGA DE ACCESOS</h4>
+  <p>Se genera el documento de entrega con:</p>
+  <div class="result-box">
+    <h4>SISTEMA CREADO EXITOSAMENTE</h4>
+    <table>
+      <tr><td><strong>Cliente:</strong></td><td>GTM Grupo Empresarial S.A.S.</td></tr>
+      <tr><td><strong>Sistema:</strong></td><td>CRM GTM - Colombia</td></tr>
+      <tr><td><strong>URL:</strong></td><td><a href="https://crmgtmcol.sistech.com" style="text-decoration:none"><div class="url-box">https://crmgtmcol.sistech.com</div></a></td></tr>
+    </table>
+    <table style="margin-top: 10px;">
+      <tr><th>Usuario</th><th>Clave</th><th>Rol</th></tr>
+      <tr><td>cmendoza</td><td>Admin01*</td><td>Administrador</td></tr>
+    </table>
+  </div>
+</div>
+
+</div>
+
+<!-- COSTOS -->
+<div class="section-title-secondary">COSTOS DE INFRAESTRUCTURA</div>
+<table>
+  <tr><th>Concepto</th><th>Costo</th><th>Nota</th></tr>
+  <tr><td>Dominio (sistech.com)</td><td>~$12 USD/año</td><td>Se paga una sola vez al año</td></tr>
+  <tr><td>Subdominios</td><td>GRATIS</td><td>Ilimitados bajo el dominio principal</td></tr>
+  <tr><td>Vercel Hobby</td><td>GRATIS</td><td>Hasta 3 proyectos</td></tr>
+  <tr><td>Vercel Pro</td><td>$20 USD/mes</td><td>Proyectos ilimitados, clientes ilimitados</td></tr>
+  <tr><td>Supabase Free</td><td>GRATIS</td><td>Hasta 500MB por proyecto</td></tr>
+  <tr><td>Supabase Pro</td><td>$25 USD/mes</td><td>Por proyecto, cuando el cliente crece</td></tr>
+</table>
+
+<div class="footer">
+  <p>SISTECH - Sistemas Inteligentes de Tecnologia</p>
+  <p>Documento generado el 13 de Abril de 2026 | Confidencial - Solo uso interno</p>
+</div>
+
+</body>
+</html>

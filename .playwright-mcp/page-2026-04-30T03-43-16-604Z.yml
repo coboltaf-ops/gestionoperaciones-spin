@@ -1,0 +1,23 @@
+- generic [active] [ref=e1]:
+  - generic [ref=e5]:
+    - generic "Idioma" [ref=e8]:
+      - button "ES" [pressed] [ref=e9] [cursor=pointer]
+      - button "EN" [ref=e10] [cursor=pointer]
+    - generic [ref=e11]:
+      - img "CONSTRUCTORA BORINQUEN S.A.S." [ref=e24]
+      - heading "CONSTRUCTORA BORINQUEN S.A.S." [level=1] [ref=e25]
+      - paragraph [ref=e14]: Inicia sesión en tu cuenta
+    - generic [ref=e26]: Usuario o clave incorrectos
+    - generic [ref=e15]:
+      - generic [ref=e16]:
+        - generic [ref=e17]: Usuario
+        - textbox "Usuario" [ref=e18]:
+          - /placeholder: jarango
+          - text: jarango
+      - generic [ref=e19]:
+        - generic [ref=e20]: Clave
+        - textbox "Clave" [ref=e21]:
+          - /placeholder: ••••••••
+          - text: jarango
+      - button "Ingresar al Sistema" [ref=e22] [cursor=pointer]
+  - alert [ref=e23]

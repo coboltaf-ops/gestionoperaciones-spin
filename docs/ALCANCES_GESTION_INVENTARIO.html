@@ -1,0 +1,887 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+<meta charset="UTF-8">
+<title>Alcances y Uso — Sistema Gestion de Inventario</title>
+<style>
+  @page { margin: 1.5cm; size: A4; }
+  * { margin: 0; padding: 0; box-sizing: border-box; }
+  body { font-family: 'Segoe UI', Arial, sans-serif; color: #1a1a2e; font-size: 10.5pt; line-height: 1.6; }
+
+  .cover { page-break-after: always; display: flex; flex-direction: column; justify-content: center; align-items: center; min-height: 95vh; text-align: center; background: linear-gradient(135deg, #0a1628 0%, #1e3a8a 50%, #3b82f6 100%); color: white; padding: 60px 40px; border-radius: 8px; }
+  .cover .logo-box { width: 100px; height: 100px; border-radius: 20px; background: rgba(255,255,255,0.15); border: 3px solid rgba(255,255,255,0.4); display: flex; align-items: center; justify-content: center; font-size: 28pt; font-weight: 900; color: #fff; margin-bottom: 30px; letter-spacing: 2px; }
+  .cover h1 { font-size: 30pt; margin-bottom: 10px; letter-spacing: 2px; }
+  .cover .subtitle { font-size: 16pt; color: #93c5fd; margin-bottom: 30px; font-weight: 300; }
+  .cover .tagline { font-size: 11pt; color: #bfdbfe; max-width: 500px; margin-top: 20px; line-height: 1.8; }
+  .cover .version { font-size: 10pt; color: #93c5fd; margin-top: 40px; padding-top: 20px; border-top: 1px solid rgba(255,255,255,0.2); width: 300px; }
+
+  h1.section { page-break-before: always; background: linear-gradient(90deg, #0a1628, #1e3a8a); color: white; padding: 15px 25px; border-radius: 8px; font-size: 18pt; margin: 30px 0 20px 0; box-shadow: 0 4px 12px rgba(30,58,138,0.3); }
+  h2 { background: #1e3a8a; color: white; padding: 10px 20px; border-radius: 6px; font-size: 14pt; margin: 25px 0 15px 0; page-break-after: avoid; }
+  h3 { color: #1e3a8a; font-size: 12pt; margin: 20px 0 10px 0; border-bottom: 2px solid #1e3a8a; padding-bottom: 4px; page-break-after: avoid; }
+  h4 { color: #1e40af; font-size: 11pt; margin: 12px 0 6px 0; }
+
+  p { margin: 6px 0; }
+  ul, ol { margin: 8px 0 8px 25px; }
+  li { margin: 4px 0; }
+
+  table { width: 100%; border-collapse: collapse; margin: 10px 0 15px 0; font-size: 9.5pt; page-break-inside: avoid; }
+  th { background: #1e3a8a; color: white; padding: 8px 12px; text-align: left; font-weight: 600; }
+  td { padding: 7px 12px; border-bottom: 1px solid #e2e8f0; vertical-align: top; }
+  tr:nth-child(even) { background: #f8fafc; }
+
+  .badge { display: inline-block; padding: 2px 10px; border-radius: 12px; font-size: 8.5pt; font-weight: 600; }
+  .badge-green { background: #dcfce7; color: #166534; border: 1px solid #86efac; }
+  .badge-yellow { background: #fef9c3; color: #854d0e; border: 1px solid #fde047; }
+  .badge-red { background: #fee2e2; color: #991b1b; border: 1px solid #fca5a5; }
+  .badge-blue { background: #dbeafe; color: #1e40af; border: 1px solid #93c5fd; }
+  .badge-white { background: #f8fafc; color: #0f172a; border: 1px solid #cbd5e1; }
+  .badge-purple { background: #ede9fe; color: #5b21b6; border: 1px solid #c4b5fd; }
+  .badge-pink { background: #fce7f3; color: #9d174d; border: 1px solid #f9a8d4; }
+  .badge-orange { background: #ffedd5; color: #9a3412; border: 1px solid #fdba74; }
+
+  .info-box { background: #eff6ff; border-left: 4px solid #3b82f6; border-radius: 4px; padding: 12px 15px; margin: 12px 0; page-break-inside: avoid; }
+  .warn-box { background: #fef3c7; border-left: 4px solid #f59e0b; border-radius: 4px; padding: 12px 15px; margin: 12px 0; page-break-inside: avoid; }
+  .rule-box { background: #fce7f3; border-left: 4px solid #ec4899; border-radius: 4px; padding: 12px 15px; margin: 12px 0; page-break-inside: avoid; }
+  .success-box { background: #dcfce7; border-left: 4px solid #22c55e; border-radius: 4px; padding: 12px 15px; margin: 12px 0; page-break-inside: avoid; }
+
+  .formula { background: #0f172a; color: #60a5fa; padding: 12px 16px; border-radius: 6px; font-family: 'Courier New', monospace; font-size: 9.5pt; margin: 10px 0; page-break-inside: avoid; line-height: 1.6; }
+
+  .flow { border-left: 3px solid #1e3a8a; padding: 8px 14px; margin: 6px 0 6px 10px; background: #f1f5f9; border-radius: 0 6px 6px 0; page-break-inside: avoid; font-size: 10pt; }
+
+  .url-box { background: #0f172a; color: #60a5fa; padding: 8px 14px; border-radius: 6px; font-family: 'Courier New', monospace; font-size: 10pt; display: inline-block; margin: 3px 0; font-weight: bold; }
+
+  .credentials { background: #fef2f2; border: 2px solid #dc2626; border-radius: 8px; padding: 15px; margin: 15px 0; page-break-inside: avoid; }
+  .credentials h4 { color: #991b1b; margin-bottom: 8px; }
+  .credentials table th { background: #991b1b; }
+
+  .screen-mockup { background: #0f1b3d; border: 2px solid #1e3a8a; border-radius: 10px; padding: 20px; margin: 15px 0; color: white; page-break-inside: avoid; }
+  .screen-mockup .mock-title { background: #1e3a8a; color: #fff; padding: 8px 14px; border-radius: 6px; font-weight: 700; font-size: 11pt; margin-bottom: 12px; }
+  .screen-mockup .field-grid { display: grid; grid-template-columns: 1fr 1fr; gap: 10px; }
+  .screen-mockup .field { background: rgba(255,255,255,0.08); border: 1px solid rgba(255,255,255,0.2); border-radius: 6px; padding: 8px 12px; }
+  .screen-mockup .field label { font-size: 8pt; color: #93c5fd; display: block; text-transform: uppercase; letter-spacing: 0.5px; }
+  .screen-mockup .field .val { color: #fff; font-weight: 600; font-size: 10pt; margin-top: 2px; }
+  .screen-mockup .required::after { content: ' *'; color: #fca5a5; }
+
+  .pdf-preview { background: #fff; border: 2px solid #1e3a8a; border-radius: 8px; padding: 20px; margin: 15px 0; page-break-inside: avoid; }
+  .pdf-preview .pdf-header { background: linear-gradient(90deg, #0a1628, #1e3a8a); color: white; padding: 12px 16px; border-radius: 6px; margin-bottom: 15px; display: flex; justify-content: space-between; align-items: center; }
+  .pdf-preview .pdf-header h5 { font-size: 12pt; font-weight: 700; }
+  .pdf-preview .pdf-header .doc-num { font-family: monospace; font-size: 11pt; }
+
+  .footer { text-align: center; color: #94a3b8; font-size: 8pt; margin-top: 30px; padding-top: 15px; border-top: 1px solid #e2e8f0; }
+  .toc a { color: #1e3a8a; text-decoration: none; }
+  .toc li { margin: 5px 0; }
+
+  .flex-two { display: grid; grid-template-columns: 1fr 1fr; gap: 15px; }
+  .chart-mockup { background: #0a1628; border-radius: 10px; padding: 20px; color: white; margin: 15px 0; page-break-inside: avoid; }
+  .chart-mockup h5 { color: #93c5fd; margin-bottom: 15px; }
+  .bar-row { display: flex; align-items: flex-end; justify-content: space-around; gap: 20px; height: 200px; padding: 10px 0; }
+  .bar { flex: 1; display: flex; flex-direction: column; align-items: center; justify-content: flex-end; height: 100%; }
+  .bar .val { color: #fff; font-weight: 900; font-size: 11pt; margin-bottom: 6px; }
+  .bar .bar-fill { width: 60px; min-height: 20px; border-radius: 6px 6px 0 0; box-shadow: 0 0 12px rgba(96,165,250,0.4); }
+  .bar .lbl { color: #93c5fd; font-size: 8pt; margin-top: 8px; text-align: center; max-width: 120px; }
+  /* Pie chart simulado con conic-gradient */
+  .pie-wrapper { display: flex; align-items: center; gap: 30px; padding: 10px 0; }
+  .pie { width: 160px; height: 160px; border-radius: 50%; flex-shrink: 0; box-shadow: 0 0 20px rgba(96,165,250,0.3); }
+  .pie-legend { flex: 1; display: flex; flex-direction: column; gap: 8px; }
+  .pie-legend .item { display: flex; align-items: center; gap: 10px; color: #fff; font-size: 10pt; }
+  .pie-legend .swatch { width: 14px; height: 14px; border-radius: 3px; flex-shrink: 0; }
+  .pie-legend .pct { color: #93c5fd; font-weight: 700; margin-left: auto; }
+</style>
+</head>
+<body>
+
+<!-- PORTADA -->
+<div class="cover">
+  <div class="logo-box">INVEN</div>
+  <h1>GESTION DE INVENTARIO</h1>
+  <div class="subtitle">Alcances y Uso del Sistema</div>
+  <div style="width:100px;height:3px;background:#93c5fd;margin:15px auto;"></div>
+  <div class="tagline">
+    Documentacion completa de modulos, formularios, reglas de negocio, actualizaciones de inventario, PDFs y dashboards del sistema.
+  </div>
+  <div class="version">
+    Version 1.0 — Abril 2026<br>
+    <strong>SisTech</strong> — Sistemas Inteligentes de Tecnologia
+  </div>
+</div>
+
+<!-- INDICE -->
+<h1 class="section">Tabla de Contenido</h1>
+<ol class="toc" style="font-size:11pt;line-height:2;">
+  <li><a href="#acceso">Acceso al Sistema (URL y Credenciales)</a></li>
+  <li><a href="#alcance">Alcance General del Sistema</a></li>
+  <li><a href="#dashboard">Dashboard Principal y Graficos</a></li>
+  <li><a href="#mod-productos">Modulo: Productos (Maestro)</a></li>
+  <li><a href="#mod-proveedores">Modulo: Proveedores</a></li>
+  <li><a href="#mod-ordenes">Modulo: Ordenes de Compra</a></li>
+  <li><a href="#mod-recepcion">Modulo: Recepcion de Facturas</a></li>
+  <li><a href="#mod-bodegas">Modulo: Bodegas</a></li>
+  <li><a href="#mod-transferencias">Modulo: Transferencias entre Bodegas</a></li>
+  <li><a href="#mod-salidas">Modulo: Salidas de Almacen</a></li>
+  <li><a href="#mod-ajustes">Modulo: Ajustes de Inventario</a></li>
+  <li><a href="#mod-kardex">Modulo: Kardex de Productos</a></li>
+  <li><a href="#mod-tareas">Modulo: Tareas</a></li>
+  <li><a href="#reglas">Reglas de Actualizacion de Inventarios</a></li>
+  <li><a href="#costo">Formula del Costo Promedio Ponderado</a></li>
+  <li><a href="#pdfs">Galeria de PDFs Emitidos</a></li>
+</ol>
+
+<!-- ACCESO -->
+<h1 class="section" id="acceso">1. Acceso al Sistema</h1>
+
+<h3>URL de Produccion</h3>
+<div class="url-box">https://gestioninventario-two.vercel.app</div>
+<p style="margin-top:8px;">Acceso desde cualquier navegador (Chrome, Safari, Edge, Firefox). Compatible con escritorio y movil.</p>
+
+<h3>URL del Tour de Demostracion Publico</h3>
+<div class="url-box">https://gestioninventario-two.vercel.app/tour</div>
+<p style="margin-top:8px;">Pagina publica sin login para compartir la demostracion de los 7 sistemas de SisTech.</p>
+
+<div class="credentials">
+  <h4>CREDENCIALES DE ACCESO</h4>
+  <table>
+    <tr><th>Usuario</th><th>Clave</th><th>Rol</th><th>Permisos</th></tr>
+    <tr>
+      <td><strong>jarango</strong></td>
+      <td><strong>admin123</strong></td>
+      <td><span class="badge badge-red">ADMIN</span></td>
+      <td>Acceso total a todos los modulos</td>
+    </tr>
+    <tr>
+      <td><strong>contable00</strong></td>
+      <td><strong>Contable00*</strong></td>
+      <td><span class="badge badge-blue">CONTABILIDAD</span></td>
+      <td>Lectura + Registro (sin editar ni eliminar)</td>
+    </tr>
+  </table>
+</div>
+
+<h3>Pantalla de Login</h3>
+<div class="screen-mockup">
+  <div class="mock-title">Inicio de Sesion</div>
+  <div style="text-align:center;">
+    <div style="display:inline-block;width:60px;height:60px;border-radius:12px;background:linear-gradient(135deg,#1e3a8a,#3b82f6);color:#fff;font-weight:900;font-size:14pt;padding:20px 0;margin-bottom:15px;">INVEN</div>
+    <div style="color:#fff;font-size:11pt;font-weight:600;margin-bottom:20px;">Gestion de Inventario</div>
+    <div class="field" style="margin:8px 0;">
+      <label>Usuario</label>
+      <div class="val">jarango</div>
+    </div>
+    <div class="field" style="margin:8px 0;">
+      <label>Clave</label>
+      <div class="val">••••••••</div>
+    </div>
+    <div style="background:linear-gradient(135deg,#60a5fa,#38bdf8);padding:10px 24px;border-radius:8px;font-weight:700;color:#fff;display:inline-block;margin-top:10px;">Ingresar al Sistema</div>
+  </div>
+</div>
+
+<!-- ALCANCE -->
+<h1 class="section" id="alcance">2. Alcance General del Sistema</h1>
+
+<p>El sistema <strong>Gestion de Inventario</strong> controla el ciclo completo de productos desde la compra a proveedores hasta el consumo interno, pasando por bodegas, transferencias, salidas y ajustes. Incluye produccion, tareas, personal, y reportes ejecutivos.</p>
+
+<h3>Modulos Disponibles (27 modulos)</h3>
+<table>
+  <tr><th>Area</th><th>Modulos</th></tr>
+  <tr><td><strong>Inventario & Control</strong></td><td>Dashboard, Productos, Kardex de Productos, Bodegas, Carga Inicial Inventario</td></tr>
+  <tr><td><strong>Compras</strong></td><td>Proveedores, Ordenes de Compra, Recepcion de Facturas, Ordenes de Pedido</td></tr>
+  <tr><td><strong>Operaciones</strong></td><td>Transferencias entre Bodegas, Salidas de Almacen, Ajustes de Inventario, Centros de Costo</td></tr>
+  <tr><td><strong>Produccion</strong></td><td>Formulas de Produccion, Ordenes de Produccion, Ejecucion, Ajustes Materia Prima</td></tr>
+  <tr><td><strong>Seguimiento</strong></td><td>Tareas (con vista Kanban), Personal Empresa, Correos Enviados, Agente IA con Voz</td></tr>
+  <tr><td><strong>Configuracion</strong></td><td>Datos Empresa, Gestion de Usuarios, Modulos del Sistema, Tablas de Referencias</td></tr>
+</table>
+
+<h3>Capacidades Transversales</h3>
+<ul>
+  <li><strong>Exportacion a PDF, Excel e Impresion</strong> en todos los modulos con reportes</li>
+  <li><strong>Formato de fecha DD/MM/AAAA</strong> unificado en todo el sistema</li>
+  <li><strong>Busqueda por voz</strong> en modulos clave</li>
+  <li><strong>Permisos granulares</strong> por modulo (Leer, Registrar, Editar, Eliminar)</li>
+  <li><strong>Modulos activables/desactivables</strong> desde panel de administracion</li>
+  <li><strong>Persistencia en la nube</strong> (Vercel Blob Storage Pro)</li>
+</ul>
+
+<!-- DASHBOARD -->
+<h1 class="section" id="dashboard">3. Dashboard Principal y Graficos</h1>
+
+<h3>KPIs Principales</h3>
+<p>Tarjetas con indicadores clave en tiempo real:</p>
+<table>
+  <tr><th>KPI</th><th>Que mide</th></tr>
+  <tr><td>Productos Activos</td><td>Total de productos con situacion Activo</td></tr>
+  <tr><td>Proveedores Activos</td><td>Total de proveedores con situacion Activo</td></tr>
+  <tr><td>Ordenes de Compra</td><td>Total de OC registradas</td></tr>
+  <tr><td>Recepciones</td><td>Total de facturas recibidas</td></tr>
+  <tr><td>Bodegas Activas</td><td>Bodegas en operacion</td></tr>
+  <tr><td>Transferencias</td><td>Total de transferencias realizadas</td></tr>
+  <tr><td>Ajustes Inventario</td><td>Total de ajustes realizados</td></tr>
+  <tr><td>Productos Bajo Minimo</td><td>Productos con existencia menor al minimo configurado</td></tr>
+</table>
+
+<h3>Grafico 1: Ordenes de Compra por Estado</h3>
+<p>Barras verticales con los colores especificos de cada estado. Muestra el valor total y cantidad de ordenes en cada estado. Click lleva al modulo de Ordenes de Compra.</p>
+<div class="chart-mockup">
+  <h5>Ordenes de Compra por Estado</h5>
+  <div class="bar-row">
+    <div class="bar"><div class="val">$1.1M (1)</div><div class="bar-fill" style="height:45px;background:linear-gradient(180deg,#fbbf24,#d97706);"></div><div class="lbl">Pendiente Aprobacion</div></div>
+    <div class="bar"><div class="val">$11.4M (3)</div><div class="bar-fill" style="height:150px;background:linear-gradient(180deg,#22c55e,#15803d);"></div><div class="lbl">Recibida Completa</div></div>
+  </div>
+</div>
+
+<h3>Grafico 2: Tareas por Situacion</h3>
+<p>Grafico circular (pie) que muestra la distribucion de tareas por su estado: Pendiente, En Proceso, Completada, Anulada, Vencida.</p>
+<div class="chart-mockup">
+  <h5>Tareas por Situacion</h5>
+  <div class="pie-wrapper">
+    <div class="pie" style="background: conic-gradient(#fbbf24 0 35%, #3b82f6 35% 60%, #22c55e 60% 85%, #ef4444 85% 95%, #6b7280 95% 100%);"></div>
+    <div class="pie-legend">
+      <div class="item"><span class="swatch" style="background:#fbbf24;"></span><span>Pendiente</span><span class="pct">35%</span></div>
+      <div class="item"><span class="swatch" style="background:#3b82f6;"></span><span>En Proceso</span><span class="pct">25%</span></div>
+      <div class="item"><span class="swatch" style="background:#22c55e;"></span><span>Completada</span><span class="pct">25%</span></div>
+      <div class="item"><span class="swatch" style="background:#ef4444;"></span><span>Vencida</span><span class="pct">10%</span></div>
+      <div class="item"><span class="swatch" style="background:#6b7280;"></span><span>Anulada</span><span class="pct">5%</span></div>
+    </div>
+  </div>
+</div>
+
+<h3>Grafico 3: Valor de Inventario por Bodega</h3>
+<p>Barras verticales que muestran el valor total del inventario distribuido por cada bodega. El total general aparece en la parte superior.</p>
+<div class="chart-mockup">
+  <h5>Valor de Inventario por Bodega</h5>
+  <div style="color:#fff;font-size:14pt;font-weight:900;margin-bottom:15px;">Total General: $35,685,701.05</div>
+  <div class="bar-row">
+    <div class="bar"><div class="val" style="color:#fff;">$35,685,701</div><div class="bar-fill" style="height:160px;background:linear-gradient(180deg,#dc2626,#7f1d1d);"></div><div class="lbl" style="color:#fff;font-weight:700;">Bodega Principal Laureles</div></div>
+  </div>
+</div>
+
+<!-- PRODUCTOS -->
+<h1 class="section" id="mod-productos">4. Modulo: Productos (Maestro)</h1>
+
+<h3>Alcance</h3>
+<p>Registro maestro de productos con clasificacion, precios, existencias, costos promedio y trazabilidad completa.</p>
+
+<h3>Formulario de Llenado</h3>
+<div class="screen-mockup">
+  <div class="mock-title">+ Nuevo Producto</div>
+  <div class="field-grid">
+    <div class="field"><label>Codigo</label><div class="val">PROD-00013</div></div>
+    <div class="field"><label class="required">Descripcion</label><div class="val">Cemento Portland 50 Kg</div></div>
+    <div class="field"><label>Tipo Inventario</label><div class="val">Materiales y Suministros</div></div>
+    <div class="field"><label>Categoria</label><div class="val">Construccion</div></div>
+    <div class="field"><label>Grupo</label><div class="val">Cementos</div></div>
+    <div class="field"><label>Sub-Grupo</label><div class="val">Gris</div></div>
+    <div class="field"><label>Ultimo Costo</label><div class="val">$18,700.00</div></div>
+    <div class="field"><label>Costo Promedio</label><div class="val">$18,975.00</div></div>
+    <div class="field"><label>Precio Unitario</label><div class="val">$24,500.00</div></div>
+    <div class="field"><label>Unidad de Medida</label><div class="val">Bulto</div></div>
+    <div class="field"><label>Existencia</label><div class="val">80</div></div>
+    <div class="field"><label>Maximo / Minimo</label><div class="val">200 / 20</div></div>
+    <div class="field"><label>Ultimo Proveedor</label><div class="val">Cementos Argos</div></div>
+    <div class="field"><label>Codigo de Barras</label><div class="val">PROD-00013</div></div>
+  </div>
+</div>
+
+<h3>Campos de Trazabilidad (lectura)</h3>
+<table>
+  <tr><th>Campo</th><th>Ejemplo</th><th>Se actualiza en</th></tr>
+  <tr><td>Fecha Ult. Compra</td><td>08/04/2026</td><td>Recepcion de Factura</td></tr>
+  <tr><td>Fecha Ult. Movimiento</td><td>08/04/2026</td><td>Todos los procesos</td></tr>
+  <tr><td>Ult. Documento</td><td>RF-00002</td><td>Todos los procesos</td></tr>
+  <tr><td>Tipo Ult. Movimiento</td><td>Recepcion Factura</td><td>Todos los procesos</td></tr>
+</table>
+
+<h3>Validaciones</h3>
+<ul>
+  <li>Descripcion <strong>no puede repetirse</strong> (case-insensitive)</li>
+  <li>Codigo se genera automaticamente (PROD-NNNNN)</li>
+</ul>
+
+<h3>Reportes Disponibles</h3>
+<ul>
+  <li>Reporte General de Productos con filtros (Situacion, Tipo Inventario, Categoria, Grupo)</li>
+  <li>Reportes Especificos: Inventario Valorizado, Bajo Minimo, Sin Movimiento</li>
+  <li>Etiquetas de <strong>Codigos de Barras</strong> y <strong>Codigos QR</strong> (o ambos) con filtros</li>
+  <li>Exportacion a PDF, Excel e Impresion</li>
+</ul>
+
+<!-- PROVEEDORES -->
+<h1 class="section" id="mod-proveedores">5. Modulo: Proveedores</h1>
+
+<h3>Formulario de Llenado</h3>
+<div class="screen-mockup">
+  <div class="mock-title">+ Nuevo Proveedor</div>
+  <div class="field-grid">
+    <div class="field"><label class="required">Nombre (Razon Social)</label><div class="val">Cementos Argos S.A.</div></div>
+    <div class="field"><label class="required">Nro. Documento</label><div class="val">890.100.251-5</div></div>
+    <div class="field"><label>Tipo Identificacion</label><div class="val">NIT</div></div>
+    <div class="field"><label>Actividad</label><div class="val">Industria del Cemento</div></div>
+    <div class="field"><label class="required">Correo</label><div class="val">ventas@argos.com.co</div></div>
+    <div class="field"><label>Telf. Oficina</label><div class="val">(604) 555-1234</div></div>
+    <div class="field"><label>Movil</label><div class="val">301 234 5678</div></div>
+    <div class="field"><label>Persona Contacto</label><div class="val">Maria Gonzalez</div></div>
+    <div class="field"><label>Direccion</label><div class="val">Calle 7 # 39-107</div></div>
+    <div class="field"><label>Ciudad / Pais</label><div class="val">Medellin / Colombia</div></div>
+  </div>
+</div>
+
+<div class="rule-box">
+  <h4>Validaciones en Tiempo Real</h4>
+  <p>Mientras escribes cada campo, el sistema verifica que <strong>Nombre, Nro. Documento y Correo</strong> no existan en otro proveedor. Si hay duplicado:</p>
+  <ul>
+    <li>El campo se marca en rojo</li>
+    <li>Aparece mensaje: "Ya existe un proveedor con este..."</li>
+    <li>El boton <strong>Guardar se deshabilita</strong></li>
+  </ul>
+</div>
+
+<h3>Reportes Disponibles</h3>
+<ul>
+  <li>Reporte de Proveedores con filtros (Situacion, Actividad, Ciudad, Pais)</li>
+  <li>Exportacion a PDF, Excel e Impresion</li>
+</ul>
+
+<!-- ORDENES DE COMPRA -->
+<h1 class="section" id="mod-ordenes">6. Modulo: Ordenes de Compra</h1>
+
+<h3>Alcance</h3>
+<p>Generacion, aprobacion y seguimiento de ordenes de compra con calculo automatico de impuestos, envio por email al proveedor, y control de estados.</p>
+
+<h3>Formulario — Cabecera</h3>
+<div class="screen-mockup">
+  <div class="mock-title">+ Nueva Orden de Compra — OC-00005</div>
+  <div class="field-grid">
+    <div class="field"><label>Correlativo</label><div class="val">OC-00005</div></div>
+    <div class="field"><label class="required">Fecha Emision</label><div class="val">10/04/2026</div></div>
+    <div class="field"><label class="required">Fecha Vencimiento</label><div class="val">25/04/2026</div></div>
+    <div class="field"><label>Fecha Est. Llegada</label><div class="val">15/04/2026</div></div>
+    <div class="field"><label class="required">Comprador</label><div class="val">Juan Andres Arango</div></div>
+    <div class="field"><label>Fecha Aprobacion</label><div class="val">10/04/2026</div></div>
+    <div class="field"><label>% Impuesto</label><div class="val">19%</div></div>
+    <div class="field"><label class="required">Proveedor</label><div class="val">Cementos Argos</div></div>
+    <div class="field"><label class="required">Tipo de Moneda</label><div class="val">COP</div></div>
+    <div class="field"><label class="required">Condicion de Pago</label><div class="val">30 dias</div></div>
+    <div class="field"><label class="required">Bodega Llegada</label><div class="val">Bodega Principal Laureles</div></div>
+    <div class="field"><label>Centro de Costo</label><div class="val">CC-001 Administracion</div></div>
+  </div>
+</div>
+
+<h3>Formulario — Renglones</h3>
+<p>Se busca el producto por <strong>codigo o descripcion</strong>. Al seleccionarlo:</p>
+<ul>
+  <li>Se auto-carga codigo, descripcion, unidad de medida</li>
+  <li>Cantidad (obligatoria, minimo 1, campo rojo si vacio)</li>
+  <li>Costo Unitario (obligatorio, minimo 0.01)</li>
+  <li>Subtotal = Cantidad x Costo (automatico)</li>
+  <li>Estado del renglon: Pendiente / Recibido / Anulado (botones con colores)</li>
+</ul>
+
+<h3>Totales de la Orden</h3>
+<div class="formula">
+Subtotal antes de Impuesto = Suma de subtotales de cada renglon<br>
+% IVA (19%) = Subtotal x 0.19<br>
+TOTAL GENERAL ORDEN = Subtotal + IVA
+</div>
+
+<h3>Situaciones de la Orden</h3>
+<table>
+  <tr><th>Situacion</th><th>Condicion</th><th>Editable</th><th>Eliminable</th></tr>
+  <tr><td><span class="badge badge-yellow">Pendiente Aprobacion</span></td><td>Sin Fecha de Aprobacion</td><td>Si</td><td>Si</td></tr>
+  <tr><td><span class="badge badge-blue">Pendiente por Recibir</span></td><td>Con Fecha Aprobacion + ninguna recepcion</td><td>No</td><td>No</td></tr>
+  <tr><td><span class="badge badge-white">Recibida Parcial</span></td><td>Con alguna recepcion pero no todas completas</td><td>No</td><td>No</td></tr>
+  <tr><td><span class="badge badge-green">Recibida Completa</span></td><td>Todos los renglones con cant. recibida = pedida</td><td>No</td><td>No</td></tr>
+  <tr><td><span class="badge badge-red">Anulada</span></td><td>Todos los renglones anulados</td><td>No</td><td>No</td></tr>
+</table>
+
+<h3>PDF Generado — Orden de Compra</h3>
+<div class="pdf-preview">
+  <div class="pdf-header">
+    <div>
+      <div style="font-size:9pt;font-weight:400;opacity:0.8;">CONSTRUCTORA BORINQUEN S.A.S.</div>
+      <h5>ORDEN DE COMPRA</h5>
+    </div>
+    <div class="doc-num">OC-00005<br><span style="font-size:8pt;">APROBADA</span></div>
+  </div>
+  <table style="font-size:9pt;">
+    <tr><td><strong>Proveedor:</strong></td><td>Cementos Argos</td><td><strong>Fecha Emision:</strong></td><td>10/04/2026</td></tr>
+    <tr><td><strong>Comprador:</strong></td><td>Juan Andres Arango</td><td><strong>Fecha Vencimiento:</strong></td><td>25/04/2026</td></tr>
+    <tr><td><strong>Condicion Pago:</strong></td><td>30 dias</td><td><strong>Moneda:</strong></td><td>COP</td></tr>
+  </table>
+  <table style="margin-top:12px;font-size:9pt;">
+    <tr><th>Codigo</th><th>Descripcion</th><th>Cant</th><th>Costo</th><th>Subtotal</th></tr>
+    <tr><td>PROD-00007</td><td>Cemento Portland 50 Kg</td><td>20</td><td>$18,700</td><td>$374,000</td></tr>
+  </table>
+  <div style="text-align:right;margin-top:12px;">
+    <div>Subtotal: <strong>$374,000</strong></div>
+    <div>IVA (19%): <strong>$71,060</strong></div>
+    <div style="background:#1e3a8a;color:#fff;padding:8px 14px;border-radius:6px;display:inline-block;margin-top:6px;">TOTAL: <strong>$445,060</strong></div>
+  </div>
+</div>
+
+<h3>Envio por Email</h3>
+<p>La orden puede enviarse al proveedor con un click. El sistema registra el envio en <strong>Correos Enviados</strong> con rastreo de apertura.</p>
+
+<!-- RECEPCION DE FACTURAS -->
+<h1 class="section" id="mod-recepcion">7. Modulo: Recepcion de Facturas</h1>
+
+<h3>Alcance</h3>
+<p>Registro de mercancia recibida contra una orden de compra. Actualiza existencias, costos y genera movimientos en bodega automaticamente.</p>
+
+<h3>Formulario — Cabecera</h3>
+<div class="screen-mockup">
+  <div class="mock-title">+ Nueva Recepcion — RF-00004</div>
+  <div class="field-grid">
+    <div class="field"><label>Nro. Recepcion</label><div class="val">RF-00004</div></div>
+    <div class="field"><label class="required">Nro. Factura</label><div class="val">FAC-2026-0456</div></div>
+    <div class="field"><label class="required">Fecha Emision</label><div class="val">10/04/2026</div></div>
+    <div class="field"><label class="required">Fecha Recibida</label><div class="val">12/04/2026</div></div>
+    <div class="field"><label class="required">Orden de Compra</label><div class="val">OC-00005 — Cementos Argos</div></div>
+    <div class="field"><label>Proveedor (auto)</label><div class="val">Cementos Argos</div></div>
+    <div class="field"><label>Bodega Recepcion (auto)</label><div class="val">Bodega Principal Laureles</div></div>
+    <div class="field"><label>Aprobado por (auto)</label><div class="val">Juan Andres Arango</div></div>
+    <div class="field"><label class="required">Persona que Recibe</label><div class="val">Karina Cardona</div></div>
+  </div>
+</div>
+
+<h3>Formulario — Renglones</h3>
+<p>Se cargan <strong>automaticamente</strong> los productos de la OC que aun tienen pendiente por recibir. Para cada renglon se muestra:</p>
+<ul>
+  <li>Codigo, Descripcion, Unidad, Cantidad Pedida, Costo, Ya Recibido, Pendiente</li>
+  <li><strong>Cantidad a Recibir</strong> (editable, validada contra el pendiente)</li>
+  <li><strong>Subtotal</strong> = Cantidad a Recibir x Costo</li>
+</ul>
+
+<h3>Totales</h3>
+<div class="formula">
+Subtotal = Suma de (Cant. a Recibir x Costo Unitario)<br>
+% IVA (19% - tomado de la OC) = Subtotal x 0.19<br>
+TOTAL GENERAL FACTURA = Subtotal + IVA
+</div>
+
+<div class="rule-box">
+  <h4>Procesamiento Atomico al Guardar (todo o nada)</h4>
+  <div class="flow">
+    <strong>1. Maestro de Productos</strong>: suma existencia, actualiza ult_costo, ult_proveedor, recalcula costo_promedio ponderado, actualiza trazabilidad
+  </div>
+  <div class="flow">
+    <strong>2. Bodega de Llegada</strong>: suma saldo del producto, recalcula CP de la bodega, crea movimiento "Recepcion Factura" con trazabilidad
+  </div>
+  <div class="flow">
+    <strong>3. Orden de Compra</strong>: actualiza cantidad_recibida en cada renglon, recalcula situacion de la OC
+  </div>
+</div>
+
+<h3>Situacion de la Recepcion</h3>
+<table>
+  <tr><th>Situacion</th><th>Cuando</th><th>Eliminable</th></tr>
+  <tr><td><span class="badge badge-green">Aprobada y Recibida</span></td><td>Al guardar exitosamente</td><td>No</td></tr>
+</table>
+
+<h3>PDF Generado — Recepcion de Factura</h3>
+<div class="pdf-preview">
+  <div class="pdf-header">
+    <div>
+      <div style="font-size:9pt;font-weight:400;opacity:0.8;">CONSTRUCTORA BORINQUEN S.A.S.</div>
+      <h5>RECEPCION DE FACTURA</h5>
+    </div>
+    <div class="doc-num">RF-00004<br><span style="font-size:8pt;">APROBADA Y RECIBIDA</span></div>
+  </div>
+  <table style="font-size:9pt;">
+    <tr><td><strong>Nro. Factura:</strong></td><td>FAC-2026-0456</td><td><strong>Fecha Emision:</strong></td><td>10/04/2026</td></tr>
+    <tr><td><strong>Fecha Recibida:</strong></td><td>12/04/2026</td><td><strong>OC:</strong></td><td>OC-00005</td></tr>
+    <tr><td><strong>Proveedor:</strong></td><td>Cementos Argos</td><td><strong>Recibe:</strong></td><td>Karina Cardona</td></tr>
+    <tr><td><strong>Bodega:</strong></td><td>Principal Laureles</td><td colspan="2"></td></tr>
+  </table>
+  <table style="margin-top:12px;font-size:9pt;">
+    <tr><th>Codigo</th><th>Descripcion</th><th>Pedida</th><th>Recibida</th><th>Estado</th></tr>
+    <tr><td>PROD-00007</td><td>Cemento Portland</td><td>20</td><td>20</td><td style="color:#166534;font-weight:700;">Completo</td></tr>
+  </table>
+</div>
+
+<!-- BODEGAS -->
+<h1 class="section" id="mod-bodegas">8. Modulo: Bodegas</h1>
+
+<h3>Estructura de una Bodega</h3>
+<p>Cada bodega tiene 3 pestañas:</p>
+<ol>
+  <li><strong>Bodegas</strong>: datos generales (nombre, ubicacion, contacto)</li>
+  <li><strong>Saldo de Inventario</strong>: lista de productos con existencia, CP y valor</li>
+  <li><strong>Movimientos</strong>: historial completo de todas las operaciones</li>
+</ol>
+
+<h3>Formulario de Bodega</h3>
+<div class="screen-mockup">
+  <div class="mock-title">+ Nueva Bodega</div>
+  <div class="field-grid">
+    <div class="field"><label class="required">Nombre</label><div class="val">Bodega Principal Laureles</div></div>
+    <div class="field"><label>Correo</label><div class="val">bodega@empresa.com</div></div>
+    <div class="field"><label>Telefono</label><div class="val">(604) 333-4455</div></div>
+    <div class="field"><label>Direccion</label><div class="val">Cra 81 # 39-45</div></div>
+    <div class="field"><label>Ciudad / Pais</label><div class="val">Medellin / Colombia</div></div>
+    <div class="field"><label>Situacion</label><div class="val">Activa</div></div>
+  </div>
+</div>
+
+<h3>Tipos de Movimiento en Bodega</h3>
+<table>
+  <tr><th>Tipo</th><th>Color</th><th>Generado por</th></tr>
+  <tr><td><span class="badge badge-purple">Carga Inicial de Saldos</span></td><td>Purpura</td><td>Carga inicial del sistema</td></tr>
+  <tr><td><span class="badge badge-green">Recepcion Factura</span></td><td>Verde</td><td>Modulo Recepcion de Facturas</td></tr>
+  <tr><td><span class="badge badge-blue">Transferencia entre Bodegas</span></td><td>Azul</td><td>Modulo Transferencias</td></tr>
+  <tr><td><span class="badge badge-pink">Salida de Almacen</span></td><td>Rosa</td><td>Modulo Salidas de Almacen</td></tr>
+  <tr><td><span class="badge badge-orange">Ajuste de Inventario</span></td><td>Naranja</td><td>Modulo Ajustes</td></tr>
+</table>
+
+<h3>Filtros en Movimientos</h3>
+<p>Por Bodega, Producto (codigo o nombre), Fecha Desde, Fecha Hasta, Tipo de Movimiento.</p>
+
+<h3>Reportes Disponibles</h3>
+<ul>
+  <li>Reporte de Bodegas</li>
+  <li>Reporte de Movimientos con filtros multiples</li>
+  <li>Reporte de Saldos de Inventario</li>
+  <li>Exportacion a PDF, Excel e Impresion</li>
+</ul>
+
+<!-- TRANSFERENCIAS -->
+<h1 class="section" id="mod-transferencias">9. Modulo: Transferencias entre Bodegas</h1>
+
+<h3>Alcance</h3>
+<p>Movimiento de productos entre dos bodegas. La existencia total del maestro no cambia — solo se mueve de una bodega a otra.</p>
+
+<h3>Formulario</h3>
+<div class="screen-mockup">
+  <div class="mock-title">+ Nueva Transferencia — TRF-00001</div>
+  <div class="field-grid">
+    <div class="field"><label>Correlativo</label><div class="val">TRF-00001</div></div>
+    <div class="field"><label class="required">Fecha Emision</label><div class="val">12/04/2026</div></div>
+    <div class="field"><label class="required">Bodega Salida</label><div class="val">Principal Laureles</div></div>
+    <div class="field"><label class="required">Bodega Entrada</label><div class="val">Viva Laureles</div></div>
+    <div class="field"><label class="required">Persona que Emite</label><div class="val">Karina Cardona</div></div>
+    <div class="field"><label>Persona que Recibe</label><div class="val">Juan Arango</div></div>
+    <div class="field"><label>Fecha Aprobacion</label><div class="val">12/04/2026</div></div>
+    <div class="field"><label>Fecha Aprob. Recepcion</label><div class="val">13/04/2026</div></div>
+  </div>
+</div>
+
+<div class="rule-box">
+  <h4>Validacion Critica</h4>
+  <p>Si la <strong>Bodega Origen no tiene suficiente existencia</strong> del producto, el sistema bloquea con mensaje: "No hay suficiente existencia de '...' en la bodega origen (disponible: X)".</p>
+  <p>La Bodega Salida y Entrada <strong>no pueden ser la misma</strong>.</p>
+</div>
+
+<h3>Procesamiento al Guardar</h3>
+<div class="flow"><strong>1. Bodega Origen</strong>: resta existencia del saldo. El CP de la bodega origen NO cambia.</div>
+<div class="flow"><strong>2. Bodega Destino</strong>: suma existencia al saldo. Recalcula CP ponderado con el costo de origen.</div>
+<div class="flow"><strong>3. Maestro de Productos</strong>: la existencia total NO cambia. Recalcula CP global = promedio ponderado de todas las bodegas.</div>
+
+<!-- SALIDAS -->
+<h1 class="section" id="mod-salidas">10. Modulo: Salidas de Almacen</h1>
+
+<h3>Alcance</h3>
+<p>Control de salidas de mercancia hacia centros de costo (consumo interno). Resta inventario del producto y la bodega.</p>
+
+<h3>Formulario</h3>
+<div class="screen-mockup">
+  <div class="mock-title">+ Nueva Salida — SAL-00001</div>
+  <div class="field-grid">
+    <div class="field"><label>Correlativo</label><div class="val">SAL-00001</div></div>
+    <div class="field"><label class="required">Fecha Emision</label><div class="val">12/04/2026</div></div>
+    <div class="field"><label class="required">Bodega Salida</label><div class="val">Principal Laureles</div></div>
+    <div class="field"><label class="required">Persona que Emite</label><div class="val">Karina Cardona</div></div>
+    <div class="field"><label class="required">Centro de Costo</label><div class="val">CC-001 Administracion</div></div>
+    <div class="field"><label>Fecha Aprobacion</label><div class="val">12/04/2026</div></div>
+  </div>
+</div>
+
+<h3>Situacion Final</h3>
+<table>
+  <tr><th>Situacion</th><th>Ver</th><th>Editar</th><th>Eliminar</th></tr>
+  <tr><td><span class="badge badge-green">Aprobada y Ejecutada</span></td><td>Si</td><td>No</td><td>No</td></tr>
+</table>
+
+<!-- AJUSTES -->
+<h1 class="section" id="mod-ajustes">11. Modulo: Ajustes de Inventario</h1>
+
+<h3>Alcance</h3>
+<p>Correcciones de existencia por conteo fisico, daños, perdidas, o ingresos no facturados. Puede ser Entrada (+) o Salida (-).</p>
+
+<h3>Formulario</h3>
+<div class="screen-mockup">
+  <div class="mock-title">+ Nuevo Ajuste — AJU-00001</div>
+  <div class="field-grid">
+    <div class="field"><label>Nro. Ajuste</label><div class="val">AJU-00001</div></div>
+    <div class="field"><label class="required">Fecha Emision</label><div class="val">12/04/2026</div></div>
+    <div class="field"><label class="required">Bodega</label><div class="val">Principal Laureles</div></div>
+    <div class="field"><label class="required">Persona Autoriza</label><div class="val">Jose E Palomares</div></div>
+    <div class="field"><label class="required">Tipo de Ajuste</label><div class="val">+ Incremento por Conteo</div></div>
+    <div class="field"><label>Fecha Aprobacion (opcional)</label><div class="val">12/04/2026</div></div>
+  </div>
+</div>
+
+<h3>Situacion Final</h3>
+<table>
+  <tr><th>Situacion</th><th>Ver</th><th>Editar</th><th>Eliminar</th></tr>
+  <tr><td><span class="badge badge-yellow">Pendiente</span></td><td>Si</td><td>Si</td><td>Si</td></tr>
+  <tr><td><span class="badge badge-green">Aprobada y Ejecutada</span></td><td>Si</td><td>No</td><td>No</td></tr>
+</table>
+
+<!-- KARDEX -->
+<h1 class="section" id="mod-kardex">12. Modulo: Kardex de Productos</h1>
+
+<h3>Alcance</h3>
+<p>Vista consolidada del historial de movimientos de un producto en todas las bodegas. Permite auditoria completa.</p>
+
+<h3>Tarjetas Resumen</h3>
+<ul>
+  <li><strong>Total Entradas</strong>: suma de todas las entradas del producto</li>
+  <li><strong>Total Salidas</strong>: suma de todas las salidas del producto</li>
+  <li><strong>Saldo Final</strong>: existencia actual (ultimo saldo acumulado)</li>
+  <li><strong>Valor Final</strong>: existencia x costo promedio actual</li>
+</ul>
+
+<h3>Columnas del Kardex</h3>
+<table>
+  <tr><th>#</th><th>Fecha</th><th>Tipo</th><th>Bodega</th><th>Documento</th><th>Entradas</th><th>Salidas</th><th>Saldo</th><th>CP Mov.</th><th>Saldo Valor</th><th>Observaciones</th></tr>
+  <tr><td>1</td><td>30/03/26</td><td><span class="badge badge-purple">Carga Inicial</span></td><td>Principal</td><td>CARGA-001</td><td>60</td><td></td><td>60</td><td>$89,000</td><td>$5,340,000</td><td>Saldo inicial</td></tr>
+  <tr><td>2</td><td>08/04/26</td><td><span class="badge badge-green">Recepcion Factura</span></td><td>Principal</td><td>RF-00001</td><td>112</td><td></td><td>172</td><td>$92,906.98</td><td>$15,980,000</td><td>FAC OC-00001</td></tr>
+</table>
+
+<h3>Filtros</h3>
+<p>Producto, Bodega, Tipo de Movimiento, Fecha Desde, Fecha Hasta.</p>
+
+<h3>Exportacion</h3>
+<p>PDF, Excel, Impresion — con todos los filtros aplicados.</p>
+
+<!-- TAREAS -->
+<h1 class="section" id="mod-tareas">13. Modulo: Tareas</h1>
+
+<h3>Vistas</h3>
+<ul>
+  <li><strong>Tabla</strong>: lista con columnas y botones de accion</li>
+  <li><strong>Kanban</strong>: tarjetas arrastrables por estado</li>
+</ul>
+
+<h3>Formulario</h3>
+<div class="screen-mockup">
+  <div class="mock-title">+ Nueva Tarea — TAR-00005</div>
+  <div class="field-grid">
+    <div class="field"><label>Consecutivo</label><div class="val">TAR-00005</div></div>
+    <div class="field"><label class="required">Fecha Asignacion</label><div class="val">12/04/2026</div></div>
+    <div class="field"><label class="required">Persona Asigna</label><div class="val">Jose E Palomares</div></div>
+    <div class="field"><label class="required">Persona Ejecuta</label><div class="val">Karina Cardona</div></div>
+    <div class="field"><label>Fecha Requerida Final</label><div class="val">20/04/2026</div></div>
+    <div class="field"><label>Fecha Real Final</label><div class="val"></div></div>
+    <div class="field" style="grid-column:span 2"><label class="required">Descripcion</label><div class="val">Revisar inventario fisico de la bodega principal</div></div>
+  </div>
+</div>
+
+<h3>Permisos por Situacion</h3>
+<table>
+  <tr><th>Situacion</th><th>Ver</th><th>Editar</th><th>Eliminar</th></tr>
+  <tr><td><span class="badge badge-yellow">Pendiente</span></td><td>Si</td><td>Si</td><td>Si</td></tr>
+  <tr><td><span class="badge badge-blue">En Proceso</span></td><td>Si</td><td>Si</td><td><strong>No</strong></td></tr>
+  <tr><td><span class="badge badge-green">Completada</span></td><td>Si</td><td><strong>No</strong></td><td><strong>No</strong></td></tr>
+  <tr><td><span class="badge badge-red">Anulada</span></td><td>Si</td><td><strong>No</strong></td><td><strong>No</strong></td></tr>
+  <tr><td><span class="badge badge-red">Cancelada</span></td><td>Si</td><td><strong>No</strong></td><td><strong>No</strong></td></tr>
+  <tr><td style="color:#f59e0b;font-weight:bold;">Vencida</td><td>Si</td><td>Si</td><td>Si</td></tr>
+</table>
+
+<!-- REGLAS DE ACTUALIZACION -->
+<h1 class="section" id="reglas">14. Reglas de Actualizacion de Inventarios</h1>
+
+<div class="rule-box">
+  <h4>Regla de Oro</h4>
+  <p><strong>Existencia del Maestro de Productos = Suma de existencias en TODAS las Bodegas.</strong></p>
+  <p>Esta regla SIEMPRE debe cumplirse. Cualquier operacion que altere esta igualdad es un bug.</p>
+</div>
+
+<h3>Tabla Resumen de Actualizaciones</h3>
+<table>
+  <tr>
+    <th>Proceso</th>
+    <th>Existencia Producto</th>
+    <th>CP Producto</th>
+    <th>Saldo Bodega</th>
+    <th>Mov. Bodega</th>
+  </tr>
+  <tr>
+    <td><strong>Recepcion Factura</strong></td>
+    <td>+ Suma</td>
+    <td>Recalcula ponderado</td>
+    <td>+ Suma</td>
+    <td>Crea "Recepcion Factura"</td>
+  </tr>
+  <tr>
+    <td><strong>Transferencia entre Bodegas</strong></td>
+    <td>No cambia</td>
+    <td>Recalcula global</td>
+    <td>Origen: resta / Destino: suma</td>
+    <td>Crea "Transferencia Salida" + "Transferencia Entrada"</td>
+  </tr>
+  <tr>
+    <td><strong>Salida de Almacen</strong></td>
+    <td>- Resta</td>
+    <td>No cambia</td>
+    <td>- Resta</td>
+    <td>Crea "Salida a Centro de Costo"</td>
+  </tr>
+  <tr>
+    <td><strong>Ajuste (+) Entrada</strong></td>
+    <td>+ Suma</td>
+    <td>Recalcula ponderado</td>
+    <td>+ Suma</td>
+    <td>Crea "Entrada por Ajuste"</td>
+  </tr>
+  <tr>
+    <td><strong>Ajuste (-) Salida</strong></td>
+    <td>- Resta</td>
+    <td>No cambia</td>
+    <td>- Resta</td>
+    <td>Crea "Salida por Ajuste"</td>
+  </tr>
+</table>
+
+<h3>Procesamiento Atomico</h3>
+<div class="info-box">
+  <h4>Todo o Nada</h4>
+  <p>Al presionar <strong>Guardar</strong>, el sistema ejecuta TODAS las actualizaciones en cadena:</p>
+  <ol>
+    <li>Actualiza el Maestro de Productos</li>
+    <li>Actualiza el Saldo de Bodega (origen y/o destino)</li>
+    <li>Crea el movimiento en la bodega con trazabilidad completa</li>
+    <li>Actualiza la Orden de Compra (solo en Recepciones)</li>
+    <li>Guarda el documento (Recepcion / Transferencia / Salida / Ajuste)</li>
+  </ol>
+  <p>Si el usuario presiona <strong>Cancelar</strong>, NO se altera ningun dato.</p>
+</div>
+
+<h3>Reglas de Validacion por Proceso</h3>
+
+<h4>Orden de Compra</h4>
+<ul>
+  <li>Solo editable/eliminable en estado "Pendiente Aprobacion"</li>
+  <li>Al agregar fecha de aprobacion, pasa a "Pendiente por Recibir"</li>
+  <li>La situacion se recalcula automaticamente segun cantidad_recibida de los renglones</li>
+</ul>
+
+<h4>Recepcion de Facturas</h4>
+<ul>
+  <li>Solo OC en estado "Aprobada", "Pendiente por Recibir" o "Recibida Parcial" pueden recibirse</li>
+  <li>No se puede recibir mas cantidad que la pendiente</li>
+  <li>Los renglones anulados o ya completos no aparecen para recibir</li>
+  <li>Una vez guardada, la recepcion no se puede eliminar</li>
+</ul>
+
+<h4>Transferencias</h4>
+<ul>
+  <li>Bodega origen y destino no pueden ser la misma</li>
+  <li>Se valida existencia suficiente en la bodega origen</li>
+  <li>La existencia total del maestro NO cambia</li>
+</ul>
+
+<h4>Salidas de Almacen</h4>
+<ul>
+  <li>Centro de Costo obligatorio</li>
+  <li>Se valida existencia suficiente en la bodega</li>
+  <li>Una vez ejecutada, queda en "Aprobada y Ejecutada" y no se edita/elimina</li>
+</ul>
+
+<h4>Ajustes de Inventario</h4>
+<ul>
+  <li>Tipo de Ajuste con signo + o - obligatorio</li>
+  <li>Si es (-), se valida existencia suficiente</li>
+  <li>Fecha de aprobacion opcional (se puede colocar despues)</li>
+  <li>Una vez ejecutado, queda en "Aprobada y Ejecutada" y no se edita/elimina</li>
+</ul>
+
+<!-- FORMULA CP -->
+<h1 class="section" id="costo">15. Formula del Costo Promedio Ponderado</h1>
+
+<h3>Formula General</h3>
+<div class="formula">
+Nuevo CP = (Existencia Actual x CP Anterior + Cantidad Recibida x Costo Recibido) / (Existencia Actual + Cantidad Recibida)
+</div>
+
+<h3>Ejemplo Real — PROD-00002 Botas Seguridad</h3>
+<div class="info-box">
+  <h4>Datos de entrada</h4>
+  <p><strong>Estado inicial:</strong> 60 unidades con CP de $89,000.00 cada una</p>
+  <p><strong>Nueva recepcion:</strong> 112 unidades a $95,000.00 (costo de la OC)</p>
+</div>
+
+<div class="formula">
+Valor anterior    = 60 x 89,000.00  = $5,340,000.00
+Valor recibido    = 112 x 95,000.00 = $10,640,000.00
+Total valor       = $15,980,000.00
+Total existencia  = 60 + 112         = 172 unidades
+
+Nuevo CP = 15,980,000.00 / 172 = $92,906.98
+</div>
+
+<h3>Cuando se recalcula el CP</h3>
+<table>
+  <tr><th>Proceso</th><th>CP cambia?</th><th>Razon</th></tr>
+  <tr><td>Recepcion Factura</td><td><strong>Si</strong></td><td>Entrada con costo definido por proveedor</td></tr>
+  <tr><td>Transferencia</td><td><strong>Si (global)</strong></td><td>Mezcla CPs de distintas bodegas</td></tr>
+  <tr><td>Salida Almacen</td><td>No</td><td>Solo extrae del stock existente</td></tr>
+  <tr><td>Ajuste Entrada (+)</td><td><strong>Si</strong></td><td>Ingreso con CP actual del producto</td></tr>
+  <tr><td>Ajuste Salida (-)</td><td>No</td><td>Solo reduce cantidad</td></tr>
+</table>
+
+<!-- GALERIA PDFS -->
+<h1 class="section" id="pdfs">16. Galeria de PDFs Emitidos</h1>
+
+<h3>Tipos de PDF que genera el Sistema</h3>
+<table>
+  <tr><th>Modulo</th><th>PDF</th><th>Contenido</th></tr>
+  <tr><td>Ordenes de Compra</td><td>Orden de Compra</td><td>Cabecera, proveedor, renglones, totales con IVA, firmas</td></tr>
+  <tr><td>Recepcion de Facturas</td><td>Recepcion de Factura</td><td>Datos factura, proveedor, renglones recibidos, totales</td></tr>
+  <tr><td>Bodegas</td><td>Lista de Bodegas</td><td>Todas las bodegas con sus datos</td></tr>
+  <tr><td>Bodegas</td><td>Movimientos de Bodega</td><td>Historial con filtros por fecha, bodega, producto, tipo</td></tr>
+  <tr><td>Bodegas</td><td>Saldos de Inventario</td><td>Saldos por bodega con existencia, CP y valor</td></tr>
+  <tr><td>Transferencias</td><td>Transferencia</td><td>Origen, destino, renglones, firmas Emite/Recibe</td></tr>
+  <tr><td>Salidas Almacen</td><td>Salida de Almacen</td><td>Centro de Costo, persona, productos despachados</td></tr>
+  <tr><td>Ajustes Inventario</td><td>Ajuste de Inventario</td><td>Tipo de ajuste, signo, productos, autorizante</td></tr>
+  <tr><td>Productos</td><td>Reporte de Productos</td><td>Con filtros y columnas configurables</td></tr>
+  <tr><td>Productos</td><td>Etiquetas con Codigos</td><td>Barras CODE128, QR, o ambos</td></tr>
+  <tr><td>Kardex</td><td>Kardex de Producto</td><td>Historial completo con saldo acumulado</td></tr>
+  <tr><td>Tareas</td><td>Reporte de Tareas</td><td>Con filtros por situacion, ejecutor, fechas</td></tr>
+  <tr><td>Proveedores</td><td>Reporte de Proveedores</td><td>Con filtros y columnas</td></tr>
+  <tr><td>Correos Enviados</td><td>Log de Correos</td><td>Registro de emails con rastreo</td></tr>
+</table>
+
+<h3>Caracteristicas de los PDFs</h3>
+<ul>
+  <li>Encabezado con <strong>logo de la empresa</strong> (configurable en Datos Empresa)</li>
+  <li>Datos de la empresa: razon social, NIT, direccion, ciudad</li>
+  <li>Estado del documento visible (badge con color)</li>
+  <li>Numero de documento destacado</li>
+  <li>Fechas en formato DD/MM/AAAA</li>
+  <li>Totales con calculo de IVA cuando aplica</li>
+  <li>Firmas para Emite, Recibe, Almacena, Aprueba</li>
+  <li>Impresion optimizada para A4</li>
+</ul>
+
+<div class="success-box">
+  <h4>Resumen de Capacidades del Sistema</h4>
+  <ul>
+    <li>27 modulos operativos con procesamiento atomico</li>
+    <li>5 tipos de movimientos de bodega con trazabilidad completa</li>
+    <li>3 niveles de trazabilidad (Maestro, Kardex, Bodega)</li>
+    <li>Costo Promedio Ponderado automatico</li>
+    <li>Regla de Oro garantizada (Maestro = Suma Bodegas)</li>
+    <li>15+ tipos de PDFs profesionales</li>
+    <li>Exportacion a PDF, Excel e Impresion en todos los reportes</li>
+    <li>Dashboard con 3 graficos clickeables</li>
+    <li>Permisos granulares por modulo y situacion</li>
+    <li>Persistencia en la nube con Vercel Blob Storage Pro</li>
+  </ul>
+</div>
+
+<div class="footer">
+  <p><strong>GESTION DE INVENTARIO</strong> — Alcances y Uso del Sistema v1.0</p>
+  <p>Generado en Abril 2026 | SisTech — Sistemas Inteligentes de Tecnologia</p>
+  <p>Diseñado por el Ing. Jose E. Palomares con herramientas profesionales de Inteligencia Artificial</p>
+</div>
+
+</body>
+</html>

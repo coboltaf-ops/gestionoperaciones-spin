@@ -1,0 +1,62 @@
+[
+  {
+    "id": "84a5633a-5e69-4dfc-a6ee-e34ca7adc1f6",
+    "nro_tarea": 1,
+    "consecutivo": "TAR-00001",
+    "fecha_asignacion": "2026-03-26",
+    "hora_asignacion": "12:30",
+    "persona_asigna_id": "050d95a3-3ce9-4067-99c4-b579494a5cfc",
+    "persona_asigna_nombre": "Juan Andres Arango",
+    "persona_ejecuta_id": "af3b5735-1dc7-407b-86c8-0d5bea1f4f9f",
+    "persona_ejecuta_nombre": "Jose E Palomares",
+    "fecha_requerida_finalizar": "2026-03-27",
+    "fecha_real_finalizacion": "",
+    "descripcion": "Hacer demo del Sistema Inventario Borinquen y sus funciones",
+    "situacion": "En Proceso"
+  },
+  {
+    "id": "eda4db31-f316-4bdd-adba-587629bd51eb",
+    "nro_tarea": 2,
+    "consecutivo": "TAR-00002",
+    "fecha_asignacion": "2026-03-25",
+    "hora_asignacion": "09:00",
+    "persona_asigna_id": "",
+    "persona_asigna_nombre": "Jose E Palomares",
+    "persona_ejecuta_id": "",
+    "persona_ejecuta_nombre": "Karina Cardona",
+    "fecha_requerida_finalizar": "2026-04-05",
+    "fecha_real_finalizacion": "2026-04-03",
+    "descripcion": "Verificar inventario fisico Bodega Principal Laureles y comparar con el sistema",
+    "situacion": "Completada"
+  },
+  {
+    "id": "e4b92520-c72a-4228-a855-39995282a21b",
+    "nro_tarea": 3,
+    "consecutivo": "TAR-00003",
+    "fecha_asignacion": "2026-03-20",
+    "hora_asignacion": "14:00",
+    "persona_asigna_id": "",
+    "persona_asigna_nombre": "Juan Andres Arango",
+    "persona_ejecuta_id": "",
+    "persona_ejecuta_nombre": "Sandra Juliana Alvarez",
+    "fecha_requerida_finalizar": "2026-03-28",
+    "fecha_real_finalizacion": "",
+    "descripcion": "Enviar cotizacion de materiales a Constructora Viva — Cancelada por cambio de proveedor",
+    "situacion": "Anulada"
+  },
+  {
+    "id": "deda82bc-7c0b-40d5-80a3-823ed977731b",
+    "nro_tarea": 4,
+    "consecutivo": "TAR-00004",
+    "fecha_asignacion": "2026-03-15",
+    "hora_asignacion": "10:00",
+    "persona_asigna_id": "",
+    "persona_asigna_nombre": "Jose E Palomares",
+    "persona_ejecuta_id": "",
+    "persona_ejecuta_nombre": "Sara Sofia Uribe",
+    "fecha_requerida_finalizar": "2026-03-30",
+    "fecha_real_finalizacion": "",
+    "descripcion": "Actualizar precios de proveedores de EPP — fecha limite vencida sin completar",
+    "situacion": "Vencida"
+  }
+]

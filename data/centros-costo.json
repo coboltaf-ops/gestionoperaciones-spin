@@ -1,0 +1,32 @@
+[
+  {
+    "id": "a32f9571-e465-4be1-90ee-f3f4e38da46b",
+    "codigo": "CC-001",
+    "descripcion": "Administración",
+    "situacion": "Activo"
+  },
+  {
+    "id": "17066b75-a375-44c2-af6a-b6ab92738dad",
+    "codigo": "CC-002",
+    "descripcion": "Almacen",
+    "situacion": "Activo"
+  },
+  {
+    "id": "1fa926e4-be6e-4b1c-8458-47452de47379",
+    "codigo": "CC-003",
+    "descripcion": "Compras",
+    "situacion": "Activo"
+  },
+  {
+    "id": "bc355be7-5e67-428a-a0fc-255ffb54078c",
+    "codigo": "cc-004",
+    "descripcion": "RRHH Recursos Humanos",
+    "situacion": "Activo"
+  },
+  {
+    "id": "ad031229-4e79-4c1e-afba-ca1ceb09d290",
+    "codigo": "CC-005",
+    "descripcion": "Proyecto Efificio WOAO",
+    "situacion": "Activo"
+  }
+]

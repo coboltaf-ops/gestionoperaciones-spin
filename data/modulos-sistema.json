@@ -1,0 +1,90 @@
+[
+  {
+    "id": "dashboard",
+    "activo": true
+  },
+  {
+    "id": "productos",
+    "activo": true
+  },
+  {
+    "id": "proveedores",
+    "activo": true
+  },
+  {
+    "id": "ordenes-compra",
+    "activo": true
+  },
+  {
+    "id": "recepcion-facturas",
+    "activo": true
+  },
+  {
+    "id": "bodegas",
+    "activo": true
+  },
+  {
+    "id": "transferencias",
+    "activo": true
+  },
+  {
+    "id": "salidas-almacen",
+    "activo": true
+  },
+  {
+    "id": "ajustes-inventario",
+    "activo": true
+  },
+  {
+    "id": "centros-costo",
+    "activo": true
+  },
+  {
+    "id": "correos-enviados",
+    "activo": true
+  },
+  {
+    "id": "referencias",
+    "activo": true
+  },
+  {
+    "id": "datos-empresa",
+    "activo": true
+  },
+  {
+    "id": "carga-inicial-inventario",
+    "activo": true
+  },
+  {
+    "id": "modulos-sistema",
+    "activo": true
+  },
+  {
+    "id": "tareas",
+    "activo": true
+  },
+  {
+    "id": "personal-empresa",
+    "activo": true
+  },
+  {
+    "id": "pedidos",
+    "activo": true
+  },
+  {
+    "id": "formulas",
+    "activo": false
+  },
+  {
+    "id": "ordenes-produccion",
+    "activo": false
+  },
+  {
+    "id": "ejecucion-produccion",
+    "activo": false
+  },
+  {
+    "id": "ajustes-materia-prima",
+    "activo": false
+  }
+]

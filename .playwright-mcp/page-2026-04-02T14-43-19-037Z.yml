@@ -1,0 +1,98 @@
+- generic [active] [ref=e1]:
+  - alert [ref=e21]
+  - generic [ref=e22]:
+    - complementary [ref=e23]:
+      - generic [ref=e24]:
+        - img [ref=e26]
+        - paragraph [ref=e29]: Portal Inmobiliario
+      - navigation [ref=e30]:
+        - link "Dashboard" [ref=e31] [cursor=pointer]:
+          - /url: /dashboard
+          - img [ref=e32]
+          - generic [ref=e34]: Dashboard
+        - link "Propiedades" [ref=e35] [cursor=pointer]:
+          - /url: /propiedades
+          - img [ref=e36]
+          - generic [ref=e38]: Propiedades
+        - link "Comerciales" [ref=e39] [cursor=pointer]:
+          - /url: /comerciales
+          - img [ref=e40]
+          - generic [ref=e42]: Comerciales
+        - link "Solicitudes" [ref=e43] [cursor=pointer]:
+          - /url: /solicitudes
+          - img [ref=e44]
+          - generic [ref=e46]: Solicitudes
+        - link "Clientes/Prospectos" [ref=e47] [cursor=pointer]:
+          - /url: /clientes
+          - img [ref=e48]
+          - generic [ref=e50]: Clientes/Prospectos
+        - link "Cotizaciones" [ref=e51] [cursor=pointer]:
+          - /url: /cotizaciones
+          - img [ref=e52]
+          - generic [ref=e54]: Cotizaciones
+        - link "Contratos" [ref=e55] [cursor=pointer]:
+          - /url: /contratos
+          - img [ref=e56]
+          - generic [ref=e58]: Contratos
+        - link "Correos Enviados" [ref=e59] [cursor=pointer]:
+          - /url: /correos-enviados
+          - img [ref=e60]
+          - generic [ref=e62]: Correos Enviados
+        - link "Datos Empresa" [ref=e63] [cursor=pointer]:
+          - /url: /datos-empresa
+          - img [ref=e64]
+          - generic [ref=e66]: Datos Empresa
+        - link "Tablas Referencia" [ref=e67] [cursor=pointer]:
+          - /url: /configuracion
+          - img [ref=e68]
+          - generic [ref=e70]: Tablas Referencia
+      - button "Cerrar Sesión" [ref=e72]:
+        - img [ref=e73]
+        - generic [ref=e76]: Cerrar Sesión
+    - main [ref=e77]:
+      - generic [ref=e78]:
+        - generic [ref=e79]:
+          - paragraph [ref=e80]: ADMINISTRADOR
+          - paragraph [ref=e81]: ADMIN
+        - button "Inicio" [ref=e82]:
+          - img [ref=e83]
+          - text: Inicio
+      - generic [ref=e87]:
+        - heading "Dashboard" [level=1] [ref=e88]
+        - generic [ref=e89]:
+          - generic [ref=e90]:
+            - img [ref=e92]
+            - paragraph [ref=e95]: "0"
+            - paragraph [ref=e96]: Total Propiedades
+          - generic [ref=e97]:
+            - img [ref=e99]
+            - paragraph [ref=e102]: "0"
+            - paragraph [ref=e103]: Disponibles Venta
+          - generic [ref=e104]:
+            - img [ref=e106]
+            - paragraph [ref=e109]: "0"
+            - paragraph [ref=e110]: Disponibles Alquiler
+          - generic [ref=e111]:
+            - img [ref=e113]
+            - paragraph [ref=e116]: "0"
+            - paragraph [ref=e117]: Comerciales Activos
+        - generic [ref=e118]:
+          - generic [ref=e119]:
+            - img [ref=e120]
+            - paragraph [ref=e122]: "0"
+            - paragraph [ref=e123]: Prospectos
+          - generic [ref=e124]:
+            - img [ref=e125]
+            - paragraph [ref=e127]: "0"
+            - paragraph [ref=e128]: Cotizaciones
+          - generic [ref=e129]:
+            - img [ref=e130]
+            - paragraph [ref=e132]: "0"
+            - paragraph [ref=e133]: Contratos
+        - generic [ref=e134]:
+          - generic [ref=e135]:
+            - heading "Propiedades por Estado" [level=2] [ref=e136]
+            - paragraph [ref=e138]: Sin propiedades registradas
+          - generic [ref=e139]:
+            - heading "Cotizaciones por Estado" [level=2] [ref=e140]
+            - paragraph [ref=e142]: Sin cotizaciones registradas

@@ -1,0 +1,228 @@
+[
+  {
+    "id": "sso-admin",
+    "nombre": "Administrador",
+    "apellido": "Contable",
+    "usuario": "admin",
+    "clave": "admin123",
+    "correo": "admin@empresa.com",
+    "rol": "Admin",
+    "situacion": "Activo",
+    "permisos": []
+  },
+  {
+    "id": "sso-contador",
+    "nombre": "Contador",
+    "apellido": "General",
+    "usuario": "contador",
+    "clave": "contador123",
+    "correo": "contador@empresa.com",
+    "rol": "Admin",
+    "situacion": "Activo",
+    "permisos": []
+  },
+  {
+    "id": "sso-auxiliar",
+    "nombre": "Auxiliar",
+    "apellido": "Contable",
+    "usuario": "auxiliar",
+    "clave": "auxiliar123",
+    "correo": "auxiliar@empresa.com",
+    "rol": "Contabilidad y Admisitracion",
+    "situacion": "Activo",
+    "permisos": []
+  },
+  {
+    "id": "1",
+    "nombre": "Juan Andres",
+    "apellido": "Arango Velasquez",
+    "usuario": "jarango",
+    "clave": "admin123",
+    "correo": "jarango@empresa.com",
+    "rol": "Admin",
+    "situacion": "Activo",
+    "permisos": [
+      {
+        "modulo": "dashboard",
+        "leer": true,
+        "editar": true,
+        "eliminar": true
+      },
+      {
+        "modulo": "productos",
+        "leer": true,
+        "editar": true,
+        "eliminar": true
+      },
+      {
+        "modulo": "proveedores",
+        "leer": true,
+        "editar": true,
+        "eliminar": true
+      },
+      {
+        "modulo": "ordenes-compra",
+        "leer": true,
+        "editar": true,
+        "eliminar": true
+      },
+      {
+        "modulo": "recepcion-facturas",
+        "leer": true,
+        "editar": true,
+        "eliminar": true
+      },
+      {
+        "modulo": "bodegas",
+        "leer": true,
+        "editar": true,
+        "eliminar": true
+      },
+      {
+        "modulo": "transferencias",
+        "leer": true,
+        "editar": true,
+        "eliminar": true
+      },
+      {
+        "modulo": "salidas-almacen",
+        "leer": true,
+        "editar": true,
+        "eliminar": true
+      },
+      {
+        "modulo": "ajustes-inventario",
+        "leer": true,
+        "editar": true,
+        "eliminar": true
+      },
+      {
+        "modulo": "centros-costo",
+        "leer": true,
+        "editar": true,
+        "eliminar": true
+      },
+      {
+        "modulo": "correos-enviados",
+        "leer": true,
+        "editar": true,
+        "eliminar": true
+      },
+      {
+        "modulo": "referencias",
+        "leer": true,
+        "editar": true,
+        "eliminar": true
+      },
+      {
+        "modulo": "datos-empresa",
+        "leer": true,
+        "editar": true,
+        "eliminar": true
+      }
+    ]
+  },
+  {
+    "id": "d18cd0eb-d127-45d5-ada0-9203fc5e5db6",
+    "nombre": "Karina",
+    "apellido": "Cardona",
+    "usuario": "contable00",
+    "clave": "Contable00*",
+    "correo": "adminspin@gmail.com",
+    "rol": "Contabilidad y Admisitracion",
+    "situacion": "Activo",
+    "permisos": [
+      {
+        "modulo": "dashboard",
+        "leer": true,
+        "registrar": false,
+        "editar": false,
+        "eliminar": false
+      },
+      {
+        "modulo": "productos",
+        "leer": true,
+        "registrar": true,
+        "editar": false,
+        "eliminar": false
+      },
+      {
+        "modulo": "proveedores",
+        "leer": true,
+        "registrar": true,
+        "editar": false,
+        "eliminar": false
+      },
+      {
+        "modulo": "ordenes-compra",
+        "leer": true,
+        "registrar": true,
+        "editar": false,
+        "eliminar": false
+      },
+      {
+        "modulo": "recepcion-facturas",
+        "leer": true,
+        "registrar": true,
+        "editar": false,
+        "eliminar": false
+      },
+      {
+        "modulo": "bodegas",
+        "leer": true,
+        "registrar": true,
+        "editar": false,
+        "eliminar": false
+      },
+      {
+        "modulo": "transferencias",
+        "leer": true,
+        "registrar": true,
+        "editar": false,
+        "eliminar": false
+      },
+      {
+        "modulo": "salidas-almacen",
+        "leer": true,
+        "registrar": true,
+        "editar": false,
+        "eliminar": false
+      },
+      {
+        "modulo": "ajustes-inventario",
+        "leer": true,
+        "registrar": true,
+        "editar": false,
+        "eliminar": false
+      },
+      {
+        "modulo": "centros-costo",
+        "leer": true,
+        "registrar": true,
+        "editar": false,
+        "eliminar": false
+      },
+      {
+        "modulo": "correos-enviados",
+        "leer": true,
+        "registrar": true,
+        "editar": false,
+        "eliminar": false
+      },
+      {
+        "modulo": "referencias",
+        "leer": true,
+        "registrar": true,
+        "editar": false,
+        "eliminar": false
+      },
+      {
+        "modulo": "datos-empresa",
+        "leer": true,
+        "registrar": true,
+        "editar": false,
+        "eliminar": false
+      }
+    ]
+  }
+]

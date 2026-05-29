@@ -1,0 +1,157 @@
+[
+  {
+    "id": "edd0968c-67db-4307-8460-686ded7b3837",
+    "nro_orden": 1,
+    "consecutivo": "OC-00001",
+    "fecha_emision": "2026-03-23",
+    "fecha_vencimiento": "2026-04-06",
+    "proveedor": "Solintos S.A.S.",
+    "fecha_llegada": "2026-04-02",
+    "comprador": "Horacio Mendez",
+    "condicion_pago": "30 días",
+    "tipo_moneda": "Peso Colombiano",
+    "fecha_aprobacion": "2026-03-23",
+    "observaciones": "La Orden debe estar antes del 4 de Abril si se puede",
+    "detalles": [
+      {
+        "id": "9fd20cc7-e306-4de8-ada4-d60d1ece6646",
+        "codigo_producto": "PROD-00001",
+        "descripcion": "Gafas de Seguridad",
+        "cantidad": 12,
+        "costo_unitario": 29100,
+        "unidad_medida": "Unidad",
+        "subtotal": 349200,
+        "recibido": false,
+        "cantidad_recibida": 12
+      },
+      {
+        "id": "7e8f53aa-89e0-4c7f-adfa-73b817bec71a",
+        "codigo_producto": "PROD-00002",
+        "descripcion": "Botas Seguridad",
+        "cantidad": 112,
+        "costo_unitario": 95000,
+        "unidad_medida": "Par",
+        "subtotal": 10640000,
+        "recibido": false,
+        "cantidad_recibida": 112
+      }
+    ],
+    "pct_impuesto": 18,
+    "bodega_llegada": "Bodega Prinpipal Laureles",
+    "situacion": "Recibida Completa",
+    "centro_costo": "CC-002 - Almacen"
+  },
+  {
+    "id": "664bcffd-2f26-41a8-b3fa-8d8898c40191",
+    "nro_orden": 2,
+    "consecutivo": "OC-00002",
+    "fecha_emision": "2026-03-23",
+    "fecha_vencimiento": "2026-04-06",
+    "proveedor": "Cementos Argos",
+    "fecha_llegada": "2026-04-06",
+    "comprador": "Miguel Diaz",
+    "condicion_pago": "15 dias",
+    "tipo_moneda": "Pesos Col",
+    "fecha_aprobacion": "2026-03-23",
+    "observaciones": "",
+    "detalles": [
+      {
+        "id": "73cbe5d5-1e2f-4d65-a524-b397bb1eb2c2",
+        "codigo_producto": "PROD-00007",
+        "descripcion": "Cemento Portland 50 Kgs",
+        "cantidad": 20,
+        "costo_unitario": 19800,
+        "unidad_medida": "Saco",
+        "subtotal": 396000,
+        "recibido": false,
+        "cantidad_recibida": 20
+      }
+    ],
+    "pct_impuesto": 16,
+    "bodega_llegada": "Bodega Prinpipal Laureles",
+    "centro_costo": "CC-002 - Almacen",
+    "situacion": "Recibida Completa"
+  },
+  {
+    "id": "399f8053-a83a-4679-8774-3435d05fd815",
+    "nro_orden": 3,
+    "consecutivo": "OC-00003",
+    "fecha_emision": "2026-03-23",
+    "fecha_vencimiento": "2026-04-06",
+    "proveedor": "Papeleria la 80 Floresta",
+    "fecha_llegada": "2026-04-06",
+    "comprador": "ASandra Gonzalez",
+    "condicion_pago": "Contado",
+    "tipo_moneda": "Pesos Col",
+    "fecha_aprobacion": "2026-03-23",
+    "observaciones": "",
+    "detalles": [
+      {
+        "id": "da04d717-0657-4362-bbf4-8c21137ff89c",
+        "codigo_producto": "PROD-00010",
+        "descripcion": "Boligrafo Azul",
+        "cantidad": 10,
+        "costo_unitario": 1950,
+        "unidad_medida": "Unidad",
+        "subtotal": 19500,
+        "recibido": false,
+        "cantidad_recibida": 10
+      },
+      {
+        "id": "1c558f7c-ca5f-48fb-9603-bf6e713b2741",
+        "codigo_producto": "PROD-00009",
+        "descripcion": "Resma de papel 50 hojas blancas",
+        "cantidad": 5,
+        "costo_unitario": 11200,
+        "unidad_medida": "Unidad",
+        "subtotal": 56000,
+        "recibido": false,
+        "cantidad_recibida": 5
+      }
+    ],
+    "pct_impuesto": 16,
+    "bodega_llegada": "Bodega Prinpipal Laureles",
+    "centro_costo": "CC-002 - Almacen",
+    "situacion": "Recibida Completa"
+  },
+  {
+    "id": "5ec80bd7-99e5-46ef-875d-a06a15ffb95d",
+    "nro_orden": 4,
+    "consecutivo": "OC-00004",
+    "fecha_emision": "2026-03-24",
+    "fecha_vencimiento": "2026-03-25",
+    "proveedor": "Home Center Viva Envigado",
+    "fecha_llegada": "2026-03-30",
+    "comprador": "Sandra",
+    "condicion_pago": "Contado",
+    "tipo_moneda": "Pesos Col",
+    "fecha_aprobacion": "",
+    "observaciones": "",
+    "detalles": [
+      {
+        "id": "9c9c9523-49fe-491f-9aa2-52eccdef513d",
+        "codigo_producto": "PROD-00012",
+        "descripcion": "Ladrillo Rojo N4 Rayado 9 x 19 x 38 cls",
+        "cantidad": 400,
+        "costo_unitario": 1700,
+        "unidad_medida": "Unidad",
+        "subtotal": 680000,
+        "recibido": false
+      },
+      {
+        "id": "8286afde-8921-4cee-aa86-896dbc0e4c9c",
+        "codigo_producto": "PROD-00011",
+        "descripcion": "Bloque Conceto 15 Cms",
+        "cantidad": 300,
+        "costo_unitario": 1500,
+        "unidad_medida": "Unidad",
+        "subtotal": 450000,
+        "recibido": false
+      }
+    ],
+    "pct_impuesto": 18,
+    "bodega_llegada": "Bodega Prinpipal Laureles",
+    "centro_costo": "CC-002 - Almacen",
+    "situacion": "Pendiente Aprobacion"
+  }
+]

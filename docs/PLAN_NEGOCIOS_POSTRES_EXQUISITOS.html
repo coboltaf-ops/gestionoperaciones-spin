@@ -1,0 +1,412 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+<meta charset="UTF-8">
+<title>Plan de Negocios — Postres Exquisitos</title>
+<style>
+  @page { margin: 1.5cm; size: A4; }
+  * { margin: 0; padding: 0; box-sizing: border-box; }
+  body { font-family: 'Segoe UI', Arial, sans-serif; color: #1a1a2e; font-size: 11pt; line-height: 1.6; }
+
+  .cover { page-break-after: always; display: flex; flex-direction: column; justify-content: center; align-items: center; min-height: 90vh; text-align: center; background: linear-gradient(135deg, #4a1942 0%, #c2185b 50%, #f06292 100%); color: white; padding: 60px 40px; border-radius: 8px; }
+  .cover h1 { font-size: 30pt; margin-bottom: 8px; letter-spacing: 1px; }
+  .cover .subtitle { font-size: 14pt; color: #fce4ec; margin-bottom: 30px; }
+  .cover .badge { background: rgba(255,255,255,0.15); border: 1px solid rgba(255,255,255,0.3); border-radius: 10px; padding: 20px 35px; margin-top: 20px; }
+  .cover .badge p { font-size: 10pt; color: #fce4ec; }
+  .cover .date { margin-top: 30px; font-size: 10pt; color: #f8bbd0; }
+
+  h2 { background: #880e4f; color: white; padding: 10px 20px; border-radius: 6px; font-size: 15pt; margin: 30px 0 15px 0; page-break-after: avoid; }
+  h3 { color: #880e4f; font-size: 13pt; margin: 20px 0 10px 0; border-bottom: 2px solid #c2185b; padding-bottom: 4px; page-break-after: avoid; }
+  h4 { color: #ad1457; font-size: 11pt; margin: 15px 0 8px 0; }
+
+  p { margin: 6px 0; }
+  ul, ol { margin: 8px 0 8px 25px; }
+  li { margin: 4px 0; }
+
+  table { width: 100%; border-collapse: collapse; margin: 10px 0 20px 0; font-size: 10pt; page-break-inside: avoid; }
+  th { background: #880e4f; color: white; padding: 8px 12px; text-align: left; font-weight: 600; }
+  td { padding: 7px 12px; border-bottom: 1px solid #e2e8f0; }
+  tr:nth-child(even) { background: #fce4ec; }
+
+  .info-box { background: #fce4ec; border: 1px solid #f48fb1; border-radius: 8px; padding: 15px; margin: 15px 0; page-break-inside: avoid; }
+  .info-box h4 { color: #880e4f; margin-top: 0; border: none; }
+
+  .warn-box { background: #fff3e0; border: 1px solid #ffcc80; border-radius: 8px; padding: 15px; margin: 15px 0; page-break-inside: avoid; }
+  .warn-box h4 { color: #e65100; margin-top: 0; border: none; }
+
+  .success-box { background: #e8f5e9; border: 1px solid #a5d6a7; border-radius: 8px; padding: 15px; margin: 15px 0; page-break-inside: avoid; }
+  .success-box h4 { color: #2e7d32; margin-top: 0; border: none; }
+
+  .vs-container { display: flex; gap: 15px; margin: 15px 0; flex-wrap: wrap; }
+  .vs-card { flex: 1; min-width: 280px; border-radius: 10px; padding: 20px; page-break-inside: avoid; }
+  .vs-card h4 { margin-top: 0; border: none; }
+  .vs-card.option-a { background: #e3f2fd; border: 2px solid #42a5f5; }
+  .vs-card.option-a h4 { color: #1565c0; }
+  .vs-card.option-b { background: #fce4ec; border: 2px solid #ec407a; }
+  .vs-card.option-b h4 { color: #ad1457; }
+  .vs-card.option-c { background: #e8f5e9; border: 2px solid #66bb6a; }
+  .vs-card.option-c h4 { color: #2e7d32; }
+
+  .phase { border-left: 4px solid #c2185b; padding: 12px 18px; margin: 10px 0 10px 15px; background: #fce4ec; border-radius: 0 8px 8px 0; page-break-inside: avoid; }
+  .phase h4 { color: #880e4f; margin-top: 0; border: none; }
+
+  .highlight { background: #880e4f; color: white; padding: 15px 20px; border-radius: 8px; margin: 15px 0; page-break-inside: avoid; }
+  .highlight h4 { color: #f8bbd0; margin-top: 0; border: none; }
+  .highlight p { color: #fce4ec; }
+  .highlight strong { color: white; }
+
+  .footer { text-align: center; color: #94a3b8; font-size: 8pt; margin-top: 40px; padding-top: 15px; border-top: 1px solid #e2e8f0; }
+</style>
+</head>
+<body>
+
+<!-- PORTADA -->
+<div class="cover">
+  <div style="font-size: 50pt; margin-bottom: 15px;">&#127856;</div>
+  <h1>Postres Exquisitos</h1>
+  <div class="subtitle">Plan de Negocios y Estrategia de Lanzamiento</div>
+  <div style="width: 80px; height: 3px; background: #f8bbd0; margin: 15px auto;"></div>
+  <p style="font-size: 12pt; max-width: 450px; color: #fce4ec;">Analisis de alternativas, costos operativos, fases de crecimiento y recomendacion estrategica para iniciar el negocio de postres artesanales.</p>
+  <div class="badge">
+    <p>DOCUMENTO CONFIDENCIAL</p>
+    <p>Preparado para los socios fundadores</p>
+  </div>
+  <div class="date">Abril 2026 — SISTECH Consultoria</div>
+</div>
+
+<!-- 1. RESUMEN EJECUTIVO -->
+<h2>1. Resumen Ejecutivo</h2>
+
+<p><strong>Postres Exquisitos</strong> es un emprendimiento de postres artesanales que busca posicionarse en el mercado con productos de alta calidad, elaborados con ingredientes naturales. El negocio ya cuenta con una plataforma digital (e-commerce) para recibir pedidos y canalizarlos via WhatsApp.</p>
+
+<p>Este documento analiza <strong>3 alternativas</strong> para iniciar operaciones, con enfasis en minimizar riesgo financiero y maximizar la velocidad de salida al mercado.</p>
+
+<div class="highlight">
+  <h4>La Pregunta Clave</h4>
+  <p>Como empezar a producir y entregar postres <strong>sin arriesgar capital excesivo</strong> mientras se valida que el mercado realmente paga por el producto?</p>
+</div>
+
+<!-- 2. LAS 3 ALTERNATIVAS -->
+<h2>2. Alternativas Analizadas</h2>
+
+<div class="vs-container">
+  <div class="vs-card option-a">
+    <h4>ALTERNATIVA A: Cocina Oculta (Dark Kitchen)</h4>
+    <p><strong>Concepto:</strong> Recibir pedidos por la plataforma web/WhatsApp y transferirlos a una cocina oculta (ghost kitchen) que ya tiene equipos, infraestructura y permisos sanitarios.</p>
+    <p style="margin-top:10px;"><strong>Inversion inicial:</strong> Baja</p>
+    <p><strong>Riesgo:</strong> Bajo</p>
+    <p><strong>Control:</strong> Limitado</p>
+  </div>
+  <div class="vs-card option-b">
+    <h4>ALTERNATIVA B: Local Propio</h4>
+    <p><strong>Concepto:</strong> Montar un local con cocina propia, equipos, personal contratado y punto de venta fisico.</p>
+    <p style="margin-top:10px;"><strong>Inversion inicial:</strong> Alta</p>
+    <p><strong>Riesgo:</strong> Alto</p>
+    <p><strong>Control:</strong> Total</p>
+  </div>
+</div>
+
+<div class="vs-container">
+  <div class="vs-card option-c">
+    <h4>ALTERNATIVA C: Modelo Hibrido (RECOMENDADA)</h4>
+    <p><strong>Concepto:</strong> Empezar con cocina oculta para validar el mercado, y migrar gradualmente a local propio cuando la demanda lo justifique. Combina lo mejor de A y B.</p>
+    <p style="margin-top:10px;"><strong>Inversion inicial:</strong> Baja</p>
+    <p><strong>Riesgo:</strong> Bajo → controlado</p>
+    <p><strong>Control:</strong> Gradual → Total</p>
+  </div>
+</div>
+
+<!-- 3. COMPARATIVO DETALLADO -->
+<h2>3. Comparativo Detallado de Costos</h2>
+
+<h3>3.1 Alternativa A — Cocina Oculta (Dark Kitchen)</h3>
+
+<table>
+  <tr><th>Concepto</th><th>Costo Estimado</th><th>Frecuencia</th></tr>
+  <tr><td>Alquiler de espacio en dark kitchen</td><td>$300 - $800 USD/mes</td><td>Mensual</td></tr>
+  <tr><td>Porcentaje por produccion (comision cocina)</td><td>15% - 30% del valor de venta</td><td>Por pedido</td></tr>
+  <tr><td>Ingredientes y materia prima</td><td>$200 - $500 USD/mes</td><td>Mensual</td></tr>
+  <tr><td>Empaques y presentacion</td><td>$100 - $200 USD/mes</td><td>Mensual</td></tr>
+  <tr><td>Delivery / domicilios</td><td>$150 - $300 USD/mes</td><td>Mensual</td></tr>
+  <tr><td>Marketing digital (redes, pauta)</td><td>$100 - $300 USD/mes</td><td>Mensual</td></tr>
+  <tr><td>Plataforma web (ya existe)</td><td>$0</td><td>—</td></tr>
+  <tr><td><strong>TOTAL MENSUAL ESTIMADO</strong></td><td><strong>$850 - $2,100 USD/mes</strong></td><td></td></tr>
+</table>
+
+<div class="info-box">
+  <h4>Ventajas de la Cocina Oculta</h4>
+  <ul>
+    <li>Inversion inicial casi nula — no compras equipos, no pagas arriendo de local</li>
+    <li>Permisos sanitarios ya resueltos por la dark kitchen</li>
+    <li>Puedes empezar a vender en 1-2 semanas</li>
+    <li>Si no funciona, puedes salir sin deudas</li>
+    <li>Escalas segun demanda — si un mes no hay pedidos, no pagas personal fijo</li>
+  </ul>
+</div>
+
+<div class="warn-box">
+  <h4>Riesgos de la Cocina Oculta</h4>
+  <ul>
+    <li>Dependencia del tercero — si la cocina cierra o sube precios, te afecta</li>
+    <li>Menos control de calidad — no estas 100% presente en la produccion</li>
+    <li>Margen reducido — la comision de la cocina come parte de tu ganancia</li>
+    <li>Limitacion en horarios y capacidad (depende de disponibilidad de la cocina)</li>
+  </ul>
+</div>
+
+<h3>3.2 Alternativa B — Local Propio</h3>
+
+<table>
+  <tr><th>Concepto</th><th>Costo Estimado</th><th>Frecuencia</th></tr>
+  <tr><td colspan="3" style="background:#880e4f;color:white;font-weight:bold;">INVERSION INICIAL (una sola vez)</td></tr>
+  <tr><td>Adecuacion del local (obra civil, pisos, pintura)</td><td>$3,000 - $8,000 USD</td><td>Unico</td></tr>
+  <tr><td>Equipos de cocina (horno industrial, batidora, refrigerador, vitrinas)</td><td>$5,000 - $15,000 USD</td><td>Unico</td></tr>
+  <tr><td>Mobiliario (mesas, sillas, mostrador)</td><td>$1,000 - $3,000 USD</td><td>Unico</td></tr>
+  <tr><td>Permisos sanitarios, registro, licencias</td><td>$500 - $1,500 USD</td><td>Unico</td></tr>
+  <tr><td>Inventario inicial (ingredientes)</td><td>$500 - $1,000 USD</td><td>Unico</td></tr>
+  <tr><td>Branding (letrero, menu, empaques)</td><td>$300 - $800 USD</td><td>Unico</td></tr>
+  <tr><td><strong>SUBTOTAL INVERSION INICIAL</strong></td><td><strong>$10,300 - $29,300 USD</strong></td><td></td></tr>
+  <tr><td colspan="3" style="background:#880e4f;color:white;font-weight:bold;">COSTOS OPERATIVOS MENSUALES</td></tr>
+  <tr><td>Arriendo del local</td><td>$500 - $1,500 USD/mes</td><td>Mensual</td></tr>
+  <tr><td>Servicios (luz, agua, gas)</td><td>$150 - $400 USD/mes</td><td>Mensual</td></tr>
+  <tr><td>Nomina (pastelero + ayudante + vendedor)</td><td>$1,200 - $2,500 USD/mes</td><td>Mensual</td></tr>
+  <tr><td>Ingredientes y materia prima</td><td>$400 - $800 USD/mes</td><td>Mensual</td></tr>
+  <tr><td>Empaques</td><td>$100 - $200 USD/mes</td><td>Mensual</td></tr>
+  <tr><td>Delivery / domicilios</td><td>$150 - $300 USD/mes</td><td>Mensual</td></tr>
+  <tr><td>Marketing</td><td>$100 - $300 USD/mes</td><td>Mensual</td></tr>
+  <tr><td>Contador / legal</td><td>$100 - $200 USD/mes</td><td>Mensual</td></tr>
+  <tr><td><strong>TOTAL MENSUAL OPERATIVO</strong></td><td><strong>$2,700 - $6,200 USD/mes</strong></td><td></td></tr>
+</table>
+
+<div class="warn-box">
+  <h4>Riesgo Principal del Local Propio</h4>
+  <p>Si la demanda no es suficiente en los primeros 3-6 meses, los costos fijos (arriendo + nomina + servicios) siguen corriendo. Necesitas vender aproximadamente <strong>$4,000 - $8,000 USD/mes</strong> solo para cubrir costos sin generar ganancia. Antes de validar el mercado, esto es una apuesta alta.</p>
+</div>
+
+<!-- 4. RECOMENDACION -->
+<h2>4. Recomendacion: Modelo Hibrido (Alternativa C)</h2>
+
+<div class="success-box">
+  <h4>La Estrategia Inteligente: Empezar Ligero, Crecer con Datos</h4>
+  <p>La mayoria de negocios de alimentos exitosos en la era digital empezaron con modelos lean (ligeros). La clave no es tener el local perfecto desde el dia 1, sino <strong>validar que la gente paga por tu producto</strong> antes de invertir fuerte.</p>
+</div>
+
+<h3>Fase 1 — Validacion (Meses 1-3): Cocina Oculta</h3>
+
+<div class="phase">
+  <h4>Objetivo: Validar producto, precio y demanda real</h4>
+  <ul>
+    <li>Operar desde la dark kitchen existente</li>
+    <li>Recibir pedidos por la plataforma web + WhatsApp + Instagram</li>
+    <li>Probar el menu completo (8 productos iniciales)</li>
+    <li>Medir: cuantos pedidos por semana, ticket promedio, productos mas vendidos, zona de mayor demanda</li>
+    <li>Ajustar precios, recetas y presentacion segun feedback real</li>
+    <li>Construir base de datos de clientes y seguidores en redes</li>
+  </ul>
+  <p style="margin-top:10px;"><strong>Inversion:</strong> ~$1,500 USD/mes | <strong>Meta:</strong> 50+ pedidos/mes</p>
+</div>
+
+<h3>Fase 2 — Crecimiento (Meses 4-6): Cocina Oculta + Presencia Fisica Minima</h3>
+
+<div class="phase">
+  <h4>Objetivo: Aumentar volumen y visibilidad</h4>
+  <ul>
+    <li>Seguir con la dark kitchen pero negociar mejor tarifa por volumen</li>
+    <li>Participar en ferias, bazares y mercados de fin de semana (presencia fisica sin local fijo)</li>
+    <li>Alianzas con cafeterias y restaurantes para vender al por mayor</li>
+    <li>Contratar un repartidor fijo o alianza con servicio de delivery</li>
+    <li>Sistema de pedidos recurrentes (suscripciones semanales)</li>
+    <li>Medir: punto de equilibrio, capacidad maxima de la dark kitchen</li>
+  </ul>
+  <p style="margin-top:10px;"><strong>Inversion:</strong> ~$2,000 USD/mes | <strong>Meta:</strong> 120+ pedidos/mes</p>
+</div>
+
+<h3>Fase 3 — Expansion (Meses 7-12): Local Propio o Cocina Propia</h3>
+
+<div class="phase">
+  <h4>Objetivo: Independencia operativa total</h4>
+  <ul>
+    <li><strong>Solo si la Fase 2 confirmo demanda sostenida</strong></li>
+    <li>Buscar local en la zona de mayor concentracion de clientes (ya tienes los datos)</li>
+    <li>Montar cocina propia con los equipos que ya sabes que necesitas (no adivinas)</li>
+    <li>Contratar personal con base en la carga real de trabajo (no estimaciones)</li>
+    <li>Abrir punto de venta fisico + seguir con delivery</li>
+    <li>Usar las ganancias acumuladas de Fase 1-2 para financiar parte de la inversion</li>
+  </ul>
+  <p style="margin-top:10px;"><strong>Inversion:</strong> $10,000 - $20,000 USD | <strong>Meta:</strong> Rentabilidad mensual positiva</p>
+</div>
+
+<!-- 5. POR QUE FUNCIONA -->
+<h2>5. Por que Funciona el Modelo Hibrido</h2>
+
+<table>
+  <tr><th>Criterio</th><th>Cocina Oculta (A)</th><th>Local Propio (B)</th><th>Hibrido (C)</th></tr>
+  <tr><td>Inversion inicial</td><td style="color:green;font-weight:bold;">Baja ($1,500)</td><td style="color:red;font-weight:bold;">Alta ($15,000+)</td><td style="color:green;font-weight:bold;">Baja → gradual</td></tr>
+  <tr><td>Tiempo para empezar a vender</td><td style="color:green;font-weight:bold;">1-2 semanas</td><td style="color:red;">3-6 meses</td><td style="color:green;font-weight:bold;">1-2 semanas</td></tr>
+  <tr><td>Riesgo si no funciona</td><td style="color:green;font-weight:bold;">Pierdes poco</td><td style="color:red;font-weight:bold;">Pierdes mucho</td><td style="color:green;font-weight:bold;">Pierdes poco</td></tr>
+  <tr><td>Control de calidad</td><td style="color:orange;">Limitado</td><td style="color:green;font-weight:bold;">Total</td><td>Limitado → Total</td></tr>
+  <tr><td>Margen de ganancia</td><td style="color:orange;">Medio (comision)</td><td style="color:green;font-weight:bold;">Alto</td><td>Medio → Alto</td></tr>
+  <tr><td>Escalabilidad</td><td style="color:orange;">Limitada</td><td style="color:green;font-weight:bold;">Alta</td><td style="color:green;font-weight:bold;">Alta</td></tr>
+  <tr><td>Datos para decisiones</td><td style="color:orange;">Pocos</td><td style="color:red;">Sin datos previos</td><td style="color:green;font-weight:bold;">Decisiones basadas en datos reales</td></tr>
+</table>
+
+<div class="highlight">
+  <h4>La Regla de Oro del Emprendimiento</h4>
+  <p><strong>Nunca inviertas fuerte en algo que no has validado con clientes reales.</strong> La dark kitchen te permite validar con riesgo minimo. El local propio lo abres cuando ya sabes exactamente cuanto vendes, que productos piden mas, en que zona estan tus clientes y cuanto personal necesitas.</p>
+</div>
+
+<!-- 6. NUMEROS -->
+<h2>6. Proyeccion Financiera Simplificada</h2>
+
+<h3>Escenario: Ticket Promedio $25,000 COP (~$6 USD)</h3>
+
+<table>
+  <tr><th>Metrica</th><th>Fase 1 (Mes 1-3)</th><th>Fase 2 (Mes 4-6)</th><th>Fase 3 (Mes 7-12)</th></tr>
+  <tr><td>Pedidos por mes</td><td>50</td><td>120</td><td>250+</td></tr>
+  <tr><td>Ingreso bruto mensual</td><td>$300 USD</td><td>$720 USD</td><td>$1,500+ USD</td></tr>
+  <tr><td>Costo operativo mensual</td><td>$1,500 USD</td><td>$2,000 USD</td><td>$3,500 USD</td></tr>
+  <tr><td>Resultado mensual</td><td style="color:red;">-$1,200 USD</td><td style="color:red;">-$1,280 USD</td><td style="color:red;">-$2,000 USD</td></tr>
+</table>
+
+<div class="warn-box">
+  <h4>Realidad del Ticket Promedio</h4>
+  <p>Con ticket de $6 USD el negocio no cierra numeros. <strong>La clave es subir el ticket promedio</strong> con estrategias como:</p>
+</div>
+
+<h3>Escenario Ajustado: Ticket Promedio $60,000 COP (~$15 USD)</h3>
+<p>Combos, tortas enteras, pedidos corporativos, suscripciones semanales.</p>
+
+<table>
+  <tr><th>Metrica</th><th>Fase 1 (Mes 1-3)</th><th>Fase 2 (Mes 4-6)</th><th>Fase 3 (Mes 7-12)</th></tr>
+  <tr><td>Pedidos por mes</td><td>50</td><td>120</td><td>250+</td></tr>
+  <tr><td>Ingreso bruto mensual</td><td>$750 USD</td><td>$1,800 USD</td><td>$3,750+ USD</td></tr>
+  <tr><td>Costo operativo mensual</td><td>$1,500 USD</td><td>$2,000 USD</td><td>$3,500 USD</td></tr>
+  <tr><td>Resultado mensual</td><td style="color:red;">-$750 USD</td><td style="color:red;">-$200 USD</td><td style="color:green;font-weight:bold;">+$250+ USD</td></tr>
+  <tr><td>Punto de equilibrio</td><td colspan="3" style="text-align:center;font-weight:bold;">~100 pedidos/mes con ticket de $15 USD = $1,500 USD → casi cubre Fase 1</td></tr>
+</table>
+
+<div class="success-box">
+  <h4>Claves para Subir el Ticket Promedio</h4>
+  <ul>
+    <li><strong>Tortas enteras</strong> en vez de porciones individuales ($30-$50 USD cada una)</li>
+    <li><strong>Combos familiares</strong>: torta + cheesecake + galletas ($25-$35 USD)</li>
+    <li><strong>Pedidos corporativos</strong>: empresas que piden para eventos, reuniones, cumpleanos</li>
+    <li><strong>Suscripciones semanales</strong>: "Caja Dulce" semanal con variedad ($20 USD/semana)</li>
+    <li><strong>Fechas especiales</strong>: San Valentin, Dia de la Madre, Navidad (tortas personalizadas $40-$80 USD)</li>
+    <li><strong>Alianzas B2B</strong>: cafeterias y restaurantes que compran al por mayor</li>
+  </ul>
+</div>
+
+<!-- 7. VENTAJA COMPETITIVA -->
+<h2>7. Ventaja Competitiva: La Plataforma Digital</h2>
+
+<p>Postres Exquisitos ya tiene algo que el 90% de las pastelerias no tiene: <strong>una plataforma digital profesional</strong> con catalogo, carrito de compras y pedidos por WhatsApp.</p>
+
+<table>
+  <tr><th>Lo que ya tienen</th><th>Lo que la mayoria no tiene</th></tr>
+  <tr><td>Sitio web con catalogo visual</td><td>La mayoria vende solo por Instagram o boca a boca</td></tr>
+  <tr><td>Carrito de compras funcional</td><td>La mayoria recibe pedidos desordenados por WhatsApp</td></tr>
+  <tr><td>Precios claros y transparentes</td><td>La mayoria dice "te paso el precio por interno"</td></tr>
+  <tr><td>Pedido directo a WhatsApp con detalle</td><td>La mayoria pierde tiempo confirmando que quiere el cliente</td></tr>
+  <tr><td>Marca visual profesional</td><td>La mayoria tiene fotos de celular sin branding</td></tr>
+</table>
+
+<div class="info-box">
+  <h4>Esta ventaja se maximiza con el modelo hibrido</h4>
+  <p>La plataforma permite recibir pedidos 24/7 sin necesidad de local fisico. Los clientes ven el catalogo, eligen, agregan al carrito y piden. Esto funciona perfecto con la dark kitchen porque <strong>todo el negocio puede operar 100% digital</strong> desde el dia 1.</p>
+</div>
+
+<!-- 8. ESTRATEGIAS DE MARKETING -->
+<h2>8. Estrategias de Marketing para Arrancar</h2>
+
+<h3>Marketing de Bajo Costo (Primeros 3 Meses)</h3>
+
+<table>
+  <tr><th>Estrategia</th><th>Costo</th><th>Impacto Esperado</th></tr>
+  <tr><td><strong>Instagram + TikTok</strong> — Videos cortos del proceso de preparacion</td><td>$0 (tiempo)</td><td>Alto — el food content es viral</td></tr>
+  <tr><td><strong>Muestras gratis</strong> a influencers locales de comida</td><td>$50-$100 USD</td><td>Alto — reseñas organicas</td></tr>
+  <tr><td><strong>Descuento primer pedido</strong> 20% OFF por la web</td><td>Margen reducido</td><td>Medio — captacion de nuevos clientes</td></tr>
+  <tr><td><strong>Programa de referidos</strong>: "Invita un amigo, ambos ganan 15% OFF"</td><td>$0</td><td>Alto — crecimiento organico</td></tr>
+  <tr><td><strong>Google Maps</strong> — registrar el negocio (aunque sea delivery)</td><td>$0</td><td>Medio — busquedas locales</td></tr>
+  <tr><td><strong>Pauta en Instagram/Facebook</strong> segmentada por zona</td><td>$50-$100 USD/mes</td><td>Alto — alcance medible</td></tr>
+  <tr><td><strong>Alianza con empresas</strong> — muestras en oficinas cercanas</td><td>$30-$50 USD</td><td>Alto — pedidos corporativos recurrentes</td></tr>
+</table>
+
+<!-- 9. CHECKLIST DE ARRANQUE -->
+<h2>9. Checklist de Arranque — Fase 1</h2>
+
+<h3>Antes de Empezar (Semana 1-2)</h3>
+<ul>
+  <li>[ ] Firmar acuerdo con la dark kitchen (horarios, tarifas, responsabilidades)</li>
+  <li>[ ] Definir menu inicial (8 productos, probados y costeados)</li>
+  <li>[ ] Calcular costo por producto y fijar precios con margen minimo 60%</li>
+  <li>[ ] Disenar empaques con marca (stickers, cajas, bolsas)</li>
+  <li>[ ] Activar plataforma web con productos, precios y fotos profesionales</li>
+  <li>[ ] Crear cuenta de Instagram y TikTok con contenido inicial (5-10 posts)</li>
+  <li>[ ] Definir zonas de delivery y tarifas</li>
+  <li>[ ] Abrir cuenta bancaria del negocio</li>
+</ul>
+
+<h3>Primeras Ventas (Semana 3-4)</h3>
+<ul>
+  <li>[ ] Lanzamiento suave: vender a amigos, familia y conocidos</li>
+  <li>[ ] Recopilar feedback: sabor, presentacion, tiempo de entrega</li>
+  <li>[ ] Ajustar lo que sea necesario antes del lanzamiento publico</li>
+  <li>[ ] Tomar fotos profesionales de los productos entregados</li>
+</ul>
+
+<h3>Lanzamiento Publico (Semana 5+)</h3>
+<ul>
+  <li>[ ] Publicar en redes con contenido de los primeros clientes</li>
+  <li>[ ] Activar pauta pagada en Instagram ($50-$100 USD)</li>
+  <li>[ ] Enviar muestras a 3-5 influencers locales de comida</li>
+  <li>[ ] Registrar en Google Maps</li>
+  <li>[ ] Medir: pedidos por semana, ticket promedio, producto mas pedido</li>
+</ul>
+
+<!-- 10. INDICADORES CLAVE -->
+<h2>10. Indicadores Clave a Medir</h2>
+
+<table>
+  <tr><th>Indicador</th><th>Meta Fase 1</th><th>Meta Fase 2</th><th>Meta Fase 3</th></tr>
+  <tr><td>Pedidos por mes</td><td>50</td><td>120</td><td>250+</td></tr>
+  <tr><td>Ticket promedio</td><td>$10 USD</td><td>$15 USD</td><td>$15-20 USD</td></tr>
+  <tr><td>Costo por adquisicion de cliente</td><td>Medir</td><td>&lt; $3 USD</td><td>&lt; $2 USD</td></tr>
+  <tr><td>Tasa de recompra (clientes que repiten)</td><td>Medir</td><td>&gt; 30%</td><td>&gt; 40%</td></tr>
+  <tr><td>Producto mas vendido</td><td>Identificar</td><td>Potenciar</td><td>Expandir linea</td></tr>
+  <tr><td>Zona de mayor demanda</td><td>Identificar</td><td>Concentrar delivery</td><td>Ubicar local ahi</td></tr>
+  <tr><td>Margen bruto por producto</td><td>&gt; 50%</td><td>&gt; 55%</td><td>&gt; 60%</td></tr>
+</table>
+
+<!-- 11. DECISION FINAL -->
+<h2>11. Conclusion y Recomendacion Final</h2>
+
+<div class="highlight">
+  <h4>Recomendacion: ALTERNATIVA C — Modelo Hibrido</h4>
+  <p><strong>Empezar con la cocina oculta (dark kitchen) inmediatamente.</strong></p>
+  <p>No esperen a tener el local perfecto. El mercado no espera. Cada dia sin vender es un dia sin datos, sin clientes y sin marca.</p>
+  <p style="margin-top:10px;">La dark kitchen les permite:</p>
+  <ul style="margin-top:8px;">
+    <li>Empezar en 2 semanas con menos de $1,500 USD</li>
+    <li>Validar el producto con clientes reales</li>
+    <li>Acumular datos para tomar decisiones inteligentes</li>
+    <li>Generar ingresos desde el mes 1</li>
+    <li>Construir marca y comunidad antes de abrir el local</li>
+  </ul>
+  <p style="margin-top:10px;"><strong>Cuando la demanda supere la capacidad de la dark kitchen (120-150 pedidos/mes sostenidos durante 2+ meses), ese es el momento de buscar local propio.</strong> No antes.</p>
+</div>
+
+<div class="success-box">
+  <h4>Frase para recordar</h4>
+  <p style="font-size: 12pt; text-align: center; font-style: italic; color: #2e7d32;">"No necesitas un restaurante para empezar un negocio de comida.<br>Necesitas clientes que paguen. Todo lo demas viene despues."</p>
+</div>
+
+<div class="footer">
+  <p><strong>Postres Exquisitos</strong> — Plan de Negocios v1.0</p>
+  <p>Documento preparado el 13 de Abril de 2026</p>
+  <p>SISTECH — Consultoria de Negocios y Tecnologia</p>
+  <p>Preparado por el Ing. Jose E. Palomares con herramientas de Inteligencia Artificial</p>
+</div>
+
+</body>
+</html>
