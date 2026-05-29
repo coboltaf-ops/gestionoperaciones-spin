@@ -23,6 +23,7 @@ export default function MainLayout({ children }: { children: React.ReactNode }) 
   const [configOpen, setConfigOpen] = useState(true)
   const [returnUrl, setReturnUrl] = useState<string | null>(null)
   const [fromContable, setFromContable] = useState(false)
+  const [sidebarOpen, setSidebarOpen] = useState(true)
   const modulosEstado = useModulosSistemaStore(s => s.modulos)
   const initModulos = useModulosSistemaStore(s => s.initModulos)
   const companyLogo = useCompanyLogo()
@@ -71,6 +72,13 @@ export default function MainLayout({ children }: { children: React.ReactNode }) 
     }
   }, [])
 
+  // Cerrar sidebar cuando navegamos a módulos (no dashboard)
+  useEffect(() => {
+    if (pathname !== '/dashboard' && pathname !== '/') {
+      setSidebarOpen(false)
+    }
+  }, [pathname])
+
   const isAdmin = ['admin', 'administrador'].includes(user.rol.toLowerCase())
 
   const isModuloActivo = (href: string) => {
@@ -81,6 +89,7 @@ export default function MainLayout({ children }: { children: React.ReactNode }) 
 
   const allNavItems = [
     { name: t('dashboard'), href: '/dashboard', icon: '📊' },
+    { name: 'Clientes', href: 'https://crmspin.vercel.app', icon: '👥', external: true },
     { name: t('productos'), href: '/productos', icon: '📦' },
     { name: t('kardex'), href: '/kardex', icon: '📒' },
     { name: t('proveedores'), href: '/proveedores', icon: '🏢' },
@@ -115,7 +124,7 @@ export default function MainLayout({ children }: { children: React.ReactNode }) 
     <ServerSyncProvider>
     <div className="flex min-h-screen">
       {/* Sidebar Glassmorphism */}
-      <aside className="fixed left-0 top-0 bottom-0 w-64 bg-black/30 backdrop-blur-2xl border-r border-white/10 z-50 flex flex-col">
+      <aside className={`fixed left-0 top-0 bottom-0 w-64 bg-black/30 backdrop-blur-2xl border-r border-white/10 z-50 flex flex-col transition-transform duration-300 ${!sidebarOpen ? '-translate-x-full' : 'translate-x-0'}`}>
         {/* Logo de la empresa (top-left) */}
         <div className="px-6 py-5 shrink-0 flex flex-col items-center gap-2">
           <div className="rounded-xl flex items-center justify-center overflow-hidden" style={{ background: '#ffffff', border: '1px solid rgba(255,255,255,0.2)', padding: 6, minHeight: 80 }}>
@@ -142,10 +151,25 @@ export default function MainLayout({ children }: { children: React.ReactNode }) 
               </>
             )
             if (isExternal) {
+              // Si es Clientes, agregar returnUrl para volver a gestionoperaciones-spin
+              const isClientes = item.name === 'Clientes'
+              const handleClientesClick = () => {
+                if (isClientes && typeof window !== 'undefined') {
+                  const currentUrl = window.location.href
+                  const crmUrl = `https://crmspin.vercel.app?returnUrl=${encodeURIComponent(currentUrl)}`
+                  window.open(crmUrl, '_blank')
+                }
+              }
+
               return (
-                <a key={item.href} href={item.href} target="_blank" rel="noopener noreferrer" className={className}>
+                <button
+                  key={item.href}
+                  onClick={isClientes ? handleClientesClick : () => window.open(item.href, '_blank')}
+                  className={className}
+                  type="button"
+                >
                   {content}
-                </a>
+                </button>
               )
             }
             return (
@@ -198,10 +222,17 @@ export default function MainLayout({ children }: { children: React.ReactNode }) 
       </aside>
 
       {/* Main Content */}
-      <main className="ml-64 flex-1 flex flex-col min-h-screen">
+      <main className={`${sidebarOpen ? 'ml-64' : 'ml-0'} flex-1 flex flex-col min-h-screen transition-all duration-300`}>
         {/* Topbar — espacio reservado para gráficos resumen de operaciones */}
         <header className="px-8 py-3 shrink-0 flex items-center justify-between gap-4" style={{ borderBottom: '1px solid rgba(255,255,255,0.06)' }}>
           <div className="flex items-center gap-4">
+            <button
+              onClick={() => setSidebarOpen(!sidebarOpen)}
+              className="p-2 rounded-lg hover:bg-white/10 transition-all text-white"
+              title="Toggle menu"
+            >
+              <span className="text-xl">☰</span>
+            </button>
             {fromContable && returnUrl && (
               <button
                 onClick={volverAContable}
@@ -239,7 +270,7 @@ export default function MainLayout({ children }: { children: React.ReactNode }) 
                 }
               }}
               className="ml-2 px-4 py-1.5 rounded-lg text-xs font-bold text-white transition-all hover:opacity-90"
-              style={{ background: '#1e3a8a', border: '1px solid #1e3a8a' }}
+              style={{ background: 'rgba(239, 68, 68, 1)', border: '1px solid rgba(239, 68, 68, 0.8)' }}
             >
               {tCommon('logout')}
             </button>
