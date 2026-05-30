@@ -1,0 +1,462 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>SISTECH - Accesos y Flujo de Alta de Clientes</title>
+    <style>
+        * { margin: 0; padding: 0; box-sizing: border-box; }
+        body {
+            font-family: 'Segoe UI', Arial, sans-serif;
+            background: linear-gradient(135deg, #f5f7fa 0%, #c3cfe2 100%);
+            color: #333;
+            line-height: 1.6;
+        }
+
+        .header {
+            background: linear-gradient(135deg, #f39c12 0%, #e67e22 100%);
+            color: white;
+            padding: 40px;
+            text-align: center;
+            margin-bottom: 40px;
+            border-radius: 10px;
+            box-shadow: 0 10px 30px rgba(243, 156, 18, 0.4);
+            position: relative;
+            overflow: hidden;
+        }
+        .header h1 {
+            font-size: 48px;
+            margin: 10px 0;
+            font-weight: 700;
+            text-shadow: 2px 2px 4px rgba(0,0,0,0.2);
+            letter-spacing: 2px;
+        }
+        .header p {
+            font-size: 16px;
+            opacity: 0.95;
+            margin: 8px 0;
+        }
+        .header .subtitle {
+            font-size: 13px;
+            margin-top: 15px;
+            opacity: 0.85;
+            border-top: 1px solid rgba(255,255,255,0.3);
+            padding-top: 15px;
+        }
+
+        .container {
+            padding: 30px 40px;
+            background: white;
+            margin: 20px;
+            border-radius: 8px;
+            box-shadow: 0 5px 20px rgba(0,0,0,0.1);
+        }
+
+        .section-title {
+            background: linear-gradient(90deg, #f39c12 0%, #e67e22 100%);
+            color: white;
+            padding: 15px 20px;
+            margin: 30px 0 20px 0;
+            font-weight: bold;
+            font-size: 14px;
+            border-radius: 5px;
+            border-left: 5px solid #ffc107;
+            box-shadow: 0 3px 10px rgba(243, 156, 18, 0.3);
+        }
+
+        table {
+            width: 100%;
+            border-collapse: collapse;
+            margin: 20px 0;
+            background: white;
+            box-shadow: 0 2px 8px rgba(0,0,0,0.1);
+            border-radius: 5px;
+            overflow: hidden;
+        }
+        th {
+            background: linear-gradient(90deg, #f39c12 0%, #e67e22 100%);
+            color: white;
+            padding: 14px;
+            text-align: left;
+            font-weight: 700;
+            font-size: 12px;
+            text-transform: uppercase;
+            letter-spacing: 0.5px;
+            border-bottom: 3px solid #ffc107;
+        }
+        td {
+            padding: 12px 14px;
+            border-bottom: 1px solid #e0e0e0;
+            font-size: 11px;
+            vertical-align: middle;
+        }
+        tr:nth-child(even) { background: #f8f9fa; }
+        tr:hover { background: #e3f2fd; }
+
+        td:nth-child(2) {
+            font-family: 'Courier New', monospace;
+            font-size: 10px;
+            color: #1e3c72;
+            font-weight: 500;
+        }
+        td:nth-child(3), td:nth-child(4) {
+            font-family: 'Courier New', monospace;
+            font-size: 10px;
+        }
+        td:nth-child(4) {
+            color: #d32f2f;
+            font-weight: bold;
+            background: #fff5f5;
+        }
+
+        a {
+            color: #1e3c72;
+            text-decoration: none;
+            font-weight: 600;
+            border-bottom: 1px dashed #64b5f6;
+        }
+        a:hover { color: #2a5298; }
+
+        .app-section {
+            margin: 30px 0;
+            padding: 25px;
+            background: linear-gradient(135deg, #f5f7fa 0%, #e9ecef 100%);
+            border-left: 5px solid #64b5f6;
+            border-radius: 5px;
+        }
+
+        .app-title {
+            font-weight: 700;
+            color: #1e3c72;
+            font-size: 13px;
+            margin-bottom: 8px;
+            text-transform: uppercase;
+            letter-spacing: 0.5px;
+        }
+
+        .app-desc {
+            font-size: 11px;
+            line-height: 1.8;
+            color: #555;
+            margin-bottom: 15px;
+        }
+
+        .modules {
+            font-size: 11px;
+            line-height: 1.8;
+            color: #555;
+            background: white;
+            padding: 12px;
+            border-radius: 5px;
+            border-left: 3px solid #2a5298;
+        }
+
+        .flow-section {
+            margin: 30px 0;
+            padding: 25px;
+            background: linear-gradient(135deg, #f0f4ff 0%, #e8edf7 100%);
+            border-left: 5px solid #1e3c72;
+            border-radius: 5px;
+        }
+
+        .flow-title {
+            font-weight: 700;
+            color: #1e3c72;
+            font-size: 13px;
+            margin-bottom: 15px;
+            text-transform: uppercase;
+            letter-spacing: 0.5px;
+        }
+
+        .flow-step {
+            background: white;
+            padding: 15px;
+            margin: 15px 0;
+            border-left: 4px solid #64b5f6;
+            border-radius: 3px;
+            font-size: 11px;
+            line-height: 1.6;
+        }
+
+        .flow-step h4 {
+            color: #1e3c72;
+            margin-bottom: 8px;
+            font-size: 12px;
+        }
+
+        .flow-step ul {
+            margin-left: 20px;
+            color: #555;
+        }
+
+        .flow-step li {
+            margin: 5px 0;
+        }
+
+        .confidential {
+            background: #fef2f2;
+            border: 2px solid #d32f2f;
+            border-radius: 8px;
+            padding: 15px;
+            margin: 20px 0;
+            text-align: center;
+        }
+        .confidential p {
+            color: #d32f2f;
+            font-weight: 600;
+            font-size: 11pt;
+        }
+
+        .footer {
+            margin-top: 40px;
+            padding: 20px;
+            border-top: 2px solid #64b5f6;
+            text-align: center;
+            background: linear-gradient(135deg, #f5f7fa 0%, #e9ecef 100%);
+            border-radius: 5px;
+        }
+        .footer p {
+            font-size: 11px;
+            color: #666;
+            margin: 5px 0;
+        }
+        .footer strong {
+            color: #1e3c72;
+            font-size: 12px;
+        }
+
+        .badge {
+            display: inline-block;
+            background: #4caf50;
+            color: white;
+            padding: 3px 8px;
+            border-radius: 3px;
+            font-size: 10px;
+            font-weight: bold;
+            margin-left: 10px;
+        }
+
+        @media print {
+            body { background: white; }
+            .container { margin: 0; box-shadow: none; }
+            a { border-bottom: none; }
+        }
+    </style>
+</head>
+<body>
+    <div class="header">
+        <h1>🔐 SISTECH</h1>
+        <p>Sistemas Inteligentes de Tecnología</p>
+        <div class="subtitle">
+            <strong>Documento de Accesos y Flujo de Alta de Clientes</strong><br>
+            Actualizado: 30 de Mayo de 2026
+        </div>
+    </div>
+
+    <div class="container">
+        <div class="confidential">
+            <p>⚠️ DOCUMENTO CONFIDENCIAL - ACCESOS A SISTEMAS</p>
+            <p style="font-size: 10px; margin-top: 5px;">Guarde este documento en un lugar seguro. Contiene credenciales de acceso a todos los sistemas.</p>
+        </div>
+
+        <div class="section-title">📌 SISTEMAS PRINCIPALES</div>
+        <table>
+            <tr>
+                <th>Sistema</th>
+                <th>URL</th>
+                <th>Usuario</th>
+                <th>Clave</th>
+                <th>Situación</th>
+            </tr>
+            <tr>
+                <td><strong>Gestionoperaciones-Spin</strong></td>
+                <td><a href="https://gestionoperaciones-spin.vercel.app" target="_blank">gestionoperaciones-spin.vercel.app</a></td>
+                <td>admin</td>
+                <td>admin123</td>
+                <td><span class="badge">✓ Activo</span></td>
+            </tr>
+            <tr>
+                <td><strong>CRM Spin</strong></td>
+                <td><a href="https://crmspin.vercel.app" target="_blank">crmspin.vercel.app</a></td>
+                <td>admin</td>
+                <td>admin123</td>
+                <td><span class="badge">✓ Activo</span></td>
+            </tr>
+            <tr>
+                <td><strong>Gestion Inventario</strong></td>
+                <td><a href="https://gestioninventario-two.vercel.app" target="_blank">gestioninventario-two.vercel.app</a></td>
+                <td>jarango</td>
+                <td>admin123</td>
+                <td><span class="badge">✓ Activo</span></td>
+            </tr>
+        </table>
+
+        <div class="section-title">🌐 FORMULARIOS PÚBLICOS (Sin Login)</div>
+        <table>
+            <tr>
+                <th>Sistema</th>
+                <th>URL</th>
+                <th>Usuario</th>
+                <th>Clave/Código</th>
+                <th>Situación</th>
+            </tr>
+            <tr>
+                <td>Prospectos CRM Spin</td>
+                <td><a href="https://crmspin.vercel.app/prospectos-publico" target="_blank">crmspin.vercel.app/prospectos</a></td>
+                <td>Público</td>
+                <td>N/A</td>
+                <td><span class="badge">✓ Activo</span></td>
+            </tr>
+            <tr>
+                <td>PQRS CRM Spin</td>
+                <td><a href="https://crmspin.vercel.app/pqrs-publico" target="_blank">crmspin.vercel.app/pqrs</a></td>
+                <td>Público</td>
+                <td>ACC-SPIN-2026</td>
+                <td><span class="badge">✓ Activo</span></td>
+            </tr>
+            <tr>
+                <td>Landing GTM</td>
+                <td><a href="https://nortonlanding.vercel.app" target="_blank">nortonlanding.vercel.app</a></td>
+                <td>Público</td>
+                <td>N/A</td>
+                <td><span class="badge">✓ Activo</span></td>
+            </tr>
+        </table>
+
+        <div class="section-title">⚙️ SISTEMAS ADICIONALES</div>
+        <table>
+            <tr>
+                <th>Sistema</th>
+                <th>URL</th>
+                <th>Usuario</th>
+                <th>Clave</th>
+                <th>Situación</th>
+            </tr>
+            <tr>
+                <td>CRM GTM</td>
+                <td><a href="https://crmgtm.vercel.app" target="_blank">crmgtm.vercel.app</a></td>
+                <td>administrador</td>
+                <td>Admin01*</td>
+                <td><span class="badge">✓ Activo</span></td>
+            </tr>
+            <tr>
+                <td>CRM Comercial</td>
+                <td><a href="https://crmcomercial.vercel.app" target="_blank">crmcomercial.vercel.app</a></td>
+                <td>admin</td>
+                <td>admin123</td>
+                <td><span class="badge">✓ Activo</span></td>
+            </tr>
+            <tr>
+                <td>CRM Nova Seguridad</td>
+                <td><a href="https://crmnovaseguridad.vercel.app" target="_blank">crmnovaseguridad.vercel.app</a></td>
+                <td>admin</td>
+                <td>admin123</td>
+                <td><span class="badge">✓ Activo</span></td>
+            </tr>
+            <tr>
+                <td>Portal Inmobiliario</td>
+                <td><a href="https://portalinmobiliario.vercel.app" target="_blank">portalinmobiliario.vercel.app</a></td>
+                <td>admin</td>
+                <td>admin</td>
+                <td><span class="badge">✓ Activo</span></td>
+            </tr>
+            <tr>
+                <td>HomeUX</td>
+                <td><a href="https://homeux-pearl.vercel.app" target="_blank">homeux-pearl.vercel.app</a></td>
+                <td>admin</td>
+                <td>admin</td>
+                <td><span class="badge">✓ Activo</span></td>
+            </tr>
+            <tr>
+                <td>Gestión Contable</td>
+                <td><a href="https://gestioncontable-pearl.vercel.app" target="_blank">gestioncontable-pearl.vercel.app</a></td>
+                <td>admin</td>
+                <td>admin123</td>
+                <td><span class="badge">✓ Activo</span></td>
+            </tr>
+            <tr>
+                <td>Consultor Palomares</td>
+                <td><a href="https://consultorpalomares.vercel.app" target="_blank">consultorpalomares.vercel.app</a></td>
+                <td>Público</td>
+                <td>N/A</td>
+                <td><span class="badge">✓ Activo</span></td>
+            </tr>
+            <tr>
+                <td>Alfredo Sterling</td>
+                <td><a href="https://aprenderliderazgo.vercel.app" target="_blank">aprenderliderazgo.vercel.app</a></td>
+                <td>Público</td>
+                <td>N/A</td>
+                <td><span class="badge">✓ Activo</span></td>
+            </tr>
+            <tr>
+                <td>Postres Exquisitos</td>
+                <td><a href="https://postresexquisitos.vercel.app" target="_blank">postresexquisitos.vercel.app</a></td>
+                <td>Público</td>
+                <td>N/A</td>
+                <td><span class="badge">✓ Activo</span></td>
+            </tr>
+        </table>
+
+        <div class="section-title">📚 MÓDULOS POR SISTEMA</div>
+
+        <div class="app-section">
+            <div class="app-title">🏭 Gestionoperaciones-Spin</div>
+            <div class="modules">
+                Dashboard • Productos • Kardex • Proveedores • Órdenes Compra • Pedidos • Recepción Facturas • Recepción Remisiones • Pagos Proveedores • Bodegas • Transferencias • Salidas Almacén • Ajustes Inventario • Toma Inventario Físico • Centros Costo • Control Bancario • Materia Prima • Ejecución Producción • Tareas • Correos • Personal • Datos Empresa
+            </div>
+        </div>
+
+        <div class="app-section">
+            <div class="app-title">👥 CRM Spin</div>
+            <div class="modules">
+                Dashboard • Clientes • Contactos • Prospectos • Oportunidades • Cotizaciones • PQRS • Tareas • Flujos Automatizados • Email Marketing • Diseñador Correos • Correos Enviados • Configuración
+            </div>
+        </div>
+
+        <div class="section-title">🔄 FLUJO DE ALTA DE CLIENTES (GESTIONOPERACIONES → CRM SPIN)</div>
+
+        <div class="flow-section">
+            <div class="flow-title">Proceso de Integración</div>
+
+            <div class="flow-step">
+                <h4>Paso 1: Desde Gestionoperaciones-Spin</h4>
+                <ul>
+                    <li>El usuario hace click en el menú "Clientes"</li>
+                    <li>Se envía a CRM Spin con parámetro: ?isExternal=1&returnUrl=[URL-ORIGEN]</li>
+                </ul>
+            </div>
+
+            <div class="flow-step">
+                <h4>Paso 2: En CRM Spin</h4>
+                <ul>
+                    <li>Si no tiene sesión activa: Redirige a /login automáticamente</li>
+                    <li>Después de login: Accede DIRECTO a módulo de Clientes</li>
+                    <li>El usuario puede consultar, crear y editar clientes</li>
+                    <li>Todos los demás módulos están deshabilitados (modo restringido)</li>
+                </ul>
+            </div>
+
+            <div class="flow-step">
+                <h4>Paso 3: Regreso a Gestionoperaciones-Spin</h4>
+                <ul>
+                    <li>Click en botón "← Regresar a Gestión Operaciones" (azul)</li>
+                    <li>Regresa automáticamente a la URL de origen</li>
+                </ul>
+            </div>
+        </div>
+
+        <div class="confidential">
+            <p>ℹ️ MODO RESTRINGIDO</p>
+            <p style="font-size: 10px; margin-top: 5px;">Cuando un usuario viene de Gestionoperaciones, solo puede acceder al módulo de Clientes. Los demás módulos permanecen deshabilitados para mantener el contexto de trabajo original.</p>
+        </div>
+
+        <div class="footer">
+            <p><strong>🔐 SISTECH - Sistemas Inteligentes de Tecnología</strong></p>
+            <p>Documento completo de Accesos y Flujo de Integración entre sistemas</p>
+            <p style="margin-top: 10px; border-top: 1px solid #ccc; padding-top: 10px;">
+                <strong>Actualizado:</strong> 30 de Mayo de 2026 | <strong>Todos los URLs son clickeables</strong>
+            </p>
+        </div>
+    </div>
+</body>
+</html>
