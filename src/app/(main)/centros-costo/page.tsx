@@ -20,8 +20,8 @@ const initialData: CentroCosto[] = [
 
 const sitStyle = (s: string): React.CSSProperties =>
   s === 'Activo'
-    ? { background: 'rgba(96,165,250,0.95)', color: '#fff', border: '1px solid rgba(96,165,250,0.3)' }
-    : { background: 'rgba(239,68,68,0.95)', color: '#fff', border: '1px solid rgba(239,68,68,0.3)' }
+    ? { background: 'rgba(59, 130, 246, 1)', color: '#fff', border: '1px solid rgba(59, 130, 246, 0.6)' }
+    : { background: 'rgba(239, 68, 68, 1)', color: '#fff', border: '1px solid rgba(239, 68, 68, 0.6)' }
 
 const inputSt: React.CSSProperties = { background: 'rgba(255,255,255,0.06)', border: '1px solid rgba(255,255,255,0.15)', color: '#fff' }
 const selectSt: React.CSSProperties = { background: 'rgba(12,26,61,0.9)', border: '1px solid rgba(255,255,255,0.15)', color: '#fff' }
@@ -200,8 +200,8 @@ export default function CentrosCostoPage() {
                     <td className="px-6 py-4">
                       <div className="flex gap-2">
                         <button onClick={() => setViewRecord(r)} className="px-3 py-1 rounded-lg text-xs font-medium" style={{ background: 'rgba(255,255,255,0.08)', color: '#e2e8f0', border: '1px solid rgba(255,255,255,0.15)' }}>Ver</button>
-                        {permisos.editar && <button onClick={() => openEdit(r)} className="px-3 py-1 rounded-lg text-xs font-medium" style={{ background: 'rgba(96,165,250,0.95)', color: '#fff', border: '1px solid rgba(96,165,250,0.3)' }}>{tBtn('edit')}</button>}
-                        {permisos.eliminar && <button onClick={() => handleDelete(r.id)} className="px-3 py-1 rounded-lg text-xs font-medium" style={{ background: 'rgba(239,68,68,0.95)', color: '#fff', border: '1px solid rgba(239,68,68,0.3)' }}>{tBtn('delete')}</button>}
+                        {permisos.editar && <button onClick={() => openEdit(r)} className="px-3 py-1 rounded-lg text-xs font-medium" style={{ background: 'rgba(59, 130, 246, 1)', color: '#fff', border: '1px solid rgba(59, 130, 246, 0.6)' }}>{tBtn('edit')}</button>}
+                        {permisos.eliminar && <button onClick={() => handleDelete(r.id)} className="px-3 py-1 rounded-lg text-xs font-medium" style={{ background: 'rgba(239, 68, 68, 1)', color: '#fff', border: '1px solid rgba(239, 68, 68, 0.6)' }}>{tBtn('delete')}</button>}
                       </div>
                     </td>
                   </tr>

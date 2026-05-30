@@ -10,7 +10,7 @@ import VoiceSearchButton from '@/shared/components/voice-search-button'
 
 const statusStyle = (s: string): React.CSSProperties => {
   if (s === 'Enviado') return { background: 'rgba(34,197,94,0.95)', color: '#fff', border: '1px solid rgba(34,197,94,0.3)' }
-  return { background: 'rgba(96,165,250,0.95)', color: '#fff', border: '1px solid rgba(96,165,250,0.3)' }
+  return { background: 'rgba(59, 130, 246, 1)', color: '#fff', border: '1px solid rgba(59, 130, 246, 0.6)' }
 }
 
 export default function CorreosEnviadosPage() {
@@ -116,7 +116,7 @@ export default function CorreosEnviadosPage() {
         {tab === 'registros' && correos.length > 0 && (
           <button onClick={() => { if (confirm(tCf('clearHistorialCorreos'))) clearAll() }}
             className="px-4 py-2 rounded-xl text-xs font-medium"
-            style={{ background: 'rgba(239,68,68,0.95)', color: '#fff', border: '1px solid rgba(239,68,68,0.3)' }}>
+            style={{ background: 'rgba(239, 68, 68, 1)', color: '#fff', border: '1px solid rgba(239, 68, 68, 0.6)' }}>
             🗑 Limpiar Historial
           </button>
         )}
@@ -176,8 +176,8 @@ export default function CorreosEnviadosPage() {
                       <td className="px-5 py-4"><span className="px-3 py-1 rounded-full text-xs font-medium" style={statusStyle(c.estado)}>{c.estado}</span></td>
                       <td className="px-5 py-4">
                         <div className="flex gap-2">
-                          <button onClick={() => setViewDetail(c)} className="px-3 py-1 rounded-lg text-xs font-medium" style={{ background: 'rgba(96,165,250,0.95)', color: '#fff', border: '1px solid rgba(96,165,250,0.3)' }}>Ver</button>
-                          <button onClick={() => { if (confirm(tCf('delRegistro'))) deleteCorreo(c.id) }} className="px-3 py-1 rounded-lg text-xs font-medium" style={{ background: 'rgba(239,68,68,0.95)', color: '#fff', border: '1px solid rgba(239,68,68,0.3)' }}>{tBtn('delete')}</button>
+                          <button onClick={() => setViewDetail(c)} className="px-3 py-1 rounded-lg text-xs font-medium" style={{ background: 'rgba(59, 130, 246, 1)', color: '#fff', border: '1px solid rgba(59, 130, 246, 0.6)' }}>Ver</button>
+                          <button onClick={() => { if (confirm(tCf('delRegistro'))) deleteCorreo(c.id) }} className="px-3 py-1 rounded-lg text-xs font-medium" style={{ background: 'rgba(239, 68, 68, 1)', color: '#fff', border: '1px solid rgba(239, 68, 68, 0.6)' }}>{tBtn('delete')}</button>
                         </div>
                       </td>
                     </tr>

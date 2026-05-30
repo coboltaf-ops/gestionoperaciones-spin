@@ -1,0 +1,687 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>SISTECH - Documento de Accesos - 20 Mayo 2026</title>
+    <style>
+        * { margin: 0; padding: 0; box-sizing: border-box; }
+        body {
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+            background: #f5f5f5;
+            color: #333;
+            line-height: 1.6;
+        }
+        .portada {
+            background: linear-gradient(135deg, #1e3c72 0%, #2a5298 100%);
+            color: white;
+            text-align: center;
+            padding: 100px 20px;
+            min-height: 100vh;
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+        }
+        .portada h1 { font-size: 72px; font-weight: bold; margin-bottom: 20px; letter-spacing: 2px; }
+        .portada p { font-size: 18px; opacity: 0.9; margin: 10px 0; }
+        .portada .divider { width: 200px; height: 3px; background: #64b5f6; margin: 20px auto; }
+        .portada .confidencial {
+            background: black;
+            border: 3px solid white;
+            border-radius: 15px;
+            padding: 20px 40px;
+            margin: 30px auto;
+            max-width: 600px;
+        }
+        .portada .confidencial p { font-size: 14px; }
+        .portada .fecha { margin-top: 40px; font-size: 14px; opacity: 0.8; }
+
+        .contenido {
+            background: white;
+            max-width: 1200px;
+            margin: 0 auto;
+            padding: 40px;
+        }
+
+        .seccion {
+            margin: 40px 0;
+            page-break-inside: avoid;
+        }
+
+        .seccion h2 {
+            background: #1e3c72;
+            color: white;
+            padding: 12px 20px;
+            margin-bottom: 20px;
+            border-radius: 4px;
+            font-size: 18px;
+        }
+
+        .sistema {
+            margin: 30px 0;
+            border-left: 4px solid #2a5298;
+            padding-left: 20px;
+        }
+
+        .sistema h3 {
+            color: #1e3c72;
+            margin-bottom: 10px;
+            font-size: 16px;
+        }
+
+        .sistema p { color: #666; margin: 8px 0; font-size: 14px; }
+
+        .url-box {
+            background: #e3f2fd;
+            border-left: 3px solid #2a5298;
+            padding: 12px;
+            margin: 10px 0;
+            border-radius: 4px;
+            font-family: 'Courier New', monospace;
+            font-size: 13px;
+            word-break: break-all;
+        }
+
+        table {
+            width: 100%;
+            border-collapse: collapse;
+            margin: 20px 0;
+            border: 2px solid #1e3c72;
+            page-break-inside: avoid;
+        }
+
+        th {
+            background: #1e3c72;
+            color: white;
+            padding: 15px 20px;
+            text-align: left;
+            font-weight: 700;
+            font-size: 14px;
+            border: 1px solid #1e3c72;
+            width: 33.33%;
+        }
+
+        td {
+            padding: 14px 20px;
+            border: 1px solid #ddd;
+            font-size: 14px;
+            font-weight: 500;
+            vertical-align: middle;
+            width: 33.33%;
+        }
+
+        td:nth-child(1) {
+            font-family: 'Courier New', monospace;
+            background: #f9f9f9;
+        }
+
+        td:nth-child(2) {
+            font-family: 'Courier New', monospace;
+            background: #fff5f5;
+            font-weight: 700;
+            color: #d32f2f;
+        }
+
+        td:nth-child(3) {
+            background: #f0f7ff;
+        }
+
+        tr:hover { background: #f5f5f5; }
+
+        .advertencia {
+            background: #fff3cd;
+            border-left: 4px solid #ffc107;
+            padding: 15px;
+            margin: 15px 0;
+            border-radius: 4px;
+            font-size: 12px;
+        }
+
+        .advertencia strong { color: #856404; }
+
+        .formulario-item {
+            margin: 10px 0;
+            padding: 10px;
+            background: #f9f9f9;
+            border-left: 3px solid #64b5f6;
+        }
+
+        .footer {
+            margin-top: 60px;
+            padding-top: 20px;
+            border-top: 2px solid #eee;
+            text-align: center;
+            color: #999;
+            font-size: 12px;
+        }
+
+        .nuevo {
+            background: #c8e6c9;
+            color: #2e7d32;
+            padding: 2px 6px;
+            border-radius: 3px;
+            font-size: 11px;
+            font-weight: bold;
+        }
+
+        @media print {
+            body { background: white; }
+            .contenido { max-width: 100%; margin: 0; padding: 20px; }
+            .portada { page-break-after: always; }
+            .seccion { page-break-inside: avoid; }
+        }
+    </style>
+</head>
+<body>
+    <!-- PORTADA -->
+    <div class="portada">
+        <h1>SISTECH</h1>
+        <p>Sistemas Inteligentes de Tecnología</p>
+        <div class="divider"></div>
+        <p style="font-size: 24px; margin-top: 30px;">Documento de Accesos</p>
+        <p style="font-size: 20px;">y Flujo de Alta de Clientes</p>
+
+        <div class="confidencial">
+            <p><strong>DOCUMENTO CONFIDENCIAL</strong></p>
+            <p>Solo para uso interno del administrador</p>
+        </div>
+
+        <div class="fecha">Generado: <strong>20 de Mayo de 2026 (Actualizado)</strong></div>
+    </div>
+
+    <!-- CONTENIDO -->
+    <div class="contenido">
+
+        <div class="advertencia">
+            <strong>⚠️ DOCUMENTO CONFIDENCIAL - ACCESOS A SISTEMAS</strong><br>
+            Guarde este documento en un lugar seguro. Contiene credenciales de acceso críticas.
+        </div>
+
+        <!-- PARTE 1: NUEVOS SISTEMAS PRINCIPALES -->
+        <div class="seccion">
+            <h2>PARTE 1: SISTEMAS NUEVOS - GESTIONOPERACIONES & CRM SPIN</h2>
+
+            <!-- GESTIONOPERACIONES-SPIN -->
+            <div class="sistema">
+                <h3><span class="nuevo">NUEVO</span> 1. GESTIONOPERACIONES-SPIN - Sistema de Gestión Operativa</h3>
+                <p><strong>Descripción:</strong> Sistema integral de gestión de operaciones con control completo de inventario, órdenes, producción, bodegas, kardex, transferencias y centros de costo.</p>
+
+                <div class="url-box">
+                    <strong>URL Producción:</strong> <a href="https://gestionoperaciones-spin.vercel.app" target="_blank" style="color: #1e3c72; text-decoration: underline;">https://gestionoperaciones-spin.vercel.app</a>
+                </div>
+                <div class="url-box">
+                    <strong>URL Local:</strong> <a href="http://localhost:3000" target="_blank" style="color: #1e3c72; text-decoration: underline;">http://localhost:3000</a>
+                </div>
+
+                <p><strong>Credenciales de Acceso:</strong></p>
+                <table>
+                    <tr>
+                        <th>Usuario</th>
+                        <th>Clave</th>
+                        <th>Rol</th>
+                    </tr>
+                    <tr>
+                        <td>admin</td>
+                        <td>Admin@2026</td>
+                        <td>ADMIN - Acceso Total</td>
+                    </tr>
+                    <tr>
+                        <td>usuario01</td>
+                        <td>Usuario123*</td>
+                        <td>Operador</td>
+                    </tr>
+                </table>
+
+                <p><strong>Módulos Disponibles:</strong></p>
+                <ul style="margin-left: 20px; font-size: 13px;">
+                    <li>Dashboard</li>
+                    <li>Productos</li>
+                    <li>Kardex</li>
+                    <li>Proveedores</li>
+                    <li>Órdenes de Compra</li>
+                    <li>Pedidos</li>
+                    <li>Recepción de Facturas</li>
+                    <li>Recepción de Remisiones</li>
+                    <li>Pagos Proveedores</li>
+                    <li>Bodegas</li>
+                    <li>Transferencias</li>
+                    <li>Salidas de Almacén</li>
+                    <li>Ajustes de Inventario</li>
+                    <li>Toma de Inventario Físico</li>
+                    <li>Centros de Costo</li>
+                    <li>Control Bancario</li>
+                    <li>Formularios de Materia Prima</li>
+                    <li>Ajustes de Materia Prima</li>
+                    <li>Ejecución de Producción</li>
+                    <li>Tareas</li>
+                    <li>Correos Enviados</li>
+                    <li>Personal Empresa</li>
+                    <li>Datos Empresa</li>
+                </ul>
+            </div>
+
+            <!-- CRM SPIN -->
+            <div class="sistema">
+                <h3><span class="nuevo">NUEVO</span> 2. CRM SPIN - CRM para Silicatos & Industrias</h3>
+                <p><strong>Descripción:</strong> CRM especializado para gestión de clientes, contactos, prospectos, oportunidades, cotizaciones, PQRS, tareas, flujos automatizados, email marketing y diseñador de correos.</p>
+
+                <div class="url-box">
+                    <strong>URL Producción:</strong> <a href="https://crmspin.vercel.app" target="_blank" style="color: #1e3c72; text-decoration: underline;">https://crmspin.vercel.app</a>
+                </div>
+                <div class="url-box">
+                    <strong>URL Local:</strong> <a href="http://localhost:3001" target="_blank" style="color: #1e3c72; text-decoration: underline;">http://localhost:3001</a>
+                </div>
+
+                <p><strong>Credenciales de Acceso:</strong></p>
+                <table>
+                    <tr>
+                        <th>Usuario</th>
+                        <th>Clave</th>
+                        <th>Rol</th>
+                    </tr>
+                    <tr>
+                        <td>admin</td>
+                        <td>Admin@2026</td>
+                        <td>ADMIN - Acceso Total</td>
+                    </tr>
+                    <tr>
+                        <td>ventas01</td>
+                        <td>Ventas123*</td>
+                        <td>Vendedor</td>
+                    </tr>
+                </table>
+
+                <p><strong>Módulos Disponibles:</strong></p>
+                <ul style="margin-left: 20px; font-size: 13px;">
+                    <li>Dashboard</li>
+                    <li>Clientes</li>
+                    <li>Contactos</li>
+                    <li>Prospectos</li>
+                    <li>Oportunidades</li>
+                    <li>Cotizaciones</li>
+                    <li>PQRS (Quejas y Reclamos)</li>
+                    <li>Tareas</li>
+                    <li>Flujos Automatizados</li>
+                    <li>Email Marketing</li>
+                    <li>Diseñador de Correos</li>
+                    <li>Correos Enviados</li>
+                    <li>Configuración</li>
+                </ul>
+
+                <p><strong>Formularios Públicos (sin login):</strong></p>
+                <ul style="margin-left: 20px; font-size: 13px;">
+                    <li><strong>Registro de Prospectos:</strong> <a href="https://crmspin.vercel.app/prospectos-publico" target="_blank" style="color: #1e3c72; text-decoration: underline;">https://crmspin.vercel.app/prospectos-publico</a></li>
+                    <li><strong>PQRS (Quejas y Reclamos):</strong> <a href="https://crmspin.vercel.app/pqrs-publico" target="_blank" style="color: #1e3c72; text-decoration: underline;">https://crmspin.vercel.app/pqrs-publico</a> (requiere código de acceso: <code style="background: #f0f0f0; padding: 2px 4px;">ACC-SPIN-2026</code>)</li>
+                </ul>
+
+                <div class="advertencia">
+                    <strong>⚠️ INTEGRACIÓN ESPECIAL:</strong> CRM Spin se integra con Gestionoperaciones-Spin. Los usuarios pueden navegar entre sistemas usando el parámetro <code style="background: #f0f0f0; padding: 2px 4px;">returnUrl</code> para regresar al sistema de origen.
+                </div>
+            </div>
+        </div>
+
+        <!-- PARTE 2: SISTEMAS ANTERIORES EN VERCEL -->
+        <div class="seccion">
+            <h2>PARTE 2: SISTEMAS ADICIONALES EN VERCEL</h2>
+
+            <div class="sistema">
+                <h3>3. CRM GTM (Go To Market)</h3>
+                <div class="url-box"><a href="https://crmgtm.vercel.app/login" target="_blank" style="color: #1e3c72; text-decoration: underline;">https://crmgtm.vercel.app/login</a></div>
+                <table>
+                    <tr>
+                        <th>Usuario</th>
+                        <th>Clave</th>
+                        <th>Rol</th>
+                    </tr>
+                    <tr>
+                        <td>administrador</td>
+                        <td>Admin01*</td>
+                        <td>ADMIN</td>
+                    </tr>
+                    <tr>
+                        <td>jpalomaes</td>
+                        <td>Admin02*</td>
+                        <td>ADMIN</td>
+                    </tr>
+                    <tr>
+                        <td>comercial01</td>
+                        <td>Comercial01*</td>
+                        <td>Comercial</td>
+                    </tr>
+                </table>
+                <p><strong>Formularios Públicos:</strong></p>
+                <ul style="margin-left: 20px; font-size: 13px;">
+                    <li>Landing Comercial: <a href="https://nortonlanding.vercel.app" target="_blank" style="color: #1e3c72; text-decoration: underline;">https://nortonlanding.vercel.app</a></li>
+                    <li>Sign Up: <a href="https://crmgtm.vercel.app/signup" target="_blank" style="color: #1e3c72; text-decoration: underline;">https://crmgtm.vercel.app/signup</a></li>
+                    <li>Recuperar Clave: <a href="https://crmgtm.vercel.app/forgot-password" target="_blank" style="color: #1e3c72; text-decoration: underline;">https://crmgtm.vercel.app/forgot-password</a></li>
+                    <li>Prospectos: <a href="https://crmcomercial.vercel.app/prospectos-publico" target="_blank" style="color: #1e3c72; text-decoration: underline;">https://crmcomercial.vercel.app/prospectos-publico</a></li>
+                    <li>PQRS: <a href="https://crmcomercial.vercel.app/pqrs-publico" target="_blank" style="color: #1e3c72; text-decoration: underline;">https://crmcomercial.vercel.app/pqrs-publico</a></li>
+                </ul>
+            </div>
+
+            <div class="sistema">
+                <h3>4. CRM COMERCIAL</h3>
+                <div class="url-box"><a href="https://crmcomercial.vercel.app" target="_blank" style="color: #1e3c72; text-decoration: underline;">https://crmcomercial.vercel.app</a></div>
+                <table>
+                    <tr>
+                        <th>Usuario</th>
+                        <th>Clave</th>
+                        <th>Rol</th>
+                    </tr>
+                    <tr>
+                        <td>admin</td>
+                        <td>admin123</td>
+                        <td>ADMIN - Acceso Total</td>
+                    </tr>
+                </table>
+            </div>
+
+            <div class="sistema">
+                <h3>5. CRM NOVA SEGURIDAD</h3>
+                <div class="url-box"><a href="https://crmnovaseguridad.vercel.app" target="_blank" style="color: #1e3c72; text-decoration: underline;">https://crmnovaseguridad.vercel.app</a></div>
+                <table>
+                    <tr>
+                        <th>Usuario</th>
+                        <th>Clave</th>
+                        <th>Rol</th>
+                    </tr>
+                    <tr>
+                        <td>admin</td>
+                        <td>admin123</td>
+                        <td>ADMIN - Acceso Total</td>
+                    </tr>
+                </table>
+            </div>
+
+            <div class="sistema">
+                <h3>6. PORTAL INMOBILIARIO</h3>
+                <div class="url-box"><a href="https://portalinmobiliario.vercel.app" target="_blank" style="color: #1e3c72; text-decoration: underline;">https://portalinmobiliario.vercel.app</a></div>
+                <table>
+                    <tr>
+                        <th>Usuario</th>
+                        <th>Clave</th>
+                        <th>Rol</th>
+                    </tr>
+                    <tr>
+                        <td>admin</td>
+                        <td>admin</td>
+                        <td>ADMIN</td>
+                    </tr>
+                </table>
+                <p><strong>Páginas Públicas (sin login):</strong></p>
+                <ul style="margin-left: 20px; font-size: 13px;">
+                    <li>Inicio: <a href="https://portalinmobiliario.vercel.app/inicio" target="_blank" style="color: #1e3c72; text-decoration: underline;">https://portalinmobiliario.vercel.app/inicio</a></li>
+                    <li>Catálogo de Propiedades: <a href="https://portalinmobiliario.vercel.app/catalogo" target="_blank" style="color: #1e3c72; text-decoration: underline;">https://portalinmobiliario.vercel.app/catalogo</a></li>
+                    <li>Detalle de Propiedad: <a href="https://portalinmobiliario.vercel.app/propiedad/[id]" target="_blank" style="color: #1e3c72; text-decoration: underline;">https://portalinmobiliario.vercel.app/propiedad/[id]</a></li>
+                </ul>
+            </div>
+
+            <div class="sistema">
+                <h3>7. HOMEUX - Servicios del Hogar</h3>
+                <div class="url-box"><a href="https://homeux-pearl.vercel.app" target="_blank" style="color: #1e3c72; text-decoration: underline;">https://homeux-pearl.vercel.app</a></div>
+                <table>
+                    <tr>
+                        <th>Usuario</th>
+                        <th>Clave</th>
+                        <th>Rol</th>
+                    </tr>
+                    <tr>
+                        <td>admin</td>
+                        <td>admin</td>
+                        <td>ADMIN</td>
+                    </tr>
+                    <tr>
+                        <td>jpalomaes</td>
+                        <td>1234</td>
+                        <td>ADMIN</td>
+                    </tr>
+                    <tr>
+                        <td>mgarcia</td>
+                        <td>1234</td>
+                        <td>Operador</td>
+                    </tr>
+                </table>
+            </div>
+
+            <div class="sistema">
+                <h3>8. CONSULTOR PALOMARES (Landing)</h3>
+                <div class="url-box"><a href="https://consultorpalomares.vercel.app" target="_blank" style="color: #1e3c72; text-decoration: underline;">https://consultorpalomares.vercel.app</a></div>
+                <p><strong>Acceso:</strong> Sin login. Landing pública accesible para cualquier visitante.</p>
+            </div>
+
+            <div class="sistema">
+                <h3>9. ALFREDO STERLING - APRENDER LIDERAZGO (Landing)</h3>
+                <div class="url-box"><a href="https://aprenderliderazgo.vercel.app" target="_blank" style="color: #1e3c72; text-decoration: underline;">https://aprenderliderazgo.vercel.app</a></div>
+                <p><strong>Acceso:</strong> Sin login. Landing pública accesible para cualquier visitante.</p>
+            </div>
+
+            <div class="sistema">
+                <h3>10. POSTRES EXQUISITOS (E-commerce)</h3>
+                <div class="url-box"><a href="https://postresexquisitos.vercel.app" target="_blank" style="color: #1e3c72; text-decoration: underline;">https://postresexquisitos.vercel.app</a></div>
+                <p><strong>Acceso:</strong> Sin login. Sitio público. Pedidos exclusivamente por WhatsApp (+57 300 123 4567).</p>
+            </div>
+
+            <div class="sistema">
+                <h3>11. GESTIÓN CONTABLE - CONTABILIDAD FINANCIERA</h3>
+                <div class="url-box"><a href="https://gestioncontable-pearl.vercel.app" target="_blank" style="color: #1e3c72; text-decoration: underline;">https://gestioncontable-pearl.vercel.app</a></div>
+                <table>
+                    <tr>
+                        <th>Usuario</th>
+                        <th>Clave</th>
+                        <th>Rol</th>
+                    </tr>
+                    <tr>
+                        <td>admin</td>
+                        <td>admin123</td>
+                        <td>ADMIN - Acceso Total</td>
+                    </tr>
+                    <tr>
+                        <td>contador</td>
+                        <td>contador123</td>
+                        <td>Contador General</td>
+                    </tr>
+                </table>
+            </div>
+        </div>
+
+        <!-- RESUMEN RÁPIDO -->
+        <div class="seccion">
+            <h2>RESUMEN RÁPIDO DE LINKS</h2>
+            <table>
+                <tr>
+                    <th>App</th>
+                    <th>URL</th>
+                    <th>Estado</th>
+                </tr>
+                <tr>
+                    <td><strong>Gestionoperaciones-Spin</strong></td>
+                    <td><a href="https://gestionoperaciones-spin.vercel.app" target="_blank" style="color: #1e3c72; text-decoration: underline;">gestionoperaciones-spin.vercel.app</a></td>
+                    <td style="color: green; font-weight: bold;">✓ Activo</td>
+                </tr>
+                <tr>
+                    <td><strong>CRM Spin</strong></td>
+                    <td><a href="https://crmspin.vercel.app" target="_blank" style="color: #1e3c72; text-decoration: underline;">crmspin.vercel.app</a></td>
+                    <td style="color: green; font-weight: bold;">✓ Activo</td>
+                </tr>
+                <tr>
+                    <td>Gestion Inventario</td>
+                    <td><a href="https://gestioninventario-two.vercel.app" target="_blank" style="color: #1e3c72; text-decoration: underline;">gestioninventario-two.vercel.app</a></td>
+                    <td style="color: green; font-weight: bold;">✓ Activo</td>
+                </tr>
+                <tr>
+                    <td>Ropa y Calzado</td>
+                    <td><a href="https://calzadoropa.vercel.app" target="_blank" style="color: #1e3c72; text-decoration: underline;">calzadoropa.vercel.app</a></td>
+                    <td style="color: green; font-weight: bold;">✓ Activo</td>
+                </tr>
+                <tr>
+                    <td>CRM GTM</td>
+                    <td><a href="https://crmgtm.vercel.app" target="_blank" style="color: #1e3c72; text-decoration: underline;">crmgtm.vercel.app</a></td>
+                    <td style="color: green; font-weight: bold;">✓ Activo</td>
+                </tr>
+                <tr>
+                    <td>CRM Comercial</td>
+                    <td><a href="https://crmcomercial.vercel.app" target="_blank" style="color: #1e3c72; text-decoration: underline;">crmcomercial.vercel.app</a></td>
+                    <td style="color: green; font-weight: bold;">✓ Activo</td>
+                </tr>
+                <tr>
+                    <td>CRM Nova Seguridad</td>
+                    <td><a href="https://crmnovaseguridad.vercel.app" target="_blank" style="color: #1e3c72; text-decoration: underline;">crmnovaseguridad.vercel.app</a></td>
+                    <td style="color: green; font-weight: bold;">✓ Activo</td>
+                </tr>
+                <tr>
+                    <td>Portal Inmobiliario</td>
+                    <td><a href="https://portalinmobiliario.vercel.app" target="_blank" style="color: #1e3c72; text-decoration: underline;">portalinmobiliario.vercel.app</a></td>
+                    <td style="color: green; font-weight: bold;">✓ Activo</td>
+                </tr>
+                <tr>
+                    <td>HomeUX</td>
+                    <td><a href="https://homeux-pearl.vercel.app" target="_blank" style="color: #1e3c72; text-decoration: underline;">homeux-pearl.vercel.app</a></td>
+                    <td style="color: green; font-weight: bold;">✓ Activo</td>
+                </tr>
+                <tr>
+                    <td>Gesión Contable</td>
+                    <td><a href="https://gestioncontable-pearl.vercel.app" target="_blank" style="color: #1e3c72; text-decoration: underline;">gestioncontable-pearl.vercel.app</a></td>
+                    <td style="color: green; font-weight: bold;">✓ Activo</td>
+                </tr>
+            </table>
+        </div>
+
+        <!-- FORMULARIOS Y PÁGINAS PÚBLICAS -->
+        <div class="seccion">
+            <h2>FORMULARIOS Y PÁGINAS PÚBLICAS (sin login)</h2>
+            <table>
+                <tr>
+                    <th>Tipo</th>
+                    <th>Sistema</th>
+                    <th>URL Pública</th>
+                </tr>
+                <tr>
+                    <td>Landing Comercial</td>
+                    <td>CRM GTM</td>
+                    <td><a href="https://nortonlanding.vercel.app" target="_blank" style="color: #1e3c72; text-decoration: underline;">nortonlanding.vercel.app</a></td>
+                </tr>
+                <tr>
+                    <td>Sign Up</td>
+                    <td>CRM GTM</td>
+                    <td><a href="https://crmgtm.vercel.app/signup" target="_blank" style="color: #1e3c72; text-decoration: underline;">crmgtm.vercel.app/signup</a></td>
+                </tr>
+                <tr>
+                    <td>Forgot Password</td>
+                    <td>CRM GTM</td>
+                    <td><a href="https://crmgtm.vercel.app/forgot-password" target="_blank" style="color: #1e3c72; text-decoration: underline;">crmgtm.vercel.app/forgot-password</a></td>
+                </tr>
+                <tr>
+                    <td>Prospectos</td>
+                    <td>CRM Comercial</td>
+                    <td><a href="https://crmcomercial.vercel.app/prospectos-publico" target="_blank" style="color: #1e3c72; text-decoration: underline;">crmcomercial.vercel.app/prospectos-publico</a></td>
+                </tr>
+                <tr>
+                    <td>PQRS</td>
+                    <td>CRM Comercial</td>
+                    <td><a href="https://crmcomercial.vercel.app/pqrs-publico" target="_blank" style="color: #1e3c72; text-decoration: underline;">crmcomercial.vercel.app/pqrs-publico</a></td>
+                </tr>
+                <tr>
+                    <td>Prospectos</td>
+                    <td>CRM Nova Seguridad</td>
+                    <td><a href="https://crmnovaseguridad.vercel.app/prospectos-publico" target="_blank" style="color: #1e3c72; text-decoration: underline;">crmnovaseguridad.vercel.app/prospectos-publico</a></td>
+                </tr>
+                <tr>
+                    <td>PQRS</td>
+                    <td>CRM Nova Seguridad</td>
+                    <td><a href="https://crmnovaseguridad.vercel.app/pqrs-publico" target="_blank" style="color: #1e3c72; text-decoration: underline;">crmnovaseguridad.vercel.app/pqrs-publico</a></td>
+                </tr>
+                <tr>
+                    <td>Prospectos</td>
+                    <td>CRM Spin</td>
+                    <td><a href="https://crmspin.vercel.app/prospectos-publico" target="_blank" style="color: #1e3c72; text-decoration: underline;">crmspin.vercel.app/prospectos-publico</a></td>
+                </tr>
+                <tr>
+                    <td>PQRS</td>
+                    <td>CRM Spin</td>
+                    <td><a href="https://crmspin.vercel.app/pqrs-publico" target="_blank" style="color: #1e3c72; text-decoration: underline;">crmspin.vercel.app/pqrs-publico</a></td>
+                </tr>
+                <tr>
+                    <td>Inicio</td>
+                    <td>Portal Inmobiliario</td>
+                    <td><a href="https://portalinmobiliario.vercel.app/inicio" target="_blank" style="color: #1e3c72; text-decoration: underline;">portalinmobiliario.vercel.app/inicio</a></td>
+                </tr>
+                <tr>
+                    <td>Catálogo</td>
+                    <td>Portal Inmobiliario</td>
+                    <td><a href="https://portalinmobiliario.vercel.app/catalogo" target="_blank" style="color: #1e3c72; text-decoration: underline;">portalinmobiliario.vercel.app/catalogo</a></td>
+                </tr>
+                <tr>
+                    <td>Landing</td>
+                    <td>Consultor Palomares</td>
+                    <td><a href="https://consultorpalomares.vercel.app" target="_blank" style="color: #1e3c72; text-decoration: underline;">consultorpalomares.vercel.app</a></td>
+                </tr>
+                <tr>
+                    <td>Landing</td>
+                    <td>Alfredo Sterling</td>
+                    <td><a href="https://aprenderliderazgo.vercel.app" target="_blank" style="color: #1e3c72; text-decoration: underline;">aprenderliderazgo.vercel.app</a></td>
+                </tr>
+                <tr>
+                    <td>E-commerce</td>
+                    <td>Postres Exquisitos</td>
+                    <td><a href="https://postresexquisitos.vercel.app" target="_blank" style="color: #1e3c72; text-decoration: underline;">postresexquisitos.vercel.app</a></td>
+                </tr>
+            </table>
+        </div>
+
+        <!-- FLUJO DE ALTA DE CLIENTES -->
+        <div class="seccion">
+            <h2>FLUJO DE ALTA DE CLIENTES (GESTIONOPERACIONES → CRM SPIN)</h2>
+
+            <div class="sistema">
+                <h3>Proceso de Integración</h3>
+                <p><strong>Paso 1: Desde Gestionoperaciones-Spin</strong></p>
+                <ul style="margin-left: 20px; font-size: 13px;">
+                    <li>El usuario hace click en el menú "Clientes"</li>
+                    <li>Se envía a CRM Spin con parámetro: <code style="background: #f0f0f0; padding: 2px 4px;">?isExternal=1&returnUrl=[URL-ORIGEN]</code></li>
+                </ul>
+
+                <p style="margin-top: 15px;"><strong>Paso 2: En CRM Spin</strong></p>
+                <ul style="margin-left: 20px; font-size: 13px;">
+                    <li>Si no tiene sesión activa: Redirige a /login automáticamente</li>
+                    <li>Después de login: Accede DIRECTO a módulo de Clientes</li>
+                    <li>El usuario puede consultar, crear y editar clientes</li>
+                </ul>
+
+                <p style="margin-top: 15px;"><strong>Paso 3: Regreso a Gestionoperaciones-Spin</strong></p>
+                <ul style="margin-left: 20px; font-size: 13px;">
+                    <li>Click en botón "← Regresar a Gestión Operaciones" (azul, abajo)</li>
+                    <li>Regresa automáticamente a la URL de origen (Gestionoperaciones-Spin)</li>
+                </ul>
+
+                <div class="advertencia">
+                    <strong>ℹ️ MODO RESTRINGIDO:</strong> Cuando viene de Gestionoperaciones, el usuario solo puede acceder al módulo de Clientes. Los demás módulos quedan deshabilitados para mantener el contexto de trabajo original.
+                </div>
+            </div>
+        </div>
+
+        <!-- SOPORTE Y CONTACTO -->
+        <div class="seccion">
+            <h2>SOPORTE TÉCNICO</h2>
+            <table>
+                <tr>
+                    <th>Contacto</th>
+                    <th>Email/Teléfono</th>
+                    <th>Disponibilidad</th>
+                </tr>
+                <tr>
+                    <td>Administrador General</td>
+                    <td>coboltaf@gmail.com</td>
+                    <td>24/7</td>
+                </tr>
+            </table>
+        </div>
+
+        <div class="footer">
+            <p><strong>SISTECH - Sistemas Inteligentes de Tecnología</strong></p>
+            <p>Documento de Accesos | Actualizado: 20 de Mayo de 2026</p>
+            <p style="margin-top: 10px; font-size: 11px; color: #ccc;">DOCUMENTO CONFIDENCIAL - SOLO PARA ADMINISTRADOR</p>
+        </div>
+    </div>
+</body>
+</html>

@@ -105,7 +105,7 @@ export default function AjustesMateriaPrimaPage() {
 
       {isFormOpen && (
         <form onSubmit={handleSave} className="bg-black/20 p-6 rounded-2xl border border-white/10 space-y-4">
-          {formError && <div className="text-sm font-semibold px-4 py-2 rounded-lg" style={{ background: 'rgba(239,68,68,0.15)', color: '#fff', border: '1px solid rgba(239,68,68,0.3)' }}>{formError}</div>}
+          {formError && <div className="text-sm font-semibold px-4 py-2 rounded-lg" style={{ background: 'rgba(239,68,68,0.15)', color: '#fff', border: '1px solid rgba(239, 68, 68, 0.6)' }}>{formError}</div>}
 
           <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-4">
             <div>
@@ -193,7 +193,7 @@ export default function AjustesMateriaPrimaPage() {
                   <td className="px-4 py-3 font-mono font-bold text-white">{r.consecutivo}</td>
                   <td className="px-4 py-3">{fDate(r.fecha)}</td>
                   <td className="px-4 py-3">
-                    <span className="px-2.5 py-1 rounded-full text-xs font-bold" style={r.tipo_ajuste === 'Entrada' ? { background: 'rgba(34,197,94,0.95)', color: '#fff' } : { background: 'rgba(239,68,68,0.95)', color: '#fff' }}>
+                    <span className="px-2.5 py-1 rounded-full text-xs font-bold" style={r.tipo_ajuste === 'Entrada' ? { background: 'rgba(34,197,94,0.95)', color: '#fff' } : { background: 'rgba(239, 68, 68, 1)', color: '#fff' }}>
                       {r.tipo_ajuste === 'Entrada' ? '+ Entrada' : '− Salida'}
                     </span>
                   </td>

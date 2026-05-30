@@ -14,8 +14,8 @@ const inputSt: React.CSSProperties = { background: 'rgba(255,255,255,0.06)', bor
 const selSt: React.CSSProperties = { background: 'rgba(12,26,61,0.9)', border: '1px solid rgba(255,255,255,0.15)', color: '#fff' }
 
 const sitStyle = (s: string): React.CSSProperties => {
-  if (s === 'Activo') return { background: 'rgba(96,165,250,0.95)', color: '#fff', border: '1px solid rgba(96,165,250,0.3)' }
-  return { background: 'rgba(239,68,68,0.95)', color: '#fff', border: '1px solid rgba(239,68,68,0.3)' }
+  if (s === 'Activo') return { background: 'rgba(59, 130, 246, 1)', color: '#fff', border: '1px solid rgba(59, 130, 246, 0.6)' }
+  return { background: 'rgba(239, 68, 68, 1)', color: '#fff', border: '1px solid rgba(239, 68, 68, 0.6)' }
 }
 
 const tabActive: React.CSSProperties = { background: 'rgba(59,130,246,1)', color: '#fff', border: '1px solid rgba(37,99,235,1)' }
@@ -127,7 +127,7 @@ export default function PersonalEmpresaPage() {
           {/* Form */}
           {isFormOpen && (
             <form onSubmit={handleSave} className="bg-black/20 p-6 rounded-2xl border border-white/10 space-y-4 shadow-inner">
-              {formError && <div className="text-sm font-semibold px-4 py-2 rounded-lg" style={{ background: 'rgba(239,68,68,0.15)', color: '#fff', border: '1px solid rgba(239,68,68,0.3)' }}>{formError}</div>}
+              {formError && <div className="text-sm font-semibold px-4 py-2 rounded-lg" style={{ background: 'rgba(239,68,68,0.15)', color: '#fff', border: '1px solid rgba(239, 68, 68, 0.6)' }}>{formError}</div>}
               <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-4">
                 <div>
                   <label className="block text-xl font-extrabold text-white mb-1">Nombre *</label>

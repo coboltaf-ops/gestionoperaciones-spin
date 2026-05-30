@@ -123,7 +123,7 @@ function EmailModal({ pedido, proveedorEmail, onClose, onEmailSent, onSuccess }:
           {result && (
             <div className="rounded-xl px-4 py-3 text-sm" style={{
               background: result.ok ? 'rgba(34,197,94,0.15)' : 'rgba(239,68,68,0.15)',
-              border: `1px solid ${result.ok ? 'rgba(34,197,94,0.3)' : 'rgba(239,68,68,0.3)'}`,
+              border: `1px solid ${result.ok ? 'rgba(34,197,94,0.3)' : 'rgba(239, 68, 68, 0.6)'}`,
               color: result.ok ? '#86efac' : '#fca5a5',
             }}>
               {result.ok ? '✅' : '❌'} {result.msg}
@@ -394,8 +394,8 @@ export default function PedidosPage() {
   const statusStyle = (s: string) => {
     const map: Record<string, React.CSSProperties> = {
       'Pendiente': { background: 'rgba(245,158,11,0.2)', color: '#fff', border: '1px solid rgba(245,158,11,0.3)' },
-      'Aprobada': { background: 'rgba(96,165,250,0.95)', color: '#fff', border: '1px solid rgba(96,165,250,0.3)' },
-      'Anulada': { background: 'rgba(239,68,68,0.95)', color: '#fff', border: '1px solid rgba(239,68,68,0.3)' },
+      'Aprobada': { background: 'rgba(59, 130, 246, 1)', color: '#fff', border: '1px solid rgba(59, 130, 246, 0.6)' },
+      'Anulada': { background: 'rgba(239, 68, 68, 1)', color: '#fff', border: '1px solid rgba(239, 68, 68, 0.6)' },
       'Recibida': { background: 'rgba(59,130,246,0.2)', color: '#fff', border: '1px solid rgba(59,130,246,0.3)' },
     }
     return map[s] || {}
@@ -552,7 +552,7 @@ export default function PedidosPage() {
                       <label className="block text-xl text-white font-extrabold mb-1">Correlativo</label>
                       <input readOnly value={selectedPedido.consecutivo}
                         className="w-full rounded-xl px-3 py-2 text-white outline-none text-base text-white font-bold font-mono"
-                        style={{ background: 'rgba(96,165,250,0.1)', border: '1px solid rgba(96,165,250,0.3)', cursor: 'not-allowed' }} />
+                        style={{ background: 'rgba(96,165,250,0.1)', border: '1px solid rgba(59, 130, 246, 0.6)', cursor: 'not-allowed' }} />
                     </div>
                     {([
                       { label: 'Fecha Emision *', key: 'fecha_emision', type: 'date' },
@@ -624,7 +624,7 @@ export default function PedidosPage() {
                   <div className="mb-4">
                     <div className="flex justify-between items-center mb-3">
                       <h3 className="text-white font-medium">Renglones / Detalle</h3>
-                      <button type="button" onClick={addDetalle} className="px-3 py-1.5 rounded-lg text-xs text-white font-medium" style={{ background: 'rgba(96,165,250,0.3)', border: '1px solid rgba(96,165,250,0.4)' }}>
+                      <button type="button" onClick={addDetalle} className="px-3 py-1.5 rounded-lg text-xs text-white font-medium" style={{ background: 'rgba(59, 130, 246, 0.6)', border: '1px solid rgba(96,165,250,0.4)' }}>
                         {tBtn('addLine')}
                       </button>
                     </div>
@@ -746,7 +746,7 @@ export default function PedidosPage() {
                       <td className="px-3 py-3"><span className="px-2 py-1 rounded-full text-xs font-medium whitespace-nowrap" style={statusStyle(p.situacion)}>{p.situacion}</span></td>
                       <td className="px-3 py-3">
                         <div className="flex gap-1.5 whitespace-nowrap">
-                          <button onClick={() => setViewDetail(p)} className="px-2.5 py-1 rounded-lg text-xs font-medium" style={{ background: 'rgba(96,165,250,0.95)', color: '#fff', border: '1px solid rgba(96,165,250,0.3)' }}>Ver</button>
+                          <button onClick={() => setViewDetail(p)} className="px-2.5 py-1 rounded-lg text-xs font-medium" style={{ background: 'rgba(59, 130, 246, 1)', color: '#fff', border: '1px solid rgba(59, 130, 246, 0.6)' }}>Ver</button>
                           {permisos.editar && !['Aprobada', 'Recibida', 'Anulada'].includes(p.situacion) && <button onClick={() => {
                             const cc = p.centro_costo || ''
                             const ccFixed = cc.includes(' - ') ? cc : (() => {
@@ -755,7 +755,7 @@ export default function PedidosPage() {
                             })()
                             setSelectedPedido({ ...p, centro_costo: ccFixed }); setIsFormOpen(true); setViewDetail(null)
                           }} className="px-2.5 py-1 rounded-lg text-xs font-medium" style={{ background: 'rgba(255,255,255,0.08)', color: 'rgba(255,255,255,0.6)', border: '1px solid rgba(255,255,255,0.15)' }}>{tBtn('edit')}</button>}
-                          {permisos.esAdmin && <button onClick={() => handleDelete(p)} className="px-2.5 py-1 rounded-lg text-xs font-medium" style={{ background: 'rgba(239,68,68,0.95)', color: '#fff', border: '1px solid rgba(239,68,68,0.3)' }}>{tBtn('delete')}</button>}
+                          {permisos.esAdmin && <button onClick={() => handleDelete(p)} className="px-2.5 py-1 rounded-lg text-xs font-medium" style={{ background: 'rgba(239, 68, 68, 1)', color: '#fff', border: '1px solid rgba(239, 68, 68, 0.6)' }}>{tBtn('delete')}</button>}
                         </div>
                       </td>
                     </tr>

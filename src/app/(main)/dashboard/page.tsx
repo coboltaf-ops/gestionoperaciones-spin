@@ -155,9 +155,9 @@ export default function DashboardPage() {
       </div>
 
       {/* Agente de Voz */}
-      <Link href="/asistente" className="block rounded-2xl p-6 transition-all hover:scale-[1.01] group" style={{ background: 'linear-gradient(135deg, rgba(30,58,138,0.4), rgba(59,130,246,0.2))', border: '1px solid rgba(96,165,250,0.3)' }}>
+      <Link href="/asistente" className="block rounded-2xl p-6 transition-all hover:scale-[1.01] group" style={{ background: 'linear-gradient(135deg, rgba(30,58,138,0.4), rgba(59,130,246,0.2))', border: '1px solid rgba(59, 130, 246, 0.6)' }}>
         <div className="flex items-center gap-4">
-          <div className="w-14 h-14 rounded-xl flex items-center justify-center text-3xl" style={{ background: 'rgba(96,165,250,0.95)', border: '1px solid rgba(96,165,250,0.3)' }}>
+          <div className="w-14 h-14 rounded-xl flex items-center justify-center text-3xl" style={{ background: 'rgba(59, 130, 246, 1)', border: '1px solid rgba(59, 130, 246, 0.6)' }}>
             🤖
           </div>
           <div className="flex-1">

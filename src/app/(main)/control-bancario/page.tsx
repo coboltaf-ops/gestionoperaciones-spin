@@ -478,13 +478,13 @@ export default function ControlBancarioPage() {
                       <span className="px-2 py-1 rounded-md text-xs font-bold" style={
                         b.estado === 'Activo'
                           ? { background: 'rgba(34,197,94,0.95)', color: '#fff', border: '1px solid rgba(34,197,94,0.4)' }
-                          : { background: 'rgba(239,68,68,0.95)', color: '#fff', border: '1px solid rgba(239,68,68,0.4)' }
+                          : { background: 'rgba(239, 68, 68, 1)', color: '#fff', border: '1px solid rgba(239,68,68,0.4)' }
                       }>{b.estado === 'Activo' ? t('estadoActivo') : t('estadoInactivo')}</span>
                     </td>
                     <td className="px-3 py-3">
                       <div className="flex gap-1">
-                        {permisos.editar && <button onClick={() => editarBanco(b)} className="px-2 py-1 rounded-lg text-xs font-medium" style={{ background: 'rgba(96,165,250,0.95)', color: '#fff', border: '1px solid rgba(96,165,250,0.3)' }}>{t('btnEdit')}</button>}
-                        {permisos.eliminar && <button onClick={() => eliminarBanco(b)} className="px-2 py-1 rounded-lg text-xs font-medium" style={{ background: 'rgba(239,68,68,0.95)', color: '#fff', border: '1px solid rgba(239,68,68,0.3)' }}>{t('btnDelete')}</button>}
+                        {permisos.editar && <button onClick={() => editarBanco(b)} className="px-2 py-1 rounded-lg text-xs font-medium" style={{ background: 'rgba(59, 130, 246, 1)', color: '#fff', border: '1px solid rgba(59, 130, 246, 0.6)' }}>{t('btnEdit')}</button>}
+                        {permisos.eliminar && <button onClick={() => eliminarBanco(b)} className="px-2 py-1 rounded-lg text-xs font-medium" style={{ background: 'rgba(239, 68, 68, 1)', color: '#fff', border: '1px solid rgba(239, 68, 68, 0.6)' }}>{t('btnDelete')}</button>}
                       </div>
                     </td>
                   </tr>
@@ -533,14 +533,14 @@ export default function ControlBancarioPage() {
                       <span className="px-2 py-1 rounded-md text-xs font-bold" style={
                         d.estado === 'Registrado'
                           ? { background: 'rgba(34,197,94,0.95)', color: '#fff', border: '1px solid rgba(34,197,94,0.4)' }
-                          : { background: 'rgba(239,68,68,0.95)', color: '#fff', border: '1px solid rgba(239,68,68,0.4)' }
+                          : { background: 'rgba(239, 68, 68, 1)', color: '#fff', border: '1px solid rgba(239,68,68,0.4)' }
                       }>{d.estado === 'Registrado' ? t('estadoRegistrado') : t('estadoAnulado')}</span>
                     </td>
                     <td className="px-3 py-3">
                       <div className="flex gap-1 flex-wrap">
-                        {permisos.editar && d.estado === 'Registrado' && <button onClick={() => editarDeposito(d)} className="px-2 py-1 rounded-lg text-xs font-medium" style={{ background: 'rgba(96,165,250,0.95)', color: '#fff', border: '1px solid rgba(96,165,250,0.3)' }}>{t('btnEdit')}</button>}
+                        {permisos.editar && d.estado === 'Registrado' && <button onClick={() => editarDeposito(d)} className="px-2 py-1 rounded-lg text-xs font-medium" style={{ background: 'rgba(59, 130, 246, 1)', color: '#fff', border: '1px solid rgba(59, 130, 246, 0.6)' }}>{t('btnEdit')}</button>}
                         {permisos.editar && d.estado === 'Registrado' && <button onClick={() => anularDeposito(d)} className="px-2 py-1 rounded-lg text-xs font-medium" style={{ background: 'rgba(251,191,36,0.95)', color: '#fff', border: '1px solid rgba(251,191,36,0.3)' }}>{t('btnAnnul')}</button>}
-                        {permisos.eliminar && <button onClick={() => eliminarDeposito(d)} className="px-2 py-1 rounded-lg text-xs font-medium" style={{ background: 'rgba(239,68,68,0.95)', color: '#fff', border: '1px solid rgba(239,68,68,0.3)' }}>{t('btnDelete')}</button>}
+                        {permisos.eliminar && <button onClick={() => eliminarDeposito(d)} className="px-2 py-1 rounded-lg text-xs font-medium" style={{ background: 'rgba(239, 68, 68, 1)', color: '#fff', border: '1px solid rgba(239, 68, 68, 0.6)' }}>{t('btnDelete')}</button>}
                       </div>
                     </td>
                   </tr>
@@ -578,7 +578,7 @@ export default function ControlBancarioPage() {
                     <td className="px-3 py-3 text-white font-bold whitespace-nowrap">{fDate(m.fecha)}</td>
                     <td className="px-3 py-3 text-white font-bold whitespace-nowrap">{m.banco_descripcion}</td>
                     <td className="px-3 py-3 whitespace-nowrap">
-                      <span className="px-2 py-1 rounded-lg text-xs font-bold" style={m.tipo === 'Entrada' ? { background: 'rgba(34,197,94,0.95)', color: '#fff', border: '1px solid rgba(34,197,94,0.3)' } : { background: 'rgba(239,68,68,0.95)', color: '#fff', border: '1px solid rgba(239,68,68,0.3)' }}>{m.tipo === 'Entrada' ? t('tipoEntradaShort') : t('tipoSalidaShort')}</span>
+                      <span className="px-2 py-1 rounded-lg text-xs font-bold" style={m.tipo === 'Entrada' ? { background: 'rgba(34,197,94,0.95)', color: '#fff', border: '1px solid rgba(34,197,94,0.3)' } : { background: 'rgba(239, 68, 68, 1)', color: '#fff', border: '1px solid rgba(239, 68, 68, 0.6)' }}>{m.tipo === 'Entrada' ? t('tipoEntradaShort') : t('tipoSalidaShort')}</span>
                     </td>
                     <td className="px-3 py-3 text-white font-bold whitespace-nowrap">{m.origen}</td>
                     <td className="px-3 py-3 font-mono text-white font-bold whitespace-nowrap">{m.referencia || '—'}</td>
@@ -591,9 +591,9 @@ export default function ControlBancarioPage() {
                     </td>
                     <td className="px-3 py-3 whitespace-nowrap">
                       <div className="flex gap-1">
-                        {permisos.editar && m.estado === 'Registrado' && <button onClick={() => editarMovimiento(m)} className="px-2 py-1 rounded-lg text-xs font-medium" style={{ background: 'rgba(96,165,250,0.95)', color: '#fff', border: '1px solid rgba(96,165,250,0.3)' }}>{t('btnEdit')}</button>}
+                        {permisos.editar && m.estado === 'Registrado' && <button onClick={() => editarMovimiento(m)} className="px-2 py-1 rounded-lg text-xs font-medium" style={{ background: 'rgba(59, 130, 246, 1)', color: '#fff', border: '1px solid rgba(59, 130, 246, 0.6)' }}>{t('btnEdit')}</button>}
                         {permisos.editar && m.estado === 'Registrado' && <button onClick={() => anularMovimiento(m)} className="px-2 py-1 rounded-lg text-xs font-medium" style={{ background: 'rgba(245,158,11,0.2)', color: '#fff', border: '1px solid rgba(245,158,11,0.3)' }}>{t('btnAnnul')}</button>}
-                        {permisos.eliminar && <button onClick={() => eliminarMovimiento(m)} className="px-2 py-1 rounded-lg text-xs font-medium" style={{ background: 'rgba(239,68,68,0.95)', color: '#fff', border: '1px solid rgba(239,68,68,0.3)' }}>{t('btnDelete')}</button>}
+                        {permisos.eliminar && <button onClick={() => eliminarMovimiento(m)} className="px-2 py-1 rounded-lg text-xs font-medium" style={{ background: 'rgba(239, 68, 68, 1)', color: '#fff', border: '1px solid rgba(239, 68, 68, 0.6)' }}>{t('btnDelete')}</button>}
                       </div>
                     </td>
                   </tr>

@@ -136,7 +136,7 @@ export default function DatosEmpresaPage() {
               ))}
             </div>
             <div className="flex justify-end mt-6">
-              <button onClick={() => setViewRecord(null)} className="px-5 py-2 rounded-xl text-white text-sm font-medium" style={{ background: 'rgba(96,165,250,0.3)', border: '1px solid rgba(96,165,250,0.4)' }}>
+              <button onClick={() => setViewRecord(null)} className="px-5 py-2 rounded-xl text-white text-sm font-medium" style={{ background: 'rgba(59, 130, 246, 0.6)', border: '1px solid rgba(96,165,250,0.4)' }}>
                 {tBtn('close')}
               </button>
             </div>
@@ -154,7 +154,7 @@ export default function DatosEmpresaPage() {
             </div>
 
             {formError && (
-              <div className="mb-4 px-4 py-2 rounded-xl text-sm" style={{ background: 'rgba(239,68,68,0.15)', color: '#fff', border: '1px solid rgba(239,68,68,0.3)' }}>
+              <div className="mb-4 px-4 py-2 rounded-xl text-sm" style={{ background: 'rgba(239,68,68,0.15)', color: '#fff', border: '1px solid rgba(239, 68, 68, 0.6)' }}>
                 {formError}
               </div>
             )}
@@ -175,13 +175,13 @@ export default function DatosEmpresaPage() {
                 <div className="flex gap-2">
                   <button type="button" onClick={() => fileInputRef.current?.click()}
                     className="px-4 py-2 rounded-xl text-white text-xs font-medium"
-                    style={{ background: 'rgba(96,165,250,0.3)', border: '1px solid rgba(96,165,250,0.4)' }}>
+                    style={{ background: 'rgba(59, 130, 246, 0.6)', border: '1px solid rgba(96,165,250,0.4)' }}>
                     {tBtn('uploadLogo')}
                   </button>
                   {form.logo && (
                     <button type="button" onClick={() => setForm(f => ({ ...f, logo: '' }))}
                       className="px-4 py-2 rounded-xl text-white/60 text-xs font-medium"
-                      style={{ background: 'rgba(239,68,68,0.95)', border: '1px solid rgba(239,68,68,0.3)' }}>
+                      style={{ background: 'rgba(239, 68, 68, 1)', border: '1px solid rgba(239, 68, 68, 0.6)' }}>
                       Quitar
                     </button>
                   )}
@@ -340,7 +340,7 @@ export default function DatosEmpresaPage() {
                     <div className="flex items-center justify-center gap-2">
                       <button onClick={() => setViewRecord(e)}
                         className="px-3 py-1 rounded-lg text-xs font-medium"
-                        style={{ background: 'rgba(96,165,250,0.95)', color: '#fff', border: '1px solid rgba(96,165,250,0.3)' }}>
+                        style={{ background: 'rgba(59, 130, 246, 1)', color: '#fff', border: '1px solid rgba(59, 130, 246, 0.6)' }}>
                         {tBtn('view')}
                       </button>
                       {permisos.editar && (
@@ -353,7 +353,7 @@ export default function DatosEmpresaPage() {
                       {permisos.eliminar && (
                         <button onClick={() => handleDelete(e.id)}
                           className="px-3 py-1 rounded-lg text-xs font-medium"
-                          style={{ background: 'rgba(239,68,68,0.95)', color: '#fff', border: '1px solid rgba(239,68,68,0.3)' }}>
+                          style={{ background: 'rgba(239, 68, 68, 1)', color: '#fff', border: '1px solid rgba(239, 68, 68, 0.6)' }}>
                           {tBtn('delete')}
                         </button>
                       )}

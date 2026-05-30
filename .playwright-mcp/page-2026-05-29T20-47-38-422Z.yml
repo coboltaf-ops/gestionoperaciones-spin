@@ -1,0 +1,23 @@
+- generic [active] [ref=e1]:
+  - alert [ref=e3]
+  - generic [ref=e6]:
+    - generic "Idioma" [ref=e9]:
+      - button "🇪🇸 ES" [pressed] [ref=e10] [cursor=pointer]
+      - button "🇬🇧 EN" [ref=e11] [cursor=pointer]
+    - generic [ref=e12]:
+      - img "Spin" [ref=e13]
+      - heading "Spin" [level=1] [ref=e14]
+      - paragraph [ref=e15]: Inicia sesión en tu cuenta
+    - generic [ref=e24]: Credenciales inválidas
+    - generic [ref=e16]:
+      - generic [ref=e17]:
+        - generic [ref=e18]: Usuario
+        - textbox "Usuario" [ref=e19]:
+          - /placeholder: jarango
+          - text: jarango
+      - generic [ref=e20]:
+        - generic [ref=e21]: Clave
+        - textbox "Clave" [ref=e22]:
+          - /placeholder: ••••••••
+          - text: password123
+      - button "Ingresar al Sistema" [ref=e23] [cursor=pointer]

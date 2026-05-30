@@ -583,7 +583,7 @@ export default function TomaInventarioFisicoPage() {
   const labelStyle = { color: '#fff', fontSize: '10px', textTransform: 'uppercase' as const, letterSpacing: '0.05em', fontWeight: 700, marginBottom: 4 }
   const inputStyle = { background: 'rgba(255,255,255,0.06)', border: '1px solid rgba(148,163,184,0.2)', borderRadius: 8, padding: '10px 14px', color: '#fff', width: '100%', fontSize: 14 }
   const btnPrimary = { background: '#3b82f6', color: '#fff', border: 'none', borderRadius: 8, padding: '12px 28px', fontWeight: 700, cursor: 'pointer', fontSize: 14 }
-  const btnSecondary = { background: 'rgba(96,165,250,0.15)', color: '#fff', border: '1px solid rgba(96,165,250,0.3)', borderRadius: 8, padding: '12px 22px', fontWeight: 600, cursor: 'pointer', fontSize: 13 }
+  const btnSecondary = { background: 'rgba(96,165,250,0.15)', color: '#fff', border: '1px solid rgba(59, 130, 246, 0.6)', borderRadius: 8, padding: '12px 22px', fontWeight: 600, cursor: 'pointer', fontSize: 13 }
 
   return (
     <div style={{ padding: 28 }}>
@@ -615,7 +615,7 @@ export default function TomaInventarioFisicoPage() {
 
       {/* Mensajes */}
       {errorMsg && (
-        <div style={{ background: 'rgba(239,68,68,0.15)', border: '1px solid rgba(239,68,68,0.3)', borderRadius: 10, padding: '12px 18px', marginBottom: 16, color: '#fff', fontSize: 13, fontWeight: 600 }}>
+        <div style={{ background: 'rgba(239,68,68,0.15)', border: '1px solid rgba(239, 68, 68, 0.6)', borderRadius: 10, padding: '12px 18px', marginBottom: 16, color: '#fff', fontSize: 13, fontWeight: 600 }}>
           {errorMsg}
         </div>
       )}
@@ -773,7 +773,7 @@ export default function TomaInventarioFisicoPage() {
                   <div style={{ color: '#22c55e', fontSize: 28, fontWeight: 900, marginTop: 4 }}>{sobrantes.length}</div>
                   <div style={{ color: '#fff', fontSize: 12, marginTop: 2 }}>{fmt(valorSobrantes)}</div>
                 </div>
-                <div style={{ background: 'rgba(239,68,68,0.12)', borderRadius: 10, padding: 16, textAlign: 'center', border: '1px solid rgba(239,68,68,0.3)' }}>
+                <div style={{ background: 'rgba(239,68,68,0.12)', borderRadius: 10, padding: 16, textAlign: 'center', border: '1px solid rgba(239, 68, 68, 0.6)' }}>
                   <div style={{ color: '#fff', fontSize: 11, textTransform: 'uppercase', letterSpacing: '0.05em', fontWeight: 700 }}>Faltantes</div>
                   <div style={{ color: '#ef4444', fontSize: 28, fontWeight: 900, marginTop: 4 }}>{faltantes.length}</div>
                   <div style={{ color: '#fff', fontSize: 12, marginTop: 2 }}>{fmt(valorFaltantes)}</div>
@@ -785,7 +785,7 @@ export default function TomaInventarioFisicoPage() {
               </div>
 
               {/* Valor neto */}
-              <div style={{ background: 'rgba(96,165,250,0.1)', border: '1px solid rgba(96,165,250,0.3)', borderRadius: 10, padding: 16, marginBottom: 20, display: 'flex', justifyContent: 'space-between', alignItems: 'center' }}>
+              <div style={{ background: 'rgba(96,165,250,0.1)', border: '1px solid rgba(59, 130, 246, 0.6)', borderRadius: 10, padding: 16, marginBottom: 20, display: 'flex', justifyContent: 'space-between', alignItems: 'center' }}>
                 <span style={{ color: '#fff', fontSize: 14, fontWeight: 700 }}>Valor Neto del Ajuste:</span>
                 <span style={{ color: valorNeto >= 0 ? '#22c55e' : '#ef4444', fontSize: 22, fontWeight: 900 }}>
                   {valorNeto >= 0 ? '+' : ''}{fmt(valorNeto)}

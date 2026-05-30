@@ -495,8 +495,8 @@
   "buttons": {
     "save": "Guardar",
     "cancel": "Cancelar",
-    "delete": "Eliminar",
-    "edit": "Editar",
+    "delete": "Elim",
+    "edit": "Edit",
     "view": "Ver",
     "close": "Cerrar",
     "print": "Imprimir",

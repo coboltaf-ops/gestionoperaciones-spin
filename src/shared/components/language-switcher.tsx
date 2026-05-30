@@ -43,7 +43,7 @@ export function LanguageSwitcher() {
         className={`${baseBtn} ${locale === 'es' ? active : inactive}`}
         aria-pressed={locale === 'es'}
       >
-        ES
+        🇪🇸 ES
       </button>
       <button
         type="button"
@@ -52,7 +52,7 @@ export function LanguageSwitcher() {
         className={`${baseBtn} ${locale === 'en' ? active : inactive}`}
         aria-pressed={locale === 'en'}
       >
-        EN
+        🇬🇧 EN
       </button>
     </div>
   )

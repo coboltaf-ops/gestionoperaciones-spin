@@ -367,7 +367,7 @@ export default function RecepcionRemisionesPage() {
                 <td className="px-3 py-3 text-white font-bold whitespace-nowrap">{fDate(r.fecha_recibida)}</td>
                 <td className="px-3 py-3">
                   <span className="px-2 py-1 rounded-md text-xs font-bold" style={r.tipo_orden === 'OC'
-                    ? { background: 'rgba(96,165,250,0.95)', color: '#fff', border: '1px solid rgba(96,165,250,0.3)' }
+                    ? { background: 'rgba(59, 130, 246, 1)', color: '#fff', border: '1px solid rgba(59, 130, 246, 0.6)' }
                     : { background: 'rgba(168,85,247,0.2)', color: '#c4b5fd', border: '1px solid rgba(168,85,247,0.3)' }}>{r.tipo_orden === 'OC' ? 'O. Compra' : 'O. Pedido'}</span>
                 </td>
                 <td className="px-3 py-3 font-mono text-white">{r.orden_consecutivo}</td>
@@ -379,8 +379,8 @@ export default function RecepcionRemisionesPage() {
                 </td>
                 <td className="px-3 py-3">
                   <div className="flex gap-1 flex-wrap">
-                    {permisos.editar && <button onClick={() => editar(r)} className="px-2 py-1 rounded-lg text-xs font-medium" style={{ background: 'rgba(96,165,250,0.95)', color: '#fff', border: '1px solid rgba(96,165,250,0.3)' }}>Editar</button>}
-                    {permisos.eliminar && <button onClick={() => eliminar(r)} className="px-2 py-1 rounded-lg text-xs font-medium" style={{ background: 'rgba(239,68,68,0.95)', color: '#fff', border: '1px solid rgba(239,68,68,0.3)' }}>Eliminar</button>}
+                    {permisos.editar && <button onClick={() => editar(r)} className="px-2 py-1 rounded-lg text-xs font-medium" style={{ background: 'rgba(59, 130, 246, 1)', color: '#fff', border: '1px solid rgba(59, 130, 246, 0.6)' }}>Editar</button>}
+                    {permisos.eliminar && <button onClick={() => eliminar(r)} className="px-2 py-1 rounded-lg text-xs font-medium" style={{ background: 'rgba(239, 68, 68, 1)', color: '#fff', border: '1px solid rgba(239, 68, 68, 0.6)' }}>Eliminar</button>}
                   </div>
                 </td>
               </tr>
@@ -585,7 +585,7 @@ export default function RecepcionRemisionesPage() {
                           <td className="px-3 py-2 text-white font-bold">{fDate(r.fecha_recibida)}</td>
                           <td className="px-3 py-2">
                             <span className="px-2 py-0.5 rounded text-xs" style={r.tipo_orden === 'OC'
-                              ? { background: 'rgba(96,165,250,0.95)', color: '#fff' }
+                              ? { background: 'rgba(59, 130, 246, 1)', color: '#fff' }
                               : { background: 'rgba(168,85,247,0.2)', color: '#c4b5fd' }}>{r.tipo_orden === 'OC' ? 'O. Compra' : 'O. Pedido'}</span>
                           </td>
                           <td className="px-3 py-2 font-mono text-white font-bold">{r.orden_consecutivo}</td>

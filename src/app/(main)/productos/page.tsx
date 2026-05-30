@@ -49,9 +49,9 @@ const initForm = (records: Producto[], tipoInicial = ''): Producto => {
 }
 
 const sitStyle = (s: string): React.CSSProperties => {
-  if (s === 'Activo') return { background: 'rgba(96,165,250,0.95)', color: '#fff', border: '1px solid rgba(96,165,250,0.3)' }
+  if (s === 'Activo') return { background: 'rgba(59, 130, 246, 1)', color: '#fff', border: '1px solid rgba(59, 130, 246, 0.6)' }
   if (s === 'Descontinuado') return { background: 'rgba(245,158,11,0.2)', color: '#fff', border: '1px solid rgba(245,158,11,0.3)' }
-  return { background: 'rgba(239,68,68,0.95)', color: '#fff', border: '1px solid rgba(239,68,68,0.3)' }
+  return { background: 'rgba(239, 68, 68, 1)', color: '#fff', border: '1px solid rgba(239, 68, 68, 0.6)' }
 }
 
 const tabActive: React.CSSProperties = { background: 'rgba(59,130,246,1)', color: '#fff', border: '1px solid rgba(37,99,235,1)' }
@@ -350,7 +350,7 @@ export default function ProductosPage() {
           <h1 className="text-3xl font-bold text-white tracking-tight">{t('productos')}</h1>
           <p className="text-white/50 mt-1">
             {tSub('productos')}
-            <span className="ml-3 inline-flex items-center gap-2 px-3 py-1 rounded-full text-xs font-semibold" style={{ background: 'rgba(96,165,250,0.95)', color: '#fff', border: '1px solid rgba(96,165,250,0.3)' }}>
+            <span className="ml-3 inline-flex items-center gap-2 px-3 py-1 rounded-full text-xs font-semibold" style={{ background: 'rgba(59, 130, 246, 1)', color: '#fff', border: '1px solid rgba(59, 130, 246, 0.6)' }}>
               {tipoInvFiltro || 'Todos los Productos'}
               <button onClick={() => setTipoActivoSesion(null)} className="text-white/70 hover:text-white" title="Cambiar filtro">✕</button>
             </span>
@@ -365,10 +365,10 @@ export default function ProductosPage() {
             <button onClick={handleDeleteAll} className="px-5 py-2.5 rounded-xl font-medium text-white" style={{ background: 'rgba(239,68,68,0.4)', border: '1px solid rgba(185,28,28,1)' }} title="Eliminar TODOS los productos de la base de datos">
               🗑 Eliminar Todo
             </button>
-            <button onClick={() => { if (confirm(tCf('resetExistencias'))) resetExistencias() }} className="px-5 py-2.5 rounded-xl font-medium text-white" style={{ background: 'rgba(239,68,68,0.3)', border: '1px solid rgba(239,68,68,0.4)' }}>
+            <button onClick={() => { if (confirm(tCf('resetExistencias'))) resetExistencias() }} className="px-5 py-2.5 rounded-xl font-medium text-white" style={{ background: 'rgba(239, 68, 68, 0.6)', border: '1px solid rgba(239,68,68,0.4)' }}>
               Resetear Existencias
             </button>
-            <button onClick={() => { if (confirm(tCf('resetUltCosto'))) resetUltCosto() }} className="px-5 py-2.5 rounded-xl font-medium text-white" style={{ background: 'rgba(239,68,68,0.3)', border: '1px solid rgba(239,68,68,0.4)' }}>
+            <button onClick={() => { if (confirm(tCf('resetUltCosto'))) resetUltCosto() }} className="px-5 py-2.5 rounded-xl font-medium text-white" style={{ background: 'rgba(239, 68, 68, 0.6)', border: '1px solid rgba(239,68,68,0.4)' }}>
               Resetear Ult. Costo
             </button>
             <button onClick={() => { setEtqProducto(''); setEtqCategoria(''); setEtqGrupo(''); setEtqSubGrupo(''); setShowEtiquetasFiltro(true) }} className="px-5 py-2.5 rounded-xl font-medium text-white" style={{ background: 'rgba(139,92,246,0.4)', border: '1px solid rgba(139,92,246,0.5)' }}>
@@ -385,7 +385,7 @@ export default function ProductosPage() {
         <div className="mb-4 px-4 py-3 rounded-xl text-sm font-medium flex items-start justify-between gap-3"
           style={{
             background: importMsg.startsWith('✅') ? 'rgba(34,197,94,0.15)' : importMsg.startsWith('🗑') ? 'rgba(251,191,36,0.15)' : 'rgba(239,68,68,0.15)',
-            border: `1px solid ${importMsg.startsWith('✅') ? 'rgba(34,197,94,0.3)' : importMsg.startsWith('🗑') ? 'rgba(251,191,36,0.3)' : 'rgba(239,68,68,0.3)'}`,
+            border: `1px solid ${importMsg.startsWith('✅') ? 'rgba(34,197,94,0.3)' : importMsg.startsWith('🗑') ? 'rgba(251,191,36,0.3)' : 'rgba(239, 68, 68, 0.6)'}`,
             color: importMsg.startsWith('✅') ? '#86efac' : importMsg.startsWith('🗑') ? '#fcd34d' : '#fca5a5',
           }}>
           <span>{importMsg}</span>
@@ -427,7 +427,7 @@ export default function ProductosPage() {
             <div className="mb-8 rounded-2xl p-6" style={{ background: 'rgba(255,255,255,0.06)', border: '1px solid rgba(255,255,255,0.12)' }}>
               <h2 className="text-lg font-semibold text-white mb-4">{form.id ? 'Editar' : 'Nuevo'} Producto</h2>
               {formError && (
-                <div className="mb-4 px-4 py-3 rounded-xl text-sm font-medium" style={{ background: 'rgba(239,68,68,0.15)', border: '1px solid rgba(239,68,68,0.3)', color: '#fff' }}>
+                <div className="mb-4 px-4 py-3 rounded-xl text-sm font-medium" style={{ background: 'rgba(239,68,68,0.15)', border: '1px solid rgba(239, 68, 68, 0.6)', color: '#fff' }}>
                   {formError}
                 </div>
               )}
@@ -437,7 +437,7 @@ export default function ProductosPage() {
                   <label className="block text-xl font-extrabold text-white mb-1">Código</label>
                   <input readOnly value={form.codigo}
                     className="w-full rounded-xl px-4 py-2.5 outline-none font-mono"
-                    style={{ background: 'rgba(96,165,250,0.1)', border: '1px solid rgba(96,165,250,0.3)', color: '#fff', cursor: 'not-allowed' }} />
+                    style={{ background: 'rgba(96,165,250,0.1)', border: '1px solid rgba(59, 130, 246, 0.6)', color: '#fff', cursor: 'not-allowed' }} />
                 </div>
                 {/* Campos texto libre */}
                 {[
@@ -558,7 +558,7 @@ export default function ProductosPage() {
                 <div className="lg:col-span-3">
                   <label className="block text-xl font-extrabold text-white mb-1">Foto del Producto</label>
                   <div className="flex items-center gap-4">
-                    <label className="block text-xl font-extrabold text-white mb-1" style={{ background: 'rgba(96,165,250,0.3)', border: '1px solid rgba(96,165,250,0.4)' }}>
+                    <label className="block text-xl font-extrabold text-white mb-1" style={{ background: 'rgba(59, 130, 246, 0.6)', border: '1px solid rgba(96,165,250,0.4)' }}>
                       📷 Cargar Imagen
                       <input type="file" accept="image/*" className="hidden" onChange={e => {
                         const file = e.target.files?.[0]
@@ -641,8 +641,8 @@ export default function ProductosPage() {
                         <div className="flex gap-1">
                           <button onClick={() => setViewRecordId(r.id)} className="px-2 py-1 rounded-lg text-xs font-medium" style={{ background: 'rgba(255,255,255,0.08)', color: '#e2e8f0', border: '1px solid rgba(255,255,255,0.15)' }}>Ver</button>
                           <a href={`/kardex?producto=${r.id}`} className="px-2 py-1 rounded-lg text-xs font-medium" style={{ background: 'rgba(168,85,247,0.2)', color: '#c4b5fd', border: '1px solid rgba(168,85,247,0.3)' }} title={tTip('verKardex')}>📒 Kardex</a>
-                          {permisos.editar && <button onClick={() => { setForm({ ...r }); setIsFormOpen(true) }} className="px-2 py-1 rounded-lg text-xs font-medium" style={{ background: 'rgba(96,165,250,0.95)', color: '#fff', border: '1px solid rgba(96,165,250,0.3)' }}>{tBtn('edit')}</button>}
-                          {permisos.eliminar && <button onClick={() => handleDelete(r.id)} className="px-2 py-1 rounded-lg text-xs font-medium" style={{ background: 'rgba(239,68,68,0.95)', color: '#fff', border: '1px solid rgba(239,68,68,0.3)' }}>{tBtn('delete')}</button>}
+                          {permisos.editar && <button onClick={() => { setForm({ ...r }); setIsFormOpen(true) }} className="px-2 py-1 rounded-lg text-xs font-medium" style={{ background: 'rgba(59, 130, 246, 1)', color: '#fff', border: '1px solid rgba(59, 130, 246, 0.6)' }}>{tBtn('edit')}</button>}
+                          {permisos.eliminar && <button onClick={() => handleDelete(r.id)} className="px-2 py-1 rounded-lg text-xs font-medium" style={{ background: 'rgba(239, 68, 68, 1)', color: '#fff', border: '1px solid rgba(239, 68, 68, 0.6)' }}>{tBtn('delete')}</button>}
                         </div>
                       </td>
                     </tr>

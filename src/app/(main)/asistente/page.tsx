@@ -348,7 +348,7 @@ export default function AsistentePage() {
           <button
             onClick={detenerVoz}
             className="px-4 py-2 rounded-xl text-sm font-bold text-white animate-pulse"
-            style={{ background: 'rgba(239,68,68,0.3)', border: '1px solid rgba(185,28,28,1)' }}
+            style={{ background: 'rgba(239, 68, 68, 0.6)', border: '1px solid rgba(185,28,28,1)' }}
           >
             🔊 {tAsi('detenerVoz')}
           </button>
@@ -449,8 +449,8 @@ export default function AsistentePage() {
               onClick={iniciarEscucha}
               className={`px-3 py-2.5 rounded-xl text-lg transition-all hover:scale-110 ${escuchando ? 'animate-pulse' : ''}`}
               style={escuchando
-                ? { background: 'rgba(239,68,68,0.3)', border: '1px solid rgba(185,28,28,1)' }
-                : { background: 'rgba(96,165,250,0.15)', border: '1px solid rgba(96,165,250,0.3)' }
+                ? { background: 'rgba(239, 68, 68, 0.6)', border: '1px solid rgba(185,28,28,1)' }
+                : { background: 'rgba(96,165,250,0.15)', border: '1px solid rgba(59, 130, 246, 0.6)' }
               }
               title={escuchando ? tAsi('btnDetener') : tAsi('btnHablar')}
             >

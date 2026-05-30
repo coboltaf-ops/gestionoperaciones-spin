@@ -1,0 +1,20 @@
+- generic [active] [ref=e1]:
+  - generic [ref=e5]:
+    - generic "Idioma" [ref=e8]:
+      - button "ES" [pressed] [ref=e9] [cursor=pointer]
+      - button "EN" [ref=e10] [cursor=pointer]
+    - generic [ref=e11]:
+      - img "Spin"
+      - heading "Spin" [level=1] [ref=e12]
+      - paragraph [ref=e13]: Inicia sesión en tu cuenta
+    - generic [ref=e14]:
+      - generic [ref=e15]:
+        - generic [ref=e16]: Usuario
+        - textbox "Usuario" [ref=e17]:
+          - /placeholder: jarango
+      - generic [ref=e18]:
+        - generic [ref=e19]: Clave
+        - textbox "Clave" [ref=e20]:
+          - /placeholder: ••••••••
+      - button "Ingresar al Sistema" [ref=e21] [cursor=pointer]
+  - alert [ref=e22]

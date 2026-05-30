@@ -248,12 +248,12 @@ function KardexContent() {
               <p className="text-2xl font-black text-white">{totalEntradas.toLocaleString('es-CO')}</p>
               <p className="text-xs text-green-300/70 mt-1">{producto.unidad_medida}</p>
             </div>
-            <div className="rounded-2xl p-5" style={{ background: 'rgba(239,68,68,0.1)', border: '1px solid rgba(239,68,68,0.3)' }}>
+            <div className="rounded-2xl p-5" style={{ background: 'rgba(239,68,68,0.1)', border: '1px solid rgba(239, 68, 68, 0.6)' }}>
               <p className="text-xs text-red-300 uppercase tracking-wider mb-1">Total Salidas</p>
               <p className="text-2xl font-black text-white">{totalSalidas.toLocaleString('es-CO')}</p>
               <p className="text-xs text-red-300/70 mt-1">{producto.unidad_medida}</p>
             </div>
-            <div className="rounded-2xl p-5" style={{ background: 'rgba(96,165,250,0.1)', border: '1px solid rgba(96,165,250,0.3)' }}>
+            <div className="rounded-2xl p-5" style={{ background: 'rgba(96,165,250,0.1)', border: '1px solid rgba(59, 130, 246, 0.6)' }}>
               <p className="text-xs text-blue-300 uppercase tracking-wider mb-1">Saldo Final</p>
               <p className="text-2xl font-black text-white">{saldoFinal.toLocaleString('es-CO')}</p>
               <p className="text-xs text-blue-300/70 mt-1">{producto.unidad_medida}</p>
@@ -303,17 +303,17 @@ function KardexContent() {
             <div className="flex justify-end gap-3 mt-4">
               <button onClick={() => doExport('pdf')} disabled={isExporting || renglones.length === 0}
                 className="px-4 py-2 rounded-xl text-sm font-medium text-white disabled:opacity-40 disabled:cursor-not-allowed"
-                style={{ background: 'rgba(239,68,68,0.3)', border: '1px solid rgba(239,68,68,0.4)' }}>
+                style={{ background: 'rgba(239, 68, 68, 0.6)', border: '1px solid rgba(239,68,68,0.4)' }}>
                 📄 PDF
               </button>
               <button onClick={() => doExport('excel')} disabled={isExporting || renglones.length === 0}
                 className="px-4 py-2 rounded-xl text-sm font-medium text-white disabled:opacity-40 disabled:cursor-not-allowed"
-                style={{ background: 'rgba(96,165,250,0.3)', border: '1px solid rgba(96,165,250,0.4)' }}>
+                style={{ background: 'rgba(59, 130, 246, 0.6)', border: '1px solid rgba(96,165,250,0.4)' }}>
                 📊 Excel
               </button>
               <button onClick={() => doExport('print')} disabled={isExporting || renglones.length === 0}
                 className="px-4 py-2 rounded-xl text-sm font-medium text-white disabled:opacity-40 disabled:cursor-not-allowed"
-                style={{ background: 'rgba(96,165,250,0.3)', border: '1px solid rgba(96,165,250,0.4)' }}>
+                style={{ background: 'rgba(59, 130, 246, 0.6)', border: '1px solid rgba(96,165,250,0.4)' }}>
                 🖨️ Imprimir
               </button>
             </div>

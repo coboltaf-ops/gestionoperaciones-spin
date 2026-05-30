@@ -1,0 +1,98 @@
+- generic [active] [ref=e1]:
+  - alert [ref=e2]
+  - generic [ref=e3]:
+    - generic [ref=e5]:
+      - paragraph [ref=e6]: Hola, Admin 👋
+      - heading "¿Qué deseas hacer?" [level=2] [ref=e7]
+      - generic [ref=e8]:
+        - textbox "Escribe o usa el micrófono..." [ref=e9]
+        - button "🎤" [ref=e10] [cursor=pointer]
+      - paragraph [ref=e11]: "Ejemplos: \"clientes\", \"cotizaciones\", \"pqrs\" · Enter vacío → menú normal"
+    - complementary [ref=e12]:
+      - generic [ref=e13]:
+        - button "✕" [ref=e14] [cursor=pointer]
+        - paragraph [ref=e16]: CRM SPIN
+      - navigation [ref=e17]:
+        - button "📊 Dashboard" [ref=e18] [cursor=pointer]:
+          - generic [ref=e19]: 📊
+          - generic [ref=e20]: Dashboard
+        - button "🏢 Clientes" [ref=e21] [cursor=pointer]:
+          - generic [ref=e22]: 🏢
+          - generic [ref=e23]: Clientes
+        - button "👤 Contactos" [ref=e24] [cursor=pointer]:
+          - generic [ref=e25]: 👤
+          - generic [ref=e26]: Contactos
+        - button "🧲 Prospectos" [ref=e27] [cursor=pointer]:
+          - generic [ref=e28]: 🧲
+          - generic [ref=e29]: Prospectos
+        - button "🎯 Oportunidades" [ref=e30] [cursor=pointer]:
+          - generic [ref=e31]: 🎯
+          - generic [ref=e32]: Oportunidades
+        - button "📦 Productos" [ref=e33] [cursor=pointer]:
+          - generic [ref=e34]: 📦
+          - generic [ref=e35]: Productos
+        - button "📋 Cotizaciones" [ref=e36] [cursor=pointer]:
+          - generic [ref=e37]: 📋
+          - generic [ref=e38]: Cotizaciones
+        - button "📩 PQRS" [ref=e39] [cursor=pointer]:
+          - generic [ref=e40]: 📩
+          - generic [ref=e41]: PQRS
+        - button "📧 Correos Enviados" [ref=e42] [cursor=pointer]:
+          - generic [ref=e43]: 📧
+          - generic [ref=e44]: Correos Enviados
+        - button "✅ Tareas" [ref=e45] [cursor=pointer]:
+          - generic [ref=e46]: ✅
+          - generic [ref=e47]: Tareas
+        - button "⚙️ Referencias" [ref=e48] [cursor=pointer]:
+          - generic [ref=e49]: ⚙️
+          - generic [ref=e50]: Referencias
+        - button "⚙️ Configuración ▼" [ref=e52] [cursor=pointer]:
+          - generic [ref=e53]: ⚙️
+          - generic [ref=e54]: Configuración
+          - generic [ref=e55]: ▼
+      - generic [ref=e56]:
+        - button "← Regresar a Gestión Operaciones" [ref=e57] [cursor=pointer]:
+          - generic [ref=e58]: ←
+          - generic [ref=e59]: Regresar a Gestión Operaciones
+        - button "🚪 Cerrar Sesión" [ref=e60] [cursor=pointer]:
+          - generic [ref=e61]: 🚪
+          - generic [ref=e62]: Cerrar Sesión
+    - main [ref=e63]:
+      - generic [ref=e64]:
+        - generic [ref=e65]:
+          - generic [ref=e66]: AC
+          - generic [ref=e67]:
+            - paragraph [ref=e68]: Admin CRM
+            - paragraph [ref=e69]: Admin
+        - button "Menú Principal" [ref=e71] [cursor=pointer]
+      - generic [ref=e72]:
+        - generic [ref=e73]:
+          - generic [ref=e74]:
+            - heading "Clientes" [level=1] [ref=e75]
+            - paragraph [ref=e76]: Gestión de clientes comerciales
+          - generic [ref=e77]:
+            - button "📋 Plantilla" [ref=e78] [cursor=pointer]
+            - generic "Importar clientes desde Excel" [ref=e79] [cursor=pointer]: 📥 Importar Excel
+            - button "+ Nuevo Cliente" [ref=e80] [cursor=pointer]
+        - generic [ref=e81]:
+          - button "📋 Registros" [ref=e82] [cursor=pointer]
+          - button "📊 Reportes" [ref=e83] [cursor=pointer]
+        - textbox "Buscar por nombre, código o documento..." [ref=e84]
+        - table [ref=e86]:
+          - rowgroup [ref=e87]:
+            - row "Código Razón Social Tipo Documento Nro Documento DV Dirección Ciudad País Teléfono Situación Acciones" [ref=e88]:
+              - columnheader "Código" [ref=e89]
+              - columnheader "Razón Social" [ref=e90]
+              - columnheader "Tipo Documento" [ref=e91]
+              - columnheader "Nro Documento" [ref=e92]
+              - columnheader "DV" [ref=e93]
+              - columnheader "Dirección" [ref=e94]
+              - columnheader "Ciudad" [ref=e95]
+              - columnheader "País" [ref=e96]
+              - columnheader "Teléfono" [ref=e97]
+              - columnheader "Situación" [ref=e98]
+              - columnheader "Acciones" [ref=e99]
+          - rowgroup [ref=e100]:
+            - row "No hay clientes registrados" [ref=e101]:
+              - cell "No hay clientes registrados" [ref=e102]
+      - button "← Regresar a Gestión Operaciones" [ref=e103] [cursor=pointer]

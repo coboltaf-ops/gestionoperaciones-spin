@@ -12,7 +12,7 @@ const inputSt: React.CSSProperties = { background: 'rgba(255,255,255,0.06)', bor
 
 const sitStyle = (s: string): React.CSSProperties => {
   if (s === 'Completada') return { background: 'rgba(34,197,94,0.95)', color: '#fff', border: '1px solid rgba(34,197,94,0.3)' }
-  if (s === 'En Proceso') return { background: 'rgba(96,165,250,0.95)', color: '#fff', border: '1px solid rgba(96,165,250,0.3)' }
+  if (s === 'En Proceso') return { background: 'rgba(59, 130, 246, 1)', color: '#fff', border: '1px solid rgba(59, 130, 246, 0.6)' }
   if (s === 'Pendiente') return { background: 'rgba(245,158,11,0.2)', color: '#fff', border: '1px solid rgba(245,158,11,0.3)' }
   return { background: 'rgba(107,114,128,0.2)', color: '#d1d5db', border: '1px solid rgba(107,114,128,0.3)' }
 }
@@ -111,7 +111,7 @@ export default function EjecucionProduccionPage() {
       </div>
 
       {mensaje && <div className="px-4 py-3 rounded-xl text-sm font-semibold" style={{ background: 'rgba(34,197,94,0.15)', color: '#fff', border: '1px solid rgba(34,197,94,0.3)' }}>{mensaje}</div>}
-      {error && <div className="px-4 py-3 rounded-xl text-sm font-semibold whitespace-pre-line" style={{ background: 'rgba(239,68,68,0.15)', color: '#fff', border: '1px solid rgba(239,68,68,0.3)' }}>{error}</div>}
+      {error && <div className="px-4 py-3 rounded-xl text-sm font-semibold whitespace-pre-line" style={{ background: 'rgba(239,68,68,0.15)', color: '#fff', border: '1px solid rgba(239, 68, 68, 0.6)' }}>{error}</div>}
 
       {!selectedOrden ? (
         <>

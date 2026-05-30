@@ -74,13 +74,13 @@ const selectSt: React.CSSProperties = {
 }
 const estadoStyle = (s: string): React.CSSProperties => {
   if (s === 'Aprobada y Ejecutada') return { background: 'rgba(34,197,94,0.95)', color: '#fff', border: '1px solid rgba(34,197,94,0.3)' }
-  if (s === 'Aprobado') return { background: 'rgba(96,165,250,0.95)', color: '#fff', border: '1px solid rgba(96,165,250,0.3)' }
-  if (s === 'Anulado')  return { background: 'rgba(239,68,68,0.95)', color: '#fff', border: '1px solid rgba(239,68,68,0.3)' }
+  if (s === 'Aprobado') return { background: 'rgba(59, 130, 246, 1)', color: '#fff', border: '1px solid rgba(59, 130, 246, 0.6)' }
+  if (s === 'Anulado')  return { background: 'rgba(239, 68, 68, 1)', color: '#fff', border: '1px solid rgba(239, 68, 68, 0.6)' }
   return { background: 'rgba(245,158,11,0.2)', color: '#fff', border: '1px solid rgba(245,158,11,0.3)' }
 }
 const signoStyle = (signo: string): React.CSSProperties => {
-  if (signo === '+') return { background: 'rgba(96,165,250,0.95)', color: '#fff', border: '1px solid rgba(96,165,250,0.3)' }
-  if (signo === '-') return { background: 'rgba(239,68,68,0.95)', color: '#fff', border: '1px solid rgba(239,68,68,0.3)' }
+  if (signo === '+') return { background: 'rgba(59, 130, 246, 1)', color: '#fff', border: '1px solid rgba(59, 130, 246, 0.6)' }
+  if (signo === '-') return { background: 'rgba(239, 68, 68, 1)', color: '#fff', border: '1px solid rgba(239, 68, 68, 0.6)' }
   return { background: 'rgba(255,255,255,0.05)', color: 'rgba(255,255,255,0.4)', border: '1px solid rgba(255,255,255,0.1)' }
 }
 
@@ -553,13 +553,13 @@ export default function AjustesInventarioPage() {
               <div className="flex items-center gap-3 mb-6">
                 <h2 className="text-lg font-semibold text-white">{tSec('nuevoAjuste')}</h2>
                 <span className="font-mono text-sm px-3 py-1 rounded-lg"
-                  style={{ background: 'rgba(96,165,250,0.95)', color: '#fff', border: '1px solid rgba(96,165,250,0.3)' }}>
+                  style={{ background: 'rgba(59, 130, 246, 1)', color: '#fff', border: '1px solid rgba(59, 130, 246, 0.6)' }}>
                   {form.nro_ajuste}
                 </span>
               </div>
               <form onSubmit={handleSave}>
                 {errorMsg && (
-                  <div className="mb-4 px-4 py-3 rounded-xl text-sm font-medium" style={{ background: 'rgba(239,68,68,0.15)', border: '1px solid rgba(239,68,68,0.3)', color: '#fff' }}>
+                  <div className="mb-4 px-4 py-3 rounded-xl text-sm font-medium" style={{ background: 'rgba(239,68,68,0.15)', border: '1px solid rgba(239, 68, 68, 0.6)', color: '#fff' }}>
                     {errorMsg}
                   </div>
                 )}
@@ -567,7 +567,7 @@ export default function AjustesInventarioPage() {
                   <div>
                     <label className="block text-xl font-extrabold text-white mb-1">Nro. Ajuste</label>
                     <input readOnly value={form.nro_ajuste} className="w-full rounded-xl px-4 py-2.5 outline-none font-mono"
-                      style={{ background: 'rgba(96,165,250,0.1)', border: '1px solid rgba(96,165,250,0.3)', color: '#fff', cursor: 'not-allowed' }} />
+                      style={{ background: 'rgba(96,165,250,0.1)', border: '1px solid rgba(59, 130, 246, 0.6)', color: '#fff', cursor: 'not-allowed' }} />
                   </div>
                   <div>
                     <label className="block text-xl font-extrabold text-white mb-1">Fecha Emisión *</label>
@@ -579,7 +579,7 @@ export default function AjustesInventarioPage() {
                     <label className="block text-xl font-extrabold text-white mb-1">Tipo de Inventario</label>
                     <input readOnly value={form.tipo_inventario || '—'}
                       className="w-full rounded-xl px-4 py-2.5 outline-none font-semibold"
-                      style={{ background: 'rgba(96,165,250,0.1)', border: '1px solid rgba(96,165,250,0.3)', color: '#fff', cursor: 'not-allowed' }}
+                      style={{ background: 'rgba(96,165,250,0.1)', border: '1px solid rgba(59, 130, 246, 0.6)', color: '#fff', cursor: 'not-allowed' }}
                       title="Definido por el Tipo de Inventario activo de la sesión." />
                   </div>
                   <div>
@@ -681,7 +681,7 @@ export default function AjustesInventarioPage() {
                     )
                   })()}
                   {sinExistMsg && (
-                    <div className="mt-2 px-4 py-2.5 rounded-xl text-sm font-medium" style={{ background: 'rgba(239,68,68,0.15)', border: '1px solid rgba(239,68,68,0.3)', color: '#fff' }}>
+                    <div className="mt-2 px-4 py-2.5 rounded-xl text-sm font-medium" style={{ background: 'rgba(239,68,68,0.15)', border: '1px solid rgba(239, 68, 68, 0.6)', color: '#fff' }}>
                       ⚠ {sinExistMsg}
                     </div>
                   )}
@@ -731,7 +731,7 @@ export default function AjustesInventarioPage() {
                                   }
                                 }}
                                 className="w-24 rounded-lg px-2 py-1.5 text-white outline-none text-center font-bold"
-                                style={{ background: 'rgba(96,165,250,0.1)', border: '1px solid rgba(96,165,250,0.3)' }} />
+                                style={{ background: 'rgba(96,165,250,0.1)', border: '1px solid rgba(59, 130, 246, 0.6)' }} />
                             </td>
                             <td className="px-2 py-2">
                               <button type="button" onClick={() => removeRenglon(idx)}
@@ -743,7 +743,7 @@ export default function AjustesInventarioPage() {
                     </table>
                   </div>
                   {cantExistMsg && (
-                    <div className="mt-2 px-4 py-2.5 rounded-xl text-sm font-medium" style={{ background: 'rgba(239,68,68,0.15)', border: '1px solid rgba(239,68,68,0.3)', color: '#fff' }}>
+                    <div className="mt-2 px-4 py-2.5 rounded-xl text-sm font-medium" style={{ background: 'rgba(239,68,68,0.15)', border: '1px solid rgba(239, 68, 68, 0.6)', color: '#fff' }}>
                       ⚠ {cantExistMsg} — Presione Enter para buscar otro producto
                     </div>
                   )}
@@ -785,7 +785,7 @@ export default function AjustesInventarioPage() {
                     </td>
                     <td className="px-5 py-4 text-center">
                       <span className="px-2 py-1 rounded-lg text-xs font-medium"
-                        style={{ background: 'rgba(96,165,250,0.15)', color: '#fff', border: '1px solid rgba(96,165,250,0.3)' }}>
+                        style={{ background: 'rgba(96,165,250,0.15)', color: '#fff', border: '1px solid rgba(59, 130, 246, 0.6)' }}>
                         {a.renglones.length} ítem{a.renglones.length !== 1 ? 's' : ''}
                       </span>
                     </td>
@@ -795,9 +795,9 @@ export default function AjustesInventarioPage() {
                     <td className="px-5 py-4">
                       <div className="flex gap-2">
                         <button onClick={() => setViewItem(a)} className="px-3 py-1 rounded-lg text-xs font-medium"
-                          style={{ background: 'rgba(96,165,250,0.95)', color: '#fff', border: '1px solid rgba(96,165,250,0.3)' }}>Ver</button>
+                          style={{ background: 'rgba(59, 130, 246, 1)', color: '#fff', border: '1px solid rgba(59, 130, 246, 0.6)' }}>Ver</button>
                         {permisos.eliminar && a.estado !== 'Aprobada y Ejecutada' && <button onClick={() => handleDelete(a.id)} className="px-3 py-1 rounded-lg text-xs font-medium"
-                          style={{ background: 'rgba(239,68,68,0.95)', color: '#fff', border: '1px solid rgba(239,68,68,0.3)' }}>{tBtn('delete')}</button>}
+                          style={{ background: 'rgba(239, 68, 68, 1)', color: '#fff', border: '1px solid rgba(239, 68, 68, 0.6)' }}>{tBtn('delete')}</button>}
                       </div>
                     </td>
                   </tr>

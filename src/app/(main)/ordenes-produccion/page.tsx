@@ -19,9 +19,9 @@ const nextConsecutivo = (nro: number) => `OPR-${String(nro).padStart(5, '0')}`
 
 const sitStyle = (s: string): React.CSSProperties => {
   if (s === 'Completada') return { background: 'rgba(34,197,94,0.95)', color: '#fff', border: '1px solid rgba(34,197,94,0.3)' }
-  if (s === 'En Proceso') return { background: 'rgba(96,165,250,0.95)', color: '#fff', border: '1px solid rgba(96,165,250,0.3)' }
+  if (s === 'En Proceso') return { background: 'rgba(59, 130, 246, 1)', color: '#fff', border: '1px solid rgba(59, 130, 246, 0.6)' }
   if (s === 'Pendiente') return { background: 'rgba(245,158,11,0.2)', color: '#fff', border: '1px solid rgba(245,158,11,0.3)' }
-  if (s === 'Cancelada') return { background: 'rgba(239,68,68,0.95)', color: '#fff', border: '1px solid rgba(239,68,68,0.3)' }
+  if (s === 'Cancelada') return { background: 'rgba(239, 68, 68, 1)', color: '#fff', border: '1px solid rgba(239, 68, 68, 0.6)' }
   return { background: 'rgba(107,114,128,0.2)', color: '#d1d5db', border: '1px solid rgba(107,114,128,0.3)' }
 }
 
@@ -157,7 +157,7 @@ export default function OrdenesProduccionPage() {
 
       {isFormOpen && (
         <form onSubmit={handleSave} className="bg-black/20 p-6 rounded-2xl border border-white/10 space-y-4">
-          {formError && <div className="text-sm font-semibold px-4 py-2 rounded-lg whitespace-pre-line" style={{ background: 'rgba(239,68,68,0.15)', color: '#fff', border: '1px solid rgba(239,68,68,0.3)' }}>{formError}</div>}
+          {formError && <div className="text-sm font-semibold px-4 py-2 rounded-lg whitespace-pre-line" style={{ background: 'rgba(239,68,68,0.15)', color: '#fff', border: '1px solid rgba(239, 68, 68, 0.6)' }}>{formError}</div>}
 
           <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-4">
             <div>
@@ -234,7 +234,7 @@ export default function OrdenesProduccionPage() {
                           <td className="px-4 py-2">{l.unidad_medida}</td>
                           <td className="px-4 py-2 text-right">{stock}</td>
                           <td className="px-4 py-2 text-center">
-                            <span className="px-2 py-0.5 rounded-full text-xs font-bold" style={ok ? { background: 'rgba(34,197,94,0.95)', color: '#fff' } : { background: 'rgba(239,68,68,0.95)', color: '#fff' }}>
+                            <span className="px-2 py-0.5 rounded-full text-xs font-bold" style={ok ? { background: 'rgba(34,197,94,0.95)', color: '#fff' } : { background: 'rgba(239, 68, 68, 1)', color: '#fff' }}>
                               {ok ? '✓ OK' : '✗ Falta'}
                             </span>
                           </td>

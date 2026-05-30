@@ -72,7 +72,7 @@ export default function ModulosSistemaPage() {
         </div>
         <div
           className="px-4 py-2 rounded-xl text-sm font-medium"
-          style={{ background: 'rgba(96,165,250,0.15)', border: '1px solid rgba(96,165,250,0.3)', color: '#fff' }}
+          style={{ background: 'rgba(96,165,250,0.15)', border: '1px solid rgba(59, 130, 246, 0.6)', color: '#fff' }}
         >
           {activosCount} módulos activos de {totalCount} total
         </div>

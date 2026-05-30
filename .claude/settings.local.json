@@ -4,7 +4,9 @@
       "Skill(primer)",
       "Skill(primer:*)",
       "Bash(lsof -iTCP -sTCP:LISTEN -P)",
-      "Bash(node docs/generate-norton-servicios.mjs)"
+      "Bash(node docs/generate-norton-servicios.mjs)",
+      "Read(//Users/josepalomares/aplicaciones/crmspin/**)",
+      "Bash(npx vercel *)"
     ]
   }
 }

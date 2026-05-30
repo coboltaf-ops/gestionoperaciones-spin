@@ -19,8 +19,8 @@ const initForm = (): Proveedor => ({
 })
 
 const sitStyleProv = (s: string): React.CSSProperties => {
-  if (s === 'Activo') return { background: 'rgba(96,165,250,0.95)', color: '#fff', border: '1px solid rgba(96,165,250,0.3)' }
-  if (s === 'Bloqueado') return { background: 'rgba(239,68,68,0.95)', color: '#fff', border: '1px solid rgba(239,68,68,0.3)' }
+  if (s === 'Activo') return { background: 'rgba(59, 130, 246, 1)', color: '#fff', border: '1px solid rgba(59, 130, 246, 0.6)' }
+  if (s === 'Bloqueado') return { background: 'rgba(239, 68, 68, 1)', color: '#fff', border: '1px solid rgba(239, 68, 68, 0.6)' }
   return { background: 'rgba(245,158,11,0.2)', color: '#fff', border: '1px solid rgba(245,158,11,0.3)' }
 }
 
@@ -153,7 +153,7 @@ export default function ProveedoresPage() {
             <div className="mb-8 rounded-2xl p-6" style={{ background: 'rgba(255,255,255,0.06)', border: '1px solid rgba(255,255,255,0.12)' }}>
               <h2 className="text-lg font-semibold text-white mb-4">{form.id ? 'Editar' : 'Nuevo'} Proveedor</h2>
               {formError && (
-                <div className="mb-4 px-4 py-3 rounded-xl text-sm font-medium" style={{ background: 'rgba(239,68,68,0.15)', border: '1px solid rgba(239,68,68,0.3)', color: '#fff' }}>
+                <div className="mb-4 px-4 py-3 rounded-xl text-sm font-medium" style={{ background: 'rgba(239,68,68,0.15)', border: '1px solid rgba(239, 68, 68, 0.6)', color: '#fff' }}>
                   {formError}
                 </div>
               )}
@@ -433,8 +433,8 @@ export default function ProveedoresPage() {
                     <td className="px-5 py-4">
                       <div className="flex gap-2">
                         <button onClick={() => setViewRecord(r)} className="px-3 py-1 rounded-lg text-xs font-medium" style={{ background: 'rgba(255,255,255,0.08)', color: '#e2e8f0', border: '1px solid rgba(255,255,255,0.15)' }}>Ver</button>
-                        {permisos.editar && <button onClick={() => { setForm({ ...r }); setIsFormOpen(true) }} className="px-3 py-1 rounded-lg text-xs font-medium" style={{ background: 'rgba(96,165,250,0.95)', color: '#fff', border: '1px solid rgba(96,165,250,0.3)' }}>{tBtn('edit')}</button>}
-                        {permisos.eliminar && <button onClick={() => handleDelete(r.id)} className="px-3 py-1 rounded-lg text-xs font-medium" style={{ background: 'rgba(239,68,68,0.95)', color: '#fff', border: '1px solid rgba(239,68,68,0.3)' }}>{tBtn('delete')}</button>}
+                        {permisos.editar && <button onClick={() => { setForm({ ...r }); setIsFormOpen(true) }} className="px-3 py-1 rounded-lg text-xs font-medium" style={{ background: 'rgba(59, 130, 246, 1)', color: '#fff', border: '1px solid rgba(59, 130, 246, 0.6)' }}>{tBtn('edit')}</button>}
+                        {permisos.eliminar && <button onClick={() => handleDelete(r.id)} className="px-3 py-1 rounded-lg text-xs font-medium" style={{ background: 'rgba(239, 68, 68, 1)', color: '#fff', border: '1px solid rgba(239, 68, 68, 0.6)' }}>{tBtn('delete')}</button>}
                       </div>
                     </td>
                   </tr>

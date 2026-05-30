@@ -156,7 +156,7 @@ export default function MainLayout({ children }: { children: React.ReactNode }) 
               const handleClientesClick = () => {
                 if (isClientes && typeof window !== 'undefined') {
                   const currentUrl = window.location.href
-                  const crmUrl = `https://crmspin.vercel.app/login?returnUrl=${encodeURIComponent(currentUrl)}`
+                  const crmUrl = `https://crmspin.vercel.app/clientes?returnUrl=${encodeURIComponent(currentUrl)}&isExternal=1`
                   window.open(crmUrl, '_blank')
                 }
               }

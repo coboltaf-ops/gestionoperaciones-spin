@@ -476,7 +476,7 @@ export default function CargaInicialInventarioPage() {
             <h1 className="text-3xl font-bold text-white">{t('cargaInicialInventario')}</h1>
             <p className="text-2xl font-mono mt-1" style={{ color: '#fff' }}>{viewItem.nro_carga}</p>
           </div>
-          <span className="px-4 py-2 rounded-full text-sm font-bold" style={{ background: 'rgba(96,165,250,0.95)', color: '#fff', border: '1px solid rgba(96,165,250,0.3)' }}>
+          <span className="px-4 py-2 rounded-full text-sm font-bold" style={{ background: 'rgba(59, 130, 246, 1)', color: '#fff', border: '1px solid rgba(59, 130, 246, 0.6)' }}>
             {viewItem.estado}
           </span>
         </div>
@@ -573,11 +573,11 @@ export default function CargaInicialInventarioPage() {
             <div className="mb-8 rounded-2xl p-6" style={{ background: 'rgba(255,255,255,0.06)', border: '1px solid rgba(255,255,255,0.12)' }}>
               <div className="flex items-center gap-3 mb-6">
                 <h2 className="text-lg font-semibold text-white">{tSec('nuevaCargaInicial')}</h2>
-                <span className="font-mono text-sm px-3 py-1 rounded-lg" style={{ background: 'rgba(96,165,250,0.95)', color: '#fff', border: '1px solid rgba(96,165,250,0.3)' }}>{form.nro_carga}</span>
+                <span className="font-mono text-sm px-3 py-1 rounded-lg" style={{ background: 'rgba(59, 130, 246, 1)', color: '#fff', border: '1px solid rgba(59, 130, 246, 0.6)' }}>{form.nro_carga}</span>
               </div>
 
               {errorMsg && (
-                <div className="mb-5 px-4 py-3 rounded-xl text-sm font-medium" style={{ background: 'rgba(239,68,68,0.15)', border: '1px solid rgba(239,68,68,0.3)', color: '#fff' }}>
+                <div className="mb-5 px-4 py-3 rounded-xl text-sm font-medium" style={{ background: 'rgba(239,68,68,0.15)', border: '1px solid rgba(239, 68, 68, 0.6)', color: '#fff' }}>
                   ⚠ {errorMsg}
                 </div>
               )}
@@ -588,7 +588,7 @@ export default function CargaInicialInventarioPage() {
                   <div>
                     <label className="block text-xl font-extrabold text-white mb-1">Nro. Carga</label>
                     <input readOnly value={form.nro_carga} className="w-full rounded-xl px-4 py-2.5 outline-none font-mono"
-                      style={{ background: 'rgba(96,165,250,0.1)', border: '1px solid rgba(96,165,250,0.3)', color: '#fff', cursor: 'not-allowed' }} />
+                      style={{ background: 'rgba(96,165,250,0.1)', border: '1px solid rgba(59, 130, 246, 0.6)', color: '#fff', cursor: 'not-allowed' }} />
                   </div>
                   <div>
                     <label className="block text-xl font-extrabold text-white mb-1">Fecha *</label>
@@ -689,7 +689,7 @@ export default function CargaInicialInventarioPage() {
                                 <input type="number" min="0.01" step="0.01" value={r.cantidad || ''}
                                   onChange={e => updateRenglon(idx, 'cantidad', parseFloat(e.target.value) || 0)}
                                   className="w-24 rounded-lg px-2 py-1.5 text-white outline-none text-center font-bold"
-                                  style={{ background: 'rgba(96,165,250,0.1)', border: '1px solid rgba(96,165,250,0.3)' }}
+                                  style={{ background: 'rgba(96,165,250,0.1)', border: '1px solid rgba(59, 130, 246, 0.6)' }}
                                   placeholder="0" />
                               </td>
                               <td className="px-2 py-2">
@@ -751,7 +751,7 @@ export default function CargaInicialInventarioPage() {
                     <td className="px-5 py-4 text-white/60">{fDate(c.fecha)}</td>
                     <td className="px-5 py-4 text-white font-bold">{c.bodega_nombre}</td>
                     <td className="px-5 py-4 text-center">
-                      <span className="px-2 py-1 rounded-lg text-xs font-medium" style={{ background: 'rgba(96,165,250,0.15)', color: '#fff', border: '1px solid rgba(96,165,250,0.3)' }}>
+                      <span className="px-2 py-1 rounded-lg text-xs font-medium" style={{ background: 'rgba(96,165,250,0.15)', color: '#fff', border: '1px solid rgba(59, 130, 246, 0.6)' }}>
                         {c.renglones.length} ítem{c.renglones.length !== 1 ? 's' : ''}
                       </span>
                     </td>
@@ -759,17 +759,17 @@ export default function CargaInicialInventarioPage() {
                       ${fmtMoney(c.renglones.reduce((s, r) => s + r.cantidad * r.costo_unitario, 0))}
                     </td>
                     <td className="px-5 py-4">
-                      <span className="px-3 py-1 rounded-full text-xs font-bold" style={{ background: 'rgba(96,165,250,0.95)', color: '#fff', border: '1px solid rgba(96,165,250,0.3)' }}>
+                      <span className="px-3 py-1 rounded-full text-xs font-bold" style={{ background: 'rgba(59, 130, 246, 1)', color: '#fff', border: '1px solid rgba(59, 130, 246, 0.6)' }}>
                         {c.estado}
                       </span>
                     </td>
                     <td className="px-5 py-4">
                       <div className="flex gap-2">
                         <button onClick={() => setViewItem(c)} className="px-3 py-1 rounded-lg text-xs font-medium"
-                          style={{ background: 'rgba(96,165,250,0.95)', color: '#fff', border: '1px solid rgba(96,165,250,0.3)' }}>Ver</button>
+                          style={{ background: 'rgba(59, 130, 246, 1)', color: '#fff', border: '1px solid rgba(59, 130, 246, 0.6)' }}>Ver</button>
                         {permisos.eliminar && (
                           <button onClick={() => handleDelete(c.id)} className="px-3 py-1 rounded-lg text-xs font-medium"
-                            style={{ background: 'rgba(239,68,68,0.95)', color: '#fff', border: '1px solid rgba(239,68,68,0.3)' }}>{tBtn('delete')}</button>
+                            style={{ background: 'rgba(239, 68, 68, 1)', color: '#fff', border: '1px solid rgba(239, 68, 68, 0.6)' }}>{tBtn('delete')}</button>
                         )}
                       </div>
                     </td>
@@ -799,12 +799,12 @@ export default function CargaInicialInventarioPage() {
               <div>
                 <label className="block text-xl font-extrabold text-white mb-1">Fecha de Solicitud</label>
                 <input readOnly value={today} className="w-full rounded-xl px-4 py-2.5 outline-none font-mono text-sm"
-                  style={{ background: 'rgba(96,165,250,0.1)', border: '1px solid rgba(96,165,250,0.3)', color: '#fff', cursor: 'not-allowed' }} />
+                  style={{ background: 'rgba(96,165,250,0.1)', border: '1px solid rgba(59, 130, 246, 0.6)', color: '#fff', cursor: 'not-allowed' }} />
               </div>
               <div>
                 <label className="block text-xl font-extrabold text-white mb-1">Solicitado por</label>
                 <input readOnly value={`${user.nombre} ${user.apellido}`.trim()} className="w-full rounded-xl px-4 py-2.5 outline-none text-base text-white font-bold"
-                  style={{ background: 'rgba(96,165,250,0.1)', border: '1px solid rgba(96,165,250,0.3)', color: '#fff', cursor: 'not-allowed' }} />
+                  style={{ background: 'rgba(96,165,250,0.1)', border: '1px solid rgba(59, 130, 246, 0.6)', color: '#fff', cursor: 'not-allowed' }} />
               </div>
               <div>
                 <label className="block text-xl font-extrabold text-white mb-1">Descripción del Reporte</label>
@@ -867,12 +867,12 @@ export default function CargaInicialInventarioPage() {
                 </button>
                 <button onClick={() => doExportEsp('pdf')} disabled={isExportingEsp || espRows.length === 0}
                   className="px-4 py-2 rounded-xl text-sm font-medium text-white disabled:opacity-40"
-                  style={{ background: 'rgba(239,68,68,0.3)', border: '1px solid rgba(239,68,68,0.4)' }}>
+                  style={{ background: 'rgba(239, 68, 68, 0.6)', border: '1px solid rgba(239,68,68,0.4)' }}>
                   PDF
                 </button>
                 <button onClick={() => doExportEsp('print')} disabled={isExportingEsp || espRows.length === 0}
                   className="px-4 py-2 rounded-xl text-sm font-medium text-white disabled:opacity-40"
-                  style={{ background: 'rgba(96,165,250,0.3)', border: '1px solid rgba(96,165,250,0.4)' }}>
+                  style={{ background: 'rgba(59, 130, 246, 0.6)', border: '1px solid rgba(96,165,250,0.4)' }}>
                   {tBtn('print')}
                 </button>
               </div>
@@ -943,12 +943,12 @@ export default function CargaInicialInventarioPage() {
                 </button>
                 <button onClick={() => doExport('pdf')} disabled={isExporting || filteredReport.length === 0}
                   className="px-4 py-2 rounded-xl text-sm font-medium text-white disabled:opacity-40"
-                  style={{ background: 'rgba(239,68,68,0.3)', border: '1px solid rgba(239,68,68,0.4)' }}>
+                  style={{ background: 'rgba(239, 68, 68, 0.6)', border: '1px solid rgba(239,68,68,0.4)' }}>
                   PDF
                 </button>
                 <button onClick={() => doExport('print')} disabled={isExporting || filteredReport.length === 0}
                   className="px-4 py-2 rounded-xl text-sm font-medium text-white disabled:opacity-40"
-                  style={{ background: 'rgba(96,165,250,0.3)', border: '1px solid rgba(96,165,250,0.4)' }}>
+                  style={{ background: 'rgba(59, 130, 246, 0.6)', border: '1px solid rgba(96,165,250,0.4)' }}>
                   {tBtn('print')}
                 </button>
               </div>
@@ -971,7 +971,7 @@ export default function CargaInicialInventarioPage() {
                     <td className="px-5 py-3 text-center text-white/70">{row.items}</td>
                     <td className="px-5 py-3 text-white font-medium text-right">{row.valor_total}</td>
                     <td className="px-5 py-3">
-                      <span className="px-2 py-1 rounded-full text-xs font-bold" style={{ background: 'rgba(96,165,250,0.95)', color: '#fff', border: '1px solid rgba(96,165,250,0.3)' }}>{row.estado}</span>
+                      <span className="px-2 py-1 rounded-full text-xs font-bold" style={{ background: 'rgba(59, 130, 246, 1)', color: '#fff', border: '1px solid rgba(59, 130, 246, 0.6)' }}>{row.estado}</span>
                     </td>
                   </tr>
                 ))}

@@ -56,9 +56,9 @@ const inputSt: React.CSSProperties = { background: 'rgba(255,255,255,0.06)', bor
 const selectSt: React.CSSProperties = { background: 'rgba(12,26,61,0.9)', border: '1px solid rgba(255,255,255,0.15)', color: '#fff' }
 
 const sitStyle = (s: string): React.CSSProperties => {
-  if (s === 'Activa') return { background: 'rgba(96,165,250,0.95)', color: '#fff', border: '1px solid rgba(96,165,250,0.3)' }
+  if (s === 'Activa') return { background: 'rgba(59, 130, 246, 1)', color: '#fff', border: '1px solid rgba(59, 130, 246, 0.6)' }
   if (s === 'En Mantenimiento') return { background: 'rgba(245,158,11,0.2)', color: '#fff', border: '1px solid rgba(245,158,11,0.3)' }
-  return { background: 'rgba(239,68,68,0.95)', color: '#fff', border: '1px solid rgba(239,68,68,0.3)' }
+  return { background: 'rgba(239, 68, 68, 1)', color: '#fff', border: '1px solid rgba(239, 68, 68, 0.6)' }
 }
 
 /**
@@ -473,8 +473,8 @@ export default function BodegasPage() {
                 <td className="px-6 py-4">
                   <div className="flex gap-2">
                     <button onClick={() => setViewRecord(r)} className="px-3 py-1 rounded-lg text-xs font-medium" style={{ background: 'rgba(255,255,255,0.08)', color: '#e2e8f0', border: '1px solid rgba(255,255,255,0.15)' }}>Ver</button>
-                    {permisos.editar && <button onClick={() => { setFormBodega({ ...r }); setIsBodegaFormOpen(true) }} className="px-3 py-1 rounded-lg text-xs font-medium" style={{ background: 'rgba(96,165,250,0.95)', color: '#fff', border: '1px solid rgba(96,165,250,0.3)' }}>{tBtn('edit')}</button>}
-                    {permisos.eliminar && <button onClick={() => { if (confirm(tCf('delBodega'))) setBodegas(prev => prev.filter(b => b.id !== r.id)) }} className="px-3 py-1 rounded-lg text-xs font-medium" style={{ background: 'rgba(239,68,68,0.95)', color: '#fff', border: '1px solid rgba(239,68,68,0.3)' }}>{tBtn('delete')}</button>}
+                    {permisos.editar && <button onClick={() => { setFormBodega({ ...r }); setIsBodegaFormOpen(true) }} className="px-3 py-1 rounded-lg text-xs font-medium" style={{ background: 'rgba(59, 130, 246, 1)', color: '#fff', border: '1px solid rgba(59, 130, 246, 0.6)' }}>{tBtn('edit')}</button>}
+                    {permisos.eliminar && <button onClick={() => { if (confirm(tCf('delBodega'))) setBodegas(prev => prev.filter(b => b.id !== r.id)) }} className="px-3 py-1 rounded-lg text-xs font-medium" style={{ background: 'rgba(239, 68, 68, 1)', color: '#fff', border: '1px solid rgba(239, 68, 68, 0.6)' }}>{tBtn('delete')}</button>}
                   </div>
                 </td>
               </tr>
@@ -495,7 +495,7 @@ export default function BodegasPage() {
         <div className="mb-8 rounded-2xl p-6" style={{ background: 'rgba(255,255,255,0.06)', border: '1px solid rgba(255,255,255,0.12)' }}>
           <div className="flex items-center gap-3 mb-6">
             <h2 className="text-lg font-semibold text-white">{tSec('nuevoMovimiento')}</h2>
-            <span className="font-mono text-sm px-3 py-1 rounded-lg" style={{ background: 'rgba(96,165,250,0.95)', color: '#fff', border: '1px solid rgba(96,165,250,0.3)' }}>{formMov.consecutivo}</span>
+            <span className="font-mono text-sm px-3 py-1 rounded-lg" style={{ background: 'rgba(59, 130, 246, 1)', color: '#fff', border: '1px solid rgba(59, 130, 246, 0.6)' }}>{formMov.consecutivo}</span>
           </div>
           <form onSubmit={handleSaveMov}>
             <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-4 mb-6">
@@ -537,7 +537,7 @@ export default function BodegasPage() {
               <div className="lg:col-span-4">
                 <label className="block text-xl font-extrabold text-white mb-1">Buscar Producto *</label>
                 {formMov.codigo_producto ? (
-                  <div className="flex items-center gap-3 px-4 py-2.5 rounded-xl" style={{ background: 'rgba(96,165,250,0.08)', border: '1px solid rgba(96,165,250,0.3)' }}>
+                  <div className="flex items-center gap-3 px-4 py-2.5 rounded-xl" style={{ background: 'rgba(96,165,250,0.08)', border: '1px solid rgba(59, 130, 246, 0.6)' }}>
                     <span className="font-mono text-xs font-bold" style={{ color: '#fff' }}>{formMov.codigo_producto}</span>
                     <span className="text-white flex-1">{formMov.descripcion_producto}</span>
                     <span className="text-white/50 text-xs">{formMov.unidad_medida}</span>

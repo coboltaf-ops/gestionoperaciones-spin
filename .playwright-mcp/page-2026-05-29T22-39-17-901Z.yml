@@ -1,0 +1,91 @@
+- generic [active] [ref=e1]:
+  - alert [ref=e2]
+  - generic [ref=e3]:
+    - complementary [ref=e4]:
+      - generic [ref=e5]:
+        - button "✕" [ref=e6] [cursor=pointer]
+        - paragraph [ref=e8]: CRM SPIN
+      - navigation [ref=e9]:
+        - button "📊 Dashboard" [disabled] [ref=e10]:
+          - generic [ref=e11]: 📊
+          - generic [ref=e12]: Dashboard
+        - button "🏢 Clientes" [ref=e13] [cursor=pointer]:
+          - generic [ref=e14]: 🏢
+          - generic [ref=e15]: Clientes
+        - button "👤 Contactos" [disabled] [ref=e16]:
+          - generic [ref=e17]: 👤
+          - generic [ref=e18]: Contactos
+        - button "🧲 Prospectos" [disabled] [ref=e19]:
+          - generic [ref=e20]: 🧲
+          - generic [ref=e21]: Prospectos
+        - button "🎯 Oportunidades" [disabled] [ref=e22]:
+          - generic [ref=e23]: 🎯
+          - generic [ref=e24]: Oportunidades
+        - button "📦 Productos" [disabled] [ref=e25]:
+          - generic [ref=e26]: 📦
+          - generic [ref=e27]: Productos
+        - button "📋 Cotizaciones" [disabled] [ref=e28]:
+          - generic [ref=e29]: 📋
+          - generic [ref=e30]: Cotizaciones
+        - button "📩 PQRS" [disabled] [ref=e31]:
+          - generic [ref=e32]: 📩
+          - generic [ref=e33]: PQRS
+        - button "📧 Correos Enviados" [disabled] [ref=e34]:
+          - generic [ref=e35]: 📧
+          - generic [ref=e36]: Correos Enviados
+        - button "✅ Tareas" [disabled] [ref=e37]:
+          - generic [ref=e38]: ✅
+          - generic [ref=e39]: Tareas
+        - button "⚙️ Referencias" [disabled] [ref=e40]:
+          - generic [ref=e41]: ⚙️
+          - generic [ref=e42]: Referencias
+        - button "⚙️ Configuración ▼" [ref=e44] [cursor=pointer]:
+          - generic [ref=e45]: ⚙️
+          - generic [ref=e46]: Configuración
+          - generic [ref=e47]: ▼
+      - generic [ref=e48]:
+        - button "← Regresar a Gestión Operaciones" [ref=e49] [cursor=pointer]:
+          - generic [ref=e50]: ←
+          - generic [ref=e51]: Regresar a Gestión Operaciones
+        - button "🚪 Cerrar Sesión" [ref=e52] [cursor=pointer]:
+          - generic [ref=e53]: 🚪
+          - generic [ref=e54]: Cerrar Sesión
+    - main [ref=e55]:
+      - generic [ref=e56]:
+        - generic [ref=e57]:
+          - generic [ref=e58]: AC
+          - generic [ref=e59]:
+            - paragraph [ref=e60]: Admin CRM
+            - paragraph [ref=e61]: Admin
+        - button "Menú Principal" [ref=e63] [cursor=pointer]
+      - generic [ref=e64]:
+        - generic [ref=e65]:
+          - generic [ref=e66]:
+            - heading "Clientes" [level=1] [ref=e67]
+            - paragraph [ref=e68]: Gestión de clientes comerciales
+          - generic [ref=e69]:
+            - button "📋 Plantilla" [ref=e70] [cursor=pointer]
+            - generic "Importar clientes desde Excel" [ref=e71] [cursor=pointer]: 📥 Importar Excel
+            - button "+ Nuevo Cliente" [disabled] [ref=e72] [cursor=pointer]
+            - button "← Regresar a Gestión Operaciones" [ref=e73] [cursor=pointer]
+        - generic [ref=e74]:
+          - button "📋 Registros" [ref=e75] [cursor=pointer]
+          - button "📊 Reportes" [ref=e76] [cursor=pointer]
+        - textbox "Buscar por nombre, código o documento..." [ref=e77]
+        - table [ref=e79]:
+          - rowgroup [ref=e80]:
+            - row "Código Razón Social Tipo Documento Nro Documento DV Dirección Ciudad País Teléfono Situación Acciones" [ref=e81]:
+              - columnheader "Código" [ref=e82]
+              - columnheader "Razón Social" [ref=e83]
+              - columnheader "Tipo Documento" [ref=e84]
+              - columnheader "Nro Documento" [ref=e85]
+              - columnheader "DV" [ref=e86]
+              - columnheader "Dirección" [ref=e87]
+              - columnheader "Ciudad" [ref=e88]
+              - columnheader "País" [ref=e89]
+              - columnheader "Teléfono" [ref=e90]
+              - columnheader "Situación" [ref=e91]
+              - columnheader "Acciones" [ref=e92]
+          - rowgroup [ref=e93]:
+            - row "No hay clientes registrados" [ref=e94]:
+              - cell "No hay clientes registrados" [ref=e95]

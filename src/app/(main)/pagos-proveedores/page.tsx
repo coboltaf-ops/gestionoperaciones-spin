@@ -541,7 +541,7 @@ export default function PagosProveedoresPage() {
 
   const inputSt: React.CSSProperties = { background: 'rgba(255,255,255,0.06)', border: '1px solid rgba(255,255,255,0.15)', color: '#fff' }
   const selectSt: React.CSSProperties = { background: 'rgba(12,26,61,0.9)', border: '1px solid rgba(255,255,255,0.15)', color: '#fff' }
-  const readOnlySt: React.CSSProperties = { background: 'rgba(96,165,250,0.1)', border: '1px solid rgba(96,165,250,0.3)', color: '#fff', cursor: 'not-allowed' }
+  const readOnlySt: React.CSSProperties = { background: 'rgba(96,165,250,0.1)', border: '1px solid rgba(59, 130, 246, 0.6)', color: '#fff', cursor: 'not-allowed' }
 
   if (!permisos.leer) {
     return <div className="flex items-center justify-center h-full"><p className="text-white/60 text-lg">No tienes permisos para acceder a esta sección.</p></div>
@@ -825,14 +825,14 @@ export default function PagosProveedoresPage() {
                       <span className="px-2 py-1 rounded-md text-xs font-bold" style={
                         f.estado === 'Pagada' ? { background: 'rgba(34,197,94,0.95)', color: '#fff', border: '1px solid rgba(34,197,94,0.4)' } :
                         f.estado === 'Pagada Parcial' ? { background: 'rgba(251,191,36,0.95)', color: '#fff', border: '1px solid rgba(251,191,36,0.4)' } :
-                        f.estado === 'Anulada' ? { background: 'rgba(239,68,68,0.95)', color: '#fff', border: '1px solid rgba(239,68,68,0.4)' } :
-                        { background: 'rgba(96,165,250,0.95)', color: '#fff', border: '1px solid rgba(96,165,250,0.4)' }
+                        f.estado === 'Anulada' ? { background: 'rgba(239, 68, 68, 1)', color: '#fff', border: '1px solid rgba(239,68,68,0.4)' } :
+                        { background: 'rgba(59, 130, 246, 1)', color: '#fff', border: '1px solid rgba(96,165,250,0.4)' }
                       }>{f.estado}</span>
                     </td>
                     <td className="px-3 py-3">
                       <div className="flex gap-1">
-                        {permisos.editar && <button onClick={() => handleEditar(f)} className="px-2 py-1 rounded-lg text-xs font-medium" style={{ background: 'rgba(96,165,250,0.95)', color: '#fff', border: '1px solid rgba(96,165,250,0.3)' }}>Editar</button>}
-                        {permisos.eliminar && <button onClick={() => handleEliminar(f)} className="px-2 py-1 rounded-lg text-xs font-medium" style={{ background: 'rgba(239,68,68,0.95)', color: '#fff', border: '1px solid rgba(239,68,68,0.3)' }}>Eliminar</button>}
+                        {permisos.editar && <button onClick={() => handleEditar(f)} className="px-2 py-1 rounded-lg text-xs font-medium" style={{ background: 'rgba(59, 130, 246, 1)', color: '#fff', border: '1px solid rgba(59, 130, 246, 0.6)' }}>Editar</button>}
+                        {permisos.eliminar && <button onClick={() => handleEliminar(f)} className="px-2 py-1 rounded-lg text-xs font-medium" style={{ background: 'rgba(239, 68, 68, 1)', color: '#fff', border: '1px solid rgba(239, 68, 68, 0.6)' }}>Eliminar</button>}
                       </div>
                     </td>
                   </tr>
@@ -896,7 +896,7 @@ export default function PagosProveedoresPage() {
                     <td className="px-3 py-3">
                       <span className="px-2 py-1 rounded-md text-xs font-bold" style={
                         p.estado === 'Anulado'
-                          ? { background: 'rgba(239,68,68,0.95)', color: '#fff', border: '1px solid rgba(239,68,68,0.4)' }
+                          ? { background: 'rgba(239, 68, 68, 1)', color: '#fff', border: '1px solid rgba(239,68,68,0.4)' }
                           : { background: 'rgba(34,197,94,0.95)', color: '#fff', border: '1px solid rgba(34,197,94,0.4)' }
                       }>{p.estado}</span>
                     </td>
@@ -975,7 +975,7 @@ export default function PagosProveedoresPage() {
                           return <span className="px-2 py-1 rounded-md text-xs font-bold" style={{ background: 'rgba(251,191,36,0.95)', color: '#fff', border: '1px solid rgba(251,191,36,0.4)' }}>⏳ Pendiente Sin Aplicar</span>
                         }
                         if (saldo > 0 && saldo < monto) {
-                          return <span className="px-2 py-1 rounded-md text-xs font-bold font-mono" style={{ background: 'rgba(96,165,250,0.95)', color: '#fff', border: '1px solid rgba(96,165,250,0.4)' }}>🔄 Saldo {fmtMoney(saldo)}</span>
+                          return <span className="px-2 py-1 rounded-md text-xs font-bold font-mono" style={{ background: 'rgba(59, 130, 246, 1)', color: '#fff', border: '1px solid rgba(96,165,250,0.4)' }}>🔄 Saldo {fmtMoney(saldo)}</span>
                         }
                         if (saldo <= 0.01 && a.estado !== 'Anulado') {
                           return <span className="px-2 py-1 rounded-md text-xs font-bold" style={{ background: 'rgba(34,197,94,0.95)', color: '#fff', border: '1px solid rgba(34,197,94,0.4)' }}>✓ Aplicado Total</span>
@@ -987,8 +987,8 @@ export default function PagosProveedoresPage() {
                       <span className="px-2 py-1 rounded-md text-xs font-bold" style={
                         a.estado === 'Aplicado Total' ? { background: 'rgba(34,197,94,0.95)', color: '#fff', border: '1px solid rgba(34,197,94,0.4)' } :
                         a.estado === 'Aplicado Parcial' ? { background: 'rgba(251,191,36,0.95)', color: '#fff', border: '1px solid rgba(251,191,36,0.4)' } :
-                        a.estado === 'Anulado' ? { background: 'rgba(239,68,68,0.95)', color: '#fff', border: '1px solid rgba(239,68,68,0.4)' } :
-                        { background: 'rgba(96,165,250,0.95)', color: '#fff', border: '1px solid rgba(96,165,250,0.4)' }
+                        a.estado === 'Anulado' ? { background: 'rgba(239, 68, 68, 1)', color: '#fff', border: '1px solid rgba(239,68,68,0.4)' } :
+                        { background: 'rgba(59, 130, 246, 1)', color: '#fff', border: '1px solid rgba(96,165,250,0.4)' }
                       }>{a.estado}</span>
                     </td>
                     <td className="px-3 py-3">
@@ -1004,7 +1004,7 @@ export default function PagosProveedoresPage() {
                           <button onClick={() => handleAnularAnticipo(a)} className="px-2 py-1 rounded-lg text-xs font-medium" style={{ background: 'rgba(251,191,36,0.95)', color: '#fff', border: '1px solid rgba(251,191,36,0.3)' }} title="Anular">⚠ Anular</button>
                         )}
                         {permisos.eliminar && a.saldo_disponible === a.monto && (
-                          <button onClick={() => handleEliminarAnticipo(a)} className="px-2 py-1 rounded-lg text-xs font-medium" style={{ background: 'rgba(239,68,68,0.95)', color: '#fff', border: '1px solid rgba(239,68,68,0.3)' }}>Eliminar</button>
+                          <button onClick={() => handleEliminarAnticipo(a)} className="px-2 py-1 rounded-lg text-xs font-medium" style={{ background: 'rgba(239, 68, 68, 1)', color: '#fff', border: '1px solid rgba(239, 68, 68, 0.6)' }}>Eliminar</button>
                         )}
                       </div>
                     </td>
@@ -1227,7 +1227,7 @@ export default function PagosProveedoresPage() {
                                 updateFactura(f.id, { anticipo: val })
                               }}
                               className="w-24 rounded-lg px-2 py-1 outline-none text-xs font-mono text-right"
-                              style={{ background: 'rgba(255,255,255,0.06)', border: '1px solid rgba(96,165,250,0.3)', color: '#fff' }}
+                              style={{ background: 'rgba(255,255,255,0.06)', border: '1px solid rgba(59, 130, 246, 0.6)', color: '#fff' }}
                               title="Editable. Se guarda en la factura al instante." />
                           </td>
                           <td className="px-2 py-2 text-right font-mono font-bold text-white">{fmtMoney(neto)}</td>
@@ -1332,7 +1332,7 @@ export default function PagosProveedoresPage() {
             </div>
 
             {/* Total */}
-            <div className="flex items-center justify-end gap-4 mb-3 px-4 py-3 rounded-xl" style={{ background: 'rgba(96,165,250,0.1)', border: '1px solid rgba(96,165,250,0.3)' }}>
+            <div className="flex items-center justify-end gap-4 mb-3 px-4 py-3 rounded-xl" style={{ background: 'rgba(96,165,250,0.1)', border: '1px solid rgba(59, 130, 246, 0.6)' }}>
               <span className="text-white/70 text-sm font-bold">TOTAL A PAGAR:</span>
               <span className="text-2xl font-mono font-extrabold text-blue-300">{fmtMoney(totalPagoCalc)}</span>
             </div>
@@ -1382,7 +1382,7 @@ export default function PagosProveedoresPage() {
               <div className="mt-4 px-3 py-2 rounded-xl text-sm font-medium" style={{
                 background: eliminarMsg.startsWith('🗑') ? 'rgba(34,197,94,0.15)' : 'rgba(239,68,68,0.15)',
                 color: eliminarMsg.startsWith('🗑') ? '#86efac' : '#fca5a5',
-                border: `1px solid ${eliminarMsg.startsWith('🗑') ? 'rgba(34,197,94,0.3)' : 'rgba(239,68,68,0.3)'}`,
+                border: `1px solid ${eliminarMsg.startsWith('🗑') ? 'rgba(34,197,94,0.3)' : 'rgba(239, 68, 68, 0.6)'}`,
               }}>{eliminarMsg}</div>
             )}
             <div className="flex justify-end gap-3 pt-4 mt-4 border-t" style={{ borderColor: 'rgba(255,255,255,0.08)' }}>
@@ -1424,7 +1424,7 @@ export default function PagosProveedoresPage() {
               <div className="mb-4 px-3 py-2 rounded-xl text-sm font-medium" style={{
                 background: traerMsg.startsWith('✅') ? 'rgba(34,197,94,0.15)' : traerMsg.startsWith('ℹ') ? 'rgba(96,165,250,0.15)' : 'rgba(239,68,68,0.15)',
                 color: traerMsg.startsWith('✅') ? '#86efac' : traerMsg.startsWith('ℹ') ? '#93c5fd' : '#fca5a5',
-                border: `1px solid ${traerMsg.startsWith('✅') ? 'rgba(34,197,94,0.3)' : traerMsg.startsWith('ℹ') ? 'rgba(96,165,250,0.3)' : 'rgba(239,68,68,0.3)'}`,
+                border: `1px solid ${traerMsg.startsWith('✅') ? 'rgba(34,197,94,0.3)' : traerMsg.startsWith('ℹ') ? 'rgba(59, 130, 246, 0.6)' : 'rgba(239, 68, 68, 0.6)'}`,
               }}>{traerMsg}</div>
             )}
             <div className="flex justify-end gap-3 pt-3 border-t" style={{ borderColor: 'rgba(255,255,255,0.08)' }}>
@@ -1491,7 +1491,7 @@ export default function PagosProveedoresPage() {
                     )
                   }
                   return (
-                    <p className="text-xs mt-1 px-2 py-1 rounded font-semibold" style={{ background: 'rgba(239,68,68,0.15)', color: '#fff', border: '1px solid rgba(239,68,68,0.3)' }}>
+                    <p className="text-xs mt-1 px-2 py-1 rounded font-semibold" style={{ background: 'rgba(239,68,68,0.15)', color: '#fff', border: '1px solid rgba(239, 68, 68, 0.6)' }}>
                       ⚠ Ya existe esta factura para {form.proveedor} ({dup.consecutivo})
                     </p>
                   )

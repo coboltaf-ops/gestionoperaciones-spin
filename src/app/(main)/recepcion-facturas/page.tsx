@@ -224,8 +224,8 @@ const selectStyle: React.CSSProperties = {
 
 const estadoStyle = (s: string): React.CSSProperties => {
   if (s === 'Aprobada y Recibida') return { background: 'rgba(34,197,94,0.95)', color: '#fff', border: '1px solid rgba(34,197,94,0.3)' }
-  if (s === 'Aprobada') return { background: 'rgba(96,165,250,0.95)', color: '#fff', border: '1px solid rgba(96,165,250,0.3)' }
-  if (s === 'Anulada') return { background: 'rgba(239,68,68,0.95)', color: '#fff', border: '1px solid rgba(239,68,68,0.3)' }
+  if (s === 'Aprobada') return { background: 'rgba(59, 130, 246, 1)', color: '#fff', border: '1px solid rgba(59, 130, 246, 0.6)' }
+  if (s === 'Anulada') return { background: 'rgba(239, 68, 68, 1)', color: '#fff', border: '1px solid rgba(239, 68, 68, 0.6)' }
   return { background: 'rgba(245,158,11,0.2)', color: '#fff', border: '1px solid rgba(245,158,11,0.3)' }
 }
 
@@ -797,7 +797,7 @@ export default function RecepcionFacturasPage() {
                       <td className="px-4 py-3 text-white/60 text-center">{r.ya_recibido}</td>
                       <td className="px-4 py-3 text-center font-bold" style={{ color: '#fff' }}>{r.cantidad_a_recibir}</td>
                       <td className="px-4 py-3">
-                        <span className="px-2 py-1 rounded-full text-xs font-medium" style={isComplete ? { background: 'rgba(96,165,250,0.95)', color: '#fff', border: '1px solid rgba(96,165,250,0.3)' } : { background: 'rgba(245,158,11,0.2)', color: '#fff', border: '1px solid rgba(245,158,11,0.3)' }}>
+                        <span className="px-2 py-1 rounded-full text-xs font-medium" style={isComplete ? { background: 'rgba(59, 130, 246, 1)', color: '#fff', border: '1px solid rgba(59, 130, 246, 0.6)' } : { background: 'rgba(245,158,11,0.2)', color: '#fff', border: '1px solid rgba(245,158,11,0.3)' }}>
                           {isComplete ? 'Completo' : 'Pendiente'}
                         </span>
                       </td>
@@ -882,7 +882,7 @@ export default function RecepcionFacturasPage() {
                     <label className="block text-xl font-extrabold text-white mb-1">Nro de Recepción</label>
                     <input readOnly value={form.consecutivo}
                       className="w-full rounded-xl px-4 py-2.5 outline-none font-mono"
-                      style={{ background: 'rgba(96,165,250,0.1)', border: '1px solid rgba(96,165,250,0.3)', color: '#fff', cursor: 'not-allowed' }} />
+                      style={{ background: 'rgba(96,165,250,0.1)', border: '1px solid rgba(59, 130, 246, 0.6)', color: '#fff', cursor: 'not-allowed' }} />
                   </div>
 
                   {/* Nro de Factura */}
@@ -915,7 +915,7 @@ export default function RecepcionFacturasPage() {
                     <label className="block text-xl font-extrabold text-white mb-1">Tipo de Inventario</label>
                     <input readOnly value={form.tipo_inventario || '—'}
                       className="w-full rounded-xl px-4 py-2.5 outline-none font-semibold"
-                      style={{ background: 'rgba(96,165,250,0.1)', border: '1px solid rgba(96,165,250,0.3)', color: '#fff', cursor: 'not-allowed' }}
+                      style={{ background: 'rgba(96,165,250,0.1)', border: '1px solid rgba(59, 130, 246, 0.6)', color: '#fff', cursor: 'not-allowed' }}
                       title="Definido por el Tipo de Inventario activo de la sesión." />
                   </div>
 
@@ -1023,7 +1023,7 @@ export default function RecepcionFacturasPage() {
                                 <td className="px-4 py-3">
                                   {r.completo ? (
                                     <div className="flex items-center gap-2">
-                                      <span className="px-3 py-1.5 rounded-lg text-xs font-semibold" style={{ background: 'rgba(96,165,250,0.15)', color: '#fff', border: '1px solid rgba(96,165,250,0.3)' }}>
+                                      <span className="px-3 py-1.5 rounded-lg text-xs font-semibold" style={{ background: 'rgba(96,165,250,0.15)', color: '#fff', border: '1px solid rgba(59, 130, 246, 0.6)' }}>
                                         ✓ Ítem ya completo
                                       </span>
                                     </div>
@@ -1099,7 +1099,7 @@ export default function RecepcionFacturasPage() {
                 </div>
 
                 {errorMsg && (
-                  <div className="mb-4 px-4 py-3 rounded-xl text-sm font-medium" style={{ background: 'rgba(239,68,68,0.15)', border: '1px solid rgba(239,68,68,0.3)', color: '#fff' }}>
+                  <div className="mb-4 px-4 py-3 rounded-xl text-sm font-medium" style={{ background: 'rgba(239,68,68,0.15)', border: '1px solid rgba(239, 68, 68, 0.6)', color: '#fff' }}>
                     ⚠ {errorMsg}
                   </div>
                 )}
@@ -1165,7 +1165,7 @@ export default function RecepcionFacturasPage() {
                     </td>
                     <td className="px-3 py-3 whitespace-nowrap" style={{ background: 'rgba(15,23,42,0.95)', position: 'sticky', right: 0, zIndex: 1, borderLeft: '1px solid rgba(255,255,255,0.08)' }}>
                       <div className="flex gap-2 justify-end">
-                        <button onClick={() => setViewRec(r)} className="px-3 py-1.5 rounded-lg text-xs font-bold whitespace-nowrap" style={{ background: 'rgba(96,165,250,0.3)', color: '#fff', border: '1px solid rgba(37,99,235,1)' }}>
+                        <button onClick={() => setViewRec(r)} className="px-3 py-1.5 rounded-lg text-xs font-bold whitespace-nowrap" style={{ background: 'rgba(59, 130, 246, 0.6)', color: '#fff', border: '1px solid rgba(37,99,235,1)' }}>
                           👁 Ver
                         </button>
                         <button
@@ -1181,7 +1181,7 @@ export default function RecepcionFacturasPage() {
                           title="Regenerar PDF (incluso si ya pasó a Pagos)">
                           🖨 PDF
                         </button>
-                        {esAdmin && <button onClick={() => handleDelete(r.id)} className="px-3 py-1.5 rounded-lg text-xs font-bold whitespace-nowrap" style={{ background: 'rgba(239,68,68,0.3)', color: '#fff', border: '1px solid rgba(185,28,28,1)' }} title="Solo Admin puede eliminar (afecta inventario si está aprobada)">
+                        {esAdmin && <button onClick={() => handleDelete(r.id)} className="px-3 py-1.5 rounded-lg text-xs font-bold whitespace-nowrap" style={{ background: 'rgba(239, 68, 68, 0.6)', color: '#fff', border: '1px solid rgba(185,28,28,1)' }} title="Solo Admin puede eliminar (afecta inventario si está aprobada)">
                           🗑 Borrar
                         </button>}
                       </div>
