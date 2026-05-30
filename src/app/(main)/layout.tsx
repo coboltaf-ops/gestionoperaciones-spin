@@ -21,6 +21,7 @@ export default function MainLayout({ children }: { children: React.ReactNode }) 
   const tCommon = useTranslations('common')
   const tApp = useTranslations('app')
   const [configOpen, setConfigOpen] = useState(true)
+  const [produccionOpen, setProduccionOpen] = useState(true)
   const [returnUrl, setReturnUrl] = useState<string | null>(null)
   const [fromContable, setFromContable] = useState(false)
   const [sidebarOpen, setSidebarOpen] = useState(true)
@@ -112,6 +113,13 @@ export default function MainLayout({ children }: { children: React.ReactNode }) 
     { name: t('asistente'), href: '/asistente', icon: '🤖' },
   ]
 
+  const produccionItems = [
+    { name: 'Formulaciones', href: '/produccion/formulaciones', icon: '⚗️' },
+    { name: 'Producto Terminado', href: '/produccion/producto-terminado', icon: '✅' },
+    { name: 'Órdenes de Producción', href: '/produccion/ordenes-produccion', icon: '📋' },
+    { name: 'Ejecución Órdenes de Producción', href: '/produccion/ejecucion-ordenes', icon: '⚙️' },
+  ]
+
   const configItems = isAdmin ? [
     { name: t('datosEmpresa'), href: '/datos-empresa', icon: '🏛️' },
     { name: t('usuarios'), href: '/usuarios', icon: '👤' },
@@ -178,6 +186,43 @@ export default function MainLayout({ children }: { children: React.ReactNode }) 
               </Link>
             )
           })}
+
+          {/* Producción (colapsable) */}
+          <div className="mt-2">
+            <button
+              onClick={() => setProduccionOpen(!produccionOpen)}
+              className={`w-full flex items-center gap-3 px-4 py-2.5 rounded-xl transition-all duration-300 ${
+                produccionOpen || produccionItems.some(h => pathname.startsWith(h.href))
+                  ? 'text-white bg-white/10'
+                  : 'text-white/60 hover:text-white hover:bg-white/5'
+              }`}
+            >
+              <span className="text-base">🏭</span>
+              <span className="font-medium text-sm flex-1 text-left">Producción</span>
+              <span className={`text-xs transition-transform duration-200 ${produccionOpen ? 'rotate-180' : ''}`}>▼</span>
+            </button>
+            {produccionOpen && (
+              <div className="ml-4 mt-1 space-y-1 border-l border-white/10 pl-3">
+                {produccionItems.map((item) => {
+                  const isActive = pathname.startsWith(item.href)
+                  return (
+                    <Link
+                      key={item.href}
+                      href={item.href}
+                      className={`flex items-center gap-3 px-3 py-2 rounded-lg transition-all duration-300 ${
+                        isActive
+                          ? 'text-white bg-white/15 border border-white/10'
+                          : 'text-white/50 hover:text-white hover:bg-white/5'
+                      }`}
+                    >
+                      <span className="text-sm">{item.icon}</span>
+                      <span className="font-medium text-xs">{item.name}</span>
+                    </Link>
+                  )
+                })}
+              </div>
+            )}
+          </div>
 
           {/* Configuración (colapsable, solo admin) */}
           {configItems.length > 0 && (
