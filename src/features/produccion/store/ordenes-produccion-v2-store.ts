@@ -40,6 +40,15 @@ export const useOrdenesProduccionV2Store = create<OrdenesProduccionV2State>()(
         return ordenes.reduce((max, o) => Math.max(max, o.nro_orden || 0), 0)
       },
     }),
-    { name: 'ordenes-produccion-v2-storage' }
+    {
+      name: 'ordenes-produccion-v2-storage',
+      migrate: (persistedState: any, version: number) => {
+        if (version === 0) {
+          return persistedState || { ordenes: [] }
+        }
+        return persistedState
+      },
+      version: 0,
+    }
   )
 )

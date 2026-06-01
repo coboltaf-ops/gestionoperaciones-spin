@@ -40,6 +40,16 @@ export const useFormulacionesStore = create<FormulacionesState>()(
         return formulaciones.reduce((max, f) => Math.max(max, f.nro_formula || 0), 0)
       },
     }),
-    { name: 'formulaciones-storage' }
+    {
+      name: 'formulaciones-storage',
+      migrate: (persistedState: any, version: number) => {
+        // Manejar migraciones de estado si es necesario
+        if (version === 0) {
+          return persistedState || { formulaciones: [] }
+        }
+        return persistedState
+      },
+      version: 0,
+    }
   )
 )

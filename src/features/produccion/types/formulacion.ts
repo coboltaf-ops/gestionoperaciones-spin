@@ -21,15 +21,11 @@ export type Formulacion = {
   nro_formula: number
   consecutivo: string // FORM-00001
 
-  // Producto Terminado
+  // Producto Terminado (seleccionado del catálogo)
   producto_terminado_id: string
   producto_terminado_codigo: string
   producto_terminado_nombre: string
   unidad_medida: string
-
-  // Metadatos
-  nombre_formula?: string
-  descripcion?: string
 
   // Renglones (Materia Prima que se necesita)
   renglones: RenglonFormulacion[]
@@ -50,8 +46,6 @@ export type FormulacionFormData = Pick<
   | 'producto_terminado_codigo'
   | 'producto_terminado_nombre'
   | 'unidad_medida'
-  | 'nombre_formula'
-  | 'descripcion'
   | 'renglones'
 >
 
