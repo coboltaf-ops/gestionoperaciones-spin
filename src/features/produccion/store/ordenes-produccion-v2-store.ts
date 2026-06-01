@@ -1,5 +1,5 @@
 import { create } from 'zustand'
-import { persist } from 'zustand/middleware'
+import { persist, createJSONStorage } from 'zustand/middleware'
 import type { OrdenProduccionV2 } from '../types/orden-produccion'
 
 interface OrdenesProduccionV2State {
@@ -42,6 +42,7 @@ export const useOrdenesProduccionV2Store = create<OrdenesProduccionV2State>()(
     }),
     {
       name: 'ordenes-produccion-v2-storage',
+      storage: typeof window !== 'undefined' ? createJSONStorage(() => localStorage) : undefined,
       migrate: (persistedState: any, version: number) => {
         if (version === 0) {
           return persistedState || { ordenes: [] }

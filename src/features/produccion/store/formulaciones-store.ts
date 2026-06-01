@@ -1,5 +1,5 @@
 import { create } from 'zustand'
-import { persist } from 'zustand/middleware'
+import { persist, createJSONStorage } from 'zustand/middleware'
 import type { Formulacion } from '../types/formulacion'
 
 interface FormulacionesState {
@@ -42,8 +42,8 @@ export const useFormulacionesStore = create<FormulacionesState>()(
     }),
     {
       name: 'formulaciones-storage',
+      storage: typeof window !== 'undefined' ? createJSONStorage(() => localStorage) : undefined,
       migrate: (persistedState: any, version: number) => {
-        // Manejar migraciones de estado si es necesario
         if (version === 0) {
           return persistedState || { formulaciones: [] }
         }
