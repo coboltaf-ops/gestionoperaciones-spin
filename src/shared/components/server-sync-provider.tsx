@@ -70,21 +70,28 @@ function useSyncCollection(config: SyncConfig) {
           ? Object.values(local as Record<string, unknown[]>).every(v => !Array.isArray(v) || v.length === 0)
           : !Array.isArray(local) || (local as unknown[]).length === 0
 
-        if (!serverIsEmpty) {
-          // Server tiene datos → bajar al cliente
+        if (localIsEmpty && !serverIsEmpty) {
+          // Solo si client está vacío y server tiene datos → descargar al cliente
           c.setData(serverData)
           prevJson.current = JSON.stringify(serverData)
-        } else if (!localIsEmpty) {
-          // Server vacío pero local tiene datos → subir al server (preserva datos locales)
+          console.log(`[Sync] ✅ ${c.collection}: Downloaded ${Array.isArray(serverData) ? serverData.length : Object.keys(serverData).length} items from server`)
+        } else if (!localIsEmpty && serverIsEmpty) {
+          // Client tiene datos pero server vacío → SUBIR al server (preserva datos locales)
           prevJson.current = localStr
           await fetchWithRetry(`/api/data/${c.collection}`, {
             method: 'PUT',
             headers: { 'Content-Type': 'application/json' },
             body: localStr,
           })
+          console.log(`[Sync] ✅ ${c.collection}: Uploaded ${Array.isArray(local) ? (local as any[]).length : Object.keys(local as any).length} items to server`)
+        } else if (!localIsEmpty && !serverIsEmpty) {
+          // AMBOS tienen datos → PRESERVAR datos locales (más recientes)
+          prevJson.current = localStr
+          console.log(`[Sync] ✅ ${c.collection}: Both have data - keeping local (more recent)`)
         } else {
           // Ambos vacíos
           prevJson.current = localStr
+          console.log(`[Sync] ℹ️  ${c.collection}: Both empty`)
         }
         c.onConnected?.()
       } catch {
