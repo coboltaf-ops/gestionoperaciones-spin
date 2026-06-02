@@ -1,0 +1,465 @@
+- generic [active] [ref=e1]:
+  - generic [ref=e3]:
+    - complementary [ref=e4]:
+      - generic [ref=e5]:
+        - img "Logo Empresa" [ref=e7]
+        - paragraph [ref=e8]: SPIN - SILICATOS PARA LA INDUSTRIA S.A.S.
+      - navigation [ref=e9]:
+        - link "📊 Dashboard" [ref=e10] [cursor=pointer]:
+          - /url: /dashboard
+          - generic [ref=e11]: 📊
+          - generic [ref=e12]: Dashboard
+        - button "👥 Clientes ↗" [ref=e13] [cursor=pointer]:
+          - generic [ref=e14]: 👥
+          - generic [ref=e15]: Clientes
+          - generic [ref=e16]: ↗
+        - link "📦 Productos" [ref=e17] [cursor=pointer]:
+          - /url: /productos
+          - generic [ref=e18]: 📦
+          - generic [ref=e19]: Productos
+        - link "📒 Kardex de Productos" [ref=e20] [cursor=pointer]:
+          - /url: /kardex
+          - generic [ref=e21]: 📒
+          - generic [ref=e22]: Kardex de Productos
+        - link "🏢 Proveedores" [ref=e23] [cursor=pointer]:
+          - /url: /proveedores
+          - generic [ref=e24]: 🏢
+          - generic [ref=e25]: Proveedores
+        - link "🛒 Órdenes de Compra" [ref=e26] [cursor=pointer]:
+          - /url: /ordenes-compra
+          - generic [ref=e27]: 🛒
+          - generic [ref=e28]: Órdenes de Compra
+        - link "📄 Orden de Pedido" [ref=e29] [cursor=pointer]:
+          - /url: /pedidos
+          - generic [ref=e30]: 📄
+          - generic [ref=e31]: Orden de Pedido
+        - link "📋 Recepción de Facturas" [ref=e32] [cursor=pointer]:
+          - /url: /recepcion-facturas
+          - generic [ref=e33]: 📋
+          - generic [ref=e34]: Recepción de Facturas
+        - link "📑 Recepción de Remisiones" [ref=e35] [cursor=pointer]:
+          - /url: /recepcion-remisiones
+          - generic [ref=e36]: 📑
+          - generic [ref=e37]: Recepción de Remisiones
+        - link "💳 Pagos Proveedores" [ref=e38] [cursor=pointer]:
+          - /url: /pagos-proveedores
+          - generic [ref=e39]: 💳
+          - generic [ref=e40]: Pagos Proveedores
+        - link "🏦 Control Bancario" [ref=e41] [cursor=pointer]:
+          - /url: /control-bancario
+          - generic [ref=e42]: 🏦
+          - generic [ref=e43]: Control Bancario
+        - link "🏭 Bodegas" [ref=e44] [cursor=pointer]:
+          - /url: /bodegas
+          - generic [ref=e45]: 🏭
+          - generic [ref=e46]: Bodegas
+        - link "🔄 Transferencias" [ref=e47] [cursor=pointer]:
+          - /url: /transferencias
+          - generic [ref=e48]: 🔄
+          - generic [ref=e49]: Transferencias
+        - link "📤 Salidas de Almacén" [ref=e50] [cursor=pointer]:
+          - /url: /salidas-almacen
+          - generic [ref=e51]: 📤
+          - generic [ref=e52]: Salidas de Almacén
+        - link "⚖️ Ajustes de Inventario" [ref=e53] [cursor=pointer]:
+          - /url: /ajustes-inventario
+          - generic [ref=e54]: ⚖️
+          - generic [ref=e55]: Ajustes de Inventario
+        - link "📋 Toma Inventario Físico" [ref=e56] [cursor=pointer]:
+          - /url: /toma-inventario-fisico
+          - generic [ref=e57]: 📋
+          - generic [ref=e58]: Toma Inventario Físico
+        - link "💰 Centros de Costo" [ref=e59] [cursor=pointer]:
+          - /url: /centros-costo
+          - generic [ref=e60]: 💰
+          - generic [ref=e61]: Centros de Costo
+        - link "📧 Correos Enviados" [ref=e62] [cursor=pointer]:
+          - /url: /correos-enviados
+          - generic [ref=e63]: 📧
+          - generic [ref=e64]: Correos Enviados
+        - link "📝 Tareas" [ref=e65] [cursor=pointer]:
+          - /url: /tareas
+          - generic [ref=e66]: 📝
+          - generic [ref=e67]: Tareas
+        - link "👥 Personal Empresa" [ref=e68] [cursor=pointer]:
+          - /url: /personal-empresa
+          - generic [ref=e69]: 👥
+          - generic [ref=e70]: Personal Empresa
+        - link "⚙️ Tablas de Referencias" [ref=e71] [cursor=pointer]:
+          - /url: /referencias
+          - generic [ref=e72]: ⚙️
+          - generic [ref=e73]: Tablas de Referencias
+        - link "🤖 Agente" [ref=e74] [cursor=pointer]:
+          - /url: /asistente
+          - generic [ref=e75]: 🤖
+          - generic [ref=e76]: Agente
+        - generic [ref=e77]:
+          - button "🏭 Producción ▼" [ref=e78] [cursor=pointer]:
+            - generic [ref=e79]: 🏭
+            - generic [ref=e80]: Producción
+            - generic [ref=e81]: ▼
+          - generic [ref=e82]:
+            - link "⚗️ Formulaciones" [ref=e83] [cursor=pointer]:
+              - /url: /produccion/formulaciones
+              - generic [ref=e84]: ⚗️
+              - generic [ref=e85]: Formulaciones
+            - link "✅ Producto Terminado" [ref=e86] [cursor=pointer]:
+              - /url: /produccion/producto-terminado
+              - generic [ref=e87]: ✅
+              - generic [ref=e88]: Producto Terminado
+            - link "📋 Órdenes de Producción" [ref=e89] [cursor=pointer]:
+              - /url: /produccion/ordenes-produccion
+              - generic [ref=e90]: 📋
+              - generic [ref=e91]: Órdenes de Producción
+            - link "⚙️ Ejecución Órdenes de Producción" [ref=e92] [cursor=pointer]:
+              - /url: /produccion/ejecucion-ordenes
+              - generic [ref=e93]: ⚙️
+              - generic [ref=e94]: Ejecución Órdenes de Producción
+        - generic [ref=e95]:
+          - button "⚙️ Configuración ▼" [ref=e96] [cursor=pointer]:
+            - generic [ref=e97]: ⚙️
+            - generic [ref=e98]: Configuración
+            - generic [ref=e99]: ▼
+          - generic [ref=e100]:
+            - link "🏛️ Datos Empresa" [ref=e101] [cursor=pointer]:
+              - /url: /datos-empresa
+              - generic [ref=e102]: 🏛️
+              - generic [ref=e103]: Datos Empresa
+            - link "👤 Gestión de Usuarios" [ref=e104] [cursor=pointer]:
+              - /url: /usuarios
+              - generic [ref=e105]: 👤
+              - generic [ref=e106]: Gestión de Usuarios
+            - link "🗂️ Módulos Sistema" [ref=e107] [cursor=pointer]:
+              - /url: /modulos-sistema
+              - generic [ref=e108]: 🗂️
+              - generic [ref=e109]: Módulos Sistema
+    - main [ref=e110]:
+      - generic [ref=e111]:
+        - button "☰" [ref=e113] [cursor=pointer]
+        - generic [ref=e114]:
+          - generic "Idioma" [ref=e115]:
+            - button "🇪🇸 ES" [pressed] [ref=e116] [cursor=pointer]
+            - button "🇬🇧 EN" [ref=e117] [cursor=pointer]
+          - generic [ref=e118]:
+            - paragraph [ref=e119]: Juan Andres Arango Velasquez
+            - paragraph [ref=e120]: Admin
+          - generic [ref=e121]: JA
+          - button "Salir" [ref=e122] [cursor=pointer]
+      - generic [ref=e123]:
+        - img "Logo" [ref=e125]
+        - generic [ref=e126]:
+          - paragraph [ref=e127]: Empresa
+          - paragraph [ref=e128]: SPIN - SILICATOS PARA LA INDUSTRIA S.A.S.
+        - generic [ref=e129]:
+          - paragraph [ref=e130]: NIT
+          - paragraph [ref=e131]: 900.123.456-7
+      - generic [ref=e133]:
+        - generic [ref=e134]:
+          - generic [ref=e135]:
+            - heading "Productos" [level=1] [ref=e136]
+            - paragraph [ref=e137]:
+              - text: Catálogo y control de inventario
+              - generic [ref=e138]:
+                - text: Todos los Productos
+                - button "✕" [ref=e139] [cursor=pointer]
+          - generic [ref=e140]:
+            - button "📥 Subir Productos (Excel)" [ref=e141] [cursor=pointer]
+            - button "🗑 Eliminar Todo" [ref=e142] [cursor=pointer]
+            - button "Resetear Existencias" [ref=e143] [cursor=pointer]
+            - button "Resetear Ult. Costo" [ref=e144] [cursor=pointer]
+            - button "🔲 Etiquetas" [ref=e145] [cursor=pointer]
+            - button "+ Nuevo Producto" [ref=e146] [cursor=pointer]
+        - generic [ref=e147]:
+          - button "📋 Registros" [ref=e148] [cursor=pointer]
+          - button "📊 Reportes" [ref=e149] [cursor=pointer]
+          - button "📑 Reportes Específicos" [ref=e150] [cursor=pointer]
+        - generic [ref=e151]:
+          - generic [ref=e152]:
+            - paragraph [ref=e153]: Total Productos
+            - paragraph [ref=e154]: "13"
+          - generic [ref=e155]:
+            - paragraph [ref=e156]: Activos
+            - paragraph [ref=e157]: "13"
+          - generic [ref=e158]:
+            - paragraph [ref=e159]: Stock Bajo
+            - paragraph [ref=e160]: "3"
+          - generic [ref=e161]:
+            - paragraph [ref=e162]: Existencia Total
+            - paragraph [ref=e163]: "879"
+        - generic [ref=e164]:
+          - paragraph [ref=e165]: "Filtrar por Tipo de Inventario:"
+          - generic [ref=e166]:
+            - button "📦 Todos (13)" [ref=e167] [cursor=pointer]
+            - button "Materia Prima (0)" [ref=e168] [cursor=pointer]
+            - button "Materiales y Suministros (12)" [ref=e169] [cursor=pointer]
+            - button "Producto Terminado (1)" [ref=e170] [cursor=pointer]
+            - button "Servicios (0)" [ref=e171] [cursor=pointer]
+        - generic [ref=e172]:
+          - generic [ref=e174]:
+            - textbox "Buscar por código o descripción..." [ref=e175]
+            - button "Buscar por voz" [ref=e176] [cursor=pointer]:
+              - img [ref=e177]
+          - table [ref=e180]:
+            - rowgroup [ref=e181]:
+              - row "Código Descripción Tipo Inv. Categoría Grupo Sub-Grupo Unidad Costo Prom. Exist. Valor Situación Acciones" [ref=e182]:
+                - columnheader "Código" [ref=e183]
+                - columnheader "Descripción" [ref=e184]
+                - columnheader "Tipo Inv." [ref=e185]
+                - columnheader "Categoría" [ref=e186]
+                - columnheader "Grupo" [ref=e187]
+                - columnheader "Sub-Grupo" [ref=e188]
+                - columnheader "Unidad" [ref=e189]
+                - columnheader "Costo Prom." [ref=e190]
+                - columnheader "Exist." [ref=e191]
+                - columnheader "Valor" [ref=e192]
+                - columnheader "Situación" [ref=e193]
+                - columnheader "Acciones" [ref=e194]
+            - rowgroup [ref=e195]:
+              - row "PROD-00001 Gafas de Seguridad Materiales y Suministros Seguridad EPP Protección Unidad Pesos 22,766.67 72 Pesos 2,095,200.00 Activo Ver 📒 Kardex Edit Elim" [ref=e196]:
+                - cell "PROD-00001" [ref=e197]
+                - cell "Gafas de Seguridad" [ref=e198]
+                - cell "Materiales y Suministros" [ref=e199]
+                - cell "Seguridad" [ref=e200]
+                - cell "EPP" [ref=e201]
+                - cell "Protección" [ref=e202]
+                - cell "Unidad" [ref=e203]
+                - cell "Pesos 22,766.67" [ref=e204]
+                - cell "72" [ref=e205]
+                - cell "Pesos 2,095,200.00" [ref=e206]
+                - cell "Activo" [ref=e207]
+                - cell "Ver 📒 Kardex Edit Elim" [ref=e208]:
+                  - generic [ref=e209]:
+                    - button "Ver" [ref=e210] [cursor=pointer]
+                    - link "📒 Kardex" [ref=e211] [cursor=pointer]:
+                      - /url: /kardex?producto=f11b1cd5-4e24-4db5-9f91-e44d990df032
+                    - button "Edit" [ref=e212] [cursor=pointer]
+                    - button "Elim" [ref=e213] [cursor=pointer]
+              - row "PROD-00002 Botas Seguridad Materiales y Suministros Seguridad EPP Calzado Par Pesos 92,906.98 172 Pesos 16,340,000.00 Activo Ver 📒 Kardex Edit Elim" [ref=e214]:
+                - cell "PROD-00002" [ref=e215]
+                - cell "Botas Seguridad" [ref=e216]
+                - cell "Materiales y Suministros" [ref=e217]
+                - cell "Seguridad" [ref=e218]
+                - cell "EPP" [ref=e219]
+                - cell "Calzado" [ref=e220]
+                - cell "Par" [ref=e221]
+                - cell "Pesos 92,906.98" [ref=e222]
+                - cell "172" [ref=e223]
+                - cell "Pesos 16,340,000.00" [ref=e224]
+                - cell "Activo" [ref=e225]
+                - cell "Ver 📒 Kardex Edit Elim" [ref=e226]:
+                  - generic [ref=e227]:
+                    - button "Ver" [ref=e228] [cursor=pointer]
+                    - link "📒 Kardex" [ref=e229] [cursor=pointer]:
+                      - /url: /kardex?producto=9416e812-8ad8-4067-bd81-7f21cfbce8a8
+                    - button "Edit" [ref=e230] [cursor=pointer]
+                    - button "Elim" [ref=e231] [cursor=pointer]
+              - row "PROD-00003 Guantes Trabajo Materiales y Suministros Seguridad EPP Guantes Par Pesos 23,000.00 60 Pesos 1,380,000.00 Activo Ver 📒 Kardex Edit Elim" [ref=e232]:
+                - cell "PROD-00003" [ref=e233]
+                - cell "Guantes Trabajo" [ref=e234]
+                - cell "Materiales y Suministros" [ref=e235]
+                - cell "Seguridad" [ref=e236]
+                - cell "EPP" [ref=e237]
+                - cell "Guantes" [ref=e238]
+                - cell "Par" [ref=e239]
+                - cell "Pesos 23,000.00" [ref=e240]
+                - cell "60" [ref=e241]
+                - cell "Pesos 1,380,000.00" [ref=e242]
+                - cell "Activo" [ref=e243]
+                - cell "Ver 📒 Kardex Edit Elim" [ref=e244]:
+                  - generic [ref=e245]:
+                    - button "Ver" [ref=e246] [cursor=pointer]
+                    - link "📒 Kardex" [ref=e247] [cursor=pointer]:
+                      - /url: /kardex?producto=8988f636-d2da-4c31-9016-a7d317ad4f58
+                    - button "Edit" [ref=e248] [cursor=pointer]
+                    - button "Elim" [ref=e249] [cursor=pointer]
+              - row "PROD-00004 Casco Seguridad Materiales y Suministros Seguridad EPP Cascos Unidad Pesos 27,800.00 60 Pesos 1,668,000.00 Activo Ver 📒 Kardex Edit Elim" [ref=e250]:
+                - cell "PROD-00004" [ref=e251]
+                - cell "Casco Seguridad" [ref=e252]
+                - cell "Materiales y Suministros" [ref=e253]
+                - cell "Seguridad" [ref=e254]
+                - cell "EPP" [ref=e255]
+                - cell "Cascos" [ref=e256]
+                - cell "Unidad" [ref=e257]
+                - cell "Pesos 27,800.00" [ref=e258]
+                - cell "60" [ref=e259]
+                - cell "Pesos 1,668,000.00" [ref=e260]
+                - cell "Activo" [ref=e261]
+                - cell "Ver 📒 Kardex Edit Elim" [ref=e262]:
+                  - generic [ref=e263]:
+                    - button "Ver" [ref=e264] [cursor=pointer]
+                    - link "📒 Kardex" [ref=e265] [cursor=pointer]:
+                      - /url: /kardex?producto=04cdb845-47ed-41e8-a22f-5b29ae6fbd2e
+                    - button "Edit" [ref=e266] [cursor=pointer]
+                    - button "Elim" [ref=e267] [cursor=pointer]
+              - row "PROD-00005 Lavamanos Ceramica Materiales y Suministros Baños Sanitarios Lavamanos Unidad Pesos 98,000.00 60 Pesos 5,880,000.00 Activo Ver 📒 Kardex Edit Elim" [ref=e268]:
+                - cell "PROD-00005" [ref=e269]
+                - cell "Lavamanos Ceramica" [ref=e270]
+                - cell "Materiales y Suministros" [ref=e271]
+                - cell "Baños" [ref=e272]
+                - cell "Sanitarios" [ref=e273]
+                - cell "Lavamanos" [ref=e274]
+                - cell "Unidad" [ref=e275]
+                - cell "Pesos 98,000.00" [ref=e276]
+                - cell "60" [ref=e277]
+                - cell "Pesos 5,880,000.00" [ref=e278]
+                - cell "Activo" [ref=e279]
+                - cell "Ver 📒 Kardex Edit Elim" [ref=e280]:
+                  - generic [ref=e281]:
+                    - button "Ver" [ref=e282] [cursor=pointer]
+                    - link "📒 Kardex" [ref=e283] [cursor=pointer]:
+                      - /url: /kardex?producto=90ae98ad-fa18-4f8d-864b-6dec2c45285a
+                    - button "Edit" [ref=e284] [cursor=pointer]
+                    - button "Elim" [ref=e285] [cursor=pointer]
+              - row "PROD-00006 Tanque Sanitario Materiales y Suministros Baños Sanitarios Inodoro Unidad Pesos 86,000.00 60 Pesos 5,160,000.00 Activo Ver 📒 Kardex Edit Elim" [ref=e286]:
+                - cell "PROD-00006" [ref=e287]
+                - cell "Tanque Sanitario" [ref=e288]
+                - cell "Materiales y Suministros" [ref=e289]
+                - cell "Baños" [ref=e290]
+                - cell "Sanitarios" [ref=e291]
+                - cell "Inodoro" [ref=e292]
+                - cell "Unidad" [ref=e293]
+                - cell "Pesos 86,000.00" [ref=e294]
+                - cell "60" [ref=e295]
+                - cell "Pesos 5,160,000.00" [ref=e296]
+                - cell "Activo" [ref=e297]
+                - cell "Ver 📒 Kardex Edit Elim" [ref=e298]:
+                  - generic [ref=e299]:
+                    - button "Ver" [ref=e300] [cursor=pointer]
+                    - link "📒 Kardex" [ref=e301] [cursor=pointer]:
+                      - /url: /kardex?producto=92efcec3-8861-4963-9793-a1d8f7f958c4
+                    - button "Edit" [ref=e302] [cursor=pointer]
+                    - button "Elim" [ref=e303] [cursor=pointer]
+              - row "PROD-00007 Cemento Portland 50 Kgs Materiales y Suministros Materiales Estructura Cemento Saco Pesos 18,975.00 80 Pesos 1,584,000.00 Activo Ver 📒 Kardex Edit Elim" [ref=e304]:
+                - cell "PROD-00007" [ref=e305]
+                - cell "Cemento Portland 50 Kgs" [ref=e306]
+                - cell "Materiales y Suministros" [ref=e307]
+                - cell "Materiales" [ref=e308]
+                - cell "Estructura" [ref=e309]
+                - cell "Cemento" [ref=e310]
+                - cell "Saco" [ref=e311]
+                - cell "Pesos 18,975.00" [ref=e312]
+                - cell "80" [ref=e313]
+                - cell "Pesos 1,584,000.00" [ref=e314]
+                - cell "Activo" [ref=e315]
+                - cell "Ver 📒 Kardex Edit Elim" [ref=e316]:
+                  - generic [ref=e317]:
+                    - button "Ver" [ref=e318] [cursor=pointer]
+                    - link "📒 Kardex" [ref=e319] [cursor=pointer]:
+                      - /url: /kardex?producto=4c282a2f-08f7-45be-9dee-30ee64758f9c
+                    - button "Edit" [ref=e320] [cursor=pointer]
+                    - button "Elim" [ref=e321] [cursor=pointer]
+              - row "PROD-00008 Varilla Acero 1/2 Materiales y Suministros Materiales Acero Estructural Unidad Pesos 17,000.00 60 Pesos 1,020,000.00 Activo Ver 📒 Kardex Edit Elim" [ref=e322]:
+                - cell "PROD-00008" [ref=e323]
+                - cell "Varilla Acero 1/2" [ref=e324]
+                - cell "Materiales y Suministros" [ref=e325]
+                - cell "Materiales" [ref=e326]
+                - cell "Acero" [ref=e327]
+                - cell "Estructural" [ref=e328]
+                - cell "Unidad" [ref=e329]
+                - cell "Pesos 17,000.00" [ref=e330]
+                - cell "60" [ref=e331]
+                - cell "Pesos 1,020,000.00" [ref=e332]
+                - cell "Activo" [ref=e333]
+                - cell "Ver 📒 Kardex Edit Elim" [ref=e334]:
+                  - generic [ref=e335]:
+                    - button "Ver" [ref=e336] [cursor=pointer]
+                    - link "📒 Kardex" [ref=e337] [cursor=pointer]:
+                      - /url: /kardex?producto=5dc81d33-ef91-4bec-8149-2316bdae142a
+                    - button "Edit" [ref=e338] [cursor=pointer]
+                    - button "Elim" [ref=e339] [cursor=pointer]
+              - row "PROD-00009 Resma de papel 50 hojas blancas Materiales y Suministros Oficina Papeleria y Utiles Papeleria Unidad Pesos 10,553.85 65 Pesos 728,000.00 Activo Ver 📒 Kardex Edit Elim" [ref=e340]:
+                - cell "PROD-00009" [ref=e341]
+                - cell "Resma de papel 50 hojas blancas" [ref=e342]
+                - cell "Materiales y Suministros" [ref=e343]
+                - cell "Oficina" [ref=e344]
+                - cell "Papeleria y Utiles" [ref=e345]
+                - cell "Papeleria" [ref=e346]
+                - cell "Unidad" [ref=e347]
+                - cell "Pesos 10,553.85" [ref=e348]
+                - cell "65" [ref=e349]
+                - cell "Pesos 728,000.00" [ref=e350]
+                - cell "Activo" [ref=e351]
+                - cell "Ver 📒 Kardex Edit Elim" [ref=e352]:
+                  - generic [ref=e353]:
+                    - button "Ver" [ref=e354] [cursor=pointer]
+                    - link "📒 Kardex" [ref=e355] [cursor=pointer]:
+                      - /url: /kardex?producto=a6f5f0b1-cfa6-4b01-9e9e-5cd674c0c1da
+                    - button "Edit" [ref=e356] [cursor=pointer]
+                    - button "Elim" [ref=e357] [cursor=pointer]
+              - row "PROD-00010 Boligrafo Azul Materiales y Suministros Oficina Papeleria y Utiles Lapices y Bolígrafos Unidad Pesos 1,950.00 70 Pesos 136,500.00 Activo Ver 📒 Kardex Edit Elim" [ref=e358]:
+                - cell "PROD-00010" [ref=e359]
+                - cell "Boligrafo Azul" [ref=e360]
+                - cell "Materiales y Suministros" [ref=e361]
+                - cell "Oficina" [ref=e362]
+                - cell "Papeleria y Utiles" [ref=e363]
+                - cell "Lapices y Bolígrafos" [ref=e364]
+                - cell "Unidad" [ref=e365]
+                - cell "Pesos 1,950.00" [ref=e366]
+                - cell "70" [ref=e367]
+                - cell "Pesos 136,500.00" [ref=e368]
+                - cell "Activo" [ref=e369]
+                - cell "Ver 📒 Kardex Edit Elim" [ref=e370]:
+                  - generic [ref=e371]:
+                    - button "Ver" [ref=e372] [cursor=pointer]
+                    - link "📒 Kardex" [ref=e373] [cursor=pointer]:
+                      - /url: /kardex?producto=f4ae6f7e-ef4e-42fe-9991-b4d5afe7394b
+                    - button "Edit" [ref=e374] [cursor=pointer]
+                    - button "Elim" [ref=e375] [cursor=pointer]
+              - row "PROD-00011 Bloque Conceto 15 Cms Materiales y Suministros Materiales Mampostería Bloques Unidad Pesos 8,600.00 60 Pesos 516,000.00 Activo Ver 📒 Kardex Edit Elim" [ref=e376]:
+                - cell "PROD-00011" [ref=e377]
+                - cell "Bloque Conceto 15 Cms" [ref=e378]
+                - cell "Materiales y Suministros" [ref=e379]
+                - cell "Materiales" [ref=e380]
+                - cell "Mampostería" [ref=e381]
+                - cell "Bloques" [ref=e382]
+                - cell "Unidad" [ref=e383]
+                - cell "Pesos 8,600.00" [ref=e384]
+                - cell "60" [ref=e385]
+                - cell "Pesos 516,000.00" [ref=e386]
+                - cell "Activo" [ref=e387]
+                - cell "Ver 📒 Kardex Edit Elim" [ref=e388]:
+                  - generic [ref=e389]:
+                    - button "Ver" [ref=e390] [cursor=pointer]
+                    - link "📒 Kardex" [ref=e391] [cursor=pointer]:
+                      - /url: /kardex?producto=52f98573-21f8-44a5-871a-61137e58c2da
+                    - button "Edit" [ref=e392] [cursor=pointer]
+                    - button "Elim" [ref=e393] [cursor=pointer]
+              - row "PROD-00012 Ladrillo Rojo N4 Rayado 9 x 19 x 38 cls Materiales y Suministros Materiales Mampostería Ladrillos Unidad Pesos 1,700.00 60 Pesos 102,000.00 Activo Ver 📒 Kardex Edit Elim" [ref=e394]:
+                - cell "PROD-00012" [ref=e395]
+                - cell "Ladrillo Rojo N4 Rayado 9 x 19 x 38 cls" [ref=e396]
+                - cell "Materiales y Suministros" [ref=e397]
+                - cell "Materiales" [ref=e398]
+                - cell "Mampostería" [ref=e399]
+                - cell "Ladrillos" [ref=e400]
+                - cell "Unidad" [ref=e401]
+                - cell "Pesos 1,700.00" [ref=e402]
+                - cell "60" [ref=e403]
+                - cell "Pesos 102,000.00" [ref=e404]
+                - cell "Activo" [ref=e405]
+                - cell "Ver 📒 Kardex Edit Elim" [ref=e406]:
+                  - generic [ref=e407]:
+                    - button "Ver" [ref=e408] [cursor=pointer]
+                    - link "📒 Kardex" [ref=e409] [cursor=pointer]:
+                      - /url: /kardex?producto=fbce059a-0577-430c-953a-7d3cf68ea90e
+                    - button "Edit" [ref=e410] [cursor=pointer]
+                    - button "Elim" [ref=e411] [cursor=pointer]
+              - row "PTER-00001 ALGUASIL E3 Producto Terminado Kilogramo Pesos 0.00 0 Pesos 0.00 Activo Ver 📒 Kardex Edit Elim" [ref=e412]:
+                - cell "PTER-00001" [ref=e413]
+                - cell "ALGUASIL E3" [ref=e414]
+                - cell "Producto Terminado" [ref=e415]
+                - cell [ref=e416]
+                - cell [ref=e417]
+                - cell [ref=e418]
+                - cell "Kilogramo" [ref=e419]
+                - cell "Pesos 0.00" [ref=e420]
+                - cell "0" [ref=e421]
+                - cell "Pesos 0.00" [ref=e422]
+                - cell "Activo" [ref=e423]
+                - cell "Ver 📒 Kardex Edit Elim" [ref=e424]:
+                  - generic [ref=e425]:
+                    - button "Ver" [ref=e426] [cursor=pointer]
+                    - link "📒 Kardex" [ref=e427] [cursor=pointer]:
+                      - /url: /kardex?producto=02fd82ef-efea-4238-9ac5-36cc1c549c07
+                    - button "Edit" [ref=e428] [cursor=pointer]
+                    - button "Elim" [ref=e429] [cursor=pointer]
+  - alert [ref=e430]

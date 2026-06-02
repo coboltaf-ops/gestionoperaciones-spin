@@ -228,18 +228,24 @@ export const useReferenceStore = create<ReferenceState>()(
     }),
     {
       name: 'referencias-storage',
-      // Deep-merge: garantiza que claves nuevas del initialData siempre estén presentes
-      // aunque el localStorage tenga una versión anterior del store.
+      // Deep-merge: localStorage tiene prioridad sobre initialData para no perder datos nuevos
       merge: (persisted, current) => {
         const p = persisted as Partial<ReferenceState>
-        const mergedData = {
-          ...current.data,
-          ...(p.data ?? {}),
+        const persistedData = (p.data ?? {}) as Record<ReferenceTableId, BaseReference[]>
+
+        // Merge: localStorage primero (datos del usuario), luego llenar vacíos con initialData
+        const mergedData: Record<ReferenceTableId, BaseReference[]> = {} as Record<ReferenceTableId, BaseReference[]>
+        for (const key in current.data) {
+          const tableKey = key as ReferenceTableId
+          const persisted = persistedData[tableKey]
+          mergedData[tableKey] = persisted && persisted.length > 0 ? persisted : current.data[tableKey]
         }
+
         // Ordenar TODAS las tablas al rehidratar
         const sortedData = Object.fromEntries(
           Object.entries(mergedData).map(([key, records]) => [key, sortRecords(records as BaseReference[])])
         ) as Record<ReferenceTableId, BaseReference[]>
+
         return {
           ...current,
           ...p,

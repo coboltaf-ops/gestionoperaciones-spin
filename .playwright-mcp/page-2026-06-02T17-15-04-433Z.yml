@@ -1,0 +1,300 @@
+- generic [active] [ref=e1]:
+  - generic [ref=e3]:
+    - complementary [ref=e4]:
+      - generic [ref=e5]:
+        - img "Logo Empresa" [ref=e7]
+        - paragraph [ref=e8]: SPIN - SILICATOS PARA LA INDUSTRIA S.A.S.
+      - navigation [ref=e9]:
+        - link "📊 Dashboard" [ref=e10] [cursor=pointer]:
+          - /url: /dashboard
+          - generic [ref=e11]: 📊
+          - generic [ref=e12]: Dashboard
+        - button "👥 Clientes ↗" [ref=e13] [cursor=pointer]:
+          - generic [ref=e14]: 👥
+          - generic [ref=e15]: Clientes
+          - generic [ref=e16]: ↗
+        - link "📦 Productos" [ref=e17] [cursor=pointer]:
+          - /url: /productos
+          - generic [ref=e18]: 📦
+          - generic [ref=e19]: Productos
+        - link "📒 Kardex de Productos" [ref=e20] [cursor=pointer]:
+          - /url: /kardex
+          - generic [ref=e21]: 📒
+          - generic [ref=e22]: Kardex de Productos
+        - link "🏢 Proveedores" [ref=e23] [cursor=pointer]:
+          - /url: /proveedores
+          - generic [ref=e24]: 🏢
+          - generic [ref=e25]: Proveedores
+        - link "🛒 Órdenes de Compra" [ref=e26] [cursor=pointer]:
+          - /url: /ordenes-compra
+          - generic [ref=e27]: 🛒
+          - generic [ref=e28]: Órdenes de Compra
+        - link "📄 Orden de Pedido" [ref=e29] [cursor=pointer]:
+          - /url: /pedidos
+          - generic [ref=e30]: 📄
+          - generic [ref=e31]: Orden de Pedido
+        - link "📋 Recepción de Facturas" [ref=e32] [cursor=pointer]:
+          - /url: /recepcion-facturas
+          - generic [ref=e33]: 📋
+          - generic [ref=e34]: Recepción de Facturas
+        - link "📑 Recepción de Remisiones" [ref=e35] [cursor=pointer]:
+          - /url: /recepcion-remisiones
+          - generic [ref=e36]: 📑
+          - generic [ref=e37]: Recepción de Remisiones
+        - link "💳 Pagos Proveedores" [ref=e38] [cursor=pointer]:
+          - /url: /pagos-proveedores
+          - generic [ref=e39]: 💳
+          - generic [ref=e40]: Pagos Proveedores
+        - link "🏦 Control Bancario" [ref=e41] [cursor=pointer]:
+          - /url: /control-bancario
+          - generic [ref=e42]: 🏦
+          - generic [ref=e43]: Control Bancario
+        - link "🏭 Bodegas" [ref=e44] [cursor=pointer]:
+          - /url: /bodegas
+          - generic [ref=e45]: 🏭
+          - generic [ref=e46]: Bodegas
+        - link "🔄 Transferencias" [ref=e47] [cursor=pointer]:
+          - /url: /transferencias
+          - generic [ref=e48]: 🔄
+          - generic [ref=e49]: Transferencias
+        - link "📤 Salidas de Almacén" [ref=e50] [cursor=pointer]:
+          - /url: /salidas-almacen
+          - generic [ref=e51]: 📤
+          - generic [ref=e52]: Salidas de Almacén
+        - link "⚖️ Ajustes de Inventario" [ref=e53] [cursor=pointer]:
+          - /url: /ajustes-inventario
+          - generic [ref=e54]: ⚖️
+          - generic [ref=e55]: Ajustes de Inventario
+        - link "📋 Toma Inventario Físico" [ref=e56] [cursor=pointer]:
+          - /url: /toma-inventario-fisico
+          - generic [ref=e57]: 📋
+          - generic [ref=e58]: Toma Inventario Físico
+        - link "💰 Centros de Costo" [ref=e59] [cursor=pointer]:
+          - /url: /centros-costo
+          - generic [ref=e60]: 💰
+          - generic [ref=e61]: Centros de Costo
+        - link "📧 Correos Enviados" [ref=e62] [cursor=pointer]:
+          - /url: /correos-enviados
+          - generic [ref=e63]: 📧
+          - generic [ref=e64]: Correos Enviados
+        - link "📝 Tareas" [ref=e65] [cursor=pointer]:
+          - /url: /tareas
+          - generic [ref=e66]: 📝
+          - generic [ref=e67]: Tareas
+        - link "👥 Personal Empresa" [ref=e68] [cursor=pointer]:
+          - /url: /personal-empresa
+          - generic [ref=e69]: 👥
+          - generic [ref=e70]: Personal Empresa
+        - link "⚙️ Tablas de Referencias" [ref=e71] [cursor=pointer]:
+          - /url: /referencias
+          - generic [ref=e72]: ⚙️
+          - generic [ref=e73]: Tablas de Referencias
+        - link "🤖 Agente" [ref=e74] [cursor=pointer]:
+          - /url: /asistente
+          - generic [ref=e75]: 🤖
+          - generic [ref=e76]: Agente
+        - generic [ref=e77]:
+          - button "🏭 Producción ▼" [ref=e78] [cursor=pointer]:
+            - generic [ref=e79]: 🏭
+            - generic [ref=e80]: Producción
+            - generic [ref=e81]: ▼
+          - generic [ref=e82]:
+            - link "⚗️ Formulaciones" [ref=e83] [cursor=pointer]:
+              - /url: /produccion/formulaciones
+              - generic [ref=e84]: ⚗️
+              - generic [ref=e85]: Formulaciones
+            - link "✅ Producto Terminado" [ref=e86] [cursor=pointer]:
+              - /url: /produccion/producto-terminado
+              - generic [ref=e87]: ✅
+              - generic [ref=e88]: Producto Terminado
+            - link "📋 Órdenes de Producción" [ref=e89] [cursor=pointer]:
+              - /url: /produccion/ordenes-produccion
+              - generic [ref=e90]: 📋
+              - generic [ref=e91]: Órdenes de Producción
+            - link "⚙️ Ejecución Órdenes de Producción" [ref=e92] [cursor=pointer]:
+              - /url: /produccion/ejecucion-ordenes
+              - generic [ref=e93]: ⚙️
+              - generic [ref=e94]: Ejecución Órdenes de Producción
+        - generic [ref=e95]:
+          - button "⚙️ Configuración ▼" [ref=e96] [cursor=pointer]:
+            - generic [ref=e97]: ⚙️
+            - generic [ref=e98]: Configuración
+            - generic [ref=e99]: ▼
+          - generic [ref=e100]:
+            - link "🏛️ Datos Empresa" [ref=e101] [cursor=pointer]:
+              - /url: /datos-empresa
+              - generic [ref=e102]: 🏛️
+              - generic [ref=e103]: Datos Empresa
+            - link "👤 Gestión de Usuarios" [ref=e104] [cursor=pointer]:
+              - /url: /usuarios
+              - generic [ref=e105]: 👤
+              - generic [ref=e106]: Gestión de Usuarios
+            - link "🗂️ Módulos Sistema" [ref=e107] [cursor=pointer]:
+              - /url: /modulos-sistema
+              - generic [ref=e108]: 🗂️
+              - generic [ref=e109]: Módulos Sistema
+    - main [ref=e110]:
+      - generic [ref=e111]:
+        - button "☰" [ref=e113] [cursor=pointer]
+        - generic [ref=e114]:
+          - generic "Idioma" [ref=e115]:
+            - button "🇪🇸 ES" [pressed] [ref=e116] [cursor=pointer]
+            - button "🇬🇧 EN" [ref=e117] [cursor=pointer]
+          - generic [ref=e118]:
+            - paragraph [ref=e119]: Juan Andres Arango Velasquez
+            - paragraph [ref=e120]: Admin
+          - generic [ref=e121]: JA
+          - button "Salir" [ref=e122] [cursor=pointer]
+      - generic [ref=e123]:
+        - img "Logo" [ref=e125]
+        - generic [ref=e126]:
+          - paragraph [ref=e127]: Empresa
+          - paragraph [ref=e128]: SPIN - SILICATOS PARA LA INDUSTRIA S.A.S.
+        - generic [ref=e129]:
+          - paragraph [ref=e130]: NIT
+          - paragraph [ref=e131]: 900.123.456-7
+      - generic [ref=e133]:
+        - heading "Gestión de Tablas de Referencias" [level=1] [ref=e134]
+        - generic [ref=e135]:
+          - generic [ref=e136]:
+            - button "Categorías" [ref=e137] [cursor=pointer]
+            - button "Grupos" [ref=e138] [cursor=pointer]
+            - button "Sub-Grupos" [ref=e139] [cursor=pointer]
+            - button "Unidades de Medida" [ref=e140] [cursor=pointer]
+            - button "Tipos de Inventario" [ref=e141] [cursor=pointer]
+            - button "Tipos de Moneda" [ref=e142] [cursor=pointer]
+            - button "Actividad Proveedor" [ref=e143] [cursor=pointer]
+            - button "Condiciones de Pago" [ref=e144] [cursor=pointer]
+            - button "Situación Producto" [ref=e145] [cursor=pointer]
+            - button "Situación Orden Compra" [ref=e146] [cursor=pointer]
+            - button "Situación Bodega" [ref=e147] [cursor=pointer]
+            - button "Situación Proveedor" [ref=e148] [cursor=pointer]
+            - button "Tipo de Identificación" [ref=e149] [cursor=pointer]
+            - button "Tipos de Ajuste" [ref=e150] [cursor=pointer]
+            - button "Referencia Proveedor" [ref=e151] [cursor=pointer]
+            - button "Impuestos (%)" [ref=e152] [cursor=pointer]
+            - button "Ciudades" [ref=e153] [cursor=pointer]
+            - button "Países" [ref=e154] [cursor=pointer]
+            - button "Roles" [ref=e155] [cursor=pointer]
+            - button "Estado Recepción Facturas" [ref=e156] [cursor=pointer]
+            - button "Situación Tarea" [ref=e157] [cursor=pointer]
+          - generic [ref=e159]:
+            - generic [ref=e160]:
+              - heading "Categorías" [level=2] [ref=e161]
+              - button "+ Nuevo Registro" [ref=e162] [cursor=pointer]
+            - generic [ref=e163]:
+              - button "📋 Registros" [ref=e164] [cursor=pointer]
+              - button "📑 Reportes Específicos" [ref=e165] [cursor=pointer]
+            - table [ref=e167]:
+              - rowgroup [ref=e168]:
+                - row "Descripción Estado Acciones" [ref=e169]:
+                  - columnheader "Descripción" [ref=e170]
+                  - columnheader "Estado" [ref=e171]
+                  - columnheader "Acciones" [ref=e172]
+              - rowgroup [ref=e173]:
+                - row "Acabados Activo Editar Eliminar" [ref=e174]:
+                  - cell "Acabados" [ref=e175]
+                  - cell "Activo" [ref=e176]
+                  - cell "Editar Eliminar" [ref=e177]:
+                    - generic [ref=e178]:
+                      - button "Editar" [ref=e179] [cursor=pointer]
+                      - button "Eliminar" [ref=e180] [cursor=pointer]
+                - row "Baños Activo Editar Eliminar" [ref=e181]:
+                  - cell "Baños" [ref=e182]
+                  - cell "Activo" [ref=e183]
+                  - cell "Editar Eliminar" [ref=e184]:
+                    - generic [ref=e185]:
+                      - button "Editar" [ref=e186] [cursor=pointer]
+                      - button "Eliminar" [ref=e187] [cursor=pointer]
+                - row "Carpintería Activo Editar Eliminar" [ref=e188]:
+                  - cell "Carpintería" [ref=e189]
+                  - cell "Activo" [ref=e190]
+                  - cell "Editar Eliminar" [ref=e191]:
+                    - generic [ref=e192]:
+                      - button "Editar" [ref=e193] [cursor=pointer]
+                      - button "Eliminar" [ref=e194] [cursor=pointer]
+                - row "Electricidad Activo Editar Eliminar" [ref=e195]:
+                  - cell "Electricidad" [ref=e196]
+                  - cell "Activo" [ref=e197]
+                  - cell "Editar Eliminar" [ref=e198]:
+                    - generic [ref=e199]:
+                      - button "Editar" [ref=e200] [cursor=pointer]
+                      - button "Eliminar" [ref=e201] [cursor=pointer]
+                - row "Equipos Activo Editar Eliminar" [ref=e202]:
+                  - cell "Equipos" [ref=e203]
+                  - cell "Activo" [ref=e204]
+                  - cell "Editar Eliminar" [ref=e205]:
+                    - generic [ref=e206]:
+                      - button "Editar" [ref=e207] [cursor=pointer]
+                      - button "Eliminar" [ref=e208] [cursor=pointer]
+                - row "Exterior Activo Editar Eliminar" [ref=e209]:
+                  - cell "Exterior" [ref=e210]
+                  - cell "Activo" [ref=e211]
+                  - cell "Editar Eliminar" [ref=e212]:
+                    - generic [ref=e213]:
+                      - button "Editar" [ref=e214] [cursor=pointer]
+                      - button "Eliminar" [ref=e215] [cursor=pointer]
+                - row "Ferreteria Activo Editar Eliminar" [ref=e216]:
+                  - cell "Ferreteria" [ref=e217]
+                  - cell "Activo" [ref=e218]
+                  - cell "Editar Eliminar" [ref=e219]:
+                    - generic [ref=e220]:
+                      - button "Editar" [ref=e221] [cursor=pointer]
+                      - button "Eliminar" [ref=e222] [cursor=pointer]
+                - row "Herramientas Activo Editar Eliminar" [ref=e223]:
+                  - cell "Herramientas" [ref=e224]
+                  - cell "Activo" [ref=e225]
+                  - cell "Editar Eliminar" [ref=e226]:
+                    - generic [ref=e227]:
+                      - button "Editar" [ref=e228] [cursor=pointer]
+                      - button "Eliminar" [ref=e229] [cursor=pointer]
+                - row "Impermeabilización Activo Editar Eliminar" [ref=e230]:
+                  - cell "Impermeabilización" [ref=e231]
+                  - cell "Activo" [ref=e232]
+                  - cell "Editar Eliminar" [ref=e233]:
+                    - generic [ref=e234]:
+                      - button "Editar" [ref=e235] [cursor=pointer]
+                      - button "Eliminar" [ref=e236] [cursor=pointer]
+                - row "Materiales Activo Editar Eliminar" [ref=e237]:
+                  - cell "Materiales" [ref=e238]
+                  - cell "Activo" [ref=e239]
+                  - cell "Editar Eliminar" [ref=e240]:
+                    - generic [ref=e241]:
+                      - button "Editar" [ref=e242] [cursor=pointer]
+                      - button "Eliminar" [ref=e243] [cursor=pointer]
+                - row "Oficina Activo Editar Eliminar" [ref=e244]:
+                  - cell "Oficina" [ref=e245]
+                  - cell "Activo" [ref=e246]
+                  - cell "Editar Eliminar" [ref=e247]:
+                    - generic [ref=e248]:
+                      - button "Editar" [ref=e249] [cursor=pointer]
+                      - button "Eliminar" [ref=e250] [cursor=pointer]
+                - row "Plomería Activo Editar Eliminar" [ref=e251]:
+                  - cell "Plomería" [ref=e252]
+                  - cell "Activo" [ref=e253]
+                  - cell "Editar Eliminar" [ref=e254]:
+                    - generic [ref=e255]:
+                      - button "Editar" [ref=e256] [cursor=pointer]
+                      - button "Eliminar" [ref=e257] [cursor=pointer]
+                - row "Seguridad Activo Editar Eliminar" [ref=e258]:
+                  - cell "Seguridad" [ref=e259]
+                  - cell "Activo" [ref=e260]
+                  - cell "Editar Eliminar" [ref=e261]:
+                    - generic [ref=e262]:
+                      - button "Editar" [ref=e263] [cursor=pointer]
+                      - button "Eliminar" [ref=e264] [cursor=pointer]
+                - row "Techos Activo Editar Eliminar" [ref=e265]:
+                  - cell "Techos" [ref=e266]
+                  - cell "Activo" [ref=e267]
+                  - cell "Editar Eliminar" [ref=e268]:
+                    - generic [ref=e269]:
+                      - button "Editar" [ref=e270] [cursor=pointer]
+                      - button "Eliminar" [ref=e271] [cursor=pointer]
+                - row "Yeso Activo Editar Eliminar" [ref=e272]:
+                  - cell "Yeso" [ref=e273]
+                  - cell "Activo" [ref=e274]
+                  - cell "Editar Eliminar" [ref=e275]:
+                    - generic [ref=e276]:
+                      - button "Editar" [ref=e277] [cursor=pointer]
+                      - button "Eliminar" [ref=e278] [cursor=pointer]
+  - alert [ref=e279]
