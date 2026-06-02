@@ -42,10 +42,18 @@ interface ProductosState {
 
 export const useProductosStore = create<ProductosState>()(
   persist(
-    (set) => ({
+    (set, get) => ({
       productos: [],
-      addProducto: (p) => set((s) => ({ productos: [...s.productos, p] })),
-      addProductos: (ps) => set((s) => ({ productos: [...s.productos, ...ps] })),
+      addProducto: (p) => set((s) => {
+        const updated = [...s.productos, p]
+        console.log(`[addProducto] Total productos ahora: ${updated.length}`)
+        return { productos: updated }
+      }),
+      addProductos: (ps) => set((s) => {
+        const updated = [...s.productos, ...ps]
+        console.log(`[addProductos] Added ${ps.length}, total ahora: ${updated.length}`)
+        return { productos: updated }
+      }),
       updateProducto: (id, p) => set((s) => ({ productos: s.productos.map((r) => r.id === id ? { ...r, ...p } : r) })),
       deleteProducto: (id) => set((s) => {
         console.log('[deleteProducto] Deleting product with id:', id)
@@ -60,7 +68,14 @@ export const useProductosStore = create<ProductosState>()(
     }),
     {
       name: 'productos-storage',
-      storage: typeof window !== 'undefined' ? createJSONStorage(() => localStorage) : undefined,
+      storage: createJSONStorage(() => localStorage),
+      onRehydrateStorage: () => (state, error) => {
+        if (error) {
+          console.error('[Zustand] Error rehydrating productos:', error)
+        } else {
+          console.log(`[Zustand] ✅ Productos hidratados: ${state?.productos.length || 0}`)
+        }
+      },
     }
   )
 )

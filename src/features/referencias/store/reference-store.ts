@@ -193,9 +193,11 @@ export const useReferenceStore = create<ReferenceState>()(
           throw new Error(`Ya existe un registro con la descripción "${record.descripcion}" en esta tabla.`)
         }
         const newRecord = { ...record, id: crypto.randomUUID() } as BaseReference
-        set((state) => ({
-          data: { ...state.data, [tableId]: sortRecords([...state.data[tableId], newRecord]) }
-        }))
+        set((state) => {
+          const updated = { ...state.data, [tableId]: sortRecords([...state.data[tableId], newRecord]) }
+          console.log(`[addRecord] ${tableId} ahora tiene ${updated[tableId].length} registros`)
+          return { data: updated }
+        })
       },
 
       updateRecord: async (tableId, id, record) => {
@@ -244,6 +246,14 @@ export const useReferenceStore = create<ReferenceState>()(
           ...current,
           ...p,
           data: sortedData,
+        }
+      },
+      onRehydrateStorage: () => (state, error) => {
+        if (error) {
+          console.error('[Zustand] Error rehydrating referencias:', error)
+        } else {
+          const catCount = state?.data.categoria?.length || 0
+          console.log(`[Zustand] ✅ Referencias hidratadas (${catCount} categorías)`)
         }
       },
     }

@@ -2,7 +2,7 @@
 
 import { useState } from 'react'
 import { useFormulacionesStore } from '@/features/produccion/store/formulaciones-store'
-import { useProductos } from '@/features/produccion/hooks/useProductos'
+import { useProductosStore } from '@/features/productos/store/productos-store'
 import type { Formulacion, RenglonFormulacion } from '@/features/produccion/types/formulacion'
 
 const nextConsecutivo = (nro: number) => `FORM-${String(nro).padStart(5, '0')}`
@@ -17,8 +17,8 @@ export default function FormulacionesPage() {
   const { formulaciones, addFormulacion, updateFormulacion, deleteFormulacion, getMaxNroFormula } =
     useFormulacionesStore()
 
-  // Cargar TODOS los productos SIN FILTRO
-  const { productos: todosProductos } = useProductos()
+  // Cargar productos directamente del store (más confiable que el hook complejo)
+  const todosProductos = useProductosStore(s => s.productos).filter(p => p.situacion === 'Activo')
 
   // Separar por tipo
   const productosTerminados = todosProductos.filter((p) => p.tipo_inventario === 'Producto Terminado')
