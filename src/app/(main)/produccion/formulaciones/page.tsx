@@ -106,7 +106,7 @@ export default function FormulacionesPage() {
   }
 
   const handleAddRenglon = () => {
-    if (!newRenglon.producto_id || !newRenglon.producto_nombre || newRenglon.cantidad_necesaria === undefined) {
+    if (!newRenglon.producto_id || !newRenglon.producto_nombre || newRenglon.porcentaje_necesario === undefined) {
       setFormError('Completar todos los campos del renglón')
       return
     }
@@ -121,7 +121,7 @@ export default function FormulacionesPage() {
         producto_codigo: newRenglon.producto_codigo || '',
         producto_nombre: newRenglon.producto_nombre || '',
         unidad_medida: newRenglon.unidad_medida || '',
-        cantidad_necesaria: newRenglon.cantidad_necesaria || 0,
+        porcentaje_necesario: newRenglon.porcentaje_necesario || 0,
         numero_renglon: renglones.length + 1,
       } as RenglonFormulacion,
     ]
@@ -244,7 +244,7 @@ export default function FormulacionesPage() {
                           <div className="flex items-center gap-4">
                             <span className="font-mono text-sm font-bold text-white">{renglon.producto_codigo}</span>
                             <span className="text-white/60 text-sm">{renglon.producto_nombre}</span>
-                            <span className="text-white/40 text-xs">×{renglon.cantidad_necesaria}{renglon.unidad_medida}</span>
+                            <span className="text-white/40 text-xs">{renglon.porcentaje_necesario}%</span>
                           </div>
                         </div>
                         <button
@@ -292,9 +292,11 @@ export default function FormulacionesPage() {
                   <input
                     type="number"
                     step="0.01"
-                    placeholder="Cantidad"
-                    value={newRenglon.cantidad_necesaria || ''}
-                    onChange={(e) => setNewRenglon({ ...newRenglon, cantidad_necesaria: parseFloat(e.target.value) })}
+                    min="0"
+                    max="100"
+                    placeholder="Porcentaje %"
+                    value={newRenglon.porcentaje_necesario || ''}
+                    onChange={(e) => setNewRenglon({ ...newRenglon, porcentaje_necesario: parseFloat(e.target.value) })}
                     className="px-3 py-2 rounded-lg bg-white/5 border border-white/10 text-white text-sm"
                   />
                 </div>

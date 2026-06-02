@@ -10,7 +10,7 @@ export type RenglonFormulacion = {
   producto_codigo: string
   producto_nombre: string
   unidad_medida: string
-  cantidad_necesaria: number // cantidad de este producto para 1 unidad del PT
+  porcentaje_necesario: number // porcentaje de este producto para 1 unidad del PT
   numero_renglon: number
   created_at?: string
   updated_at?: string
