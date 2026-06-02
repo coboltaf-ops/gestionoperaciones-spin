@@ -175,27 +175,27 @@ export default function FormulacionesPage() {
           {formError && <div className="mb-4 p-3 rounded-lg text-sm text-red-400 bg-red-500/10">{formError}</div>}
 
           <form onSubmit={handleSave} className="space-y-4">
-            {/* Producto - Dropdown SIN FILTRO */}
+            {/* Producto - Solo Productos Terminados */}
             <div>
-              <label className="block text-sm font-medium text-white/70 mb-2">Seleccionar Producto *</label>
+              <label className="block text-sm font-medium text-white/70 mb-2">Seleccionar Producto Terminado *</label>
               <div className="mb-3 p-3 rounded-lg bg-blue-500/10 border border-blue-500/30 text-blue-300 text-sm">
-                📦 Total de productos disponibles: <strong>{todosProductos.length}</strong>
+                📦 Productos Terminados disponibles: <strong>{productosTerminados.length}</strong>
               </div>
               <select
                 value={form.producto_terminado_id || ''}
                 onChange={(e) => handleSelectProductoTerminado(e.target.value)}
                 className="w-full px-4 py-2 rounded-lg bg-white/5 border border-white/10 text-white"
               >
-                <option value="">-- Seleccionar Producto --</option>
-                {todosProductos.map((p) => (
+                <option value="">-- Seleccionar Producto Terminado --</option>
+                {productosTerminados.map((p) => (
                   <option key={p.id} value={p.id}>
-                    {p.codigo} - {p.descripcion} (Tipo: {p.tipo_inventario})
+                    {p.codigo} - {p.descripcion}
                   </option>
                 ))}
               </select>
-              {todosProductos.length === 0 && (
+              {productosTerminados.length === 0 && (
                 <div className="mt-3 p-3 rounded-lg bg-red-500/10 border border-red-500/30 text-red-300 text-sm">
-                  ❌ No hay productos en la tabla
+                  ❌ No hay productos terminados disponibles
                 </div>
               )}
             </div>

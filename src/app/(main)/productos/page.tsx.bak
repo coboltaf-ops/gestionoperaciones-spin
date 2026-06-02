@@ -134,7 +134,7 @@ export default function ProductosPage() {
     setIsFormOpen(false)
   }
 
-  const handleDelete = (id: string) => { if (confirm(tCf("delProducto"))) { console.log("[handleDelete] Eliminating product:", id); deleteProducto(id); console.log("[handleDelete] Product eliminated from store") } }
+  const handleDelete = (id: string) => { if (confirm(tCf('delProducto'))) deleteProducto(id) }
 
   // ── Importar productos desde Excel ─────────────────────────────────────
   const fileInputRef = useRef<HTMLInputElement>(null)
@@ -588,42 +588,6 @@ export default function ProductosPage() {
               </form>
             </div>
           )}
-
-          {/* Filtro por Tipo de Inventario */}
-          <div className="mb-6 p-4 rounded-2xl border border-white/10" style={{ background: 'rgba(255,255,255,0.03)' }}>
-            <p className="text-sm font-semibold text-white/70 mb-3">Filtrar por Tipo de Inventario:</p>
-            <div className="flex flex-wrap gap-2">
-              <button
-                onClick={() => setTipoActivoSesion(null)}
-                className="px-4 py-2 rounded-lg text-sm font-medium transition-all"
-                style={{
-                  background: !tipoInvFiltro ? 'rgba(59,130,246,1)' : 'rgba(255,255,255,0.1)',
-                  color: '#fff',
-                  border: !tipoInvFiltro ? '1px solid rgba(59,130,246,0.6)' : '1px solid rgba(255,255,255,0.2)'
-                }}
-              >
-                📦 Todos ({records.length})
-              </button>
-              {refData.tipo_inventario?.filter(t => t.situacion).map((tipo) => {
-                const count = records.filter(r => r.tipo_inventario === tipo.descripcion).length
-                const isSelected = tipoInvFiltro === tipo.descripcion
-                return (
-                  <button
-                    key={tipo.id}
-                    onClick={() => setTipoActivoSesion(tipo.descripcion)}
-                    className="px-4 py-2 rounded-lg text-sm font-medium transition-all"
-                    style={{
-                      background: isSelected ? 'rgba(59,130,246,1)' : 'rgba(255,255,255,0.1)',
-                      color: '#fff',
-                      border: isSelected ? '1px solid rgba(59,130,246,0.6)' : '1px solid rgba(255,255,255,0.2)'
-                    }}
-                  >
-                    {tipo.descripcion} ({count})
-                  </button>
-                )
-              })}
-            </div>
-          </div>
 
           <div className="rounded-2xl overflow-x-auto" style={{ background: 'rgba(255,255,255,0.05)', border: '1px solid rgba(255,255,255,0.1)' }}>
             <div className="p-4 border-b" style={{ borderColor: 'rgba(255,255,255,0.08)' }}>
