@@ -104,26 +104,16 @@ function useSyncCollection(config: SyncConfig) {
 
     doSync()
 
-    const handleVisibility = () => {
-      if (document.visibilityState === 'visible') {
-        fetchDone.current = false
-        doSync()
-      }
-    }
-
+    // OPTIMIZADO: Solo sincronizar en reconexión, NO en cada visibilitychange
     const handleOnline = () => {
       fetchDone.current = false
       doSync()
     }
 
-    document.addEventListener('visibilitychange', handleVisibility)
     window.addEventListener('online', handleOnline)
-    window.addEventListener('focus', handleVisibility)
 
     return () => {
-      document.removeEventListener('visibilitychange', handleVisibility)
       window.removeEventListener('online', handleOnline)
-      window.removeEventListener('focus', handleVisibility)
     }
   // eslint-disable-next-line react-hooks/exhaustive-deps
   }, [])
