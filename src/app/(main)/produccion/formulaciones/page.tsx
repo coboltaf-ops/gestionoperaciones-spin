@@ -238,7 +238,7 @@ export default function FormulacionesPage() {
               {(form.renglones || []).length > 0 && (
                 <div className="mb-4 rounded-lg border border-white/10 overflow-hidden" style={{ background: 'rgba(255,255,255,0.02)' }}>
                   <div className="divide-y divide-white/5">
-                    {form.renglones.map((renglon, idx) => (
+                    {(form.renglones || []).map((renglon, idx) => (
                       <div key={renglon.id} className="flex items-center justify-between px-4 py-3 hover:bg-white/[0.02]">
                         <div className="flex-1">
                           <div className="flex items-center gap-4">

@@ -209,7 +209,7 @@ export default function PersonalEmpresaPage() {
                           <button onClick={() => openEdit(r)} className="text-white font-medium px-3 py-1 bg-blue-600 hover:bg-blue-500 rounded-lg transition-all text-xs hover:scale-105">{tBtn('edit')}</button>
                         )}
                         {permisos.eliminar && (
-                          <button onClick={() => handleDelete(r.id)} className="text-white font-medium px-3 py-1 bg-red-600 hover:bg-red-500 rounded-lg transition-all text-xs hover:scale-105">{tBtn('delete')}</button>
+                          <button onClick={() => handleDelete(r.id)} className="text-red-300 hover:text-red-100 font-medium px-3 py-1 bg-red-500/10 hover:bg-red-500/20 rounded-lg transition-all text-xs">{tBtn('delete')}</button>
                         )}
                       </div>
                     </td>

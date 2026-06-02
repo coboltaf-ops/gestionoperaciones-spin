@@ -29,6 +29,15 @@ export const useAjustesStore = create<AjustesState>()(
       updateAjuste: (id, a) => set((s) => ({ ajustes: s.ajustes.map((r) => r.id === id ? { ...r, ...a } : r) })),
       deleteAjuste: (id) => set((s) => ({ ajustes: s.ajustes.filter((r) => r.id !== id) })),
     }),
-    { name: 'ajustes-inventario-storage' }
+    {
+      name: 'ajustes-inventario-storage',
+      migrate: (persistedState: any, version: number) => {
+        if (version === 0) {
+          return persistedState || { ajustes: [] }
+        }
+        return persistedState
+      },
+      version: 0,
+    }
   )
 )

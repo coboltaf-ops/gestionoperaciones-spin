@@ -1,0 +1,18 @@
+[     107ms] [INFO] %cDownload the React DevTools for a better development experience: https://react.dev/link/react-devtools font-weight:bold @ http://localhost:3000/_next/static/chunks/node_modules_next_dist_115brz8._.js:2477
+[     125ms] [LOG] [HMR] connected @ http://localhost:3000/_next/static/chunks/node_modules_next_dist_115brz8._.js:2477
+[     785ms] [ERROR] Failed to load resource: the server responded with a status of 404 () @ https://hakxvtffjwrywpfsipvo.supabase.co/rest/v1/Productos?select=*:0
+[     786ms] [ERROR] ❌ Error fetching productos: {code: PGRST205, details: null, hint: Perhaps you meant the table 'public.producto', message: Could not find the table 'public.Productos' in the schema cache} @ http://localhost:3000/_next/static/chunks/node_modules_next_dist_115brz8._.js:3318
+[  438612ms] [LOG] [Fast Refresh] rebuilding @ http://localhost:3000/_next/static/chunks/node_modules_next_dist_115brz8._.js:2477
+[  439669ms] [LOG] [Fast Refresh] done in 1059ms @ http://localhost:3000/_next/static/chunks/node_modules_next_dist_115brz8._.js:2477
+[  443427ms] [LOG] [Fast Refresh] rebuilding @ http://localhost:3000/_next/static/chunks/node_modules_next_dist_115brz8._.js:2477
+[  443459ms] [LOG] [Fast Refresh] done in 58ms @ http://localhost:3000/_next/static/chunks/node_modules_next_dist_115brz8._.js:2477
+[  463870ms] [ERROR] WebSocket connection to 'ws://localhost:3000/_next/webpack-hmr?id=CCfIsUpU45RkVPG88KYDb' failed: Error in connection establishment: net::ERR_CONNECTION_REFUSED @ http://localhost:3000/_next/static/chunks/node_modules_next_dist_client_0fhqo1d._.js:13322
+[  464873ms] [ERROR] WebSocket connection to 'ws://localhost:3000/_next/webpack-hmr?id=CCfIsUpU45RkVPG88KYDb' failed: Error in connection establishment: net::ERR_CONNECTION_REFUSED @ http://localhost:3000/_next/static/chunks/node_modules_next_dist_client_0fhqo1d._.js:13322
+[  465886ms] [LOG] [HMR] connected @ http://localhost:3000/_next/static/chunks/node_modules_next_dist_115brz8._.js:2477
+[  466340ms] [INFO] %cDownload the React DevTools for a better development experience: https://react.dev/link/react-devtools font-weight:bold @ http://localhost:3000/_next/static/chunks/node_modules_next_dist_115brz8._.js:2477
+[  466373ms] [LOG] [HMR] connected @ http://localhost:3000/_next/static/chunks/node_modules_next_dist_115brz8._.js:2477
+[  467168ms] [LOG] 📦 DATOS CRUDOS - Todos los productos: @ http://localhost:3000/_next/static/chunks/node_modules_next_dist_115brz8._.js:2477
+[  467168ms] [LOG] [] @ http://localhost:3000/_next/static/chunks/node_modules_next_dist_115brz8._.js:2477
+[  467169ms] [WARNING] ⚠️ No hay productos en la tabla @ http://localhost:3000/_next/static/chunks/node_modules_next_dist_115brz8._.js:2477
+[  468664ms] [LOG] [Fast Refresh] rebuilding @ http://localhost:3000/_next/static/chunks/node_modules_next_dist_115brz8._.js:2477
+[  468674ms] [LOG] [Fast Refresh] done in 111ms @ http://localhost:3000/_next/static/chunks/node_modules_next_dist_115brz8._.js:2477

@@ -1,0 +1,230 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>SISTECH - Documento de Accesos Actualizado</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            line-height: 1.6;
+            max-width: 900px;
+            margin: 0 auto;
+            padding: 20px;
+            background: #f5f5f5;
+        }
+        .header {
+            background: #003366;
+            color: white;
+            padding: 40px;
+            text-align: center;
+            margin-bottom: 30px;
+            border-radius: 5px;
+        }
+        .header h1 { margin: 0; font-size: 2.5em; }
+        .header p { margin: 10px 0 0 0; }
+        .section {
+            background: white;
+            padding: 20px;
+            margin-bottom: 20px;
+            border-left: 5px solid #003366;
+            border-radius: 3px;
+        }
+        .section h2 {
+            color: #003366;
+            margin-top: 0;
+        }
+        table {
+            width: 100%;
+            border-collapse: collapse;
+            margin-top: 15px;
+        }
+        table th {
+            background: #003366;
+            color: white;
+            padding: 12px;
+            text-align: left;
+        }
+        table td {
+            padding: 10px 12px;
+            border-bottom: 1px solid #ddd;
+        }
+        table tr:nth-child(even) {
+            background: #f9f9f9;
+        }
+        .url {
+            background: #f0f0f0;
+            padding: 10px;
+            border-radius: 3px;
+            font-family: monospace;
+            color: #0066cc;
+            margin: 10px 0;
+        }
+        .confidential {
+            color: red;
+            font-weight: bold;
+        }
+        .new-section {
+            background: #fff9e6;
+            border-left-color: #ff9900;
+        }
+        .nuevo { color: #ff9900; font-weight: bold; }
+    </style>
+</head>
+<body>
+    <div class="header">
+        <h1>SISTECH</h1>
+        <p>Documento de Accesos - Actualizado 2026</p>
+        <p>Sistemas diseñados por: ING José E Palomares</p>
+        <p>con Apoyo SaaS Factory Mexico</p>
+        <p><small>Medellín, Colombia - Junio 2026</small></p>
+        <p><small><span class="confidential">DOCUMENTO CONFIDENCIAL</span></small></p>
+    </div>
+
+    <div class="section">
+        <p><strong>DOCUMENTO CONFIDENCIAL - ACCESOS A SISTEMAS</strong></p>
+        <p>Guarde este documento en un lugar seguro.</p>
+    </div>
+
+    <div class="section">
+        <h2>1. GESTIÓN DE INVENTARIO</h2>
+        <p>Sistema multi-tipo de inventario (Materia Prima, Materiales y Suministros, Producto Terminado, Semi Elaborado, Servicios) con control de productos, proveedores, órdenes de compra, bodegas, transferencias, centros de costo, recepción de facturas, ajustes, kardex, pagos a proveedores, control bancario, tareas Kanban y asistente de voz.</p>
+        <div class="url">https://gestioninventario-two.vercel.app</div>
+        <table>
+            <tr><th>Usuario</th><th>Clave</th><th>Rol</th></tr>
+            <tr><td>admin</td><td>admin123</td><td>ADMIN - Acceso total</td></tr>
+            <tr><td>contador</td><td>contador123</td><td>ADMIN - Contador</td></tr>
+            <tr><td>auxiliar</td><td>auxiliar123</td><td>Contabilidad y Administración</td></tr>
+        </table>
+    </div>
+
+    <div class="section">
+        <h2>2. CRM SPIN (Silicatos para la Industria)</h2>
+        <p>CRM especializado para silicatos. Gestión de clientes DIAN, contactos, prospectos, oportunidades, cotizaciones, productos, PQRS, tareas, correos, diseñador de correos, email marketing y flujos automatizados.</p>
+        <div class="url">https://crmspin.vercel.app</div>
+        <table>
+            <tr><th>Usuario</th><th>Clave</th><th>Rol</th></tr>
+            <tr><td>admin</td><td>admin123</td><td>ADMIN - Acceso total</td></tr>
+        </table>
+    </div>
+
+    <div class="section">
+        <h2>3. CRM NOVA SEGURIDAD</h2>
+        <p>CRM especializado para empresas de seguridad. Gestión de clientes, contactos, prospectos, oportunidades, cotizaciones, contratos, líneas de servicio, productos, tareas, correos y flujos automatizados.</p>
+        <div class="url">https://crmnovaseguridad.vercel.app</div>
+        <table>
+            <tr><th>Usuario</th><th>Clave</th><th>Rol</th></tr>
+            <tr><td>admin</td><td>admin123</td><td>ADMIN - Acceso total</td></tr>
+        </table>
+    </div>
+
+    <div class="section new-section">
+        <h2>4. CRM COMERCIAL - GESTIONOPERACIONES-SPIN <span class="nuevo">[NUEVO]</span></h2>
+        <p>CRM comercial especializado para gestión completa de clientes, contactos, prospectos, oportunidades, cotizaciones, productos, PQRS, correos y módulos configurables. Integrado con el sistema de gestión de operaciones.</p>
+        <div class="url">http://localhost:3000/crm-comercial</div>
+        <table>
+            <tr><th>Usuario</th><th>Clave</th><th>Rol</th></tr>
+            <tr><td>admin</td><td>admin123</td><td>ADMIN - Acceso total</td></tr>
+            <tr><td>comercial</td><td>comercial123</td><td>ADMIN - Comercial</td></tr>
+            <tr><td>gerente</td><td>gerente123</td><td>Gerente de Ventas</td></tr>
+        </table>
+    </div>
+
+    <div class="section new-section">
+        <h2>5. FORMULARIO PUBLICO PQRS <span class="nuevo">[NUEVO]</span></h2>
+        <p>Formulario público de acceso sin contraseña para que los clientes externos puedan presentar Peticiones, Quejas, Reclamos y Sugerencias (PQRS). El formulario se sincroniza automáticamente con el CRM Comercial de Gestionoperaciones-Spin para seguimiento.</p>
+        <div class="url">http://localhost:3000/formulario-publico-pqrs</div>
+        <table>
+            <tr><th>Acceso</th><th>Requisito</th><th>Función</th></tr>
+            <tr><td>Público</td><td>No requiere clave</td><td>Envío de PQRS</td></tr>
+            <tr><td>Sincronización</td><td>Automática a CRM</td><td>Seguimiento interno</td></tr>
+        </table>
+    </div>
+
+    <div class="section new-section">
+        <h2>6. LANDING NORTON <span class="nuevo">[NUEVO]</span></h2>
+        <p>Landing page corporativa para Norton Services. Página pública con presentación de servicios, catálogo de soluciones, portfolios de proyectos, capacitaciones, formulario de contacto y enlaces a sistemas especializados.</p>
+        <div class="url">http://localhost:3000/landing-norton</div>
+        <table>
+            <tr><th>Tipo</th><th>Acceso</th><th>Función</th></tr>
+            <tr><td>Público</td><td>Sin autenticación</td><td>Presentación comercial</td></tr>
+            <tr><td>Formulario</td><td>Sin contraseña</td><td>Contacto y solicitudes</td></tr>
+        </table>
+    </div>
+
+    <div class="section new-section">
+        <h2>7. USUARIOS Y CLAVES - GESTIONOPERACIONES-SPIN <span class="nuevo">[NUEVO]</span></h2>
+        <p>Gestión centralizada de usuarios y permisos para la plataforma Gestionoperaciones-Spin. Control de acceso a módulos de Orden de Producción, Formulaciones (BOM), Productos, CRM Comercial y otras funcionalidades.</p>
+        
+        <h3>Usuarios Administrativos:</h3>
+        <table>
+            <tr><th>Usuario</th><th>Clave</th><th>Rol</th><th>Módulos</th></tr>
+            <tr><td>admin</td><td>admin123</td><td>ADMIN - Acceso total</td><td>Todos</td></tr>
+            <tr><td>jose.palomares</td><td>Admin@2026</td><td>Propietario</td><td>Todos</td></tr>
+            <tr><td>supervisor</td><td>supervisor123</td><td>Supervisor</td><td>Producción, Inventario, Reportes</td></tr>
+        </table>
+
+        <h3>Usuarios Operacionales:</h3>
+        <table>
+            <tr><th>Usuario</th><th>Clave</th><th>Rol</th><th>Módulos</th></tr>
+            <tr><td>produccion</td><td>produccion123</td><td>ADMIN - Producción</td><td>Órdenes, Formulaciones, Reportes</td></tr>
+            <tr><td>comercial</td><td>comercial123</td><td>ADMIN - Comercial</td><td>CRM, PQRS, Clientes</td></tr>
+            <tr><td>contador</td><td>contador123</td><td>Contador</td><td>Reportes, Análisis</td></tr>
+            <tr><td>auxiliar</td><td>auxiliar123</td><td>Auxiliar</td><td>Datos, Consultas</td></tr>
+        </table>
+
+        <h3>Políticas de Seguridad:</h3>
+        <ul>
+            <li>Cambiar contraseña cada 90 días</li>
+            <li>Mínimo 8 caracteres, mayúsculas, minúsculas y números</li>
+            <li>Acceso solo desde IP autorizadas (configurado en admin)</li>
+            <li>Bloqueo tras 5 intentos fallidos</li>
+            <li>Sesión expira tras 1 hora de inactividad</li>
+        </ul>
+    </div>
+
+    <div class="section">
+        <h2>8. CRM FLORES (Comercial de Flores)</h2>
+        <p>CRM comercial dedicado a venta de flores. Gestiona clientes, prospectos, oportunidades, cotizaciones, pedidos, productos, PQRS, contactos y flujos comerciales. Bilingüe (Español/Inglés).</p>
+        <div class="url">https://crmflores.vercel.app</div>
+        <table>
+            <tr><th>Usuario</th><th>Clave</th><th>Rol</th></tr>
+            <tr><td>admin</td><td>admin123</td><td>ADMIN - Acceso total</td></tr>
+        </table>
+    </div>
+
+    <div class="section">
+        <h2>9. PORTAL INMOBILIARIO</h2>
+        <p>Portal de gestión de propiedades con catálogo público, comerciales, cotizaciones, contratos, solicitudes y correos. Autenticación via Supabase.</p>
+        <div class="url">https://portalinmobiliario.vercel.app</div>
+        <table>
+            <tr><th>Usuario</th><th>Clave</th><th>Rol</th></tr>
+            <tr><td>admin</td><td>admin</td><td>ADMIN</td></tr>
+        </table>
+    </div>
+
+    <div class="section">
+        <h2>10. GESTIONOPERACIONES-SPIN</h2>
+        <p>Sistema especializado para SPIN - SILICATOS PARA LA INDUSTRIA S.A.S. Gestión de operaciones y administración integral. Incluye acceso a Biblioteca Centralizada de Documentación (58 documentos organizados). Módulos: Orden de Producción, Formulaciones (BOM), Gestión de Inventario, CRM Comercial, PQRS, y análisis de operaciones.</p>
+        <div class="url">http://localhost:3000/produccion/formulaciones</div>
+        <table>
+            <tr><th>Usuario</th><th>Clave</th><th>Rol</th></tr>
+            <tr><td>admin</td><td>admin123</td><td>ADMIN - Acceso total</td></tr>
+            <tr><td>contador</td><td>contador123</td><td>ADMIN - Contador</td></tr>
+            <tr><td>auxiliar</td><td>auxiliar123</td><td>Contabilidad y Administración</td></tr>
+        </table>
+
+        <h3>Biblioteca de Documentación:</h3>
+        <div class="url">http://localhost:3000/produccion/biblioteca</div>
+        <p>Contraseña: oEq7zYBodrV%U&kz;</p>
+    </div>
+
+    <div class="section">
+        <p style="text-align: center; color: #666; font-size: 0.9em;">
+            <strong>SISTECH – Accesos y Flujo de Alta de Clientes – Junio 2026</strong><br>
+            Documento Confidencial - Solo para uso interno
+        </p>
+    </div>
+
+</body>
+</html>
