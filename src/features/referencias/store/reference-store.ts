@@ -1,5 +1,5 @@
 import { create } from 'zustand'
-import { persist } from 'zustand/middleware'
+import { persist, createJSONStorage } from 'zustand/middleware'
 import { BaseReference, ReferenceTableId } from '../types'
 
 // Ordenar alfabéticamente por descripcion — se aplica en TODOS los puntos de entrada
@@ -230,6 +230,7 @@ export const useReferenceStore = create<ReferenceState>()(
     }),
     {
       name: 'referencias-storage',
+      storage: createJSONStorage(() => localStorage),
       merge: (persisted, current) => {
         const p = persisted as Partial<ReferenceState>
         const persistedData = p.data ?? current.data

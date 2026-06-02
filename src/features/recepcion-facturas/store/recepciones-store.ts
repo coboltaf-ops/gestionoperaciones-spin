@@ -1,5 +1,5 @@
 import { create } from 'zustand'
-import { persist } from 'zustand/middleware'
+import { persist, createJSONStorage } from 'zustand/middleware'
 
 export type RenglonRecepcion = {
   detalle_id: string; codigo_producto: string; descripcion: string; unidad_medida: string
@@ -34,6 +34,7 @@ export const useRecepcionesStore = create<RecepcionesState>()(
       updateRecepcion: (id, r) => set((s) => ({ recepciones: s.recepciones.map((x) => x.id === id ? { ...x, ...r } : x) })),
       deleteRecepcion: (id) => set((s) => ({ recepciones: s.recepciones.filter((x) => x.id !== id) })),
     }),
-    { name: 'recepcion-facturas-storage' }
+    { storage: createJSONStorage(() => localStorage),
+      name: 'recepcion-facturas-storage' }
   )
 )

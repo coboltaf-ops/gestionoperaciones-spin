@@ -1,5 +1,5 @@
 import { create } from 'zustand'
-import { persist } from 'zustand/middleware'
+import { persist, createJSONStorage } from 'zustand/middleware'
 import { type PersonalEmpresa } from '../types'
 
 interface PersonalEmpresaState {
@@ -21,6 +21,7 @@ export const usePersonalEmpresaStore = create<PersonalEmpresaState>()(
         personal: s.personal.filter((r) => r.id !== id)
       })),
     }),
-    { name: 'personal-empresa-storage' }
+    { storage: createJSONStorage(() => localStorage),
+      name: 'personal-empresa-storage' }
   )
 )

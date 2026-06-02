@@ -1,5 +1,5 @@
 import { create } from 'zustand'
-import { persist } from 'zustand/middleware'
+import { persist, createJSONStorage } from 'zustand/middleware'
 
 export type DetalleOrden = {
   id: string; codigo_producto: string; descripcion: string; cantidad: number
@@ -31,6 +31,7 @@ export const useOrdenesStore = create<OrdenesState>()(
       deleteOrden: (id) => set((s) => ({ ordenes: s.ordenes.filter((r) => r.id !== id) })),
       setOrdenes: (o) => set({ ordenes: o }),
     }),
-    { name: 'ordenes-compra-storage', version: 2 }
+    { storage: createJSONStorage(() => localStorage),
+      name: 'ordenes-compra-storage', version: 2 }
   )
 )

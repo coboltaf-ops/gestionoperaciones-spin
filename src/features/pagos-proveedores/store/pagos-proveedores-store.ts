@@ -1,5 +1,5 @@
 import { create } from 'zustand'
-import { persist } from 'zustand/middleware'
+import { persist, createJSONStorage } from 'zustand/middleware'
 
 // ─── Tipos ───────────────────────────────────────────────────────────────
 
@@ -152,7 +152,8 @@ export const usePagosProveedoresStore = create<PagosProveedoresState>()(
       updateNota: (id, n) => set((s) => ({ notas: s.notas.map((r) => r.id === id ? { ...r, ...n } : r) })),
       deleteNota: (id) => set((s) => ({ notas: s.notas.filter((r) => r.id !== id) })),
     }),
-    { name: 'pagos-proveedores-storage' }
+    { storage: createJSONStorage(() => localStorage),
+      name: 'pagos-proveedores-storage' }
   )
 )
 

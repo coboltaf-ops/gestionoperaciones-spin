@@ -1,5 +1,5 @@
 import { create } from 'zustand'
-import { persist } from 'zustand/middleware'
+import { persist, createJSONStorage } from 'zustand/middleware'
 import { type OrdenProduccion } from '../types'
 
 interface OrdenesProduccionState {
@@ -17,6 +17,7 @@ export const useOrdenesProduccionStore = create<OrdenesProduccionState>()(
       updateOrden: (id, o) => set((s) => ({ ordenes: s.ordenes.map((r) => r.id === id ? { ...r, ...o } : r) })),
       deleteOrden: (id) => set((s) => ({ ordenes: s.ordenes.filter((r) => r.id !== id) })),
     }),
-    { name: 'ordenes-produccion-storage' }
+    { storage: createJSONStorage(() => localStorage),
+      name: 'ordenes-produccion-storage' }
   )
 )

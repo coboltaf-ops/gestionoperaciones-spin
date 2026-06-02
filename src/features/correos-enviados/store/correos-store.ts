@@ -1,5 +1,5 @@
 import { create } from 'zustand'
-import { persist } from 'zustand/middleware'
+import { persist, createJSONStorage } from 'zustand/middleware'
 
 export type CorreoEnviado = {
   id: string
@@ -30,6 +30,7 @@ export const useCorreosStore = create<CorreosState>()(
       deleteCorreo: (id) => set((s) => ({ correos: s.correos.filter((c) => c.id !== id) })),
       clearAll: () => set({ correos: [] }),
     }),
-    { name: 'correos-enviados-storage' }
+    { storage: createJSONStorage(() => localStorage),
+      name: 'correos-enviados-storage' }
   )
 )

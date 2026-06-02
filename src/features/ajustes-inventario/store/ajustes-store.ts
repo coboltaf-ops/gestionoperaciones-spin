@@ -1,5 +1,5 @@
 import { create } from 'zustand'
-import { persist } from 'zustand/middleware'
+import { persist, createJSONStorage } from 'zustand/middleware'
 
 export type RenglonAjuste = {
   id: string; codigo_producto: string; descripcion: string; unidad_medida: string; cantidad: number
@@ -31,6 +31,7 @@ export const useAjustesStore = create<AjustesState>()(
     }),
     {
       name: 'ajustes-inventario-storage',
+      storage: createJSONStorage(() => localStorage),
       migrate: (persistedState: any, version: number) => {
         if (version === 0) {
           return persistedState || { ajustes: [] }

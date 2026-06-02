@@ -1,7 +1,7 @@
 'use client'
 
 import { create } from 'zustand'
-import { persist } from 'zustand/middleware'
+import { persist, createJSONStorage } from 'zustand/middleware'
 
 export type ModuloEstado = {
   id: string
@@ -34,6 +34,7 @@ export const useModulosSistemaStore = create<ModulosSistemaState>()(
         }
       },
     }),
-    { name: 'modulos-sistema-storage' }
+    { storage: createJSONStorage(() => localStorage),
+      name: 'modulos-sistema-storage' }
   )
 )

@@ -1,5 +1,5 @@
 import { create } from 'zustand'
-import { persist } from 'zustand/middleware'
+import { persist, createJSONStorage } from 'zustand/middleware'
 import { type AjusteMateriaPrima } from '../types'
 
 interface AjustesMPState {
@@ -17,6 +17,7 @@ export const useAjustesMPStore = create<AjustesMPState>()(
       updateAjuste: (id, a) => set((s) => ({ ajustes: s.ajustes.map((r) => r.id === id ? { ...r, ...a } : r) })),
       deleteAjuste: (id) => set((s) => ({ ajustes: s.ajustes.filter((r) => r.id !== id) })),
     }),
-    { name: 'ajustes-mp-storage' }
+    { storage: createJSONStorage(() => localStorage),
+      name: 'ajustes-mp-storage' }
   )
 )

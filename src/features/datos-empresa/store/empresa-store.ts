@@ -1,5 +1,5 @@
 import { create } from 'zustand'
-import { persist } from 'zustand/middleware'
+import { persist, createJSONStorage } from 'zustand/middleware'
 
 export type DatosEmpresa = {
   id: string
@@ -31,6 +31,7 @@ export const useEmpresaStore = create<EmpresaState>()(
       updateEmpresa: (id, e) => set((s) => ({ empresas: s.empresas.map((r) => r.id === id ? { ...r, ...e } : r) })),
       deleteEmpresa: (id) => set((s) => ({ empresas: s.empresas.filter((r) => r.id !== id) })),
     }),
-    { name: 'datos-empresa-storage' }
+    { storage: createJSONStorage(() => localStorage),
+      name: 'datos-empresa-storage' }
   )
 )

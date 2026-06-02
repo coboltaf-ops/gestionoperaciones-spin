@@ -1,5 +1,5 @@
 import { create } from 'zustand'
-import { persist } from 'zustand/middleware'
+import { persist, createJSONStorage } from 'zustand/middleware'
 
 export type CentroCosto = {
   id: string; codigo: string; descripcion: string; situacion: string
@@ -20,6 +20,7 @@ export const useCentrosCostoStore = create<CentrosCostoState>()(
       updateCentro: (id, c) => set((s) => ({ centros: s.centros.map((r) => r.id === id ? { ...r, ...c } : r) })),
       deleteCentro: (id) => set((s) => ({ centros: s.centros.filter((r) => r.id !== id) })),
     }),
-    { name: 'centros-costo-storage' }
+    { storage: createJSONStorage(() => localStorage),
+      name: 'centros-costo-storage' }
   )
 )

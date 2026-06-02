@@ -1,5 +1,5 @@
 import { create } from 'zustand'
-import { persist } from 'zustand/middleware'
+import { persist, createJSONStorage } from 'zustand/middleware'
 import {
   MODULOS, permisosAdmin, permisosSoloLectura,
   type ModuloId, type PermisoModulo, type Usuario,
@@ -42,6 +42,7 @@ export const useUsuariosStore = create<UsuariosState>()(
     }),
     {
       name: 'usuarios-storage',
+      storage: createJSONStorage(() => localStorage),
       merge: (persisted, current) => {
         const p = persisted as Partial<UsuariosState>
         const usuarios = (p.usuarios ?? current.usuarios).map(u => ({

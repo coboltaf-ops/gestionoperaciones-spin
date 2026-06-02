@@ -1,5 +1,5 @@
 import { create } from 'zustand'
-import { persist } from 'zustand/middleware'
+import { persist, createJSONStorage } from 'zustand/middleware'
 
 export type RenglonRemision = {
   detalle_id: string
@@ -54,7 +54,8 @@ export const useRemisionesStore = create<RemisionesState>()(
       deleteRemision: (id) => set((s) => ({ remisiones: s.remisiones.filter((x) => x.id !== id) })),
       setRemisiones: (r) => set({ remisiones: r }),
     }),
-    { name: 'recepcion-remisiones-storage' }
+    { storage: createJSONStorage(() => localStorage),
+      name: 'recepcion-remisiones-storage' }
   )
 )
 

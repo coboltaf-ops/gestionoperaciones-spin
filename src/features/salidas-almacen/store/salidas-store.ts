@@ -1,5 +1,5 @@
 import { create } from 'zustand'
-import { persist } from 'zustand/middleware'
+import { persist, createJSONStorage } from 'zustand/middleware'
 
 export type RenglonSalida = {
   id: string; codigo_producto: string; descripcion: string; unidad_medida: string; cantidad: number
@@ -29,6 +29,7 @@ export const useSalidasStore = create<SalidasState>()(
       updateSalida: (id, s) => set((st) => ({ salidas: st.salidas.map((r) => r.id === id ? { ...r, ...s } : r) })),
       deleteSalida: (id) => set((st) => ({ salidas: st.salidas.filter((r) => r.id !== id) })),
     }),
-    { name: 'salidas-almacen-storage' }
+    { storage: createJSONStorage(() => localStorage),
+      name: 'salidas-almacen-storage' }
   )
 )

@@ -1,5 +1,5 @@
 import { create } from 'zustand'
-import { persist } from 'zustand/middleware'
+import { persist, createJSONStorage } from 'zustand/middleware'
 import { type Formula } from '../types'
 
 interface FormulasState {
@@ -17,6 +17,7 @@ export const useFormulasStore = create<FormulasState>()(
       updateFormula: (id, f) => set((s) => ({ formulas: s.formulas.map((r) => r.id === id ? { ...r, ...f } : r) })),
       deleteFormula: (id) => set((s) => ({ formulas: s.formulas.filter((r) => r.id !== id) })),
     }),
-    { name: 'formulas-storage' }
+    { storage: createJSONStorage(() => localStorage),
+      name: 'formulas-storage' }
   )
 )

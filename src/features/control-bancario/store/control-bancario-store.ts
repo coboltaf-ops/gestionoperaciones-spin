@@ -1,5 +1,5 @@
 import { create } from 'zustand'
-import { persist } from 'zustand/middleware'
+import { persist, createJSONStorage } from 'zustand/middleware'
 
 // ─── Tipos (estructuras base — campos definitivos llegan después) ─────────────
 
@@ -102,7 +102,8 @@ export const useControlBancarioStore = create<ControlBancarioState>()(
       updateMovimiento: (id, m) => set((s) => ({ movimientos: s.movimientos.map((r) => r.id === id ? { ...r, ...m } : r) })),
       deleteMovimiento: (id) => set((s) => ({ movimientos: s.movimientos.filter((r) => r.id !== id) })),
     }),
-    { name: 'control-bancario-storage' }
+    { storage: createJSONStorage(() => localStorage),
+      name: 'control-bancario-storage' }
   )
 )
 

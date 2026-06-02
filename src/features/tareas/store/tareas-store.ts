@@ -1,5 +1,5 @@
 import { create } from 'zustand'
-import { persist } from 'zustand/middleware'
+import { persist, createJSONStorage } from 'zustand/middleware'
 import { type Tarea } from '../types'
 
 interface TareasState {
@@ -21,6 +21,7 @@ export const useTareasStore = create<TareasState>()(
         tareas: s.tareas.filter((r) => r.id !== id)
       })),
     }),
-    { name: 'tareas-storage' }
+    { storage: createJSONStorage(() => localStorage),
+      name: 'tareas-storage' }
   )
 )

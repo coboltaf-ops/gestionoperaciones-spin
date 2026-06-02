@@ -1,5 +1,5 @@
 import { create } from 'zustand'
-import { persist } from 'zustand/middleware'
+import { persist, createJSONStorage } from 'zustand/middleware'
 
 export type DetallePedido = {
   id: string; codigo_producto: string; descripcion: string; cantidad: number
@@ -30,6 +30,7 @@ export const usePedidosStore = create<PedidosState>()(
       deletePedido: (id) => set((s) => ({ pedidos: s.pedidos.filter((r) => r.id !== id) })),
       setPedidos: (p) => set({ pedidos: p }),
     }),
-    { name: 'pedidos-storage', version: 1 }
+    { storage: createJSONStorage(() => localStorage),
+      name: 'pedidos-storage', version: 1 }
   )
 )

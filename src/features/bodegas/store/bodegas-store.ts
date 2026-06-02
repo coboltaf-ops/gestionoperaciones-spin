@@ -1,5 +1,5 @@
 import { create } from 'zustand'
-import { persist } from 'zustand/middleware'
+import { persist, createJSONStorage } from 'zustand/middleware'
 
 export type SaldoBodega = {
   producto_id: string
@@ -87,6 +87,7 @@ export const useBodegasStore = create<BodegasState>()(
       updateBodega: (id, b) => set((s) => ({ bodegas: s.bodegas.map((r) => r.id === id ? { ...r, ...b } : r) })),
       deleteBodega: (id) => set((s) => ({ bodegas: s.bodegas.filter((r) => r.id !== id) })),
     }),
-    { name: 'bodegas-storage' }
+    { storage: createJSONStorage(() => localStorage),
+      name: 'bodegas-storage' }
   )
 )

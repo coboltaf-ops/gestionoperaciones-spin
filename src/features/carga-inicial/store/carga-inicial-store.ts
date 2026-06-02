@@ -1,5 +1,5 @@
 import { create } from 'zustand'
-import { persist } from 'zustand/middleware'
+import { persist, createJSONStorage } from 'zustand/middleware'
 
 export type RenglonCarga = {
   id: string
@@ -34,6 +34,7 @@ export const useCargaInicialStore = create<CargaInicialState>()(
       addCarga: (c) => set((s) => ({ cargas: [...s.cargas, c] })),
       deleteCarga: (id) => set((s) => ({ cargas: s.cargas.filter((c) => c.id !== id) })),
     }),
-    { name: 'carga-inicial-storage' }
+    { storage: createJSONStorage(() => localStorage),
+      name: 'carga-inicial-storage' }
   )
 )

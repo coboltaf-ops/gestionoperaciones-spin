@@ -1,5 +1,5 @@
 import { create } from 'zustand'
-import { persist } from 'zustand/middleware'
+import { persist, createJSONStorage } from 'zustand/middleware'
 
 export type RenglonTransferencia = {
   id: string; codigo_producto: string; descripcion: string; unidad_medida: string; cantidad: number
@@ -31,6 +31,7 @@ export const useTransferenciasStore = create<TransferenciasState>()(
       updateTransferencia: (id, t) => set((s) => ({ transferencias: s.transferencias.map((r) => r.id === id ? { ...r, ...t } : r) })),
       deleteTransferencia: (id) => set((s) => ({ transferencias: s.transferencias.filter((r) => r.id !== id) })),
     }),
-    { name: 'transferencias-storage' }
+    { storage: createJSONStorage(() => localStorage),
+      name: 'transferencias-storage' }
   )
 )
