@@ -687,12 +687,12 @@ export default function OrdenesCompraPage() {
                       <select value={selectedOrden.tipo_inventario || ''}
                         onChange={e => setSelectedOrden({ ...selectedOrden, tipo_inventario: e.target.value })}
                         className="w-full rounded-xl px-3 py-2 text-white outline-none text-base font-bold"
-                        style={{ background: 'rgba(255,255,255,0.06)', border: '1px solid rgba(255,255,255,0.15)', color: '#fff' }}
+                        style={selectStyle}
                         required>
                         <option value="">— Seleccione Tipo de Inventario —</option>
-                        <option value="ALIMENTOS">ALIMENTOS</option>
-                        <option value="PRODUCTOS">PRODUCTOS</option>
-                        <option value="MATERIAS_PRIMAS">MATERIAS PRIMAS</option>
+                        {refData.tipo_inventario.filter(t => t.situacion).map(t => (
+                          <option key={t.id} value={t.descripcion}>{t.descripcion}</option>
+                        ))}
                       </select>
                     </div>
                     {/* Campos de fecha y texto libre */}
@@ -825,7 +825,7 @@ export default function OrdenesCompraPage() {
                             p.situacion === 'Activo' &&
                             !!p.descripcion &&
                             !!p.codigo &&
-                            codigoMatchesTipo(p.codigo, selectedOrden.tipo_inventario) &&
+                            p.tipo_inventario === selectedOrden.tipo_inventario &&
                             (p.descripcion.toLowerCase().includes(q) || p.codigo.toLowerCase().includes(q))
                           )
                           return (

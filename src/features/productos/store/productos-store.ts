@@ -44,11 +44,15 @@ export const useProductosStore = create<ProductosState>()(
   persist(
     (set, get) => ({
       productos: [],
-      addProducto: (p) => set((s) => {
-        const updated = [...s.productos, p]
-        console.log(`[addProducto] Total productos ahora: ${updated.length}`)
-        return { productos: updated }
-      }),
+      addProducto: (p) => {
+        console.log(`[addProducto] Creando producto: ${p.codigo} - ${p.descripcion}`)
+        set((s) => {
+          const updated = [...s.productos, p]
+          console.log(`[addProducto] Total productos ahora: ${updated.length}`)
+          console.log(`[addProducto] Guardando en localStorage...`)
+          return { productos: updated }
+        })
+      },
       addProductos: (ps) => set((s) => {
         const updated = [...s.productos, ...ps]
         console.log(`[addProductos] Added ${ps.length}, total ahora: ${updated.length}`)
@@ -76,6 +80,10 @@ export const useProductosStore = create<ProductosState>()(
           console.log(`[Zustand] ✅ Productos hidratados: ${state?.productos.length || 0}`)
         }
       },
+      partialize: (state) => {
+        console.log(`[Zustand Persist] Guardando ${state.productos.length} productos en localStorage`)
+        return { productos: state.productos }
+      }
     }
   )
 )
