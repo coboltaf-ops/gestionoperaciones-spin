@@ -64,15 +64,6 @@ export default function MainLayout({ children }: { children: React.ReactNode }) 
     initModulos(MODULOS.map(m => m.id as string))
   }, [initModulos])
 
-  // One-time: limpiar localStorage de productos para forzar sync con servidor (v3)
-  useEffect(() => {
-    if (typeof window !== 'undefined' && !localStorage.getItem('data-reset-v3')) {
-      localStorage.removeItem('productos-storage')
-      localStorage.setItem('data-reset-v3', '1')
-      window.location.reload()
-    }
-  }, [])
-
   // Cerrar sidebar cuando navegamos a módulos (no dashboard)
   useEffect(() => {
     if (pathname !== '/dashboard' && pathname !== '/') {
