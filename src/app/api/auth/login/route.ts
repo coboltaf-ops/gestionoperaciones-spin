@@ -1,5 +1,6 @@
 import { NextRequest, NextResponse } from 'next/server'
 import { readCollection } from '@/lib/db'
+import bcrypt from 'bcrypt'
 
 type Usuario = {
   id: string
@@ -16,7 +17,7 @@ type Usuario = {
 /**
  * POST /api/auth/login
  * Body: { usuario: string, clave: string }
- * Valida server-side. Nunca expone claves al cliente.
+ * Valida server-side con bcrypt. Nunca expone claves al cliente.
  * Devuelve los datos del usuario SIN la clave.
  */
 export async function POST(req: NextRequest) {
@@ -35,9 +36,15 @@ export async function POST(req: NextRequest) {
   }
 
   const usuarios = await readCollection<Usuario>('usuarios', [])
-  const found = usuarios.find(u => u.usuario.toLowerCase() === usuarioInput && u.clave === claveInput)
+  const found = usuarios.find(u => u.usuario.toLowerCase() === usuarioInput)
 
   if (!found) {
+    return NextResponse.json({ ok: false, error: 'Credenciales inválidas' }, { status: 401 })
+  }
+
+  // Validar clave con bcrypt
+  const claveValida = await bcrypt.compare(claveInput, found.clave)
+  if (!claveValida) {
     return NextResponse.json({ ok: false, error: 'Credenciales inválidas' }, { status: 401 })
   }
 
