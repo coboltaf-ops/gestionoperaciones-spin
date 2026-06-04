@@ -1,0 +1,369 @@
+- generic [ref=e1]:
+  - generic [ref=e3]:
+    - complementary [ref=e4]:
+      - generic [ref=e5]:
+        - img "Logo Empresa" [ref=e7]
+        - paragraph [ref=e8]: SPIN - SILICATOS PARA LA INDUSTRIA S.A.S.
+      - navigation [ref=e9]:
+        - link "📊 Dashboard" [ref=e10] [cursor=pointer]:
+          - /url: /dashboard
+          - generic [ref=e11]: 📊
+          - generic [ref=e12]: Dashboard
+        - button "👥 Clientes ↗" [ref=e13] [cursor=pointer]:
+          - generic [ref=e14]: 👥
+          - generic [ref=e15]: Clientes
+          - generic [ref=e16]: ↗
+        - link "📦 Productos" [ref=e17] [cursor=pointer]:
+          - /url: /productos
+          - generic [ref=e18]: 📦
+          - generic [ref=e19]: Productos
+        - link "📒 Kardex de Productos" [ref=e20] [cursor=pointer]:
+          - /url: /kardex
+          - generic [ref=e21]: 📒
+          - generic [ref=e22]: Kardex de Productos
+        - link "🏢 Proveedores" [ref=e23] [cursor=pointer]:
+          - /url: /proveedores
+          - generic [ref=e24]: 🏢
+          - generic [ref=e25]: Proveedores
+        - link "🛒 Órdenes de Compra" [ref=e26] [cursor=pointer]:
+          - /url: /ordenes-compra
+          - generic [ref=e27]: 🛒
+          - generic [ref=e28]: Órdenes de Compra
+        - link "📄 Orden de Pedido" [ref=e29] [cursor=pointer]:
+          - /url: /pedidos
+          - generic [ref=e30]: 📄
+          - generic [ref=e31]: Orden de Pedido
+        - link "📋 Recepción de Facturas" [ref=e32] [cursor=pointer]:
+          - /url: /recepcion-facturas
+          - generic [ref=e33]: 📋
+          - generic [ref=e34]: Recepción de Facturas
+        - link "📑 Recepción de Remisiones" [ref=e35] [cursor=pointer]:
+          - /url: /recepcion-remisiones
+          - generic [ref=e36]: 📑
+          - generic [ref=e37]: Recepción de Remisiones
+        - link "💳 Pagos Proveedores" [ref=e38] [cursor=pointer]:
+          - /url: /pagos-proveedores
+          - generic [ref=e39]: 💳
+          - generic [ref=e40]: Pagos Proveedores
+        - link "🏦 Control Bancario" [ref=e41] [cursor=pointer]:
+          - /url: /control-bancario
+          - generic [ref=e42]: 🏦
+          - generic [ref=e43]: Control Bancario
+        - link "🏭 Bodegas" [ref=e44] [cursor=pointer]:
+          - /url: /bodegas
+          - generic [ref=e45]: 🏭
+          - generic [ref=e46]: Bodegas
+        - link "🔄 Transferencias" [ref=e47] [cursor=pointer]:
+          - /url: /transferencias
+          - generic [ref=e48]: 🔄
+          - generic [ref=e49]: Transferencias
+        - link "📤 Salidas de Almacén" [ref=e50] [cursor=pointer]:
+          - /url: /salidas-almacen
+          - generic [ref=e51]: 📤
+          - generic [ref=e52]: Salidas de Almacén
+        - link "⚖️ Ajustes de Inventario" [ref=e53] [cursor=pointer]:
+          - /url: /ajustes-inventario
+          - generic [ref=e54]: ⚖️
+          - generic [ref=e55]: Ajustes de Inventario
+        - link "📋 Toma Inventario Físico" [ref=e56] [cursor=pointer]:
+          - /url: /toma-inventario-fisico
+          - generic [ref=e57]: 📋
+          - generic [ref=e58]: Toma Inventario Físico
+        - link "💰 Centros de Costo" [ref=e59] [cursor=pointer]:
+          - /url: /centros-costo
+          - generic [ref=e60]: 💰
+          - generic [ref=e61]: Centros de Costo
+        - link "📧 Correos Enviados" [ref=e62] [cursor=pointer]:
+          - /url: /correos-enviados
+          - generic [ref=e63]: 📧
+          - generic [ref=e64]: Correos Enviados
+        - link "📝 Tareas" [ref=e65] [cursor=pointer]:
+          - /url: /tareas
+          - generic [ref=e66]: 📝
+          - generic [ref=e67]: Tareas
+        - link "👥 Personal Empresa" [ref=e68] [cursor=pointer]:
+          - /url: /personal-empresa
+          - generic [ref=e69]: 👥
+          - generic [ref=e70]: Personal Empresa
+        - link "⚙️ Tablas de Referencias" [ref=e71] [cursor=pointer]:
+          - /url: /referencias
+          - generic [ref=e72]: ⚙️
+          - generic [ref=e73]: Tablas de Referencias
+        - link "🤖 Agente" [ref=e74] [cursor=pointer]:
+          - /url: /asistente
+          - generic [ref=e75]: 🤖
+          - generic [ref=e76]: Agente
+        - generic [ref=e77]:
+          - button "🏭 Producción ▼" [ref=e78] [cursor=pointer]:
+            - generic [ref=e79]: 🏭
+            - generic [ref=e80]: Producción
+            - generic [ref=e81]: ▼
+          - generic [ref=e82]:
+            - link "⚗️ Formulaciones" [ref=e83] [cursor=pointer]:
+              - /url: /produccion/formulaciones
+              - generic [ref=e84]: ⚗️
+              - generic [ref=e85]: Formulaciones
+            - link "✅ Producto Terminado" [ref=e86] [cursor=pointer]:
+              - /url: /produccion/producto-terminado
+              - generic [ref=e87]: ✅
+              - generic [ref=e88]: Producto Terminado
+            - link "📋 Órdenes de Producción" [ref=e89] [cursor=pointer]:
+              - /url: /produccion/ordenes-produccion
+              - generic [ref=e90]: 📋
+              - generic [ref=e91]: Órdenes de Producción
+            - link "⚙️ Ejecución Órdenes de Producción" [ref=e92] [cursor=pointer]:
+              - /url: /produccion/ejecucion-ordenes
+              - generic [ref=e93]: ⚙️
+              - generic [ref=e94]: Ejecución Órdenes de Producción
+        - generic [ref=e95]:
+          - button "⚙️ Configuración ▼" [ref=e96] [cursor=pointer]:
+            - generic [ref=e97]: ⚙️
+            - generic [ref=e98]: Configuración
+            - generic [ref=e99]: ▼
+          - generic [ref=e100]:
+            - link "🏛️ Datos Empresa" [ref=e101] [cursor=pointer]:
+              - /url: /datos-empresa
+              - generic [ref=e102]: 🏛️
+              - generic [ref=e103]: Datos Empresa
+            - link "👤 Gestión de Usuarios" [ref=e104] [cursor=pointer]:
+              - /url: /usuarios
+              - generic [ref=e105]: 👤
+              - generic [ref=e106]: Gestión de Usuarios
+            - link "🗂️ Módulos Sistema" [ref=e107] [cursor=pointer]:
+              - /url: /modulos-sistema
+              - generic [ref=e108]: 🗂️
+              - generic [ref=e109]: Módulos Sistema
+    - main [ref=e110]:
+      - generic [ref=e111]:
+        - button "☰" [ref=e113] [cursor=pointer]
+        - generic [ref=e114]:
+          - generic "Idioma" [ref=e115]:
+            - button "🇪🇸 ES" [pressed] [ref=e116] [cursor=pointer]
+            - button "🇬🇧 EN" [ref=e117] [cursor=pointer]
+          - generic [ref=e118]:
+            - paragraph [ref=e119]: Juan Andres Arango Velasquez
+            - paragraph [ref=e120]: Admin
+          - generic [ref=e121]: JA
+          - button "Salir" [ref=e122] [cursor=pointer]
+      - generic [ref=e155]:
+        - img "Logo" [ref=e157]
+        - generic [ref=e158]:
+          - paragraph [ref=e159]: Empresa
+          - paragraph [ref=e160]: SPIN - SILICATOS PARA LA INDUSTRIA S.A.S.
+        - generic [ref=e161]:
+          - paragraph [ref=e162]: NIT
+          - paragraph [ref=e163]: 900.123.456-7
+      - generic [ref=e124]:
+        - generic [ref=e125]:
+          - generic [ref=e126]:
+            - heading "Órdenes de Compra" [level=1] [ref=e127]
+            - paragraph [ref=e128]: Gestión y seguimiento de compras
+          - button "+ Nueva Orden" [active] [ref=e129] [cursor=pointer]
+        - generic [ref=e130]:
+          - button "📋 Registros" [ref=e131] [cursor=pointer]
+          - button "📊 Reportes" [ref=e132] [cursor=pointer]
+          - button "📑 Reportes Específicos" [ref=e133] [cursor=pointer]
+        - generic [ref=e221]:
+          - heading "Nueva Orden de Compra — OC-00005" [level=2] [ref=e222]
+          - generic [ref=e223]:
+            - generic [ref=e224]:
+              - generic [ref=e225]:
+                - generic [ref=e226]: Correlativo
+                - textbox [ref=e227]: OC-00005
+              - generic [ref=e228]:
+                - generic [ref=e229]: Fecha Emisión *
+                - textbox [ref=e230]: 2026-06-04
+              - generic [ref=e231]:
+                - generic [ref=e232]: Tipo de Inventario *
+                - combobox [ref=e233]:
+                  - option "— Seleccione Tipo de Inventario —" [selected]
+                  - option
+                  - option
+                  - option
+                  - option
+                  - option
+              - generic [ref=e234]:
+                - generic [ref=e235]: Fecha Vencimiento *
+                - textbox [ref=e236]
+              - generic [ref=e237]:
+                - generic [ref=e238]: Fecha Est. Llegada
+                - textbox [ref=e239]
+              - generic [ref=e240]:
+                - generic [ref=e241]: Fecha Aprobación
+                - textbox [ref=e242]
+              - generic [ref=e243]:
+                - generic [ref=e244]: Comprador *
+                - combobox [ref=e245]:
+                  - option "Seleccione el comprador…" [selected]
+                  - option "Juan Andres Arango"
+                  - option "Karina Cardona"
+                  - option "Sandra Juliana Alvarez"
+                  - option "Jose E Palomares"
+                  - option "Sara Sofia Uribe"
+              - generic [ref=e246]:
+                - generic [ref=e247]: "% Impuesto"
+                - combobox [ref=e248]
+              - generic [ref=e249]:
+                - generic [ref=e250]: Proveedor *
+                - combobox [ref=e251]:
+                  - option "-- Seleccione --" [selected]
+                  - option "Distribuidora Tech C.A."
+              - generic [ref=e252]:
+                - generic [ref=e253]: Tipo de Moneda *
+                - combobox [ref=e254]:
+                  - option "-- Seleccione --" [selected]
+                  - option
+                  - option
+                  - option
+              - generic [ref=e255]:
+                - generic [ref=e256]: Condición de Pago *
+                - combobox [ref=e257]:
+                  - option "-- Seleccione --" [selected]
+                  - option
+                  - option
+                  - option
+                  - option
+                  - option
+                  - option
+                  - option
+              - generic [ref=e258]:
+                - generic [ref=e259]: Bodega Llegada *
+                - combobox [ref=e260]:
+                  - option "Seleccione primero el Tipo de Inventario" [selected]
+                  - option "Bodega Prinpipal Laureles"
+                  - option "Bodega Viva Laureles"
+              - generic [ref=e261]:
+                - generic [ref=e262]: Centro de Costo
+                - combobox [ref=e263]:
+                  - option "-- Seleccione --" [selected]
+                  - option "CC-001 - Administración"
+                  - option "CC-002 - Almacen"
+                  - option "CC-003 - Compras"
+                  - option "cc-004 - RRHH Recursos Humanos"
+                  - option "CC-005 - Proyecto Efificio WOAO"
+              - generic [ref=e264]:
+                - generic [ref=e265]: Situación
+                - combobox [ref=e266]:
+                  - option [selected]
+                  - option
+                  - option
+                  - option
+                  - option
+            - generic [ref=e267]:
+              - generic [ref=e268]:
+                - heading "Renglones / Detalle" [level=3] [ref=e269]
+                - button "+ Agregar Renglón" [ref=e270] [cursor=pointer]
+              - generic [ref=e271]:
+                - generic [ref=e272]: Buscar producto por código o descripción
+                - textbox "Escriba código o nombre del producto..." [ref=e274]
+              - table [ref=e276]:
+                - rowgroup [ref=e277]:
+                  - row "Código Descripción Cantidad * Unidad Costo Unit. * Subtotal Estado" [ref=e278]:
+                    - columnheader "Código" [ref=e279]
+                    - columnheader "Descripción" [ref=e280]
+                    - columnheader "Cantidad *" [ref=e281]
+                    - columnheader "Unidad" [ref=e282]
+                    - columnheader "Costo Unit. *" [ref=e283]
+                    - columnheader "Subtotal" [ref=e284]
+                    - columnheader "Estado" [ref=e285]
+                    - columnheader [ref=e286]
+                - rowgroup [ref=e287]:
+                  - row "1 Unidad 0.00 Pendiente Aprobacion ✕" [ref=e288]:
+                    - cell [ref=e289]:
+                      - textbox [ref=e290]
+                    - cell [ref=e291]:
+                      - textbox [ref=e292]
+                    - cell "1" [ref=e293]:
+                      - spinbutton [ref=e294]: "1"
+                    - cell "Unidad" [ref=e295]:
+                      - textbox [ref=e296]: Unidad
+                    - cell [ref=e297]:
+                      - spinbutton [ref=e298]
+                    - cell "0.00" [ref=e299]
+                    - cell "Pendiente Aprobacion" [ref=e300]:
+                      - button "Pendiente Aprobacion" [ref=e301] [cursor=pointer]
+                    - cell "✕" [ref=e302]:
+                      - button "✕" [ref=e303] [cursor=pointer]
+            - generic [ref=e304]:
+              - generic [ref=e305]:
+                - generic [ref=e306]: Subtotal antes de Impuesto
+                - generic [ref=e307]: "0.00"
+              - generic [ref=e308]:
+                - generic [ref=e309]: "% IVA (19%)"
+                - generic [ref=e310]: "0.00"
+              - generic [ref=e311]:
+                - generic [ref=e312]: TOTAL GENERAL ORDEN
+                - generic [ref=e313]: "0.00"
+            - generic [ref=e314]:
+              - generic [ref=e315]: Observaciones
+              - textbox "Notas u observaciones..." [ref=e316]
+            - generic [ref=e317]:
+              - button "Guardar Orden" [ref=e318] [cursor=pointer]
+              - button "Cancelar" [ref=e319] [cursor=pointer]
+        - table [ref=e135]:
+          - rowgroup [ref=e136]:
+            - row "Nro. Proveedor Emisión Vence Comprador Total Estado Acciones" [ref=e137]:
+              - columnheader "Nro." [ref=e138]
+              - columnheader "Proveedor" [ref=e139]
+              - columnheader "Emisión" [ref=e140]
+              - columnheader "Vence" [ref=e141]
+              - columnheader "Comprador" [ref=e142]
+              - columnheader "Total" [ref=e143]
+              - columnheader "Estado" [ref=e144]
+              - columnheader "Acciones" [ref=e145]
+          - rowgroup [ref=e164]:
+            - row "OC-00001 Solintos S.A.S. 23/03/2026 06/04/2026 Horacio Mendez 12,967,256.00 Recibida Completa Ver" [ref=e165]:
+              - cell "OC-00001" [ref=e166]
+              - cell "Solintos S.A.S." [ref=e167]
+              - cell "23/03/2026" [ref=e168]
+              - cell "06/04/2026" [ref=e169]
+              - cell "Horacio Mendez" [ref=e170]
+              - cell "12,967,256.00" [ref=e171]
+              - cell "Recibida Completa" [ref=e172]
+              - cell "Ver" [ref=e173]:
+                - button "Ver" [ref=e175] [cursor=pointer]
+            - row "OC-00002 Cementos Argos 23/03/2026 06/04/2026 Miguel Diaz 459,360.00 Recibida Completa Ver" [ref=e176]:
+              - cell "OC-00002" [ref=e177]
+              - cell "Cementos Argos" [ref=e178]
+              - cell "23/03/2026" [ref=e179]
+              - cell "06/04/2026" [ref=e180]
+              - cell "Miguel Diaz" [ref=e181]
+              - cell "459,360.00" [ref=e182]
+              - cell "Recibida Completa" [ref=e183]
+              - cell "Ver" [ref=e184]:
+                - button "Ver" [ref=e186] [cursor=pointer]
+            - row "OC-00003 Papeleria la 80 Floresta 23/03/2026 06/04/2026 ASandra Gonzalez 87,580.00 Recibida Completa Ver" [ref=e187]:
+              - cell "OC-00003" [ref=e188]
+              - cell "Papeleria la 80 Floresta" [ref=e189]
+              - cell "23/03/2026" [ref=e190]
+              - cell "06/04/2026" [ref=e191]
+              - cell "ASandra Gonzalez" [ref=e192]
+              - cell "87,580.00" [ref=e193]
+              - cell "Recibida Completa" [ref=e194]
+              - cell "Ver" [ref=e195]:
+                - button "Ver" [ref=e197] [cursor=pointer]
+            - row "OC-00004 Home Center Viva Envigado 24/03/2026 25/03/2026 Sandra 1,333,400.00 Pendiente Aprobacion Ver Edit Elim" [ref=e198]:
+              - cell "OC-00004" [ref=e199]
+              - cell "Home Center Viva Envigado" [ref=e200]
+              - cell "24/03/2026" [ref=e201]
+              - cell "25/03/2026" [ref=e202]
+              - cell "Sandra" [ref=e203]
+              - cell "1,333,400.00" [ref=e204]
+              - cell "Pendiente Aprobacion" [ref=e205]
+              - cell "Ver Edit Elim" [ref=e206]:
+                - generic [ref=e207]:
+                  - button "Ver" [ref=e208] [cursor=pointer]
+                  - button "Edit" [ref=e209] [cursor=pointer]
+                  - button "Elim" [ref=e210] [cursor=pointer]
+  - generic [ref=e150] [cursor=pointer]:
+    - button "Open Next.js Dev Tools" [ref=e151]:
+      - img [ref=e152]
+    - generic [ref=e211]:
+      - button "Open issues overlay" [ref=e212]:
+        - generic [ref=e213]:
+          - generic [ref=e214]: "0"
+          - generic [ref=e215]: "1"
+        - generic [ref=e216]: Issue
+      - button "Collapse issues badge" [ref=e217]:
+        - img [ref=e218]
+  - alert [ref=e220]

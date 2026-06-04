@@ -1,0 +1,39 @@
+[     768ms] [LOG] [Zustand] ✅ Productos hidratados: 13 @ https://gestionoperaciones-spin.vercel.app/_next/static/chunks/0ri05.r_vcacl.js?dpl=dpl_6r9T8r9SV3fC7uiEEnwdYvgGrna1:0
+[     769ms] [ERROR] [Zustand] Error rehydrating referencias: TypeError: Cannot read properties of undefined (reading 'data')
+    at Object.merge (https://gestionoperaciones-spin.vercel.app/_next/static/chunks/0ri05.r_vcacl.js?dpl=dpl_6r9T8r9SV3fC7uiEEnwdYvgGrna1:1:19819)
+    at https://gestionoperaciones-spin.vercel.app/_next/static/chunks/0ri05.r_vcacl.js?dpl=dpl_6r9T8r9SV3fC7uiEEnwdYvgGrna1:1:7833
+    at https://gestionoperaciones-spin.vercel.app/_next/static/chunks/0ri05.r_vcacl.js?dpl=dpl_6r9T8r9SV3fC7uiEEnwdYvgGrna1:1:6549
+    at Object.then (https://gestionoperaciones-spin.vercel.app/_next/static/chunks/0ri05.r_vcacl.js?dpl=dpl_6r9T8r9SV3fC7uiEEnwdYvgGrna1:1:6606)
+    at b (https://gestionoperaciones-spin.vercel.app/_next/static/chunks/0ri05.r_vcacl.js?dpl=dpl_6r9T8r9SV3fC7uiEEnwdYvgGrna1:1:7782)
+    at https://gestionoperaciones-spin.vercel.app/_next/static/chunks/0ri05.r_vcacl.js?dpl=dpl_6r9T8r9SV3fC7uiEEnwdYvgGrna1:1:8281
+    at r (https://gestionoperaciones-spin.vercel.app/_next/static/chunks/0ri05.r_vcacl.js?dpl=dpl_6r9T8r9SV3fC7uiEEnwdYvgGrna1:1:5884)
+    at o (https://gestionoperaciones-spin.vercel.app/_next/static/chunks/0ri05.r_vcacl.js?dpl=dpl_6r9T8r9SV3fC7uiEEnwdYvgGrna1:1:5917)
+    at module evaluation (https://gestionoperaciones-spin.vercel.app/_next/static/chunks/0ri05.r_vcacl.js?dpl=dpl_6r9T8r9SV3fC7uiEEnwdYvgGrna1:1:18669)
+    at W (https://gestionoperaciones-spin.vercel.app/_next/static/chunks/turbopack-15zc9s3vju25y.js?dpl=dpl_6r9T8r9SV3fC7uiEEnwdYvgGrna1:1:7613) @ https://gestionoperaciones-spin.vercel.app/_next/static/chunks/0ri05.r_vcacl.js?dpl=dpl_6r9T8r9SV3fC7uiEEnwdYvgGrna1:0
+[     942ms] [LOG] [Sync] ✅ ordenes-compra: Downloaded 4 items from server @ https://gestionoperaciones-spin.vercel.app/_next/static/chunks/0ri05.r_vcacl.js?dpl=dpl_6r9T8r9SV3fC7uiEEnwdYvgGrna1:0
+[     957ms] [LOG] [Sync] ✅ tareas: Downloaded 4 items from server @ https://gestionoperaciones-spin.vercel.app/_next/static/chunks/0ri05.r_vcacl.js?dpl=dpl_6r9T8r9SV3fC7uiEEnwdYvgGrna1:0
+[     968ms] [LOG] [Sync] ✅ correos-enviados: Downloaded 1 items from server @ https://gestionoperaciones-spin.vercel.app/_next/static/chunks/0ri05.r_vcacl.js?dpl=dpl_6r9T8r9SV3fC7uiEEnwdYvgGrna1:0
+[     968ms] [LOG] [Sync] ℹ️  recepcion-remisiones: Both empty @ https://gestionoperaciones-spin.vercel.app/_next/static/chunks/0ri05.r_vcacl.js?dpl=dpl_6r9T8r9SV3fC7uiEEnwdYvgGrna1:0
+[     992ms] [LOG] [Zustand Persist] Guardando 13 productos en localStorage @ https://gestionoperaciones-spin.vercel.app/_next/static/chunks/0ri05.r_vcacl.js?dpl=dpl_6r9T8r9SV3fC7uiEEnwdYvgGrna1:0
+[     992ms] [LOG] [Sync] ✅ productos: Downloaded 13 items from server @ https://gestionoperaciones-spin.vercel.app/_next/static/chunks/0ri05.r_vcacl.js?dpl=dpl_6r9T8r9SV3fC7uiEEnwdYvgGrna1:0
+[    1137ms] [LOG] [Sync] ✅ datos-empresa: Downloaded 1 items from server @ https://gestionoperaciones-spin.vercel.app/_next/static/chunks/0ri05.r_vcacl.js?dpl=dpl_6r9T8r9SV3fC7uiEEnwdYvgGrna1:0
+[    1140ms] [LOG] [Sync] ✅ referencias: Both have data - keeping local (more recent) @ https://gestionoperaciones-spin.vercel.app/_next/static/chunks/0ri05.r_vcacl.js?dpl=dpl_6r9T8r9SV3fC7uiEEnwdYvgGrna1:0
+[    1140ms] [LOG] [Sync] ✅ modulos-sistema: Downloaded 22 items from server @ https://gestionoperaciones-spin.vercel.app/_next/static/chunks/0ri05.r_vcacl.js?dpl=dpl_6r9T8r9SV3fC7uiEEnwdYvgGrna1:0
+[    1141ms] [LOG] [Sync] ✅ proveedores: Both have data - keeping local (more recent) @ https://gestionoperaciones-spin.vercel.app/_next/static/chunks/0ri05.r_vcacl.js?dpl=dpl_6r9T8r9SV3fC7uiEEnwdYvgGrna1:0
+[    1141ms] [LOG] [Sync] ℹ️  carga-inicial: Both empty @ https://gestionoperaciones-spin.vercel.app/_next/static/chunks/0ri05.r_vcacl.js?dpl=dpl_6r9T8r9SV3fC7uiEEnwdYvgGrna1:0
+[    1141ms] [LOG] [Sync] ℹ️  control-bancario: Both empty @ https://gestionoperaciones-spin.vercel.app/_next/static/chunks/0ri05.r_vcacl.js?dpl=dpl_6r9T8r9SV3fC7uiEEnwdYvgGrna1:0
+[    1141ms] [LOG] [Sync] ℹ️  pagos-proveedores: Both empty @ https://gestionoperaciones-spin.vercel.app/_next/static/chunks/0ri05.r_vcacl.js?dpl=dpl_6r9T8r9SV3fC7uiEEnwdYvgGrna1:0
+[    1141ms] [LOG] [Sync] ✅ recepcion-facturas: Downloaded 3 items from server @ https://gestionoperaciones-spin.vercel.app/_next/static/chunks/0ri05.r_vcacl.js?dpl=dpl_6r9T8r9SV3fC7uiEEnwdYvgGrna1:0
+[    1143ms] [LOG] [Sync] ✅ transferencias: Downloaded 1 items from server @ https://gestionoperaciones-spin.vercel.app/_next/static/chunks/0ri05.r_vcacl.js?dpl=dpl_6r9T8r9SV3fC7uiEEnwdYvgGrna1:0
+[    1144ms] [LOG] [Sync] ✅ pedidos: Downloaded 1 items from server @ https://gestionoperaciones-spin.vercel.app/_next/static/chunks/0ri05.r_vcacl.js?dpl=dpl_6r9T8r9SV3fC7uiEEnwdYvgGrna1:0
+[    1145ms] [LOG] [Sync] ✅ centros-costo: Downloaded 5 items from server @ https://gestionoperaciones-spin.vercel.app/_next/static/chunks/0ri05.r_vcacl.js?dpl=dpl_6r9T8r9SV3fC7uiEEnwdYvgGrna1:0
+[    1146ms] [LOG] [Sync] ℹ️  ajustes-inventario: Both empty @ https://gestionoperaciones-spin.vercel.app/_next/static/chunks/0ri05.r_vcacl.js?dpl=dpl_6r9T8r9SV3fC7uiEEnwdYvgGrna1:0
+[    1154ms] [LOG] [Sync] ✅ usuarios: Both have data - keeping local (more recent) @ https://gestionoperaciones-spin.vercel.app/_next/static/chunks/0ri05.r_vcacl.js?dpl=dpl_6r9T8r9SV3fC7uiEEnwdYvgGrna1:0
+[    1155ms] [LOG] [Sync] ✅ bodegas: Downloaded 2 items from server @ https://gestionoperaciones-spin.vercel.app/_next/static/chunks/0ri05.r_vcacl.js?dpl=dpl_6r9T8r9SV3fC7uiEEnwdYvgGrna1:0
+[    1155ms] [LOG] [Sync] ✅ personal-empresa: Downloaded 5 items from server @ https://gestionoperaciones-spin.vercel.app/_next/static/chunks/0ri05.r_vcacl.js?dpl=dpl_6r9T8r9SV3fC7uiEEnwdYvgGrna1:0
+[    1174ms] [ERROR] Failed to load resource: the server responded with a status of 404 () @ https://gestionoperaciones-spin.vercel.app/favicon.ico:0
+[   45243ms] [LOG] Total inputs en la página: 11 @ :6
+[   45243ms] [LOG] Inputs con placeholder: 1 @ :10
+[   45243ms] [LOG] Placeholders encontrados: [Escriba código (ej: PROD-00001) o nombre del producto...] @ :15
+[   59747ms] [LOG] Divs con position absolute: 0 @ :20
+[   59747ms] [LOG] Dropdowns cerca del input: 0 @ :26

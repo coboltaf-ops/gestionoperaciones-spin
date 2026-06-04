@@ -1,0 +1,583 @@
+[      92ms] [INFO] %cDownload the React DevTools for a better development experience: https://react.dev/link/react-devtools font-weight:bold @ http://localhost:3000/_next/static/chunks/node_modules_next_dist_115brz8._.js:2477
+[     100ms] [LOG] [Zustand] ✅ Productos hidratados: 13 @ http://localhost:3000/_next/static/chunks/node_modules_next_dist_115brz8._.js:2477
+[     100ms] [LOG] [Zustand] ✅ Referencias hidratadas (0 categorías) @ http://localhost:3000/_next/static/chunks/node_modules_next_dist_115brz8._.js:2477
+[     101ms] [LOG] [HMR] connected @ http://localhost:3000/_next/static/chunks/node_modules_next_dist_115brz8._.js:2477
+[     173ms] [LOG] [Sync] ✅ proveedores: Both have data - keeping local (more recent) @ http://localhost:3000/_next/static/chunks/node_modules_next_dist_115brz8._.js:2477
+[     178ms] [LOG] [Zustand Persist] Guardando 13 productos en localStorage @ http://localhost:3000/_next/static/chunks/node_modules_next_dist_115brz8._.js:2477
+[     178ms] [LOG] [Sync] ✅ productos: Downloaded 13 items from server @ http://localhost:3000/_next/static/chunks/node_modules_next_dist_115brz8._.js:2477
+[     186ms] [LOG] [Sync] ✅ bodegas: Downloaded 2 items from server @ http://localhost:3000/_next/static/chunks/node_modules_next_dist_115brz8._.js:2477
+[     209ms] [LOG] [Sync] ✅ correos-enviados: Downloaded 1 items from server @ http://localhost:3000/_next/static/chunks/node_modules_next_dist_115brz8._.js:2477
+[     241ms] [LOG] [Sync] ✅ ordenes-compra: Downloaded 4 items from server @ http://localhost:3000/_next/static/chunks/node_modules_next_dist_115brz8._.js:2477
+[     256ms] [LOG] [Sync] ✅ centros-costo: Downloaded 5 items from server @ http://localhost:3000/_next/static/chunks/node_modules_next_dist_115brz8._.js:2477
+[     261ms] [LOG] [Sync] ✅ transferencias: Downloaded 1 items from server @ http://localhost:3000/_next/static/chunks/node_modules_next_dist_115brz8._.js:2477
+[     263ms] [LOG] [Sync] ℹ️  ajustes-inventario: Both empty @ http://localhost:3000/_next/static/chunks/node_modules_next_dist_115brz8._.js:2477
+[     267ms] [LOG] [Sync] ✅ recepcion-facturas: Downloaded 3 items from server @ http://localhost:3000/_next/static/chunks/node_modules_next_dist_115brz8._.js:2477
+[     275ms] [LOG] [Sync] ℹ️  recepcion-remisiones: Both empty @ http://localhost:3000/_next/static/chunks/node_modules_next_dist_115brz8._.js:2477
+[     279ms] [LOG] [Sync] ✅ usuarios: Both have data - keeping local (more recent) @ http://localhost:3000/_next/static/chunks/node_modules_next_dist_115brz8._.js:2477
+[     287ms] [LOG] [Sync] ℹ️  carga-inicial: Both empty @ http://localhost:3000/_next/static/chunks/node_modules_next_dist_115brz8._.js:2477
+[     292ms] [LOG] [Sync] ✅ modulos-sistema: Downloaded 22 items from server @ http://localhost:3000/_next/static/chunks/node_modules_next_dist_115brz8._.js:2477
+[     299ms] [LOG] [Sync] ✅ personal-empresa: Downloaded 5 items from server @ http://localhost:3000/_next/static/chunks/node_modules_next_dist_115brz8._.js:2477
+[     299ms] [LOG] [Sync] ✅ tareas: Downloaded 4 items from server @ http://localhost:3000/_next/static/chunks/node_modules_next_dist_115brz8._.js:2477
+[     301ms] [LOG] [Sync] ✅ pedidos: Downloaded 1 items from server @ http://localhost:3000/_next/static/chunks/node_modules_next_dist_115brz8._.js:2477
+[     307ms] [LOG] [Sync] ℹ️  pagos-proveedores: Both empty @ http://localhost:3000/_next/static/chunks/node_modules_next_dist_115brz8._.js:2477
+[     311ms] [LOG] [Sync] ✅ datos-empresa: Downloaded 1 items from server @ http://localhost:3000/_next/static/chunks/node_modules_next_dist_115brz8._.js:2477
+[     324ms] [LOG] [Sync] ℹ️  control-bancario: Both empty @ http://localhost:3000/_next/static/chunks/node_modules_next_dist_115brz8._.js:2477
+[    5316ms] [INFO] %cDownload the React DevTools for a better development experience: https://react.dev/link/react-devtools font-weight:bold @ http://localhost:3000/_next/static/chunks/node_modules_next_dist_115brz8._.js:2477
+[    5328ms] [LOG] [Zustand] ✅ Productos hidratados: 13 @ http://localhost:3000/_next/static/chunks/node_modules_next_dist_115brz8._.js:2477
+[    5328ms] [LOG] [Zustand] ✅ Referencias hidratadas (0 categorías) @ http://localhost:3000/_next/static/chunks/node_modules_next_dist_115brz8._.js:2477
+[    5330ms] [LOG] [HMR] connected @ http://localhost:3000/_next/static/chunks/node_modules_next_dist_115brz8._.js:2477
+[    5388ms] [LOG] [Zustand Persist] Guardando 13 productos en localStorage @ http://localhost:3000/_next/static/chunks/node_modules_next_dist_115brz8._.js:2477
+[    5388ms] [LOG] [Sync] ✅ productos: Downloaded 13 items from server @ http://localhost:3000/_next/static/chunks/node_modules_next_dist_115brz8._.js:2477
+[    5393ms] [LOG] [Sync] ✅ proveedores: Both have data - keeping local (more recent) @ http://localhost:3000/_next/static/chunks/node_modules_next_dist_115brz8._.js:2477
+[    5393ms] [LOG] [Sync] ✅ bodegas: Downloaded 2 items from server @ http://localhost:3000/_next/static/chunks/node_modules_next_dist_115brz8._.js:2477
+[    5400ms] [LOG] [Sync] ✅ correos-enviados: Downloaded 1 items from server @ http://localhost:3000/_next/static/chunks/node_modules_next_dist_115brz8._.js:2477
+[    5400ms] [LOG] [Sync] ✅ ordenes-compra: Downloaded 4 items from server @ http://localhost:3000/_next/static/chunks/node_modules_next_dist_115brz8._.js:2477
+[    5407ms] [LOG] [Sync] ✅ centros-costo: Downloaded 5 items from server @ http://localhost:3000/_next/static/chunks/node_modules_next_dist_115brz8._.js:2477
+[    5412ms] [LOG] [Sync] ✅ transferencias: Downloaded 1 items from server @ http://localhost:3000/_next/static/chunks/node_modules_next_dist_115brz8._.js:2477
+[    5412ms] [LOG] [Sync] ℹ️  ajustes-inventario: Both empty @ http://localhost:3000/_next/static/chunks/node_modules_next_dist_115brz8._.js:2477
+[    5415ms] [LOG] [Sync] ✅ recepcion-facturas: Downloaded 3 items from server @ http://localhost:3000/_next/static/chunks/node_modules_next_dist_115brz8._.js:2477
+[    5424ms] [LOG] [Sync] ℹ️  recepcion-remisiones: Both empty @ http://localhost:3000/_next/static/chunks/node_modules_next_dist_115brz8._.js:2477
+[    5427ms] [LOG] [Sync] ✅ usuarios: Both have data - keeping local (more recent) @ http://localhost:3000/_next/static/chunks/node_modules_next_dist_115brz8._.js:2477
+[    5431ms] [LOG] [Sync] ℹ️  carga-inicial: Both empty @ http://localhost:3000/_next/static/chunks/node_modules_next_dist_115brz8._.js:2477
+[    5434ms] [LOG] [Sync] ✅ modulos-sistema: Downloaded 22 items from server @ http://localhost:3000/_next/static/chunks/node_modules_next_dist_115brz8._.js:2477
+[    5443ms] [LOG] [Sync] ✅ personal-empresa: Downloaded 5 items from server @ http://localhost:3000/_next/static/chunks/node_modules_next_dist_115brz8._.js:2477
+[    5444ms] [LOG] [Sync] ✅ tareas: Downloaded 4 items from server @ http://localhost:3000/_next/static/chunks/node_modules_next_dist_115brz8._.js:2477
+[    5446ms] [LOG] [Sync] ✅ pedidos: Downloaded 1 items from server @ http://localhost:3000/_next/static/chunks/node_modules_next_dist_115brz8._.js:2477
+[    5448ms] [LOG] [Sync] ℹ️  pagos-proveedores: Both empty @ http://localhost:3000/_next/static/chunks/node_modules_next_dist_115brz8._.js:2477
+[    5453ms] [LOG] [Sync] ✅ datos-empresa: Downloaded 1 items from server @ http://localhost:3000/_next/static/chunks/node_modules_next_dist_115brz8._.js:2477
+[    5463ms] [LOG] [Sync] ℹ️  control-bancario: Both empty @ http://localhost:3000/_next/static/chunks/node_modules_next_dist_115brz8._.js:2477
+[   10515ms] [INFO] %cDownload the React DevTools for a better development experience: https://react.dev/link/react-devtools font-weight:bold @ http://localhost:3000/_next/static/chunks/node_modules_next_dist_115brz8._.js:2477
+[   10531ms] [LOG] [Zustand] ✅ Productos hidratados: 13 @ http://localhost:3000/_next/static/chunks/node_modules_next_dist_115brz8._.js:2477
+[   10531ms] [LOG] [Zustand] ✅ Referencias hidratadas (0 categorías) @ http://localhost:3000/_next/static/chunks/node_modules_next_dist_115brz8._.js:2477
+[   10533ms] [LOG] [HMR] connected @ http://localhost:3000/_next/static/chunks/node_modules_next_dist_115brz8._.js:2477
+[   10589ms] [LOG] [Zustand Persist] Guardando 13 productos en localStorage @ http://localhost:3000/_next/static/chunks/node_modules_next_dist_115brz8._.js:2477
+[   10589ms] [LOG] [Sync] ✅ productos: Downloaded 13 items from server @ http://localhost:3000/_next/static/chunks/node_modules_next_dist_115brz8._.js:2477
+[   10594ms] [LOG] [Sync] ✅ proveedores: Both have data - keeping local (more recent) @ http://localhost:3000/_next/static/chunks/node_modules_next_dist_115brz8._.js:2477
+[   10597ms] [LOG] [Sync] ✅ bodegas: Downloaded 2 items from server @ http://localhost:3000/_next/static/chunks/node_modules_next_dist_115brz8._.js:2477
+[   10606ms] [LOG] [Sync] ✅ correos-enviados: Downloaded 1 items from server @ http://localhost:3000/_next/static/chunks/node_modules_next_dist_115brz8._.js:2477
+[   10608ms] [LOG] [Sync] ✅ ordenes-compra: Downloaded 4 items from server @ http://localhost:3000/_next/static/chunks/node_modules_next_dist_115brz8._.js:2477
+[   10618ms] [LOG] [Sync] ✅ centros-costo: Downloaded 5 items from server @ http://localhost:3000/_next/static/chunks/node_modules_next_dist_115brz8._.js:2477
+[   10627ms] [LOG] [Sync] ✅ transferencias: Downloaded 1 items from server @ http://localhost:3000/_next/static/chunks/node_modules_next_dist_115brz8._.js:2477
+[   10629ms] [LOG] [Sync] ℹ️  ajustes-inventario: Both empty @ http://localhost:3000/_next/static/chunks/node_modules_next_dist_115brz8._.js:2477
+[   10631ms] [LOG] [Sync] ✅ recepcion-facturas: Downloaded 3 items from server @ http://localhost:3000/_next/static/chunks/node_modules_next_dist_115brz8._.js:2477
+[   10633ms] [LOG] [Sync] ℹ️  recepcion-remisiones: Both empty @ http://localhost:3000/_next/static/chunks/node_modules_next_dist_115brz8._.js:2477
+[   10637ms] [LOG] [Sync] ✅ usuarios: Both have data - keeping local (more recent) @ http://localhost:3000/_next/static/chunks/node_modules_next_dist_115brz8._.js:2477
+[   10643ms] [LOG] [Sync] ℹ️  carga-inicial: Both empty @ http://localhost:3000/_next/static/chunks/node_modules_next_dist_115brz8._.js:2477
+[   10645ms] [LOG] [Sync] ✅ modulos-sistema: Downloaded 22 items from server @ http://localhost:3000/_next/static/chunks/node_modules_next_dist_115brz8._.js:2477
+[   10654ms] [LOG] [Sync] ✅ personal-empresa: Downloaded 5 items from server @ http://localhost:3000/_next/static/chunks/node_modules_next_dist_115brz8._.js:2477
+[   10655ms] [LOG] [Sync] ✅ tareas: Downloaded 4 items from server @ http://localhost:3000/_next/static/chunks/node_modules_next_dist_115brz8._.js:2477
+[   10655ms] [LOG] [Sync] ✅ pedidos: Downloaded 1 items from server @ http://localhost:3000/_next/static/chunks/node_modules_next_dist_115brz8._.js:2477
+[   10657ms] [LOG] [Sync] ℹ️  pagos-proveedores: Both empty @ http://localhost:3000/_next/static/chunks/node_modules_next_dist_115brz8._.js:2477
+[   10661ms] [LOG] [Sync] ✅ datos-empresa: Downloaded 1 items from server @ http://localhost:3000/_next/static/chunks/node_modules_next_dist_115brz8._.js:2477
+[   10673ms] [LOG] [Sync] ℹ️  control-bancario: Both empty @ http://localhost:3000/_next/static/chunks/node_modules_next_dist_115brz8._.js:2477
+[   15692ms] [INFO] %cDownload the React DevTools for a better development experience: https://react.dev/link/react-devtools font-weight:bold @ http://localhost:3000/_next/static/chunks/node_modules_next_dist_115brz8._.js:2477
+[   15701ms] [LOG] [HMR] connected @ http://localhost:3000/_next/static/chunks/node_modules_next_dist_115brz8._.js:2477
+[   15702ms] [LOG] [Zustand] ✅ Productos hidratados: 13 @ http://localhost:3000/_next/static/chunks/node_modules_next_dist_115brz8._.js:2477
+[   15702ms] [LOG] [Zustand] ✅ Referencias hidratadas (0 categorías) @ http://localhost:3000/_next/static/chunks/node_modules_next_dist_115brz8._.js:2477
+[   15760ms] [LOG] [Zustand Persist] Guardando 13 productos en localStorage @ http://localhost:3000/_next/static/chunks/node_modules_next_dist_115brz8._.js:2477
+[   15761ms] [LOG] [Sync] ✅ productos: Downloaded 13 items from server @ http://localhost:3000/_next/static/chunks/node_modules_next_dist_115brz8._.js:2477
+[   15768ms] [LOG] [Sync] ✅ proveedores: Both have data - keeping local (more recent) @ http://localhost:3000/_next/static/chunks/node_modules_next_dist_115brz8._.js:2477
+[   15770ms] [LOG] [Sync] ✅ bodegas: Downloaded 2 items from server @ http://localhost:3000/_next/static/chunks/node_modules_next_dist_115brz8._.js:2477
+[   15778ms] [LOG] [Sync] ✅ correos-enviados: Downloaded 1 items from server @ http://localhost:3000/_next/static/chunks/node_modules_next_dist_115brz8._.js:2477
+[   15780ms] [LOG] [Sync] ✅ ordenes-compra: Downloaded 4 items from server @ http://localhost:3000/_next/static/chunks/node_modules_next_dist_115brz8._.js:2477
+[   15795ms] [LOG] [Sync] ✅ centros-costo: Downloaded 5 items from server @ http://localhost:3000/_next/static/chunks/node_modules_next_dist_115brz8._.js:2477
+[   15800ms] [LOG] [Sync] ✅ transferencias: Downloaded 1 items from server @ http://localhost:3000/_next/static/chunks/node_modules_next_dist_115brz8._.js:2477
+[   15803ms] [LOG] [Sync] ℹ️  ajustes-inventario: Both empty @ http://localhost:3000/_next/static/chunks/node_modules_next_dist_115brz8._.js:2477
+[   15807ms] [LOG] [Sync] ✅ recepcion-facturas: Downloaded 3 items from server @ http://localhost:3000/_next/static/chunks/node_modules_next_dist_115brz8._.js:2477
+[   15812ms] [LOG] [Sync] ℹ️  recepcion-remisiones: Both empty @ http://localhost:3000/_next/static/chunks/node_modules_next_dist_115brz8._.js:2477
+[   15815ms] [LOG] [Sync] ✅ usuarios: Both have data - keeping local (more recent) @ http://localhost:3000/_next/static/chunks/node_modules_next_dist_115brz8._.js:2477
+[   15821ms] [LOG] [Sync] ℹ️  carga-inicial: Both empty @ http://localhost:3000/_next/static/chunks/node_modules_next_dist_115brz8._.js:2477
+[   15824ms] [LOG] [Sync] ✅ modulos-sistema: Downloaded 22 items from server @ http://localhost:3000/_next/static/chunks/node_modules_next_dist_115brz8._.js:2477
+[   15831ms] [LOG] [Fast Refresh] rebuilding @ http://localhost:3000/_next/static/chunks/node_modules_next_dist_115brz8._.js:2477
+[   15832ms] [LOG] [Sync] ✅ personal-empresa: Downloaded 5 items from server @ http://localhost:3000/_next/static/chunks/node_modules_next_dist_115brz8._.js:2477
+[   15832ms] [LOG] [Sync] ✅ tareas: Downloaded 4 items from server @ http://localhost:3000/_next/static/chunks/node_modules_next_dist_115brz8._.js:2477
+[   15832ms] [LOG] [Sync] ✅ pedidos: Downloaded 1 items from server @ http://localhost:3000/_next/static/chunks/node_modules_next_dist_115brz8._.js:2477
+[   15840ms] [LOG] [Sync] ℹ️  pagos-proveedores: Both empty @ http://localhost:3000/_next/static/chunks/node_modules_next_dist_115brz8._.js:2477
+[   15844ms] [LOG] [Sync] ✅ datos-empresa: Downloaded 1 items from server @ http://localhost:3000/_next/static/chunks/node_modules_next_dist_115brz8._.js:2477
+[   15857ms] [LOG] [Sync] ℹ️  control-bancario: Both empty @ http://localhost:3000/_next/static/chunks/node_modules_next_dist_115brz8._.js:2477
+[   15872ms] [LOG] [Fast Refresh] done in 152ms @ http://localhost:3000/_next/static/chunks/node_modules_next_dist_115brz8._.js:2477
+[   20884ms] [INFO] %cDownload the React DevTools for a better development experience: https://react.dev/link/react-devtools font-weight:bold @ http://localhost:3000/_next/static/chunks/node_modules_next_dist_115brz8._.js:2477
+[   20900ms] [LOG] [Zustand] ✅ Productos hidratados: 13 @ http://localhost:3000/_next/static/chunks/node_modules_next_dist_115brz8._.js:2477
+[   20900ms] [LOG] [Zustand] ✅ Referencias hidratadas (0 categorías) @ http://localhost:3000/_next/static/chunks/node_modules_next_dist_115brz8._.js:2477
+[   20902ms] [LOG] [HMR] connected @ http://localhost:3000/_next/static/chunks/node_modules_next_dist_115brz8._.js:2477
+[   20960ms] [LOG] [Zustand Persist] Guardando 13 productos en localStorage @ http://localhost:3000/_next/static/chunks/node_modules_next_dist_115brz8._.js:2477
+[   20960ms] [LOG] [Sync] ✅ productos: Downloaded 13 items from server @ http://localhost:3000/_next/static/chunks/node_modules_next_dist_115brz8._.js:2477
+[   20965ms] [LOG] [Sync] ✅ proveedores: Both have data - keeping local (more recent) @ http://localhost:3000/_next/static/chunks/node_modules_next_dist_115brz8._.js:2477
+[   20965ms] [LOG] [Sync] ✅ bodegas: Downloaded 2 items from server @ http://localhost:3000/_next/static/chunks/node_modules_next_dist_115brz8._.js:2477
+[   20975ms] [LOG] [Sync] ✅ correos-enviados: Downloaded 1 items from server @ http://localhost:3000/_next/static/chunks/node_modules_next_dist_115brz8._.js:2477
+[   20976ms] [LOG] [Sync] ✅ ordenes-compra: Downloaded 4 items from server @ http://localhost:3000/_next/static/chunks/node_modules_next_dist_115brz8._.js:2477
+[   20995ms] [LOG] [Sync] ✅ centros-costo: Downloaded 5 items from server @ http://localhost:3000/_next/static/chunks/node_modules_next_dist_115brz8._.js:2477
+[   21001ms] [LOG] [Sync] ✅ transferencias: Downloaded 1 items from server @ http://localhost:3000/_next/static/chunks/node_modules_next_dist_115brz8._.js:2477
+[   21008ms] [LOG] [Sync] ℹ️  ajustes-inventario: Both empty @ http://localhost:3000/_next/static/chunks/node_modules_next_dist_115brz8._.js:2477
+[   21011ms] [LOG] [Sync] ✅ recepcion-facturas: Downloaded 3 items from server @ http://localhost:3000/_next/static/chunks/node_modules_next_dist_115brz8._.js:2477
+[   21018ms] [LOG] [Sync] ℹ️  recepcion-remisiones: Both empty @ http://localhost:3000/_next/static/chunks/node_modules_next_dist_115brz8._.js:2477
+[   21022ms] [LOG] [Sync] ✅ usuarios: Both have data - keeping local (more recent) @ http://localhost:3000/_next/static/chunks/node_modules_next_dist_115brz8._.js:2477
+[   21028ms] [LOG] [Sync] ℹ️  carga-inicial: Both empty @ http://localhost:3000/_next/static/chunks/node_modules_next_dist_115brz8._.js:2477
+[   21031ms] [LOG] [Sync] ✅ modulos-sistema: Downloaded 22 items from server @ http://localhost:3000/_next/static/chunks/node_modules_next_dist_115brz8._.js:2477
+[   21041ms] [LOG] [Sync] ✅ personal-empresa: Downloaded 5 items from server @ http://localhost:3000/_next/static/chunks/node_modules_next_dist_115brz8._.js:2477
+[   21041ms] [LOG] [Sync] ✅ tareas: Downloaded 4 items from server @ http://localhost:3000/_next/static/chunks/node_modules_next_dist_115brz8._.js:2477
+[   21042ms] [LOG] [Sync] ✅ pedidos: Downloaded 1 items from server @ http://localhost:3000/_next/static/chunks/node_modules_next_dist_115brz8._.js:2477
+[   21043ms] [LOG] [Sync] ℹ️  pagos-proveedores: Both empty @ http://localhost:3000/_next/static/chunks/node_modules_next_dist_115brz8._.js:2477
+[   21047ms] [LOG] [Sync] ✅ datos-empresa: Downloaded 1 items from server @ http://localhost:3000/_next/static/chunks/node_modules_next_dist_115brz8._.js:2477
+[   21059ms] [LOG] [Sync] ℹ️  control-bancario: Both empty @ http://localhost:3000/_next/static/chunks/node_modules_next_dist_115brz8._.js:2477
+[   26086ms] [INFO] %cDownload the React DevTools for a better development experience: https://react.dev/link/react-devtools font-weight:bold @ http://localhost:3000/_next/static/chunks/node_modules_next_dist_115brz8._.js:2477
+[   26102ms] [LOG] [Zustand] ✅ Productos hidratados: 13 @ http://localhost:3000/_next/static/chunks/node_modules_next_dist_115brz8._.js:2477
+[   26102ms] [LOG] [Zustand] ✅ Referencias hidratadas (0 categorías) @ http://localhost:3000/_next/static/chunks/node_modules_next_dist_115brz8._.js:2477
+[   26103ms] [LOG] [HMR] connected @ http://localhost:3000/_next/static/chunks/node_modules_next_dist_115brz8._.js:2477
+[   26158ms] [LOG] [Zustand Persist] Guardando 13 productos en localStorage @ http://localhost:3000/_next/static/chunks/node_modules_next_dist_115brz8._.js:2477
+[   26158ms] [LOG] [Sync] ✅ productos: Downloaded 13 items from server @ http://localhost:3000/_next/static/chunks/node_modules_next_dist_115brz8._.js:2477
+[   26163ms] [LOG] [Sync] ✅ proveedores: Both have data - keeping local (more recent) @ http://localhost:3000/_next/static/chunks/node_modules_next_dist_115brz8._.js:2477
+[   26164ms] [LOG] [Sync] ✅ bodegas: Downloaded 2 items from server @ http://localhost:3000/_next/static/chunks/node_modules_next_dist_115brz8._.js:2477
+[   26171ms] [LOG] [Sync] ✅ correos-enviados: Downloaded 1 items from server @ http://localhost:3000/_next/static/chunks/node_modules_next_dist_115brz8._.js:2477
+[   26172ms] [LOG] [Sync] ✅ ordenes-compra: Downloaded 4 items from server @ http://localhost:3000/_next/static/chunks/node_modules_next_dist_115brz8._.js:2477
+[   26180ms] [LOG] [Sync] ✅ centros-costo: Downloaded 5 items from server @ http://localhost:3000/_next/static/chunks/node_modules_next_dist_115brz8._.js:2477
+[   26187ms] [LOG] [Sync] ✅ transferencias: Downloaded 1 items from server @ http://localhost:3000/_next/static/chunks/node_modules_next_dist_115brz8._.js:2477
+[   26187ms] [LOG] [Sync] ℹ️  ajustes-inventario: Both empty @ http://localhost:3000/_next/static/chunks/node_modules_next_dist_115brz8._.js:2477
+[   26191ms] [LOG] [Sync] ✅ recepcion-facturas: Downloaded 3 items from server @ http://localhost:3000/_next/static/chunks/node_modules_next_dist_115brz8._.js:2477
+[   26195ms] [LOG] [Sync] ℹ️  recepcion-remisiones: Both empty @ http://localhost:3000/_next/static/chunks/node_modules_next_dist_115brz8._.js:2477
+[   26198ms] [LOG] [Sync] ✅ usuarios: Both have data - keeping local (more recent) @ http://localhost:3000/_next/static/chunks/node_modules_next_dist_115brz8._.js:2477
+[   26204ms] [LOG] [Sync] ℹ️  carga-inicial: Both empty @ http://localhost:3000/_next/static/chunks/node_modules_next_dist_115brz8._.js:2477
+[   26207ms] [LOG] [Sync] ✅ modulos-sistema: Downloaded 22 items from server @ http://localhost:3000/_next/static/chunks/node_modules_next_dist_115brz8._.js:2477
+[   26215ms] [LOG] [Sync] ✅ personal-empresa: Downloaded 5 items from server @ http://localhost:3000/_next/static/chunks/node_modules_next_dist_115brz8._.js:2477
+[   26215ms] [LOG] [Sync] ✅ tareas: Downloaded 4 items from server @ http://localhost:3000/_next/static/chunks/node_modules_next_dist_115brz8._.js:2477
+[   26222ms] [LOG] [Sync] ✅ pedidos: Downloaded 1 items from server @ http://localhost:3000/_next/static/chunks/node_modules_next_dist_115brz8._.js:2477
+[   26227ms] [LOG] [Sync] ℹ️  pagos-proveedores: Both empty @ http://localhost:3000/_next/static/chunks/node_modules_next_dist_115brz8._.js:2477
+[   26233ms] [LOG] [Sync] ✅ datos-empresa: Downloaded 1 items from server @ http://localhost:3000/_next/static/chunks/node_modules_next_dist_115brz8._.js:2477
+[   26246ms] [LOG] [Sync] ℹ️  control-bancario: Both empty @ http://localhost:3000/_next/static/chunks/node_modules_next_dist_115brz8._.js:2477
+[   26258ms] [LOG] [Fast Refresh] rebuilding @ http://localhost:3000/_next/static/chunks/node_modules_next_dist_115brz8._.js:2477
+[   26261ms] [LOG] [Fast Refresh] done in 104ms @ http://localhost:3000/_next/static/chunks/node_modules_next_dist_115brz8._.js:2477
+[   31284ms] [INFO] %cDownload the React DevTools for a better development experience: https://react.dev/link/react-devtools font-weight:bold @ http://localhost:3000/_next/static/chunks/node_modules_next_dist_115brz8._.js:2477
+[   31295ms] [LOG] [Zustand] ✅ Productos hidratados: 13 @ http://localhost:3000/_next/static/chunks/node_modules_next_dist_115brz8._.js:2477
+[   31296ms] [LOG] [Zustand] ✅ Referencias hidratadas (0 categorías) @ http://localhost:3000/_next/static/chunks/node_modules_next_dist_115brz8._.js:2477
+[   31297ms] [LOG] [HMR] connected @ http://localhost:3000/_next/static/chunks/node_modules_next_dist_115brz8._.js:2477
+[   31355ms] [LOG] [Zustand Persist] Guardando 13 productos en localStorage @ http://localhost:3000/_next/static/chunks/node_modules_next_dist_115brz8._.js:2477
+[   31355ms] [LOG] [Sync] ✅ productos: Downloaded 13 items from server @ http://localhost:3000/_next/static/chunks/node_modules_next_dist_115brz8._.js:2477
+[   31360ms] [LOG] [Sync] ✅ proveedores: Both have data - keeping local (more recent) @ http://localhost:3000/_next/static/chunks/node_modules_next_dist_115brz8._.js:2477
+[   31362ms] [LOG] [Sync] ✅ bodegas: Downloaded 2 items from server @ http://localhost:3000/_next/static/chunks/node_modules_next_dist_115brz8._.js:2477
+[   31367ms] [LOG] [Sync] ✅ correos-enviados: Downloaded 1 items from server @ http://localhost:3000/_next/static/chunks/node_modules_next_dist_115brz8._.js:2477
+[   31372ms] [LOG] [Sync] ✅ ordenes-compra: Downloaded 4 items from server @ http://localhost:3000/_next/static/chunks/node_modules_next_dist_115brz8._.js:2477
+[   31383ms] [LOG] [Sync] ✅ centros-costo: Downloaded 5 items from server @ http://localhost:3000/_next/static/chunks/node_modules_next_dist_115brz8._.js:2477
+[   31389ms] [LOG] [Sync] ✅ transferencias: Downloaded 1 items from server @ http://localhost:3000/_next/static/chunks/node_modules_next_dist_115brz8._.js:2477
+[   31390ms] [LOG] [Sync] ℹ️  ajustes-inventario: Both empty @ http://localhost:3000/_next/static/chunks/node_modules_next_dist_115brz8._.js:2477
+[   31392ms] [LOG] [Sync] ✅ recepcion-facturas: Downloaded 3 items from server @ http://localhost:3000/_next/static/chunks/node_modules_next_dist_115brz8._.js:2477
+[   31396ms] [LOG] [Sync] ℹ️  recepcion-remisiones: Both empty @ http://localhost:3000/_next/static/chunks/node_modules_next_dist_115brz8._.js:2477
+[   31398ms] [LOG] [Sync] ✅ usuarios: Both have data - keeping local (more recent) @ http://localhost:3000/_next/static/chunks/node_modules_next_dist_115brz8._.js:2477
+[   31411ms] [LOG] [Sync] ℹ️  carga-inicial: Both empty @ http://localhost:3000/_next/static/chunks/node_modules_next_dist_115brz8._.js:2477
+[   31414ms] [LOG] [Sync] ✅ modulos-sistema: Downloaded 22 items from server @ http://localhost:3000/_next/static/chunks/node_modules_next_dist_115brz8._.js:2477
+[   31423ms] [LOG] [Sync] ✅ personal-empresa: Downloaded 5 items from server @ http://localhost:3000/_next/static/chunks/node_modules_next_dist_115brz8._.js:2477
+[   31426ms] [LOG] [Sync] ✅ tareas: Downloaded 4 items from server @ http://localhost:3000/_next/static/chunks/node_modules_next_dist_115brz8._.js:2477
+[   31431ms] [LOG] [Sync] ✅ pedidos: Downloaded 1 items from server @ http://localhost:3000/_next/static/chunks/node_modules_next_dist_115brz8._.js:2477
+[   31445ms] [LOG] [Sync] ℹ️  pagos-proveedores: Both empty @ http://localhost:3000/_next/static/chunks/node_modules_next_dist_115brz8._.js:2477
+[   31448ms] [LOG] [Sync] ✅ datos-empresa: Downloaded 1 items from server @ http://localhost:3000/_next/static/chunks/node_modules_next_dist_115brz8._.js:2477
+[   31460ms] [LOG] [Fast Refresh] rebuilding @ http://localhost:3000/_next/static/chunks/node_modules_next_dist_115brz8._.js:2477
+[   31460ms] [LOG] [Sync] ℹ️  control-bancario: Both empty @ http://localhost:3000/_next/static/chunks/node_modules_next_dist_115brz8._.js:2477
+[   31478ms] [LOG] [Fast Refresh] done in 128ms @ http://localhost:3000/_next/static/chunks/node_modules_next_dist_115brz8._.js:2477
+[   36479ms] [INFO] %cDownload the React DevTools for a better development experience: https://react.dev/link/react-devtools font-weight:bold @ http://localhost:3000/_next/static/chunks/node_modules_next_dist_115brz8._.js:2477
+[   36495ms] [LOG] [Zustand] ✅ Productos hidratados: 13 @ http://localhost:3000/_next/static/chunks/node_modules_next_dist_115brz8._.js:2477
+[   36495ms] [LOG] [Zustand] ✅ Referencias hidratadas (0 categorías) @ http://localhost:3000/_next/static/chunks/node_modules_next_dist_115brz8._.js:2477
+[   36497ms] [LOG] [HMR] connected @ http://localhost:3000/_next/static/chunks/node_modules_next_dist_115brz8._.js:2477
+[   36549ms] [LOG] [Zustand Persist] Guardando 13 productos en localStorage @ http://localhost:3000/_next/static/chunks/node_modules_next_dist_115brz8._.js:2477
+[   36549ms] [LOG] [Sync] ✅ productos: Downloaded 13 items from server @ http://localhost:3000/_next/static/chunks/node_modules_next_dist_115brz8._.js:2477
+[   36557ms] [LOG] [Sync] ✅ proveedores: Both have data - keeping local (more recent) @ http://localhost:3000/_next/static/chunks/node_modules_next_dist_115brz8._.js:2477
+[   36557ms] [LOG] [Sync] ✅ bodegas: Downloaded 2 items from server @ http://localhost:3000/_next/static/chunks/node_modules_next_dist_115brz8._.js:2477
+[   36567ms] [LOG] [Sync] ✅ correos-enviados: Downloaded 1 items from server @ http://localhost:3000/_next/static/chunks/node_modules_next_dist_115brz8._.js:2477
+[   36573ms] [LOG] [Sync] ✅ ordenes-compra: Downloaded 4 items from server @ http://localhost:3000/_next/static/chunks/node_modules_next_dist_115brz8._.js:2477
+[   36580ms] [LOG] [Sync] ✅ centros-costo: Downloaded 5 items from server @ http://localhost:3000/_next/static/chunks/node_modules_next_dist_115brz8._.js:2477
+[   36585ms] [LOG] [Sync] ✅ transferencias: Downloaded 1 items from server @ http://localhost:3000/_next/static/chunks/node_modules_next_dist_115brz8._.js:2477
+[   36586ms] [LOG] [Sync] ℹ️  ajustes-inventario: Both empty @ http://localhost:3000/_next/static/chunks/node_modules_next_dist_115brz8._.js:2477
+[   36591ms] [LOG] [Sync] ✅ recepcion-facturas: Downloaded 3 items from server @ http://localhost:3000/_next/static/chunks/node_modules_next_dist_115brz8._.js:2477
+[   36593ms] [LOG] [Sync] ℹ️  recepcion-remisiones: Both empty @ http://localhost:3000/_next/static/chunks/node_modules_next_dist_115brz8._.js:2477
+[   36597ms] [LOG] [Sync] ✅ usuarios: Both have data - keeping local (more recent) @ http://localhost:3000/_next/static/chunks/node_modules_next_dist_115brz8._.js:2477
+[   36603ms] [LOG] [Sync] ℹ️  carga-inicial: Both empty @ http://localhost:3000/_next/static/chunks/node_modules_next_dist_115brz8._.js:2477
+[   36607ms] [LOG] [Sync] ✅ modulos-sistema: Downloaded 22 items from server @ http://localhost:3000/_next/static/chunks/node_modules_next_dist_115brz8._.js:2477
+[   36614ms] [LOG] [Sync] ✅ personal-empresa: Downloaded 5 items from server @ http://localhost:3000/_next/static/chunks/node_modules_next_dist_115brz8._.js:2477
+[   36614ms] [LOG] [Sync] ✅ tareas: Downloaded 4 items from server @ http://localhost:3000/_next/static/chunks/node_modules_next_dist_115brz8._.js:2477
+[   36615ms] [LOG] [Sync] ✅ pedidos: Downloaded 1 items from server @ http://localhost:3000/_next/static/chunks/node_modules_next_dist_115brz8._.js:2477
+[   36621ms] [LOG] [Sync] ℹ️  pagos-proveedores: Both empty @ http://localhost:3000/_next/static/chunks/node_modules_next_dist_115brz8._.js:2477
+[   36626ms] [LOG] [Sync] ✅ datos-empresa: Downloaded 1 items from server @ http://localhost:3000/_next/static/chunks/node_modules_next_dist_115brz8._.js:2477
+[   36637ms] [LOG] [Sync] ℹ️  control-bancario: Both empty @ http://localhost:3000/_next/static/chunks/node_modules_next_dist_115brz8._.js:2477
+[   36650ms] [LOG] [Fast Refresh] rebuilding @ http://localhost:3000/_next/static/chunks/node_modules_next_dist_115brz8._.js:2477
+[   36655ms] [LOG] [Fast Refresh] done in 107ms @ http://localhost:3000/_next/static/chunks/node_modules_next_dist_115brz8._.js:2477
+[   41685ms] [INFO] %cDownload the React DevTools for a better development experience: https://react.dev/link/react-devtools font-weight:bold @ http://localhost:3000/_next/static/chunks/node_modules_next_dist_115brz8._.js:2477
+[   41700ms] [LOG] [Zustand] ✅ Productos hidratados: 13 @ http://localhost:3000/_next/static/chunks/node_modules_next_dist_115brz8._.js:2477
+[   41700ms] [LOG] [Zustand] ✅ Referencias hidratadas (0 categorías) @ http://localhost:3000/_next/static/chunks/node_modules_next_dist_115brz8._.js:2477
+[   41701ms] [LOG] [HMR] connected @ http://localhost:3000/_next/static/chunks/node_modules_next_dist_115brz8._.js:2477
+[   41763ms] [LOG] [Zustand Persist] Guardando 13 productos en localStorage @ http://localhost:3000/_next/static/chunks/node_modules_next_dist_115brz8._.js:2477
+[   41763ms] [LOG] [Sync] ✅ productos: Downloaded 13 items from server @ http://localhost:3000/_next/static/chunks/node_modules_next_dist_115brz8._.js:2477
+[   41768ms] [LOG] [Sync] ✅ proveedores: Both have data - keeping local (more recent) @ http://localhost:3000/_next/static/chunks/node_modules_next_dist_115brz8._.js:2477
+[   41769ms] [LOG] [Sync] ✅ bodegas: Downloaded 2 items from server @ http://localhost:3000/_next/static/chunks/node_modules_next_dist_115brz8._.js:2477
+[   41775ms] [LOG] [Sync] ✅ correos-enviados: Downloaded 1 items from server @ http://localhost:3000/_next/static/chunks/node_modules_next_dist_115brz8._.js:2477
+[   41777ms] [LOG] [Sync] ✅ ordenes-compra: Downloaded 4 items from server @ http://localhost:3000/_next/static/chunks/node_modules_next_dist_115brz8._.js:2477
+[   41783ms] [LOG] [Sync] ✅ centros-costo: Downloaded 5 items from server @ http://localhost:3000/_next/static/chunks/node_modules_next_dist_115brz8._.js:2477
+[   41789ms] [LOG] [Sync] ✅ transferencias: Downloaded 1 items from server @ http://localhost:3000/_next/static/chunks/node_modules_next_dist_115brz8._.js:2477
+[   41792ms] [LOG] [Sync] ℹ️  ajustes-inventario: Both empty @ http://localhost:3000/_next/static/chunks/node_modules_next_dist_115brz8._.js:2477
+[   41795ms] [LOG] [Sync] ✅ recepcion-facturas: Downloaded 3 items from server @ http://localhost:3000/_next/static/chunks/node_modules_next_dist_115brz8._.js:2477
+[   41800ms] [LOG] [Sync] ℹ️  recepcion-remisiones: Both empty @ http://localhost:3000/_next/static/chunks/node_modules_next_dist_115brz8._.js:2477
+[   41806ms] [LOG] [Sync] ✅ usuarios: Both have data - keeping local (more recent) @ http://localhost:3000/_next/static/chunks/node_modules_next_dist_115brz8._.js:2477
+[   41827ms] [LOG] [Sync] ℹ️  carga-inicial: Both empty @ http://localhost:3000/_next/static/chunks/node_modules_next_dist_115brz8._.js:2477
+[   41830ms] [LOG] [Sync] ✅ modulos-sistema: Downloaded 22 items from server @ http://localhost:3000/_next/static/chunks/node_modules_next_dist_115brz8._.js:2477
+[   41838ms] [LOG] [Sync] ✅ personal-empresa: Downloaded 5 items from server @ http://localhost:3000/_next/static/chunks/node_modules_next_dist_115brz8._.js:2477
+[   41839ms] [LOG] [Sync] ✅ tareas: Downloaded 4 items from server @ http://localhost:3000/_next/static/chunks/node_modules_next_dist_115brz8._.js:2477
+[   41840ms] [LOG] [Sync] ✅ pedidos: Downloaded 1 items from server @ http://localhost:3000/_next/static/chunks/node_modules_next_dist_115brz8._.js:2477
+[   41842ms] [LOG] [Sync] ℹ️  pagos-proveedores: Both empty @ http://localhost:3000/_next/static/chunks/node_modules_next_dist_115brz8._.js:2477
+[   41845ms] [LOG] [Sync] ✅ datos-empresa: Downloaded 1 items from server @ http://localhost:3000/_next/static/chunks/node_modules_next_dist_115brz8._.js:2477
+[   41859ms] [LOG] [Sync] ℹ️  control-bancario: Both empty @ http://localhost:3000/_next/static/chunks/node_modules_next_dist_115brz8._.js:2477
+[   41862ms] [LOG] [Fast Refresh] rebuilding @ http://localhost:3000/_next/static/chunks/node_modules_next_dist_115brz8._.js:2477
+[   41876ms] [LOG] [Fast Refresh] done in 114ms @ http://localhost:3000/_next/static/chunks/node_modules_next_dist_115brz8._.js:2477
+[   46865ms] [INFO] %cDownload the React DevTools for a better development experience: https://react.dev/link/react-devtools font-weight:bold @ http://localhost:3000/_next/static/chunks/node_modules_next_dist_115brz8._.js:2477
+[   46882ms] [LOG] [Zustand] ✅ Productos hidratados: 13 @ http://localhost:3000/_next/static/chunks/node_modules_next_dist_115brz8._.js:2477
+[   46882ms] [LOG] [Zustand] ✅ Referencias hidratadas (0 categorías) @ http://localhost:3000/_next/static/chunks/node_modules_next_dist_115brz8._.js:2477
+[   46883ms] [LOG] [HMR] connected @ http://localhost:3000/_next/static/chunks/node_modules_next_dist_115brz8._.js:2477
+[   46942ms] [LOG] [Zustand Persist] Guardando 13 productos en localStorage @ http://localhost:3000/_next/static/chunks/node_modules_next_dist_115brz8._.js:2477
+[   46942ms] [LOG] [Sync] ✅ productos: Downloaded 13 items from server @ http://localhost:3000/_next/static/chunks/node_modules_next_dist_115brz8._.js:2477
+[   46948ms] [LOG] [Sync] ✅ proveedores: Both have data - keeping local (more recent) @ http://localhost:3000/_next/static/chunks/node_modules_next_dist_115brz8._.js:2477
+[   46948ms] [LOG] [Sync] ✅ bodegas: Downloaded 2 items from server @ http://localhost:3000/_next/static/chunks/node_modules_next_dist_115brz8._.js:2477
+[   46956ms] [LOG] [Sync] ✅ correos-enviados: Downloaded 1 items from server @ http://localhost:3000/_next/static/chunks/node_modules_next_dist_115brz8._.js:2477
+[   46960ms] [LOG] [Sync] ✅ ordenes-compra: Downloaded 4 items from server @ http://localhost:3000/_next/static/chunks/node_modules_next_dist_115brz8._.js:2477
+[   46973ms] [LOG] [Sync] ✅ centros-costo: Downloaded 5 items from server @ http://localhost:3000/_next/static/chunks/node_modules_next_dist_115brz8._.js:2477
+[   46978ms] [LOG] [Sync] ✅ transferencias: Downloaded 1 items from server @ http://localhost:3000/_next/static/chunks/node_modules_next_dist_115brz8._.js:2477
+[   46983ms] [LOG] [Sync] ℹ️  ajustes-inventario: Both empty @ http://localhost:3000/_next/static/chunks/node_modules_next_dist_115brz8._.js:2477
+[   46990ms] [LOG] [Sync] ✅ recepcion-facturas: Downloaded 3 items from server @ http://localhost:3000/_next/static/chunks/node_modules_next_dist_115brz8._.js:2477
+[   46993ms] [LOG] [Sync] ℹ️  recepcion-remisiones: Both empty @ http://localhost:3000/_next/static/chunks/node_modules_next_dist_115brz8._.js:2477
+[   47004ms] [LOG] [Sync] ✅ usuarios: Both have data - keeping local (more recent) @ http://localhost:3000/_next/static/chunks/node_modules_next_dist_115brz8._.js:2477
+[   47010ms] [LOG] [Sync] ℹ️  carga-inicial: Both empty @ http://localhost:3000/_next/static/chunks/node_modules_next_dist_115brz8._.js:2477
+[   47012ms] [LOG] [Sync] ✅ modulos-sistema: Downloaded 22 items from server @ http://localhost:3000/_next/static/chunks/node_modules_next_dist_115brz8._.js:2477
+[   47021ms] [LOG] [Sync] ✅ personal-empresa: Downloaded 5 items from server @ http://localhost:3000/_next/static/chunks/node_modules_next_dist_115brz8._.js:2477
+[   47021ms] [LOG] [Sync] ✅ tareas: Downloaded 4 items from server @ http://localhost:3000/_next/static/chunks/node_modules_next_dist_115brz8._.js:2477
+[   47023ms] [LOG] [Sync] ✅ pedidos: Downloaded 1 items from server @ http://localhost:3000/_next/static/chunks/node_modules_next_dist_115brz8._.js:2477
+[   47025ms] [LOG] [Sync] ℹ️  pagos-proveedores: Both empty @ http://localhost:3000/_next/static/chunks/node_modules_next_dist_115brz8._.js:2477
+[   47028ms] [LOG] [Sync] ✅ datos-empresa: Downloaded 1 items from server @ http://localhost:3000/_next/static/chunks/node_modules_next_dist_115brz8._.js:2477
+[   47040ms] [LOG] [Sync] ℹ️  control-bancario: Both empty @ http://localhost:3000/_next/static/chunks/node_modules_next_dist_115brz8._.js:2477
+[   47042ms] [LOG] [Fast Refresh] rebuilding @ http://localhost:3000/_next/static/chunks/node_modules_next_dist_115brz8._.js:2477
+[   47059ms] [LOG] [Fast Refresh] done in 118ms @ http://localhost:3000/_next/static/chunks/node_modules_next_dist_115brz8._.js:2477
+[   52078ms] [INFO] %cDownload the React DevTools for a better development experience: https://react.dev/link/react-devtools font-weight:bold @ http://localhost:3000/_next/static/chunks/node_modules_next_dist_115brz8._.js:2477
+[   52093ms] [LOG] [Zustand] ✅ Productos hidratados: 13 @ http://localhost:3000/_next/static/chunks/node_modules_next_dist_115brz8._.js:2477
+[   52093ms] [LOG] [Zustand] ✅ Referencias hidratadas (0 categorías) @ http://localhost:3000/_next/static/chunks/node_modules_next_dist_115brz8._.js:2477
+[   52095ms] [LOG] [HMR] connected @ http://localhost:3000/_next/static/chunks/node_modules_next_dist_115brz8._.js:2477
+[   52150ms] [LOG] [Zustand Persist] Guardando 13 productos en localStorage @ http://localhost:3000/_next/static/chunks/node_modules_next_dist_115brz8._.js:2477
+[   52150ms] [LOG] [Sync] ✅ productos: Downloaded 13 items from server @ http://localhost:3000/_next/static/chunks/node_modules_next_dist_115brz8._.js:2477
+[   52155ms] [LOG] [Sync] ✅ proveedores: Both have data - keeping local (more recent) @ http://localhost:3000/_next/static/chunks/node_modules_next_dist_115brz8._.js:2477
+[   52155ms] [LOG] [Sync] ✅ bodegas: Downloaded 2 items from server @ http://localhost:3000/_next/static/chunks/node_modules_next_dist_115brz8._.js:2477
+[   52163ms] [LOG] [Sync] ✅ correos-enviados: Downloaded 1 items from server @ http://localhost:3000/_next/static/chunks/node_modules_next_dist_115brz8._.js:2477
+[   52164ms] [LOG] [Sync] ✅ ordenes-compra: Downloaded 4 items from server @ http://localhost:3000/_next/static/chunks/node_modules_next_dist_115brz8._.js:2477
+[   52176ms] [LOG] [Sync] ✅ centros-costo: Downloaded 5 items from server @ http://localhost:3000/_next/static/chunks/node_modules_next_dist_115brz8._.js:2477
+[   52181ms] [LOG] [Sync] ✅ transferencias: Downloaded 1 items from server @ http://localhost:3000/_next/static/chunks/node_modules_next_dist_115brz8._.js:2477
+[   52182ms] [LOG] [Sync] ℹ️  ajustes-inventario: Both empty @ http://localhost:3000/_next/static/chunks/node_modules_next_dist_115brz8._.js:2477
+[   52184ms] [LOG] [Sync] ✅ recepcion-facturas: Downloaded 3 items from server @ http://localhost:3000/_next/static/chunks/node_modules_next_dist_115brz8._.js:2477
+[   52190ms] [LOG] [Sync] ℹ️  recepcion-remisiones: Both empty @ http://localhost:3000/_next/static/chunks/node_modules_next_dist_115brz8._.js:2477
+[   52193ms] [LOG] [Sync] ✅ usuarios: Both have data - keeping local (more recent) @ http://localhost:3000/_next/static/chunks/node_modules_next_dist_115brz8._.js:2477
+[   52200ms] [LOG] [Sync] ℹ️  carga-inicial: Both empty @ http://localhost:3000/_next/static/chunks/node_modules_next_dist_115brz8._.js:2477
+[   52205ms] [LOG] [Sync] ✅ modulos-sistema: Downloaded 22 items from server @ http://localhost:3000/_next/static/chunks/node_modules_next_dist_115brz8._.js:2477
+[   52213ms] [LOG] [Sync] ✅ personal-empresa: Downloaded 5 items from server @ http://localhost:3000/_next/static/chunks/node_modules_next_dist_115brz8._.js:2477
+[   52214ms] [LOG] [Sync] ✅ tareas: Downloaded 4 items from server @ http://localhost:3000/_next/static/chunks/node_modules_next_dist_115brz8._.js:2477
+[   52215ms] [LOG] [Sync] ✅ pedidos: Downloaded 1 items from server @ http://localhost:3000/_next/static/chunks/node_modules_next_dist_115brz8._.js:2477
+[   52217ms] [LOG] [Sync] ℹ️  pagos-proveedores: Both empty @ http://localhost:3000/_next/static/chunks/node_modules_next_dist_115brz8._.js:2477
+[   52221ms] [LOG] [Sync] ✅ datos-empresa: Downloaded 1 items from server @ http://localhost:3000/_next/static/chunks/node_modules_next_dist_115brz8._.js:2477
+[   52232ms] [LOG] [Sync] ℹ️  control-bancario: Both empty @ http://localhost:3000/_next/static/chunks/node_modules_next_dist_115brz8._.js:2477
+[   52249ms] [LOG] [Fast Refresh] rebuilding @ http://localhost:3000/_next/static/chunks/node_modules_next_dist_115brz8._.js:2477
+[   52254ms] [LOG] [Fast Refresh] done in 105ms @ http://localhost:3000/_next/static/chunks/node_modules_next_dist_115brz8._.js:2477
+[   57282ms] [INFO] %cDownload the React DevTools for a better development experience: https://react.dev/link/react-devtools font-weight:bold @ http://localhost:3000/_next/static/chunks/node_modules_next_dist_115brz8._.js:2477
+[   57297ms] [LOG] [Zustand] ✅ Productos hidratados: 13 @ http://localhost:3000/_next/static/chunks/node_modules_next_dist_115brz8._.js:2477
+[   57297ms] [LOG] [Zustand] ✅ Referencias hidratadas (0 categorías) @ http://localhost:3000/_next/static/chunks/node_modules_next_dist_115brz8._.js:2477
+[   57299ms] [LOG] [HMR] connected @ http://localhost:3000/_next/static/chunks/node_modules_next_dist_115brz8._.js:2477
+[   57354ms] [LOG] [Zustand Persist] Guardando 13 productos en localStorage @ http://localhost:3000/_next/static/chunks/node_modules_next_dist_115brz8._.js:2477
+[   57354ms] [LOG] [Sync] ✅ productos: Downloaded 13 items from server @ http://localhost:3000/_next/static/chunks/node_modules_next_dist_115brz8._.js:2477
+[   57360ms] [LOG] [Sync] ✅ proveedores: Both have data - keeping local (more recent) @ http://localhost:3000/_next/static/chunks/node_modules_next_dist_115brz8._.js:2477
+[   57360ms] [LOG] [Sync] ✅ bodegas: Downloaded 2 items from server @ http://localhost:3000/_next/static/chunks/node_modules_next_dist_115brz8._.js:2477
+[   57365ms] [LOG] [Sync] ✅ correos-enviados: Downloaded 1 items from server @ http://localhost:3000/_next/static/chunks/node_modules_next_dist_115brz8._.js:2477
+[   57369ms] [LOG] [Sync] ✅ ordenes-compra: Downloaded 4 items from server @ http://localhost:3000/_next/static/chunks/node_modules_next_dist_115brz8._.js:2477
+[   57376ms] [LOG] [Sync] ✅ centros-costo: Downloaded 5 items from server @ http://localhost:3000/_next/static/chunks/node_modules_next_dist_115brz8._.js:2477
+[   57381ms] [LOG] [Sync] ✅ transferencias: Downloaded 1 items from server @ http://localhost:3000/_next/static/chunks/node_modules_next_dist_115brz8._.js:2477
+[   57381ms] [LOG] [Sync] ℹ️  ajustes-inventario: Both empty @ http://localhost:3000/_next/static/chunks/node_modules_next_dist_115brz8._.js:2477
+[   57385ms] [LOG] [Sync] ✅ recepcion-facturas: Downloaded 3 items from server @ http://localhost:3000/_next/static/chunks/node_modules_next_dist_115brz8._.js:2477
+[   57392ms] [LOG] [Sync] ℹ️  recepcion-remisiones: Both empty @ http://localhost:3000/_next/static/chunks/node_modules_next_dist_115brz8._.js:2477
+[   57396ms] [LOG] [Sync] ✅ usuarios: Both have data - keeping local (more recent) @ http://localhost:3000/_next/static/chunks/node_modules_next_dist_115brz8._.js:2477
+[   57409ms] [LOG] [Sync] ℹ️  carga-inicial: Both empty @ http://localhost:3000/_next/static/chunks/node_modules_next_dist_115brz8._.js:2477
+[   57412ms] [LOG] [Sync] ✅ modulos-sistema: Downloaded 22 items from server @ http://localhost:3000/_next/static/chunks/node_modules_next_dist_115brz8._.js:2477
+[   57420ms] [LOG] [Sync] ✅ personal-empresa: Downloaded 5 items from server @ http://localhost:3000/_next/static/chunks/node_modules_next_dist_115brz8._.js:2477
+[   57428ms] [LOG] [Sync] ✅ tareas: Downloaded 4 items from server @ http://localhost:3000/_next/static/chunks/node_modules_next_dist_115brz8._.js:2477
+[   57430ms] [LOG] [Sync] ✅ pedidos: Downloaded 1 items from server @ http://localhost:3000/_next/static/chunks/node_modules_next_dist_115brz8._.js:2477
+[   57432ms] [LOG] [Sync] ℹ️  pagos-proveedores: Both empty @ http://localhost:3000/_next/static/chunks/node_modules_next_dist_115brz8._.js:2477
+[   57437ms] [LOG] [Sync] ✅ datos-empresa: Downloaded 1 items from server @ http://localhost:3000/_next/static/chunks/node_modules_next_dist_115brz8._.js:2477
+[   57447ms] [LOG] [Sync] ℹ️  control-bancario: Both empty @ http://localhost:3000/_next/static/chunks/node_modules_next_dist_115brz8._.js:2477
+[   57453ms] [LOG] [Fast Refresh] rebuilding @ http://localhost:3000/_next/static/chunks/node_modules_next_dist_115brz8._.js:2477
+[   57466ms] [LOG] [Fast Refresh] done in 113ms @ http://localhost:3000/_next/static/chunks/node_modules_next_dist_115brz8._.js:2477
+[   62487ms] [INFO] %cDownload the React DevTools for a better development experience: https://react.dev/link/react-devtools font-weight:bold @ http://localhost:3000/_next/static/chunks/node_modules_next_dist_115brz8._.js:2477
+[   62497ms] [LOG] [Zustand] ✅ Productos hidratados: 13 @ http://localhost:3000/_next/static/chunks/node_modules_next_dist_115brz8._.js:2477
+[   62498ms] [LOG] [Zustand] ✅ Referencias hidratadas (0 categorías) @ http://localhost:3000/_next/static/chunks/node_modules_next_dist_115brz8._.js:2477
+[   62499ms] [LOG] [HMR] connected @ http://localhost:3000/_next/static/chunks/node_modules_next_dist_115brz8._.js:2477
+[   62557ms] [LOG] [Zustand Persist] Guardando 13 productos en localStorage @ http://localhost:3000/_next/static/chunks/node_modules_next_dist_115brz8._.js:2477
+[   62557ms] [LOG] [Sync] ✅ productos: Downloaded 13 items from server @ http://localhost:3000/_next/static/chunks/node_modules_next_dist_115brz8._.js:2477
+[   62562ms] [LOG] [Sync] ✅ proveedores: Both have data - keeping local (more recent) @ http://localhost:3000/_next/static/chunks/node_modules_next_dist_115brz8._.js:2477
+[   62562ms] [LOG] [Sync] ✅ bodegas: Downloaded 2 items from server @ http://localhost:3000/_next/static/chunks/node_modules_next_dist_115brz8._.js:2477
+[   62567ms] [LOG] [Sync] ✅ correos-enviados: Downloaded 1 items from server @ http://localhost:3000/_next/static/chunks/node_modules_next_dist_115brz8._.js:2477
+[   62568ms] [LOG] [Sync] ✅ ordenes-compra: Downloaded 4 items from server @ http://localhost:3000/_next/static/chunks/node_modules_next_dist_115brz8._.js:2477
+[   62578ms] [LOG] [Sync] ✅ centros-costo: Downloaded 5 items from server @ http://localhost:3000/_next/static/chunks/node_modules_next_dist_115brz8._.js:2477
+[   62583ms] [LOG] [Sync] ✅ transferencias: Downloaded 1 items from server @ http://localhost:3000/_next/static/chunks/node_modules_next_dist_115brz8._.js:2477
+[   62587ms] [LOG] [Sync] ℹ️  ajustes-inventario: Both empty @ http://localhost:3000/_next/static/chunks/node_modules_next_dist_115brz8._.js:2477
+[   62593ms] [LOG] [Sync] ✅ recepcion-facturas: Downloaded 3 items from server @ http://localhost:3000/_next/static/chunks/node_modules_next_dist_115brz8._.js:2477
+[   62596ms] [LOG] [Sync] ℹ️  recepcion-remisiones: Both empty @ http://localhost:3000/_next/static/chunks/node_modules_next_dist_115brz8._.js:2477
+[   62600ms] [LOG] [Sync] ✅ usuarios: Both have data - keeping local (more recent) @ http://localhost:3000/_next/static/chunks/node_modules_next_dist_115brz8._.js:2477
+[   62616ms] [LOG] [Sync] ℹ️  carga-inicial: Both empty @ http://localhost:3000/_next/static/chunks/node_modules_next_dist_115brz8._.js:2477
+[   62618ms] [LOG] [Sync] ✅ modulos-sistema: Downloaded 22 items from server @ http://localhost:3000/_next/static/chunks/node_modules_next_dist_115brz8._.js:2477
+[   62626ms] [LOG] [Fast Refresh] rebuilding @ http://localhost:3000/_next/static/chunks/node_modules_next_dist_115brz8._.js:2477
+[   62627ms] [LOG] [Sync] ✅ personal-empresa: Downloaded 5 items from server @ http://localhost:3000/_next/static/chunks/node_modules_next_dist_115brz8._.js:2477
+[   62627ms] [LOG] [Sync] ✅ tareas: Downloaded 4 items from server @ http://localhost:3000/_next/static/chunks/node_modules_next_dist_115brz8._.js:2477
+[   62629ms] [LOG] [Sync] ✅ pedidos: Downloaded 1 items from server @ http://localhost:3000/_next/static/chunks/node_modules_next_dist_115brz8._.js:2477
+[   62631ms] [LOG] [Sync] ℹ️  pagos-proveedores: Both empty @ http://localhost:3000/_next/static/chunks/node_modules_next_dist_115brz8._.js:2477
+[   62635ms] [LOG] [Sync] ✅ datos-empresa: Downloaded 1 items from server @ http://localhost:3000/_next/static/chunks/node_modules_next_dist_115brz8._.js:2477
+[   62646ms] [LOG] [Sync] ℹ️  control-bancario: Both empty @ http://localhost:3000/_next/static/chunks/node_modules_next_dist_115brz8._.js:2477
+[   62664ms] [LOG] [Fast Refresh] done in 144ms @ http://localhost:3000/_next/static/chunks/node_modules_next_dist_115brz8._.js:2477
+[   67686ms] [INFO] %cDownload the React DevTools for a better development experience: https://react.dev/link/react-devtools font-weight:bold @ http://localhost:3000/_next/static/chunks/node_modules_next_dist_115brz8._.js:2477
+[   67698ms] [LOG] [Zustand] ✅ Productos hidratados: 13 @ http://localhost:3000/_next/static/chunks/node_modules_next_dist_115brz8._.js:2477
+[   67698ms] [LOG] [Zustand] ✅ Referencias hidratadas (0 categorías) @ http://localhost:3000/_next/static/chunks/node_modules_next_dist_115brz8._.js:2477
+[   67699ms] [LOG] [HMR] connected @ http://localhost:3000/_next/static/chunks/node_modules_next_dist_115brz8._.js:2477
+[   67755ms] [LOG] [Zustand Persist] Guardando 13 productos en localStorage @ http://localhost:3000/_next/static/chunks/node_modules_next_dist_115brz8._.js:2477
+[   67755ms] [LOG] [Sync] ✅ productos: Downloaded 13 items from server @ http://localhost:3000/_next/static/chunks/node_modules_next_dist_115brz8._.js:2477
+[   67760ms] [LOG] [Sync] ✅ proveedores: Both have data - keeping local (more recent) @ http://localhost:3000/_next/static/chunks/node_modules_next_dist_115brz8._.js:2477
+[   67761ms] [LOG] [Sync] ✅ bodegas: Downloaded 2 items from server @ http://localhost:3000/_next/static/chunks/node_modules_next_dist_115brz8._.js:2477
+[   67766ms] [LOG] [Sync] ✅ correos-enviados: Downloaded 1 items from server @ http://localhost:3000/_next/static/chunks/node_modules_next_dist_115brz8._.js:2477
+[   67766ms] [LOG] [Sync] ✅ ordenes-compra: Downloaded 4 items from server @ http://localhost:3000/_next/static/chunks/node_modules_next_dist_115brz8._.js:2477
+[   67776ms] [LOG] [Sync] ✅ centros-costo: Downloaded 5 items from server @ http://localhost:3000/_next/static/chunks/node_modules_next_dist_115brz8._.js:2477
+[   67781ms] [LOG] [Sync] ✅ transferencias: Downloaded 1 items from server @ http://localhost:3000/_next/static/chunks/node_modules_next_dist_115brz8._.js:2477
+[   67782ms] [LOG] [Sync] ℹ️  ajustes-inventario: Both empty @ http://localhost:3000/_next/static/chunks/node_modules_next_dist_115brz8._.js:2477
+[   67785ms] [LOG] [Sync] ✅ recepcion-facturas: Downloaded 3 items from server @ http://localhost:3000/_next/static/chunks/node_modules_next_dist_115brz8._.js:2477
+[   67789ms] [LOG] [Sync] ℹ️  recepcion-remisiones: Both empty @ http://localhost:3000/_next/static/chunks/node_modules_next_dist_115brz8._.js:2477
+[   67792ms] [LOG] [Sync] ✅ usuarios: Both have data - keeping local (more recent) @ http://localhost:3000/_next/static/chunks/node_modules_next_dist_115brz8._.js:2477
+[   67800ms] [LOG] [Sync] ℹ️  carga-inicial: Both empty @ http://localhost:3000/_next/static/chunks/node_modules_next_dist_115brz8._.js:2477
+[   67803ms] [LOG] [Sync] ✅ modulos-sistema: Downloaded 22 items from server @ http://localhost:3000/_next/static/chunks/node_modules_next_dist_115brz8._.js:2477
+[   67811ms] [LOG] [Sync] ✅ personal-empresa: Downloaded 5 items from server @ http://localhost:3000/_next/static/chunks/node_modules_next_dist_115brz8._.js:2477
+[   67811ms] [LOG] [Sync] ✅ tareas: Downloaded 4 items from server @ http://localhost:3000/_next/static/chunks/node_modules_next_dist_115brz8._.js:2477
+[   67812ms] [LOG] [Sync] ✅ pedidos: Downloaded 1 items from server @ http://localhost:3000/_next/static/chunks/node_modules_next_dist_115brz8._.js:2477
+[   67814ms] [LOG] [Sync] ℹ️  pagos-proveedores: Both empty @ http://localhost:3000/_next/static/chunks/node_modules_next_dist_115brz8._.js:2477
+[   67818ms] [LOG] [Sync] ✅ datos-empresa: Downloaded 1 items from server @ http://localhost:3000/_next/static/chunks/node_modules_next_dist_115brz8._.js:2477
+[   67830ms] [LOG] [Sync] ℹ️  control-bancario: Both empty @ http://localhost:3000/_next/static/chunks/node_modules_next_dist_115brz8._.js:2477
+[   69874ms] [LOG] [TEST] localStorage cleared @ http://localhost:3000/_next/static/chunks/node_modules_next_dist_115brz8._.js:2477
+[   72893ms] [INFO] %cDownload the React DevTools for a better development experience: https://react.dev/link/react-devtools font-weight:bold @ http://localhost:3000/_next/static/chunks/node_modules_next_dist_115brz8._.js:2477
+[   72919ms] [LOG] [Zustand] ✅ Productos hidratados: 0 @ http://localhost:3000/_next/static/chunks/node_modules_next_dist_115brz8._.js:2477
+[   72919ms] [LOG] [Zustand] ✅ Referencias hidratadas (0 categorías) @ http://localhost:3000/_next/static/chunks/node_modules_next_dist_115brz8._.js:2477
+[   72920ms] [LOG] [HMR] connected @ http://localhost:3000/_next/static/chunks/node_modules_next_dist_115brz8._.js:2477
+[   72971ms] [LOG] [Zustand Persist] Guardando 13 productos en localStorage @ http://localhost:3000/_next/static/chunks/node_modules_next_dist_115brz8._.js:2477
+[   72971ms] [LOG] [Sync] ✅ productos: Downloaded 13 items from server @ http://localhost:3000/_next/static/chunks/node_modules_next_dist_115brz8._.js:2477
+[   72973ms] [LOG] [Sync] ✅ proveedores: Both have data - keeping local (more recent) @ http://localhost:3000/_next/static/chunks/node_modules_next_dist_115brz8._.js:2477
+[   72976ms] [LOG] [Sync] ✅ bodegas: Downloaded 2 items from server @ http://localhost:3000/_next/static/chunks/node_modules_next_dist_115brz8._.js:2477
+[   72983ms] [LOG] [Sync] ✅ correos-enviados: Downloaded 1 items from server @ http://localhost:3000/_next/static/chunks/node_modules_next_dist_115brz8._.js:2477
+[   72988ms] [LOG] [Sync] ✅ ordenes-compra: Downloaded 4 items from server @ http://localhost:3000/_next/static/chunks/node_modules_next_dist_115brz8._.js:2477
+[   72994ms] [LOG] [Sync] ✅ centros-costo: Downloaded 5 items from server @ http://localhost:3000/_next/static/chunks/node_modules_next_dist_115brz8._.js:2477
+[   72998ms] [LOG] [Sync] ✅ transferencias: Downloaded 1 items from server @ http://localhost:3000/_next/static/chunks/node_modules_next_dist_115brz8._.js:2477
+[   72999ms] [LOG] [Sync] ℹ️  ajustes-inventario: Both empty @ http://localhost:3000/_next/static/chunks/node_modules_next_dist_115brz8._.js:2477
+[   73002ms] [LOG] [Sync] ✅ recepcion-facturas: Downloaded 3 items from server @ http://localhost:3000/_next/static/chunks/node_modules_next_dist_115brz8._.js:2477
+[   73006ms] [LOG] [Sync] ℹ️  recepcion-remisiones: Both empty @ http://localhost:3000/_next/static/chunks/node_modules_next_dist_115brz8._.js:2477
+[   73009ms] [LOG] [Sync] ✅ usuarios: Both have data - keeping local (more recent) @ http://localhost:3000/_next/static/chunks/node_modules_next_dist_115brz8._.js:2477
+[   73014ms] [LOG] [Sync] ℹ️  carga-inicial: Both empty @ http://localhost:3000/_next/static/chunks/node_modules_next_dist_115brz8._.js:2477
+[   73016ms] [LOG] [Sync] ✅ modulos-sistema: Downloaded 22 items from server @ http://localhost:3000/_next/static/chunks/node_modules_next_dist_115brz8._.js:2477
+[   73025ms] [LOG] [Sync] ✅ personal-empresa: Downloaded 5 items from server @ http://localhost:3000/_next/static/chunks/node_modules_next_dist_115brz8._.js:2477
+[   73025ms] [LOG] [Sync] ✅ tareas: Downloaded 4 items from server @ http://localhost:3000/_next/static/chunks/node_modules_next_dist_115brz8._.js:2477
+[   73028ms] [LOG] [Sync] ✅ pedidos: Downloaded 1 items from server @ http://localhost:3000/_next/static/chunks/node_modules_next_dist_115brz8._.js:2477
+[   73031ms] [LOG] [Sync] ℹ️  pagos-proveedores: Both empty @ http://localhost:3000/_next/static/chunks/node_modules_next_dist_115brz8._.js:2477
+[   73034ms] [LOG] [Sync] ✅ datos-empresa: Downloaded 1 items from server @ http://localhost:3000/_next/static/chunks/node_modules_next_dist_115brz8._.js:2477
+[   73047ms] [LOG] [Fast Refresh] rebuilding @ http://localhost:3000/_next/static/chunks/node_modules_next_dist_115brz8._.js:2477
+[   73048ms] [LOG] [Sync] ℹ️  control-bancario: Both empty @ http://localhost:3000/_next/static/chunks/node_modules_next_dist_115brz8._.js:2477
+[   73064ms] [LOG] [Fast Refresh] done in 120ms @ http://localhost:3000/_next/static/chunks/node_modules_next_dist_115brz8._.js:2477
+[   78090ms] [INFO] %cDownload the React DevTools for a better development experience: https://react.dev/link/react-devtools font-weight:bold @ http://localhost:3000/_next/static/chunks/node_modules_next_dist_115brz8._.js:2477
+[   78100ms] [LOG] [Zustand] ✅ Productos hidratados: 13 @ http://localhost:3000/_next/static/chunks/node_modules_next_dist_115brz8._.js:2477
+[   78100ms] [LOG] [Zustand] ✅ Referencias hidratadas (0 categorías) @ http://localhost:3000/_next/static/chunks/node_modules_next_dist_115brz8._.js:2477
+[   78101ms] [LOG] [HMR] connected @ http://localhost:3000/_next/static/chunks/node_modules_next_dist_115brz8._.js:2477
+[   78157ms] [LOG] [Zustand Persist] Guardando 13 productos en localStorage @ http://localhost:3000/_next/static/chunks/node_modules_next_dist_115brz8._.js:2477
+[   78157ms] [LOG] [Sync] ✅ productos: Downloaded 13 items from server @ http://localhost:3000/_next/static/chunks/node_modules_next_dist_115brz8._.js:2477
+[   78162ms] [LOG] [Sync] ✅ proveedores: Both have data - keeping local (more recent) @ http://localhost:3000/_next/static/chunks/node_modules_next_dist_115brz8._.js:2477
+[   78162ms] [LOG] [Sync] ✅ bodegas: Downloaded 2 items from server @ http://localhost:3000/_next/static/chunks/node_modules_next_dist_115brz8._.js:2477
+[   78167ms] [LOG] [Sync] ✅ correos-enviados: Downloaded 1 items from server @ http://localhost:3000/_next/static/chunks/node_modules_next_dist_115brz8._.js:2477
+[   78170ms] [LOG] [Sync] ✅ ordenes-compra: Downloaded 4 items from server @ http://localhost:3000/_next/static/chunks/node_modules_next_dist_115brz8._.js:2477
+[   78178ms] [LOG] [Sync] ✅ centros-costo: Downloaded 5 items from server @ http://localhost:3000/_next/static/chunks/node_modules_next_dist_115brz8._.js:2477
+[   78183ms] [LOG] [Sync] ✅ transferencias: Downloaded 1 items from server @ http://localhost:3000/_next/static/chunks/node_modules_next_dist_115brz8._.js:2477
+[   78183ms] [LOG] [Sync] ℹ️  ajustes-inventario: Both empty @ http://localhost:3000/_next/static/chunks/node_modules_next_dist_115brz8._.js:2477
+[   78189ms] [LOG] [Sync] ✅ recepcion-facturas: Downloaded 3 items from server @ http://localhost:3000/_next/static/chunks/node_modules_next_dist_115brz8._.js:2477
+[   78193ms] [LOG] [Sync] ℹ️  recepcion-remisiones: Both empty @ http://localhost:3000/_next/static/chunks/node_modules_next_dist_115brz8._.js:2477
+[   78195ms] [LOG] [Sync] ✅ usuarios: Both have data - keeping local (more recent) @ http://localhost:3000/_next/static/chunks/node_modules_next_dist_115brz8._.js:2477
+[   78201ms] [LOG] [Sync] ℹ️  carga-inicial: Both empty @ http://localhost:3000/_next/static/chunks/node_modules_next_dist_115brz8._.js:2477
+[   78204ms] [LOG] [Sync] ✅ modulos-sistema: Downloaded 22 items from server @ http://localhost:3000/_next/static/chunks/node_modules_next_dist_115brz8._.js:2477
+[   78211ms] [LOG] [Sync] ✅ personal-empresa: Downloaded 5 items from server @ http://localhost:3000/_next/static/chunks/node_modules_next_dist_115brz8._.js:2477
+[   78215ms] [LOG] [Sync] ✅ tareas: Downloaded 4 items from server @ http://localhost:3000/_next/static/chunks/node_modules_next_dist_115brz8._.js:2477
+[   78217ms] [LOG] [Sync] ✅ pedidos: Downloaded 1 items from server @ http://localhost:3000/_next/static/chunks/node_modules_next_dist_115brz8._.js:2477
+[   78219ms] [LOG] [Sync] ℹ️  pagos-proveedores: Both empty @ http://localhost:3000/_next/static/chunks/node_modules_next_dist_115brz8._.js:2477
+[   78224ms] [LOG] [Sync] ✅ datos-empresa: Downloaded 1 items from server @ http://localhost:3000/_next/static/chunks/node_modules_next_dist_115brz8._.js:2477
+[   78234ms] [LOG] [Fast Refresh] rebuilding @ http://localhost:3000/_next/static/chunks/node_modules_next_dist_115brz8._.js:2477
+[   78234ms] [LOG] [Sync] ℹ️  control-bancario: Both empty @ http://localhost:3000/_next/static/chunks/node_modules_next_dist_115brz8._.js:2477
+[   78254ms] [LOG] [Fast Refresh] done in 129ms @ http://localhost:3000/_next/static/chunks/node_modules_next_dist_115brz8._.js:2477
+[   83294ms] [INFO] %cDownload the React DevTools for a better development experience: https://react.dev/link/react-devtools font-weight:bold @ http://localhost:3000/_next/static/chunks/node_modules_next_dist_115brz8._.js:2477
+[   83305ms] [LOG] [Zustand] ✅ Productos hidratados: 13 @ http://localhost:3000/_next/static/chunks/node_modules_next_dist_115brz8._.js:2477
+[   83306ms] [LOG] [Zustand] ✅ Referencias hidratadas (0 categorías) @ http://localhost:3000/_next/static/chunks/node_modules_next_dist_115brz8._.js:2477
+[   83310ms] [LOG] [HMR] connected @ http://localhost:3000/_next/static/chunks/node_modules_next_dist_115brz8._.js:2477
+[   83364ms] [LOG] [Zustand Persist] Guardando 13 productos en localStorage @ http://localhost:3000/_next/static/chunks/node_modules_next_dist_115brz8._.js:2477
+[   83364ms] [LOG] [Sync] ✅ productos: Downloaded 13 items from server @ http://localhost:3000/_next/static/chunks/node_modules_next_dist_115brz8._.js:2477
+[   83369ms] [LOG] [Sync] ✅ proveedores: Both have data - keeping local (more recent) @ http://localhost:3000/_next/static/chunks/node_modules_next_dist_115brz8._.js:2477
+[   83369ms] [LOG] [Sync] ✅ bodegas: Downloaded 2 items from server @ http://localhost:3000/_next/static/chunks/node_modules_next_dist_115brz8._.js:2477
+[   83376ms] [LOG] [Sync] ✅ correos-enviados: Downloaded 1 items from server @ http://localhost:3000/_next/static/chunks/node_modules_next_dist_115brz8._.js:2477
+[   83377ms] [LOG] [Sync] ✅ ordenes-compra: Downloaded 4 items from server @ http://localhost:3000/_next/static/chunks/node_modules_next_dist_115brz8._.js:2477
+[   83381ms] [LOG] [Sync] ✅ centros-costo: Downloaded 5 items from server @ http://localhost:3000/_next/static/chunks/node_modules_next_dist_115brz8._.js:2477
+[   83386ms] [LOG] [Sync] ✅ transferencias: Downloaded 1 items from server @ http://localhost:3000/_next/static/chunks/node_modules_next_dist_115brz8._.js:2477
+[   83388ms] [LOG] [Sync] ℹ️  ajustes-inventario: Both empty @ http://localhost:3000/_next/static/chunks/node_modules_next_dist_115brz8._.js:2477
+[   83390ms] [LOG] [Sync] ✅ recepcion-facturas: Downloaded 3 items from server @ http://localhost:3000/_next/static/chunks/node_modules_next_dist_115brz8._.js:2477
+[   83393ms] [LOG] [Sync] ℹ️  recepcion-remisiones: Both empty @ http://localhost:3000/_next/static/chunks/node_modules_next_dist_115brz8._.js:2477
+[   83396ms] [LOG] [Sync] ✅ usuarios: Both have data - keeping local (more recent) @ http://localhost:3000/_next/static/chunks/node_modules_next_dist_115brz8._.js:2477
+[   83401ms] [LOG] [Sync] ℹ️  carga-inicial: Both empty @ http://localhost:3000/_next/static/chunks/node_modules_next_dist_115brz8._.js:2477
+[   83405ms] [LOG] [Sync] ✅ modulos-sistema: Downloaded 22 items from server @ http://localhost:3000/_next/static/chunks/node_modules_next_dist_115brz8._.js:2477
+[   83412ms] [LOG] [Sync] ✅ personal-empresa: Downloaded 5 items from server @ http://localhost:3000/_next/static/chunks/node_modules_next_dist_115brz8._.js:2477
+[   83413ms] [LOG] [Sync] ✅ tareas: Downloaded 4 items from server @ http://localhost:3000/_next/static/chunks/node_modules_next_dist_115brz8._.js:2477
+[   83414ms] [LOG] [Sync] ✅ pedidos: Downloaded 1 items from server @ http://localhost:3000/_next/static/chunks/node_modules_next_dist_115brz8._.js:2477
+[   83416ms] [LOG] [Sync] ℹ️  pagos-proveedores: Both empty @ http://localhost:3000/_next/static/chunks/node_modules_next_dist_115brz8._.js:2477
+[   83420ms] [LOG] [Sync] ✅ datos-empresa: Downloaded 1 items from server @ http://localhost:3000/_next/static/chunks/node_modules_next_dist_115brz8._.js:2477
+[   83431ms] [LOG] [Fast Refresh] rebuilding @ http://localhost:3000/_next/static/chunks/node_modules_next_dist_115brz8._.js:2477
+[   83431ms] [LOG] [Sync] ℹ️  control-bancario: Both empty @ http://localhost:3000/_next/static/chunks/node_modules_next_dist_115brz8._.js:2477
+[   83449ms] [LOG] [Fast Refresh] done in 124ms @ http://localhost:3000/_next/static/chunks/node_modules_next_dist_115brz8._.js:2477
+[   88498ms] [INFO] %cDownload the React DevTools for a better development experience: https://react.dev/link/react-devtools font-weight:bold @ http://localhost:3000/_next/static/chunks/node_modules_next_dist_115brz8._.js:2477
+[   88512ms] [LOG] [Zustand] ✅ Productos hidratados: 13 @ http://localhost:3000/_next/static/chunks/node_modules_next_dist_115brz8._.js:2477
+[   88513ms] [LOG] [Zustand] ✅ Referencias hidratadas (0 categorías) @ http://localhost:3000/_next/static/chunks/node_modules_next_dist_115brz8._.js:2477
+[   88514ms] [LOG] [HMR] connected @ http://localhost:3000/_next/static/chunks/node_modules_next_dist_115brz8._.js:2477
+[   88567ms] [LOG] [Zustand Persist] Guardando 13 productos en localStorage @ http://localhost:3000/_next/static/chunks/node_modules_next_dist_115brz8._.js:2477
+[   88567ms] [LOG] [Sync] ✅ productos: Downloaded 13 items from server @ http://localhost:3000/_next/static/chunks/node_modules_next_dist_115brz8._.js:2477
+[   88572ms] [LOG] [Sync] ✅ proveedores: Both have data - keeping local (more recent) @ http://localhost:3000/_next/static/chunks/node_modules_next_dist_115brz8._.js:2477
+[   88573ms] [LOG] [Sync] ✅ bodegas: Downloaded 2 items from server @ http://localhost:3000/_next/static/chunks/node_modules_next_dist_115brz8._.js:2477
+[   88580ms] [LOG] [Sync] ✅ correos-enviados: Downloaded 1 items from server @ http://localhost:3000/_next/static/chunks/node_modules_next_dist_115brz8._.js:2477
+[   88580ms] [LOG] [Sync] ✅ ordenes-compra: Downloaded 4 items from server @ http://localhost:3000/_next/static/chunks/node_modules_next_dist_115brz8._.js:2477
+[   88597ms] [LOG] [Sync] ✅ transferencias: Downloaded 1 items from server @ http://localhost:3000/_next/static/chunks/node_modules_next_dist_115brz8._.js:2477
+[   88600ms] [LOG] [Sync] ✅ recepcion-facturas: Downloaded 3 items from server @ http://localhost:3000/_next/static/chunks/node_modules_next_dist_115brz8._.js:2477
+[   88604ms] [LOG] [Sync] ℹ️  recepcion-remisiones: Both empty @ http://localhost:3000/_next/static/chunks/node_modules_next_dist_115brz8._.js:2477
+[   88611ms] [LOG] [Sync] ✅ usuarios: Both have data - keeping local (more recent) @ http://localhost:3000/_next/static/chunks/node_modules_next_dist_115brz8._.js:2477
+[   88614ms] [LOG] [Sync] ✅ centros-costo: Downloaded 5 items from server @ http://localhost:3000/_next/static/chunks/node_modules_next_dist_115brz8._.js:2477
+[   88621ms] [LOG] [Sync] ℹ️  ajustes-inventario: Both empty @ http://localhost:3000/_next/static/chunks/node_modules_next_dist_115brz8._.js:2477
+[   88646ms] [LOG] [Sync] ℹ️  carga-inicial: Both empty @ http://localhost:3000/_next/static/chunks/node_modules_next_dist_115brz8._.js:2477
+[   88649ms] [LOG] [Sync] ✅ modulos-sistema: Downloaded 22 items from server @ http://localhost:3000/_next/static/chunks/node_modules_next_dist_115brz8._.js:2477
+[   88657ms] [LOG] [Sync] ✅ personal-empresa: Downloaded 5 items from server @ http://localhost:3000/_next/static/chunks/node_modules_next_dist_115brz8._.js:2477
+[   88657ms] [LOG] [Sync] ✅ tareas: Downloaded 4 items from server @ http://localhost:3000/_next/static/chunks/node_modules_next_dist_115brz8._.js:2477
+[   88672ms] [LOG] [Sync] ✅ pedidos: Downloaded 1 items from server @ http://localhost:3000/_next/static/chunks/node_modules_next_dist_115brz8._.js:2477
+[   88674ms] [LOG] [Sync] ℹ️  pagos-proveedores: Both empty @ http://localhost:3000/_next/static/chunks/node_modules_next_dist_115brz8._.js:2477
+[   88678ms] [LOG] [Sync] ✅ datos-empresa: Downloaded 1 items from server @ http://localhost:3000/_next/static/chunks/node_modules_next_dist_115brz8._.js:2477
+[   88690ms] [LOG] [Sync] ℹ️  control-bancario: Both empty @ http://localhost:3000/_next/static/chunks/node_modules_next_dist_115brz8._.js:2477
+[   93695ms] [INFO] %cDownload the React DevTools for a better development experience: https://react.dev/link/react-devtools font-weight:bold @ http://localhost:3000/_next/static/chunks/node_modules_next_dist_115brz8._.js:2477
+[   93705ms] [LOG] [Zustand] ✅ Productos hidratados: 13 @ http://localhost:3000/_next/static/chunks/node_modules_next_dist_115brz8._.js:2477
+[   93706ms] [LOG] [Zustand] ✅ Referencias hidratadas (0 categorías) @ http://localhost:3000/_next/static/chunks/node_modules_next_dist_115brz8._.js:2477
+[   93709ms] [LOG] [HMR] connected @ http://localhost:3000/_next/static/chunks/node_modules_next_dist_115brz8._.js:2477
+[   93764ms] [LOG] [Zustand Persist] Guardando 13 productos en localStorage @ http://localhost:3000/_next/static/chunks/node_modules_next_dist_115brz8._.js:2477
+[   93764ms] [LOG] [Sync] ✅ productos: Downloaded 13 items from server @ http://localhost:3000/_next/static/chunks/node_modules_next_dist_115brz8._.js:2477
+[   93769ms] [LOG] [Sync] ✅ proveedores: Both have data - keeping local (more recent) @ http://localhost:3000/_next/static/chunks/node_modules_next_dist_115brz8._.js:2477
+[   93769ms] [LOG] [Sync] ✅ bodegas: Downloaded 2 items from server @ http://localhost:3000/_next/static/chunks/node_modules_next_dist_115brz8._.js:2477
+[   93775ms] [LOG] [Sync] ✅ correos-enviados: Downloaded 1 items from server @ http://localhost:3000/_next/static/chunks/node_modules_next_dist_115brz8._.js:2477
+[   93776ms] [LOG] [Sync] ✅ ordenes-compra: Downloaded 4 items from server @ http://localhost:3000/_next/static/chunks/node_modules_next_dist_115brz8._.js:2477
+[   93781ms] [LOG] [Sync] ✅ centros-costo: Downloaded 5 items from server @ http://localhost:3000/_next/static/chunks/node_modules_next_dist_115brz8._.js:2477
+[   93785ms] [LOG] [Sync] ✅ transferencias: Downloaded 1 items from server @ http://localhost:3000/_next/static/chunks/node_modules_next_dist_115brz8._.js:2477
+[   93786ms] [LOG] [Sync] ℹ️  ajustes-inventario: Both empty @ http://localhost:3000/_next/static/chunks/node_modules_next_dist_115brz8._.js:2477
+[   93791ms] [LOG] [Sync] ✅ recepcion-facturas: Downloaded 3 items from server @ http://localhost:3000/_next/static/chunks/node_modules_next_dist_115brz8._.js:2477
+[   93795ms] [LOG] [Sync] ℹ️  recepcion-remisiones: Both empty @ http://localhost:3000/_next/static/chunks/node_modules_next_dist_115brz8._.js:2477
+[   93797ms] [LOG] [Sync] ✅ usuarios: Both have data - keeping local (more recent) @ http://localhost:3000/_next/static/chunks/node_modules_next_dist_115brz8._.js:2477
+[   93803ms] [LOG] [Sync] ℹ️  carga-inicial: Both empty @ http://localhost:3000/_next/static/chunks/node_modules_next_dist_115brz8._.js:2477
+[   93806ms] [LOG] [Sync] ✅ modulos-sistema: Downloaded 22 items from server @ http://localhost:3000/_next/static/chunks/node_modules_next_dist_115brz8._.js:2477
+[   93814ms] [LOG] [Sync] ✅ personal-empresa: Downloaded 5 items from server @ http://localhost:3000/_next/static/chunks/node_modules_next_dist_115brz8._.js:2477
+[   93814ms] [LOG] [Sync] ✅ tareas: Downloaded 4 items from server @ http://localhost:3000/_next/static/chunks/node_modules_next_dist_115brz8._.js:2477
+[   93815ms] [LOG] [Sync] ✅ pedidos: Downloaded 1 items from server @ http://localhost:3000/_next/static/chunks/node_modules_next_dist_115brz8._.js:2477
+[   93817ms] [LOG] [Sync] ℹ️  pagos-proveedores: Both empty @ http://localhost:3000/_next/static/chunks/node_modules_next_dist_115brz8._.js:2477
+[   93822ms] [LOG] [Sync] ✅ datos-empresa: Downloaded 1 items from server @ http://localhost:3000/_next/static/chunks/node_modules_next_dist_115brz8._.js:2477
+[   93832ms] [LOG] [Fast Refresh] rebuilding @ http://localhost:3000/_next/static/chunks/node_modules_next_dist_115brz8._.js:2477
+[   93832ms] [LOG] [Sync] ℹ️  control-bancario: Both empty @ http://localhost:3000/_next/static/chunks/node_modules_next_dist_115brz8._.js:2477
+[   93849ms] [LOG] [Fast Refresh] done in 127ms @ http://localhost:3000/_next/static/chunks/node_modules_next_dist_115brz8._.js:2477
+[   98885ms] [INFO] %cDownload the React DevTools for a better development experience: https://react.dev/link/react-devtools font-weight:bold @ http://localhost:3000/_next/static/chunks/node_modules_next_dist_115brz8._.js:2477
+[   98900ms] [LOG] [Zustand] ✅ Productos hidratados: 13 @ http://localhost:3000/_next/static/chunks/node_modules_next_dist_115brz8._.js:2477
+[   98900ms] [LOG] [Zustand] ✅ Referencias hidratadas (0 categorías) @ http://localhost:3000/_next/static/chunks/node_modules_next_dist_115brz8._.js:2477
+[   98901ms] [LOG] [HMR] connected @ http://localhost:3000/_next/static/chunks/node_modules_next_dist_115brz8._.js:2477
+[   98957ms] [LOG] [Zustand Persist] Guardando 13 productos en localStorage @ http://localhost:3000/_next/static/chunks/node_modules_next_dist_115brz8._.js:2477
+[   98957ms] [LOG] [Sync] ✅ productos: Downloaded 13 items from server @ http://localhost:3000/_next/static/chunks/node_modules_next_dist_115brz8._.js:2477
+[   98962ms] [LOG] [Sync] ✅ proveedores: Both have data - keeping local (more recent) @ http://localhost:3000/_next/static/chunks/node_modules_next_dist_115brz8._.js:2477
+[   98962ms] [LOG] [Sync] ✅ bodegas: Downloaded 2 items from server @ http://localhost:3000/_next/static/chunks/node_modules_next_dist_115brz8._.js:2477
+[   98967ms] [LOG] [Sync] ✅ correos-enviados: Downloaded 1 items from server @ http://localhost:3000/_next/static/chunks/node_modules_next_dist_115brz8._.js:2477
+[   98968ms] [LOG] [Sync] ✅ ordenes-compra: Downloaded 4 items from server @ http://localhost:3000/_next/static/chunks/node_modules_next_dist_115brz8._.js:2477
+[   98976ms] [LOG] [Sync] ✅ centros-costo: Downloaded 5 items from server @ http://localhost:3000/_next/static/chunks/node_modules_next_dist_115brz8._.js:2477
+[   98981ms] [LOG] [Sync] ✅ transferencias: Downloaded 1 items from server @ http://localhost:3000/_next/static/chunks/node_modules_next_dist_115brz8._.js:2477
+[   98983ms] [LOG] [Sync] ℹ️  ajustes-inventario: Both empty @ http://localhost:3000/_next/static/chunks/node_modules_next_dist_115brz8._.js:2477
+[   98985ms] [LOG] [Sync] ✅ recepcion-facturas: Downloaded 3 items from server @ http://localhost:3000/_next/static/chunks/node_modules_next_dist_115brz8._.js:2477
+[   98990ms] [LOG] [Sync] ℹ️  recepcion-remisiones: Both empty @ http://localhost:3000/_next/static/chunks/node_modules_next_dist_115brz8._.js:2477
+[   98996ms] [LOG] [Sync] ✅ usuarios: Both have data - keeping local (more recent) @ http://localhost:3000/_next/static/chunks/node_modules_next_dist_115brz8._.js:2477
+[   99004ms] [LOG] [Sync] ℹ️  carga-inicial: Both empty @ http://localhost:3000/_next/static/chunks/node_modules_next_dist_115brz8._.js:2477
+[   99008ms] [LOG] [Sync] ✅ modulos-sistema: Downloaded 22 items from server @ http://localhost:3000/_next/static/chunks/node_modules_next_dist_115brz8._.js:2477
+[   99016ms] [LOG] [Sync] ✅ personal-empresa: Downloaded 5 items from server @ http://localhost:3000/_next/static/chunks/node_modules_next_dist_115brz8._.js:2477
+[   99016ms] [LOG] [Sync] ✅ tareas: Downloaded 4 items from server @ http://localhost:3000/_next/static/chunks/node_modules_next_dist_115brz8._.js:2477
+[   99020ms] [LOG] [Sync] ✅ pedidos: Downloaded 1 items from server @ http://localhost:3000/_next/static/chunks/node_modules_next_dist_115brz8._.js:2477
+[   99038ms] [LOG] [Sync] ℹ️  pagos-proveedores: Both empty @ http://localhost:3000/_next/static/chunks/node_modules_next_dist_115brz8._.js:2477
+[   99042ms] [LOG] [Sync] ✅ datos-empresa: Downloaded 1 items from server @ http://localhost:3000/_next/static/chunks/node_modules_next_dist_115brz8._.js:2477
+[   99054ms] [LOG] [Sync] ℹ️  control-bancario: Both empty @ http://localhost:3000/_next/static/chunks/node_modules_next_dist_115brz8._.js:2477
+[  104075ms] [INFO] %cDownload the React DevTools for a better development experience: https://react.dev/link/react-devtools font-weight:bold @ http://localhost:3000/_next/static/chunks/node_modules_next_dist_115brz8._.js:2477
+[  104085ms] [LOG] [Zustand] ✅ Productos hidratados: 13 @ http://localhost:3000/_next/static/chunks/node_modules_next_dist_115brz8._.js:2477
+[  104085ms] [LOG] [Zustand] ✅ Referencias hidratadas (0 categorías) @ http://localhost:3000/_next/static/chunks/node_modules_next_dist_115brz8._.js:2477
+[  104087ms] [LOG] [HMR] connected @ http://localhost:3000/_next/static/chunks/node_modules_next_dist_115brz8._.js:2477
+[  104143ms] [LOG] [Zustand Persist] Guardando 13 productos en localStorage @ http://localhost:3000/_next/static/chunks/node_modules_next_dist_115brz8._.js:2477
+[  104143ms] [LOG] [Sync] ✅ productos: Downloaded 13 items from server @ http://localhost:3000/_next/static/chunks/node_modules_next_dist_115brz8._.js:2477
+[  104148ms] [LOG] [Sync] ✅ proveedores: Both have data - keeping local (more recent) @ http://localhost:3000/_next/static/chunks/node_modules_next_dist_115brz8._.js:2477
+[  104148ms] [LOG] [Sync] ✅ bodegas: Downloaded 2 items from server @ http://localhost:3000/_next/static/chunks/node_modules_next_dist_115brz8._.js:2477
+[  104155ms] [LOG] [Sync] ✅ correos-enviados: Downloaded 1 items from server @ http://localhost:3000/_next/static/chunks/node_modules_next_dist_115brz8._.js:2477
+[  104156ms] [LOG] [Sync] ✅ ordenes-compra: Downloaded 4 items from server @ http://localhost:3000/_next/static/chunks/node_modules_next_dist_115brz8._.js:2477
+[  104161ms] [LOG] [Sync] ✅ centros-costo: Downloaded 5 items from server @ http://localhost:3000/_next/static/chunks/node_modules_next_dist_115brz8._.js:2477
+[  104165ms] [LOG] [Sync] ✅ transferencias: Downloaded 1 items from server @ http://localhost:3000/_next/static/chunks/node_modules_next_dist_115brz8._.js:2477
+[  104167ms] [LOG] [Sync] ℹ️  ajustes-inventario: Both empty @ http://localhost:3000/_next/static/chunks/node_modules_next_dist_115brz8._.js:2477
+[  104169ms] [LOG] [Sync] ✅ recepcion-facturas: Downloaded 3 items from server @ http://localhost:3000/_next/static/chunks/node_modules_next_dist_115brz8._.js:2477
+[  104174ms] [LOG] [Sync] ℹ️  recepcion-remisiones: Both empty @ http://localhost:3000/_next/static/chunks/node_modules_next_dist_115brz8._.js:2477
+[  104177ms] [LOG] [Sync] ✅ usuarios: Both have data - keeping local (more recent) @ http://localhost:3000/_next/static/chunks/node_modules_next_dist_115brz8._.js:2477
+[  104181ms] [LOG] [Sync] ℹ️  carga-inicial: Both empty @ http://localhost:3000/_next/static/chunks/node_modules_next_dist_115brz8._.js:2477
+[  104186ms] [LOG] [Sync] ✅ modulos-sistema: Downloaded 22 items from server @ http://localhost:3000/_next/static/chunks/node_modules_next_dist_115brz8._.js:2477
+[  104194ms] [LOG] [Sync] ✅ personal-empresa: Downloaded 5 items from server @ http://localhost:3000/_next/static/chunks/node_modules_next_dist_115brz8._.js:2477
+[  104194ms] [LOG] [Sync] ✅ tareas: Downloaded 4 items from server @ http://localhost:3000/_next/static/chunks/node_modules_next_dist_115brz8._.js:2477
+[  104195ms] [LOG] [Sync] ✅ pedidos: Downloaded 1 items from server @ http://localhost:3000/_next/static/chunks/node_modules_next_dist_115brz8._.js:2477
+[  104198ms] [LOG] [Sync] ℹ️  pagos-proveedores: Both empty @ http://localhost:3000/_next/static/chunks/node_modules_next_dist_115brz8._.js:2477
+[  104201ms] [LOG] [Sync] ✅ datos-empresa: Downloaded 1 items from server @ http://localhost:3000/_next/static/chunks/node_modules_next_dist_115brz8._.js:2477
+[  104213ms] [LOG] [Fast Refresh] rebuilding @ http://localhost:3000/_next/static/chunks/node_modules_next_dist_115brz8._.js:2477
+[  104213ms] [LOG] [Sync] ℹ️  control-bancario: Both empty @ http://localhost:3000/_next/static/chunks/node_modules_next_dist_115brz8._.js:2477
+[  104234ms] [LOG] [Fast Refresh] done in 132ms @ http://localhost:3000/_next/static/chunks/node_modules_next_dist_115brz8._.js:2477
+[  109302ms] [INFO] %cDownload the React DevTools for a better development experience: https://react.dev/link/react-devtools font-weight:bold @ http://localhost:3000/_next/static/chunks/node_modules_next_dist_115brz8._.js:2477
+[  109313ms] [LOG] [Zustand] ✅ Productos hidratados: 13 @ http://localhost:3000/_next/static/chunks/node_modules_next_dist_115brz8._.js:2477
+[  109313ms] [LOG] [Zustand] ✅ Referencias hidratadas (0 categorías) @ http://localhost:3000/_next/static/chunks/node_modules_next_dist_115brz8._.js:2477
+[  109314ms] [LOG] [HMR] connected @ http://localhost:3000/_next/static/chunks/node_modules_next_dist_115brz8._.js:2477
+[  109371ms] [LOG] [Zustand Persist] Guardando 13 productos en localStorage @ http://localhost:3000/_next/static/chunks/node_modules_next_dist_115brz8._.js:2477
+[  109371ms] [LOG] [Sync] ✅ productos: Downloaded 13 items from server @ http://localhost:3000/_next/static/chunks/node_modules_next_dist_115brz8._.js:2477
+[  109376ms] [LOG] [Sync] ✅ proveedores: Both have data - keeping local (more recent) @ http://localhost:3000/_next/static/chunks/node_modules_next_dist_115brz8._.js:2477
+[  109376ms] [LOG] [Sync] ✅ bodegas: Downloaded 2 items from server @ http://localhost:3000/_next/static/chunks/node_modules_next_dist_115brz8._.js:2477
+[  109383ms] [LOG] [Sync] ✅ correos-enviados: Downloaded 1 items from server @ http://localhost:3000/_next/static/chunks/node_modules_next_dist_115brz8._.js:2477
+[  109384ms] [LOG] [Sync] ✅ ordenes-compra: Downloaded 4 items from server @ http://localhost:3000/_next/static/chunks/node_modules_next_dist_115brz8._.js:2477
+[  109390ms] [LOG] [Sync] ✅ centros-costo: Downloaded 5 items from server @ http://localhost:3000/_next/static/chunks/node_modules_next_dist_115brz8._.js:2477
+[  109395ms] [LOG] [Sync] ✅ transferencias: Downloaded 1 items from server @ http://localhost:3000/_next/static/chunks/node_modules_next_dist_115brz8._.js:2477
+[  109395ms] [LOG] [Sync] ℹ️  ajustes-inventario: Both empty @ http://localhost:3000/_next/static/chunks/node_modules_next_dist_115brz8._.js:2477
+[  109398ms] [LOG] [Sync] ✅ recepcion-facturas: Downloaded 3 items from server @ http://localhost:3000/_next/static/chunks/node_modules_next_dist_115brz8._.js:2477
+[  109400ms] [LOG] [Sync] ℹ️  recepcion-remisiones: Both empty @ http://localhost:3000/_next/static/chunks/node_modules_next_dist_115brz8._.js:2477
+[  109404ms] [LOG] [Sync] ✅ usuarios: Both have data - keeping local (more recent) @ http://localhost:3000/_next/static/chunks/node_modules_next_dist_115brz8._.js:2477
+[  109410ms] [LOG] [Sync] ℹ️  carga-inicial: Both empty @ http://localhost:3000/_next/static/chunks/node_modules_next_dist_115brz8._.js:2477
+[  109412ms] [LOG] [Sync] ✅ modulos-sistema: Downloaded 22 items from server @ http://localhost:3000/_next/static/chunks/node_modules_next_dist_115brz8._.js:2477
+[  109420ms] [LOG] [Sync] ✅ personal-empresa: Downloaded 5 items from server @ http://localhost:3000/_next/static/chunks/node_modules_next_dist_115brz8._.js:2477
+[  109421ms] [LOG] [Sync] ✅ tareas: Downloaded 4 items from server @ http://localhost:3000/_next/static/chunks/node_modules_next_dist_115brz8._.js:2477
+[  109421ms] [LOG] [Sync] ✅ pedidos: Downloaded 1 items from server @ http://localhost:3000/_next/static/chunks/node_modules_next_dist_115brz8._.js:2477
+[  109422ms] [LOG] [Sync] ℹ️  pagos-proveedores: Both empty @ http://localhost:3000/_next/static/chunks/node_modules_next_dist_115brz8._.js:2477
+[  109427ms] [LOG] [Sync] ✅ datos-empresa: Downloaded 1 items from server @ http://localhost:3000/_next/static/chunks/node_modules_next_dist_115brz8._.js:2477
+[  109437ms] [LOG] [Sync] ℹ️  control-bancario: Both empty @ http://localhost:3000/_next/static/chunks/node_modules_next_dist_115brz8._.js:2477
+[  114500ms] [INFO] %cDownload the React DevTools for a better development experience: https://react.dev/link/react-devtools font-weight:bold @ http://localhost:3000/_next/static/chunks/node_modules_next_dist_115brz8._.js:2477
+[  114516ms] [LOG] [Zustand] ✅ Productos hidratados: 13 @ http://localhost:3000/_next/static/chunks/node_modules_next_dist_115brz8._.js:2477
+[  114517ms] [LOG] [Zustand] ✅ Referencias hidratadas (0 categorías) @ http://localhost:3000/_next/static/chunks/node_modules_next_dist_115brz8._.js:2477
+[  114520ms] [LOG] [HMR] connected @ http://localhost:3000/_next/static/chunks/node_modules_next_dist_115brz8._.js:2477
+[  114572ms] [LOG] [Zustand Persist] Guardando 13 productos en localStorage @ http://localhost:3000/_next/static/chunks/node_modules_next_dist_115brz8._.js:2477
+[  114572ms] [LOG] [Sync] ✅ productos: Downloaded 13 items from server @ http://localhost:3000/_next/static/chunks/node_modules_next_dist_115brz8._.js:2477
+[  114578ms] [LOG] [Sync] ✅ proveedores: Both have data - keeping local (more recent) @ http://localhost:3000/_next/static/chunks/node_modules_next_dist_115brz8._.js:2477
+[  114578ms] [LOG] [Sync] ✅ bodegas: Downloaded 2 items from server @ http://localhost:3000/_next/static/chunks/node_modules_next_dist_115brz8._.js:2477
+[  114585ms] [LOG] [Sync] ✅ correos-enviados: Downloaded 1 items from server @ http://localhost:3000/_next/static/chunks/node_modules_next_dist_115brz8._.js:2477
+[  114588ms] [LOG] [Sync] ✅ ordenes-compra: Downloaded 4 items from server @ http://localhost:3000/_next/static/chunks/node_modules_next_dist_115brz8._.js:2477
+[  114600ms] [LOG] [Sync] ✅ centros-costo: Downloaded 5 items from server @ http://localhost:3000/_next/static/chunks/node_modules_next_dist_115brz8._.js:2477
+[  114604ms] [LOG] [Sync] ✅ transferencias: Downloaded 1 items from server @ http://localhost:3000/_next/static/chunks/node_modules_next_dist_115brz8._.js:2477
+[  114605ms] [LOG] [Sync] ℹ️  ajustes-inventario: Both empty @ http://localhost:3000/_next/static/chunks/node_modules_next_dist_115brz8._.js:2477
+[  114610ms] [LOG] [Sync] ✅ recepcion-facturas: Downloaded 3 items from server @ http://localhost:3000/_next/static/chunks/node_modules_next_dist_115brz8._.js:2477
+[  114614ms] [LOG] [Sync] ℹ️  recepcion-remisiones: Both empty @ http://localhost:3000/_next/static/chunks/node_modules_next_dist_115brz8._.js:2477
+[  114617ms] [LOG] [Sync] ✅ usuarios: Both have data - keeping local (more recent) @ http://localhost:3000/_next/static/chunks/node_modules_next_dist_115brz8._.js:2477
+[  114624ms] [LOG] [Sync] ℹ️  carga-inicial: Both empty @ http://localhost:3000/_next/static/chunks/node_modules_next_dist_115brz8._.js:2477
+[  114629ms] [LOG] [Sync] ✅ modulos-sistema: Downloaded 22 items from server @ http://localhost:3000/_next/static/chunks/node_modules_next_dist_115brz8._.js:2477
+[  114636ms] [LOG] [Sync] ✅ personal-empresa: Downloaded 5 items from server @ http://localhost:3000/_next/static/chunks/node_modules_next_dist_115brz8._.js:2477
+[  114636ms] [LOG] [Sync] ✅ tareas: Downloaded 4 items from server @ http://localhost:3000/_next/static/chunks/node_modules_next_dist_115brz8._.js:2477
+[  114638ms] [LOG] [Sync] ✅ pedidos: Downloaded 1 items from server @ http://localhost:3000/_next/static/chunks/node_modules_next_dist_115brz8._.js:2477
+[  114641ms] [LOG] [Sync] ℹ️  pagos-proveedores: Both empty @ http://localhost:3000/_next/static/chunks/node_modules_next_dist_115brz8._.js:2477
+[  114647ms] [LOG] [Sync] ✅ datos-empresa: Downloaded 1 items from server @ http://localhost:3000/_next/static/chunks/node_modules_next_dist_115brz8._.js:2477
+[  114658ms] [LOG] [Sync] ℹ️  control-bancario: Both empty @ http://localhost:3000/_next/static/chunks/node_modules_next_dist_115brz8._.js:2477
+[  114672ms] [LOG] [Fast Refresh] rebuilding @ http://localhost:3000/_next/static/chunks/node_modules_next_dist_115brz8._.js:2477
+[  114684ms] [LOG] [Fast Refresh] done in 114ms @ http://localhost:3000/_next/static/chunks/node_modules_next_dist_115brz8._.js:2477

@@ -1,0 +1,33 @@
+[     751ms] [LOG] [Zustand] ✅ Productos hidratados: 13 @ https://gestionoperaciones-spin.vercel.app/_next/static/chunks/083iybd6zyp55.js?dpl=dpl_GDHD6io2wwFVNMDp7PSEqnFAMpsF:0
+[     752ms] [ERROR] [Zustand] Error rehydrating referencias: TypeError: Cannot read properties of undefined (reading 'data')
+    at Object.merge (https://gestionoperaciones-spin.vercel.app/_next/static/chunks/083iybd6zyp55.js?dpl=dpl_GDHD6io2wwFVNMDp7PSEqnFAMpsF:1:19550)
+    at https://gestionoperaciones-spin.vercel.app/_next/static/chunks/083iybd6zyp55.js?dpl=dpl_GDHD6io2wwFVNMDp7PSEqnFAMpsF:1:7564
+    at https://gestionoperaciones-spin.vercel.app/_next/static/chunks/083iybd6zyp55.js?dpl=dpl_GDHD6io2wwFVNMDp7PSEqnFAMpsF:1:6280
+    at Object.then (https://gestionoperaciones-spin.vercel.app/_next/static/chunks/083iybd6zyp55.js?dpl=dpl_GDHD6io2wwFVNMDp7PSEqnFAMpsF:1:6337)
+    at b (https://gestionoperaciones-spin.vercel.app/_next/static/chunks/083iybd6zyp55.js?dpl=dpl_GDHD6io2wwFVNMDp7PSEqnFAMpsF:1:7513)
+    at https://gestionoperaciones-spin.vercel.app/_next/static/chunks/083iybd6zyp55.js?dpl=dpl_GDHD6io2wwFVNMDp7PSEqnFAMpsF:1:8012
+    at r (https://gestionoperaciones-spin.vercel.app/_next/static/chunks/083iybd6zyp55.js?dpl=dpl_GDHD6io2wwFVNMDp7PSEqnFAMpsF:1:5615)
+    at a (https://gestionoperaciones-spin.vercel.app/_next/static/chunks/083iybd6zyp55.js?dpl=dpl_GDHD6io2wwFVNMDp7PSEqnFAMpsF:1:5648)
+    at module evaluation (https://gestionoperaciones-spin.vercel.app/_next/static/chunks/083iybd6zyp55.js?dpl=dpl_GDHD6io2wwFVNMDp7PSEqnFAMpsF:1:18400)
+    at W (https://gestionoperaciones-spin.vercel.app/_next/static/chunks/turbopack-15zc9s3vju25y.js?dpl=dpl_GDHD6io2wwFVNMDp7PSEqnFAMpsF:1:7613) @ https://gestionoperaciones-spin.vercel.app/_next/static/chunks/083iybd6zyp55.js?dpl=dpl_GDHD6io2wwFVNMDp7PSEqnFAMpsF:0
+[     928ms] [LOG] [Sync] ✅ productos: Downloaded 13 items from server @ https://gestionoperaciones-spin.vercel.app/_next/static/chunks/083iybd6zyp55.js?dpl=dpl_GDHD6io2wwFVNMDp7PSEqnFAMpsF:0
+[     942ms] [LOG] [Sync] ✅ recepcion-facturas: Downloaded 3 items from server @ https://gestionoperaciones-spin.vercel.app/_next/static/chunks/083iybd6zyp55.js?dpl=dpl_GDHD6io2wwFVNMDp7PSEqnFAMpsF:0
+[     964ms] [LOG] [Sync] ✅ personal-empresa: Downloaded 5 items from server @ https://gestionoperaciones-spin.vercel.app/_next/static/chunks/083iybd6zyp55.js?dpl=dpl_GDHD6io2wwFVNMDp7PSEqnFAMpsF:0
+[     973ms] [LOG] [Sync] ✅ bodegas: Downloaded 2 items from server @ https://gestionoperaciones-spin.vercel.app/_next/static/chunks/083iybd6zyp55.js?dpl=dpl_GDHD6io2wwFVNMDp7PSEqnFAMpsF:0
+[     974ms] [LOG] [Sync] ✅ transferencias: Downloaded 1 items from server @ https://gestionoperaciones-spin.vercel.app/_next/static/chunks/083iybd6zyp55.js?dpl=dpl_GDHD6io2wwFVNMDp7PSEqnFAMpsF:0
+[     974ms] [LOG] [Sync] ✅ usuarios: Both have data - keeping local (more recent) @ https://gestionoperaciones-spin.vercel.app/_next/static/chunks/083iybd6zyp55.js?dpl=dpl_GDHD6io2wwFVNMDp7PSEqnFAMpsF:0
+[    1060ms] [LOG] [Sync] ✅ datos-empresa: Downloaded 1 items from server @ https://gestionoperaciones-spin.vercel.app/_next/static/chunks/083iybd6zyp55.js?dpl=dpl_GDHD6io2wwFVNMDp7PSEqnFAMpsF:0
+[    1065ms] [ERROR] Failed to load resource: the server responded with a status of 404 () @ https://gestionoperaciones-spin.vercel.app/favicon.ico:0
+[    1068ms] [LOG] [Sync] ✅ proveedores: Both have data - keeping local (more recent) @ https://gestionoperaciones-spin.vercel.app/_next/static/chunks/083iybd6zyp55.js?dpl=dpl_GDHD6io2wwFVNMDp7PSEqnFAMpsF:0
+[    1069ms] [LOG] [Sync] ✅ referencias: Both have data - keeping local (more recent) @ https://gestionoperaciones-spin.vercel.app/_next/static/chunks/083iybd6zyp55.js?dpl=dpl_GDHD6io2wwFVNMDp7PSEqnFAMpsF:0
+[    1069ms] [LOG] [Sync] ✅ correos-enviados: Downloaded 1 items from server @ https://gestionoperaciones-spin.vercel.app/_next/static/chunks/083iybd6zyp55.js?dpl=dpl_GDHD6io2wwFVNMDp7PSEqnFAMpsF:0
+[    1069ms] [LOG] [Sync] ✅ ordenes-compra: Downloaded 4 items from server @ https://gestionoperaciones-spin.vercel.app/_next/static/chunks/083iybd6zyp55.js?dpl=dpl_GDHD6io2wwFVNMDp7PSEqnFAMpsF:0
+[    1070ms] [LOG] [Sync] ✅ centros-costo: Downloaded 5 items from server @ https://gestionoperaciones-spin.vercel.app/_next/static/chunks/083iybd6zyp55.js?dpl=dpl_GDHD6io2wwFVNMDp7PSEqnFAMpsF:0
+[    1070ms] [LOG] [Sync] ℹ️  ajustes-inventario: Both empty @ https://gestionoperaciones-spin.vercel.app/_next/static/chunks/083iybd6zyp55.js?dpl=dpl_GDHD6io2wwFVNMDp7PSEqnFAMpsF:0
+[    1070ms] [LOG] [Sync] ℹ️  recepcion-remisiones: Both empty @ https://gestionoperaciones-spin.vercel.app/_next/static/chunks/083iybd6zyp55.js?dpl=dpl_GDHD6io2wwFVNMDp7PSEqnFAMpsF:0
+[    1070ms] [LOG] [Sync] ℹ️  carga-inicial: Both empty @ https://gestionoperaciones-spin.vercel.app/_next/static/chunks/083iybd6zyp55.js?dpl=dpl_GDHD6io2wwFVNMDp7PSEqnFAMpsF:0
+[    1070ms] [LOG] [Sync] ✅ tareas: Downloaded 4 items from server @ https://gestionoperaciones-spin.vercel.app/_next/static/chunks/083iybd6zyp55.js?dpl=dpl_GDHD6io2wwFVNMDp7PSEqnFAMpsF:0
+[    1070ms] [LOG] [Sync] ✅ modulos-sistema: Downloaded 22 items from server @ https://gestionoperaciones-spin.vercel.app/_next/static/chunks/083iybd6zyp55.js?dpl=dpl_GDHD6io2wwFVNMDp7PSEqnFAMpsF:0
+[    1071ms] [LOG] [Sync] ✅ pedidos: Downloaded 1 items from server @ https://gestionoperaciones-spin.vercel.app/_next/static/chunks/083iybd6zyp55.js?dpl=dpl_GDHD6io2wwFVNMDp7PSEqnFAMpsF:0
+[    1071ms] [LOG] [Sync] ℹ️  pagos-proveedores: Both empty @ https://gestionoperaciones-spin.vercel.app/_next/static/chunks/083iybd6zyp55.js?dpl=dpl_GDHD6io2wwFVNMDp7PSEqnFAMpsF:0
+[    1071ms] [LOG] [Sync] ℹ️  control-bancario: Both empty @ https://gestionoperaciones-spin.vercel.app/_next/static/chunks/083iybd6zyp55.js?dpl=dpl_GDHD6io2wwFVNMDp7PSEqnFAMpsF:0

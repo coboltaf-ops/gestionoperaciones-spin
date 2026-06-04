@@ -1,0 +1,303 @@
+- generic [active] [ref=e1]:
+  - generic [ref=e27] [cursor=pointer]:
+    - button "Open Next.js Dev Tools" [ref=e28]:
+      - img [ref=e29]
+    - generic [ref=e33]:
+      - button "Open issues overlay" [ref=e34]:
+        - generic [ref=e35]:
+          - generic [ref=e36]: "0"
+          - generic [ref=e37]: "1"
+        - generic [ref=e38]: Issue
+      - button "Collapse issues badge" [ref=e39]:
+        - img [ref=e40]
+  - alert [ref=e32]
+  - generic [ref=e42]:
+    - complementary [ref=e43]:
+      - generic [ref=e44]:
+        - img "Logo Empresa" [ref=e46]
+        - paragraph [ref=e47]: SPIN - SILICATOS PARA LA INDUSTRIA S.A.S.
+      - navigation [ref=e48]:
+        - link "📊 Dashboard" [ref=e49] [cursor=pointer]:
+          - /url: /dashboard
+          - generic [ref=e50]: 📊
+          - generic [ref=e51]: Dashboard
+        - button "👥 Clientes ↗" [ref=e52] [cursor=pointer]:
+          - generic [ref=e53]: 👥
+          - generic [ref=e54]: Clientes
+          - generic [ref=e55]: ↗
+        - link "📦 Productos" [ref=e56] [cursor=pointer]:
+          - /url: /productos
+          - generic [ref=e57]: 📦
+          - generic [ref=e58]: Productos
+        - link "📒 Kardex de Productos" [ref=e59] [cursor=pointer]:
+          - /url: /kardex
+          - generic [ref=e60]: 📒
+          - generic [ref=e61]: Kardex de Productos
+        - link "🏢 Proveedores" [ref=e62] [cursor=pointer]:
+          - /url: /proveedores
+          - generic [ref=e63]: 🏢
+          - generic [ref=e64]: Proveedores
+        - link "🛒 Órdenes de Compra" [ref=e65] [cursor=pointer]:
+          - /url: /ordenes-compra
+          - generic [ref=e66]: 🛒
+          - generic [ref=e67]: Órdenes de Compra
+        - link "📄 Orden de Pedido" [ref=e68] [cursor=pointer]:
+          - /url: /pedidos
+          - generic [ref=e69]: 📄
+          - generic [ref=e70]: Orden de Pedido
+        - link "📋 Recepción de Facturas" [ref=e71] [cursor=pointer]:
+          - /url: /recepcion-facturas
+          - generic [ref=e72]: 📋
+          - generic [ref=e73]: Recepción de Facturas
+        - link "📑 Recepción de Remisiones" [ref=e74] [cursor=pointer]:
+          - /url: /recepcion-remisiones
+          - generic [ref=e75]: 📑
+          - generic [ref=e76]: Recepción de Remisiones
+        - link "💳 Pagos Proveedores" [ref=e77] [cursor=pointer]:
+          - /url: /pagos-proveedores
+          - generic [ref=e78]: 💳
+          - generic [ref=e79]: Pagos Proveedores
+        - link "🏦 Control Bancario" [ref=e80] [cursor=pointer]:
+          - /url: /control-bancario
+          - generic [ref=e81]: 🏦
+          - generic [ref=e82]: Control Bancario
+        - link "🏭 Bodegas" [ref=e83] [cursor=pointer]:
+          - /url: /bodegas
+          - generic [ref=e84]: 🏭
+          - generic [ref=e85]: Bodegas
+        - link "🔄 Transferencias" [ref=e86] [cursor=pointer]:
+          - /url: /transferencias
+          - generic [ref=e87]: 🔄
+          - generic [ref=e88]: Transferencias
+        - link "📤 Salidas de Almacén" [ref=e89] [cursor=pointer]:
+          - /url: /salidas-almacen
+          - generic [ref=e90]: 📤
+          - generic [ref=e91]: Salidas de Almacén
+        - link "⚖️ Ajustes de Inventario" [ref=e92] [cursor=pointer]:
+          - /url: /ajustes-inventario
+          - generic [ref=e93]: ⚖️
+          - generic [ref=e94]: Ajustes de Inventario
+        - link "📋 Toma Inventario Físico" [ref=e95] [cursor=pointer]:
+          - /url: /toma-inventario-fisico
+          - generic [ref=e96]: 📋
+          - generic [ref=e97]: Toma Inventario Físico
+        - link "💰 Centros de Costo" [ref=e98] [cursor=pointer]:
+          - /url: /centros-costo
+          - generic [ref=e99]: 💰
+          - generic [ref=e100]: Centros de Costo
+        - link "📧 Correos Enviados" [ref=e101] [cursor=pointer]:
+          - /url: /correos-enviados
+          - generic [ref=e102]: 📧
+          - generic [ref=e103]: Correos Enviados
+        - link "📝 Tareas" [ref=e104] [cursor=pointer]:
+          - /url: /tareas
+          - generic [ref=e105]: 📝
+          - generic [ref=e106]: Tareas
+        - link "👥 Personal Empresa" [ref=e107] [cursor=pointer]:
+          - /url: /personal-empresa
+          - generic [ref=e108]: 👥
+          - generic [ref=e109]: Personal Empresa
+        - link "⚙️ Tablas de Referencias" [ref=e110] [cursor=pointer]:
+          - /url: /referencias
+          - generic [ref=e111]: ⚙️
+          - generic [ref=e112]: Tablas de Referencias
+        - link "🤖 Agente" [ref=e113] [cursor=pointer]:
+          - /url: /asistente
+          - generic [ref=e114]: 🤖
+          - generic [ref=e115]: Agente
+        - generic [ref=e116]:
+          - button "🏭 Producción ▼" [ref=e117] [cursor=pointer]:
+            - generic [ref=e118]: 🏭
+            - generic [ref=e119]: Producción
+            - generic [ref=e120]: ▼
+          - generic [ref=e121]:
+            - link "⚗️ Formulaciones" [ref=e122] [cursor=pointer]:
+              - /url: /produccion/formulaciones
+              - generic [ref=e123]: ⚗️
+              - generic [ref=e124]: Formulaciones
+            - link "✅ Producto Terminado" [ref=e125] [cursor=pointer]:
+              - /url: /produccion/producto-terminado
+              - generic [ref=e126]: ✅
+              - generic [ref=e127]: Producto Terminado
+            - link "📋 Órdenes de Producción" [ref=e128] [cursor=pointer]:
+              - /url: /produccion/ordenes-produccion
+              - generic [ref=e129]: 📋
+              - generic [ref=e130]: Órdenes de Producción
+            - link "⚙️ Ejecución Órdenes de Producción" [ref=e131] [cursor=pointer]:
+              - /url: /produccion/ejecucion-ordenes
+              - generic [ref=e132]: ⚙️
+              - generic [ref=e133]: Ejecución Órdenes de Producción
+        - generic [ref=e134]:
+          - button "⚙️ Configuración ▼" [ref=e135] [cursor=pointer]:
+            - generic [ref=e136]: ⚙️
+            - generic [ref=e137]: Configuración
+            - generic [ref=e138]: ▼
+          - generic [ref=e139]:
+            - link "🏛️ Datos Empresa" [ref=e140] [cursor=pointer]:
+              - /url: /datos-empresa
+              - generic [ref=e141]: 🏛️
+              - generic [ref=e142]: Datos Empresa
+            - link "👤 Gestión de Usuarios" [ref=e143] [cursor=pointer]:
+              - /url: /usuarios
+              - generic [ref=e144]: 👤
+              - generic [ref=e145]: Gestión de Usuarios
+            - link "🗂️ Módulos Sistema" [ref=e146] [cursor=pointer]:
+              - /url: /modulos-sistema
+              - generic [ref=e147]: 🗂️
+              - generic [ref=e148]: Módulos Sistema
+    - main [ref=e149]:
+      - generic [ref=e150]:
+        - button "☰" [ref=e152] [cursor=pointer]
+        - generic [ref=e153]:
+          - generic "Idioma" [ref=e154]:
+            - button "🇪🇸 ES" [pressed] [ref=e155] [cursor=pointer]
+            - button "🇬🇧 EN" [ref=e156] [cursor=pointer]
+          - generic [ref=e157]:
+            - paragraph [ref=e158]: Juan Andres Arango Velasquez
+            - paragraph [ref=e159]: Admin
+          - generic [ref=e160]: JA
+          - button "Salir" [ref=e161] [cursor=pointer]
+      - generic [ref=e162]:
+        - img "Logo" [ref=e164]
+        - generic [ref=e165]:
+          - paragraph [ref=e166]: Empresa
+          - paragraph [ref=e167]: SPIN - SILICATOS PARA LA INDUSTRIA S.A.S.
+        - generic [ref=e168]:
+          - paragraph [ref=e169]: NIT
+          - paragraph [ref=e170]: 900.123.456-7
+      - generic [ref=e172]:
+        - heading "Dashboard" [level=1] [ref=e174]
+        - generic [ref=e175]:
+          - generic [ref=e176]:
+            - generic [ref=e178]: 📊
+            - paragraph [ref=e180]: "879.00"
+            - paragraph [ref=e181]: Unidades en Inventario
+          - generic [ref=e182]:
+            - generic [ref=e184]: 💰
+            - paragraph [ref=e186]: Pesos 36,609,700.00
+            - paragraph [ref=e187]: Valor del Inventario
+          - generic [ref=e188]:
+            - generic [ref=e190]: 🧾
+            - paragraph [ref=e192]: Pesos 14,847,596.00
+            - paragraph [ref=e193]: Total en Órdenes
+          - generic [ref=e194]:
+            - generic [ref=e196]: ⚠️
+            - paragraph [ref=e198]: "2"
+            - paragraph [ref=e199]: Productos Bajo Mínimo
+        - generic [ref=e200]:
+          - generic [ref=e201]:
+            - text: 📦
+            - paragraph [ref=e202]: "13"
+            - paragraph [ref=e203]: Productos Activos
+          - generic [ref=e204]:
+            - text: 🏢
+            - paragraph [ref=e205]: "1"
+            - paragraph [ref=e206]: Proveedores Activos
+          - generic [ref=e207]:
+            - text: 🛒
+            - paragraph [ref=e208]: "4"
+            - paragraph [ref=e209]: Órdenes de Compra
+          - generic [ref=e210]:
+            - text: 📄
+            - paragraph [ref=e211]: "1"
+            - paragraph [ref=e212]: Orden de Pedido
+          - generic [ref=e213]:
+            - text: 📋
+            - paragraph [ref=e214]: "3"
+            - paragraph [ref=e215]: Recepciones
+          - generic [ref=e216]:
+            - text: 🏭
+            - paragraph [ref=e217]: "2"
+            - paragraph [ref=e218]: Bodegas Activas
+          - generic [ref=e219]:
+            - text: 🔄
+            - paragraph [ref=e220]: "1"
+            - paragraph [ref=e221]: Transferencias
+          - generic [ref=e222]:
+            - text: ⚖️
+            - paragraph [ref=e223]: "0"
+            - paragraph [ref=e224]: Ajustes Inventario
+          - generic [ref=e225]:
+            - text: ⏳
+            - paragraph [ref=e226]: "0"
+            - paragraph [ref=e227]: Órdenes Pendientes
+        - generic [ref=e229]:
+          - heading "Productos Bajo Mínimo ⚠️" [level=2] [ref=e230]
+          - generic [ref=e231]:
+            - generic [ref=e232]:
+              - generic [ref=e233]: PROD-00011Bloque Conceto 15 Cms
+              - generic [ref=e234]:
+                - generic [ref=e235]: "60"
+                - generic [ref=e236]: /
+                - generic [ref=e237]: 100 mín.
+            - generic [ref=e238]:
+              - generic [ref=e239]: PROD-00012Ladrillo Rojo N4 Rayado 9 x 19 x 38 cls
+              - generic [ref=e240]:
+                - generic [ref=e241]: "60"
+                - generic [ref=e242]: /
+                - generic [ref=e243]: 150 mín.
+        - link "🤖 Agente Consulta información del sistema con respuesta de voz →" [ref=e244] [cursor=pointer]:
+          - /url: /asistente
+          - generic [ref=e245]:
+            - generic [ref=e246]: 🤖
+            - generic [ref=e247]:
+              - heading "Agente" [level=2] [ref=e248]
+              - paragraph [ref=e249]: Consulta información del sistema con respuesta de voz
+            - generic [ref=e250]: →
+        - link "Gráfico de Órdenes de Compra por Estado Ir al módulo → Cantidad de órdenes y valor total por cada estado · Click para ver el detalle Recibida Completa Pendiente Aprobacion $13,514,196.00 (3) Recibida Completa $1,333,400.00 (1) Pendiente Aprobacion" [ref=e251] [cursor=pointer]:
+          - /url: /ordenes-compra
+          - generic [ref=e252]:
+            - heading "Gráfico de Órdenes de Compra por Estado" [level=2] [ref=e253]
+            - generic [ref=e254]: Ir al módulo →
+          - paragraph [ref=e255]: Cantidad de órdenes y valor total por cada estado · Click para ver el detalle
+          - generic [ref=e256]:
+            - generic [ref=e259]: Recibida Completa
+            - generic [ref=e262]: Pendiente Aprobacion
+          - generic [ref=e263]:
+            - generic [ref=e264]:
+              - generic [ref=e267]:
+                - text: $13,514,196.00
+                - generic [ref=e268]: (3)
+              - paragraph [ref=e271]: Recibida Completa
+            - generic [ref=e272]:
+              - generic [ref=e275]:
+                - text: $1,333,400.00
+                - generic [ref=e276]: (1)
+              - paragraph [ref=e279]: Pendiente Aprobacion
+        - link "Gráfico de Tareas por Situación Ir al módulo → Distribución pie de las tareas según su estado actual · Click para ver el detalle En Proceso 1 (25.0%) Completada 1 (25.0%) Anulada 1 (25.0%) Vencida 1 (25.0%)" [ref=e280] [cursor=pointer]:
+          - /url: /tareas
+          - generic [ref=e281]:
+            - heading "Gráfico de Tareas por Situación" [level=2] [ref=e282]
+            - generic [ref=e283]: Ir al módulo →
+          - paragraph [ref=e284]: Distribución pie de las tareas según su estado actual · Click para ver el detalle
+          - generic [ref=e285]:
+            - img [ref=e287]:
+              - generic [ref=e292]: 25%
+              - generic [ref=e293]: 25%
+              - generic [ref=e294]: 25%
+              - generic [ref=e295]: 25%
+            - generic [ref=e296]:
+              - generic [ref=e300]:
+                - generic [ref=e301]: En Proceso
+                - generic [ref=e302]: 1 (25.0%)
+              - generic [ref=e308]:
+                - generic [ref=e309]: Completada
+                - generic [ref=e310]: 1 (25.0%)
+              - generic [ref=e316]:
+                - generic [ref=e317]: Anulada
+                - generic [ref=e318]: 1 (25.0%)
+              - generic [ref=e324]:
+                - generic [ref=e325]: Vencida
+                - generic [ref=e326]: 1 (25.0%)
+        - 'link "Valor de Inventario por Bodega Ir al módulo → Valor total del inventario distribuido por bodega · Click para ver el detalle Total General: $35,685,701.05 $35,685,701.05 Bodega Prinpipal Laureles 12 productos · 879 unidades" [ref=e329] [cursor=pointer]':
+          - /url: /bodegas
+          - generic [ref=e330]:
+            - heading "Valor de Inventario por Bodega" [level=2] [ref=e331]
+            - generic [ref=e332]: Ir al módulo →
+          - paragraph [ref=e333]: Valor total del inventario distribuido por bodega · Click para ver el detalle
+          - paragraph [ref=e334]: "Total General: $35,685,701.05"
+          - generic [ref=e336]:
+            - generic [ref=e339]: $35,685,701.05
+            - generic [ref=e341]:
+              - paragraph [ref=e342]: Bodega Prinpipal Laureles
+              - paragraph [ref=e343]: 12 productos · 879 unidades

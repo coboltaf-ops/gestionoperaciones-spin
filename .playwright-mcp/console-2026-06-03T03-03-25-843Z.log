@@ -1,0 +1,158 @@
+[     100ms] [INFO] %cDownload the React DevTools for a better development experience: https://react.dev/link/react-devtools font-weight:bold @ http://localhost:3000/_next/static/chunks/node_modules_next_dist_115brz8._.js:2477
+[     108ms] [LOG] [HMR] connected @ http://localhost:3000/_next/static/chunks/node_modules_next_dist_115brz8._.js:2477
+[     109ms] [LOG] [Zustand] ✅ Productos hidratados: 13 @ http://localhost:3000/_next/static/chunks/node_modules_next_dist_115brz8._.js:2477
+[     109ms] [ERROR] [Zustand] Error rehydrating referencias: TypeError: Cannot read properties of undefined (reading 'data')
+    at Object.merge (http://localhost:3000/_next/static/chunks/src_0-k8up3._.js:641:33)
+    at http://localhost:3000/_next/static/chunks/node_modules_0~eo_5k._.js:1420:44
+    at http://localhost:3000/_next/static/chunks/node_modules_0~eo_5k._.js:1311:28
+    at Object.then (http://localhost:3000/_next/static/chunks/node_modules_0~eo_5k._.js:1317:51)
+    at hydrate (http://localhost:3000/_next/static/chunks/node_modules_0~eo_5k._.js:1414:16)
+    at http://localhost:3000/_next/static/chunks/node_modules_0~eo_5k._.js:1470:13
+    at createStoreImpl (http://localhost:3000/_next/static/chunks/node_modules_0~eo_5k._.js:948:34)
+    at createStore (http://localhost:3000/_next/static/chunks/node_modules_0~eo_5k._.js:951:50)
+    at createImpl (http://localhost:3000/_next/static/chunks/node_modules_0~eo_5k._.js:984:178)
+    at module evaluation (http://localhost:3000/_next/static/chunks/src_0-k8up3._.js:568:183)
+    at http://localhost:3000/_next/static/chunks/turbopack-_0p44nws._.js:1307:27
+    at runModuleExecutionHooks (http://localhost:3000/_next/static/chunks/turbopack-_0p44nws._.js:1636:13)
+    at instantiateModuleShared (http://localhost:3000/_next/static/chunks/turbopack-_0p44nws._.js:1305:9)
+    at instantiateModule (http://localhost:3000/_next/static/chunks/turbopack-_0p44nws._.js:1621:12)
+    at getOrInstantiateModuleFromParent (http://localhost:3000/_next/static/chunks/turbopack-_0p44nws._.js:1604:12)
+    at DevContext.esmImport [as i] (http://localhost:3000/_next/static/chunks/turbopack-_0p44nws._.js:278:20)
+    at module evaluation (http://localhost:3000/_next/static/chunks/src_0-k8up3._.js:1392:190)
+    at http://localhost:3000/_next/static/chunks/turbopack-_0p44nws._.js:1307:27
+    at runModuleExecutionHooks (http://localhost:3000/_next/static/chunks/turbopack-_0p44nws._.js:1636:13)
+    at instantiateModuleShared (http://localhost:3000/_next/static/chunks/turbopack-_0p44nws._.js:1305:9)
+    at instantiateModule (http://localhost:3000/_next/static/chunks/turbopack-_0p44nws._.js:1621:12)
+    at getOrInstantiateModuleFromParent (http://localhost:3000/_next/static/chunks/turbopack-_0p44nws._.js:1604:12)
+    at DevContext.esmImport [as i] (http://localhost:3000/_next/static/chunks/turbopack-_0p44nws._.js:278:20)
+    at module evaluation (http://localhost:3000/_next/static/chunks/src_0-k8up3._.js:2239:187)
+    at http://localhost:3000/_next/static/chunks/turbopack-_0p44nws._.js:1307:27
+    at runModuleExecutionHooks (http://localhost:3000/_next/static/chunks/turbopack-_0p44nws._.js:1636:13)
+    at instantiateModuleShared (http://localhost:3000/_next/static/chunks/turbopack-_0p44nws._.js:1305:9)
+    at instantiateModule (http://localhost:3000/_next/static/chunks/turbopack-_0p44nws._.js:1621:12)
+    at getOrInstantiateModuleFromParent (http://localhost:3000/_next/static/chunks/turbopack-_0p44nws._.js:1604:12)
+    at DevContext.commonJsRequire [as r] (http://localhost:3000/_next/static/chunks/turbopack-_0p44nws._.js:299:12)
+    at requireModule (http://localhost:3000/_next/static/chunks/node_modules_next_dist_compiled_react-server-dom-turbopack_0p3wegg._.js:95:84)
+    at initializeModuleChunk (http://localhost:3000/_next/static/chunks/node_modules_next_dist_compiled_react-server-dom-turbopack_0p3wegg._.js:1110:25)
+    at resolveModuleChunk (http://localhost:3000/_next/static/chunks/node_modules_next_dist_compiled_react-server-dom-turbopack_0p3wegg._.js:1030:43)
+    at http://localhost:3000/_next/static/chunks/node_modules_next_dist_compiled_react-server-dom-turbopack_0p3wegg._.js:1758:24 @ http://localhost:3000/_next/static/chunks/node_modules_next_dist_115brz8._.js:3318
+[     179ms] [LOG] [Zustand Persist] Guardando 13 productos en localStorage @ http://localhost:3000/_next/static/chunks/node_modules_next_dist_115brz8._.js:2477
+[     179ms] [LOG] [Sync] ✅ productos: Downloaded 13 items from server @ http://localhost:3000/_next/static/chunks/node_modules_next_dist_115brz8._.js:2477
+[     184ms] [LOG] [Sync] ✅ proveedores: Both have data - keeping local (more recent) @ http://localhost:3000/_next/static/chunks/node_modules_next_dist_115brz8._.js:2477
+[     185ms] [LOG] [Sync] ✅ bodegas: Downloaded 2 items from server @ http://localhost:3000/_next/static/chunks/node_modules_next_dist_115brz8._.js:2477
+[     191ms] [LOG] [Sync] ℹ️  referencias: Both empty @ http://localhost:3000/_next/static/chunks/node_modules_next_dist_115brz8._.js:2477
+[     192ms] [LOG] [Sync] ✅ correos-enviados: Downloaded 1 items from server @ http://localhost:3000/_next/static/chunks/node_modules_next_dist_115brz8._.js:2477
+[     194ms] [LOG] [Sync] ✅ ordenes-compra: Downloaded 4 items from server @ http://localhost:3000/_next/static/chunks/node_modules_next_dist_115brz8._.js:2477
+[     208ms] [LOG] [Sync] ✅ centros-costo: Downloaded 5 items from server @ http://localhost:3000/_next/static/chunks/node_modules_next_dist_115brz8._.js:2477
+[     213ms] [LOG] [Sync] ✅ transferencias: Downloaded 1 items from server @ http://localhost:3000/_next/static/chunks/node_modules_next_dist_115brz8._.js:2477
+[     225ms] [LOG] [Sync] ℹ️  ajustes-inventario: Both empty @ http://localhost:3000/_next/static/chunks/node_modules_next_dist_115brz8._.js:2477
+[     232ms] [LOG] [Sync] ✅ recepcion-facturas: Downloaded 3 items from server @ http://localhost:3000/_next/static/chunks/node_modules_next_dist_115brz8._.js:2477
+[     243ms] [LOG] [Sync] ℹ️  recepcion-remisiones: Both empty @ http://localhost:3000/_next/static/chunks/node_modules_next_dist_115brz8._.js:2477
+[     251ms] [LOG] [Sync] ✅ usuarios: Both have data - keeping local (more recent) @ http://localhost:3000/_next/static/chunks/node_modules_next_dist_115brz8._.js:2477
+[     259ms] [LOG] [Sync] ℹ️  carga-inicial: Both empty @ http://localhost:3000/_next/static/chunks/node_modules_next_dist_115brz8._.js:2477
+[     262ms] [LOG] [Sync] ✅ modulos-sistema: Downloaded 22 items from server @ http://localhost:3000/_next/static/chunks/node_modules_next_dist_115brz8._.js:2477
+[     270ms] [LOG] [Sync] ✅ personal-empresa: Downloaded 5 items from server @ http://localhost:3000/_next/static/chunks/node_modules_next_dist_115brz8._.js:2477
+[     271ms] [LOG] [Sync] ✅ tareas: Downloaded 4 items from server @ http://localhost:3000/_next/static/chunks/node_modules_next_dist_115brz8._.js:2477
+[     278ms] [LOG] [Sync] ✅ pedidos: Downloaded 1 items from server @ http://localhost:3000/_next/static/chunks/node_modules_next_dist_115brz8._.js:2477
+[     281ms] [LOG] [Sync] ℹ️  pagos-proveedores: Both empty @ http://localhost:3000/_next/static/chunks/node_modules_next_dist_115brz8._.js:2477
+[     287ms] [LOG] [Sync] ℹ️  control-bancario: Both empty @ http://localhost:3000/_next/static/chunks/node_modules_next_dist_115brz8._.js:2477
+[     290ms] [LOG] [Sync] ✅ datos-empresa: Downloaded 1 items from server @ http://localhost:3000/_next/static/chunks/node_modules_next_dist_115brz8._.js:2477
+[   40361ms] [LOG] [Fast Refresh] rebuilding @ http://localhost:3000/_next/static/chunks/node_modules_next_dist_115brz8._.js:2477
+[   41024ms] [ERROR] [Zustand] Error rehydrating referencias: TypeError: Cannot read properties of undefined (reading 'data')
+    at Object.merge (http://localhost:3000/_next/static/chunks/src_0-k8up3._.js?id=%255Bproject%255D%252Fsrc%252Ffeatures%252Freferencias%252Fstore%252Freference-store.ts+%255Bapp-client%255D+%2528ecmascript%2529:116:33)
+    at http://localhost:3000/_next/static/chunks/node_modules_0~eo_5k._.js:1420:44
+    at http://localhost:3000/_next/static/chunks/node_modules_0~eo_5k._.js:1311:28
+    at Object.then (http://localhost:3000/_next/static/chunks/node_modules_0~eo_5k._.js:1317:51)
+    at hydrate (http://localhost:3000/_next/static/chunks/node_modules_0~eo_5k._.js:1414:16)
+    at http://localhost:3000/_next/static/chunks/node_modules_0~eo_5k._.js:1470:13
+    at createStoreImpl (http://localhost:3000/_next/static/chunks/node_modules_0~eo_5k._.js:948:34)
+    at createStore (http://localhost:3000/_next/static/chunks/node_modules_0~eo_5k._.js:951:50)
+    at createImpl (http://localhost:3000/_next/static/chunks/node_modules_0~eo_5k._.js:984:178)
+    at module evaluation (http://localhost:3000/_next/static/chunks/src_0-k8up3._.js?id=%255Bproject%255D%252Fsrc%252Ffeatures%252Freferencias%252Fstore%252Freference-store.ts+%255Bapp-client%255D+%2528ecmascript%2529:41:183)
+    at http://localhost:3000/_next/static/chunks/turbopack-_0p44nws._.js:1307:27
+    at runModuleExecutionHooks (http://localhost:3000/_next/static/chunks/turbopack-_0p44nws._.js:1636:13)
+    at instantiateModuleShared (http://localhost:3000/_next/static/chunks/turbopack-_0p44nws._.js:1305:9)
+    at instantiateModule (http://localhost:3000/_next/static/chunks/turbopack-_0p44nws._.js:1621:12)
+    at getOrInstantiateModuleFromParent (http://localhost:3000/_next/static/chunks/turbopack-_0p44nws._.js:1604:12)
+    at DevContext.esmImport [as i] (http://localhost:3000/_next/static/chunks/turbopack-_0p44nws._.js:278:20)
+    at module evaluation (http://localhost:3000/_next/static/chunks/src_0-k8up3._.js:1392:190)
+    at http://localhost:3000/_next/static/chunks/turbopack-_0p44nws._.js:1307:27
+    at runModuleExecutionHooks (http://localhost:3000/_next/static/chunks/turbopack-_0p44nws._.js:1636:13)
+    at instantiateModuleShared (http://localhost:3000/_next/static/chunks/turbopack-_0p44nws._.js:1305:9)
+    at instantiateModule (http://localhost:3000/_next/static/chunks/turbopack-_0p44nws._.js:1621:12)
+    at applyPhase (http://localhost:3000/_next/static/chunks/turbopack-_0p44nws._.js:1479:13)
+    at applyInternal (http://localhost:3000/_next/static/chunks/turbopack-_0p44nws._.js:1513:5)
+    at applyEcmascriptMergedUpdateShared (http://localhost:3000/_next/static/chunks/turbopack-_0p44nws._.js:1532:5)
+    at applyEcmascriptMergedUpdate (http://localhost:3000/_next/static/chunks/turbopack-_0p44nws._.js:1768:5)
+    at applyChunkListUpdate (http://localhost:3000/_next/static/chunks/turbopack-_0p44nws._.js:1733:21)
+    at applyUpdate (http://localhost:3000/_next/static/chunks/turbopack-_0p44nws._.js:1722:13)
+    at handleApply (http://localhost:3000/_next/static/chunks/turbopack-_0p44nws._.js:1785:17)
+    at triggerUpdate (http://localhost:3000/_next/static/chunks/%5Bturbopack%5D_browser_dev_hmr-client_hmr-client_ts_0yjw1oe._.js:456:9)
+    at applyAggregatedUpdates (http://localhost:3000/_next/static/chunks/%5Bturbopack%5D_browser_dev_hmr-client_hmr-client_ts_0yjw1oe._.js:98:9)
+    at http://localhost:3000/_next/static/chunks/%5Bturbopack%5D_browser_dev_hmr-client_hmr-client_ts_0yjw1oe._.js:32:21
+    at processTurbopackMessage (http://localhost:3000/_next/static/chunks/node_modules_next_dist_client_0fhqo1d._.js:13394:13)
+    at processMessage (http://localhost:3000/_next/static/chunks/node_modules_next_dist_client_0fhqo1d._.js:13961:17)
+    at WebSocket.handleMessage (http://localhost:3000/_next/static/chunks/node_modules_next_dist_client_0fhqo1d._.js:13358:52) @ http://localhost:3000/_next/static/chunks/node_modules_next_dist_115brz8._.js:3318
+[   41069ms] [LOG] [Fast Refresh] done in 764ms @ http://localhost:3000/_next/static/chunks/node_modules_next_dist_115brz8._.js:2477
+[   48133ms] [ERROR] WebSocket connection to 'ws://localhost:3000/_next/webpack-hmr?id=8mdJYeAbkxMKncz8cW7wl' failed: Error in connection establishment: net::ERR_CONNECTION_REFUSED @ http://localhost:3000/_next/static/chunks/node_modules_next_dist_client_0fhqo1d._.js:13322
+[   49137ms] [ERROR] WebSocket connection to 'ws://localhost:3000/_next/webpack-hmr?id=8mdJYeAbkxMKncz8cW7wl' failed: Error in connection establishment: net::ERR_CONNECTION_REFUSED @ http://localhost:3000/_next/static/chunks/node_modules_next_dist_client_0fhqo1d._.js:13322
+[   50141ms] [LOG] [HMR] connected @ http://localhost:3000/_next/static/chunks/node_modules_next_dist_115brz8._.js:2477
+[   50995ms] [INFO] %cDownload the React DevTools for a better development experience: https://react.dev/link/react-devtools font-weight:bold @ http://localhost:3000/_next/static/chunks/node_modules_next_dist_115brz8._.js:2477
+[   51007ms] [LOG] [HMR] connected @ http://localhost:3000/_next/static/chunks/node_modules_next_dist_115brz8._.js:2477
+[   51018ms] [LOG] [Zustand] ✅ Productos hidratados: 13 @ http://localhost:3000/_next/static/chunks/node_modules_next_dist_115brz8._.js:2477
+[   51019ms] [ERROR] [Zustand] Error rehydrating referencias: TypeError: Cannot read properties of undefined (reading 'data')
+    at Object.merge (http://localhost:3000/_next/static/chunks/src_0-k8up3._.js:643:33)
+    at http://localhost:3000/_next/static/chunks/node_modules_0~eo_5k._.js:1420:44
+    at http://localhost:3000/_next/static/chunks/node_modules_0~eo_5k._.js:1311:28
+    at Object.then (http://localhost:3000/_next/static/chunks/node_modules_0~eo_5k._.js:1317:51)
+    at hydrate (http://localhost:3000/_next/static/chunks/node_modules_0~eo_5k._.js:1414:16)
+    at http://localhost:3000/_next/static/chunks/node_modules_0~eo_5k._.js:1470:13
+    at createStoreImpl (http://localhost:3000/_next/static/chunks/node_modules_0~eo_5k._.js:948:34)
+    at createStore (http://localhost:3000/_next/static/chunks/node_modules_0~eo_5k._.js:951:50)
+    at createImpl (http://localhost:3000/_next/static/chunks/node_modules_0~eo_5k._.js:984:178)
+    at module evaluation (http://localhost:3000/_next/static/chunks/src_0-k8up3._.js:568:183)
+    at http://localhost:3000/_next/static/chunks/turbopack-_0p44nws._.js:1307:27
+    at runModuleExecutionHooks (http://localhost:3000/_next/static/chunks/turbopack-_0p44nws._.js:1636:13)
+    at instantiateModuleShared (http://localhost:3000/_next/static/chunks/turbopack-_0p44nws._.js:1305:9)
+    at instantiateModule (http://localhost:3000/_next/static/chunks/turbopack-_0p44nws._.js:1621:12)
+    at getOrInstantiateModuleFromParent (http://localhost:3000/_next/static/chunks/turbopack-_0p44nws._.js:1604:12)
+    at DevContext.esmImport [as i] (http://localhost:3000/_next/static/chunks/turbopack-_0p44nws._.js:278:20)
+    at module evaluation (http://localhost:3000/_next/static/chunks/src_0-k8up3._.js:1394:190)
+    at http://localhost:3000/_next/static/chunks/turbopack-_0p44nws._.js:1307:27
+    at runModuleExecutionHooks (http://localhost:3000/_next/static/chunks/turbopack-_0p44nws._.js:1636:13)
+    at instantiateModuleShared (http://localhost:3000/_next/static/chunks/turbopack-_0p44nws._.js:1305:9)
+    at instantiateModule (http://localhost:3000/_next/static/chunks/turbopack-_0p44nws._.js:1621:12)
+    at getOrInstantiateModuleFromParent (http://localhost:3000/_next/static/chunks/turbopack-_0p44nws._.js:1604:12)
+    at DevContext.esmImport [as i] (http://localhost:3000/_next/static/chunks/turbopack-_0p44nws._.js:278:20)
+    at module evaluation (http://localhost:3000/_next/static/chunks/src_0-k8up3._.js:2241:187)
+    at http://localhost:3000/_next/static/chunks/turbopack-_0p44nws._.js:1307:27
+    at runModuleExecutionHooks (http://localhost:3000/_next/static/chunks/turbopack-_0p44nws._.js:1636:13)
+    at instantiateModuleShared (http://localhost:3000/_next/static/chunks/turbopack-_0p44nws._.js:1305:9)
+    at instantiateModule (http://localhost:3000/_next/static/chunks/turbopack-_0p44nws._.js:1621:12)
+    at getOrInstantiateModuleFromParent (http://localhost:3000/_next/static/chunks/turbopack-_0p44nws._.js:1604:12)
+    at DevContext.commonJsRequire [as r] (http://localhost:3000/_next/static/chunks/turbopack-_0p44nws._.js:299:12)
+    at requireModule (http://localhost:3000/_next/static/chunks/node_modules_next_dist_compiled_react-server-dom-turbopack_0p3wegg._.js:95:84)
+    at initializeModuleChunk (http://localhost:3000/_next/static/chunks/node_modules_next_dist_compiled_react-server-dom-turbopack_0p3wegg._.js:1110:25)
+    at resolveModuleChunk (http://localhost:3000/_next/static/chunks/node_modules_next_dist_compiled_react-server-dom-turbopack_0p3wegg._.js:1030:43)
+    at http://localhost:3000/_next/static/chunks/node_modules_next_dist_compiled_react-server-dom-turbopack_0p3wegg._.js:1758:24 @ http://localhost:3000/_next/static/chunks/node_modules_next_dist_115brz8._.js:3318
+[   51546ms] [LOG] [Zustand Persist] Guardando 13 productos en localStorage @ http://localhost:3000/_next/static/chunks/node_modules_next_dist_115brz8._.js:2477
+[   51546ms] [LOG] [Sync] ✅ productos: Downloaded 13 items from server @ http://localhost:3000/_next/static/chunks/node_modules_next_dist_115brz8._.js:2477
+[   51551ms] [LOG] [Sync] ✅ proveedores: Both have data - keeping local (more recent) @ http://localhost:3000/_next/static/chunks/node_modules_next_dist_115brz8._.js:2477
+[   51551ms] [LOG] [Sync] ✅ bodegas: Downloaded 2 items from server @ http://localhost:3000/_next/static/chunks/node_modules_next_dist_115brz8._.js:2477
+[   51557ms] [LOG] [Sync] ℹ️  referencias: Both empty @ http://localhost:3000/_next/static/chunks/node_modules_next_dist_115brz8._.js:2477
+[   51557ms] [LOG] [Sync] ✅ correos-enviados: Downloaded 1 items from server @ http://localhost:3000/_next/static/chunks/node_modules_next_dist_115brz8._.js:2477
+[   51557ms] [LOG] [Sync] ✅ ordenes-compra: Downloaded 4 items from server @ http://localhost:3000/_next/static/chunks/node_modules_next_dist_115brz8._.js:2477
+[   51562ms] [LOG] [Sync] ✅ centros-costo: Downloaded 5 items from server @ http://localhost:3000/_next/static/chunks/node_modules_next_dist_115brz8._.js:2477
+[   51567ms] [LOG] [Sync] ✅ transferencias: Downloaded 1 items from server @ http://localhost:3000/_next/static/chunks/node_modules_next_dist_115brz8._.js:2477
+[   51568ms] [LOG] [Sync] ℹ️  ajustes-inventario: Both empty @ http://localhost:3000/_next/static/chunks/node_modules_next_dist_115brz8._.js:2477
+[   51572ms] [LOG] [Sync] ✅ recepcion-facturas: Downloaded 3 items from server @ http://localhost:3000/_next/static/chunks/node_modules_next_dist_115brz8._.js:2477
+[   51575ms] [LOG] [Sync] ℹ️  recepcion-remisiones: Both empty @ http://localhost:3000/_next/static/chunks/node_modules_next_dist_115brz8._.js:2477
+[   51578ms] [LOG] [Sync] ✅ usuarios: Both have data - keeping local (more recent) @ http://localhost:3000/_next/static/chunks/node_modules_next_dist_115brz8._.js:2477
+[   51588ms] [LOG] [Sync] ℹ️  carga-inicial: Both empty @ http://localhost:3000/_next/static/chunks/node_modules_next_dist_115brz8._.js:2477
+[   51591ms] [LOG] [Sync] ✅ modulos-sistema: Downloaded 22 items from server @ http://localhost:3000/_next/static/chunks/node_modules_next_dist_115brz8._.js:2477
+[   51598ms] [LOG] [Sync] ✅ personal-empresa: Downloaded 5 items from server @ http://localhost:3000/_next/static/chunks/node_modules_next_dist_115brz8._.js:2477
+[   51601ms] [LOG] [Sync] ✅ tareas: Downloaded 4 items from server @ http://localhost:3000/_next/static/chunks/node_modules_next_dist_115brz8._.js:2477
+[   51610ms] [LOG] [Sync] ✅ pedidos: Downloaded 1 items from server @ http://localhost:3000/_next/static/chunks/node_modules_next_dist_115brz8._.js:2477
+[   51616ms] [LOG] [Sync] ℹ️  pagos-proveedores: Both empty @ http://localhost:3000/_next/static/chunks/node_modules_next_dist_115brz8._.js:2477
+[   51628ms] [LOG] [Sync] ✅ datos-empresa: Downloaded 1 items from server @ http://localhost:3000/_next/static/chunks/node_modules_next_dist_115brz8._.js:2477
+[   51639ms] [LOG] [Sync] ℹ️  control-bancario: Both empty @ http://localhost:3000/_next/static/chunks/node_modules_next_dist_115brz8._.js:2477
