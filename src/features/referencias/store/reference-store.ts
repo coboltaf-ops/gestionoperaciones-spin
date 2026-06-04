@@ -107,23 +107,49 @@ export const useReferenceStore = create<ReferenceState>()(
       name: 'referencias-storage',
       storage: createJSONStorage(() => localStorage),
       merge: (persisted, current) => {
-        const p = persisted as Partial<ReferenceState>;
-        const currentState = (current as ReferenceState | undefined) ?? { data: initialData };
-        const persistedData = p.data ?? currentState.data ?? initialData;
+        try {
+          const p = (persisted ?? {}) as Partial<ReferenceState>;
+          const c = (current ?? {}) as Partial<ReferenceState>;
 
-        // Ordenar TODAS las tablas al rehidratar
-        const sortedData = Object.fromEntries(
-          Object.entries(persistedData ?? {}).map(([key, records]) => [
-            key,
-            sortRecords((records as BaseReference[]) || (currentState.data?.[key as ReferenceTableId] as BaseReference[]) || [])
-          ])
-        ) as Record<ReferenceTableId, BaseReference[]>;
+          // Si persisted tiene data, usarlo; si no, usar current o initialData
+          const dataToUse = p.data && typeof p.data === 'object' ? p.data : (c.data || initialData);
 
-        return {
-          ...currentState,
-          ...p,
-          data: sortedData,
-        };
+          // Validar y ordenar todas las tablas
+          const sortedData = Object.fromEntries(
+            Object.entries(initialData).map(([key]) => {
+              const records = (dataToUse as any)?.[key] || [];
+              return [
+                key,
+                Array.isArray(records) ? sortRecords(records) : []
+              ];
+            })
+          ) as Record<ReferenceTableId, BaseReference[]>;
+
+          return {
+            data: sortedData,
+            isLoading: c.isLoading ?? false,
+            error: c.error ?? null,
+            activeTable: c.activeTable ?? 'categoria',
+            setActiveTable: c.setActiveTable ?? (() => {}),
+            fetchData: c.fetchData ?? (async () => {}),
+            addRecord: c.addRecord ?? (async () => {}),
+            updateRecord: c.updateRecord ?? (async () => {}),
+            deleteRecord: c.deleteRecord ?? (async () => {}),
+          };
+        } catch (err) {
+          console.error('[merge] Error en merge:', err);
+          return {
+            data: initialData,
+            isLoading: false,
+            error: null,
+            activeTable: 'categoria',
+            setActiveTable: () => {},
+            fetchData: async () => {},
+            addRecord: async () => {},
+            updateRecord: async () => {},
+            deleteRecord: async () => {},
+          };
+        }
       },
       onRehydrateStorage: () => (state, error) => {
         if (error) {

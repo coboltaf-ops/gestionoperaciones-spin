@@ -1,23 +1,492 @@
 {
-  "categoria": [],
-  "grupo": [],
-  "subgrupo": [],
-  "unidad_medida": [],
-  "tipo_inventario": [],
-  "tipo_moneda": [],
-  "actividad_proveedor": [],
-  "condiciones_pago": [],
-  "situacion_producto": [],
-  "situacion_orden_compra": [],
-  "situacion_bodega": [],
-  "situacion_proveedor": [],
-  "tipo_identificacion": [],
-  "tipo_ajuste": [],
-  "impuesto": [],
-  "referencia_proveedor": [],
-  "ciudad": [],
-  "pais": [],
-  "roles": [],
-  "estado_recepcion_factura": [],
-  "situacion_tarea": []
+  "categoria": [
+    {
+      "id": "cat-002",
+      "nombre": "Aditivos"
+    },
+    {
+      "id": "cat-003",
+      "nombre": "Materias Primas"
+    },
+    {
+      "id": "cat-004",
+      "nombre": "Servicios"
+    },
+    {
+      "id": "cat-001",
+      "nombre": "Silicatos"
+    }
+  ],
+  "grupo": [
+    {
+      "id": "grp-001",
+      "nombre": "Líquidos"
+    },
+    {
+      "id": "grp-003",
+      "nombre": "Polímeros"
+    },
+    {
+      "id": "grp-002",
+      "nombre": "Sólidos"
+    }
+  ],
+  "subgrupo": [
+    {
+      "id": "sub-003",
+      "nombre": "Aditivos Especiales"
+    },
+    {
+      "id": "sub-001",
+      "nombre": "Silicato de Sodio Líquido"
+    },
+    {
+      "id": "sub-002",
+      "nombre": "Silicato de Sodio Sólido"
+    }
+  ],
+  "unidad_medida": [
+    {
+      "id": "um-001",
+      "nombre": "kg"
+    },
+    {
+      "id": "um-002",
+      "nombre": "L"
+    },
+    {
+      "id": "um-005",
+      "nombre": "m"
+    },
+    {
+      "id": "um-006",
+      "nombre": "m²"
+    },
+    {
+      "id": "um-007",
+      "nombre": "m³"
+    },
+    {
+      "id": "um-008",
+      "nombre": "mL"
+    },
+    {
+      "id": "um-004",
+      "nombre": "Ton"
+    },
+    {
+      "id": "um-003",
+      "nombre": "Unidad"
+    }
+  ],
+  "tipo_inventario": [
+    {
+      "id": "ti-002",
+      "nombre": "Materia Prima",
+      "situacion": true
+    },
+    {
+      "id": "ti-003",
+      "nombre": "Materiales y Suministros",
+      "situacion": true
+    },
+    {
+      "id": "ti-001",
+      "nombre": "Mercancía",
+      "situacion": true
+    },
+    {
+      "id": "ti-004",
+      "nombre": "Producto Terminado",
+      "situacion": true
+    },
+    {
+      "id": "ti-005",
+      "nombre": "Servicios",
+      "situacion": true
+    }
+  ],
+  "tipo_moneda": [
+    {
+      "id": "tm-001",
+      "nombre": "COP",
+      "simbolo": "$"
+    },
+    {
+      "id": "tm-003",
+      "nombre": "EUR",
+      "simbolo": "€"
+    },
+    {
+      "id": "tm-002",
+      "nombre": "USD",
+      "simbolo": "$"
+    }
+  ],
+  "actividad_proveedor": [
+    {
+      "id": "ap-004",
+      "nombre": "Comerciante"
+    },
+    {
+      "id": "ap-001",
+      "nombre": "Distribuidora"
+    },
+    {
+      "id": "ap-002",
+      "nombre": "Fabricante"
+    },
+    {
+      "id": "ap-003",
+      "nombre": "Importadora"
+    },
+    {
+      "id": "ap-006",
+      "nombre": "Prestadora de Servicios"
+    },
+    {
+      "id": "ap-005",
+      "nombre": "Transportista"
+    }
+  ],
+  "condiciones_pago": [
+    {
+      "id": "cp-007",
+      "nombre": "Consignación"
+    },
+    {
+      "id": "cp-001",
+      "nombre": "Contado"
+    },
+    {
+      "id": "cp-002",
+      "nombre": "Crédito 15 días"
+    },
+    {
+      "id": "cp-003",
+      "nombre": "Crédito 30 días"
+    },
+    {
+      "id": "cp-004",
+      "nombre": "Crédito 60 días"
+    },
+    {
+      "id": "cp-005",
+      "nombre": "Crédito 90 días"
+    },
+    {
+      "id": "cp-006",
+      "nombre": "Media cuota"
+    }
+  ],
+  "situacion_producto": [
+    {
+      "id": "sp-001",
+      "nombre": "Activo"
+    },
+    {
+      "id": "sp-003",
+      "nombre": "Descontinuado"
+    },
+    {
+      "id": "sp-002",
+      "nombre": "Inactivo"
+    }
+  ],
+  "situacion_orden_compra": [
+    {
+      "id": "soc-005",
+      "nombre": "Anulada"
+    },
+    {
+      "id": "soc-004",
+      "nombre": "Cancelada"
+    },
+    {
+      "id": "soc-001",
+      "nombre": "Pendiente"
+    },
+    {
+      "id": "soc-002",
+      "nombre": "Recibida Parcial"
+    },
+    {
+      "id": "soc-003",
+      "nombre": "Recibida Total"
+    }
+  ],
+  "situacion_bodega": [
+    {
+      "id": "sb-001",
+      "nombre": "Activa"
+    },
+    {
+      "id": "sb-003",
+      "nombre": "En Mantenimiento"
+    },
+    {
+      "id": "sb-002",
+      "nombre": "Inactiva"
+    }
+  ],
+  "situacion_proveedor": [
+    {
+      "id": "sp-001",
+      "nombre": "Activo"
+    },
+    {
+      "id": "sp-004",
+      "nombre": "Bloqueado"
+    },
+    {
+      "id": "sp-002",
+      "nombre": "Inactivo"
+    },
+    {
+      "id": "sp-003",
+      "nombre": "Suspendido"
+    }
+  ],
+  "tipo_identificacion": [
+    {
+      "id": "ti-001",
+      "nombre": "CC"
+    },
+    {
+      "id": "ti-003",
+      "nombre": "CE"
+    },
+    {
+      "id": "ti-002",
+      "nombre": "NIT"
+    },
+    {
+      "id": "ti-004",
+      "nombre": "PA"
+    },
+    {
+      "id": "ti-005",
+      "nombre": "RC"
+    }
+  ],
+  "tipo_ajuste": [
+    {
+      "id": "ta-004",
+      "nombre": "Daño"
+    },
+    {
+      "id": "ta-001",
+      "nombre": "Falta de Inventario"
+    },
+    {
+      "id": "ta-003",
+      "nombre": "Pérdida por Vencimiento"
+    },
+    {
+      "id": "ta-006",
+      "nombre": "Revalorización"
+    },
+    {
+      "id": "ta-005",
+      "nombre": "Robo/Hurto"
+    },
+    {
+      "id": "ta-002",
+      "nombre": "Sobrante de Inventario"
+    }
+  ],
+  "impuesto": [
+    {
+      "id": "imp-004",
+      "nombre": "ICA 8%"
+    },
+    {
+      "id": "imp-001",
+      "nombre": "IVA 19%"
+    },
+    {
+      "id": "imp-002",
+      "nombre": "IVA 5%"
+    },
+    {
+      "id": "imp-005",
+      "nombre": "Retención 2%"
+    },
+    {
+      "id": "imp-003",
+      "nombre": "Sin IVA"
+    }
+  ],
+  "referencia_proveedor": [
+    {
+      "id": "rp-001",
+      "nombre": "Código Proveedor"
+    },
+    {
+      "id": "rp-004",
+      "nombre": "Descripción Comercial"
+    },
+    {
+      "id": "rp-002",
+      "nombre": "EAN"
+    },
+    {
+      "id": "rp-003",
+      "nombre": "SKU Proveedor"
+    }
+  ],
+  "ciudad": [
+    {
+      "id": "ciu-004",
+      "nombre": "Barranquilla",
+      "pais": "Colombia"
+    },
+    {
+      "id": "ciu-001",
+      "nombre": "Bogotá",
+      "pais": "Colombia"
+    },
+    {
+      "id": "ciu-006",
+      "nombre": "Bucaramanga",
+      "pais": "Colombia"
+    },
+    {
+      "id": "ciu-003",
+      "nombre": "Cali",
+      "pais": "Colombia"
+    },
+    {
+      "id": "ciu-005",
+      "nombre": "Cartagena",
+      "pais": "Colombia"
+    },
+    {
+      "id": "ciu-002",
+      "nombre": "Medellín",
+      "pais": "Colombia"
+    },
+    {
+      "id": "ciu-007",
+      "nombre": "Santa Marta",
+      "pais": "Colombia"
+    },
+    {
+      "id": "ciu-008",
+      "nombre": "Valledupar",
+      "pais": "Colombia"
+    }
+  ],
+  "pais": [
+    {
+      "id": "pais-005",
+      "nombre": "Brasil"
+    },
+    {
+      "id": "pais-001",
+      "nombre": "Colombia"
+    },
+    {
+      "id": "pais-002",
+      "nombre": "Ecuador"
+    },
+    {
+      "id": "pais-006",
+      "nombre": "Estados Unidos"
+    },
+    {
+      "id": "pais-007",
+      "nombre": "México"
+    },
+    {
+      "id": "pais-008",
+      "nombre": "Panamá"
+    },
+    {
+      "id": "pais-003",
+      "nombre": "Perú"
+    },
+    {
+      "id": "pais-004",
+      "nombre": "Venezuela"
+    }
+  ],
+  "roles": [
+    {
+      "id": "rol-001",
+      "nombre": "Administrador"
+    },
+    {
+      "id": "rol-004",
+      "nombre": "Auxiliar Contable"
+    },
+    {
+      "id": "rol-006",
+      "nombre": "Bodeguero"
+    },
+    {
+      "id": "rol-007",
+      "nombre": "Comercial"
+    },
+    {
+      "id": "rol-003",
+      "nombre": "Contable"
+    },
+    {
+      "id": "rol-002",
+      "nombre": "Gerente"
+    },
+    {
+      "id": "rol-005",
+      "nombre": "Operario"
+    },
+    {
+      "id": "rol-008",
+      "nombre": "Técnico"
+    }
+  ],
+  "estado_recepcion_factura": [
+    {
+      "id": "erf-004",
+      "nombre": "Pagada"
+    },
+    {
+      "id": "erf-003",
+      "nombre": "Procesada"
+    },
+    {
+      "id": "erf-005",
+      "nombre": "Rechazada"
+    },
+    {
+      "id": "erf-001",
+      "nombre": "Recibida"
+    },
+    {
+      "id": "erf-002",
+      "nombre": "Validada"
+    }
+  ],
+  "situacion_tarea": [
+    {
+      "id": "st-004",
+      "nombre": "Cancelada"
+    },
+    {
+      "id": "st-003",
+      "nombre": "Completada"
+    },
+    {
+      "id": "st-005",
+      "nombre": "En Espera"
+    },
+    {
+      "id": "st-002",
+      "nombre": "En Progreso"
+    },
+    {
+      "id": "st-001",
+      "nombre": "Pendiente"
+    }
+  ]
 }

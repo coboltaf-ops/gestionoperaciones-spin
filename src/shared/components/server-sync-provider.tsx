@@ -56,22 +56,27 @@ function useSyncCollection(config: SyncConfig) {
   useEffect(() => {
     const doSync = async () => {
       const c = configRef.current
+      console.log(`[Sync] 🔄 Iniciando sincronización de ${c.collection}${c.isObject ? ' (objeto)' : ''}`)
       try {
         const r = await fetchWithRetry(`/api/data/${c.collection}`)
         const serverData = await r.json()
+        console.log(`[Sync] 📦 ${c.collection}: serverData tipo = ${typeof serverData}, isObject=${c.isObject}`)
         // Para objetos compuestos (isObject), considerar "vacío" si todos los arrays internos están vacíos
         const serverIsEmpty = c.isObject
           ? !serverData || Object.keys(serverData).length === 0 ||
             Object.values(serverData as Record<string, unknown[]>).every(v => !Array.isArray(v) || v.length === 0)
           : !Array.isArray(serverData) || serverData.length === 0
         const local = c.getData()
+        console.log(`[Sync] 📦 ${c.collection}: local tipo = ${typeof local}`)
         const localStr = JSON.stringify(local)
         const localIsEmpty = c.isObject
           ? Object.values(local as Record<string, unknown[]>).every(v => !Array.isArray(v) || v.length === 0)
           : !Array.isArray(local) || (local as unknown[]).length === 0
+        console.log(`[Sync] 🔍 ${c.collection}: serverIsEmpty=${serverIsEmpty}, localIsEmpty=${localIsEmpty}`)
 
         if (localIsEmpty && !serverIsEmpty) {
           // Solo si client está vacío y server tiene datos → descargar al cliente
+          console.log(`[Sync] 📥 ${c.collection}: DESCARGANDO del servidor`)
           c.setData(serverData)
           prevJson.current = JSON.stringify(serverData)
           console.log(`[Sync] ✅ ${c.collection}: Downloaded ${Array.isArray(serverData) ? serverData.length : Object.keys(serverData).length} items from server`)
@@ -185,16 +190,25 @@ export function ServerSyncProvider({ children }: { children: React.ReactNode }) 
   // Referencias — ordenar alfabéticamente al recibir del servidor
   const refData = useReferenceStore(s => s.data)
   const setRefData = useCallback((d: unknown) => {
-    const raw = d as Record<string, Array<{ descripcion: string }>>;
-    const sorted = Object.fromEntries(
-      Object.entries(raw).map(([key, records]) => [
-        key,
-        Array.isArray(records)
-          ? [...records].sort((a, b) => a.descripcion.localeCompare(b.descripcion, 'es'))
-          : records,
-      ])
-    )
-    useReferenceStore.setState({ data: { ...useReferenceStore.getState().data, ...sorted } })
+    try {
+      const raw = d as Record<string, Array<{ descripcion?: string; nombre?: string }>>;
+      const sorted = Object.fromEntries(
+        Object.entries(raw).map(([key, records]) => [
+          key,
+          Array.isArray(records)
+            ? [...records].sort((a, b) => {
+              const aDesc = (a.descripcion || a.nombre || '').toString();
+              const bDesc = (b.descripcion || b.nombre || '').toString();
+              return aDesc.localeCompare(bDesc, 'es');
+            })
+            : records,
+        ])
+      )
+      useReferenceStore.setState({ data: sorted as any })
+      console.log(`[Sync] ✅ referencias: Sincronizadas correctamente con ${Object.values(sorted).flat().length} items`)
+    } catch (err) {
+      console.error(`[Sync] ❌ referencias: Error en setRefData:`, err)
+    }
   }, [])
 
   // Correos
