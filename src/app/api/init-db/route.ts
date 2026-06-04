@@ -8,6 +8,7 @@ export const maxDuration = 60
  * GET /api/init-db
  * Inserta datos en las tablas de autenticación
  * Las tablas deben existir previamente (ver supabase/migrations/init_auth_tables.sql)
+ * Endpoint para inicializar la base de datos en producción
  */
 export async function GET() {
   const supabaseUrl = process.env.NEXT_PUBLIC_SUPABASE_URL
