@@ -942,7 +942,7 @@ export default function OrdenesCompraPage() {
                         required>
                         <option value="">— Seleccione Tipo de Inventario —</option>
                         {refData.tipo_inventario.filter(t => t.situacion).map(t => (
-                          <option key={t.id} value={t.nombre || t.descripcion}>{t.nombre || t.descripcion}</option>
+                          <option key={t.id} value={t.descripcion}>{t.descripcion}</option>
                         ))}
                       </select>
                     </div>
