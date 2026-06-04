@@ -191,120 +191,371 @@ const calcTotals = (detalles: DetalleOrden[], pct: number) => {
 
 function generateOrdenPDF(o: OrdenCompra, provInfo?: { tipo_id: string; nro_documento: string; direccion: string; ciudad: string }, empresaInfo?: { nombre?: string; tipo_identificacion: string; nro_documento: string; direccion: string; ciudad: string }, empresaLogo: string = LOGO_BASE64) {
   const { subtotal, monto_impuesto, total } = calcTotals(o.detalles, o.pct_impuesto)
+  
   const rows = o.detalles.map((d, i) => `
-    <tr style="background:${i % 2 === 0 ? '#f9fafb' : '#fff'}">
-      <td style="padding:8px 12px;border-bottom:1px solid #e5e7eb;font-family:monospace;font-size:12px">${d.codigo_producto}</td>
-      <td style="padding:8px 12px;border-bottom:1px solid #e5e7eb">${d.descripcion}</td>
-      <td style="padding:8px 12px;border-bottom:1px solid #e5e7eb;text-align:center">${d.cantidad}</td>
-      <td style="padding:8px 12px;border-bottom:1px solid #e5e7eb;text-align:center;font-size:12px">${d.unidad_medida}</td>
-      <td style="padding:8px 12px;border-bottom:1px solid #e5e7eb;text-align:right">${fmtMoney(d.costo_unitario)}</td>
-      <td style="padding:8px 12px;border-bottom:1px solid #e5e7eb;text-align:right;font-weight:600">${fmtMoney(d.subtotal)}</td>
+    <tr style="background:${i % 2 === 0 ? '#f8fafb' : '#fff'}">
+      <td style="padding:12px;border-bottom:1px solid #e5e7eb;font-family:monospace;font-size:13px;color:#000">${d.codigo_producto}</td>
+      <td style="padding:12px;border-bottom:1px solid #e5e7eb;color:#333;font-size:13px">${d.descripcion}</td>
+      <td style="padding:12px;border-bottom:1px solid #e5e7eb;text-align:center;color:#333;font-weight:600">${d.cantidad}</td>
+      <td style="padding:12px;border-bottom:1px solid #e5e7eb;text-align:center;color:#555;font-size:12px">${d.unidad_medida}</td>
+      <td style="padding:12px;border-bottom:1px solid #e5e7eb;text-align:right;color:#000;font-weight:600;font-family:monospace">${fmtMoney(d.costo_unitario)}</td>
+      <td style="padding:12px;border-bottom:1px solid #e5e7eb;text-align:right;color:#1e3a8a;font-weight:700;font-family:monospace">${fmtMoney(d.subtotal)}</td>
     </tr>`).join('')
 
   const html = `<!DOCTYPE html><html lang="es"><head><meta charset="UTF-8">
   <title>Orden de Compra ${o.consecutivo}</title>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/html2pdf.js/0.10.1/html2pdf.bundle.min.js"><\/script>
   <style>
     * { margin:0; padding:0; box-sizing:border-box; }
-    body { font-family:'Segoe UI',Arial,sans-serif; font-size:13px; color:#111; background:#fff; padding:32px; }
-    .header { display:flex; justify-content:space-between; align-items:flex-start; margin-bottom:32px; padding-bottom:20px; border-bottom:3px solid #1e3a8a; }
-    .company { font-size:22px; font-weight:800; color:#000; line-height:1.15; white-space:nowrap; }
-    .doc-title { text-align:right; }
-    .doc-title h2 { font-size:20px; font-weight:700; color:#000; margin-bottom:2px; }
-    .doc-title .prov-detail { font-size:11px; color:#374151; line-height:1.5; }
-    .doc-title .consecutivo { font-size:18px; font-family:monospace; font-weight:900; color:#000; }
-    .badge { display:inline-block; padding:4px 12px; border-radius:20px; font-size:11px; font-weight:600; background:#000; color:#fff; border:1px solid #000; margin-top:6px; }
-    .prov-box { margin-bottom:24px; padding:16px 20px; background:#f0f4ff; border:1px solid #c7d2fe; border-radius:8px; }
-    .prov-box h3 { font-size:13px; font-weight:700; color:#1e3a8a; margin-bottom:8px; text-transform:uppercase; letter-spacing:.06em; }
-    .prov-box .prov-grid { display:grid; grid-template-columns:1fr 1fr 1fr 1fr; gap:8px 16px; }
-    .prov-box .prov-field label { font-size:10px; text-transform:uppercase; letter-spacing:.08em; color:#1e3a8a; font-weight:700; display:block; margin-bottom:2px; }
-    .prov-box .prov-field span { font-weight:600; color:#111; font-size:13px; }
-    .grid { display:grid; grid-template-columns:repeat(4,1fr); gap:16px; margin-bottom:28px; padding:20px; background:#eef2ff; border-radius:8px; border:1px solid #c7d2fe; }
-    .field label { font-size:10px; text-transform:uppercase; letter-spacing:.08em; color:#1e3a8a; font-weight:700; display:block; margin-bottom:3px; }
-    .field span { font-weight:600; color:#111; font-size:13px; }
-    table { width:100%; border-collapse:collapse; margin-bottom:20px; }
-    thead tr { background:#1e3a8a; }
-    thead th { padding:10px 12px; color:#fff; font-size:11px; text-transform:uppercase; letter-spacing:.06em; text-align:left; }
-    thead th:last-child, thead th:nth-child(3), thead th:nth-child(4), thead th:nth-child(5) { text-align:right; }
-    thead th:nth-child(3) { text-align:center; }
-    thead th:nth-child(4) { text-align:center; }
-    tbody td { padding:8px 12px; font-size:13px; color:#000; font-weight:600; border-bottom:1px solid #e5e7eb; }
-    .totals { display:flex; flex-direction:column; align-items:flex-end; gap:6px; margin-bottom:24px; }
-    .totals-row { display:flex; justify-content:space-between; width:280px; font-size:13px; color:#000; font-weight:600; }
-    .totals-row.grand { border-top:2px solid #000; padding-top:8px; margin-top:4px; font-size:15px; font-weight:700; color:#000; }
-    .obs { border:1.5px solid #1e3a8a; border-radius:8px; overflow:hidden; margin-bottom:20px; }
-    .obs-label { font-size:11px; text-transform:uppercase; letter-spacing:.06em; color:#fff; background:#1e3a8a; padding:8px 14px; font-weight:600; }
-    .obs-content { padding:12px 14px; font-size:13px; color:#1f2937; background:#f8fafc; }
-    .footer { margin-top:40px; display:flex; justify-content:space-between; }
-    .sign-box { text-align:center; }
-    .sign-line { width:180px; border-top:2px solid #000; margin:0 auto 6px; padding-top:6px; font-size:11px; font-weight:700; color:#000; }
-    @media print { body { padding:16px; } }
-  </style></head><body>
+    body { 
+      font-family:'Inter','Segoe UI',Arial,sans-serif; 
+      font-size:13px; 
+      color:#1f2937; 
+      background:#fff; 
+      padding:40px;
+      line-height:1.6;
+    }
+    
+    .header { 
+      display:flex; 
+      justify-content:space-between; 
+      align-items:flex-start; 
+      margin-bottom:32px; 
+      padding-bottom:24px; 
+      border-bottom:3px solid #3b82f6;
+    }
+    
+    .company-section {
+      display:flex;
+      gap:16px;
+      align-items:flex-start;
+    }
+    
+    .logo {
+      width:140px;
+      height:140px;
+      border-radius:12px;
+      object-fit:contain;
+      background:#f3f4f6;
+      padding:8px;
+      border:2px solid #e5e7eb;
+    }
+    
+    .company-info {
+      flex:1;
+    }
+    
+    .company-name { 
+      font-size:24px; 
+      font-weight:800; 
+      color:#000; 
+      line-height:1.1;
+      letter-spacing:-0.5px;
+    }
+    
+    .company-details { 
+      font-size:12px; 
+      color:#6b7280; 
+      margin-top:8px; 
+      line-height:1.6;
+    }
+    
+    .doc-info {
+      text-align:right;
+    }
+    
+    .doc-title { 
+      font-size:28px; 
+      font-weight:900; 
+      background:linear-gradient(135deg, #1e3a8a 0%, #3b82f6 100%);
+      -webkit-background-clip:text;
+      -webkit-text-fill-color:transparent;
+      background-clip:text;
+      margin-bottom:4px;
+      letter-spacing:-1px;
+    }
+    
+    .doc-subtitle { 
+      font-size:13px; 
+      color:#6b7280; 
+      font-weight:600;
+      text-transform:uppercase;
+      letter-spacing:0.5px;
+    }
+    
+    .doc-number { 
+      font-size:16px; 
+      font-family:monospace; 
+      font-weight:900; 
+      color:#000; 
+      margin-top:8px;
+      padding:8px 12px;
+      background:#f0f4ff;
+      border-left:3px solid #3b82f6;
+      border-radius:4px;
+    }
+    
+    .section-title {
+      font-size:12px;
+      font-weight:700;
+      text-transform:uppercase;
+      color:#3b82f6;
+      letter-spacing:0.6px;
+      margin-top:20px;
+      margin-bottom:12px;
+    }
+    
+    .info-box { 
+      margin-bottom:24px; 
+      padding:16px; 
+      background:linear-gradient(135deg, #f0f4ff 0%, #f8fafc 100%);
+      border:1px solid #c7d2fe;
+      border-radius:8px;
+    }
+    
+    .info-grid { 
+      display:grid; 
+      grid-template-columns:1fr 1fr 1fr 1fr; 
+      gap:12px;
+    }
+    
+    .info-field label { 
+      font-size:10px; 
+      text-transform:uppercase; 
+      letter-spacing:0.6px;
+      color:#1e3a8a; 
+      font-weight:700; 
+      display:block; 
+      margin-bottom:4px;
+    }
+    
+    .info-field span { 
+      font-weight:600; 
+      color:#000; 
+      font-size:13px;
+    }
+    
+    table { 
+      width:100%; 
+      border-collapse:collapse; 
+      margin-bottom:20px;
+      margin-top:16px;
+    }
+    
+    thead tr { 
+      background:linear-gradient(135deg, #1e3a8a 0%, #3b82f6 100%);
+    }
+    
+    thead th { 
+      padding:12px; 
+      color:#fff; 
+      font-size:11px; 
+      text-transform:uppercase; 
+      letter-spacing:0.5px;
+      text-align:left;
+      font-weight:700;
+    }
+    
+    thead th:nth-child(3), 
+    thead th:nth-child(4), 
+    thead th:nth-child(5),
+    thead th:nth-child(6) { 
+      text-align:right; 
+    }
+    
+    tbody tr:hover {
+      background:#f9fafb !important;
+    }
+    
+    .totals { 
+      display:flex; 
+      flex-direction:column; 
+      align-items:flex-end; 
+      gap:8px; 
+      margin-top:24px;
+      padding:20px;
+      background:#f8fafc;
+      border-radius:8px;
+      border:1px solid #e5e7eb;
+    }
+    
+    .totals-row { 
+      display:flex; 
+      justify-content:space-between; 
+      width:320px; 
+      font-size:13px; 
+      color:#374151;
+    }
+    
+    .totals-row span:first-child {
+      font-weight:600;
+    }
+    
+    .totals-row.grand { 
+      border-top:2px solid #1e3a8a;
+      padding-top:12px;
+      margin-top:8px;
+      font-size:16px; 
+      font-weight:800; 
+      color:#1e3a8a;
+    }
+    
+    .observations { 
+      border-left:4px solid #3b82f6;
+      overflow:hidden; 
+      margin:20px 0;
+      background:#f0f4ff;
+      border-radius:6px;
+    }
+    
+    .obs-label { 
+      font-size:11px; 
+      text-transform:uppercase; 
+      letter-spacing:0.5px;
+      color:#fff; 
+      background:linear-gradient(135deg, #1e3a8a 0%, #3b82f6 100%);
+      padding:10px 14px; 
+      font-weight:700;
+    }
+    
+    .obs-content { 
+      padding:12px 14px; 
+      font-size:13px; 
+      color:#374151;
+    }
+    
+    .footer { 
+      margin-top:40px; 
+      display:flex; 
+      justify-content:space-between;
+      padding-top:20px;
+      border-top:1px solid #e5e7eb;
+    }
+    
+    .sign-box { 
+      text-align:center;
+      flex:1;
+    }
+    
+    .sign-line { 
+      width:160px; 
+      border-top:2px solid #000; 
+      margin:0 auto 8px; 
+      padding-top:8px; 
+      font-size:11px; 
+      font-weight:700; 
+      color:#000;
+    }
+    
+    .sign-box-label {
+      font-size:11px;
+      font-weight:700;
+      color:#000;
+      margin-top:4px;
+    }
+    
+    @page {
+      size:A4;
+      margin:0;
+    }
+    
+    @media print { 
+      body { padding:20px; } 
+    }
+  </style></head><body id="content">
+  
   <div class="header">
-    <div style="display:flex;align-items:center;gap:12px;">
-      <img src="${empresaLogo}" style="width:180px;height:180px;border-radius:12px;object-fit:contain;background:#fff;padding:8px;" />
-      <div>
-        <div class="company">${empresaInfo?.nombre || 'EMPRESA'}</div>
-        ${empresaInfo ? `<div style="font-size:15px;color:#000;font-weight:600;margin-top:6px;line-height:1.5">${empresaInfo.tipo_identificacion}: ${empresaInfo.nro_documento}<br/>${empresaInfo.direccion || ''}${empresaInfo.ciudad ? `, ${empresaInfo.ciudad}` : ''}</div>` : ''}
+    <div class="company-section">
+      <img src="${empresaLogo}" class="logo" />
+      <div class="company-info">
+        <div class="company-name">${empresaInfo?.nombre || 'EMPRESA'}</div>
+        <div class="company-details">
+          ${empresaInfo?.tipo_identificacion}: ${empresaInfo?.nro_documento || '—'}<br/>
+          ${empresaInfo?.direccion || '—'}<br/>
+          ${empresaInfo?.ciudad || '—'}
+        </div>
       </div>
     </div>
-    <div class="doc-title">
-      <h2>ORDEN DE COMPRA</h2>
-      <div class="consecutivo">${o.consecutivo}</div>
-      <div class="badge">${o.situacion}</div>
+    
+    <div class="doc-info">
+      <div class="doc-title">ORDEN</div>
+      <div class="doc-subtitle">De Compra</div>
+      <div class="doc-number">#${o.consecutivo}</div>
     </div>
   </div>
-
-  <div class="grid">
-    <div class="field"><label>Nro. Orden</label><span>${o.consecutivo}</span></div>
-    <div class="field"><label>Fecha Emisión</label><span>${fDate(o.fecha_emision)}</span></div>
-    <div class="field"><label>Fecha Vencimiento</label><span>${fDate(o.fecha_vencimiento) || '—'}</span></div>
-    <div class="field"><label>Tipo de Moneda</label><span>${o.tipo_moneda || '—'}</span></div>
-    <div class="field"><label>Condición de Pago</label><span>${o.condicion_pago || '—'}</span></div>
-    <div class="field"><label>Fecha Aprobación</label><span>${fDate(o.fecha_aprobacion) || '—'}</span></div>
-    <div class="field"><label>Bodega Llegada</label><span>${o.bodega_llegada || '—'}</span></div>
-    <div class="field"><label>Centro de Costo</label><span>${o.centro_costo || '—'}</span></div>
-    <div class="field"><label>Comprador</label><span>${o.comprador || '—'}</span></div>
-  </div>
-
-  <div class="prov-box">
-    <h3>Datos del Proveedor</h3>
-    <div class="prov-grid">
-      <div class="prov-field"><label>Proveedor</label><span>${o.proveedor || '—'}</span></div>
-      <div class="prov-field"><label>Tipo ID</label><span>${provInfo?.tipo_id || '—'}</span></div>
-      <div class="prov-field"><label>Nro. Documento</label><span>${provInfo?.nro_documento || '—'}</span></div>
-      <div class="prov-field"><label>Dirección</label><span>${provInfo?.direccion || '—'}</span></div>
-      <div class="prov-field"><label>Ciudad</label><span>${provInfo?.ciudad || '—'}</span></div>
+  
+  <div class="section-title">Proveedor</div>
+  <div class="info-box">
+    <div class="info-grid">
+      <div class="info-field"><label>Razón Social</label><span>${o.proveedor || '—'}</span></div>
+      <div class="info-field"><label>Tipo ID</label><span>${provInfo?.tipo_id || '—'}</span></div>
+      <div class="info-field"><label>Documento</label><span>${provInfo?.nro_documento || '—'}</span></div>
+      <div class="info-field"><label>Ciudad</label><span>${provInfo?.ciudad || '—'}</span></div>
     </div>
   </div>
-
+  
+  <div class="section-title">Detalles</div>
   <table>
     <thead><tr>
-      <th>Código</th><th>Descripción</th><th style="text-align:center">Cant.</th>
-      <th style="text-align:center">Unidad</th><th style="text-align:right">Costo Unit.</th>
+      <th>Código</th>
+      <th>Descripción</th>
+      <th style="text-align:center">Cant.</th>
+      <th style="text-align:center">Unidad</th>
+      <th style="text-align:right">Costo Unit.</th>
       <th style="text-align:right">Subtotal</th>
     </tr></thead>
     <tbody>${rows}</tbody>
   </table>
-
+  
   <div class="totals">
-    <div class="totals-row"><span style="color:#6b7280">Subtotal antes de Impuesto</span><span>${fmtMoney(subtotal)}</span></div>
-    <div class="totals-row"><span style="color:#6b7280">Impuesto (${o.pct_impuesto}%)</span><span>${fmtMoney(monto_impuesto)}</span></div>
-    <div class="totals-row grand"><span>TOTAL ORDEN</span><span>${fmtMoney(total)}</span></div>
+    <div class="totals-row"><span>Subtotal</span><span>${fmtMoney(subtotal)}</span></div>
+    <div class="totals-row"><span>Impuesto (${o.pct_impuesto}%)</span><span>${fmtMoney(monto_impuesto)}</span></div>
+    <div class="totals-row grand"><span>TOTAL</span><span>${fmtMoney(total)}</span></div>
   </div>
-
-  ${o.observaciones ? `<div class="obs"><div class="obs-label">Observaciones</div><div class="obs-content">${o.observaciones}</div></div>` : ''}
-
+  
+  ${o.observaciones ? `
+  <div class="observations">
+    <div class="obs-label">📝 Observaciones</div>
+    <div class="obs-content">${o.observaciones}</div>
+  </div>
+  ` : ''}
+  
   <div class="footer">
-    <div class="sign-box"><div class="sign-line">Elaborado por</div><div style="font-size:11px;font-weight:700;color:#000">${o.comprador || '_______________'}</div></div>
-    <div class="sign-box"><div class="sign-line">Aprobado por</div><div style="font-size:11px;font-weight:700;color:#000">_______________</div></div>
-    <div class="sign-box"><div class="sign-line">Recibido por</div><div style="font-size:11px;font-weight:700;color:#000">_______________</div></div>
+    <div class="sign-box">
+      <div class="sign-line">Elaborado por</div>
+      <div class="sign-box-label">${o.comprador || '_______________'}</div>
+    </div>
+    <div class="sign-box">
+      <div class="sign-line">Aprobado por</div>
+      <div class="sign-box-label">_______________</div>
+    </div>
+    <div class="sign-box">
+      <div class="sign-line">Recibido por</div>
+      <div class="sign-box-label">_______________</div>
+    </div>
   </div>
-
-  <script>window.onload=()=>{window.print()}<\/script>
+  
+  <script>
+    window.addEventListener('load', function() {
+      const element = document.getElementById('content');
+      const opt = {
+        margin: 10,
+        filename: 'Orden-Compra-${o.consecutivo}.pdf',
+        image: { type: 'jpeg', quality: 0.98 },
+        html2canvas: { scale: 2 },
+        jsPDF: { orientation: 'portrait', unit: 'mm', format: 'a4' }
+      };
+      html2pdf().set(opt).from(element).save();
+    });
+  <\/script>
+  
   </body></html>`
 
-  const win = window.open('', '_blank', 'width=900,height=700')
-  if (win) { win.document.write(html); win.document.close() }
+  const win = window.open('', '_blank')
+  if (win) { 
+    win.document.write(html)
+    win.document.close()
+  }
 }
 
 export default function OrdenesCompraPage() {
