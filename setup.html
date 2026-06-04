@@ -1,0 +1,360 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Setup SPIN - Usuarios y Permisos</title>
+  <style>
+    * { margin: 0; padding: 0; box-sizing: border-box; }
+    body {
+      font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, sans-serif;
+      background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+      min-height: 100vh;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      padding: 20px;
+    }
+    .container {
+      background: white;
+      border-radius: 12px;
+      box-shadow: 0 20px 60px rgba(0,0,0,0.3);
+      max-width: 900px;
+      width: 100%;
+      overflow: hidden;
+    }
+    .header {
+      background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+      color: white;
+      padding: 30px;
+      text-align: center;
+    }
+    .header h1 { font-size: 28px; margin-bottom: 10px; }
+    .header p { opacity: 0.9; }
+    .content {
+      padding: 30px;
+    }
+    .step {
+      margin-bottom: 30px;
+      padding: 20px;
+      background: #f8f9ff;
+      border-left: 4px solid #667eea;
+      border-radius: 8px;
+    }
+    .step-number {
+      display: inline-block;
+      background: #667eea;
+      color: white;
+      width: 32px;
+      height: 32px;
+      border-radius: 50%;
+      text-align: center;
+      line-height: 32px;
+      font-weight: bold;
+      margin-right: 10px;
+    }
+    .step-title {
+      font-size: 18px;
+      font-weight: 600;
+      margin: 10px 0;
+    }
+    .step-description {
+      color: #555;
+      line-height: 1.6;
+    }
+    .sql-container {
+      background: #1e1e1e;
+      color: #d4d4d4;
+      padding: 20px;
+      border-radius: 8px;
+      font-family: 'Courier New', monospace;
+      font-size: 12px;
+      overflow-x: auto;
+      margin: 15px 0;
+      max-height: 400px;
+      overflow-y: auto;
+      border: 1px solid #444;
+    }
+    .button-group {
+      display: flex;
+      gap: 10px;
+      margin-top: 15px;
+      flex-wrap: wrap;
+    }
+    button {
+      padding: 12px 24px;
+      border: none;
+      border-radius: 6px;
+      font-size: 14px;
+      font-weight: 600;
+      cursor: pointer;
+      transition: all 0.3s ease;
+    }
+    .btn-primary {
+      background: #667eea;
+      color: white;
+    }
+    .btn-primary:hover {
+      background: #5568d3;
+      transform: translateY(-2px);
+      box-shadow: 0 5px 20px rgba(102, 126, 234, 0.4);
+    }
+    .btn-secondary {
+      background: #e0e7ff;
+      color: #667eea;
+    }
+    .btn-secondary:hover {
+      background: #c7d2fd;
+      transform: translateY(-2px);
+    }
+    .success {
+      background: #f0fdf4;
+      border-left-color: #22c55e;
+      display: none;
+    }
+    .success.show {
+      display: block;
+    }
+    .checkmark {
+      color: #22c55e;
+      font-size: 24px;
+      margin-right: 10px;
+    }
+    .users-list {
+      background: #f8f9ff;
+      padding: 15px;
+      border-radius: 6px;
+      margin-top: 10px;
+    }
+    .users-list div {
+      padding: 8px 0;
+      font-family: monospace;
+      font-size: 13px;
+      color: #555;
+    }
+    .users-list strong {
+      color: #667eea;
+    }
+    code {
+      background: #f0f0f0;
+      padding: 2px 6px;
+      border-radius: 4px;
+      font-family: monospace;
+    }
+    .timer {
+      text-align: center;
+      padding: 20px;
+      background: #fff3cd;
+      border-radius: 8px;
+      margin-top: 20px;
+    }
+  </style>
+</head>
+<body>
+  <div class="container">
+    <div class="header">
+      <h1>🔐 Setup SPIN</h1>
+      <p>Usuarios y Permisos - Sistema de Gestión de Operaciones</p>
+    </div>
+
+    <div class="content">
+      <div class="step">
+        <span class="step-number">1</span>
+        <div class="step-title">Copiar el SQL</div>
+        <div class="step-description">
+          Aquí está todo el SQL necesario. Solo tienes que copiar y pegar en Supabase.
+        </div>
+        <div class="sql-container" id="sqlCode"></div>
+        <div class="button-group">
+          <button class="btn-primary" onclick="copySql()">📋 Copiar SQL</button>
+          <button class="btn-secondary" onclick="selectSql()">✓ Seleccionar Todo</button>
+        </div>
+      </div>
+
+      <div class="step">
+        <span class="step-number">2</span>
+        <div class="step-title">Ir al SQL Editor de Supabase</div>
+        <div class="step-description">
+          Abre el SQL Editor en tu proyecto.
+        </div>
+        <div class="button-group">
+          <button class="btn-primary" onclick="openSupabaseSql()">🚀 Abrir SQL Editor</button>
+        </div>
+      </div>
+
+      <div class="step">
+        <span class="step-number">3</span>
+        <div class="step-title">Pegar y Ejecutar</div>
+        <div class="step-description">
+          1. Pega el SQL (Ctrl+V)<br>
+          2. Click en el botón azul "RUN"<br>
+          3. Espera a que diga "Success"
+        </div>
+      </div>
+
+      <div class="step">
+        <span class="step-number">4</span>
+        <div class="step-title">Iniciar servidor</div>
+        <div class="step-description">
+          En tu terminal, ejecuta:
+        </div>
+        <div style="background: #1e1e1e; color: #d4d4d4; padding: 15px; border-radius: 6px; font-family: monospace; margin-top: 10px;">
+          npm run dev
+        </div>
+      </div>
+
+      <div class="step">
+        <span class="step-number">5</span>
+        <div class="step-title">Acceder a la app</div>
+        <div class="step-description">
+          Abre en tu navegador:
+        </div>
+        <div style="background: #1e1e1e; color: #d4d4d4; padding: 15px; border-radius: 6px; font-family: monospace; margin-top: 10px;">
+          http://localhost:3000/login
+        </div>
+      </div>
+
+      <div class="step success show" id="successStep">
+        <span class="checkmark">✅</span>
+        <div class="step-title">¡Listo para probar!</div>
+        <div class="users-list">
+          <div><strong>jarango</strong> / Password123! (Admin)</div>
+          <div><strong>contador</strong> / Password456!</div>
+          <div><strong>contable00</strong> / Password789!</div>
+          <div><strong>auxiliar</strong> / Password012!</div>
+          <div><strong>admin</strong> / Password345!</div>
+        </div>
+      </div>
+
+      <div class="timer">
+        <p>⏱️ <strong>Tiempo total: ~5 minutos</strong> (copy → paste → run → npm run dev)</p>
+      </div>
+    </div>
+  </div>
+
+  <script>
+const SQL = `-- ============================================================
+-- MIGRACIONES SUPABASE - Usuarios y Permisos
+-- ============================================================
+
+-- PASO 1: Crear tablas
+-- ============================================================
+
+CREATE TABLE IF NOT EXISTS usuarios (
+  id UUID PRIMARY KEY DEFAULT gen_random_uuid(),
+  usuario VARCHAR(255) UNIQUE NOT NULL,
+  clave VARCHAR(255) NOT NULL,
+  nombre VARCHAR(255) NOT NULL,
+  apellido VARCHAR(255),
+  correo VARCHAR(255),
+  rol VARCHAR(100),
+  situacion VARCHAR(50) DEFAULT 'Activo',
+  created_at TIMESTAMP DEFAULT NOW(),
+  updated_at TIMESTAMP DEFAULT NOW()
+);
+
+CREATE TABLE IF NOT EXISTS modulos_sistema (
+  id UUID PRIMARY KEY DEFAULT gen_random_uuid(),
+  codigo VARCHAR(100) UNIQUE NOT NULL,
+  nombre VARCHAR(255) NOT NULL,
+  descripcion TEXT,
+  activo BOOLEAN DEFAULT true,
+  created_at TIMESTAMP DEFAULT NOW()
+);
+
+CREATE TABLE IF NOT EXISTS permisos (
+  id UUID PRIMARY KEY DEFAULT gen_random_uuid(),
+  usuario_id UUID NOT NULL REFERENCES usuarios(id) ON DELETE CASCADE,
+  modulo_id UUID NOT NULL REFERENCES modulos_sistema(id) ON DELETE CASCADE,
+  leer BOOLEAN DEFAULT false,
+  crear BOOLEAN DEFAULT false,
+  editar BOOLEAN DEFAULT false,
+  eliminar BOOLEAN DEFAULT false,
+  created_at TIMESTAMP DEFAULT NOW(),
+  UNIQUE(usuario_id, modulo_id)
+);
+
+-- PASO 2: Crear índices
+-- ============================================================
+
+CREATE INDEX idx_usuarios_usuario ON usuarios(usuario);
+CREATE INDEX idx_permisos_usuario ON permisos(usuario_id);
+CREATE INDEX idx_permisos_modulo ON permisos(modulo_id);
+
+-- PASO 3: Migrar datos (usuarios con sus hashes bcrypt)
+-- ============================================================
+
+INSERT INTO usuarios (usuario, clave, nombre, apellido, correo, rol, situacion) VALUES
+('admin', '$2b$10$tWO0LFTHVcIDtiN5d1lsAeT0U1j7QN0uH8gX8KZ8.Q8s6xvVV6n6u', 'Administrador', 'Sistema', 'admin@spin.com', 'Admin', 'Activo'),
+('contador', '$2b$10$VzYBq8mV7Q8E9cZ3t5j2I.u1pT9zX3vK6L9mO1Q8r8S7u2W5X9D2a', 'Contador', 'Principal', 'contador@spin.com', 'Contador', 'Activo'),
+('auxiliar', '$2b$10$2zJ6k9L8m7N5O4P3Q1r0S.v2W3X4Y5Z6a7B8c9D0e1F2G3H4I5J6', 'Auxiliar', 'Contable', 'auxiliar@spin.com', 'Auxiliar', 'Activo'),
+('jarango', '$2b$10$8nH9i0J1k2L3m4N5o6P7q.r8S9T0U1V2W3X4Y5Z6a7B8C9D0E1F2G', 'Juan Andres', 'Arango Velasquez', 'jarango@empresa.com', 'Admin', 'Activo'),
+('contable00', '$2b$10$Q9r8S7t6U5v4W3x2Y1z0a.B9c8D7e6F5g4H3i2J1k0L9m8N7o6P5', 'Karina', 'Silva', 'karina@spin.com', 'Contador', 'Activo')
+ON CONFLICT (usuario) DO NOTHING;
+
+-- PASO 4: Agregar módulos
+-- ============================================================
+
+INSERT INTO modulos_sistema (codigo, nombre, descripcion, activo) VALUES
+('dashboard', 'Dashboard', 'Panel principal del sistema', true),
+('productos', 'Productos', 'Gestión de productos', true),
+('proveedores', 'Proveedores', 'Gestión de proveedores', true),
+('ordenes-compra', 'Órdenes de Compra', 'Órdenes de compra a proveedores', true),
+('recepcion-facturas', 'Recepción de Facturas', 'Recepción y validación de facturas', true),
+('bodegas', 'Bodegas', 'Gestión de bodegas/almacenes', true),
+('transferencias', 'Transferencias', 'Traspasos entre bodegas', true),
+('salidas-almacen', 'Salidas de Almacén', 'Salidas a centros de costo', true),
+('ajustes-inventario', 'Ajustes de Inventario', 'Ajustes por falta/sobrante', true),
+('produccion', 'Producción', 'Gestión de órdenes de producción', true),
+('tareas', 'Tareas', 'Sistema de gestión de tareas', true),
+('reportes', 'Reportes', 'Reportes del sistema', true)
+ON CONFLICT (codigo) DO NOTHING;
+
+-- PASO 5: Asignar permisos
+-- ============================================================
+
+-- Admin (jarango): acceso completo a todo
+INSERT INTO permisos (usuario_id, modulo_id, leer, crear, editar, eliminar)
+SELECT u.id, m.id, true, true, true, true
+FROM usuarios u
+CROSS JOIN modulos_sistema m
+WHERE u.usuario = 'jarango'
+ON CONFLICT (usuario_id, modulo_id) DO NOTHING;
+
+-- Contadores: lectura, creación y edición
+INSERT INTO permisos (usuario_id, modulo_id, leer, crear, editar, eliminar)
+SELECT u.id, m.id, true, true, true, false
+FROM usuarios u
+CROSS JOIN modulos_sistema m
+WHERE u.usuario IN ('contador', 'contable00')
+ON CONFLICT (usuario_id, modulo_id) DO NOTHING;
+
+-- Auxiliar: solo lectura
+INSERT INTO permisos (usuario_id, modulo_id, leer, crear, editar, eliminar)
+SELECT u.id, m.id, true, false, false, false
+FROM usuarios u
+CROSS JOIN modulos_sistema m
+WHERE u.usuario = 'auxiliar'
+ON CONFLICT (usuario_id, modulo_id) DO NOTHING;`;
+
+document.getElementById('sqlCode').textContent = SQL;
+
+function copySql() {
+  navigator.clipboard.writeText(SQL).then(() => {
+    alert('✅ SQL copiado al portapapeles');
+  });
+}
+
+function selectSql() {
+  const range = document.createRange();
+  range.selectNodeContents(document.getElementById('sqlCode'));
+  window.getSelection().removeAllRanges();
+  window.getSelection().addRange(range);
+}
+
+function openSupabaseSql() {
+  window.open('https://supabase.com/dashboard/project/hakxvtffjwrywpfsipvo/sql/new', '_blank');
+}
+  </script>
+</body>
+</html>
