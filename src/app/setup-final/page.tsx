@@ -37,11 +37,12 @@ export default function SetupFinal() {
           const insertData = await insertResponse.json()
 
           if (insertData.success) {
-            setLogs(prev => [...prev, ...insertData.log])
+            setLogs(prev => [...prev, ...(insertData.log || [])])
             setStatus('✅ ¡TODO LISTO!')
             setCompleted(true)
           } else {
-            throw new Error('No se pudieron insertar los datos')
+            setLogs(prev => [...prev, ...(insertData.log || []), '❌ Error insertando datos'])
+            throw new Error(insertData.error || 'No se pudieron insertar los datos')
           }
         } else {
           setLogs(prev => [...prev, '❌ Las tablas NO existen aún'])
