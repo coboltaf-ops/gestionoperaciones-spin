@@ -192,22 +192,29 @@ export function ServerSyncProvider({ children }: { children: React.ReactNode }) 
   const setRefData = useCallback((d: unknown) => {
     try {
       const raw = d as Record<string, Array<{ descripcion?: string; nombre?: string }>>;
-      const sorted = Object.fromEntries(
-        Object.entries(raw).map(([key, records]) => [
-          key,
-          Array.isArray(records)
-            ? [...records].sort((a, b) => {
-              const aDesc = (a.descripcion || a.nombre || '').toString();
-              const bDesc = (b.descripcion || b.nombre || '').toString();
-              return aDesc.localeCompare(bDesc, 'es');
-            })
-            : records,
-        ])
-      )
-      useReferenceStore.setState({ data: sorted as any })
-      console.log(`[Sync] ✅ referencias: Sincronizadas correctamente con ${Object.values(sorted).flat().length} items`)
+      const sorted: Record<string, any> = {};
+
+      // Procesar cada tabla de referencias
+      for (const [key, records] of Object.entries(raw)) {
+        if (Array.isArray(records)) {
+          sorted[key] = [...records].sort((a, b) => {
+            const aDesc = (a.descripcion || a.nombre || '').toString();
+            const bDesc = (b.descripcion || b.nombre || '').toString();
+            return aDesc.localeCompare(bDesc, 'es');
+          });
+        } else {
+          sorted[key] = records;
+        }
+      }
+
+      // Actualizar el store - usar directamente sin spread para forzar reactividad
+      const newState = { data: sorted };
+      useReferenceStore.setState(newState);
+
+      const totalItems = Object.values(sorted).reduce((sum, arr) => sum + (Array.isArray(arr) ? arr.length : 0), 0);
+      console.log(`[Sync] ✅ referencias: Sincronizadas con ${totalItems} items en ${Object.keys(sorted).length} tablas`);
     } catch (err) {
-      console.error(`[Sync] ❌ referencias: Error en setRefData:`, err)
+      console.error(`[Sync] ❌ referencias: Error en setRefData:`, err);
     }
   }, [])
 
