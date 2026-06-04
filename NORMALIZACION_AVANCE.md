@@ -38,19 +38,27 @@ Próximo:
 
 ### CRÍTICO #2: Referencias Sincronización
 ```
-Status: VALIDANDO
+Status: 85% - Sincronización OK, UI pendiente
 Ubicación: /features/referencias/store/reference-store.ts
+          /shared/components/server-sync-provider.tsx
+          /data/referencias.json
 
-Cambios previos:
-  [✅] initialData ahora está vacío
-  [✅] Función merge corregida para ser más defensiva
+Cambios completados:
+  [✅] data/referencias.json llenado con 108 items (21 tablas)
+  [✅] tipo_inventario incluye 5 opciones + situacion: true
+  [✅] merge() en reference-store maneja undefined correctamente  
+  [✅] setRefData mejora para manejar 'nombre' y 'descripcion'
+  [✅] API devuelve referencias correctamente (curl validado)
+  [✅] Sincronización descarga 108 items del servidor (logs validados)
   
-Próximos pasos:
-  [ ] Validar que /api/data/referencias devuelve datos
-  [ ] Verificar localStorage 'referencias-storage'
-  [ ] Probar dropdown en Órdenes de Compra
-  [ ] Validar tipos de inventario se cargan
-  [ ] Deploy a Vercel y probar en producción
+Issues pendientes:
+  ⚠️ UI no actualiza reactivamente después de sincronizar referencias
+  ⚠️ Dropdown tipo_inventario sigue vacío aunque datos sincronizados
+  
+Diagnóstico:
+  - reference-store.getState().data muestra 0 keys después de sincronizar
+  - Problema: setState en setRefData no está actualizando el estado
+  - Requiere investigación adicional de reactividad Zustand
 ```
 
 ---
