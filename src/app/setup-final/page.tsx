@@ -33,7 +33,7 @@ export default function SetupFinal() {
           setLogs(prev => [...prev, '✅ Tablas encontradas en Supabase'])
           setLogs(prev => [...prev, '📝 Insertando usuarios y módulos...'])
 
-          const insertResponse = await fetch('/api/setup-complete')
+          const insertResponse = await fetch('/api/insert-data')
           const insertData = await insertResponse.json()
 
           if (insertData.success) {
