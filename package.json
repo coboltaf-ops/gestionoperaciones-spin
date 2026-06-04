@@ -6,7 +6,9 @@
     "dev": "next dev --turbopack",
     "build": "next build",
     "start": "next start",
-    "lint": "next lint"
+    "lint": "next lint",
+    "setup:db": "node scripts/setup-supabase.js",
+    "init:db": "curl http://localhost:3000/api/init-db"
   },
   "dependencies": {
     "@supabase/ssr": "^0.9.0",
