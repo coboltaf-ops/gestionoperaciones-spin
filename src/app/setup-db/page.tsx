@@ -2,6 +2,7 @@
 
 import { useEffect, useState } from 'react'
 
+// Auto setup database migration page
 export default function SetupDB() {
   const [status, setStatus] = useState('Inicializando...')
   const [logs, setLogs] = useState<string[]>(['🚀 Iniciando migración de base de datos...'])
