@@ -1,0 +1,8 @@
+- generic [active] [ref=e1]:
+  - generic [ref=e4]:
+    - generic [ref=e5]:
+      - generic [ref=e6]: ⏳
+      - heading "Iniciando setup automático..." [level=1] [ref=e7]
+    - generic [ref=e9]: 🚀 Conectando a Supabase...
+    - button "↻ Reintentar" [ref=e10] [cursor=pointer]
+  - alert [ref=e11]
