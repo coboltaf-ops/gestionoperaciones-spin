@@ -1,0 +1,31 @@
+- generic [active] [ref=e1]:
+  - generic [ref=e4]:
+    - generic [ref=e5]:
+      - generic [ref=e6]: 🎉
+      - heading "⚠️ Migración completada con resultados" [level=1] [ref=e24]
+    - generic [ref=e8]:
+      - generic [ref=e9]: 🚀 Iniciando migración de base de datos...
+      - generic [ref=e25]: 🔄 Inicializando migración...
+      - generic [ref=e26]: 📝 Insertando usuarios directamente...
+      - generic [ref=e27]: "❌ Error usuarios: Could not find the table 'public.usuarios' in the schema cache"
+      - generic [ref=e28]: "❌ Error fatal: [object Object]"
+      - generic [ref=e29]: "📌 Nota: Si ves errores de tablas, es porque el SQL aún no se ejecutó en Supabase Dashboard"
+    - generic [ref=e30]:
+      - paragraph [ref=e31]: ✅ Base de datos configurada
+      - paragraph [ref=e32]: "Credenciales para login:"
+      - generic [ref=e33]:
+        - generic [ref=e34]:
+          - text: "👤 Usuario:"
+          - strong [ref=e35]: jarango
+        - generic [ref=e36]:
+          - text: "🔐 Contraseña:"
+          - strong [ref=e37]: Password123!
+    - link "→ Ir a Login" [ref=e38] [cursor=pointer]:
+      - /url: /login
+    - generic [ref=e11]:
+      - strong [ref=e12]: "ℹ️ Información:"
+      - paragraph [ref=e13]: Esta página ejecuta la migración de base de datos automáticamente. Si ves errores de "tabla no encontrada", significa que aún necesitas ejecutar el SQL manualmente en Supabase Dashboard.
+      - paragraph [ref=e14]: "URL: https://app.supabase.com/project/hakxvtffjwrywpfsipvo/sql/new"
+  - button "Open Next.js Dev Tools" [ref=e20] [cursor=pointer]:
+    - img [ref=e21]
+  - alert [ref=e39]

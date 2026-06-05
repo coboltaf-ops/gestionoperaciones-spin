@@ -1,0 +1,13 @@
+- generic [active] [ref=e1]:
+  - generic [ref=e4]:
+    - generic [ref=e5]:
+      - generic [ref=e6]: ⏳
+      - heading "Inicializando..." [level=1] [ref=e7]
+    - generic [ref=e9]: 🚀 Iniciando migración de base de datos...
+    - button "↻ Reintentar" [ref=e10] [cursor=pointer]
+    - generic [ref=e11]:
+      - strong [ref=e12]: "ℹ️ Información:"
+      - paragraph [ref=e13]: Esta página ejecuta la migración de base de datos automáticamente. Si ves errores de "tabla no encontrada", significa que aún necesitas ejecutar el SQL manualmente en Supabase Dashboard.
+      - paragraph [ref=e14]: "URL: https://app.supabase.com/project/hakxvtffjwrywpfsipvo/sql/new"
+  - button "Open Next.js Dev Tools" [ref=e20] [cursor=pointer]:
+    - img [ref=e21]
