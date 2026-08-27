@@ -1,0 +1,117 @@
+[     487ms] [LOG] [Zustand] ✅ Productos hidratados: 13 @ https://gestionoperaciones-spin.vercel.app/_next/static/chunks/01vm585f8n~jz.js?dpl=dpl_7ZRohi7fTnJduYTjiLT2mxfbtmJ5:0
+[     487ms] [LOG] [Zustand] ✅ Referencias hidratadas (4 categorías) @ https://gestionoperaciones-spin.vercel.app/_next/static/chunks/01vm585f8n~jz.js?dpl=dpl_7ZRohi7fTnJduYTjiLT2mxfbtmJ5:0
+[     602ms] [LOG] [Sync] 🔄 Iniciando sincronización de productos @ https://gestionoperaciones-spin.vercel.app/_next/static/chunks/01vm585f8n~jz.js?dpl=dpl_7ZRohi7fTnJduYTjiLT2mxfbtmJ5:0
+[     603ms] [LOG] [Sync] 🔄 Iniciando sincronización de proveedores @ https://gestionoperaciones-spin.vercel.app/_next/static/chunks/01vm585f8n~jz.js?dpl=dpl_7ZRohi7fTnJduYTjiLT2mxfbtmJ5:0
+[     603ms] [LOG] [Sync] 🔄 Iniciando sincronización de bodegas @ https://gestionoperaciones-spin.vercel.app/_next/static/chunks/01vm585f8n~jz.js?dpl=dpl_7ZRohi7fTnJduYTjiLT2mxfbtmJ5:0
+[     603ms] [LOG] [Sync] 🔄 Iniciando sincronización de referencias (objeto) @ https://gestionoperaciones-spin.vercel.app/_next/static/chunks/01vm585f8n~jz.js?dpl=dpl_7ZRohi7fTnJduYTjiLT2mxfbtmJ5:0
+[     604ms] [LOG] [Sync] 🔄 Iniciando sincronización de correos-enviados @ https://gestionoperaciones-spin.vercel.app/_next/static/chunks/01vm585f8n~jz.js?dpl=dpl_7ZRohi7fTnJduYTjiLT2mxfbtmJ5:0
+[     604ms] [LOG] [Sync] 🔄 Iniciando sincronización de ordenes-compra @ https://gestionoperaciones-spin.vercel.app/_next/static/chunks/01vm585f8n~jz.js?dpl=dpl_7ZRohi7fTnJduYTjiLT2mxfbtmJ5:0
+[     604ms] [LOG] [Sync] 🔄 Iniciando sincronización de centros-costo @ https://gestionoperaciones-spin.vercel.app/_next/static/chunks/01vm585f8n~jz.js?dpl=dpl_7ZRohi7fTnJduYTjiLT2mxfbtmJ5:0
+[     604ms] [LOG] [Sync] 🔄 Iniciando sincronización de transferencias @ https://gestionoperaciones-spin.vercel.app/_next/static/chunks/01vm585f8n~jz.js?dpl=dpl_7ZRohi7fTnJduYTjiLT2mxfbtmJ5:0
+[     605ms] [LOG] [Sync] 🔄 Iniciando sincronización de ajustes-inventario @ https://gestionoperaciones-spin.vercel.app/_next/static/chunks/01vm585f8n~jz.js?dpl=dpl_7ZRohi7fTnJduYTjiLT2mxfbtmJ5:0
+[     605ms] [LOG] [Sync] 🔄 Iniciando sincronización de recepcion-facturas @ https://gestionoperaciones-spin.vercel.app/_next/static/chunks/01vm585f8n~jz.js?dpl=dpl_7ZRohi7fTnJduYTjiLT2mxfbtmJ5:0
+[     605ms] [LOG] [Sync] 🔄 Iniciando sincronización de recepcion-remisiones @ https://gestionoperaciones-spin.vercel.app/_next/static/chunks/01vm585f8n~jz.js?dpl=dpl_7ZRohi7fTnJduYTjiLT2mxfbtmJ5:0
+[     606ms] [LOG] [Sync] 🔄 Iniciando sincronización de usuarios @ https://gestionoperaciones-spin.vercel.app/_next/static/chunks/01vm585f8n~jz.js?dpl=dpl_7ZRohi7fTnJduYTjiLT2mxfbtmJ5:0
+[     606ms] [LOG] [Sync] 🔄 Iniciando sincronización de carga-inicial @ https://gestionoperaciones-spin.vercel.app/_next/static/chunks/01vm585f8n~jz.js?dpl=dpl_7ZRohi7fTnJduYTjiLT2mxfbtmJ5:0
+[     606ms] [LOG] [Sync] 🔄 Iniciando sincronización de modulos-sistema @ https://gestionoperaciones-spin.vercel.app/_next/static/chunks/01vm585f8n~jz.js?dpl=dpl_7ZRohi7fTnJduYTjiLT2mxfbtmJ5:0
+[     606ms] [LOG] [Sync] 🔄 Iniciando sincronización de personal-empresa @ https://gestionoperaciones-spin.vercel.app/_next/static/chunks/01vm585f8n~jz.js?dpl=dpl_7ZRohi7fTnJduYTjiLT2mxfbtmJ5:0
+[     607ms] [LOG] [Sync] 🔄 Iniciando sincronización de tareas @ https://gestionoperaciones-spin.vercel.app/_next/static/chunks/01vm585f8n~jz.js?dpl=dpl_7ZRohi7fTnJduYTjiLT2mxfbtmJ5:0
+[     607ms] [LOG] [Sync] 🔄 Iniciando sincronización de pedidos @ https://gestionoperaciones-spin.vercel.app/_next/static/chunks/01vm585f8n~jz.js?dpl=dpl_7ZRohi7fTnJduYTjiLT2mxfbtmJ5:0
+[     607ms] [LOG] [Sync] 🔄 Iniciando sincronización de pagos-proveedores (objeto) @ https://gestionoperaciones-spin.vercel.app/_next/static/chunks/01vm585f8n~jz.js?dpl=dpl_7ZRohi7fTnJduYTjiLT2mxfbtmJ5:0
+[     608ms] [LOG] [Sync] 🔄 Iniciando sincronización de datos-empresa @ https://gestionoperaciones-spin.vercel.app/_next/static/chunks/01vm585f8n~jz.js?dpl=dpl_7ZRohi7fTnJduYTjiLT2mxfbtmJ5:0
+[     608ms] [LOG] [Sync] 🔄 Iniciando sincronización de control-bancario (objeto) @ https://gestionoperaciones-spin.vercel.app/_next/static/chunks/01vm585f8n~jz.js?dpl=dpl_7ZRohi7fTnJduYTjiLT2mxfbtmJ5:0
+[     763ms] [LOG] [Sync] 📦 usuarios: serverData tipo = object, isObject=undefined @ https://gestionoperaciones-spin.vercel.app/_next/static/chunks/01vm585f8n~jz.js?dpl=dpl_7ZRohi7fTnJduYTjiLT2mxfbtmJ5:0
+[     763ms] [LOG] [Sync] 📦 usuarios: local tipo = object @ https://gestionoperaciones-spin.vercel.app/_next/static/chunks/01vm585f8n~jz.js?dpl=dpl_7ZRohi7fTnJduYTjiLT2mxfbtmJ5:0
+[     763ms] [LOG] [Sync] 🔍 usuarios: serverIsEmpty=false, localIsEmpty=false @ https://gestionoperaciones-spin.vercel.app/_next/static/chunks/01vm585f8n~jz.js?dpl=dpl_7ZRohi7fTnJduYTjiLT2mxfbtmJ5:0
+[     763ms] [LOG] [Sync] ✅ usuarios: Both have data - keeping local (more recent) @ https://gestionoperaciones-spin.vercel.app/_next/static/chunks/01vm585f8n~jz.js?dpl=dpl_7ZRohi7fTnJduYTjiLT2mxfbtmJ5:0
+[     792ms] [LOG] [Sync] 📦 correos-enviados: serverData tipo = object, isObject=undefined @ https://gestionoperaciones-spin.vercel.app/_next/static/chunks/01vm585f8n~jz.js?dpl=dpl_7ZRohi7fTnJduYTjiLT2mxfbtmJ5:0
+[     792ms] [LOG] [Sync] 📦 correos-enviados: local tipo = object @ https://gestionoperaciones-spin.vercel.app/_next/static/chunks/01vm585f8n~jz.js?dpl=dpl_7ZRohi7fTnJduYTjiLT2mxfbtmJ5:0
+[     792ms] [LOG] [Sync] 🔍 correos-enviados: serverIsEmpty=false, localIsEmpty=true @ https://gestionoperaciones-spin.vercel.app/_next/static/chunks/01vm585f8n~jz.js?dpl=dpl_7ZRohi7fTnJduYTjiLT2mxfbtmJ5:0
+[     792ms] [LOG] [Sync] 📥 correos-enviados: DESCARGANDO del servidor @ https://gestionoperaciones-spin.vercel.app/_next/static/chunks/01vm585f8n~jz.js?dpl=dpl_7ZRohi7fTnJduYTjiLT2mxfbtmJ5:0
+[     792ms] [LOG] [Sync] ✅ correos-enviados: Downloaded 1 items from server @ https://gestionoperaciones-spin.vercel.app/_next/static/chunks/01vm585f8n~jz.js?dpl=dpl_7ZRohi7fTnJduYTjiLT2mxfbtmJ5:0
+[     804ms] [LOG] [Sync] 📦 bodegas: serverData tipo = object, isObject=undefined @ https://gestionoperaciones-spin.vercel.app/_next/static/chunks/01vm585f8n~jz.js?dpl=dpl_7ZRohi7fTnJduYTjiLT2mxfbtmJ5:0
+[     804ms] [LOG] [Sync] 📦 bodegas: local tipo = object @ https://gestionoperaciones-spin.vercel.app/_next/static/chunks/01vm585f8n~jz.js?dpl=dpl_7ZRohi7fTnJduYTjiLT2mxfbtmJ5:0
+[     804ms] [LOG] [Sync] 🔍 bodegas: serverIsEmpty=false, localIsEmpty=true @ https://gestionoperaciones-spin.vercel.app/_next/static/chunks/01vm585f8n~jz.js?dpl=dpl_7ZRohi7fTnJduYTjiLT2mxfbtmJ5:0
+[     804ms] [LOG] [Sync] 📥 bodegas: DESCARGANDO del servidor @ https://gestionoperaciones-spin.vercel.app/_next/static/chunks/01vm585f8n~jz.js?dpl=dpl_7ZRohi7fTnJduYTjiLT2mxfbtmJ5:0
+[     804ms] [LOG] [Sync] ✅ bodegas: Downloaded 2 items from server @ https://gestionoperaciones-spin.vercel.app/_next/static/chunks/01vm585f8n~jz.js?dpl=dpl_7ZRohi7fTnJduYTjiLT2mxfbtmJ5:0
+[     826ms] [LOG] [Sync] 📦 recepcion-facturas: serverData tipo = object, isObject=undefined @ https://gestionoperaciones-spin.vercel.app/_next/static/chunks/01vm585f8n~jz.js?dpl=dpl_7ZRohi7fTnJduYTjiLT2mxfbtmJ5:0
+[     826ms] [LOG] [Sync] 📦 recepcion-facturas: local tipo = object @ https://gestionoperaciones-spin.vercel.app/_next/static/chunks/01vm585f8n~jz.js?dpl=dpl_7ZRohi7fTnJduYTjiLT2mxfbtmJ5:0
+[     826ms] [LOG] [Sync] 🔍 recepcion-facturas: serverIsEmpty=false, localIsEmpty=true @ https://gestionoperaciones-spin.vercel.app/_next/static/chunks/01vm585f8n~jz.js?dpl=dpl_7ZRohi7fTnJduYTjiLT2mxfbtmJ5:0
+[     826ms] [LOG] [Sync] 📥 recepcion-facturas: DESCARGANDO del servidor @ https://gestionoperaciones-spin.vercel.app/_next/static/chunks/01vm585f8n~jz.js?dpl=dpl_7ZRohi7fTnJduYTjiLT2mxfbtmJ5:0
+[     826ms] [LOG] [Sync] ✅ recepcion-facturas: Downloaded 3 items from server @ https://gestionoperaciones-spin.vercel.app/_next/static/chunks/01vm585f8n~jz.js?dpl=dpl_7ZRohi7fTnJduYTjiLT2mxfbtmJ5:0
+[     834ms] [LOG] [Sync] 📦 recepcion-remisiones: serverData tipo = object, isObject=undefined @ https://gestionoperaciones-spin.vercel.app/_next/static/chunks/01vm585f8n~jz.js?dpl=dpl_7ZRohi7fTnJduYTjiLT2mxfbtmJ5:0
+[     834ms] [LOG] [Sync] 📦 recepcion-remisiones: local tipo = object @ https://gestionoperaciones-spin.vercel.app/_next/static/chunks/01vm585f8n~jz.js?dpl=dpl_7ZRohi7fTnJduYTjiLT2mxfbtmJ5:0
+[     834ms] [LOG] [Sync] 🔍 recepcion-remisiones: serverIsEmpty=true, localIsEmpty=true @ https://gestionoperaciones-spin.vercel.app/_next/static/chunks/01vm585f8n~jz.js?dpl=dpl_7ZRohi7fTnJduYTjiLT2mxfbtmJ5:0
+[     834ms] [LOG] [Sync] ℹ️  recepcion-remisiones: Both empty @ https://gestionoperaciones-spin.vercel.app/_next/static/chunks/01vm585f8n~jz.js?dpl=dpl_7ZRohi7fTnJduYTjiLT2mxfbtmJ5:0
+[     854ms] [LOG] [Sync] 📦 ajustes-inventario: serverData tipo = object, isObject=undefined @ https://gestionoperaciones-spin.vercel.app/_next/static/chunks/01vm585f8n~jz.js?dpl=dpl_7ZRohi7fTnJduYTjiLT2mxfbtmJ5:0
+[     854ms] [LOG] [Sync] 📦 ajustes-inventario: local tipo = object @ https://gestionoperaciones-spin.vercel.app/_next/static/chunks/01vm585f8n~jz.js?dpl=dpl_7ZRohi7fTnJduYTjiLT2mxfbtmJ5:0
+[     854ms] [LOG] [Sync] 🔍 ajustes-inventario: serverIsEmpty=true, localIsEmpty=true @ https://gestionoperaciones-spin.vercel.app/_next/static/chunks/01vm585f8n~jz.js?dpl=dpl_7ZRohi7fTnJduYTjiLT2mxfbtmJ5:0
+[     854ms] [LOG] [Sync] ℹ️  ajustes-inventario: Both empty @ https://gestionoperaciones-spin.vercel.app/_next/static/chunks/01vm585f8n~jz.js?dpl=dpl_7ZRohi7fTnJduYTjiLT2mxfbtmJ5:0
+[     869ms] [LOG] [Sync] 📦 centros-costo: serverData tipo = object, isObject=undefined @ https://gestionoperaciones-spin.vercel.app/_next/static/chunks/01vm585f8n~jz.js?dpl=dpl_7ZRohi7fTnJduYTjiLT2mxfbtmJ5:0
+[     869ms] [LOG] [Sync] 📦 centros-costo: local tipo = object @ https://gestionoperaciones-spin.vercel.app/_next/static/chunks/01vm585f8n~jz.js?dpl=dpl_7ZRohi7fTnJduYTjiLT2mxfbtmJ5:0
+[     869ms] [LOG] [Sync] 🔍 centros-costo: serverIsEmpty=false, localIsEmpty=true @ https://gestionoperaciones-spin.vercel.app/_next/static/chunks/01vm585f8n~jz.js?dpl=dpl_7ZRohi7fTnJduYTjiLT2mxfbtmJ5:0
+[     869ms] [LOG] [Sync] 📥 centros-costo: DESCARGANDO del servidor @ https://gestionoperaciones-spin.vercel.app/_next/static/chunks/01vm585f8n~jz.js?dpl=dpl_7ZRohi7fTnJduYTjiLT2mxfbtmJ5:0
+[     869ms] [LOG] [Sync] ✅ centros-costo: Downloaded 5 items from server @ https://gestionoperaciones-spin.vercel.app/_next/static/chunks/01vm585f8n~jz.js?dpl=dpl_7ZRohi7fTnJduYTjiLT2mxfbtmJ5:0
+[     885ms] [LOG] [Sync] 📦 tareas: serverData tipo = object, isObject=undefined @ https://gestionoperaciones-spin.vercel.app/_next/static/chunks/01vm585f8n~jz.js?dpl=dpl_7ZRohi7fTnJduYTjiLT2mxfbtmJ5:0
+[     885ms] [LOG] [Sync] 📦 tareas: local tipo = object @ https://gestionoperaciones-spin.vercel.app/_next/static/chunks/01vm585f8n~jz.js?dpl=dpl_7ZRohi7fTnJduYTjiLT2mxfbtmJ5:0
+[     885ms] [LOG] [Sync] 🔍 tareas: serverIsEmpty=false, localIsEmpty=true @ https://gestionoperaciones-spin.vercel.app/_next/static/chunks/01vm585f8n~jz.js?dpl=dpl_7ZRohi7fTnJduYTjiLT2mxfbtmJ5:0
+[     885ms] [LOG] [Sync] 📥 tareas: DESCARGANDO del servidor @ https://gestionoperaciones-spin.vercel.app/_next/static/chunks/01vm585f8n~jz.js?dpl=dpl_7ZRohi7fTnJduYTjiLT2mxfbtmJ5:0
+[     885ms] [LOG] [Sync] ✅ tareas: Downloaded 4 items from server @ https://gestionoperaciones-spin.vercel.app/_next/static/chunks/01vm585f8n~jz.js?dpl=dpl_7ZRohi7fTnJduYTjiLT2mxfbtmJ5:0
+[    1459ms] [LOG] [Sync] 📦 carga-inicial: serverData tipo = object, isObject=undefined @ https://gestionoperaciones-spin.vercel.app/_next/static/chunks/01vm585f8n~jz.js?dpl=dpl_7ZRohi7fTnJduYTjiLT2mxfbtmJ5:0
+[    1459ms] [LOG] [Sync] 📦 carga-inicial: local tipo = object @ https://gestionoperaciones-spin.vercel.app/_next/static/chunks/01vm585f8n~jz.js?dpl=dpl_7ZRohi7fTnJduYTjiLT2mxfbtmJ5:0
+[    1459ms] [LOG] [Sync] 🔍 carga-inicial: serverIsEmpty=true, localIsEmpty=true @ https://gestionoperaciones-spin.vercel.app/_next/static/chunks/01vm585f8n~jz.js?dpl=dpl_7ZRohi7fTnJduYTjiLT2mxfbtmJ5:0
+[    1459ms] [LOG] [Sync] ℹ️  carga-inicial: Both empty @ https://gestionoperaciones-spin.vercel.app/_next/static/chunks/01vm585f8n~jz.js?dpl=dpl_7ZRohi7fTnJduYTjiLT2mxfbtmJ5:0
+[    1499ms] [LOG] [Sync] 📦 productos: serverData tipo = object, isObject=undefined @ https://gestionoperaciones-spin.vercel.app/_next/static/chunks/01vm585f8n~jz.js?dpl=dpl_7ZRohi7fTnJduYTjiLT2mxfbtmJ5:0
+[    1499ms] [LOG] [Sync] 📦 productos: local tipo = object @ https://gestionoperaciones-spin.vercel.app/_next/static/chunks/01vm585f8n~jz.js?dpl=dpl_7ZRohi7fTnJduYTjiLT2mxfbtmJ5:0
+[    1499ms] [LOG] [Sync] 🔍 productos: serverIsEmpty=false, localIsEmpty=true @ https://gestionoperaciones-spin.vercel.app/_next/static/chunks/01vm585f8n~jz.js?dpl=dpl_7ZRohi7fTnJduYTjiLT2mxfbtmJ5:0
+[    1499ms] [LOG] [Sync] 📥 productos: DESCARGANDO del servidor @ https://gestionoperaciones-spin.vercel.app/_next/static/chunks/01vm585f8n~jz.js?dpl=dpl_7ZRohi7fTnJduYTjiLT2mxfbtmJ5:0
+[    1499ms] [LOG] [Zustand Persist] Guardando 13 productos en localStorage @ https://gestionoperaciones-spin.vercel.app/_next/static/chunks/01vm585f8n~jz.js?dpl=dpl_7ZRohi7fTnJduYTjiLT2mxfbtmJ5:0
+[    1499ms] [LOG] [Sync] ✅ productos: Downloaded 13 items from server @ https://gestionoperaciones-spin.vercel.app/_next/static/chunks/01vm585f8n~jz.js?dpl=dpl_7ZRohi7fTnJduYTjiLT2mxfbtmJ5:0
+[    1507ms] [LOG] [Sync] 📦 control-bancario: serverData tipo = object, isObject=true @ https://gestionoperaciones-spin.vercel.app/_next/static/chunks/01vm585f8n~jz.js?dpl=dpl_7ZRohi7fTnJduYTjiLT2mxfbtmJ5:0
+[    1507ms] [LOG] [Sync] 📦 control-bancario: local tipo = object @ https://gestionoperaciones-spin.vercel.app/_next/static/chunks/01vm585f8n~jz.js?dpl=dpl_7ZRohi7fTnJduYTjiLT2mxfbtmJ5:0
+[    1507ms] [LOG] [Sync] 🔍 control-bancario: serverIsEmpty=true, localIsEmpty=true @ https://gestionoperaciones-spin.vercel.app/_next/static/chunks/01vm585f8n~jz.js?dpl=dpl_7ZRohi7fTnJduYTjiLT2mxfbtmJ5:0
+[    1507ms] [LOG] [Sync] ℹ️  control-bancario: Both empty @ https://gestionoperaciones-spin.vercel.app/_next/static/chunks/01vm585f8n~jz.js?dpl=dpl_7ZRohi7fTnJduYTjiLT2mxfbtmJ5:0
+[    1510ms] [LOG] [Sync] 📦 ordenes-compra: serverData tipo = object, isObject=undefined @ https://gestionoperaciones-spin.vercel.app/_next/static/chunks/01vm585f8n~jz.js?dpl=dpl_7ZRohi7fTnJduYTjiLT2mxfbtmJ5:0
+[    1510ms] [LOG] [Sync] 📦 ordenes-compra: local tipo = object @ https://gestionoperaciones-spin.vercel.app/_next/static/chunks/01vm585f8n~jz.js?dpl=dpl_7ZRohi7fTnJduYTjiLT2mxfbtmJ5:0
+[    1510ms] [LOG] [Sync] 🔍 ordenes-compra: serverIsEmpty=false, localIsEmpty=true @ https://gestionoperaciones-spin.vercel.app/_next/static/chunks/01vm585f8n~jz.js?dpl=dpl_7ZRohi7fTnJduYTjiLT2mxfbtmJ5:0
+[    1510ms] [LOG] [Sync] 📥 ordenes-compra: DESCARGANDO del servidor @ https://gestionoperaciones-spin.vercel.app/_next/static/chunks/01vm585f8n~jz.js?dpl=dpl_7ZRohi7fTnJduYTjiLT2mxfbtmJ5:0
+[    1510ms] [LOG] [Sync] ✅ ordenes-compra: Downloaded 4 items from server @ https://gestionoperaciones-spin.vercel.app/_next/static/chunks/01vm585f8n~jz.js?dpl=dpl_7ZRohi7fTnJduYTjiLT2mxfbtmJ5:0
+[    1518ms] [LOG] [Sync] 📦 referencias: serverData tipo = object, isObject=true @ https://gestionoperaciones-spin.vercel.app/_next/static/chunks/01vm585f8n~jz.js?dpl=dpl_7ZRohi7fTnJduYTjiLT2mxfbtmJ5:0
+[    1518ms] [LOG] [Sync] 📦 referencias: local tipo = object @ https://gestionoperaciones-spin.vercel.app/_next/static/chunks/01vm585f8n~jz.js?dpl=dpl_7ZRohi7fTnJduYTjiLT2mxfbtmJ5:0
+[    1518ms] [LOG] [Sync] 🔍 referencias: serverIsEmpty=false, localIsEmpty=true @ https://gestionoperaciones-spin.vercel.app/_next/static/chunks/01vm585f8n~jz.js?dpl=dpl_7ZRohi7fTnJduYTjiLT2mxfbtmJ5:0
+[    1518ms] [LOG] [Sync] 📥 referencias: DESCARGANDO del servidor @ https://gestionoperaciones-spin.vercel.app/_next/static/chunks/01vm585f8n~jz.js?dpl=dpl_7ZRohi7fTnJduYTjiLT2mxfbtmJ5:0
+[    1518ms] [LOG] [Sync] ✅ referencias: Sincronizadas con 108 items en 21 tablas @ https://gestionoperaciones-spin.vercel.app/_next/static/chunks/01vm585f8n~jz.js?dpl=dpl_7ZRohi7fTnJduYTjiLT2mxfbtmJ5:0
+[    1518ms] [LOG] [Sync] ✅ referencias: Downloaded 21 items from server @ https://gestionoperaciones-spin.vercel.app/_next/static/chunks/01vm585f8n~jz.js?dpl=dpl_7ZRohi7fTnJduYTjiLT2mxfbtmJ5:0
+[    1523ms] [LOG] [Sync] 📦 transferencias: serverData tipo = object, isObject=undefined @ https://gestionoperaciones-spin.vercel.app/_next/static/chunks/01vm585f8n~jz.js?dpl=dpl_7ZRohi7fTnJduYTjiLT2mxfbtmJ5:0
+[    1523ms] [LOG] [Sync] 📦 transferencias: local tipo = object @ https://gestionoperaciones-spin.vercel.app/_next/static/chunks/01vm585f8n~jz.js?dpl=dpl_7ZRohi7fTnJduYTjiLT2mxfbtmJ5:0
+[    1523ms] [LOG] [Sync] 🔍 transferencias: serverIsEmpty=false, localIsEmpty=true @ https://gestionoperaciones-spin.vercel.app/_next/static/chunks/01vm585f8n~jz.js?dpl=dpl_7ZRohi7fTnJduYTjiLT2mxfbtmJ5:0
+[    1523ms] [LOG] [Sync] 📥 transferencias: DESCARGANDO del servidor @ https://gestionoperaciones-spin.vercel.app/_next/static/chunks/01vm585f8n~jz.js?dpl=dpl_7ZRohi7fTnJduYTjiLT2mxfbtmJ5:0
+[    1523ms] [LOG] [Sync] ✅ transferencias: Downloaded 1 items from server @ https://gestionoperaciones-spin.vercel.app/_next/static/chunks/01vm585f8n~jz.js?dpl=dpl_7ZRohi7fTnJduYTjiLT2mxfbtmJ5:0
+[    1531ms] [LOG] [Sync] 📦 modulos-sistema: serverData tipo = object, isObject=undefined @ https://gestionoperaciones-spin.vercel.app/_next/static/chunks/01vm585f8n~jz.js?dpl=dpl_7ZRohi7fTnJduYTjiLT2mxfbtmJ5:0
+[    1531ms] [LOG] [Sync] 📦 modulos-sistema: local tipo = object @ https://gestionoperaciones-spin.vercel.app/_next/static/chunks/01vm585f8n~jz.js?dpl=dpl_7ZRohi7fTnJduYTjiLT2mxfbtmJ5:0
+[    1531ms] [LOG] [Sync] 🔍 modulos-sistema: serverIsEmpty=false, localIsEmpty=true @ https://gestionoperaciones-spin.vercel.app/_next/static/chunks/01vm585f8n~jz.js?dpl=dpl_7ZRohi7fTnJduYTjiLT2mxfbtmJ5:0
+[    1531ms] [LOG] [Sync] 📥 modulos-sistema: DESCARGANDO del servidor @ https://gestionoperaciones-spin.vercel.app/_next/static/chunks/01vm585f8n~jz.js?dpl=dpl_7ZRohi7fTnJduYTjiLT2mxfbtmJ5:0
+[    1531ms] [LOG] [Sync] ✅ modulos-sistema: Downloaded 22 items from server @ https://gestionoperaciones-spin.vercel.app/_next/static/chunks/01vm585f8n~jz.js?dpl=dpl_7ZRohi7fTnJduYTjiLT2mxfbtmJ5:0
+[    1533ms] [LOG] [Sync] 📦 pedidos: serverData tipo = object, isObject=undefined @ https://gestionoperaciones-spin.vercel.app/_next/static/chunks/01vm585f8n~jz.js?dpl=dpl_7ZRohi7fTnJduYTjiLT2mxfbtmJ5:0
+[    1533ms] [LOG] [Sync] 📦 pedidos: local tipo = object @ https://gestionoperaciones-spin.vercel.app/_next/static/chunks/01vm585f8n~jz.js?dpl=dpl_7ZRohi7fTnJduYTjiLT2mxfbtmJ5:0
+[    1533ms] [LOG] [Sync] 🔍 pedidos: serverIsEmpty=false, localIsEmpty=true @ https://gestionoperaciones-spin.vercel.app/_next/static/chunks/01vm585f8n~jz.js?dpl=dpl_7ZRohi7fTnJduYTjiLT2mxfbtmJ5:0
+[    1534ms] [LOG] [Sync] 📥 pedidos: DESCARGANDO del servidor @ https://gestionoperaciones-spin.vercel.app/_next/static/chunks/01vm585f8n~jz.js?dpl=dpl_7ZRohi7fTnJduYTjiLT2mxfbtmJ5:0
+[    1534ms] [LOG] [Sync] ✅ pedidos: Downloaded 1 items from server @ https://gestionoperaciones-spin.vercel.app/_next/static/chunks/01vm585f8n~jz.js?dpl=dpl_7ZRohi7fTnJduYTjiLT2mxfbtmJ5:0
+[    1579ms] [LOG] [Sync] 📦 pagos-proveedores: serverData tipo = object, isObject=true @ https://gestionoperaciones-spin.vercel.app/_next/static/chunks/01vm585f8n~jz.js?dpl=dpl_7ZRohi7fTnJduYTjiLT2mxfbtmJ5:0
+[    1579ms] [LOG] [Sync] 📦 pagos-proveedores: local tipo = object @ https://gestionoperaciones-spin.vercel.app/_next/static/chunks/01vm585f8n~jz.js?dpl=dpl_7ZRohi7fTnJduYTjiLT2mxfbtmJ5:0
+[    1579ms] [LOG] [Sync] 🔍 pagos-proveedores: serverIsEmpty=true, localIsEmpty=true @ https://gestionoperaciones-spin.vercel.app/_next/static/chunks/01vm585f8n~jz.js?dpl=dpl_7ZRohi7fTnJduYTjiLT2mxfbtmJ5:0
+[    1579ms] [LOG] [Sync] ℹ️  pagos-proveedores: Both empty @ https://gestionoperaciones-spin.vercel.app/_next/static/chunks/01vm585f8n~jz.js?dpl=dpl_7ZRohi7fTnJduYTjiLT2mxfbtmJ5:0
+[    1579ms] [LOG] [Sync] 📦 personal-empresa: serverData tipo = object, isObject=undefined @ https://gestionoperaciones-spin.vercel.app/_next/static/chunks/01vm585f8n~jz.js?dpl=dpl_7ZRohi7fTnJduYTjiLT2mxfbtmJ5:0
+[    1579ms] [LOG] [Sync] 📦 personal-empresa: local tipo = object @ https://gestionoperaciones-spin.vercel.app/_next/static/chunks/01vm585f8n~jz.js?dpl=dpl_7ZRohi7fTnJduYTjiLT2mxfbtmJ5:0
+[    1579ms] [LOG] [Sync] 🔍 personal-empresa: serverIsEmpty=false, localIsEmpty=true @ https://gestionoperaciones-spin.vercel.app/_next/static/chunks/01vm585f8n~jz.js?dpl=dpl_7ZRohi7fTnJduYTjiLT2mxfbtmJ5:0
+[    1579ms] [LOG] [Sync] 📥 personal-empresa: DESCARGANDO del servidor @ https://gestionoperaciones-spin.vercel.app/_next/static/chunks/01vm585f8n~jz.js?dpl=dpl_7ZRohi7fTnJduYTjiLT2mxfbtmJ5:0
+[    1579ms] [LOG] [Sync] ✅ personal-empresa: Downloaded 5 items from server @ https://gestionoperaciones-spin.vercel.app/_next/static/chunks/01vm585f8n~jz.js?dpl=dpl_7ZRohi7fTnJduYTjiLT2mxfbtmJ5:0
+[    1617ms] [LOG] [Sync] 📦 proveedores: serverData tipo = object, isObject=undefined @ https://gestionoperaciones-spin.vercel.app/_next/static/chunks/01vm585f8n~jz.js?dpl=dpl_7ZRohi7fTnJduYTjiLT2mxfbtmJ5:0
+[    1617ms] [LOG] [Sync] 📦 proveedores: local tipo = object @ https://gestionoperaciones-spin.vercel.app/_next/static/chunks/01vm585f8n~jz.js?dpl=dpl_7ZRohi7fTnJduYTjiLT2mxfbtmJ5:0
+[    1617ms] [LOG] [Sync] 🔍 proveedores: serverIsEmpty=false, localIsEmpty=false @ https://gestionoperaciones-spin.vercel.app/_next/static/chunks/01vm585f8n~jz.js?dpl=dpl_7ZRohi7fTnJduYTjiLT2mxfbtmJ5:0
+[    1617ms] [LOG] [Sync] ✅ proveedores: Both have data - keeping local (more recent) @ https://gestionoperaciones-spin.vercel.app/_next/static/chunks/01vm585f8n~jz.js?dpl=dpl_7ZRohi7fTnJduYTjiLT2mxfbtmJ5:0
+[    1618ms] [LOG] [Sync] 📦 datos-empresa: serverData tipo = object, isObject=undefined @ https://gestionoperaciones-spin.vercel.app/_next/static/chunks/01vm585f8n~jz.js?dpl=dpl_7ZRohi7fTnJduYTjiLT2mxfbtmJ5:0
+[    1618ms] [LOG] [Sync] 📦 datos-empresa: local tipo = object @ https://gestionoperaciones-spin.vercel.app/_next/static/chunks/01vm585f8n~jz.js?dpl=dpl_7ZRohi7fTnJduYTjiLT2mxfbtmJ5:0
+[    1618ms] [LOG] [Sync] 🔍 datos-empresa: serverIsEmpty=false, localIsEmpty=true @ https://gestionoperaciones-spin.vercel.app/_next/static/chunks/01vm585f8n~jz.js?dpl=dpl_7ZRohi7fTnJduYTjiLT2mxfbtmJ5:0
+[    1618ms] [LOG] [Sync] 📥 datos-empresa: DESCARGANDO del servidor @ https://gestionoperaciones-spin.vercel.app/_next/static/chunks/01vm585f8n~jz.js?dpl=dpl_7ZRohi7fTnJduYTjiLT2mxfbtmJ5:0
+[    1619ms] [LOG] [Sync] ✅ datos-empresa: Downloaded 1 items from server @ https://gestionoperaciones-spin.vercel.app/_next/static/chunks/01vm585f8n~jz.js?dpl=dpl_7ZRohi7fTnJduYTjiLT2mxfbtmJ5:0

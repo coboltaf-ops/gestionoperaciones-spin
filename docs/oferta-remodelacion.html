@@ -1,0 +1,549 @@
+<!DOCTYPE html>
+<!-- ARCHIVO ACTUALIZADO 2026-06-12 01:17 -->
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Oferta de Remodelación - Apartamento Reima Isabel</title>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        body {
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+            line-height: 1.6;
+            color: #333;
+            background-color: #f5f5f5;
+        }
+
+        .page {
+            background-color: white;
+            margin: 20px auto;
+            padding: 40px;
+            max-width: 900px;
+            box-shadow: 0 0 10px rgba(0,0,0,0.1);
+            page-break-after: always;
+        }
+
+        /* PORTADA */
+        .portada {
+            text-align: center;
+            min-height: 100vh;
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+            border: 3px solid #1a5490;
+            padding: 60px 40px;
+            background: linear-gradient(135deg, #1a5490 0%, #2874a6 100%);
+            color: white;
+        }
+
+        .portada h1 {
+            font-size: 48px;
+            margin-bottom: 30px;
+            font-weight: bold;
+            text-transform: uppercase;
+            letter-spacing: 2px;
+        }
+
+        .portada-info {
+            font-size: 18px;
+            line-height: 2;
+            margin: 40px 0;
+            background: rgba(255,255,255,0.1);
+            padding: 30px;
+            border-radius: 10px;
+        }
+
+        .portada-info p {
+            margin: 15px 0;
+        }
+
+        .portada-footer {
+            position: absolute;
+            bottom: 40px;
+            width: 85%;
+            text-align: center;
+            border-top: 2px solid white;
+            padding-top: 20px;
+            font-size: 16px;
+        }
+
+        .fecha {
+            font-weight: bold;
+            font-size: 20px;
+            margin-top: 10px;
+        }
+
+        /* CONTENIDO */
+        .header {
+            text-align: center;
+            margin-bottom: 40px;
+            padding-bottom: 20px;
+            border-bottom: 3px solid #1a5490;
+        }
+
+        .header h2 {
+            font-size: 32px;
+            color: #1a5490;
+            margin-bottom: 10px;
+        }
+
+        .header p {
+            font-size: 14px;
+            color: #666;
+        }
+
+        .item {
+            margin-bottom: 50px;
+            page-break-inside: avoid;
+        }
+
+        .item-number {
+            background-color: #1a5490;
+            color: white;
+            width: 40px;
+            height: 40px;
+            border-radius: 50%;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            font-weight: bold;
+            font-size: 18px;
+            margin-bottom: 15px;
+        }
+
+        .item-title {
+            font-size: 22px;
+            font-weight: bold;
+            color: #1a5490;
+            margin-bottom: 15px;
+        }
+
+        .item-description {
+            background-color: #f9f9f9;
+            padding: 20px;
+            border-left: 4px solid #1a5490;
+            margin-bottom: 20px;
+            line-height: 1.8;
+            font-size: 15px;
+        }
+
+        .item-cost {
+            background-color: #e8f4f8;
+            padding: 10px 15px;
+            border-radius: 5px;
+            font-weight: bold;
+            color: #1a5490;
+            margin-bottom: 20px;
+            font-size: 16px;
+        }
+
+        .foto-space {
+            background-color: #e8e8e8;
+            border: 2px dashed #999;
+            padding: 80px;
+            text-align: center;
+            color: #666;
+            font-size: 14px;
+            margin-bottom: 20px;
+            border-radius: 5px;
+            min-height: 200px;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+        }
+
+        .responsabilidades {
+            background-color: #fff3e0;
+            padding: 30px;
+            border-radius: 8px;
+            border-left: 5px solid #ff6f00;
+        }
+
+        .responsabilidades h3 {
+            font-size: 24px;
+            color: #ff6f00;
+            margin-bottom: 20px;
+        }
+
+        .responsabilidades ul {
+            list-style-position: inside;
+            margin-left: 20px;
+        }
+
+        .responsabilidades li {
+            margin: 15px 0;
+            font-size: 15px;
+            line-height: 1.8;
+        }
+
+        .resumen-costos {
+            background-color: #f0f0f0;
+            padding: 20px;
+            border-radius: 8px;
+            margin-top: 30px;
+        }
+
+        .resumen-costos table {
+            width: 100%;
+            border-collapse: collapse;
+        }
+
+        .resumen-costos th {
+            background-color: #1a5490;
+            color: white;
+            padding: 12px;
+            text-align: left;
+            font-weight: bold;
+        }
+
+        .resumen-costos td {
+            padding: 12px;
+            border-bottom: 1px solid #ddd;
+        }
+
+        .resumen-costos tr:nth-child(even) {
+            background-color: #fafafa;
+        }
+
+        .total-row {
+            font-weight: bold;
+            background-color: #1a5490 !important;
+            color: white !important;
+        }
+
+        .total-row td {
+            border: none;
+        }
+
+        @media print {
+            body {
+                background-color: white;
+            }
+            .page {
+                margin: 0;
+                box-shadow: none;
+                border: none;
+            }
+        }
+    </style>
+</head>
+<body>
+    <!-- PORTADA -->
+    <div class="page portada">
+        <h1>OFERTA DE REMODELACIÓN</h1>
+        <div class="portada-info">
+            <p><strong>Unidad Residencial:</strong> Santa Isabel</p>
+            <p><strong>Apartamento:</strong> 505</p>
+            <p><strong>Ubicación:</strong> Loma de Las Santas</p>
+        </div>
+        <div class="portada-footer">
+            <p><strong>Oferta Presentada por:</strong></p>
+            <p style="font-size: 24px; margin-top: 10px;">LEÓN JAIME VELÁZQUEZ</p>
+            <p class="fecha" id="fecha"></p>
+        </div>
+    </div>
+
+    <!-- CONTENIDO - REMODELACIÓN DE BAÑO -->
+    <div class="page">
+        <div class="header">
+            <h2>PRESUPUESTO DE REMODELACIÓN. NRO. 20260612-001</h2>
+            <p>Detalles técnicos de cada trabajo a ejecutar</p>
+        </div>
+
+        <!-- ITEM 1 -->
+        <div class="item">
+            <div class="item-number">1</div>
+            <div class="item-title">Demolición y Desmontaje</div>
+            <div class="item-description">
+                <strong>Descripción del trabajo:</strong><br>
+                Se procede a desmontar todos los sanitarios, lavamanos, incrustaciones, cabina y espejo. Se desmonta completamente la bañera retirando rejillas y todas las conexiones internas. Se realiza la demolición del muro que divide el baño de la bañera. Se demolerá el mortero del piso de la bañera para darle mayor profundidad al área de la ducha. Así mismo se demolerá el rebanco ubicado debajo del lavamanos. Se pela todo el piso de la parte del sanitario para preparar la superficie.
+            </div>
+        </div>
+
+        <!-- ITEM 2 -->
+        <div class="item">
+            <div class="item-number">2</div>
+            <div class="item-title">Retiro de Puerta de Entrada</div>
+            <div class="item-description">
+                <strong>Descripción del trabajo:</strong><br>
+                Se retira la puerta de entrada del baño demoliendo los dos machoncitos (estructura) que están a los 2 lados de la puerta con el fin de darle amplitud y funcionalidad a la entrada del baño. Esto mejora significativamente el acceso y permite una mejor circulación dentro del espacio.
+            </div>
+        </div>
+
+        <!-- ITEM 3 -->
+        <div class="item">
+            <div class="item-number">3</div>
+            <div class="item-title">Desmontaje de Mezclador Actual</div>
+            <div class="item-description">
+                <strong>Descripción del trabajo:</strong><br>
+                Se procede a desmontar el mezclador (grifo) que hay actualmente instalado. Se saca la tubería dejándola expuesta para la próxima conexión.
+            </div>
+        </div>
+
+        <!-- ITEM 4 -->
+        <div class="item">
+            <div class="item-number">4</div>
+            <div class="item-title">Empaque y Retiro de Escombros</div>
+            <div class="item-description">
+                <strong>Descripción del trabajo:</strong><br>
+                Se empacan todos los escombros y residuos en costales, se retiran y se llevan al lugar indicado en el parqueadero para que los recoja el carro de residuos. Así mismo se baja la bañera, sanitario, lavamanos, muebles y todo lo que no se va a utilizar del baño. Este trabajo incluye el suministro de los costales y la mano de obra para toda la limpieza y retiro del sitio de obra.
+            </div>
+        </div>
+
+        <!-- ITEM 5 -->
+        <div class="item">
+            <div class="item-number">5</div>
+            <div class="item-title">Construcción de Muro en Super Board</div>
+            <div class="item-description">
+                <strong>Descripción del trabajo:</strong><br>
+                Se construye un muro en super board en la parte de la ducha dejando un hueco para el nicho. Este muro se realiza en estructura galvanizada para mayor resistencia a la humedad. Se instala placa de Super Board de 10 mm para darle más resistencia al momento de instalar la baldosa. El trabajo incluye suministro de la mano de obra y materiales: perfilería metálica galvanizada, pernos, tornillería, placa, transporte del material y todo lo necesario para ejecutar esta labor.
+            </div>
+        </div>
+
+        <!-- ITEM 6 -->
+        <div class="item">
+            <div class="item-number">6</div>
+            <div class="item-title">Instalación de Mezclador y Tuberías</div>
+            <div class="item-description">
+                <strong>Descripción del trabajo:</strong><br>
+                Se instala el mezclador de agua caliente y agua fría dentro del muro de super board haciendo refuerzos internos para darle firmeza a la base. Se realiza la tubería interna de termofusión (tubería especial para agua caliente). Se lleva la tubería a través de los lados del muro subiéndola hacia el cielo falso donde va instalada la regadera/ducha. Todo queda empotrado sin tuberías a la vista, solo se ve la regadera en el cielo falso. <br><br>
+                <strong>⚠️ NOTA:</strong> El propietario suministrará el mezclador ya que en el comercio hay muchos estilos, colores y precios. El trabajo incluye todos los materiales de instalación: accesorios, tubería de termofusión, tubería para agua fría, pega, limpiadores, etc. Se requiere alquilar un termofusor para realizar este trabajo.
+            </div>
+        </div>
+
+    </div>
+
+    <!-- PÁGINA 2 -->
+    <div class="page">
+        <!-- ITEM 7 -->
+        <div class="item">
+            <div class="item-number">7</div>
+            <div class="item-title">Vaciado de Mortero en Ducha</div>
+            <div class="item-description">
+                <strong>Descripción del trabajo:</strong><br>
+                Se vacía mortero (cemento arena) en la parte de la ducha con sus respectivas caídas (pendientes) hacia la rejilla. Este trabajo se realiza a todo costo suministrando la mano de obra y los materiales: arena, cemento y transporte.
+            </div>
+        </div>
+
+        <!-- ITEM 8 -->
+        <div class="item">
+            <div class="item-number">8</div>
+            <div class="item-title">Enchape de Piso y Paredes</div>
+            <div class="item-description">
+                <strong>Descripción del trabajo:</strong><br>
+                Se realiza enchape (colocación) de porcelanato 60x120 beige en todo el piso y paredes, dando un buen acabado tanto a paredes como al piso. Se realiza lechada (fraguado entre baldosas) y se hacen todas las cajas necesarias para pasar tubería, mezcladores y rejillas. Se instalan biseles en aluminio para la filetería de paredes y bordo del piso de ducha. Se incluye mano de obra, porcelanato, pega, lechada, crucetas, separadores, biseles de aluminio, rejilla de piso y transporte desde almacén al apartamento.
+            </div>
+        </div>
+
+        <!-- ITEM 9 -->
+        <div class="item">
+            <div class="item-number">9</div>
+            <div class="item-title">Instalación Eléctrica de Iluminación</div>
+            <div class="item-description">
+                <strong>Descripción del trabajo:</strong><br>
+                Se realiza instalación eléctrica para iluminar el respaldo del espejo, la parte baja del lavamanos y el nicho. Se suministra alambre, cinta aislante y todo lo necesario para hacer una instalación eléctrica segura y código-compliant. El trabajo incluye mano de obra profesional calificada.
+            </div>
+        </div>
+
+        <!-- ITEM 10 -->
+        <div class="item">
+            <div class="item-number">10</div>
+            <div class="item-title">Enchape de Nicho</div>
+            <div class="item-description">
+                <strong>Descripción del trabajo:</strong><br>
+                Se enchapa (cubre) el nicho completamente alrededor con sus respectivas colillas o biseles en aluminio dejando el espacio interior iluminado con luz LED.
+            </div>
+        </div>
+
+        <!-- ITEM 11 -->
+        <div class="item">
+            <div class="item-number">11</div>
+            <div class="item-title">Instalación de Luz Lineal en Cielo Falso</div>
+            <div class="item-description">
+                <strong>Descripción del trabajo:</strong><br>
+                Se realiza la instalación de una luz lineal en L en el cielo falso con el fin de iluminar bien la parte de la ducha y el lavamanos. Se condenan (cierran) los ojos de buey que actualmente están instalados dejando el cielo falso liso. La luz lineal se fabrica con chasis en aluminio y tapa en PVC, con luz de 11 watios de color blanco.
+            </div>
+        </div>
+
+        <!-- ITEM 12 -->
+        <div class="item">
+            <div class="item-number">12</div>
+            <div class="item-title">Instalación de Espejo Iluminado</div>
+            <div class="item-description">
+                <strong>Descripción del trabajo:</strong><br>
+                Se instala la luz que va debajo del lavamanos y en el nicho realizándole impermeabilización adecuada para que no entre humedad. Se instala el espejo el cual va conectado a la red eléctrica para darle iluminación por la parte posterior. <br><br>
+                <strong>⚠️ NOTA:</strong> El espejo lo suministra el CLIENTE ya que viene en distintos tamaños, formas, estilos y precios. Es prudente que el dueño lo seleccione a su gusto.
+            </div>
+        </div>
+
+    </div>
+
+    <!-- PÁGINA 3 -->
+    <div class="page">
+        <!-- ITEM 13 -->
+        <div class="item">
+            <div class="item-number">13</div>
+            <div class="item-title">Acabados en Entrada del Baño</div>
+            <div class="item-description">
+                <strong>Descripción del trabajo:</strong><br>
+                Se revocaran y resanaran los espacios que se chanflaron (cortaron) de la puerta del baño en ambos lados dejándolo estético para la instalación de la puerta. Se prepara la superficie de forma profesional para recibir la puerta nueva.
+            </div>
+        </div>
+
+        <!-- ITEM 14 -->
+        <div class="item">
+            <div class="item-number">14</div>
+            <div class="item-title">Instalación de Sanitario</div>
+            <div class="item-description">
+                <strong>Descripción del trabajo:</strong><br>
+                Se instala el sanitario el cual lleva un rebanco con el fin de realzarlo. Se hace una extensión de tubería con el fin de darle hermeticidad adecuada para que no presente fugas en el futuro o filtraciones de agua. El rebanco se realiza en el mismo material del piso realzándolo de forma estética posible dándole la altura sugerida por el cliente. Trabajo parcialmente a todo costo suministrando todos los materiales y mano de obra. <br><br>
+                <strong>⚠️ NOTA:</strong> El sanitario lo suministra el propietario ya que hay muchos estilos, marcas, diseños y precios.
+            </div>
+        </div>
+
+        <!-- ITEM 15 -->
+        <div class="item">
+            <div class="item-number">15</div>
+            <div class="item-title">Mueble de Lavamanos</div>
+            <div class="item-description">
+                <strong>Descripción del trabajo:</strong><br>
+                Se hace mueble de lavamanos en RH de color beige cuyo diseño será escogido por el cliente. Se recorta la parte que sobresale haciéndolo recto con respecto al muro. Se monta mesón en quartzstone dejando los orificios/perforaciones para la instalación de lavamanos, mezcladores y haciendo los salpicaderos correspondientes alrededor. El lavamanos será de sobreponer. <br><br>
+                <strong>⚠️ NOTA:</strong> El lavamanos de sobreponer, el mezclador de lavamanos y la rejilla los suministra el CLIENTE ya que vienen en varios colores, estilos y precios.
+            </div>
+        </div>
+
+        <!-- ITEM 16 -->
+        <div class="item">
+            <div class="item-number">16</div>
+            <div class="item-title">Instalación de Incrustaciones</div>
+            <div class="item-description">
+                <strong>Descripción del trabajo:</strong><br>
+                Se instalan todas las incrustaciones como papeleras, jaboneras, toalleros y pasamanos en la ducha y en el sanitario. Todos estos elementos quedan perfectamente integrados con el diseño general del baño. <br><br>
+                <strong>⚠️ NOTA:</strong> Todas las incrustaciones y soportes de manos los suministra el CLIENTE ya que vienen con distintos diseños, calidades y precios.
+            </div>
+        </div>
+
+        <!-- ITEM 17 -->
+        <div class="item">
+            <div class="item-number">17</div>
+            <div class="item-title">Pintura Ventana Baño</div>
+            <div class="item-description">
+                <strong>Descripción del trabajo:</strong><br>
+                Pintar la ventana con pintura de alta temperatura color negro mate.
+            </div>
+        </div>
+
+        <!-- ITEM 18 -->
+        <div class="item">
+            <div class="item-number">18</div>
+            <div class="item-title">Instalación Vidrio Fijo Cabina de Baño</div>
+            <div class="item-description">
+                <strong>Descripción del trabajo:</strong><br>
+                Se instalará vidrio templado con una medida de 0.90 x 2.22 colocándole un reborde en aluminio color negro. El vidrio será de 8mm de espesor.
+            </div>
+        </div>
+
+        <!-- ITEM 19 -->
+        <div class="item">
+            <div class="item-number">19</div>
+            <div class="item-title">Instalación Lavamanos de Sobreponer</div>
+            <div class="item-description">
+                <strong>Descripción del trabajo:</strong><br>
+                Se instalarán 2 lavamanos de Sobreponer color blanco con sus respectivos abastos, conexiones y rejillas, al igual que los desagües y sifones.
+            </div>
+        </div>
+
+        <!-- ITEM 20 -->
+        <div class="item">
+            <div class="item-number">20</div>
+            <div class="item-title">Demolición de Muro</div>
+            <div class="item-description">
+                <strong>Descripción del trabajo:</strong><br>
+                Demoler muro que divide el pasillo y el sanitario para darle amplitud al baño.
+            </div>
+        </div>
+
+        <!-- ITEM 21 -->
+        <div class="item">
+            <div class="item-number">21</div>
+            <div class="item-title">Reforma Eléctrica</div>
+            <div class="item-description">
+                <strong>Descripción del trabajo:</strong><br>
+                Se realizará dicha reforma, desplazando las conexiones de los switches instalándolos en su nuevo punto.
+            </div>
+        </div>
+
+        <!-- ITEM 22 -->
+        <div class="item">
+            <div class="item-number">22</div>
+            <div class="item-title">Cielo Falso en Drywall</div>
+            <div class="item-description">
+                <strong>Descripción del trabajo:</strong><br>
+                Realizar cielo falso en drywall prolongando el pedazo que se va a ampliar, dejándolo al nivel del cielo falso que trae el baño.
+            </div>
+        </div>
+
+        <!-- ITEM 23 -->
+        <div class="item">
+            <div class="item-number">23</div>
+            <div class="item-title">Pintura Cielo Falso</div>
+            <div class="item-description">
+                <strong>Descripción del trabajo:</strong><br>
+                Pintar todo el cielo falso del baño en color blanco, con una pintura resistente a la humedad y que sea antihongo.
+            </div>
+        </div>
+
+        <!-- ITEM 24 -->
+        <div class="item">
+            <div class="item-number">24</div>
+            <div class="item-title">Ojos de Buey</div>
+            <div class="item-description">
+                <strong>Descripción del trabajo:</strong><br>
+                Instalar 2 ojos de Buey cuadrados de luz blanca, en el cielo falso, en el sector que se amplió hacia el vestier.
+            </div>
+        </div>
+
+    </div>
+
+    <!-- CONDICIONES COMERCIALES -->
+    <div class="page">
+        <div class="header">
+            <h2>CONDICIONES COMERCIALES</h2>
+        </div>
+
+        <div style="background-color: #f9f9f9; padding: 30px; border-left: 4px solid #1a5490; margin-bottom: 20px; line-height: 2; font-size: 18px; color: #000000;">
+            <p><strong>Valor de la Cotización:</strong> $18.200.000</p>
+            <br>
+            <p><strong>Forma de Pago:</strong></p>
+            <ul style="margin-left: 20px; margin-top: 10px;">
+                <li>60% de Anticipo: $11.000.000</li>
+                <li>40% a la Entrega a Satisfacción: $7.200.000</li>
+            </ul>
+            <br>
+            <p><strong>Nota del Anticipo:</strong> Se descontarán $3.000.000 consignados al Sr. Santiago Giraldo para la compra del baldosín.</p>
+            <br>
+            <p><strong>Instrucciones de Pago:</strong> Favor consignar el saldo restante del anticipo que asciende a $8.000.000 a la cuenta de ahorros No. 10832359500 (Bancolombia). A nombre de León Jaime Velásquez, CC 8.302.932.</p>
+            <br>
+            <p style="margin-top: 30px; font-size: 18px;"><strong>Atentamente,</strong></p>
+            <p style="margin-top: 10px; font-size: 19px; font-weight: bold;">León Jaime Velásquez</p>
+            <p style="margin-top: 5px; font-size: 16px;">Celular: 315 5003157</p>
+        </div>
+    </div>
+
+
+    <script>
+        // Establecer la fecha de mañana
+        const hoy = new Date();
+        hoy.setDate(hoy.getDate() + 1);
+        const opciones = { weekday: 'long', year: 'numeric', month: 'long', day: 'numeric' };
+        const fechaFormato = hoy.toLocaleDateString('es-ES', opciones);
+        document.getElementById('fecha').textContent = fechaFormato.charAt(0).toUpperCase() + fechaFormato.slice(1);
+    </script>
+</body>
+</html>

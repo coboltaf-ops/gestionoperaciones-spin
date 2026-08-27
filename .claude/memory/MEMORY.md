@@ -10,6 +10,7 @@
 - [referencias-validaciones.md](project/referencias-validaciones.md) — Duplicados bloqueados + orden alfabético en 14 tablas
 - [productos-validaciones.md](project/productos-validaciones.md) — Código auto PROD-NNNNN + duplicados bloqueados
 - [proceso-alta-cliente.md](project/proceso-alta-cliente.md) — Checklist de instalacion para cliente nuevo (BD, deploy, correos, branding)
+- [replica-milagros.md](project/replica-milagros.md) — Réplica independiente de SPIN para Grupo Milagros en localhost:3002 (login demo admin/Milagros2026*)
 
 ## feedback/ — Correcciones y preferencias
 (vacio)

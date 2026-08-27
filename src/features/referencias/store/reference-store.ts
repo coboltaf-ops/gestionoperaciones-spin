@@ -4,7 +4,9 @@ import { BaseReference, ReferenceTableId } from '../types'
 
 // Ordenar alfabéticamente por descripcion — se aplica en TODOS los puntos de entrada
 function sortRecords<T extends BaseReference>(records: T[]): T[] {
-  return [...records].sort((a, b) => a.descripcion.localeCompare(b.descripcion, 'es'))
+  return [...records].sort((a, b) =>
+    (a.descripcion || '').localeCompare(b.descripcion || '', 'es')
+  )
 }
 
 interface ReferenceState {
@@ -62,7 +64,7 @@ export const useReferenceStore = create<ReferenceState>()(
       addRecord: async (tableId, record) => {
         const state = useReferenceStore.getState()
         const exists = state.data[tableId].some(
-          (r) => r.descripcion.trim().toLowerCase() === record.descripcion.trim().toLowerCase()
+          (r) => (r.descripcion || '').trim().toLowerCase() === (record.descripcion || '').trim().toLowerCase()
         )
         if (exists) {
           throw new Error(`Ya existe un registro con la descripción "${record.descripcion}" en esta tabla.`)
@@ -80,7 +82,7 @@ export const useReferenceStore = create<ReferenceState>()(
           const desc = record.descripcion
           const state = useReferenceStore.getState()
           const exists = state.data[tableId].some(
-            (r) => r.id !== id && r.descripcion.trim().toLowerCase() === desc.trim().toLowerCase()
+            (r) => r.id !== id && (r.descripcion || '').trim().toLowerCase() === desc.trim().toLowerCase()
           )
           if (exists) {
             throw new Error(`Ya existe un registro con la descripción "${record.descripcion}" en esta tabla.`)

@@ -1,0 +1,309 @@
+- generic [active] [ref=e1]:
+  - generic [ref=e2]:
+    - heading "OFERTA DE REMODELACIÓN" [level=1] [ref=e3]
+    - generic [ref=e4]:
+      - paragraph [ref=e5]:
+        - strong [ref=e6]: "Apartamento:"
+        - text: Reima Isabel
+      - paragraph [ref=e7]:
+        - strong [ref=e8]: "Ubicación:"
+        - text: Laureles
+      - paragraph [ref=e9]:
+        - strong [ref=e10]: "Unidad Residencial:"
+        - text: Fuertes de Frutas
+      - paragraph [ref=e11]:
+        - strong [ref=e12]: "Apto. Nro:"
+        - text: "505"
+    - generic [ref=e13]:
+      - paragraph [ref=e14]:
+        - strong [ref=e15]: "Oferta Presentada por:"
+      - paragraph [ref=e16]: LEÓN JAIME VELÁZQUEZ
+      - paragraph [ref=e17]: Jueves, 11 de junio de 2026
+  - generic [ref=e18]:
+    - generic [ref=e19]:
+      - heading "PRESUPUESTO DE REMODELACIÓN DE BAÑO COMPLETO" [level=2] [ref=e20]
+      - paragraph [ref=e21]: Detalles técnicos de cada trabajo a ejecutar
+    - generic [ref=e22]:
+      - generic [ref=e23]: "1"
+      - generic [ref=e24]: Demolición y Desmontaje
+      - generic [ref=e25]:
+        - strong [ref=e26]: "Descripción del trabajo:"
+        - text: Se procede a desmontar todos los sanitarios, lavamanos, incrustaciones, cabina y espejo. Se desmonta completamente la bañera retirando rejillas y todas las conexiones internas. Se realiza la demolición del muro que divide el baño de la bañera. Se demolerá el mortero del piso de la bañera para darle mayor profundidad al área de la ducha. Así mismo se demolerá el rebanco ubicado debajo del lavamanos. Se pela todo el piso de la parte del sanitario para preparar la superficie.
+      - generic [ref=e27]: "Costo: $354,900"
+      - generic [ref=e28]: 🖼️ Espacio para foto del estado inicial
+    - generic [ref=e29]:
+      - generic [ref=e30]: "2"
+      - generic [ref=e31]: Retiro de Puerta de Entrada
+      - generic [ref=e32]:
+        - strong [ref=e33]: "Descripción del trabajo:"
+        - text: Se retira la puerta de entrada del baño demoliendo los dos machoncitos (estructura) que están a los 2 lados de la puerta con el fin de darle amplitud y funcionalidad a la entrada del baño. Esto mejora significativamente el acceso y permite una mejor circulación dentro del espacio.
+      - generic [ref=e34]: "Costo: $101,400"
+      - generic [ref=e35]: 🖼️ Espacio para foto
+    - generic [ref=e36]:
+      - generic [ref=e37]: "3"
+      - generic [ref=e38]: Desmontaje de Mezclador Actual
+      - generic [ref=e39]:
+        - strong [ref=e40]: "Descripción del trabajo:"
+        - text: Se procede a desmontar el mezclador (grifo) que hay actualmente instalado. Se saca la tubería completa dejando las tomas expuestas para la próxima conexión de agua. Esto permite una instalación limpia y ordenada de las nuevas tuberías de termofusión que irán empotradas dentro del muro.
+      - generic [ref=e41]: "Costo: $101,400"
+      - generic [ref=e42]: 🖼️ Espacio para foto
+    - generic [ref=e43]:
+      - generic [ref=e44]: "4"
+      - generic [ref=e45]: Empaque y Retiro de Escombros
+      - generic [ref=e46]:
+        - strong [ref=e47]: "Descripción del trabajo:"
+        - text: Se empacan todos los escombros y residuos en costales, se retiran y se llevan al lugar indicado en el parqueadero para que los recoja el carro de residuos. Así mismo se baja la bañera, sanitario, lavamanos, muebles y todo lo que no se va a utilizar del baño. Este trabajo incluye el suministro de los costales y la mano de obra para toda la limpieza y retiro del sitio de obra.
+      - generic [ref=e48]: "Costo: $354,900"
+      - generic [ref=e49]: 🖼️ Espacio para foto
+    - generic [ref=e50]:
+      - generic [ref=e51]: "5"
+      - generic [ref=e52]: Construcción de Muro en Super Board
+      - generic [ref=e53]:
+        - strong [ref=e54]: "Descripción del trabajo:"
+        - text: "Se construye un muro en super board en la parte de la ducha dejando un hueco para el nicho. Este muro se realiza en estructura galvanizada para mayor resistencia a la humedad. Se instala placa de Super Board de 10 mm para darle más resistencia al momento de instalar la baldosa. El trabajo incluye suministro de la mano de obra y materiales: perfilería metálica galvanizada, pernos, tornillería, placa, transporte del material y todo lo necesario para ejecutar esta labor."
+      - generic [ref=e55]: "Costo: $760,500"
+      - generic [ref=e56]: 🖼️ Espacio para foto
+    - generic [ref=e57]:
+      - generic [ref=e58]: "6"
+      - generic [ref=e59]: Instalación de Mezclador y Tuberías
+      - generic [ref=e60]:
+        - strong [ref=e61]: "Descripción del trabajo:"
+        - text: Se instala el mezclador de agua caliente y agua fría dentro del muro de super board haciendo refuerzos internos para darle firmeza a la base. Se realiza la tubería interna de termofusión (tubería especial para agua caliente). Se lleva la tubería a través de los lados del muro subiéndola hacia el cielo falso donde va instalada la regadera/ducha. Todo queda empotrado sin tuberías a la vista, solo se ve la regadera en el cielo falso.
+        - strong [ref=e62]: "⚠️ NOTA:"
+        - text: "El propietario suministrará el mezclador ya que en el comercio hay muchos estilos, colores y precios. El trabajo incluye todos los materiales de instalación: accesorios, tubería de termofusión, tubería para agua fría, pega, limpiadores, etc. Se requiere alquilar un termofusor para realizar este trabajo."
+      - generic [ref=e63]: "Costo: $790,920"
+      - generic [ref=e64]: 🖼️ Espacio para foto
+  - generic [ref=e65]:
+    - generic [ref=e66]:
+      - generic [ref=e67]: "7"
+      - generic [ref=e68]: Vaciado de Mortero en Ducha
+      - generic [ref=e69]:
+        - strong [ref=e70]: "Descripción del trabajo:"
+        - text: "Se vacía mortero (cemento arena) en la parte de la ducha con sus respectivas caídas (pendientes) hacia la rejilla, permitiendo que tenga una caída suficiente para el drenaje adecuado del agua. Este trabajo se realiza a todo costo suministrando la mano de obra y los materiales: arena, cemento y transporte."
+      - generic [ref=e71]: "Costo: $202,800"
+      - generic [ref=e72]: 🖼️ Espacio para foto
+    - generic [ref=e73]:
+      - generic [ref=e74]: "8"
+      - generic [ref=e75]: Enchape de Piso y Paredes
+      - generic [ref=e76]:
+        - strong [ref=e77]: "Descripción del trabajo:"
+        - text: Se realiza enchape (colocación) de porcelanato 60x120 beige en todo el piso y paredes, dando un buen acabado tanto a paredes como al piso. Se realiza lechada (fraguado entre baldosas) y se hacen todas las cajas necesarias para pasar tubería, mezcladores y rejillas. Se instalan biseles en aluminio para la afiletería de paredes y bordo del piso de ducha. Se incluye mano de obra, porcelanato, pega, lechada, crucetas, separadores, biseles de aluminio, rejilla de piso y transporte desde almacén al apartamento.
+      - generic [ref=e78]: "Costo: $4,410,900"
+      - generic [ref=e79]: 🖼️ Espacio para foto
+    - generic [ref=e80]:
+      - generic [ref=e81]: "9"
+      - generic [ref=e82]: Instalación Eléctrica de Iluminación
+      - generic [ref=e83]:
+        - strong [ref=e84]: "Descripción del trabajo:"
+        - text: Se realiza instalación eléctrica para iluminar el respaldo del espejo, la parte baja del lavamanos y el nicho. Se suministra alambre, cinta aislante y todo lo necesario para hacer una instalación eléctrica segura y código-compliant. El trabajo incluye mano de obra profesional calificada.
+      - generic [ref=e85]: "Costo: $192,660"
+      - generic [ref=e86]: 🖼️ Espacio para foto
+    - generic [ref=e87]:
+      - generic [ref=e88]: "10"
+      - generic [ref=e89]: Enchape de Nicho
+      - generic [ref=e90]:
+        - strong [ref=e91]: "Descripción del trabajo:"
+        - text: Se enchapa (cubre) el nicho completamente alrededor con sus respectivas colillas o biseles en aluminio dejando el espacio interior iluminado con luz LED. El acabado es limpio y profesional, permitiendo que el nicho sea un elemento decorativo y funcional en el baño.
+      - generic [ref=e92]: "Costo: $253,500"
+      - generic [ref=e93]: 🖼️ Espacio para foto
+    - generic [ref=e94]:
+      - generic [ref=e95]: "11"
+      - generic [ref=e96]: Instalación de Luz Lineal en Cielo Falso
+      - generic [ref=e97]:
+        - strong [ref=e98]: "Descripción del trabajo:"
+        - text: Se realiza la instalación de una luz lineal en L en el cielo falso con el fin de iluminar bien la parte de la ducha y el lavamanos. Se condenan (cierran) los ojos de buey que actualmente están instalados dejando el cielo falso liso. La luz lineal se fabrica con chasis en aluminio y tapa en PVC, con luz interna LED de 11 vatios del color sugerido o escogido por el cliente. Se suministran todos los materiales.
+      - generic [ref=e99]: "Costo: $324,480"
+      - generic [ref=e100]: 🖼️ Espacio para foto
+    - generic [ref=e101]:
+      - generic [ref=e102]: "12"
+      - generic [ref=e103]: Instalación de Espejo Iluminado
+      - generic [ref=e104]:
+        - strong [ref=e105]: "Descripción del trabajo:"
+        - text: Se instala la luz que va debajo del lavamanos y en el nicho realizándole impermeabilización adecuada para que no entre humedad. Se instala el espejo el cual va conectado a la red eléctrica para darle iluminación por la parte posterior.
+        - strong [ref=e106]: "⚠️ NOTA:"
+        - text: El espejo lo suministra el CLIENTE ya que viene en distintos tamaños, formas, estilos y precios. Es prudente que el dueño lo seleccione a su gusto.
+      - generic [ref=e107]: "Costo: $253,500"
+      - generic [ref=e108]: 🖼️ Espacio para foto
+  - generic [ref=e109]:
+    - generic [ref=e110]:
+      - generic [ref=e111]: "13"
+      - generic [ref=e112]: Acabados en Entrada del Baño
+      - generic [ref=e113]:
+        - strong [ref=e114]: "Descripción del trabajo:"
+        - text: Se revocar y resana los espacios que se chanflaron (cortaron) de la puerta del baño en ambos lados dejándolo estético para la instalación de la puerta. Se prepara la superficie de forma profesional para recibir la puerta nueva.
+        - strong [ref=e115]: "⚠️ NOTA:"
+        - text: La puerta la suministra e instala el carpintero o el propietario de la casa.
+      - generic [ref=e116]: "Costo: $70,980"
+      - generic [ref=e117]: 🖼️ Espacio para foto
+    - generic [ref=e118]:
+      - generic [ref=e119]: "14"
+      - generic [ref=e120]: Instalación de Sanitario
+      - generic [ref=e121]:
+        - strong [ref=e122]: "Descripción del trabajo:"
+        - text: Se instala el sanitario el cual lleva un rebanco con el fin de realzarlo. Se hace una extensión de tubería con el fin de darle hermeticidad adecuada para que no presente fugas en el futuro o filtraciones de agua. El rebanco se realiza en el mismo material del piso realzándolo de forma estética posible dándole la altura sugerida por el cliente. Trabajo parcialmente a todo costo suministrando todos los materiales y mano de obra.
+        - strong [ref=e123]: "⚠️ NOTA:"
+        - text: El sanitario lo suministra el propietario ya que hay muchos estilos, marcas, diseños y precios.
+      - generic [ref=e124]: "Costo: $456,300"
+      - generic [ref=e125]: 🖼️ Espacio para foto
+    - generic [ref=e126]:
+      - generic [ref=e127]: "15"
+      - generic [ref=e128]: Fabricación de Lavamanos
+      - generic [ref=e129]:
+        - strong [ref=e130]: "Descripción del trabajo:"
+        - text: Se hace lavamanos en RH (resina de poliéster) del color elegido por el cliente del espacio actualmente diseñado. Se recorta la parte que sobresale haciéndolo recto con respecto al muro. Se monta mesón en cuarzo o granito dejando los orificios/perforaciones para la instalación de lavamanos, mezcladores y haciendo los salpicaderos correspondientes alrededor. El lavamanos será de sobreponer.
+        - strong [ref=e131]: "⚠️ NOTA:"
+        - text: El lavamanos de sobreponer, el mezclador de lavamanos y la rejilla los suministra el CLIENTE ya que vienen en varios colores, estilos y precios.
+      - generic [ref=e132]: "Costo: $2,585,700"
+      - generic [ref=e133]: 🖼️ Espacio para foto
+    - generic [ref=e134]:
+      - generic [ref=e135]: "16"
+      - generic [ref=e136]: Instalación de Incrustaciones
+      - generic [ref=e137]:
+        - strong [ref=e138]: "Descripción del trabajo:"
+        - text: Se instalan todas las incrustaciones como papeleras, jaboneras, cepilleros y pasamanos en la ducha y en el sanitario. Todos estos elementos quedan perfectamente integrados con el diseño general del baño.
+        - strong [ref=e139]: "⚠️ NOTA:"
+        - text: Todas las incrustaciones y soportes de manos los suministra el CLIENTE ya que vienen con distintos diseños, calidades y precios.
+      - generic [ref=e140]: "Costo: $182,520"
+      - generic [ref=e141]: 🖼️ Espacio para foto
+  - generic [ref=e142]:
+    - heading "RESPONSABILIDADES" [level=2] [ref=e144]
+    - generic [ref=e145]:
+      - heading "📋 Responsabilidades del Contratista (León Jaime Velázquez)" [level=3] [ref=e146]
+      - list [ref=e147]:
+        - listitem [ref=e148]:
+          - strong [ref=e149]: "Calidad de Obra:"
+          - text: Ejecutar todos los trabajos con materiales de calidad y mano de obra calificada, conforme a los estándares de la industria y normas técnicas de construcción.
+        - listitem [ref=e150]:
+          - strong [ref=e151]: "Seguridad:"
+          - text: Mantener el sitio de obra limpio y seguro. Implementar medidas de seguridad requeridas para proteger al cliente, el personal y terceros.
+        - listitem [ref=e152]:
+          - strong [ref=e153]: "Cronograma:"
+          - text: Ejecutar el trabajo en los tiempos establecidos. En caso de retrasos, informar anticipadamente al cliente.
+        - listitem [ref=e154]:
+          - strong [ref=e155]: "Garantía:"
+          - text: Garantizar la correcta instalación de todos los trabajos por un período de 12 meses después de la entrega. Se garantiza contra defectos de manufactura y mano de obra.
+        - listitem [ref=e156]:
+          - strong [ref=e157]: "Materiales Suministrados:"
+          - text: Suministrar todos los materiales especificados en cada rubro. Los materiales serán almacenados adecuadamente en el sitio.
+        - listitem [ref=e158]:
+          - strong [ref=e159]: "Limpieza:"
+          - text: Realizar limpieza diaria del área de trabajo. Al finalizar la obra, dejar el baño completamente limpio y listo para uso.
+        - listitem [ref=e160]:
+          - strong [ref=e161]: "Comunicación:"
+          - text: Mantener comunicación constante con el cliente informando del progreso de la obra y cualquier eventualidad.
+        - listitem [ref=e162]:
+          - strong [ref=e163]: "Supervisión:"
+          - text: Garantizar que todo el personal sea supervisado constantemente para asegurar calidad y seguridad.
+      - heading "📋 Responsabilidades del Propietario/Cliente" [level=3] [ref=e164]
+      - list [ref=e165]:
+        - listitem [ref=e166]:
+          - strong [ref=e167]: "Suministro de Artículos:"
+          - text: "El propietario se compromete a suministrar a tiempo los siguientes elementos:"
+          - list [ref=e168]:
+            - listitem [ref=e169]: Mezclador (grifo) de ducha
+            - listitem [ref=e170]: Sanitario
+            - listitem [ref=e171]: Lavamanos de sobreponer
+            - listitem [ref=e172]: Mezclador de lavamanos
+            - listitem [ref=e173]: Rejilla de lavamanos
+            - listitem [ref=e174]: Espejo iluminado
+            - listitem [ref=e175]: Incrustaciones (papeleras, jaboneras, cepilleros, pasamanos)
+            - listitem [ref=e176]: "Puerta del baño (opcional: suministra carpintero)"
+        - listitem [ref=e177]:
+          - strong [ref=e178]: "Disponibilidad del Sitio:"
+          - text: Garantizar acceso al sitio de obra todos los días de trabajo de 7:00 AM a 5:00 PM (horario a convenir).
+        - listitem [ref=e179]:
+          - strong [ref=e180]: "Protección de Servicios:"
+          - text: Informar la ubicación exacta de tuberías de agua, gas, electricidad y otros servicios en el apartamento.
+        - listitem [ref=e181]:
+          - strong [ref=e182]: "Pagos:"
+          - text: "Realizar los pagos según el cronograma establecido:"
+          - list [ref=e183]:
+            - listitem [ref=e184]: 50% al inicio de la obra
+            - listitem [ref=e185]: 30% al 50% de avance
+            - listitem [ref=e186]: 20% al finalizar la obra
+        - listitem [ref=e187]:
+          - strong [ref=e188]: "Decisiones Oportunas:"
+          - text: Tomar decisiones sobre acabados, colores y estilos en tiempo para no afectar el cronograma.
+        - listitem [ref=e189]:
+          - strong [ref=e190]: "Inspección Final:"
+          - text: Realizar la inspección final junto con el contratista para validar que todos los trabajos se ejecutaron conforme a lo especificado.
+    - generic [ref=e191]:
+      - heading "RESUMEN DE COSTOS" [level=3] [ref=e192]
+      - table [ref=e193]:
+        - rowgroup [ref=e194]:
+          - row "Ítem Descripción Valor" [ref=e195]:
+            - columnheader "Ítem" [ref=e196]
+            - columnheader "Descripción" [ref=e197]
+            - columnheader "Valor" [ref=e198]
+          - row "1 Demolición y Desmontaje $354,900" [ref=e199]:
+            - cell "1" [ref=e200]
+            - cell "Demolición y Desmontaje" [ref=e201]
+            - cell "$354,900" [ref=e202]
+          - row "2 Retiro de Puerta de Entrada $101,400" [ref=e203]:
+            - cell "2" [ref=e204]
+            - cell "Retiro de Puerta de Entrada" [ref=e205]
+            - cell "$101,400" [ref=e206]
+          - row "3 Desmontaje de Mezclador $101,400" [ref=e207]:
+            - cell "3" [ref=e208]
+            - cell "Desmontaje de Mezclador" [ref=e209]
+            - cell "$101,400" [ref=e210]
+          - row "4 Empaque y Retiro de Escombros $354,900" [ref=e211]:
+            - cell "4" [ref=e212]
+            - cell "Empaque y Retiro de Escombros" [ref=e213]
+            - cell "$354,900" [ref=e214]
+          - row "5 Muro en Super Board $760,500" [ref=e215]:
+            - cell "5" [ref=e216]
+            - cell "Muro en Super Board" [ref=e217]
+            - cell "$760,500" [ref=e218]
+          - row "6 Instalación Mezclador y Tuberías $790,920" [ref=e219]:
+            - cell "6" [ref=e220]
+            - cell "Instalación Mezclador y Tuberías" [ref=e221]
+            - cell "$790,920" [ref=e222]
+          - row "7 Vaciado de Mortero en Ducha $202,800" [ref=e223]:
+            - cell "7" [ref=e224]
+            - cell "Vaciado de Mortero en Ducha" [ref=e225]
+            - cell "$202,800" [ref=e226]
+          - row "8 Enchape de Piso y Paredes $4,410,900" [ref=e227]:
+            - cell "8" [ref=e228]
+            - cell "Enchape de Piso y Paredes" [ref=e229]
+            - cell "$4,410,900" [ref=e230]
+          - row "9 Instalación Eléctrica $192,660" [ref=e231]:
+            - cell "9" [ref=e232]
+            - cell "Instalación Eléctrica" [ref=e233]
+            - cell "$192,660" [ref=e234]
+          - row "10 Enchape de Nicho $253,500" [ref=e235]:
+            - cell "10" [ref=e236]
+            - cell "Enchape de Nicho" [ref=e237]
+            - cell "$253,500" [ref=e238]
+          - row "11 Luz Lineal en Cielo Falso $324,480" [ref=e239]:
+            - cell "11" [ref=e240]
+            - cell "Luz Lineal en Cielo Falso" [ref=e241]
+            - cell "$324,480" [ref=e242]
+          - row "12 Instalación Espejo Iluminado $253,500" [ref=e243]:
+            - cell "12" [ref=e244]
+            - cell "Instalación Espejo Iluminado" [ref=e245]
+            - cell "$253,500" [ref=e246]
+          - row "13 Acabados en Entrada $70,980" [ref=e247]:
+            - cell "13" [ref=e248]
+            - cell "Acabados en Entrada" [ref=e249]
+            - cell "$70,980" [ref=e250]
+          - row "14 Instalación de Sanitario $456,300" [ref=e251]:
+            - cell "14" [ref=e252]
+            - cell "Instalación de Sanitario" [ref=e253]
+            - cell "$456,300" [ref=e254]
+          - row "15 Fabricación de Lavamanos $2,585,700" [ref=e255]:
+            - cell "15" [ref=e256]
+            - cell "Fabricación de Lavamanos" [ref=e257]
+            - cell "$2,585,700" [ref=e258]
+          - row "16 Instalación de Incrustaciones $182,520" [ref=e259]:
+            - cell "16" [ref=e260]
+            - cell "Instalación de Incrustaciones" [ref=e261]
+            - cell "$182,520" [ref=e262]
+          - row "TOTAL MANO DE OBRA Y MATERIALES SUMINISTRADOS $10,849,800" [ref=e263]:
+            - cell "TOTAL MANO DE OBRA Y MATERIALES SUMINISTRADOS" [ref=e264]:
+              - strong [ref=e265]: TOTAL MANO DE OBRA Y MATERIALES SUMINISTRADOS
+            - cell "$10,849,800" [ref=e266]:
+              - strong [ref=e267]: $10,849,800
+      - paragraph [ref=e268]:
+        - strong [ref=e269]: "Nota:"
+        - text: "Los costos anteriores NO incluyen: mezclador de ducha, sanitario, lavamanos, espejos, incrustaciones, puerta y accesorios especificados que suministra el cliente. Se incluye mano de obra especializada, materiales de construcción y acabados."

@@ -15,7 +15,7 @@ export function ReferenciasManager() {
   const permisos = usePermisos('referencias')
   const { activeTable, setActiveTable, data, addRecord, updateRecord, deleteRecord } = useReferenceStore()
   const activeData = [...(data[activeTable] || [])].sort((a, b) =>
-    a.descripcion.localeCompare(b.descripcion, 'es')
+    (a.descripcion || '').localeCompare(b.descripcion || '', 'es')
   )
 
   const [isFormOpen, setIsFormOpen] = useState(false)

@@ -1,0 +1,227 @@
+[     338ms] [INFO] %cDownload the React DevTools for a better development experience: https://react.dev/link/react-devtools font-weight:bold @ http://localhost:3002/_next/static/chunks/node_modules_next_dist_115brz8._.js:2477
+[     365ms] [LOG] [HMR] connected @ http://localhost:3002/_next/static/chunks/node_modules_next_dist_115brz8._.js:2477
+[   56732ms] [LOG] [Fast Refresh] rebuilding @ http://localhost:3002/_next/static/chunks/node_modules_next_dist_115brz8._.js:2477
+[   57084ms] [LOG] [Fast Refresh] done in 453ms @ http://localhost:3002/_next/static/chunks/node_modules_next_dist_115brz8._.js:2477
+[   57106ms] [LOG] [Zustand] ✅ Productos hidratados: 0 @ http://localhost:3002/_next/static/chunks/node_modules_next_dist_115brz8._.js:2477
+[   57106ms] [LOG] [Zustand] ✅ Referencias hidratadas (0 categorías) @ http://localhost:3002/_next/static/chunks/node_modules_next_dist_115brz8._.js:2477
+[   57204ms] [LOG] [Sync] 🔄 Iniciando sincronización de productos @ http://localhost:3002/_next/static/chunks/node_modules_next_dist_115brz8._.js:2477
+[   57205ms] [LOG] [Sync] 🔄 Iniciando sincronización de proveedores @ http://localhost:3002/_next/static/chunks/node_modules_next_dist_115brz8._.js:2477
+[   57207ms] [LOG] [Sync] 🔄 Iniciando sincronización de bodegas @ http://localhost:3002/_next/static/chunks/node_modules_next_dist_115brz8._.js:2477
+[   57208ms] [LOG] [Sync] 🔄 Iniciando sincronización de referencias (objeto) @ http://localhost:3002/_next/static/chunks/node_modules_next_dist_115brz8._.js:2477
+[   57208ms] [LOG] [Sync] 🔄 Iniciando sincronización de correos-enviados @ http://localhost:3002/_next/static/chunks/node_modules_next_dist_115brz8._.js:2477
+[   57209ms] [LOG] [Sync] 🔄 Iniciando sincronización de ordenes-compra @ http://localhost:3002/_next/static/chunks/node_modules_next_dist_115brz8._.js:2477
+[   57210ms] [LOG] [Sync] 🔄 Iniciando sincronización de centros-costo @ http://localhost:3002/_next/static/chunks/node_modules_next_dist_115brz8._.js:2477
+[   57211ms] [LOG] [Sync] 🔄 Iniciando sincronización de transferencias @ http://localhost:3002/_next/static/chunks/node_modules_next_dist_115brz8._.js:2477
+[   57212ms] [LOG] [Sync] 🔄 Iniciando sincronización de ajustes-inventario @ http://localhost:3002/_next/static/chunks/node_modules_next_dist_115brz8._.js:2477
+[   57213ms] [LOG] [Sync] 🔄 Iniciando sincronización de recepcion-facturas @ http://localhost:3002/_next/static/chunks/node_modules_next_dist_115brz8._.js:2477
+[   57214ms] [LOG] [Sync] 🔄 Iniciando sincronización de recepcion-remisiones @ http://localhost:3002/_next/static/chunks/node_modules_next_dist_115brz8._.js:2477
+[   57215ms] [LOG] [Sync] 🔄 Iniciando sincronización de usuarios @ http://localhost:3002/_next/static/chunks/node_modules_next_dist_115brz8._.js:2477
+[   57216ms] [LOG] [Sync] 🔄 Iniciando sincronización de carga-inicial @ http://localhost:3002/_next/static/chunks/node_modules_next_dist_115brz8._.js:2477
+[   57217ms] [LOG] [Sync] 🔄 Iniciando sincronización de modulos-sistema @ http://localhost:3002/_next/static/chunks/node_modules_next_dist_115brz8._.js:2477
+[   57218ms] [LOG] [Sync] 🔄 Iniciando sincronización de personal-empresa @ http://localhost:3002/_next/static/chunks/node_modules_next_dist_115brz8._.js:2477
+[   57219ms] [LOG] [Sync] 🔄 Iniciando sincronización de tareas @ http://localhost:3002/_next/static/chunks/node_modules_next_dist_115brz8._.js:2477
+[   57220ms] [LOG] [Sync] 🔄 Iniciando sincronización de pedidos @ http://localhost:3002/_next/static/chunks/node_modules_next_dist_115brz8._.js:2477
+[   57221ms] [LOG] [Sync] 🔄 Iniciando sincronización de pagos-proveedores (objeto) @ http://localhost:3002/_next/static/chunks/node_modules_next_dist_115brz8._.js:2477
+[   57221ms] [LOG] [Sync] 🔄 Iniciando sincronización de datos-empresa @ http://localhost:3002/_next/static/chunks/node_modules_next_dist_115brz8._.js:2477
+[   57222ms] [LOG] [Sync] 🔄 Iniciando sincronización de control-bancario (objeto) @ http://localhost:3002/_next/static/chunks/node_modules_next_dist_115brz8._.js:2477
+[   57224ms] [LOG] [Sync] 🔄 Iniciando sincronización de productos @ http://localhost:3002/_next/static/chunks/node_modules_next_dist_115brz8._.js:2477
+[   57225ms] [LOG] [Sync] 🔄 Iniciando sincronización de proveedores @ http://localhost:3002/_next/static/chunks/node_modules_next_dist_115brz8._.js:2477
+[   57225ms] [LOG] [Sync] 🔄 Iniciando sincronización de bodegas @ http://localhost:3002/_next/static/chunks/node_modules_next_dist_115brz8._.js:2477
+[   57226ms] [LOG] [Sync] 🔄 Iniciando sincronización de referencias (objeto) @ http://localhost:3002/_next/static/chunks/node_modules_next_dist_115brz8._.js:2477
+[   57226ms] [LOG] [Sync] 🔄 Iniciando sincronización de correos-enviados @ http://localhost:3002/_next/static/chunks/node_modules_next_dist_115brz8._.js:2477
+[   57226ms] [LOG] [Sync] 🔄 Iniciando sincronización de ordenes-compra @ http://localhost:3002/_next/static/chunks/node_modules_next_dist_115brz8._.js:2477
+[   57227ms] [LOG] [Sync] 🔄 Iniciando sincronización de centros-costo @ http://localhost:3002/_next/static/chunks/node_modules_next_dist_115brz8._.js:2477
+[   57227ms] [LOG] [Sync] 🔄 Iniciando sincronización de transferencias @ http://localhost:3002/_next/static/chunks/node_modules_next_dist_115brz8._.js:2477
+[   57228ms] [LOG] [Sync] 🔄 Iniciando sincronización de ajustes-inventario @ http://localhost:3002/_next/static/chunks/node_modules_next_dist_115brz8._.js:2477
+[   57228ms] [LOG] [Sync] 🔄 Iniciando sincronización de recepcion-facturas @ http://localhost:3002/_next/static/chunks/node_modules_next_dist_115brz8._.js:2477
+[   57228ms] [LOG] [Sync] 🔄 Iniciando sincronización de recepcion-remisiones @ http://localhost:3002/_next/static/chunks/node_modules_next_dist_115brz8._.js:2477
+[   57229ms] [LOG] [Sync] 🔄 Iniciando sincronización de usuarios @ http://localhost:3002/_next/static/chunks/node_modules_next_dist_115brz8._.js:2477
+[   57229ms] [LOG] [Sync] 🔄 Iniciando sincronización de carga-inicial @ http://localhost:3002/_next/static/chunks/node_modules_next_dist_115brz8._.js:2477
+[   57230ms] [LOG] [Sync] 🔄 Iniciando sincronización de modulos-sistema @ http://localhost:3002/_next/static/chunks/node_modules_next_dist_115brz8._.js:2477
+[   57230ms] [LOG] [Sync] 🔄 Iniciando sincronización de personal-empresa @ http://localhost:3002/_next/static/chunks/node_modules_next_dist_115brz8._.js:2477
+[   57230ms] [LOG] [Sync] 🔄 Iniciando sincronización de tareas @ http://localhost:3002/_next/static/chunks/node_modules_next_dist_115brz8._.js:2477
+[   57231ms] [LOG] [Sync] 🔄 Iniciando sincronización de pedidos @ http://localhost:3002/_next/static/chunks/node_modules_next_dist_115brz8._.js:2477
+[   57231ms] [LOG] [Sync] 🔄 Iniciando sincronización de pagos-proveedores (objeto) @ http://localhost:3002/_next/static/chunks/node_modules_next_dist_115brz8._.js:2477
+[   57231ms] [LOG] [Sync] 🔄 Iniciando sincronización de datos-empresa @ http://localhost:3002/_next/static/chunks/node_modules_next_dist_115brz8._.js:2477
+[   57232ms] [LOG] [Sync] 🔄 Iniciando sincronización de control-bancario (objeto) @ http://localhost:3002/_next/static/chunks/node_modules_next_dist_115brz8._.js:2477
+[   57347ms] [LOG] [Fast Refresh] rebuilding @ http://localhost:3002/_next/static/chunks/node_modules_next_dist_115brz8._.js:2477
+[   57363ms] [LOG] [Fast Refresh] done in 121ms @ http://localhost:3002/_next/static/chunks/node_modules_next_dist_115brz8._.js:2477
+[   58028ms] [LOG] [Sync] 📦 productos: serverData tipo = object, isObject=undefined @ http://localhost:3002/_next/static/chunks/node_modules_next_dist_115brz8._.js:2477
+[   58028ms] [LOG] [Sync] 📦 productos: local tipo = object @ http://localhost:3002/_next/static/chunks/node_modules_next_dist_115brz8._.js:2477
+[   58028ms] [LOG] [Sync] 🔍 productos: serverIsEmpty=true, localIsEmpty=true @ http://localhost:3002/_next/static/chunks/node_modules_next_dist_115brz8._.js:2477
+[   58028ms] [LOG] [Sync] ℹ️  productos: Both empty @ http://localhost:3002/_next/static/chunks/node_modules_next_dist_115brz8._.js:2477
+[   58028ms] [LOG] [Sync] 📦 ordenes-compra: serverData tipo = object, isObject=undefined @ http://localhost:3002/_next/static/chunks/node_modules_next_dist_115brz8._.js:2477
+[   58028ms] [LOG] [Sync] 📦 ordenes-compra: local tipo = object @ http://localhost:3002/_next/static/chunks/node_modules_next_dist_115brz8._.js:2477
+[   58028ms] [LOG] [Sync] 🔍 ordenes-compra: serverIsEmpty=true, localIsEmpty=true @ http://localhost:3002/_next/static/chunks/node_modules_next_dist_115brz8._.js:2477
+[   58028ms] [LOG] [Sync] ℹ️  ordenes-compra: Both empty @ http://localhost:3002/_next/static/chunks/node_modules_next_dist_115brz8._.js:2477
+[   58028ms] [LOG] [Sync] 📦 correos-enviados: serverData tipo = object, isObject=undefined @ http://localhost:3002/_next/static/chunks/node_modules_next_dist_115brz8._.js:2477
+[   58028ms] [LOG] [Sync] 📦 correos-enviados: local tipo = object @ http://localhost:3002/_next/static/chunks/node_modules_next_dist_115brz8._.js:2477
+[   58028ms] [LOG] [Sync] 🔍 correos-enviados: serverIsEmpty=true, localIsEmpty=true @ http://localhost:3002/_next/static/chunks/node_modules_next_dist_115brz8._.js:2477
+[   58028ms] [LOG] [Sync] ℹ️  correos-enviados: Both empty @ http://localhost:3002/_next/static/chunks/node_modules_next_dist_115brz8._.js:2477
+[   58028ms] [LOG] [Sync] 📦 bodegas: serverData tipo = object, isObject=undefined @ http://localhost:3002/_next/static/chunks/node_modules_next_dist_115brz8._.js:2477
+[   58028ms] [LOG] [Sync] 📦 bodegas: local tipo = object @ http://localhost:3002/_next/static/chunks/node_modules_next_dist_115brz8._.js:2477
+[   58028ms] [LOG] [Sync] 🔍 bodegas: serverIsEmpty=true, localIsEmpty=true @ http://localhost:3002/_next/static/chunks/node_modules_next_dist_115brz8._.js:2477
+[   58028ms] [LOG] [Sync] ℹ️  bodegas: Both empty @ http://localhost:3002/_next/static/chunks/node_modules_next_dist_115brz8._.js:2477
+[   58029ms] [LOG] [Sync] 📦 referencias: serverData tipo = object, isObject=true @ http://localhost:3002/_next/static/chunks/node_modules_next_dist_115brz8._.js:2477
+[   58029ms] [LOG] [Sync] 📦 referencias: local tipo = object @ http://localhost:3002/_next/static/chunks/node_modules_next_dist_115brz8._.js:2477
+[   58029ms] [LOG] [Sync] 🔍 referencias: serverIsEmpty=false, localIsEmpty=true @ http://localhost:3002/_next/static/chunks/node_modules_next_dist_115brz8._.js:2477
+[   58029ms] [LOG] [Sync] 📥 referencias: DESCARGANDO del servidor @ http://localhost:3002/_next/static/chunks/node_modules_next_dist_115brz8._.js:2477
+[   58032ms] [LOG] [Sync] ✅ referencias: Sincronizadas con 96 items en 21 tablas @ http://localhost:3002/_next/static/chunks/node_modules_next_dist_115brz8._.js:2477
+[   58032ms] [LOG] [Sync] ✅ referencias: Downloaded 21 items from server @ http://localhost:3002/_next/static/chunks/node_modules_next_dist_115brz8._.js:2477
+[   58032ms] [LOG] [Sync] 📦 proveedores: serverData tipo = object, isObject=undefined @ http://localhost:3002/_next/static/chunks/node_modules_next_dist_115brz8._.js:2477
+[   58032ms] [LOG] [Sync] 📦 proveedores: local tipo = object @ http://localhost:3002/_next/static/chunks/node_modules_next_dist_115brz8._.js:2477
+[   58032ms] [LOG] [Sync] 🔍 proveedores: serverIsEmpty=true, localIsEmpty=false @ http://localhost:3002/_next/static/chunks/node_modules_next_dist_115brz8._.js:2477
+[   58050ms] [LOG] [Sync] 📦 centros-costo: serverData tipo = object, isObject=undefined @ http://localhost:3002/_next/static/chunks/node_modules_next_dist_115brz8._.js:2477
+[   58050ms] [LOG] [Sync] 📦 centros-costo: local tipo = object @ http://localhost:3002/_next/static/chunks/node_modules_next_dist_115brz8._.js:2477
+[   58050ms] [LOG] [Sync] 🔍 centros-costo: serverIsEmpty=true, localIsEmpty=true @ http://localhost:3002/_next/static/chunks/node_modules_next_dist_115brz8._.js:2477
+[   58050ms] [LOG] [Sync] ℹ️  centros-costo: Both empty @ http://localhost:3002/_next/static/chunks/node_modules_next_dist_115brz8._.js:2477
+[   58053ms] [LOG] [Sync] 📦 transferencias: serverData tipo = object, isObject=undefined @ http://localhost:3002/_next/static/chunks/node_modules_next_dist_115brz8._.js:2477
+[   58053ms] [LOG] [Sync] 📦 transferencias: local tipo = object @ http://localhost:3002/_next/static/chunks/node_modules_next_dist_115brz8._.js:2477
+[   58053ms] [LOG] [Sync] 🔍 transferencias: serverIsEmpty=true, localIsEmpty=true @ http://localhost:3002/_next/static/chunks/node_modules_next_dist_115brz8._.js:2477
+[   58053ms] [LOG] [Sync] ℹ️  transferencias: Both empty @ http://localhost:3002/_next/static/chunks/node_modules_next_dist_115brz8._.js:2477
+[   58055ms] [LOG] [Sync] 📦 ajustes-inventario: serverData tipo = object, isObject=undefined @ http://localhost:3002/_next/static/chunks/node_modules_next_dist_115brz8._.js:2477
+[   58055ms] [LOG] [Sync] 📦 ajustes-inventario: local tipo = object @ http://localhost:3002/_next/static/chunks/node_modules_next_dist_115brz8._.js:2477
+[   58055ms] [LOG] [Sync] 🔍 ajustes-inventario: serverIsEmpty=true, localIsEmpty=true @ http://localhost:3002/_next/static/chunks/node_modules_next_dist_115brz8._.js:2477
+[   58056ms] [LOG] [Sync] ℹ️  ajustes-inventario: Both empty @ http://localhost:3002/_next/static/chunks/node_modules_next_dist_115brz8._.js:2477
+[   58058ms] [LOG] [Sync] 📦 recepcion-facturas: serverData tipo = object, isObject=undefined @ http://localhost:3002/_next/static/chunks/node_modules_next_dist_115brz8._.js:2477
+[   58059ms] [LOG] [Sync] 📦 recepcion-facturas: local tipo = object @ http://localhost:3002/_next/static/chunks/node_modules_next_dist_115brz8._.js:2477
+[   58059ms] [LOG] [Sync] 🔍 recepcion-facturas: serverIsEmpty=true, localIsEmpty=true @ http://localhost:3002/_next/static/chunks/node_modules_next_dist_115brz8._.js:2477
+[   58059ms] [LOG] [Sync] ℹ️  recepcion-facturas: Both empty @ http://localhost:3002/_next/static/chunks/node_modules_next_dist_115brz8._.js:2477
+[   58061ms] [LOG] [Sync] 📦 recepcion-remisiones: serverData tipo = object, isObject=undefined @ http://localhost:3002/_next/static/chunks/node_modules_next_dist_115brz8._.js:2477
+[   58061ms] [LOG] [Sync] 📦 recepcion-remisiones: local tipo = object @ http://localhost:3002/_next/static/chunks/node_modules_next_dist_115brz8._.js:2477
+[   58061ms] [LOG] [Sync] 🔍 recepcion-remisiones: serverIsEmpty=true, localIsEmpty=true @ http://localhost:3002/_next/static/chunks/node_modules_next_dist_115brz8._.js:2477
+[   58061ms] [LOG] [Sync] ℹ️  recepcion-remisiones: Both empty @ http://localhost:3002/_next/static/chunks/node_modules_next_dist_115brz8._.js:2477
+[   58064ms] [LOG] [Sync] 📦 usuarios: serverData tipo = object, isObject=undefined @ http://localhost:3002/_next/static/chunks/node_modules_next_dist_115brz8._.js:2477
+[   58064ms] [LOG] [Sync] 📦 usuarios: local tipo = object @ http://localhost:3002/_next/static/chunks/node_modules_next_dist_115brz8._.js:2477
+[   58064ms] [LOG] [Sync] 🔍 usuarios: serverIsEmpty=false, localIsEmpty=false @ http://localhost:3002/_next/static/chunks/node_modules_next_dist_115brz8._.js:2477
+[   58064ms] [LOG] [Sync] ✅ usuarios: Both have data - keeping local (more recent) @ http://localhost:3002/_next/static/chunks/node_modules_next_dist_115brz8._.js:2477
+[   58074ms] [LOG] [Sync] 📦 carga-inicial: serverData tipo = object, isObject=undefined @ http://localhost:3002/_next/static/chunks/node_modules_next_dist_115brz8._.js:2477
+[   58074ms] [LOG] [Sync] 📦 carga-inicial: local tipo = object @ http://localhost:3002/_next/static/chunks/node_modules_next_dist_115brz8._.js:2477
+[   58074ms] [LOG] [Sync] 🔍 carga-inicial: serverIsEmpty=true, localIsEmpty=true @ http://localhost:3002/_next/static/chunks/node_modules_next_dist_115brz8._.js:2477
+[   58074ms] [LOG] [Sync] ℹ️  carga-inicial: Both empty @ http://localhost:3002/_next/static/chunks/node_modules_next_dist_115brz8._.js:2477
+[   58077ms] [LOG] [Sync] 📦 modulos-sistema: serverData tipo = object, isObject=undefined @ http://localhost:3002/_next/static/chunks/node_modules_next_dist_115brz8._.js:2477
+[   58077ms] [LOG] [Sync] 📦 modulos-sistema: local tipo = object @ http://localhost:3002/_next/static/chunks/node_modules_next_dist_115brz8._.js:2477
+[   58077ms] [LOG] [Sync] 🔍 modulos-sistema: serverIsEmpty=false, localIsEmpty=true @ http://localhost:3002/_next/static/chunks/node_modules_next_dist_115brz8._.js:2477
+[   58077ms] [LOG] [Sync] 📥 modulos-sistema: DESCARGANDO del servidor @ http://localhost:3002/_next/static/chunks/node_modules_next_dist_115brz8._.js:2477
+[   58077ms] [LOG] [Sync] ✅ modulos-sistema: Downloaded 22 items from server @ http://localhost:3002/_next/static/chunks/node_modules_next_dist_115brz8._.js:2477
+[   58084ms] [LOG] [Sync] 📦 personal-empresa: serverData tipo = object, isObject=undefined @ http://localhost:3002/_next/static/chunks/node_modules_next_dist_115brz8._.js:2477
+[   58084ms] [LOG] [Sync] 📦 personal-empresa: local tipo = object @ http://localhost:3002/_next/static/chunks/node_modules_next_dist_115brz8._.js:2477
+[   58084ms] [LOG] [Sync] 🔍 personal-empresa: serverIsEmpty=true, localIsEmpty=true @ http://localhost:3002/_next/static/chunks/node_modules_next_dist_115brz8._.js:2477
+[   58084ms] [LOG] [Sync] ℹ️  personal-empresa: Both empty @ http://localhost:3002/_next/static/chunks/node_modules_next_dist_115brz8._.js:2477
+[   58084ms] [LOG] [Sync] 📦 tareas: serverData tipo = object, isObject=undefined @ http://localhost:3002/_next/static/chunks/node_modules_next_dist_115brz8._.js:2477
+[   58084ms] [LOG] [Sync] 📦 tareas: local tipo = object @ http://localhost:3002/_next/static/chunks/node_modules_next_dist_115brz8._.js:2477
+[   58084ms] [LOG] [Sync] 🔍 tareas: serverIsEmpty=true, localIsEmpty=true @ http://localhost:3002/_next/static/chunks/node_modules_next_dist_115brz8._.js:2477
+[   58084ms] [LOG] [Sync] ℹ️  tareas: Both empty @ http://localhost:3002/_next/static/chunks/node_modules_next_dist_115brz8._.js:2477
+[   58086ms] [LOG] [Sync] 📦 pedidos: serverData tipo = object, isObject=undefined @ http://localhost:3002/_next/static/chunks/node_modules_next_dist_115brz8._.js:2477
+[   58086ms] [LOG] [Sync] 📦 pedidos: local tipo = object @ http://localhost:3002/_next/static/chunks/node_modules_next_dist_115brz8._.js:2477
+[   58086ms] [LOG] [Sync] 🔍 pedidos: serverIsEmpty=true, localIsEmpty=true @ http://localhost:3002/_next/static/chunks/node_modules_next_dist_115brz8._.js:2477
+[   58086ms] [LOG] [Sync] ℹ️  pedidos: Both empty @ http://localhost:3002/_next/static/chunks/node_modules_next_dist_115brz8._.js:2477
+[   58091ms] [LOG] [Sync] 📦 pagos-proveedores: serverData tipo = object, isObject=true @ http://localhost:3002/_next/static/chunks/node_modules_next_dist_115brz8._.js:2477
+[   58091ms] [LOG] [Sync] 📦 pagos-proveedores: local tipo = object @ http://localhost:3002/_next/static/chunks/node_modules_next_dist_115brz8._.js:2477
+[   58091ms] [LOG] [Sync] 🔍 pagos-proveedores: serverIsEmpty=true, localIsEmpty=true @ http://localhost:3002/_next/static/chunks/node_modules_next_dist_115brz8._.js:2477
+[   58091ms] [LOG] [Sync] ℹ️  pagos-proveedores: Both empty @ http://localhost:3002/_next/static/chunks/node_modules_next_dist_115brz8._.js:2477
+[   58100ms] [LOG] [Sync] 📦 datos-empresa: serverData tipo = object, isObject=undefined @ http://localhost:3002/_next/static/chunks/node_modules_next_dist_115brz8._.js:2477
+[   58100ms] [LOG] [Sync] 📦 datos-empresa: local tipo = object @ http://localhost:3002/_next/static/chunks/node_modules_next_dist_115brz8._.js:2477
+[   58100ms] [LOG] [Sync] 🔍 datos-empresa: serverIsEmpty=false, localIsEmpty=true @ http://localhost:3002/_next/static/chunks/node_modules_next_dist_115brz8._.js:2477
+[   58100ms] [LOG] [Sync] 📥 datos-empresa: DESCARGANDO del servidor @ http://localhost:3002/_next/static/chunks/node_modules_next_dist_115brz8._.js:2477
+[   58101ms] [LOG] [Sync] ✅ datos-empresa: Downloaded 1 items from server @ http://localhost:3002/_next/static/chunks/node_modules_next_dist_115brz8._.js:2477
+[   58114ms] [LOG] [Sync] 📦 control-bancario: serverData tipo = object, isObject=true @ http://localhost:3002/_next/static/chunks/node_modules_next_dist_115brz8._.js:2477
+[   58114ms] [LOG] [Sync] 📦 control-bancario: local tipo = object @ http://localhost:3002/_next/static/chunks/node_modules_next_dist_115brz8._.js:2477
+[   58114ms] [LOG] [Sync] 🔍 control-bancario: serverIsEmpty=true, localIsEmpty=true @ http://localhost:3002/_next/static/chunks/node_modules_next_dist_115brz8._.js:2477
+[   58114ms] [LOG] [Sync] ℹ️  control-bancario: Both empty @ http://localhost:3002/_next/static/chunks/node_modules_next_dist_115brz8._.js:2477
+[   58114ms] [LOG] [Sync] 📦 productos: serverData tipo = object, isObject=undefined @ http://localhost:3002/_next/static/chunks/node_modules_next_dist_115brz8._.js:2477
+[   58114ms] [LOG] [Sync] 📦 productos: local tipo = object @ http://localhost:3002/_next/static/chunks/node_modules_next_dist_115brz8._.js:2477
+[   58114ms] [LOG] [Sync] 🔍 productos: serverIsEmpty=true, localIsEmpty=true @ http://localhost:3002/_next/static/chunks/node_modules_next_dist_115brz8._.js:2477
+[   58114ms] [LOG] [Sync] ℹ️  productos: Both empty @ http://localhost:3002/_next/static/chunks/node_modules_next_dist_115brz8._.js:2477
+[   58125ms] [LOG] [Sync] 📦 ordenes-compra: serverData tipo = object, isObject=undefined @ http://localhost:3002/_next/static/chunks/node_modules_next_dist_115brz8._.js:2477
+[   58125ms] [LOG] [Sync] 📦 ordenes-compra: local tipo = object @ http://localhost:3002/_next/static/chunks/node_modules_next_dist_115brz8._.js:2477
+[   58125ms] [LOG] [Sync] 🔍 ordenes-compra: serverIsEmpty=true, localIsEmpty=true @ http://localhost:3002/_next/static/chunks/node_modules_next_dist_115brz8._.js:2477
+[   58125ms] [LOG] [Sync] ℹ️  ordenes-compra: Both empty @ http://localhost:3002/_next/static/chunks/node_modules_next_dist_115brz8._.js:2477
+[   58130ms] [LOG] [Sync] 📦 correos-enviados: serverData tipo = object, isObject=undefined @ http://localhost:3002/_next/static/chunks/node_modules_next_dist_115brz8._.js:2477
+[   58130ms] [LOG] [Sync] 📦 correos-enviados: local tipo = object @ http://localhost:3002/_next/static/chunks/node_modules_next_dist_115brz8._.js:2477
+[   58130ms] [LOG] [Sync] 🔍 correos-enviados: serverIsEmpty=true, localIsEmpty=true @ http://localhost:3002/_next/static/chunks/node_modules_next_dist_115brz8._.js:2477
+[   58130ms] [LOG] [Sync] ℹ️  correos-enviados: Both empty @ http://localhost:3002/_next/static/chunks/node_modules_next_dist_115brz8._.js:2477
+[   58136ms] [LOG] [Sync] 📦 bodegas: serverData tipo = object, isObject=undefined @ http://localhost:3002/_next/static/chunks/node_modules_next_dist_115brz8._.js:2477
+[   58136ms] [LOG] [Sync] 📦 bodegas: local tipo = object @ http://localhost:3002/_next/static/chunks/node_modules_next_dist_115brz8._.js:2477
+[   58136ms] [LOG] [Sync] 🔍 bodegas: serverIsEmpty=true, localIsEmpty=true @ http://localhost:3002/_next/static/chunks/node_modules_next_dist_115brz8._.js:2477
+[   58136ms] [LOG] [Sync] ℹ️  bodegas: Both empty @ http://localhost:3002/_next/static/chunks/node_modules_next_dist_115brz8._.js:2477
+[   58145ms] [LOG] [Sync] 📦 referencias: serverData tipo = object, isObject=true @ http://localhost:3002/_next/static/chunks/node_modules_next_dist_115brz8._.js:2477
+[   58145ms] [LOG] [Sync] 📦 referencias: local tipo = object @ http://localhost:3002/_next/static/chunks/node_modules_next_dist_115brz8._.js:2477
+[   58145ms] [LOG] [Sync] 🔍 referencias: serverIsEmpty=false, localIsEmpty=true @ http://localhost:3002/_next/static/chunks/node_modules_next_dist_115brz8._.js:2477
+[   58145ms] [LOG] [Sync] 📥 referencias: DESCARGANDO del servidor @ http://localhost:3002/_next/static/chunks/node_modules_next_dist_115brz8._.js:2477
+[   58145ms] [LOG] [Sync] ✅ referencias: Sincronizadas con 96 items en 21 tablas @ http://localhost:3002/_next/static/chunks/node_modules_next_dist_115brz8._.js:2477
+[   58145ms] [LOG] [Sync] ✅ referencias: Downloaded 21 items from server @ http://localhost:3002/_next/static/chunks/node_modules_next_dist_115brz8._.js:2477
+[   58148ms] [LOG] [Sync] 📦 proveedores: serverData tipo = object, isObject=undefined @ http://localhost:3002/_next/static/chunks/node_modules_next_dist_115brz8._.js:2477
+[   58148ms] [LOG] [Sync] 📦 proveedores: local tipo = object @ http://localhost:3002/_next/static/chunks/node_modules_next_dist_115brz8._.js:2477
+[   58148ms] [LOG] [Sync] 🔍 proveedores: serverIsEmpty=true, localIsEmpty=false @ http://localhost:3002/_next/static/chunks/node_modules_next_dist_115brz8._.js:2477
+[   58151ms] [LOG] [Sync] 📦 centros-costo: serverData tipo = object, isObject=undefined @ http://localhost:3002/_next/static/chunks/node_modules_next_dist_115brz8._.js:2477
+[   58151ms] [LOG] [Sync] 📦 centros-costo: local tipo = object @ http://localhost:3002/_next/static/chunks/node_modules_next_dist_115brz8._.js:2477
+[   58151ms] [LOG] [Sync] 🔍 centros-costo: serverIsEmpty=true, localIsEmpty=true @ http://localhost:3002/_next/static/chunks/node_modules_next_dist_115brz8._.js:2477
+[   58152ms] [LOG] [Sync] ℹ️  centros-costo: Both empty @ http://localhost:3002/_next/static/chunks/node_modules_next_dist_115brz8._.js:2477
+[   58154ms] [LOG] [Sync] 📦 transferencias: serverData tipo = object, isObject=undefined @ http://localhost:3002/_next/static/chunks/node_modules_next_dist_115brz8._.js:2477
+[   58154ms] [LOG] [Sync] 📦 transferencias: local tipo = object @ http://localhost:3002/_next/static/chunks/node_modules_next_dist_115brz8._.js:2477
+[   58154ms] [LOG] [Sync] 🔍 transferencias: serverIsEmpty=true, localIsEmpty=true @ http://localhost:3002/_next/static/chunks/node_modules_next_dist_115brz8._.js:2477
+[   58155ms] [LOG] [Sync] ℹ️  transferencias: Both empty @ http://localhost:3002/_next/static/chunks/node_modules_next_dist_115brz8._.js:2477
+[   58157ms] [LOG] [Sync] 📦 ajustes-inventario: serverData tipo = object, isObject=undefined @ http://localhost:3002/_next/static/chunks/node_modules_next_dist_115brz8._.js:2477
+[   58157ms] [LOG] [Sync] 📦 ajustes-inventario: local tipo = object @ http://localhost:3002/_next/static/chunks/node_modules_next_dist_115brz8._.js:2477
+[   58157ms] [LOG] [Sync] 🔍 ajustes-inventario: serverIsEmpty=true, localIsEmpty=true @ http://localhost:3002/_next/static/chunks/node_modules_next_dist_115brz8._.js:2477
+[   58157ms] [LOG] [Sync] ℹ️  ajustes-inventario: Both empty @ http://localhost:3002/_next/static/chunks/node_modules_next_dist_115brz8._.js:2477
+[   58163ms] [LOG] [Sync] 📦 recepcion-facturas: serverData tipo = object, isObject=undefined @ http://localhost:3002/_next/static/chunks/node_modules_next_dist_115brz8._.js:2477
+[   58163ms] [LOG] [Sync] 📦 recepcion-facturas: local tipo = object @ http://localhost:3002/_next/static/chunks/node_modules_next_dist_115brz8._.js:2477
+[   58163ms] [LOG] [Sync] 🔍 recepcion-facturas: serverIsEmpty=true, localIsEmpty=true @ http://localhost:3002/_next/static/chunks/node_modules_next_dist_115brz8._.js:2477
+[   58163ms] [LOG] [Sync] ℹ️  recepcion-facturas: Both empty @ http://localhost:3002/_next/static/chunks/node_modules_next_dist_115brz8._.js:2477
+[   58171ms] [LOG] [Sync] 📦 recepcion-remisiones: serverData tipo = object, isObject=undefined @ http://localhost:3002/_next/static/chunks/node_modules_next_dist_115brz8._.js:2477
+[   58171ms] [LOG] [Sync] 📦 recepcion-remisiones: local tipo = object @ http://localhost:3002/_next/static/chunks/node_modules_next_dist_115brz8._.js:2477
+[   58171ms] [LOG] [Sync] 🔍 recepcion-remisiones: serverIsEmpty=true, localIsEmpty=true @ http://localhost:3002/_next/static/chunks/node_modules_next_dist_115brz8._.js:2477
+[   58171ms] [LOG] [Sync] ℹ️  recepcion-remisiones: Both empty @ http://localhost:3002/_next/static/chunks/node_modules_next_dist_115brz8._.js:2477
+[   58174ms] [LOG] [Sync] 📦 usuarios: serverData tipo = object, isObject=undefined @ http://localhost:3002/_next/static/chunks/node_modules_next_dist_115brz8._.js:2477
+[   58174ms] [LOG] [Sync] 📦 usuarios: local tipo = object @ http://localhost:3002/_next/static/chunks/node_modules_next_dist_115brz8._.js:2477
+[   58174ms] [LOG] [Sync] 🔍 usuarios: serverIsEmpty=false, localIsEmpty=false @ http://localhost:3002/_next/static/chunks/node_modules_next_dist_115brz8._.js:2477
+[   58174ms] [LOG] [Sync] ✅ usuarios: Both have data - keeping local (more recent) @ http://localhost:3002/_next/static/chunks/node_modules_next_dist_115brz8._.js:2477
+[   58177ms] [LOG] [Sync] 📦 carga-inicial: serverData tipo = object, isObject=undefined @ http://localhost:3002/_next/static/chunks/node_modules_next_dist_115brz8._.js:2477
+[   58177ms] [LOG] [Sync] 📦 carga-inicial: local tipo = object @ http://localhost:3002/_next/static/chunks/node_modules_next_dist_115brz8._.js:2477
+[   58177ms] [LOG] [Sync] 🔍 carga-inicial: serverIsEmpty=true, localIsEmpty=true @ http://localhost:3002/_next/static/chunks/node_modules_next_dist_115brz8._.js:2477
+[   58177ms] [LOG] [Sync] ℹ️  carga-inicial: Both empty @ http://localhost:3002/_next/static/chunks/node_modules_next_dist_115brz8._.js:2477
+[   58182ms] [LOG] [Sync] 📦 modulos-sistema: serverData tipo = object, isObject=undefined @ http://localhost:3002/_next/static/chunks/node_modules_next_dist_115brz8._.js:2477
+[   58182ms] [LOG] [Sync] 📦 modulos-sistema: local tipo = object @ http://localhost:3002/_next/static/chunks/node_modules_next_dist_115brz8._.js:2477
+[   58182ms] [LOG] [Sync] 🔍 modulos-sistema: serverIsEmpty=false, localIsEmpty=true @ http://localhost:3002/_next/static/chunks/node_modules_next_dist_115brz8._.js:2477
+[   58182ms] [LOG] [Sync] 📥 modulos-sistema: DESCARGANDO del servidor @ http://localhost:3002/_next/static/chunks/node_modules_next_dist_115brz8._.js:2477
+[   58182ms] [LOG] [Sync] ✅ modulos-sistema: Downloaded 22 items from server @ http://localhost:3002/_next/static/chunks/node_modules_next_dist_115brz8._.js:2477
+[   58190ms] [LOG] [Sync] 📦 personal-empresa: serverData tipo = object, isObject=undefined @ http://localhost:3002/_next/static/chunks/node_modules_next_dist_115brz8._.js:2477
+[   58190ms] [LOG] [Sync] 📦 personal-empresa: local tipo = object @ http://localhost:3002/_next/static/chunks/node_modules_next_dist_115brz8._.js:2477
+[   58190ms] [LOG] [Sync] 🔍 personal-empresa: serverIsEmpty=true, localIsEmpty=true @ http://localhost:3002/_next/static/chunks/node_modules_next_dist_115brz8._.js:2477
+[   58190ms] [LOG] [Sync] ℹ️  personal-empresa: Both empty @ http://localhost:3002/_next/static/chunks/node_modules_next_dist_115brz8._.js:2477
+[   58192ms] [LOG] [Sync] 📦 tareas: serverData tipo = object, isObject=undefined @ http://localhost:3002/_next/static/chunks/node_modules_next_dist_115brz8._.js:2477
+[   58192ms] [LOG] [Sync] 📦 tareas: local tipo = object @ http://localhost:3002/_next/static/chunks/node_modules_next_dist_115brz8._.js:2477
+[   58192ms] [LOG] [Sync] 🔍 tareas: serverIsEmpty=true, localIsEmpty=true @ http://localhost:3002/_next/static/chunks/node_modules_next_dist_115brz8._.js:2477
+[   58192ms] [LOG] [Sync] ℹ️  tareas: Both empty @ http://localhost:3002/_next/static/chunks/node_modules_next_dist_115brz8._.js:2477
+[   58197ms] [LOG] [Sync] 📦 pedidos: serverData tipo = object, isObject=undefined @ http://localhost:3002/_next/static/chunks/node_modules_next_dist_115brz8._.js:2477
+[   58197ms] [LOG] [Sync] 📦 pedidos: local tipo = object @ http://localhost:3002/_next/static/chunks/node_modules_next_dist_115brz8._.js:2477
+[   58197ms] [LOG] [Sync] 🔍 pedidos: serverIsEmpty=true, localIsEmpty=true @ http://localhost:3002/_next/static/chunks/node_modules_next_dist_115brz8._.js:2477
+[   58197ms] [LOG] [Sync] ℹ️  pedidos: Both empty @ http://localhost:3002/_next/static/chunks/node_modules_next_dist_115brz8._.js:2477
+[   58200ms] [LOG] [Sync] 📦 pagos-proveedores: serverData tipo = object, isObject=true @ http://localhost:3002/_next/static/chunks/node_modules_next_dist_115brz8._.js:2477
+[   58200ms] [LOG] [Sync] 📦 pagos-proveedores: local tipo = object @ http://localhost:3002/_next/static/chunks/node_modules_next_dist_115brz8._.js:2477
+[   58201ms] [LOG] [Sync] 🔍 pagos-proveedores: serverIsEmpty=true, localIsEmpty=true @ http://localhost:3002/_next/static/chunks/node_modules_next_dist_115brz8._.js:2477
+[   58201ms] [LOG] [Sync] ℹ️  pagos-proveedores: Both empty @ http://localhost:3002/_next/static/chunks/node_modules_next_dist_115brz8._.js:2477
+[   58203ms] [LOG] [Sync] 📦 datos-empresa: serverData tipo = object, isObject=undefined @ http://localhost:3002/_next/static/chunks/node_modules_next_dist_115brz8._.js:2477
+[   58203ms] [LOG] [Sync] 📦 datos-empresa: local tipo = object @ http://localhost:3002/_next/static/chunks/node_modules_next_dist_115brz8._.js:2477
+[   58203ms] [LOG] [Sync] 🔍 datos-empresa: serverIsEmpty=false, localIsEmpty=true @ http://localhost:3002/_next/static/chunks/node_modules_next_dist_115brz8._.js:2477
+[   58203ms] [LOG] [Sync] 📥 datos-empresa: DESCARGANDO del servidor @ http://localhost:3002/_next/static/chunks/node_modules_next_dist_115brz8._.js:2477
+[   58203ms] [LOG] [Sync] ✅ datos-empresa: Downloaded 1 items from server @ http://localhost:3002/_next/static/chunks/node_modules_next_dist_115brz8._.js:2477
+[   58211ms] [LOG] [Sync] 📦 control-bancario: serverData tipo = object, isObject=true @ http://localhost:3002/_next/static/chunks/node_modules_next_dist_115brz8._.js:2477
+[   58211ms] [LOG] [Sync] 📦 control-bancario: local tipo = object @ http://localhost:3002/_next/static/chunks/node_modules_next_dist_115brz8._.js:2477
+[   58211ms] [LOG] [Sync] 🔍 control-bancario: serverIsEmpty=true, localIsEmpty=true @ http://localhost:3002/_next/static/chunks/node_modules_next_dist_115brz8._.js:2477
+[   58212ms] [LOG] [Sync] ℹ️  control-bancario: Both empty @ http://localhost:3002/_next/static/chunks/node_modules_next_dist_115brz8._.js:2477
+[   58213ms] [LOG] [Sync] ✅ proveedores: Uploaded 1 items to server @ http://localhost:3002/_next/static/chunks/node_modules_next_dist_115brz8._.js:2477
+[   58218ms] [LOG] [Sync] ✅ proveedores: Uploaded 1 items to server @ http://localhost:3002/_next/static/chunks/node_modules_next_dist_115brz8._.js:2477
+[   58239ms] [LOG] [Fast Refresh] rebuilding @ http://localhost:3002/_next/static/chunks/node_modules_next_dist_115brz8._.js:2477
+[   58247ms] [LOG] [Fast Refresh] done in 111ms @ http://localhost:3002/_next/static/chunks/node_modules_next_dist_115brz8._.js:2477
+[  218313ms] [LOG] [Fast Refresh] rebuilding @ http://localhost:3002/_next/static/chunks/node_modules_next_dist_115brz8._.js:2477
+[  218353ms] [LOG] [Fast Refresh] done in 142ms @ http://localhost:3002/_next/static/chunks/node_modules_next_dist_115brz8._.js:2477
+[  465467ms] [LOG] [HMR] connected @ http://localhost:3002/_next/static/chunks/node_modules_next_dist_115brz8._.js:2477
+[  675743ms] [LOG] [HMR] connected @ http://localhost:3002/_next/static/chunks/node_modules_next_dist_115brz8._.js:2477
+[  962054ms] [LOG] [HMR] connected @ http://localhost:3002/_next/static/chunks/node_modules_next_dist_115brz8._.js:2477
+[ 1707839ms] [LOG] [Fast Refresh] rebuilding @ http://localhost:3002/_next/static/chunks/node_modules_next_dist_115brz8._.js:2477
+[ 1708107ms] [LOG] [Fast Refresh] done in 372ms @ http://localhost:3002/_next/static/chunks/node_modules_next_dist_115brz8._.js:2477
+[ 1737324ms] [LOG] [Fast Refresh] rebuilding @ http://localhost:3002/_next/static/chunks/node_modules_next_dist_115brz8._.js:2477
+[ 1737521ms] [LOG] [Fast Refresh] done in 299ms @ http://localhost:3002/_next/static/chunks/node_modules_next_dist_115brz8._.js:2477

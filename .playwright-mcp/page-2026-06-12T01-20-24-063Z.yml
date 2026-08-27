@@ -1,0 +1,7 @@
+- generic [active] [ref=e1]:
+  - heading "TEST ARCHIVO" [level=1] [ref=e2]
+  - paragraph [ref=e3]: Si ves esto, el servidor estÃ¡ sirviendo desde la carpeta docs correctamente.
+  - paragraph [ref=e4]:
+    - strong [ref=e5]: "UNIDAD RESIDENCIAL: SANTA ISABEL"
+  - paragraph [ref=e6]:
+    - strong [ref=e7]: "APARTAMENTO: 505"

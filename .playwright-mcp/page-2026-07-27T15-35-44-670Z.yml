@@ -1,0 +1,21 @@
+- generic [active] [ref=f1e1]:
+  - generic [ref=f1e5]:
+    - generic "Idioma" [ref=f1e8]:
+      - button "🇪🇸 ES" [pressed] [ref=f1e9] [cursor=pointer]
+      - button "🇬🇧 EN" [ref=f1e10] [cursor=pointer]
+    - generic [ref=f1e11]:
+      - img "Grupo Milagros" [ref=f1e12]
+      - heading "Grupo Milagros" [level=1] [ref=f1e13]
+      - paragraph [ref=f1e14]: Inicia sesión en tu cuenta
+    - generic [ref=f1e15]:
+      - generic [ref=f1e16]:
+        - generic [ref=f1e17]: Usuario
+        - textbox "Usuario" [ref=f1e18]:
+          - /placeholder: admin
+      - generic [ref=f1e19]:
+        - generic [ref=f1e20]: Clave
+        - textbox "Clave" [ref=f1e21]:
+          - /placeholder: ••••••••
+      - button "Ingresar al Sistema" [ref=f1e22] [cursor=pointer]
+  - button "Open Next.js Dev Tools" [ref=f1e28] [cursor=pointer]
+  - alert [ref=f1e32]

@@ -1,0 +1,239 @@
+- generic [active] [ref=e1]:
+  - alert [ref=e3]
+  - generic [ref=e24]:
+    - complementary [ref=e25]:
+      - generic [ref=e26]:
+        - img "Logo Empresa" [ref=e28]
+        - paragraph [ref=e29]: Gestión de Inventario
+      - navigation [ref=e30]:
+        - link "📊 Dashboard" [ref=e31] [cursor=pointer]:
+          - /url: /dashboard
+          - generic [ref=e32]: 📊
+          - generic [ref=e33]: Dashboard
+        - button "👥 Clientes ↗" [ref=e34] [cursor=pointer]:
+          - generic [ref=e35]: 👥
+          - generic [ref=e36]: Clientes
+          - generic [ref=e37]: ↗
+        - link "📦 Productos" [ref=e38] [cursor=pointer]:
+          - /url: /productos
+          - generic [ref=e39]: 📦
+          - generic [ref=e40]: Productos
+        - link "📒 Kardex de Productos" [ref=e41] [cursor=pointer]:
+          - /url: /kardex
+          - generic [ref=e42]: 📒
+          - generic [ref=e43]: Kardex de Productos
+        - link "🏢 Proveedores" [ref=e44] [cursor=pointer]:
+          - /url: /proveedores
+          - generic [ref=e45]: 🏢
+          - generic [ref=e46]: Proveedores
+        - link "🛒 Órdenes de Compra" [ref=e47] [cursor=pointer]:
+          - /url: /ordenes-compra
+          - generic [ref=e48]: 🛒
+          - generic [ref=e49]: Órdenes de Compra
+        - link "📄 Orden de Pedido" [ref=e50] [cursor=pointer]:
+          - /url: /pedidos
+          - generic [ref=e51]: 📄
+          - generic [ref=e52]: Orden de Pedido
+        - link "📋 Recepción de Facturas" [ref=e53] [cursor=pointer]:
+          - /url: /recepcion-facturas
+          - generic [ref=e54]: 📋
+          - generic [ref=e55]: Recepción de Facturas
+        - link "📑 Recepción de Remisiones" [ref=e56] [cursor=pointer]:
+          - /url: /recepcion-remisiones
+          - generic [ref=e57]: 📑
+          - generic [ref=e58]: Recepción de Remisiones
+        - link "💳 Pagos Proveedores" [ref=e59] [cursor=pointer]:
+          - /url: /pagos-proveedores
+          - generic [ref=e60]: 💳
+          - generic [ref=e61]: Pagos Proveedores
+        - link "🏦 Control Bancario" [ref=e62] [cursor=pointer]:
+          - /url: /control-bancario
+          - generic [ref=e63]: 🏦
+          - generic [ref=e64]: Control Bancario
+        - link "🏭 Bodegas" [ref=e65] [cursor=pointer]:
+          - /url: /bodegas
+          - generic [ref=e66]: 🏭
+          - generic [ref=e67]: Bodegas
+        - link "🔄 Transferencias" [ref=e68] [cursor=pointer]:
+          - /url: /transferencias
+          - generic [ref=e69]: 🔄
+          - generic [ref=e70]: Transferencias
+        - link "📤 Salidas de Almacén" [ref=e71] [cursor=pointer]:
+          - /url: /salidas-almacen
+          - generic [ref=e72]: 📤
+          - generic [ref=e73]: Salidas de Almacén
+        - link "⚖️ Ajustes de Inventario" [ref=e74] [cursor=pointer]:
+          - /url: /ajustes-inventario
+          - generic [ref=e75]: ⚖️
+          - generic [ref=e76]: Ajustes de Inventario
+        - link "📋 Toma Inventario Físico" [ref=e77] [cursor=pointer]:
+          - /url: /toma-inventario-fisico
+          - generic [ref=e78]: 📋
+          - generic [ref=e79]: Toma Inventario Físico
+        - link "💰 Centros de Costo" [ref=e80] [cursor=pointer]:
+          - /url: /centros-costo
+          - generic [ref=e81]: 💰
+          - generic [ref=e82]: Centros de Costo
+        - link "📧 Correos Enviados" [ref=e83] [cursor=pointer]:
+          - /url: /correos-enviados
+          - generic [ref=e84]: 📧
+          - generic [ref=e85]: Correos Enviados
+        - link "📝 Tareas" [ref=e86] [cursor=pointer]:
+          - /url: /tareas
+          - generic [ref=e87]: 📝
+          - generic [ref=e88]: Tareas
+        - link "👥 Personal Empresa" [ref=e89] [cursor=pointer]:
+          - /url: /personal-empresa
+          - generic [ref=e90]: 👥
+          - generic [ref=e91]: Personal Empresa
+        - link "⚙️ Tablas de Referencias" [ref=e92] [cursor=pointer]:
+          - /url: /referencias
+          - generic [ref=e93]: ⚙️
+          - generic [ref=e94]: Tablas de Referencias
+        - link "🤖 Agente" [ref=e95] [cursor=pointer]:
+          - /url: /asistente
+          - generic [ref=e96]: 🤖
+          - generic [ref=e97]: Agente
+        - generic [ref=e98]:
+          - button "🏭 Producción ▼" [ref=e99] [cursor=pointer]:
+            - generic [ref=e100]: 🏭
+            - generic [ref=e101]: Producción
+            - generic [ref=e102]: ▼
+          - generic [ref=e103]:
+            - link "⚗️ Formulaciones" [ref=e104] [cursor=pointer]:
+              - /url: /produccion/formulaciones
+              - generic [ref=e105]: ⚗️
+              - generic [ref=e106]: Formulaciones
+            - link "✅ Producto Terminado" [ref=e107] [cursor=pointer]:
+              - /url: /produccion/producto-terminado
+              - generic [ref=e108]: ✅
+              - generic [ref=e109]: Producto Terminado
+            - link "📋 Órdenes de Producción" [ref=e110] [cursor=pointer]:
+              - /url: /produccion/ordenes-produccion
+              - generic [ref=e111]: 📋
+              - generic [ref=e112]: Órdenes de Producción
+            - link "⚙️ Ejecución Órdenes de Producción" [ref=e113] [cursor=pointer]:
+              - /url: /produccion/ejecucion-ordenes
+              - generic [ref=e114]: ⚙️
+              - generic [ref=e115]: Ejecución Órdenes de Producción
+        - generic [ref=e116]:
+          - button "⚙️ Configuración ▼" [ref=e117] [cursor=pointer]:
+            - generic [ref=e118]: ⚙️
+            - generic [ref=e119]: Configuración
+            - generic [ref=e120]: ▼
+          - generic [ref=e121]:
+            - link "🏛️ Datos Empresa" [ref=e122] [cursor=pointer]:
+              - /url: /datos-empresa
+              - generic [ref=e123]: 🏛️
+              - generic [ref=e124]: Datos Empresa
+            - link "👤 Gestión de Usuarios" [ref=e125] [cursor=pointer]:
+              - /url: /usuarios
+              - generic [ref=e126]: 👤
+              - generic [ref=e127]: Gestión de Usuarios
+            - link "🗂️ Módulos Sistema" [ref=e128] [cursor=pointer]:
+              - /url: /modulos-sistema
+              - generic [ref=e129]: 🗂️
+              - generic [ref=e130]: Módulos Sistema
+    - main [ref=e131]:
+      - generic [ref=e132]:
+        - button "☰" [ref=e134] [cursor=pointer]
+        - generic [ref=e135]:
+          - generic "Idioma" [ref=e136]:
+            - button "🇪🇸 ES" [pressed] [ref=e137] [cursor=pointer]
+            - button "🇬🇧 EN" [ref=e138] [cursor=pointer]
+          - generic [ref=e139]:
+            - paragraph [ref=e140]: Juan Andres Arango Velasquez
+            - paragraph [ref=e141]: Admin
+          - generic [ref=e142]: JA
+          - button "Salir" [ref=e143] [cursor=pointer]
+      - generic [ref=e145]:
+        - heading "Dashboard" [level=1] [ref=e147]
+        - generic [ref=e148]:
+          - generic [ref=e149]:
+            - generic [ref=e151]: 📊
+            - paragraph [ref=e153]: "879.00"
+            - paragraph [ref=e154]: Unidades en Inventario
+          - generic [ref=e155]:
+            - generic [ref=e157]: 💰
+            - paragraph [ref=e159]: Pesos 36,609,700.00
+            - paragraph [ref=e160]: Valor del Inventario
+          - generic [ref=e161]:
+            - generic [ref=e163]: 🧾
+            - paragraph [ref=e165]: Pesos 0.00
+            - paragraph [ref=e166]: Total en Órdenes
+          - generic [ref=e167]:
+            - generic [ref=e169]: ⚠️
+            - paragraph [ref=e171]: "2"
+            - paragraph [ref=e172]: Productos Bajo Mínimo
+        - generic [ref=e173]:
+          - generic [ref=e174]:
+            - text: 📦
+            - paragraph [ref=e175]: "13"
+            - paragraph [ref=e176]: Productos Activos
+          - generic [ref=e177]:
+            - text: 🏢
+            - paragraph [ref=e178]: "1"
+            - paragraph [ref=e179]: Proveedores Activos
+          - generic [ref=e180]:
+            - text: 🛒
+            - paragraph [ref=e181]: "0"
+            - paragraph [ref=e182]: Órdenes de Compra
+          - generic [ref=e183]:
+            - text: 📄
+            - paragraph [ref=e184]: "0"
+            - paragraph [ref=e185]: Orden de Pedido
+          - generic [ref=e186]:
+            - text: 📋
+            - paragraph [ref=e187]: "0"
+            - paragraph [ref=e188]: Recepciones
+          - generic [ref=e189]:
+            - text: 🏭
+            - paragraph [ref=e190]: "2"
+            - paragraph [ref=e191]: Bodegas Activas
+          - generic [ref=e192]:
+            - text: 🔄
+            - paragraph [ref=e193]: "0"
+            - paragraph [ref=e194]: Transferencias
+          - generic [ref=e195]:
+            - text: ⚖️
+            - paragraph [ref=e196]: "0"
+            - paragraph [ref=e197]: Ajustes Inventario
+          - generic [ref=e198]:
+            - text: ⏳
+            - paragraph [ref=e199]: "0"
+            - paragraph [ref=e200]: Órdenes Pendientes
+        - generic [ref=e202]:
+          - heading "Productos Bajo Mínimo ⚠️" [level=2] [ref=e203]
+          - generic [ref=e204]:
+            - generic [ref=e205]:
+              - generic [ref=e206]: PROD-00011Bloque Conceto 15 Cms
+              - generic [ref=e207]:
+                - generic [ref=e208]: "60"
+                - generic [ref=e209]: /
+                - generic [ref=e210]: 100 mín.
+            - generic [ref=e211]:
+              - generic [ref=e212]: PROD-00012Ladrillo Rojo N4 Rayado 9 x 19 x 38 cls
+              - generic [ref=e213]:
+                - generic [ref=e214]: "60"
+                - generic [ref=e215]: /
+                - generic [ref=e216]: 150 mín.
+        - link "🤖 Agente Consulta información del sistema con respuesta de voz →" [ref=e217] [cursor=pointer]:
+          - /url: /asistente
+          - generic [ref=e218]:
+            - generic [ref=e219]: 🤖
+            - generic [ref=e220]:
+              - heading "Agente" [level=2] [ref=e221]
+              - paragraph [ref=e222]: Consulta información del sistema con respuesta de voz
+            - generic [ref=e223]: →
+        - 'link "Valor de Inventario por Bodega Ir al módulo → Valor total del inventario distribuido por bodega · Click para ver el detalle Total General: $35,685,701.05 $35,685,701.05 Bodega Prinpipal Laureles 12 productos · 879 unidades" [ref=e224] [cursor=pointer]':
+          - /url: /bodegas
+          - generic [ref=e225]:
+            - heading "Valor de Inventario por Bodega" [level=2] [ref=e226]
+            - generic [ref=e227]: Ir al módulo →
+          - paragraph [ref=e228]: Valor total del inventario distribuido por bodega · Click para ver el detalle
+          - paragraph [ref=e229]: "Total General: $35,685,701.05"
+          - generic [ref=e231]:
+            - generic [ref=e234]: $35,685,701.05
+            - generic [ref=e236]:
+              - paragraph [ref=e237]: Bodega Prinpipal Laureles
+              - paragraph [ref=e238]: 12 productos · 879 unidades

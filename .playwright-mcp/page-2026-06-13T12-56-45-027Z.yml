@@ -1,0 +1,545 @@
+- generic [ref=e1]:
+  - generic [ref=e3]:
+    - complementary [ref=e4]:
+      - generic [ref=e5]:
+        - img "Logo Empresa" [ref=e7]
+        - paragraph [ref=e8]: SPIN - SILICATOS PARA LA INDUSTRIA S.A.S.
+      - navigation [ref=e9]:
+        - link "📊 Dashboard" [ref=e10] [cursor=pointer]:
+          - /url: /dashboard
+          - generic [ref=e11]: 📊
+          - generic [ref=e12]: Dashboard
+        - button "👥 Clientes ↗" [ref=e13] [cursor=pointer]:
+          - generic [ref=e14]: 👥
+          - generic [ref=e15]: Clientes
+          - generic [ref=e16]: ↗
+        - link "📦 Productos" [ref=e17] [cursor=pointer]:
+          - /url: /productos
+          - generic [ref=e18]: 📦
+          - generic [ref=e19]: Productos
+        - link "📒 Kardex de Productos" [ref=e20] [cursor=pointer]:
+          - /url: /kardex
+          - generic [ref=e21]: 📒
+          - generic [ref=e22]: Kardex de Productos
+        - link "🏢 Proveedores" [ref=e23] [cursor=pointer]:
+          - /url: /proveedores
+          - generic [ref=e24]: 🏢
+          - generic [ref=e25]: Proveedores
+        - link "🛒 Órdenes de Compra" [ref=e26] [cursor=pointer]:
+          - /url: /ordenes-compra
+          - generic [ref=e27]: 🛒
+          - generic [ref=e28]: Órdenes de Compra
+        - link "📄 Orden de Pedido" [ref=e29] [cursor=pointer]:
+          - /url: /pedidos
+          - generic [ref=e30]: 📄
+          - generic [ref=e31]: Orden de Pedido
+        - link "📋 Recepción de Facturas" [ref=e32] [cursor=pointer]:
+          - /url: /recepcion-facturas
+          - generic [ref=e33]: 📋
+          - generic [ref=e34]: Recepción de Facturas
+        - link "📑 Recepción de Remisiones" [ref=e35] [cursor=pointer]:
+          - /url: /recepcion-remisiones
+          - generic [ref=e36]: 📑
+          - generic [ref=e37]: Recepción de Remisiones
+        - link "💳 Pagos Proveedores" [ref=e38] [cursor=pointer]:
+          - /url: /pagos-proveedores
+          - generic [ref=e39]: 💳
+          - generic [ref=e40]: Pagos Proveedores
+        - link "🏦 Control Bancario" [ref=e41] [cursor=pointer]:
+          - /url: /control-bancario
+          - generic [ref=e42]: 🏦
+          - generic [ref=e43]: Control Bancario
+        - link "🏭 Bodegas" [ref=e44] [cursor=pointer]:
+          - /url: /bodegas
+          - generic [ref=e45]: 🏭
+          - generic [ref=e46]: Bodegas
+        - link "🔄 Transferencias" [ref=e47] [cursor=pointer]:
+          - /url: /transferencias
+          - generic [ref=e48]: 🔄
+          - generic [ref=e49]: Transferencias
+        - link "📤 Salidas de Almacén" [ref=e50] [cursor=pointer]:
+          - /url: /salidas-almacen
+          - generic [ref=e51]: 📤
+          - generic [ref=e52]: Salidas de Almacén
+        - link "⚖️ Ajustes de Inventario" [ref=e53] [cursor=pointer]:
+          - /url: /ajustes-inventario
+          - generic [ref=e54]: ⚖️
+          - generic [ref=e55]: Ajustes de Inventario
+        - link "📋 Toma Inventario Físico" [ref=e56] [cursor=pointer]:
+          - /url: /toma-inventario-fisico
+          - generic [ref=e57]: 📋
+          - generic [ref=e58]: Toma Inventario Físico
+        - link "💰 Centros de Costo" [ref=e59] [cursor=pointer]:
+          - /url: /centros-costo
+          - generic [ref=e60]: 💰
+          - generic [ref=e61]: Centros de Costo
+        - link "📧 Correos Enviados" [ref=e62] [cursor=pointer]:
+          - /url: /correos-enviados
+          - generic [ref=e63]: 📧
+          - generic [ref=e64]: Correos Enviados
+        - link "📝 Tareas" [ref=e65] [cursor=pointer]:
+          - /url: /tareas
+          - generic [ref=e66]: 📝
+          - generic [ref=e67]: Tareas
+        - link "👥 Personal Empresa" [ref=e68] [cursor=pointer]:
+          - /url: /personal-empresa
+          - generic [ref=e69]: 👥
+          - generic [ref=e70]: Personal Empresa
+        - link "⚙️ Tablas de Referencias" [ref=e71] [cursor=pointer]:
+          - /url: /referencias
+          - generic [ref=e72]: ⚙️
+          - generic [ref=e73]: Tablas de Referencias
+        - link "🤖 Agente" [ref=e74] [cursor=pointer]:
+          - /url: /asistente
+          - generic [ref=e75]: 🤖
+          - generic [ref=e76]: Agente
+        - generic [ref=e77]:
+          - button "🏭 Producción ▼" [ref=e78] [cursor=pointer]:
+            - generic [ref=e79]: 🏭
+            - generic [ref=e80]: Producción
+            - generic [ref=e81]: ▼
+          - generic [ref=e82]:
+            - link "⚗️ Formulaciones" [ref=e83] [cursor=pointer]:
+              - /url: /produccion/formulaciones
+              - generic [ref=e84]: ⚗️
+              - generic [ref=e85]: Formulaciones
+            - link "✅ Producto Terminado" [ref=e86] [cursor=pointer]:
+              - /url: /produccion/producto-terminado
+              - generic [ref=e87]: ✅
+              - generic [ref=e88]: Producto Terminado
+            - link "📋 Órdenes de Producción" [ref=e89] [cursor=pointer]:
+              - /url: /produccion/ordenes-produccion
+              - generic [ref=e90]: 📋
+              - generic [ref=e91]: Órdenes de Producción
+            - link "⚙️ Ejecución Órdenes de Producción" [ref=e92] [cursor=pointer]:
+              - /url: /produccion/ejecucion-ordenes
+              - generic [ref=e93]: ⚙️
+              - generic [ref=e94]: Ejecución Órdenes de Producción
+        - generic [ref=e95]:
+          - button "⚙️ Configuración ▼" [ref=e96] [cursor=pointer]:
+            - generic [ref=e97]: ⚙️
+            - generic [ref=e98]: Configuración
+            - generic [ref=e99]: ▼
+          - generic [ref=e100]:
+            - link "🏛️ Datos Empresa" [ref=e101] [cursor=pointer]:
+              - /url: /datos-empresa
+              - generic [ref=e102]: 🏛️
+              - generic [ref=e103]: Datos Empresa
+            - link "👤 Gestión de Usuarios" [ref=e104] [cursor=pointer]:
+              - /url: /usuarios
+              - generic [ref=e105]: 👤
+              - generic [ref=e106]: Gestión de Usuarios
+            - link "🗂️ Módulos Sistema" [ref=e107] [cursor=pointer]:
+              - /url: /modulos-sistema
+              - generic [ref=e108]: 🗂️
+              - generic [ref=e109]: Módulos Sistema
+    - main [ref=e110]:
+      - generic [ref=e111]:
+        - button "☰" [ref=e113] [cursor=pointer]
+        - generic [ref=e114]:
+          - generic "Idioma" [ref=e115]:
+            - button "🇪🇸 ES" [pressed] [ref=e116] [cursor=pointer]
+            - button "🇬🇧 EN" [ref=e117] [cursor=pointer]
+          - generic [ref=e118]:
+            - paragraph [ref=e119]: Juan Andres Arango Velasquez
+            - paragraph [ref=e120]: Admin
+          - generic [ref=e121]: JA
+          - button "Salir" [ref=e122] [cursor=pointer]
+      - generic [ref=e123]:
+        - img "Logo" [ref=e125]
+        - generic [ref=e126]:
+          - paragraph [ref=e127]: Empresa
+          - paragraph [ref=e128]: SPIN - SILICATOS PARA LA INDUSTRIA S.A.S.
+        - generic [ref=e129]:
+          - paragraph [ref=e130]: NIT
+          - paragraph [ref=e131]: 900.123.456-7
+      - generic [ref=e133]:
+        - generic [ref=e135]:
+          - heading "Gestión de Usuarios" [level=1] [ref=e136]
+          - paragraph [ref=e137]: Administración de accesos y permisos
+        - generic [ref=e138]:
+          - button "📋 Registros" [ref=e139] [cursor=pointer]
+          - button "🔐 Permisos" [ref=e140] [cursor=pointer]
+          - button "📊 Reportes" [ref=e141] [cursor=pointer]
+        - generic [ref=e142]:
+          - generic [ref=e143]:
+            - generic [ref=e144]:
+              - generic [ref=e145]:
+                - generic [ref=e146]: 👥
+                - paragraph [ref=e147]: Total Usuarios
+              - paragraph [ref=e148]: "1"
+            - generic [ref=e149]:
+              - generic [ref=e150]:
+                - generic [ref=e151]: ✅
+                - paragraph [ref=e152]: Activos
+              - paragraph [ref=e153]: "1"
+            - generic [ref=e154]:
+              - generic [ref=e155]:
+                - generic [ref=e156]: ⏸️
+                - paragraph [ref=e157]: Inactivos
+              - paragraph [ref=e158]: "0"
+            - generic [ref=e159]:
+              - generic [ref=e160]:
+                - generic [ref=e161]: 🚫
+                - paragraph [ref=e162]: Bloqueados
+              - paragraph [ref=e163]: "0"
+          - generic [ref=e164]:
+            - generic [ref=e165]:
+              - generic [ref=e166]:
+                - textbox "Buscar por nombre, usuario o correo..." [ref=e167]
+                - button "Buscar por voz" [ref=e168] [cursor=pointer]:
+                  - img [ref=e169]
+              - generic [ref=e172]:
+                - paragraph [ref=e173]: 1 registro
+                - button "+ Nuevo Usuario" [active] [ref=e174] [cursor=pointer]
+            - table [ref=e175]:
+              - rowgroup [ref=e176]:
+                - row "Usuario Nombre Completo Correo Rol Estado Acciones" [ref=e177]:
+                  - columnheader "Usuario" [ref=e178]
+                  - columnheader "Nombre Completo" [ref=e179]
+                  - columnheader "Correo" [ref=e180]
+                  - columnheader "Rol" [ref=e181]
+                  - columnheader "Estado" [ref=e182]
+                  - columnheader "Acciones" [ref=e183]
+              - rowgroup [ref=e184]:
+                - row "jarango Juan Andres Arango Velasquez jarango@empresa.com Administrador Activo Ver Editar Eliminar" [ref=e185]:
+                  - cell "jarango" [ref=e186]
+                  - cell "Juan Andres Arango Velasquez" [ref=e187]
+                  - cell "jarango@empresa.com" [ref=e188]
+                  - cell "Administrador" [ref=e189]
+                  - cell "Activo" [ref=e190]
+                  - cell "Ver Editar Eliminar" [ref=e191]:
+                    - generic [ref=e192]:
+                      - button "Ver" [ref=e193] [cursor=pointer]
+                      - button "Editar" [ref=e194] [cursor=pointer]
+                      - button "Eliminar" [ref=e195] [cursor=pointer]
+        - generic [ref=e198]:
+          - generic [ref=e199]:
+            - heading "Nuevo Usuario" [level=3] [ref=e200]
+            - button "×" [ref=e201] [cursor=pointer]
+          - generic [ref=e202]:
+            - generic [ref=e203]:
+              - generic [ref=e204]:
+                - generic [ref=e205]: Nombre *
+                - textbox "Juan" [ref=e206]
+              - generic [ref=e207]:
+                - generic [ref=e208]: Apellido *
+                - textbox "Perez" [ref=e209]
+            - generic [ref=e210]:
+              - generic [ref=e211]:
+                - generic [ref=e212]: Usuario *
+                - textbox "nombre.apellido" [ref=e213]
+              - generic [ref=e214]:
+                - generic [ref=e215]: Clave *
+                - generic [ref=e216]:
+                  - textbox "••••••••" [ref=e217]
+                  - button "Ver" [ref=e218] [cursor=pointer]
+            - generic [ref=e219]:
+              - generic [ref=e220]:
+                - generic [ref=e221]: Correo *
+                - textbox "correo@empresa.com" [ref=e222]
+              - generic [ref=e223]:
+                - generic [ref=e224]: Rol *
+                - combobox [ref=e225]:
+                  - option "Seleccionar..." [disabled] [selected]
+              - generic [ref=e226]:
+                - generic [ref=e227]: Estado
+                - combobox [ref=e228]:
+                  - option "Activo" [selected]
+                  - option "Inactivo"
+                  - option "Bloqueado"
+            - generic [ref=e229]:
+              - heading "Permisos por Módulo" [level=3] [ref=e230]
+              - table [ref=e232]:
+                - rowgroup [ref=e233]:
+                  - row "Módulo Leer Registrar Editar Eliminar" [ref=e234]:
+                    - columnheader "Módulo" [ref=e235]
+                    - columnheader "Leer" [ref=e236]
+                    - columnheader "Registrar" [ref=e237]
+                    - columnheader "Editar" [ref=e238]
+                    - columnheader "Eliminar" [ref=e239]
+                - rowgroup [ref=e240]:
+                  - row "Dashboard" [ref=e241]:
+                    - cell "Dashboard" [ref=e242]
+                    - cell [ref=e243]:
+                      - checkbox [checked] [ref=e244] [cursor=pointer]
+                    - cell [ref=e245]:
+                      - checkbox [ref=e246] [cursor=pointer]
+                    - cell [ref=e247]:
+                      - checkbox [ref=e248] [cursor=pointer]
+                    - cell [ref=e249]:
+                      - checkbox [ref=e250] [cursor=pointer]
+                  - row "Productos" [ref=e251]:
+                    - cell "Productos" [ref=e252]
+                    - cell [ref=e253]:
+                      - checkbox [checked] [ref=e254] [cursor=pointer]
+                    - cell [ref=e255]:
+                      - checkbox [ref=e256] [cursor=pointer]
+                    - cell [ref=e257]:
+                      - checkbox [ref=e258] [cursor=pointer]
+                    - cell [ref=e259]:
+                      - checkbox [ref=e260] [cursor=pointer]
+                  - row "Kardex de Productos" [ref=e261]:
+                    - cell "Kardex de Productos" [ref=e262]
+                    - cell [ref=e263]:
+                      - checkbox [checked] [ref=e264] [cursor=pointer]
+                    - cell [ref=e265]:
+                      - checkbox [ref=e266] [cursor=pointer]
+                    - cell [ref=e267]:
+                      - checkbox [ref=e268] [cursor=pointer]
+                    - cell [ref=e269]:
+                      - checkbox [ref=e270] [cursor=pointer]
+                  - row "Proveedores" [ref=e271]:
+                    - cell "Proveedores" [ref=e272]
+                    - cell [ref=e273]:
+                      - checkbox [checked] [ref=e274] [cursor=pointer]
+                    - cell [ref=e275]:
+                      - checkbox [ref=e276] [cursor=pointer]
+                    - cell [ref=e277]:
+                      - checkbox [ref=e278] [cursor=pointer]
+                    - cell [ref=e279]:
+                      - checkbox [ref=e280] [cursor=pointer]
+                  - row "Órdenes de Compra" [ref=e281]:
+                    - cell "Órdenes de Compra" [ref=e282]
+                    - cell [ref=e283]:
+                      - checkbox [checked] [ref=e284] [cursor=pointer]
+                    - cell [ref=e285]:
+                      - checkbox [ref=e286] [cursor=pointer]
+                    - cell [ref=e287]:
+                      - checkbox [ref=e288] [cursor=pointer]
+                    - cell [ref=e289]:
+                      - checkbox [ref=e290] [cursor=pointer]
+                  - row "Recepción de Facturas" [ref=e291]:
+                    - cell "Recepción de Facturas" [ref=e292]
+                    - cell [ref=e293]:
+                      - checkbox [checked] [ref=e294] [cursor=pointer]
+                    - cell [ref=e295]:
+                      - checkbox [ref=e296] [cursor=pointer]
+                    - cell [ref=e297]:
+                      - checkbox [ref=e298] [cursor=pointer]
+                    - cell [ref=e299]:
+                      - checkbox [ref=e300] [cursor=pointer]
+                  - row "Recepción de Remisiones" [ref=e301]:
+                    - cell "Recepción de Remisiones" [ref=e302]
+                    - cell [ref=e303]:
+                      - checkbox [checked] [ref=e304] [cursor=pointer]
+                    - cell [ref=e305]:
+                      - checkbox [ref=e306] [cursor=pointer]
+                    - cell [ref=e307]:
+                      - checkbox [ref=e308] [cursor=pointer]
+                    - cell [ref=e309]:
+                      - checkbox [ref=e310] [cursor=pointer]
+                  - row "Pagos Proveedores y Servicios" [ref=e311]:
+                    - cell "Pagos Proveedores y Servicios" [ref=e312]
+                    - cell [ref=e313]:
+                      - checkbox [checked] [ref=e314] [cursor=pointer]
+                    - cell [ref=e315]:
+                      - checkbox [ref=e316] [cursor=pointer]
+                    - cell [ref=e317]:
+                      - checkbox [ref=e318] [cursor=pointer]
+                    - cell [ref=e319]:
+                      - checkbox [ref=e320] [cursor=pointer]
+                  - row "Control Bancario" [ref=e321]:
+                    - cell "Control Bancario" [ref=e322]
+                    - cell [ref=e323]:
+                      - checkbox [checked] [ref=e324] [cursor=pointer]
+                    - cell [ref=e325]:
+                      - checkbox [ref=e326] [cursor=pointer]
+                    - cell [ref=e327]:
+                      - checkbox [ref=e328] [cursor=pointer]
+                    - cell [ref=e329]:
+                      - checkbox [ref=e330] [cursor=pointer]
+                  - row "Bodegas" [ref=e331]:
+                    - cell "Bodegas" [ref=e332]
+                    - cell [ref=e333]:
+                      - checkbox [checked] [ref=e334] [cursor=pointer]
+                    - cell [ref=e335]:
+                      - checkbox [ref=e336] [cursor=pointer]
+                    - cell [ref=e337]:
+                      - checkbox [ref=e338] [cursor=pointer]
+                    - cell [ref=e339]:
+                      - checkbox [ref=e340] [cursor=pointer]
+                  - row "Transferencias" [ref=e341]:
+                    - cell "Transferencias" [ref=e342]
+                    - cell [ref=e343]:
+                      - checkbox [checked] [ref=e344] [cursor=pointer]
+                    - cell [ref=e345]:
+                      - checkbox [ref=e346] [cursor=pointer]
+                    - cell [ref=e347]:
+                      - checkbox [ref=e348] [cursor=pointer]
+                    - cell [ref=e349]:
+                      - checkbox [ref=e350] [cursor=pointer]
+                  - row "Salidas de Almacén" [ref=e351]:
+                    - cell "Salidas de Almacén" [ref=e352]
+                    - cell [ref=e353]:
+                      - checkbox [checked] [ref=e354] [cursor=pointer]
+                    - cell [ref=e355]:
+                      - checkbox [ref=e356] [cursor=pointer]
+                    - cell [ref=e357]:
+                      - checkbox [ref=e358] [cursor=pointer]
+                    - cell [ref=e359]:
+                      - checkbox [ref=e360] [cursor=pointer]
+                  - row "Ajustes de Inventario" [ref=e361]:
+                    - cell "Ajustes de Inventario" [ref=e362]
+                    - cell [ref=e363]:
+                      - checkbox [checked] [ref=e364] [cursor=pointer]
+                    - cell [ref=e365]:
+                      - checkbox [ref=e366] [cursor=pointer]
+                    - cell [ref=e367]:
+                      - checkbox [ref=e368] [cursor=pointer]
+                    - cell [ref=e369]:
+                      - checkbox [ref=e370] [cursor=pointer]
+                  - row "Toma de Inventario Físico" [ref=e371]:
+                    - cell "Toma de Inventario Físico" [ref=e372]
+                    - cell [ref=e373]:
+                      - checkbox [checked] [ref=e374] [cursor=pointer]
+                    - cell [ref=e375]:
+                      - checkbox [ref=e376] [cursor=pointer]
+                    - cell [ref=e377]:
+                      - checkbox [ref=e378] [cursor=pointer]
+                    - cell [ref=e379]:
+                      - checkbox [ref=e380] [cursor=pointer]
+                  - row "Centros de Costo" [ref=e381]:
+                    - cell "Centros de Costo" [ref=e382]
+                    - cell [ref=e383]:
+                      - checkbox [checked] [ref=e384] [cursor=pointer]
+                    - cell [ref=e385]:
+                      - checkbox [ref=e386] [cursor=pointer]
+                    - cell [ref=e387]:
+                      - checkbox [ref=e388] [cursor=pointer]
+                    - cell [ref=e389]:
+                      - checkbox [ref=e390] [cursor=pointer]
+                  - row "Fórmulas" [ref=e391]:
+                    - cell "Fórmulas" [ref=e392]
+                    - cell [ref=e393]:
+                      - checkbox [checked] [ref=e394] [cursor=pointer]
+                    - cell [ref=e395]:
+                      - checkbox [ref=e396] [cursor=pointer]
+                    - cell [ref=e397]:
+                      - checkbox [ref=e398] [cursor=pointer]
+                    - cell [ref=e399]:
+                      - checkbox [ref=e400] [cursor=pointer]
+                  - row "Órdenes de Producción" [ref=e401]:
+                    - cell "Órdenes de Producción" [ref=e402]
+                    - cell [ref=e403]:
+                      - checkbox [checked] [ref=e404] [cursor=pointer]
+                    - cell [ref=e405]:
+                      - checkbox [ref=e406] [cursor=pointer]
+                    - cell [ref=e407]:
+                      - checkbox [ref=e408] [cursor=pointer]
+                    - cell [ref=e409]:
+                      - checkbox [ref=e410] [cursor=pointer]
+                  - row "Ejecución de Producción" [ref=e411]:
+                    - cell "Ejecución de Producción" [ref=e412]
+                    - cell [ref=e413]:
+                      - checkbox [checked] [ref=e414] [cursor=pointer]
+                    - cell [ref=e415]:
+                      - checkbox [ref=e416] [cursor=pointer]
+                    - cell [ref=e417]:
+                      - checkbox [ref=e418] [cursor=pointer]
+                    - cell [ref=e419]:
+                      - checkbox [ref=e420] [cursor=pointer]
+                  - row "Ajustes Materia Prima" [ref=e421]:
+                    - cell "Ajustes Materia Prima" [ref=e422]
+                    - cell [ref=e423]:
+                      - checkbox [checked] [ref=e424] [cursor=pointer]
+                    - cell [ref=e425]:
+                      - checkbox [ref=e426] [cursor=pointer]
+                    - cell [ref=e427]:
+                      - checkbox [ref=e428] [cursor=pointer]
+                    - cell [ref=e429]:
+                      - checkbox [ref=e430] [cursor=pointer]
+                  - row "Pedidos" [ref=e431]:
+                    - cell "Pedidos" [ref=e432]
+                    - cell [ref=e433]:
+                      - checkbox [checked] [ref=e434] [cursor=pointer]
+                    - cell [ref=e435]:
+                      - checkbox [ref=e436] [cursor=pointer]
+                    - cell [ref=e437]:
+                      - checkbox [ref=e438] [cursor=pointer]
+                    - cell [ref=e439]:
+                      - checkbox [ref=e440] [cursor=pointer]
+                  - row "Tareas" [ref=e441]:
+                    - cell "Tareas" [ref=e442]
+                    - cell [ref=e443]:
+                      - checkbox [checked] [ref=e444] [cursor=pointer]
+                    - cell [ref=e445]:
+                      - checkbox [ref=e446] [cursor=pointer]
+                    - cell [ref=e447]:
+                      - checkbox [ref=e448] [cursor=pointer]
+                    - cell [ref=e449]:
+                      - checkbox [ref=e450] [cursor=pointer]
+                  - row "Personal Empresa" [ref=e451]:
+                    - cell "Personal Empresa" [ref=e452]
+                    - cell [ref=e453]:
+                      - checkbox [checked] [ref=e454] [cursor=pointer]
+                    - cell [ref=e455]:
+                      - checkbox [ref=e456] [cursor=pointer]
+                    - cell [ref=e457]:
+                      - checkbox [ref=e458] [cursor=pointer]
+                    - cell [ref=e459]:
+                      - checkbox [ref=e460] [cursor=pointer]
+                  - row "Correos Enviados" [ref=e461]:
+                    - cell "Correos Enviados" [ref=e462]
+                    - cell [ref=e463]:
+                      - checkbox [checked] [ref=e464] [cursor=pointer]
+                    - cell [ref=e465]:
+                      - checkbox [ref=e466] [cursor=pointer]
+                    - cell [ref=e467]:
+                      - checkbox [ref=e468] [cursor=pointer]
+                    - cell [ref=e469]:
+                      - checkbox [ref=e470] [cursor=pointer]
+                  - row "Agente IA" [ref=e471]:
+                    - cell "Agente IA" [ref=e472]
+                    - cell [ref=e473]:
+                      - checkbox [checked] [ref=e474] [cursor=pointer]
+                    - cell [ref=e475]:
+                      - checkbox [ref=e476] [cursor=pointer]
+                    - cell [ref=e477]:
+                      - checkbox [ref=e478] [cursor=pointer]
+                    - cell [ref=e479]:
+                      - checkbox [ref=e480] [cursor=pointer]
+                  - row "Tablas de Referencias" [ref=e481]:
+                    - cell "Tablas de Referencias" [ref=e482]
+                    - cell [ref=e483]:
+                      - checkbox [checked] [ref=e484] [cursor=pointer]
+                    - cell [ref=e485]:
+                      - checkbox [ref=e486] [cursor=pointer]
+                    - cell [ref=e487]:
+                      - checkbox [ref=e488] [cursor=pointer]
+                    - cell [ref=e489]:
+                      - checkbox [ref=e490] [cursor=pointer]
+                  - row "Datos Empresa" [ref=e491]:
+                    - cell "Datos Empresa" [ref=e492]
+                    - cell [ref=e493]:
+                      - checkbox [checked] [ref=e494] [cursor=pointer]
+                    - cell [ref=e495]:
+                      - checkbox [ref=e496] [cursor=pointer]
+                    - cell [ref=e497]:
+                      - checkbox [ref=e498] [cursor=pointer]
+                    - cell [ref=e499]:
+                      - checkbox [ref=e500] [cursor=pointer]
+                  - row "Gestión de Usuarios" [ref=e501]:
+                    - cell "Gestión de Usuarios" [ref=e502]
+                    - cell [ref=e503]:
+                      - checkbox [checked] [ref=e504] [cursor=pointer]
+                    - cell [ref=e505]:
+                      - checkbox [ref=e506] [cursor=pointer]
+                    - cell [ref=e507]:
+                      - checkbox [ref=e508] [cursor=pointer]
+                    - cell [ref=e509]:
+                      - checkbox [ref=e510] [cursor=pointer]
+                  - row "Módulos Sistema" [ref=e511]:
+                    - cell "Módulos Sistema" [ref=e512]
+                    - cell [ref=e513]:
+                      - checkbox [checked] [ref=e514] [cursor=pointer]
+                    - cell [ref=e515]:
+                      - checkbox [ref=e516] [cursor=pointer]
+                    - cell [ref=e517]:
+                      - checkbox [ref=e518] [cursor=pointer]
+                    - cell [ref=e519]:
+                      - checkbox [ref=e520] [cursor=pointer]
+            - generic [ref=e521]:
+              - button "Cancelar" [ref=e522] [cursor=pointer]
+              - button "Crear Usuario" [ref=e523] [cursor=pointer]
+  - alert [ref=e196]
