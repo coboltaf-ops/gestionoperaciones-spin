@@ -73,3 +73,6 @@ node_modules/
 /blob-report/
 /playwright/.cache/
 /playwright/.auth/
+
+# Token de Vercel - NO subir (agregado 2026-10-18)
+.env.vercel
