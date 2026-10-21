@@ -1,0 +1,82 @@
+- generic [ref=f5e2]:
+  - generic [ref=f5e3]:
+    - img "JP" [ref=f5e4]
+    - generic [ref=f5e5]:
+      - generic [ref=f5e6]: José E. Palomares
+      - generic [ref=f5e7]: Consultoría en Sistemas de Información y Marketing
+      - generic [ref=f5e8]: Mercadeo al Día · del aula a la operación con un CRM
+  - generic [ref=f5e9]: Resumen en una página
+  - generic [ref=f5e10]: Tus 6 módulos del curso, funcionando dentro del CRM
+  - generic [ref=f5e11]:
+    - generic [ref=f5e12]: Lo que estudiaste · Mercadeo Relacional
+    - generic [ref=f5e14]: Dónde vive · Módulo del CRM
+  - generic [ref=f5e15]:
+    - generic [ref=f5e16]:
+      - generic [ref=f5e17]:
+        - generic [ref=f5e18]:
+          - generic [ref=f5e19]: "1"
+          - text: Brief Relacional
+        - generic [ref=f5e20]: "Conocer al cliente y al negocio: qué valora y por qué canales (CLV)."
+      - generic [ref=f5e21]: →
+      - generic [ref=f5e22]:
+        - generic [ref=f5e23]: Clientes y Contactos
+        - generic [ref=f5e24]: "Ficha 360° viva: datos centralizados, una sola fuente de verdad."
+    - generic [ref=f5e25]:
+      - generic [ref=f5e26]:
+        - generic [ref=f5e27]:
+          - generic [ref=f5e28]: "2"
+          - text: Auditoría Relacional
+        - generic [ref=f5e29]: "Customer Journey y Voz del Cliente: puntos de contacto y fricciones."
+      - generic [ref=f5e30]: →
+      - generic [ref=f5e31]:
+        - generic [ref=f5e32]: Bitácora + PQRS
+        - generic [ref=f5e33]: Cada interacción, canal y reclamo queda registrado y trazable.
+    - generic [ref=f5e34]:
+      - generic [ref=f5e35]:
+        - generic [ref=f5e36]:
+          - generic [ref=f5e37]: "3"
+          - text: Segmentación RFM y CLV
+        - generic [ref=f5e38]: Clasificar por Recencia, Frecuencia, Monto y valor en el tiempo.
+      - generic [ref=f5e39]: →
+      - generic [ref=f5e40]:
+        - generic [ref=f5e41]: Segmentar por valor
+        - generic [ref=f5e42]: Historial de compras, montos y frecuencia para priorizar esfuerzo.
+    - generic [ref=f5e43]:
+      - generic [ref=f5e44]:
+        - generic [ref=f5e45]:
+          - generic [ref=f5e46]: "4"
+          - text: Gestión del CLV
+        - generic [ref=f5e47]: Embudo relacional, objetivos SMART, cross-selling y up-selling.
+      - generic [ref=f5e48]: →
+      - generic [ref=f5e49]:
+        - generic [ref=f5e50]: Oportunidades (Pipeline)
+        - generic [ref=f5e51]: "Embudo con monto y probabilidad: prospección → negociación → cierre."
+    - generic [ref=f5e52]:
+      - generic [ref=f5e53]:
+        - generic [ref=f5e54]:
+          - generic [ref=f5e55]: "5"
+          - text: Fidelización y CX
+        - generic [ref=f5e56]: "Lealtad y experiencia omnicanal: retener con valor y consistencia."
+      - generic [ref=f5e57]: →
+      - generic [ref=f5e58]:
+        - generic [ref=f5e59]: Tareas + Posventa
+        - generic [ref=f5e60]: "Seguimiento y recordatorios para la recompra: ningún cliente se enfría."
+    - generic [ref=f5e61]:
+      - generic [ref=f5e62]:
+        - generic [ref=f5e63]:
+          - generic [ref=f5e64]: "6"
+          - text: Cuadro de Mando
+        - generic [ref=f5e65]: "Métricas de eficacia y rendimiento: lo que no se mide, no se gestiona."
+      - generic [ref=f5e66]: →
+      - generic [ref=f5e67]:
+        - generic [ref=f5e68]: Dashboard
+        - generic [ref=f5e69]: "KPIs en tiempo real: clientes, pipeline, cotizaciones y PQRS."
+  - generic [ref=f5e70]:
+    - paragraph [ref=f5e71]: "En una frase: el Mercadeo Relacional es la filosofía; el CRM es donde esa filosofía se vuelve operación, todos los días."
+    - generic [ref=f5e73]:
+      - generic [ref=f5e74]: Qué significan
+      - generic [ref=f5e75]: CLV = Valor de Vida del Cliente.
+      - generic [ref=f5e76]: RFM = Recencia, Frecuencia y Monto.
+      - generic [ref=f5e77]: CX = Experiencia del Cliente.
+      - generic [ref=f5e78]: PQRS = Peticiones, Quejas, Reclamos y Sugerencias.
+      - generic [ref=f5e79]: KPI = Indicador Clave de Rendimiento.
