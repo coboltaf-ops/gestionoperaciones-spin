@@ -1,0 +1,132 @@
+- generic [active] [ref=e1]:
+  - generic [ref=e2]:
+    - generic [ref=e3]:
+      - img "JP" [ref=e4]
+      - generic [ref=e5]:
+        - generic [ref=e6]: José E. Palomares
+        - generic [ref=e7]: Consultoría en Sistemas de Información y Marketing
+    - generic [ref=e8]:
+      - generic [ref=e9]: Del aula a la operación
+      - heading "Mercadeo al Día" [level=1] [ref=e10]
+      - paragraph [ref=e12]: Cómo un CRM convierte el Mercadeo Relacional que aprendiste en la operación diaria de una empresa.
+    - generic [ref=e13]: Experiencia de Alumnos · Estudiantes de Mercadeo · Universidad de Envigado — Medellín
+  - generic [ref=e14]:
+    - generic [ref=e15]: Antes de empezar, reflexionemos
+    - generic [ref=e16]:
+      - generic [ref=e17]: "?"
+      - generic [ref=e18]: ¿Qué áreas son las más relevantes en una empresa?
+      - img [ref=e20]:
+        - generic [ref=e22]: "?"
+    - generic [ref=e34]: La respuesta se concentra en tres frentes
+    - generic [ref=e35]:
+      - generic [ref=e36]:
+        - text: Mercadeo
+        - generic [ref=e37]: Atraer y dar a conocer
+      - generic [ref=e38]:
+        - text: Ventas
+        - generic [ref=e39]: Convertir en ingresos
+      - generic [ref=e40]:
+        - text: Servicio al Cliente
+        - generic [ref=e41]: Retener y fidelizar
+  - generic [ref=e42]:
+    - generic [ref=e43]: La lógica del negocio
+    - generic [ref=e44]: Todo empieza en un prospecto… y sostiene a la empresa
+    - generic [ref=e45]:
+      - generic [ref=e46]:
+        - generic [ref=e47]: "1"
+        - generic [ref=e48]: Sin prospectos no hay oportunidades.
+      - generic [ref=e49]:
+        - generic [ref=e50]: "2"
+        - generic [ref=e51]: Sin oportunidades no podemos cotizar.
+      - generic [ref=e52]:
+        - generic [ref=e53]: "3"
+        - generic [ref=e54]: Sin cotizaciones no podemos observar la aceptación de nuestros productos y servicios.
+      - generic [ref=e55]:
+        - generic [ref=e56]: "4"
+        - generic [ref=e57]: Sin aprobación de cotizaciones no hay ventas.
+      - generic [ref=e58]:
+        - generic [ref=e59]: "5"
+        - generic [ref=e60]: Sin ventas no hay ingresos.
+    - generic [ref=e61]: Y sin ingresos… no hay empresa.
+  - generic [ref=e62]:
+    - generic [ref=e63]:
+      - img "JP" [ref=e64]
+      - generic [ref=e65]:
+        - generic [ref=e66]: José E. Palomares
+        - generic [ref=e67]: Consultoría en Sistemas de Información y Marketing
+        - generic [ref=e68]: Mercadeo al Día · del aula a la operación con un CRM
+    - generic [ref=e69]: Resumen en una página
+    - generic [ref=e70]: Tus 6 módulos del curso, funcionando dentro del CRM
+    - generic [ref=e71]:
+      - generic [ref=e72]: Lo que estudiaste · Mercadeo Relacional
+      - generic [ref=e74]: Dónde vive · Módulo del CRM
+    - generic [ref=e75]:
+      - generic [ref=e76]:
+        - generic [ref=e77]:
+          - generic [ref=e78]:
+            - generic [ref=e79]: "1"
+            - text: Brief Relacional
+          - generic [ref=e80]: "Conocer al cliente y al negocio: qué valora y por qué canales (CLV)."
+        - generic [ref=e81]: →
+        - generic [ref=e82]:
+          - generic [ref=e83]: Clientes y Contactos
+          - generic [ref=e84]: "Ficha 360° viva: datos centralizados, una sola fuente de verdad."
+      - generic [ref=e85]:
+        - generic [ref=e86]:
+          - generic [ref=e87]:
+            - generic [ref=e88]: "2"
+            - text: Auditoría Relacional
+          - generic [ref=e89]: "Customer Journey y Voz del Cliente: puntos de contacto y fricciones."
+        - generic [ref=e90]: →
+        - generic [ref=e91]:
+          - generic [ref=e92]: Bitácora + PQRS
+          - generic [ref=e93]: Cada interacción, canal y reclamo queda registrado y trazable.
+      - generic [ref=e94]:
+        - generic [ref=e95]:
+          - generic [ref=e96]:
+            - generic [ref=e97]: "3"
+            - text: Segmentación RFM y CLV
+          - generic [ref=e98]: Clasificar por Recencia, Frecuencia, Monto y valor en el tiempo.
+        - generic [ref=e99]: →
+        - generic [ref=e100]:
+          - generic [ref=e101]: Segmentar por valor
+          - generic [ref=e102]: Historial de compras, montos y frecuencia para priorizar esfuerzo.
+      - generic [ref=e103]:
+        - generic [ref=e104]:
+          - generic [ref=e105]:
+            - generic [ref=e106]: "4"
+            - text: Gestión del CLV
+          - generic [ref=e107]: Embudo relacional, objetivos SMART, cross-selling y up-selling.
+        - generic [ref=e108]: →
+        - generic [ref=e109]:
+          - generic [ref=e110]: Oportunidades (Pipeline)
+          - generic [ref=e111]: "Embudo con monto y probabilidad: prospección → negociación → cierre."
+      - generic [ref=e112]:
+        - generic [ref=e113]:
+          - generic [ref=e114]:
+            - generic [ref=e115]: "5"
+            - text: Fidelización y CX
+          - generic [ref=e116]: "Lealtad y experiencia omnicanal: retener con valor y consistencia."
+        - generic [ref=e117]: →
+        - generic [ref=e118]:
+          - generic [ref=e119]: Tareas + Posventa
+          - generic [ref=e120]: "Seguimiento y recordatorios para la recompra: ningún cliente se enfría."
+      - generic [ref=e121]:
+        - generic [ref=e122]:
+          - generic [ref=e123]:
+            - generic [ref=e124]: "6"
+            - text: Cuadro de Mando
+          - generic [ref=e125]: "Métricas de eficacia y rendimiento: lo que no se mide, no se gestiona."
+        - generic [ref=e126]: →
+        - generic [ref=e127]:
+          - generic [ref=e128]: Dashboard
+          - generic [ref=e129]: "KPIs en tiempo real: clientes, pipeline, cotizaciones y PQRS."
+    - generic [ref=e130]:
+      - paragraph [ref=e131]: "En una frase: el Mercadeo Relacional es la filosofía; el CRM es donde esa filosofía se vuelve operación, todos los días."
+      - generic [ref=e133]:
+        - generic [ref=e134]: Qué significan
+        - generic [ref=e135]: CLV = Valor de Vida del Cliente.
+        - generic [ref=e136]: RFM = Recencia, Frecuencia y Monto.
+        - generic [ref=e137]: CX = Experiencia del Cliente.
+        - generic [ref=e138]: PQRS = Peticiones, Quejas, Reclamos y Sugerencias.
+        - generic [ref=e139]: KPI = Indicador Clave de Rendimiento.
